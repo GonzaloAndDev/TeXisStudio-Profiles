@@ -1,0 +1,16 @@
+id: udg
+name: "Universidad de Guadalajara"
+acronym: "UdeG"
+continent: "america"
+country: "mexico"
+website: "https://www.udg.mx"
+default_format:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+  font_main: "Times New Roman"
+  font_size: 12pt

@@ -1,0 +1,16 @@
+id: tsinghua
+name: "Tsinghua University"
+acronym: "THU"
+continent: "asia"
+country: "china"
+website: "https://www.tsinghua.edu.cn"
+default_format:
+  paper: a4paper
+  margins:
+    top: 30mm
+    bottom: 25mm
+    left: 30mm
+    right: 25mm
+  line_spacing: 1.5
+notes: |
+  GB/T 7714-2015 obligatorio para tesis en chino.

@@ -1,0 +1,14 @@
+id: tum
+name: "Technische Universitaet Muenchen"
+acronym: "TUM"
+continent: "europe"
+country: "germany"
+website: "https://www.tum.de"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5

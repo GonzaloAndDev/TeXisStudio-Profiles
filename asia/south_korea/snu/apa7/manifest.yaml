@@ -1,0 +1,13 @@
+id: kr_snu_apa7
+name: "Seoul National University - Thesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Seoul National University thesis, APA 7 or IEEE common"
+tags: [snu, korea, apa7]
+texis_min_version: "1.0.0"
+continent: "asia"
+country: "south_korea"
+institution: "Seoul National University"
+city: "Seoul"
+institution_id: "snu"

@@ -1,0 +1,15 @@
+id: generic
+name: "Perfil Generico"
+acronym: "GEN"
+continent: "generic"
+country: "generic"
+default_format:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+notes: |
+  Plantillas independientes de institucion.

@@ -1,0 +1,13 @@
+id: cn_pku_gbt
+name: "Peking University - Thesis (GB/T 7714)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Peking University thesis, GB/T 7714-2015"
+tags: [pku, beijing, china, gbt7714]
+texis_min_version: "1.0.0"
+continent: "asia"
+country: "china"
+institution: "Peking University"
+city: "Beijing"
+institution_id: "pku"

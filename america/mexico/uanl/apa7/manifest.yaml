@@ -1,0 +1,13 @@
+id: mx_uanl_apa7
+name: "UANL - Tesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Tesis de la Universidad Autonoma de Nuevo Leon, APA 7"
+tags: [uanl, nuevo_leon, mexico, apa7]
+texis_min_version: "1.0.0"
+continent: "america"
+country: "mexico"
+institution: "Universidad Autonoma de Nuevo Leon"
+city: "Monterrey"
+institution_id: "uanl"

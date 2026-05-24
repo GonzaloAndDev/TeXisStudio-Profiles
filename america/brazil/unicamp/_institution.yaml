@@ -1,0 +1,14 @@
+id: unicamp
+name: "Universidade Estadual de Campinas"
+acronym: "UNICAMP"
+continent: "america"
+country: "brazil"
+website: "https://www.unicamp.br"
+default_format:
+  paper: a4paper
+  margins:
+    top: 30mm
+    bottom: 20mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5

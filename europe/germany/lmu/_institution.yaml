@@ -1,0 +1,16 @@
+id: lmu
+name: "Ludwig-Maximilians-Universitaet Muenchen"
+acronym: "LMU"
+continent: "europe"
+country: "germany"
+website: "https://www.lmu.de"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5
+  font_main: "Times New Roman"
+  font_size: 12pt

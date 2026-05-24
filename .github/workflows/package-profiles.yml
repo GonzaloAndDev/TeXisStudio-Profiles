@@ -1,15 +1,18 @@
 name: Empaquetar perfiles
 
-# Se ejecuta en cada push a main y genera/actualiza la release "latest"
-# con un ZIP por perfil, listo para instalar desde TeXisStudio.
+# Se ejecuta en cada push a main y genera/actualiza la release "latest".
 #
-# Estructura del repo:
-#   <continent>/<country>/<profile_id>/profile.yaml
-#   <continent>/<country>/<profile_id>/manifest.yaml
+# Estructura del repo (4 niveles):
+#   <continent>/<country>/<institution>/<style_id>/profile.yaml
+#   <continent>/<country>/<institution>/<style_id>/manifest.yaml
+#   <continent>/<country>/<institution>/_institution.yaml  (metadata compartida)
 #
-# URL de descarga resultante:
-#   https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<profile_id>.zip
-# Catalogo completo:
+# El ZIP se nombra con el campo `id` del manifest (globalmente unico):
+#   dist/<manifest_id>.zip
+#
+# URL de descarga:
+#   https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<manifest_id>.zip
+# Catalogo completo (JSON):
 #   https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/catalog.json
 
 on:
@@ -34,19 +37,24 @@ jobs:
         run: |
           mkdir -p dist
 
-          # Busca profile.yaml a profundidad exacta 3: continent/country/profile_id/
-          find . -mindepth 4 -maxdepth 4 -name "profile.yaml" | while read yaml_path; do
+          # Busca profile.yaml a profundidad exacta 4: continent/country/institution/style_id/
+          find . -mindepth 5 -maxdepth 5 -name "profile.yaml" | while read yaml_path; do
             profile_dir=$(dirname "$yaml_path")
-            profile_id=$(basename "$profile_dir")
 
-            # Solo empaqueta si tambien tiene manifest.yaml
             if [ -f "${profile_dir}/manifest.yaml" ]; then
+              # Usa el campo id del manifest como nombre del ZIP
+              profile_id=$(python3 -c "
+import yaml, sys
+with open('${profile_dir}/manifest.yaml') as f:
+    m = yaml.safe_load(f)
+print(m.get('id', '$(basename $profile_dir)'))
+")
               zip -r "dist/${profile_id}.zip" "${profile_dir#./}"
               echo "ok ${profile_id}.zip  (${profile_dir#./})"
             fi
           done
 
-          # Empaqueta citation_styles/ como ZIP independiente si existe
+          # Empaqueta citation_styles/ como ZIP independiente
           if [ -d "citation_styles" ]; then
             zip -r "dist/citation_styles.zip" "citation_styles/"
             echo "ok citation_styles.zip"
@@ -60,24 +68,41 @@ jobs:
           python3 - <<'EOF'
           import os, json, yaml
 
-          catalog = {"profiles": [], "citation_styles": []}
+          catalog = {"profiles": [], "citation_styles": [], "institutions": {}}
 
-          # Perfiles (estructura continent/country/profile_id)
+          # Perfiles a profundidad 4: continent/country/institution/style_id/
           for root, dirs, files in os.walk("."):
               dirs.sort()
               if "manifest.yaml" in files and "profile.yaml" in files:
-                  parts = root.lstrip("./").split(os.sep)
-                  if len(parts) == 3:
-                      continent, country, pid = parts
+                  # Normalizar separadores
+                  norm = root.replace("\\", "/").lstrip("./")
+                  parts = [p for p in norm.split("/") if p]
+                  if len(parts) == 4:
+                      continent, country, institution, style_id = parts
                       with open(os.path.join(root, "manifest.yaml"), encoding="utf-8") as f:
                           m = yaml.safe_load(f)
+                      pid = m.get("id", style_id)
                       m["download_url"] = (
                           "https://github.com/GonzaloAndDev/TeXisStudio-Profiles"
                           f"/releases/latest/download/{pid}.zip"
                       )
-                      m["continent"] = continent
-                      m["country"] = country
+                      m["continent"]    = continent
+                      m["country"]      = country
+                      m["institution"]  = institution
+                      m["style_id"]     = style_id
                       catalog["profiles"].append(m)
+
+          # Metadata de instituciones (_institution.yaml)
+          for root, dirs, files in os.walk("."):
+              dirs.sort()
+              if "_institution.yaml" in files:
+                  norm = root.replace("\\", "/").lstrip("./")
+                  parts = [p for p in norm.split("/") if p]
+                  if len(parts) == 3:
+                      inst_key = "/".join(parts)
+                      with open(os.path.join(root, "_institution.yaml"), encoding="utf-8") as f:
+                          inst_data = yaml.safe_load(f)
+                      catalog["institutions"][inst_key] = inst_data
 
           # Estilos bibliograficos
           styles_dir = "citation_styles"
@@ -90,13 +115,16 @@ jobs:
 
           catalog["citation_styles"].sort(key=lambda s: s.get("sort_order", 99))
           catalog["profiles"].sort(key=lambda p: (
-              p.get("continent",""), p.get("country",""), p.get("name","")
+              p.get("continent",""), p.get("country",""), p.get("institution",""), p.get("name","")
           ))
 
           with open("dist/catalog.json", "w", encoding="utf-8") as f:
               json.dump(catalog, f, ensure_ascii=False, indent=2)
 
-          print(f"Catalogo: {len(catalog['profiles'])} perfiles, {len(catalog['citation_styles'])} estilos")
+          n_p = len(catalog["profiles"])
+          n_i = len(catalog["institutions"])
+          n_s = len(catalog["citation_styles"])
+          print(f"Catalogo: {n_p} perfiles, {n_i} instituciones, {n_s} estilos")
           EOF
 
       - name: Eliminar release 'latest' existente (si hay)
@@ -115,10 +143,9 @@ jobs:
           body: |
             Perfiles oficiales de TeXisStudio actualizados automaticamente.
 
-            **Estructura:** Continente > Pais > Institucion
+            **Estructura:** Continente > Pais > Institucion > Estilo/Carrera
 
-            **Como instalar:** abre TeXisStudio > Biblioteca > Comunidad,
-            o pega la URL directa en el campo personalizado.
+            **Como instalar:** abre TeXisStudio > Biblioteca > Comunidad.
 
             **Catalogo completo (JSON):**
             ```
@@ -127,7 +154,7 @@ jobs:
 
             **Descarga por perfil:**
             ```
-            https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<profile_id>.zip
+            https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<manifest_id>.zip
             ```
 
             **Estilos bibliograficos:**

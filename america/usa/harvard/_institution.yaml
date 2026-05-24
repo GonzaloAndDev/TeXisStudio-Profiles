@@ -1,0 +1,18 @@
+id: harvard
+name: "Harvard University"
+acronym: "Harvard"
+continent: "america"
+country: "usa"
+website: "https://www.harvard.edu"
+default_format:
+  paper: letterpaper
+  margins:
+    top: 25.4mm
+    bottom: 25.4mm
+    left: 38.1mm
+    right: 25.4mm
+  line_spacing: 2.0
+  font_main: "Times New Roman"
+  font_size: 12pt
+notes: |
+  GSAS Thesis Office. Submit via ProQuest. Citation style varies by department.

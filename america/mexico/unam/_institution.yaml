@@ -1,0 +1,18 @@
+id: unam
+name: "Universidad Nacional Autonoma de Mexico"
+acronym: "UNAM"
+continent: "america"
+country: "mexico"
+website: "https://www.unam.mx"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+  font_main: "Times New Roman"
+  font_size: 12pt
+notes: |
+  Lineamientos DGAE. A4 en posgrado; Carta en algunas licenciaturas.

@@ -1,0 +1,13 @@
+id: ar_uba_apa7
+name: "UBA - Tesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Tesis de la Universidad de Buenos Aires, APA 7"
+tags: [uba, argentina, apa7]
+texis_min_version: "1.0.0"
+continent: "america"
+country: "argentina"
+institution: "Universidad de Buenos Aires"
+city: "Buenos Aires"
+institution_id: "uba"

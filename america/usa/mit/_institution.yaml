@@ -1,0 +1,18 @@
+id: mit
+name: "Massachusetts Institute of Technology"
+acronym: "MIT"
+continent: "america"
+country: "usa"
+website: "https://www.mit.edu"
+default_format:
+  paper: letterpaper
+  margins:
+    top: 25.4mm
+    bottom: 25.4mm
+    left: 38.1mm
+    right: 25.4mm
+  line_spacing: 2.0
+  font_main: "Times New Roman"
+  font_size: 12pt
+notes: |
+  1.5in left margin for archival scanning. Submit via DSpace@MIT.

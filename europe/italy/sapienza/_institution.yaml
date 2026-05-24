@@ -1,0 +1,14 @@
+id: sapienza
+name: "Sapienza Universita di Roma"
+acronym: "Sapienza"
+continent: "europe"
+country: "italy"
+website: "https://www.uniroma1.it"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5

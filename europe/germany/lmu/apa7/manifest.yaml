@@ -1,0 +1,13 @@
+id: de_lmu_apa7
+name: "LMU Munich - Dissertation (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Ludwig-Maximilians-Universitaet Muenchen dissertation, APA 7"
+tags: [lmu, munich, germany, apa7]
+texis_min_version: "1.0.0"
+continent: "europe"
+country: "germany"
+institution: "Ludwig-Maximilians-Universitaet Muenchen"
+city: "Munich"
+institution_id: "lmu"

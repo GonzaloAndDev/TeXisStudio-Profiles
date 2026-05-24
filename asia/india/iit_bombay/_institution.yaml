@@ -1,0 +1,14 @@
+id: iit_bombay
+name: "Indian Institute of Technology Bombay"
+acronym: "IITB"
+continent: "asia"
+country: "india"
+website: "https://www.iitb.ac.in"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5

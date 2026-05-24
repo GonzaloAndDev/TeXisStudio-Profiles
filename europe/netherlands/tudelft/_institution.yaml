@@ -1,0 +1,14 @@
+id: tudelft
+name: "Delft University of Technology"
+acronym: "TU Delft"
+continent: "europe"
+country: "netherlands"
+website: "https://www.tudelft.nl"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5

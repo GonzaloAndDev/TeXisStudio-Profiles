@@ -3,121 +3,142 @@
 Repositorio oficial de perfiles para [TeXisStudio](https://github.com/GonzaloAndDev/TeXisStudio).
 
 Cada perfil define la estructura de secciones, estilo bibliografico y configuracion LaTeX
-para un tipo de documento academico segun la institucion. Se instalan desde la app en
-**Biblioteca > Comunidad**.
+para un tipo de documento academico. Se instalan desde la app en **Biblioteca > Comunidad**.
 
 ---
 
 ## Estructura del repositorio
 
 ```
-TeXisStudio-Profiles/
-├── america/
-│   ├── mexico/       mx_unam_apa7, mx_unam_vancouver, mx_tec_apa7, mx_ipn_apa7, mx_uanl_apa7, mx_udg_apa7
-│   ├── usa/          us_mit_ieee, us_harvard_apa7, us_harvard_chicago17, us_stanford_ieee, us_chicago_chicago17
-│   ├── canada/       ca_mcgill_apa7
-│   ├── brazil/       br_usp_abnt, br_unicamp_abnt
-│   ├── argentina/    ar_uba_apa7
-│   └── chile/        cl_uchile_apa7
-├── europe/
-│   ├── uk/           uk_oxford_mhra, uk_cambridge_ieee, uk_cambridge_apa7
-│   ├── germany/      de_lmu_apa7, de_tum_ieee
-│   ├── spain/        es_ucm_apa7
-│   ├── netherlands/  nl_tudelft_ieee
-│   ├── italy/        it_sapienza_apa7
-│   └── sweden/       se_kth_ieee
-├── asia/
-│   ├── china/        cn_tsinghua_gbt, cn_pku_gbt
-│   ├── japan/        jp_utokyo_ieee, jp_kyoto_apa7
-│   ├── south_korea/  kr_snu_apa7
-│   ├── singapore/    sg_nus_ieee
-│   └── india/        in_iit_bombay_ieee
-├── generic/
-│   └── generic/      generic_thesis, generic_tesina
-└── citation_styles/  apa7, vancouver, ieee, chicago17_notes, chicago17_authordate, mla9, harvard, mhra, abnt, gb7714
+<continente>/<pais>/<institucion>/
+  _institution.yaml          ← configuracion compartida de la institucion
+  <estilo>/
+    profile.yaml             ← definicion completa del perfil
+    manifest.yaml            ← metadata para la biblioteca
+```
+
+Ejemplo real:
+```
+europe/uk/oxford/
+  _institution.yaml          ← margenes, fuente, papel de Oxford
+  mhra/
+    profile.yaml
+    manifest.yaml
+europe/uk/cambridge/
+  _institution.yaml
+  ieee/
+    profile.yaml
+    manifest.yaml
+  apa7/
+    profile.yaml
+    manifest.yaml
 ```
 
 ---
 
-## Estilos bibliograficos incluidos
+## Continentes y paises disponibles
+
+| Continente | Paises |
+|---|---|
+| `america` | mexico, usa, canada, brazil, argentina, chile |
+| `europe` | uk, germany, spain, netherlands, italy, sweden |
+| `asia` | china, japan, south_korea, singapore, india |
+| `generic` | generic (sin institucion especifica) |
+
+---
+
+## Estilos bibliograficos incluidos (`citation_styles/`)
 
 | ID | Nombre | Tipo | Uso principal |
 |---|---|---|---|
-| `apa7` | APA 7 | Author-Date | Universal — psicologia, educacion, ciencias sociales |
+| `apa7` | APA 7 | Autor-Fecha | Universal — psicologia, educacion, ciencias sociales |
 | `vancouver` | Vancouver | Numerico | Medicina y ciencias de la salud |
 | `ieee` | IEEE | Numerico | Ingenieria, computacion, tecnologia |
-| `chicago17_notes` | Chicago 17 (Notas) | Notas-Bibliog. | Humanidades, historia, literatura (EE.UU./UK) |
-| `chicago17_authordate` | Chicago 17 (A-D) | Author-Date | Economia, ciencias sociales |
-| `mla9` | MLA 9 | Author-Page | Literatura, linguistica (EE.UU.) |
-| `harvard` | Harvard | Author-Date | Negocios, UK, Australia |
-| `mhra` | MHRA | Notas-Bibliog. | Humanidades Reino Unido (Oxford) |
-| `abnt` | ABNT | Author-Date | Brasil — obligatorio por ley |
-| `gb7714` | GB/T 7714 | Numerico | China — norma nacional obligatoria |
+| `chicago17_notes` | Chicago 17 (Notas) | Notas-Bibliog. | Humanidades, historia, literatura |
+| `chicago17_authordate` | Chicago 17 (A-D) | Autor-Fecha | Economia, ciencias sociales |
+| `mla9` | MLA 9 | Autor-Pagina | Literatura, linguistica |
+| `harvard` | Harvard | Autor-Fecha | Negocios, UK, Australia |
+| `mhra` | MHRA | Notas-Bibliog. | Humanidades Reino Unido |
+| `abnt` | ABNT | Autor-Fecha | Brasil — obligatorio |
+| `gb7714` | GB/T 7714 | Numerico | China — norma nacional |
 
 ---
 
-## Instalar un perfil en TeXisStudio
+## Como contribuir un perfil
 
-### Desde la app (recomendado)
+### Caso 1 — La institucion ya existe
 
-1. Abre TeXisStudio > **Biblioteca** > pestana **Comunidad**
-2. Navega: Continente > Pais > Institucion
-3. Haz clic en **Instalar**
-
-### URL directa de un perfil
+Solo necesitas crear la carpeta del nuevo estilo/carrera:
 
 ```
-https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<profile_id>.zip
+america/mexico/unam/
+  _institution.yaml          ← ya existe, no tocar
+  apa7/                      ← ya existe
+  vancouver/                 ← ya existe
+  derecho_chicago17/         ← TU NUEVA CARPETA
+    profile.yaml
+    manifest.yaml
 ```
 
-Ejemplos:
-```
-.../download/mx_unam_apa7.zip
-.../download/us_mit_ieee.zip
-.../download/uk_oxford_mhra.zip
-.../download/br_usp_abnt.zip
-```
+### Caso 2 — La institucion no existe
 
-### Catalogo completo (JSON)
-
-La app descarga este archivo para mostrar todos los perfiles y estilos:
+Crea la carpeta de la institucion con `_institution.yaml` y tu perfil:
 
 ```
-https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/catalog.json
+europe/france/sorbonne/
+  _institution.yaml          ← NUEVO: formato de la institucion
+  chicago17/
+    profile.yaml
+    manifest.yaml
 ```
 
----
+### `_institution.yaml` — formato compartido de la institucion
 
-## Contribuir un perfil
+```yaml
+id: sorbonne
+name: "Universite Paris-Sorbonne"
+acronym: "Sorbonne"
+continent: "europe"
+country: "france"
+website: "https://www.sorbonne-universite.fr"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 2.0
+  font_main: "Times New Roman"
+  font_size: 12pt
+notes: |
+  Lineamientos de la Direction des etudes doctorales.
+```
 
-1. **Fork** de este repositorio
-2. Crea la carpeta con la jerarquia correcta: `<continente>/<pais>/<id>/`
-   Ejemplo: `europe/france/fr_sorbonne_chicago17/`
-3. Agrega `profile.yaml` y `manifest.yaml` (ver esquemas abajo)
-4. Abre un **Pull Request**
-
-### `manifest.yaml` minimo
+### `manifest.yaml` de tu perfil
 
 ```yaml
 id: fr_sorbonne_chicago17
-name: "Sorbonne - These (Chicago 17)"
+name: "Sorbonne — These (Chicago 17)"
 version: "1.0.0"
 author: "Tu Nombre"
 license: "CC-BY-4.0"
-description: "These de l'Universite Paris-Sorbonne, Chicago 17."
-tags: [sorbonne, france, chicago17, humanites]
+description: "These de doctorat Sorbonne Universite, Chicago 17 Notes-Bibliography."
+tags: [sorbonne, france, chicago17, humanites, doctorat]
 texis_min_version: "1.0.0"
+institution_id: "sorbonne"
 continent: "europe"
 country: "france"
-institution: "Universite Paris-Sorbonne"
-city: "Paris"
 ```
 
-### `profile.yaml` minimo
+### `profile.yaml` de tu perfil
+
+Solo especifica lo que es especifico de esta carrera/programa.
+Los margenes, papel y fuente se heredan de `_institution.yaml`.
 
 ```yaml
 id: fr_sorbonne_chicago17
-name: "Sorbonne - These (Chicago 17)"
+name: "Sorbonne — These (Chicago 17)"
 latex_engine: xelatex
 document_class:
   name: book
@@ -138,6 +159,11 @@ sections:
     placement: front_matter
     required: true
     title: "Page de titre"
+  - id: abstract
+    element_id: abstract
+    placement: front_matter
+    required: true
+    title: "Resume"
   - id: introduction
     element_id: chapter
     placement: body
@@ -150,10 +176,47 @@ sections:
     title: Bibliographie
 ```
 
+### Pasos para contribuir
+
+1. **Fork** del repositorio
+2. Encuentra o crea la carpeta de tu institucion
+3. Crea `_institution.yaml` si la institucion es nueva
+4. Crea la carpeta del estilo/carrera con `profile.yaml` + `manifest.yaml`
+5. Abre un **Pull Request** — los perfiles verificados se agregan al catalogo
+
+---
+
+## Instalar un perfil en TeXisStudio
+
+### Desde la app
+
+1. Abre TeXisStudio > **Biblioteca** > **Comunidad**
+2. Navega: Continente > Pais > Institucion > estilo
+3. Haz clic en **Instalar**
+
+### URL directa
+
+```
+https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<manifest_id>.zip
+```
+
+Ejemplos:
+```
+.../download/mx_unam_apa7.zip
+.../download/us_mit_ieee.zip
+.../download/uk_oxford_mhra.zip
+```
+
+### Catalogo completo (JSON para la app)
+
+```
+https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/catalog.json
+```
+
 ---
 
 ## Licencia
 
 Los perfiles se distribuyen bajo **CC-BY-4.0** salvo indicacion contraria en `manifest.yaml`.
 
-Los perfiles son independientes de la licencia del software TeXisStudio (AGPL v3 + Commons Clause).
+Independientes de la licencia del software TeXisStudio (AGPL v3 + Commons Clause).

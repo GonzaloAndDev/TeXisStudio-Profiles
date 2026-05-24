@@ -1,0 +1,13 @@
+id: jp_kyoto_apa7
+name: "Kyoto University - Thesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Kyoto University thesis for humanities and social sciences, APA 7"
+tags: [kyoto, japan, apa7, humanities]
+texis_min_version: "1.0.0"
+continent: "asia"
+country: "japan"
+institution: "Kyoto University"
+city: "Kyoto"
+institution_id: "kyoto"

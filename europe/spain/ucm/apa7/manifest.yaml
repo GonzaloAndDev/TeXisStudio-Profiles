@@ -1,0 +1,13 @@
+id: es_ucm_apa7
+name: "UCM Madrid - Tesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Tesis doctoral de la Universidad Complutense de Madrid, APA 7"
+tags: [ucm, madrid, espana, apa7]
+texis_min_version: "1.0.0"
+continent: "europe"
+country: "spain"
+institution: "Universidad Complutense de Madrid"
+city: "Madrid"
+institution_id: "ucm"

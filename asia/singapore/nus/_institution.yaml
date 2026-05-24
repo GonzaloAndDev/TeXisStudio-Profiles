@@ -1,0 +1,14 @@
+id: nus
+name: "National University of Singapore"
+acronym: "NUS"
+continent: "asia"
+country: "singapore"
+website: "https://www.nus.edu.sg"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5

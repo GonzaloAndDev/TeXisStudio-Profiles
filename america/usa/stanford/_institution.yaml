@@ -1,0 +1,16 @@
+id: stanford
+name: "Stanford University"
+acronym: "Stanford"
+continent: "america"
+country: "usa"
+website: "https://www.stanford.edu"
+default_format:
+  paper: letterpaper
+  margins:
+    top: 25.4mm
+    bottom: 25.4mm
+    left: 38.1mm
+    right: 25.4mm
+  line_spacing: 2.0
+  font_main: "Times New Roman"
+  font_size: 12pt

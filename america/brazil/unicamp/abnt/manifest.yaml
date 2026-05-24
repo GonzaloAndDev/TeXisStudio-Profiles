@@ -1,0 +1,13 @@
+id: br_unicamp_abnt
+name: "UNICAMP - Dissertacao (ABNT)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Dissertacao da Universidade Estadual de Campinas, ABNT NBR 6023:2018"
+tags: [unicamp, brasil, abnt, mestrado]
+texis_min_version: "1.0.0"
+continent: "america"
+country: "brazil"
+institution: "Universidade Estadual de Campinas"
+city: "Campinas"
+institution_id: "unicamp"

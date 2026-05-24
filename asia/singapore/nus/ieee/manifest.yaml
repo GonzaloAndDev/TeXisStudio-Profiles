@@ -1,0 +1,13 @@
+id: sg_nus_ieee
+name: "NUS - Thesis (IEEE)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "National University of Singapore thesis for computing and engineering, IEEE"
+tags: [nus, singapore, ieee, engineering]
+texis_min_version: "1.0.0"
+continent: "asia"
+country: "singapore"
+institution: "National University of Singapore"
+city: "Singapore"
+institution_id: "nus"

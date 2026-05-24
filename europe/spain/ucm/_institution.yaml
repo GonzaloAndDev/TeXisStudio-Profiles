@@ -1,0 +1,16 @@
+id: ucm
+name: "Universidad Complutense de Madrid"
+acronym: "UCM"
+continent: "europe"
+country: "spain"
+website: "https://www.ucm.es"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5
+  font_main: "Times New Roman"
+  font_size: 12pt

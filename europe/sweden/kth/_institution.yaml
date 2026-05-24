@@ -1,0 +1,14 @@
+id: kth
+name: "KTH Royal Institute of Technology"
+acronym: "KTH"
+continent: "europe"
+country: "sweden"
+website: "https://www.kth.se"
+default_format:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 35mm
+    right: 25mm
+  line_spacing: 1.5

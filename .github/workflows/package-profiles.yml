@@ -1,0 +1,62 @@
+name: Empaquetar perfiles
+
+# Se ejecuta en cada push a main y genera/actualiza la release "latest"
+# con un ZIP por perfil, listo para instalar desde TeXisStudio.
+#
+# URL de descarga resultante:
+#   https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<perfil>.zip
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Crear ZIPs y publicar release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Empaquetar cada perfil como ZIP individual
+        run: |
+          mkdir -p dist
+          for dir in */; do
+            profile="${dir%/}"
+            # Solo empaqueta directorios que tienen profile.yaml
+            if [ -f "${dir}profile.yaml" ]; then
+              zip -r "dist/${profile}.zip" "${dir}"
+              echo "✓ ${profile}.zip"
+            fi
+          done
+          echo "---"
+          ls -lh dist/
+
+      - name: Eliminar release 'latest' existente (si hay)
+        run: gh release delete latest --yes || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Eliminar tag 'latest' del remoto (si hay)
+        run: git push origin :refs/tags/latest || true
+
+      - name: Publicar nueva release 'latest'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Perfiles — última versión"
+          body: |
+            Perfiles oficiales de TeXisStudio actualizados automáticamente.
+
+            **Cómo instalar:** abre TeXisStudio → Biblioteca → Comunidad,
+            o pega la URL directa en el campo personalizado.
+
+            **URLs de descarga directa:**
+            ```
+            https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<perfil>.zip
+            ```
+          files: dist/*.zip
+          make_latest: true

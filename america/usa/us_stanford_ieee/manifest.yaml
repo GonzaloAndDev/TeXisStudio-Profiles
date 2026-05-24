@@ -1,0 +1,12 @@
+id: us_stanford_ieee
+name: "Stanford - Thesis (IEEE)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Stanford thesis for engineering and computer science, IEEE style"
+tags: [stanford, usa, ieee, engineering, cs]
+texis_min_version: "1.0.0"
+continent: "america"
+country: "usa"
+institution: "Stanford University"
+city: "Stanford, CA"

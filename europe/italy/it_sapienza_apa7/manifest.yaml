@@ -1,0 +1,12 @@
+id: it_sapienza_apa7
+name: "Sapienza Roma - Tesi (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Tesi di laurea magistrale Sapienza Universita di Roma, APA 7"
+tags: [sapienza, roma, italy, apa7]
+texis_min_version: "1.0.0"
+continent: "europe"
+country: "italy"
+institution: "Sapienza Universita di Roma"
+city: "Rome"

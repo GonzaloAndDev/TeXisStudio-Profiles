@@ -1,0 +1,12 @@
+id: se_kth_ieee
+name: "KTH - Thesis (IEEE)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "KTH Royal Institute of Technology thesis for engineering and technology, IEEE"
+tags: [kth, sweden, ieee, engineering]
+texis_min_version: "1.0.0"
+continent: "europe"
+country: "sweden"
+institution: "KTH Royal Institute of Technology"
+city: "Stockholm"

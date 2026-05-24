@@ -1,0 +1,21 @@
+id: chicago17_authordate
+name: "Chicago 17 (Author-Date)"
+full_name: "Chicago Manual of Style, 17th Edition — Author-Date"
+year: 2017
+organization: "University of Chicago Press"
+official_url: "https://www.chicagomanualofstyle.org"
+type: author_date
+biblatex_style: chicago-authordate
+biblatex_options:
+  - backend=biber
+disciplines: [economics, political_science, sociology, anthropology, geography, social_sciences]
+regions_primary: [USA, Canada — social sciences programs]
+in_text_format: "(Author Year)"
+in_text_narrative: "Author (Year)"
+bibliography_title: "References"
+description: >
+  Author-Date variant of Chicago, preferred in social sciences and economics.
+  In-text citations use (Author Year) format. Required at UChicago social science
+  programs and common in economics globally.
+notes: "Often used alongside Notes-Bibliography at the same institution, depending on department."
+sort_order: 5

@@ -1,0 +1,21 @@
+id: chicago17_notes
+name: "Chicago 17 (Notes)"
+full_name: "Chicago Manual of Style, 17th Edition — Notes-Bibliography"
+year: 2017
+organization: "University of Chicago Press"
+official_url: "https://www.chicagomanualofstyle.org"
+type: notes_bibliography
+biblatex_style: verbose-note
+biblatex_options:
+  - backend=biber
+disciplines: [history, literature, arts, philosophy, religious_studies, music, film_studies]
+regions_primary: [USA, UK, Canada — humanities programs]
+in_text_format: "Footnote¹"
+in_text_narrative: "Footnote¹"
+bibliography_title: "Bibliography"
+description: >
+  Notes-Bibliography system used in humanities disciplines. Citations appear as
+  footnotes or endnotes; a full bibliography is included at the end.
+  Preferred at Harvard, UChicago, and many UK and US humanities departments.
+notes: "Dominant in history and literature programs. Oxford and Cambridge humanities also accept this style."
+sort_order: 4

@@ -1,0 +1,52 @@
+id: mx_unam_vancouver
+name: "UNAM - Ciencias de la Salud (Vancouver)"
+latex_engine: xelatex
+document_class:
+  name: book
+  options: [12pt, a4paper, oneside]
+bibliography_backend: biber
+bibliography_style: vancouver
+page_layout:
+  paper: a4paper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+sections:
+  - id: portada
+    element_id: cover
+    placement: front_matter
+    required: true
+    title: Portada
+  - id: resumen
+    element_id: abstract
+    placement: front_matter
+    required: true
+    title: Resumen
+  - id: introduccion
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Introduccion"
+  - id: materiales_metodos
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Materiales y Metodos"
+  - id: resultados
+    element_id: chapter
+    placement: body
+    required: true
+    title: Resultados
+  - id: discusion
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Discusion"
+  - id: referencias
+    element_id: bibliography
+    placement: back_matter
+    required: true
+    title: Referencias

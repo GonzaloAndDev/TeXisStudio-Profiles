@@ -1,0 +1,62 @@
+id: br_unicamp_abnt
+name: "UNICAMP - Dissertacao (ABNT)"
+latex_engine: xelatex
+document_class:
+  name: book
+  options: [12pt, a4paper, oneside]
+bibliography_backend: biber
+bibliography_style: abnt
+page_layout:
+  paper: a4paper
+  margins:
+    top: 30mm
+    bottom: 20mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+sections:
+  - id: capa
+    element_id: cover
+    placement: front_matter
+    required: true
+    title: Capa
+  - id: folha_rosto
+    element_id: title_page
+    placement: front_matter
+    required: true
+    title: "Folha de Rosto"
+  - id: resumo
+    element_id: abstract
+    placement: front_matter
+    required: true
+    title: Resumo
+  - id: abstract
+    element_id: abstract_en
+    placement: front_matter
+    required: true
+    title: Abstract
+  - id: sumario
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Sumario"
+  - id: introducao
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Introducao"
+  - id: capitulos
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Capitulos"
+  - id: conclusao
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Conclusao"
+  - id: referencias
+    element_id: bibliography
+    placement: back_matter
+    required: true
+    title: "Referencias"

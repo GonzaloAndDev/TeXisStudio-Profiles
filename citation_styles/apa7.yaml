@@ -1,0 +1,22 @@
+id: apa7
+name: "APA 7"
+full_name: "American Psychological Association, 7th Edition"
+year: 2020
+organization: "American Psychological Association"
+official_url: "https://apastyle.apa.org"
+type: author_date
+biblatex_style: apa
+biblatex_options:
+  - natbib=true
+  - uniquelist=false
+disciplines: [psychology, education, social_sciences, business, nursing, communications]
+regions_primary: [USA, Canada, Latin America, Australia]
+in_text_format: "(Author, Year)"
+in_text_narrative: "Author (Year)"
+bibliography_title: "References"
+description: >
+  The most widely used citation style globally. Required by most psychology,
+  education, and social science programs. Seventh edition (2020) introduced
+  DOI as hyperlink, up to 20 authors, and cleaner formatting rules.
+notes: "Default style for most Latin American universities. Nearly universal at bachelor/master level in Mexico."
+sort_order: 1

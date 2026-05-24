@@ -1,0 +1,20 @@
+id: vancouver
+name: "Vancouver"
+full_name: "Vancouver / ICMJE Recommendations"
+year: 2019
+organization: "International Committee of Medical Journal Editors"
+official_url: "https://www.icmje.org/recommendations"
+type: numeric
+biblatex_style: vancouver
+biblatex_options: []
+disciplines: [medicine, nursing, pharmacy, dentistry, health_sciences, biomedical_research]
+regions_primary: [Global — medical and health sciences]
+in_text_format: "[1]"
+in_text_narrative: "Smith et al. [1]"
+bibliography_title: "References"
+description: >
+  Numeric citation style mandatory for health sciences and medicine worldwide.
+  References are numbered in order of appearance. Standard for most clinical
+  and biomedical journals indexed in MEDLINE/PubMed.
+notes: "Required for UNAM medicine, IPN health programs, and most Latin American medical schools."
+sort_order: 2

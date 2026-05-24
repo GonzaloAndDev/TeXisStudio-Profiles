@@ -1,0 +1,12 @@
+id: cn_tsinghua_gbt
+name: "Tsinghua - Thesis (GB/T 7714)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Tsinghua University thesis, GB/T 7714-2015 Chinese national standard"
+tags: [tsinghua, china, gbt7714]
+texis_min_version: "1.0.0"
+continent: "asia"
+country: "china"
+institution: "Tsinghua University"
+city: "Beijing"

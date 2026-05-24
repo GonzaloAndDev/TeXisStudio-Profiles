@@ -1,0 +1,10 @@
+id: generic_tesina
+name: "Tesina Generica"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Version compacta para trabajos monograficos y tesinas"
+tags: [tesina, generico, apa]
+texis_min_version: "1.0.0"
+continent: "generic"
+country: "generic"

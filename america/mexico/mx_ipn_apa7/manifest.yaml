@@ -1,0 +1,12 @@
+id: mx_ipn_apa7
+name: "IPN - Tesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Tesis del Instituto Politecnico Nacional, lineamientos SEPI"
+tags: [ipn, politecnico, mexico, apa7, ingenieria]
+texis_min_version: "1.0.0"
+continent: "america"
+country: "mexico"
+institution: "Instituto Politecnico Nacional"
+city: "Ciudad de Mexico"

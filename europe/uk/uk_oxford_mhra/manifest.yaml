@@ -1,0 +1,12 @@
+id: uk_oxford_mhra
+name: "Oxford - Thesis (MHRA)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "University of Oxford DPhil/MSc thesis, MHRA style for humanities"
+tags: [oxford, uk, mhra, humanities]
+texis_min_version: "1.0.0"
+continent: "europe"
+country: "uk"
+institution: "University of Oxford"
+city: "Oxford"

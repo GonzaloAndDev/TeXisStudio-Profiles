@@ -1,0 +1,12 @@
+id: uk_cambridge_apa7
+name: "Cambridge - Thesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "University of Cambridge PhD thesis for social sciences and psychology, APA 7"
+tags: [cambridge, uk, apa7, social_sciences]
+texis_min_version: "1.0.0"
+continent: "europe"
+country: "uk"
+institution: "University of Cambridge"
+city: "Cambridge"

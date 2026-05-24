@@ -1,0 +1,77 @@
+id: us_chicago_chicago17
+name: "UChicago - Thesis (Chicago 17)"
+latex_engine: xelatex
+document_class:
+  name: book
+  options: [12pt, letterpaper, oneside]
+bibliography_backend: biber
+bibliography_style: chicago-authordate
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25.4mm
+    bottom: 25.4mm
+    left: 38.1mm
+    right: 25.4mm
+  line_spacing: 2.0
+sections:
+  - id: title_page
+    element_id: cover
+    placement: front_matter
+    required: true
+    title: "Title Page"
+  - id: abstract
+    element_id: abstract
+    placement: front_matter
+    required: true
+    title: Abstract
+  - id: acknowledgements
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: Acknowledgements
+  - id: table_of_contents
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Table of Contents"
+  - id: introduction
+    element_id: chapter
+    placement: body
+    required: true
+    title: Introduction
+  - id: literature_review
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Literature Review"
+  - id: methodology
+    element_id: chapter
+    placement: body
+    required: true
+    title: Methodology
+  - id: results
+    element_id: chapter
+    placement: body
+    required: true
+    title: Results
+  - id: discussion
+    element_id: chapter
+    placement: body
+    required: true
+    title: Discussion
+  - id: conclusion
+    element_id: chapter
+    placement: body
+    required: true
+    title: Conclusion
+  - id: references
+    element_id: bibliography
+    placement: back_matter
+    required: true
+    title: References
+  - id: appendices
+    element_id: appendix
+    placement: back_matter
+    required: false
+    title: Appendices

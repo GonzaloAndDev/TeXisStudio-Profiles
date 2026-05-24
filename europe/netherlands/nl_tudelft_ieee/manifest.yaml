@@ -1,0 +1,12 @@
+id: nl_tudelft_ieee
+name: "TU Delft - Thesis (IEEE)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "TU Delft MSc/PhD thesis for engineering and technology, IEEE"
+tags: [tudelft, netherlands, ieee, engineering]
+texis_min_version: "1.0.0"
+continent: "europe"
+country: "netherlands"
+institution: "Delft University of Technology"
+city: "Delft"

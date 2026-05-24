@@ -1,0 +1,77 @@
+id: mx_udg_apa7
+name: "UdeG - Tesis (APA 7)"
+latex_engine: xelatex
+document_class:
+  name: book
+  options: [12pt, letterpaper, oneside]
+bibliography_backend: biber
+bibliography_style: apa
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+sections:
+  - id: portada
+    element_id: cover
+    placement: front_matter
+    required: true
+    title: Portada
+  - id: declaracion
+    element_id: declaration
+    placement: front_matter
+    required: true
+    title: "Declaracion de Autenticidad"
+  - id: resumen
+    element_id: abstract
+    placement: front_matter
+    required: true
+    title: Resumen
+  - id: abstract
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: Abstract
+  - id: agradecimientos
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: Agradecimientos
+  - id: introduccion
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Introduccion"
+  - id: marco_teorico
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Marco Teorico"
+  - id: metodologia
+    element_id: chapter
+    placement: body
+    required: true
+    title: Metodologia
+  - id: resultados
+    element_id: chapter
+    placement: body
+    required: true
+    title: Resultados
+  - id: conclusiones
+    element_id: chapter
+    placement: body
+    required: true
+    title: Conclusiones
+  - id: referencias
+    element_id: bibliography
+    placement: back_matter
+    required: true
+    title: Referencias
+  - id: apendices
+    element_id: appendix
+    placement: back_matter
+    required: false
+    title: "Apendices"

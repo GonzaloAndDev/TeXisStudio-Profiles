@@ -1,0 +1,21 @@
+id: ieee
+name: "IEEE"
+full_name: "IEEE Citation Style"
+year: 2018
+organization: "Institute of Electrical and Electronics Engineers"
+official_url: "https://ieee.org/publications/authors/references.html"
+type: numeric
+biblatex_style: ieee
+biblatex_options:
+  - backend=biber
+disciplines: [electrical_engineering, computer_science, telecommunications, robotics, electronics, mechatronics]
+regions_primary: [Global — engineering and technology programs]
+in_text_format: "[1]"
+in_text_narrative: "Smith et al. [1]"
+bibliography_title: "References"
+description: >
+  Numeric style standard for engineering, computer science, and technology disciplines.
+  References are numbered by order of citation. Widely adopted at MIT, Stanford,
+  TU Delft, TU Munich, IIT Bombay, NUS, and virtually all engineering schools globally.
+notes: "De facto standard for engineering theses worldwide."
+sort_order: 3

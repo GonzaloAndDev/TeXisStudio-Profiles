@@ -3,8 +3,14 @@ name: Empaquetar perfiles
 # Se ejecuta en cada push a main y genera/actualiza la release "latest"
 # con un ZIP por perfil, listo para instalar desde TeXisStudio.
 #
+# Estructura del repo:
+#   <continent>/<country>/<profile_id>/profile.yaml
+#   <continent>/<country>/<profile_id>/manifest.yaml
+#
 # URL de descarga resultante:
-#   https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<perfil>.zip
+#   https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<profile_id>.zip
+# Catalogo completo:
+#   https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/catalog.json
 
 on:
   push:
@@ -21,19 +27,77 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Instalar PyYAML
+        run: pip install pyyaml --quiet
+
       - name: Empaquetar cada perfil como ZIP individual
         run: |
           mkdir -p dist
-          for dir in */; do
-            profile="${dir%/}"
-            # Solo empaqueta directorios que tienen profile.yaml
-            if [ -f "${dir}profile.yaml" ]; then
-              zip -r "dist/${profile}.zip" "${dir}"
-              echo "✓ ${profile}.zip"
+
+          # Busca profile.yaml a profundidad exacta 3: continent/country/profile_id/
+          find . -mindepth 4 -maxdepth 4 -name "profile.yaml" | while read yaml_path; do
+            profile_dir=$(dirname "$yaml_path")
+            profile_id=$(basename "$profile_dir")
+
+            # Solo empaqueta si tambien tiene manifest.yaml
+            if [ -f "${profile_dir}/manifest.yaml" ]; then
+              zip -r "dist/${profile_id}.zip" "${profile_dir#./}"
+              echo "ok ${profile_id}.zip  (${profile_dir#./})"
             fi
           done
+
+          # Empaqueta citation_styles/ como ZIP independiente si existe
+          if [ -d "citation_styles" ]; then
+            zip -r "dist/citation_styles.zip" "citation_styles/"
+            echo "ok citation_styles.zip"
+          fi
+
           echo "---"
           ls -lh dist/
+
+      - name: Generar catalogo JSON
+        run: |
+          python3 - <<'EOF'
+          import os, json, yaml
+
+          catalog = {"profiles": [], "citation_styles": []}
+
+          # Perfiles (estructura continent/country/profile_id)
+          for root, dirs, files in os.walk("."):
+              dirs.sort()
+              if "manifest.yaml" in files and "profile.yaml" in files:
+                  parts = root.lstrip("./").split(os.sep)
+                  if len(parts) == 3:
+                      continent, country, pid = parts
+                      with open(os.path.join(root, "manifest.yaml"), encoding="utf-8") as f:
+                          m = yaml.safe_load(f)
+                      m["download_url"] = (
+                          "https://github.com/GonzaloAndDev/TeXisStudio-Profiles"
+                          f"/releases/latest/download/{pid}.zip"
+                      )
+                      m["continent"] = continent
+                      m["country"] = country
+                      catalog["profiles"].append(m)
+
+          # Estilos bibliograficos
+          styles_dir = "citation_styles"
+          if os.path.isdir(styles_dir):
+              for fname in sorted(os.listdir(styles_dir)):
+                  if fname.endswith(".yaml"):
+                      with open(os.path.join(styles_dir, fname), encoding="utf-8") as f:
+                          s = yaml.safe_load(f)
+                      catalog["citation_styles"].append(s)
+
+          catalog["citation_styles"].sort(key=lambda s: s.get("sort_order", 99))
+          catalog["profiles"].sort(key=lambda p: (
+              p.get("continent",""), p.get("country",""), p.get("name","")
+          ))
+
+          with open("dist/catalog.json", "w", encoding="utf-8") as f:
+              json.dump(catalog, f, ensure_ascii=False, indent=2)
+
+          print(f"Catalogo: {len(catalog['profiles'])} perfiles, {len(catalog['citation_styles'])} estilos")
+          EOF
 
       - name: Eliminar release 'latest' existente (si hay)
         run: gh release delete latest --yes || true
@@ -47,16 +111,30 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: "Perfiles — última versión"
+          name: "Perfiles — ultima version"
           body: |
-            Perfiles oficiales de TeXisStudio actualizados automáticamente.
+            Perfiles oficiales de TeXisStudio actualizados automaticamente.
 
-            **Cómo instalar:** abre TeXisStudio → Biblioteca → Comunidad,
+            **Estructura:** Continente > Pais > Institucion
+
+            **Como instalar:** abre TeXisStudio > Biblioteca > Comunidad,
             o pega la URL directa en el campo personalizado.
 
-            **URLs de descarga directa:**
+            **Catalogo completo (JSON):**
             ```
-            https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<perfil>.zip
+            https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/catalog.json
             ```
-          files: dist/*.zip
+
+            **Descarga por perfil:**
+            ```
+            https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<profile_id>.zip
+            ```
+
+            **Estilos bibliograficos:**
+            ```
+            https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/citation_styles.zip
+            ```
+          files: |
+            dist/*.zip
+            dist/catalog.json
           make_latest: true

@@ -1,0 +1,21 @@
+id: mla9
+name: "MLA 9"
+full_name: "MLA Handbook, 9th Edition"
+year: 2021
+organization: "Modern Language Association"
+official_url: "https://www.mla.org/MLA-Style"
+type: author_page
+biblatex_style: mla
+biblatex_options:
+  - backend=biber
+disciplines: [literature, language, linguistics, film_studies, cultural_studies, rhetoric]
+regions_primary: [USA, Canada — language and literature programs]
+in_text_format: "(Author Page)"
+in_text_narrative: "Author (Page)"
+bibliography_title: "Works Cited"
+description: >
+  Standard for language, literature, and cultural studies in North America.
+  Uses parenthetical author-page citations. Ninth edition (2021) simplified
+  formatting rules and introduced more flexible source types.
+notes: "Required for literature and language programs at Harvard, Yale, and most US liberal arts colleges."
+sort_order: 6

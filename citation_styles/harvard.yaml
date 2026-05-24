@@ -1,0 +1,21 @@
+id: harvard
+name: "Harvard"
+full_name: "Harvard Referencing Style"
+year: 2021
+organization: "No single governing body — widely adopted standard"
+official_url: "https://www.bibguru.com/guides/harvard-citation-guide/"
+type: author_date
+biblatex_style: apa
+biblatex_options:
+  - backend=biber
+disciplines: [business, management, economics, social_sciences, sciences]
+regions_primary: [UK, Australia, Ireland, South Africa, parts of Europe and Latin America]
+in_text_format: "(Author Year)"
+in_text_narrative: "Author (Year)"
+bibliography_title: "References"
+description: >
+  Author-date style similar to APA, widely used in UK and Australian universities.
+  Common in business, management, and social science programs outside the USA.
+  No single authoritative manual — institutions often define their own variant.
+notes: "Often preferred over APA at European MBAs and UK social science programs."
+sort_order: 7

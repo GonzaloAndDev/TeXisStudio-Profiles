@@ -1,0 +1,21 @@
+id: mhra
+name: "MHRA"
+full_name: "Modern Humanities Research Association Style Guide, 3rd Edition"
+year: 2013
+organization: "Modern Humanities Research Association"
+official_url: "https://www.mhra.org.uk/style"
+type: notes_bibliography
+biblatex_style: verbose-note
+biblatex_options:
+  - backend=biber
+disciplines: [humanities, history, literature, philosophy, linguistics, arts]
+regions_primary: [UK, Ireland — humanities programs]
+in_text_format: "Footnote¹"
+in_text_narrative: "Footnote¹"
+bibliography_title: "Bibliography"
+description: >
+  UK humanities standard similar to Chicago Notes-Bibliography. Widely required
+  at Oxford, Cambridge, UCL, and other Russell Group universities for dissertations
+  in history, literature, and arts.
+notes: "Oxford's default style for many humanities departments. Slightly different from Chicago Notes in formatting."
+sort_order: 8

@@ -1,0 +1,12 @@
+id: us_harvard_apa7
+name: "Harvard - Thesis (APA 7)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Harvard GSAS thesis for psychology and social sciences, APA 7"
+tags: [harvard, usa, apa7, psychology]
+texis_min_version: "1.0.0"
+continent: "america"
+country: "usa"
+institution: "Harvard University"
+city: "Cambridge, MA"

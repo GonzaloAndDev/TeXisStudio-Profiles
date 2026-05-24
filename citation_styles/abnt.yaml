@@ -1,0 +1,22 @@
+id: abnt
+name: "ABNT"
+full_name: "ABNT NBR 6023:2018 — Associacao Brasileira de Normas Tecnicas"
+year: 2018
+organization: "Associacao Brasileira de Normas Tecnicas (ABNT)"
+official_url: "https://www.abnt.org.br"
+type: author_date
+biblatex_style: abnt
+biblatex_options:
+  - backend=biber
+  - compat=true
+disciplines: [all_disciplines]
+regions_primary: [Brazil — mandatory for all Brazilian university theses]
+in_text_format: "(AUTOR, Ano)"
+in_text_narrative: "Autor (Ano)"
+bibliography_title: "Referencias"
+description: >
+  Mandatory standard for all academic works submitted to Brazilian universities.
+  NBR 6023:2018 governs bibliographic references; NBR 10520:2002 governs in-text
+  citations. Required at USP, UNICAMP, UFRJ, and all federal and state universities.
+notes: "Not optional in Brazil — any thesis submitted to a Brazilian institution must use ABNT."
+sort_order: 9

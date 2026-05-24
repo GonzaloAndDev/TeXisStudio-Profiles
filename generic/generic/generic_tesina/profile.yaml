@@ -1,0 +1,47 @@
+id: generic_tesina
+name: "Tesina Generica"
+latex_engine: xelatex
+document_class:
+  name: book
+  options: [12pt, letterpaper, oneside]
+bibliography_backend: biber
+bibliography_style: apa
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+sections:
+  - id: portada
+    element_id: cover
+    placement: front_matter
+    required: true
+    title: Portada
+  - id: resumen
+    element_id: abstract
+    placement: front_matter
+    required: true
+    title: Resumen
+  - id: introduccion
+    element_id: chapter
+    placement: body
+    required: true
+    title: "Introduccion"
+  - id: desarrollo
+    element_id: chapter
+    placement: body
+    required: true
+    title: Desarrollo
+  - id: conclusiones
+    element_id: chapter
+    placement: body
+    required: true
+    title: Conclusiones
+  - id: referencias
+    element_id: bibliography
+    placement: back_matter
+    required: true
+    title: Referencias

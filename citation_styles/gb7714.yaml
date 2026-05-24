@@ -1,0 +1,21 @@
+id: gb7714
+name: "GB/T 7714"
+full_name: "GB/T 7714-2015 — Chinese National Standard for Bibliographic References"
+year: 2015
+organization: "Standardization Administration of China (SAC)"
+official_url: "https://std.samr.gov.cn"
+type: numeric
+biblatex_style: gb7714-2015
+biblatex_options:
+  - backend=biber
+disciplines: [all_disciplines]
+regions_primary: [China — mandatory for all Chinese-language academic theses]
+in_text_format: "[1]"
+in_text_narrative: "[1]"
+bibliography_title: "References / Cankaowenxian"
+description: >
+  Mandatory Chinese national standard for bibliographic references in academic works.
+  Numeric style, ordered by appearance. Required at Tsinghua, Peking University,
+  Fudan, Zhejiang, and all Chinese universities for Chinese-language theses.
+notes: "Chinese students writing English-language theses at international programs may use IEEE or APA instead."
+sort_order: 10

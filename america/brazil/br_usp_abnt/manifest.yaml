@@ -1,0 +1,12 @@
+id: br_usp_abnt
+name: "USP - Dissertacao (ABNT)"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Dissertacao de mestrado/doutorado da Universidade de Sao Paulo, ABNT NBR 6023:2018"
+tags: [usp, brasil, abnt, mestrado]
+texis_min_version: "1.0.0"
+continent: "america"
+country: "brazil"
+institution: "Universidade de Sao Paulo"
+city: "Sao Paulo"

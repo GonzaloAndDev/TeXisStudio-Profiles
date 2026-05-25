@@ -257,17 +257,19 @@
     },
     {
       "id": "us_harvard_apa7",
-      "name": "Harvard - Thesis (APA 7)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "Harvard GSAS - Dissertation (APA 7)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Harvard GSAS thesis for psychology and social sciences, APA 7",
+      "description": "Harvard GSAS dissertation for social sciences, humanities, and psychology, APA 7 — verified against official GSAS Dissertation Specifications",
       "tags": [
         "harvard",
         "usa",
         "apa7",
-        "psychology"
+        "psychology",
+        "social-sciences",
+        "humanities"
       ],
       "institution": "Harvard University",
       "country": "usa",
@@ -275,8 +277,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/usa/harvard/apa7/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://gsas.harvard.edu/academics/dissertations/prepare-submit-dissertation",
+        "https://gsas.harvard.edu/sites/default/files/GSAS-Thesis-Specifications.pdf"
+      ]
     },
     {
       "id": "us_harvard_chicago17",
@@ -304,11 +309,11 @@
     {
       "id": "us_mit_ieee",
       "name": "MIT - Thesis (IEEE)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "MIT thesis for engineering and sciences, IEEE citation style, DSpace submission",
+      "description": "MIT thesis for engineering and sciences, IEEE citation style, DSpace submission — verified against MIT Thesis Preparation Guide",
       "tags": [
         "mit",
         "usa",
@@ -322,8 +327,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/usa/mit/ieee/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://libraries.mit.edu/distinctive-collections/thesis-specs/",
+        "https://libguides.mit.edu/cite-write/thesis"
+      ]
     },
     {
       "id": "us_stanford_ieee",

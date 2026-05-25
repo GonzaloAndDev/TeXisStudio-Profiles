@@ -1,14 +1,34 @@
 schema_version: "1.0.0"
 id: us_harvard_apa7
-name: "Harvard - Thesis (APA 7)"
-status: experimental
+name: "Harvard GSAS - Dissertation (APA 7)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las Harvard GSAS Dissertation Specifications.
+# Revisar anualmente — las especificaciones se actualizan cada ciclo académico.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra Harvard GSAS Dissertation Specifications"
+  source_urls:
+    - "https://gsas.harvard.edu/academics/dissertations/prepare-submit-dissertation"
+    - "https://gsas.harvard.edu/sites/default/files/GSAS-Thesis-Specifications.pdf"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Harvard GSAS Dissertation Specifications
+# Left margin 1.5" (38.1mm) for binding; all others 1" (25.4mm).
+# Double spacing required. Font 12pt minimum.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +37,241 @@ page_layout:
     left: 38.1mm
     right: 25.4mm
   line_spacing: 2.0
+
+# ── Límites de palabras ───────────────────────────────────────────
+# Harvard GSAS: abstract máx 350 palabras (ProQuest requirement).
+# No hay límite explícito de palabras para el cuerpo; dissertations
+# típicas de PhD son 200–400 páginas (40,000–100,000 palabras).
+max_abstract_words: 350
+
 packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      The title page is auto-generated from your project metadata.
+      Harvard GSAS requires: Dissertation title, full name, degree (e.g., "Doctor of Philosophy"),
+      department/program, month and year of graduation.
+      No page number appears on the title page.
+
+  - id: copyright_page
+    element_id: declaration
+    placement: front_matter
+    required: false
+    title: "Copyright"
+    guidance: |
+      Optional but strongly recommended. Standard format:
+      "© [Year] [Full Name]. All rights reserved."
+      Or include a Creative Commons license if you prefer open access.
+      Place on the page immediately following the title page.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
     title: Abstract
+    guidance: |
+      Harvard GSAS requires the abstract to be:
+      • Maximum 350 words (ProQuest and Harvard repository requirement).
+      • Written in English.
+      • Standalone: no citations, no figures, no equations.
+      Structure: one paragraph or short paragraphs covering:
+        1. The research question or problem.
+        2. Methodology and approach.
+        3. Key findings/results.
+        4. Significance and contribution to the field.
+      The abstract is submitted separately to ProQuest Dissertations & Theses —
+      ensure it accurately represents the full dissertation.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
     title: Acknowledgements
+    guidance: |
+      Optional. Acknowledge: dissertation committee, funding sources (required if externally
+      funded — include grant numbers), colleagues, institutions, and personal support.
+      Typical length: half page to one page.
+      Funding acknowledgement example: "This work was supported by [Agency] grant #[number]."
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Generated automatically from your enabled sections.
+      Harvard GSAS requires a complete Table of Contents with page numbers.
+      Include all front matter (except the title page), body chapters, appendices, and bibliography.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: |
+      Required if the dissertation contains figures. Auto-generated from figure captions.
+      Enable this section if you have 5 or more figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Required if the dissertation contains tables. Auto-generated from table captions.
+      Enable this section if you have 5 or more tables.
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: Dedication
+    guidance: |
+      Optional personal dedication. Brief — typically 1–3 lines.
+      No heading or title is usually printed; the profile handles the formatting.
+
+  # ── Body ──────────────────────────────────────────────────────────
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      The introduction establishes the intellectual context and stakes of your dissertation. It must:
+      1. Define the research problem with precision — what gap in knowledge does this address?
+      2. Situate your work within the existing literature (brief synthesis — the full review is later).
+      3. State your research questions or hypotheses explicitly.
+      4. Describe your theoretical framework and methodological approach.
+      5. Articulate the dissertation's original contribution.
+      6. Outline the chapter structure.
+      Harvard dissertations are read by a committee of experts — they expect scholarly precision
+      from the first paragraph. Avoid starting broad; engage the specific problem immediately.
+      Length: 15–30 pages typical.
+
   - id: literature_review
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
     title: "Literature Review"
+    label: "chapter:literature"
+    guidance: |
+      The literature review demonstrates mastery of the field and positions your contribution.
+      Harvard GSAS expectations:
+      • Organize thematically or methodologically, not as a sequential summary of papers.
+      • Identify schools of thought, debates, and key theoretical divides.
+      • Critically evaluate — what each approach does and fails to do.
+      • Build explicitly toward the gap your dissertation fills.
+      • Cover major journals and recent (last 5–10 years) scholarship; foundational works can be older.
+      Use the DOI importer to add papers from Crossref. Zotero integration is available for
+      importing directly from your library.
+      Length: 30–60 pages for a humanities or social science dissertation.
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: false
+    title: "Theoretical Framework"
+    label: "chapter:theory"
+    guidance: |
+      Develop the theoretical lens through which you analyze your data or argument.
+      Explain: what theory you adopt, why it is the right tool for your research questions,
+      and how you operationalize key concepts.
+      In many disciplines this is integrated into the Literature Review or Methodology.
+      Activate as a separate chapter if your theoretical contribution is substantial.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
+    title: "Methodology"
+    label: "chapter:methodology"
+    guidance: |
+      The methodology chapter must provide enough detail for replication. Include:
+      • Research design and paradigm (positivist, interpretivist, critical, mixed).
+      • Data collection: sources, selection criteria, sample size, instruments.
+      • Data analysis: procedures, software, analytic framework, validity checks.
+      • Positionality if relevant (qualitative research).
+      • Ethical approval: if human subjects were involved, include IRB approval information.
+      • Limitations of the methodology.
+      The committee will scrutinize this chapter for rigor — be precise about choices made.
+
   - id: results
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Results
+    title: "Results / Findings"
+    label: "chapter:results"
+    guidance: |
+      Present findings objectively, without interpretation.
+      • Organize by research question or thematic cluster.
+      • Quantitative: report descriptive statistics, inferential results (p-values, effect sizes,
+        confidence intervals), tables and figures with clear captions.
+      • Qualitative: present themes with illustrative quotations; ensure anonymization.
+      • Every table and figure must be referenced in the text.
+      APA 7 citation format: use (Author, Year) throughout. Page numbers for direct quotes.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
     required: true
-    title: Discussion
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: |
+      The discussion interprets findings in relation to theory and prior literature.
+      A strong Harvard dissertation discussion:
+      • Opens by restating the research question and summarizing the key finding.
+      • Connects each finding to the existing literature (confirming, contradicting, extending).
+      • Explains unexpected results with theoretical grounding.
+      • Discusses implications: theoretical (what this means for the field) and practical.
+      • Acknowledges limitations honestly — the committee will find them anyway.
+      • Suggests specific future directions tied to the limitations you identify.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusion"
+    label: "chapter:conclusion"
+    guidance: |
+      The conclusion synthesizes the dissertation's argument and contribution.
+      • Directly answer each research question or verify each hypothesis.
+      • State the original contribution clearly — what does the field now know that it did not before?
+      • Broader implications: how does this change practice, policy, or theory?
+      • Concrete, actionable future research directions.
+      Avoid merely summarizing chapters — the committee has read them.
+      Length: 10–20 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
     title: References
+    guidance: |
+      Harvard GSAS requires a complete bibliography of all cited works.
+      APA 7 format: hanging indent, alphabetical by first author's last name.
+      Generated automatically from your .bib file at compilation.
+      Expected volume: 100–300+ references for a PhD dissertation.
+      Use the DOI importer or Zotero tab to add references directly.
+      ProQuest tip: ensure all URLs include access dates for web sources.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
     title: Appendices
+    guidance: |
+      Appendices contain supplementary material not central to the main argument:
+      • Survey instruments, interview guides, or data collection protocols.
+      • Extended data tables or additional statistical outputs.
+      • IRB approval letter and consent forms.
+      • Large code bases or algorithms (if not in the main text).
+      Label: Appendix A, Appendix B… with descriptive titles.
+      Cross-reference from the main text (see Appendix A).

@@ -285,17 +285,19 @@
     },
     {
       "id": "us_harvard_chicago17",
-      "name": "Harvard - Thesis (Chicago 17)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "Harvard GSAS - Dissertation (Chicago 17)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Harvard GSAS thesis for humanities and social sciences, Chicago 17 Notes-Bibliography",
+      "description": "Harvard GSAS dissertation for humanities and social sciences, Chicago 17 Notes-Bibliography — verified against GSAS Dissertation Specifications",
       "tags": [
         "harvard",
         "usa",
         "chicago17",
-        "humanities"
+        "humanities",
+        "history",
+        "literature"
       ],
       "institution": "Harvard University",
       "country": "usa",
@@ -303,8 +305,12 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/usa/harvard/chicago17/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://gsas.harvard.edu/academics/dissertations/prepare-submit-dissertation",
+        "https://gsas.harvard.edu/sites/default/files/GSAS-Thesis-Specifications.pdf",
+        "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html"
+      ]
     },
     {
       "id": "us_mit_ieee",
@@ -335,12 +341,12 @@
     },
     {
       "id": "us_stanford_ieee",
-      "name": "Stanford - Thesis (IEEE)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "Stanford - Dissertation (IEEE)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Stanford thesis for engineering and computer science, IEEE style",
+      "description": "Stanford ETD dissertation for engineering and computer science, IEEE style — verified against Stanford ETD Formatting Guidelines",
       "tags": [
         "stanford",
         "usa",
@@ -354,8 +360,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/usa/stanford/ieee/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://registrar.stanford.edu/current-students/graduate-students/dissertations-and-theses",
+        "https://registrar.stanford.edu/sites/default/files/dissertations-theses/formatting-guidelines.pdf"
+      ]
     },
     {
       "id": "us_chicago_chicago17",

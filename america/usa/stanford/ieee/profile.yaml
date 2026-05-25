@@ -1,81 +1,289 @@
 schema_version: "1.0.0"
 id: us_stanford_ieee
-name: "Stanford - Thesis (IEEE)"
-status: experimental
+name: "Stanford - Dissertation (IEEE)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: ieee
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las Stanford ETD Formatting Guidelines.
+# Revisar anualmente — Office of the University Registrar actualiza las guías.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra Stanford ETD Formatting Guidelines"
+  source_urls:
+    - "https://registrar.stanford.edu/current-students/graduate-students/dissertations-and-theses"
+    - "https://registrar.stanford.edu/sites/default/files/dissertations-theses/formatting-guidelines.pdf"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Stanford ETD Formatting Guidelines — Office of the University Registrar.
+# Left margin 1.5" (38.1mm) for binding; top, right, bottom 1.25" (31.75mm).
+# Spacing: double-spaced (1.5-spaced also acceptable per Stanford guidelines).
+# Font: 10–12pt; 12pt Times New Roman, Palatino, or equivalent serif recommended.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
-    top: 25.4mm
-    bottom: 25.4mm
+    top: 31.75mm
+    bottom: 31.75mm
     left: 38.1mm
-    right: 25.4mm
+    right: 31.75mm
   line_spacing: 2.0
+
+# ── Límites de palabras ───────────────────────────────────────────
+# Stanford does not set a universal body word limit.
+# Abstract: ProQuest requires ≤ 350 words for PhD, ≤ 150 for Master's.
+# Typical PhD: 100–200 pages depending on department.
+max_abstract_words: 350
+
 packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      Auto-generated from project metadata. Stanford title page must include:
+      • Full dissertation title (centered, upper half of page).
+      • Author's full legal name (as registered with the Registrar).
+      • "A dissertation submitted to the Department of [X] and the
+        Committee on Graduate Studies of Stanford University in partial
+        fulfillment of the requirements for the degree of [Doctor of Philosophy]."
+      • Month and Year (e.g., "June 2026").
+      No page number on the title page. The signature page (reading committee
+      approval) is handled separately through Axess.
+
+  - id: copyright_page
+    element_id: declaration
+    placement: front_matter
+    required: false
+    title: "Copyright"
+    guidance: |
+      Strongly recommended. Standard format:
+      "Copyright © [Year] by [Full Name]. All rights reserved."
+      Alternatively, use a Creative Commons license for open access.
+      Place on the verso of the title page. No page number.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
     title: Abstract
+    guidance: |
+      Stanford ETD requirements for the abstract:
+      • Maximum 350 words (ProQuest limit for PhD dissertations).
+      • Written in English (additional language versions may follow).
+      • Must be self-contained: no citations, no figures, no equations,
+        no undefined acronyms.
+      Structure:
+        1. One sentence stating the research problem.
+        2. Methodology and approach (2–3 sentences).
+        3. Key findings and results (2–3 sentences).
+        4. Significance and contribution to the field (1–2 sentences).
+      The abstract is submitted separately to ProQuest Dissertations & Theses
+      and indexed in Stanford SearchWorks — write it as a standalone piece.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
     title: Acknowledgements
+    guidance: |
+      Optional but standard. Acknowledge:
+      • Dissertation advisor and reading committee.
+      • Funding agencies (required if externally funded — include grant/contract
+        numbers and award numbers, e.g., NSF Award #2012345).
+      • Collaborators, lab members, and institutions.
+      Typical funding acknowledgements:
+      • NSF: "This work was supported by the National Science Foundation
+        under Grant No. [X]."
+      • DARPA: use the specific language required by the program office.
+      Typical length: half page to one page.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Generated automatically from your section headings.
+      Stanford requires a complete Table of Contents with accurate page numbers.
+      Include all front matter (abstract, acknowledgements), body chapters,
+      appendices, and bibliography.
+      Depth: chapters and major sections (levels 1–2 or 1–3 depending on complexity).
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: |
+      Required if the dissertation contains figures. Auto-generated from captions.
+      Each entry: figure number, caption (abbreviated if long), page number.
+      Enable this section if you have 5 or more figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Required if the dissertation contains tables. Auto-generated from captions.
+      Enable this section if you have 5 or more tables.
+
+  # ── Body ──────────────────────────────────────────────────────────
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
-  - id: literature_review
-    element_id: chapter
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      The introduction must establish the problem, context, and original contribution:
+      1. Problem statement: define the technical or scientific challenge precisely.
+      2. Motivation: why does it matter? (Real-world applications, fundamental
+         open questions, limitations of current state-of-the-art.)
+      3. Brief overview of related work — full treatment in the next chapter.
+      4. Dissertation statement: explicit statement of the thesis contribution
+         (what was built, proved, or discovered).
+      5. Dissertation organization: one paragraph outlining each chapter.
+      IEEE citation style: numbered [1], [2], [3] in order of first appearance.
+      Stanford engineering programs expect technical precision from the first sentence —
+      committee members are domain experts who evaluate rigor, not accessibility.
+      Length: 10–25 pages.
+
+  - id: background
+    element_id: theoretical_framework
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Background and Related Work"
+    label: "chapter:background"
+    guidance: |
+      Establish the technical foundations and prior art your dissertation builds on:
+      • Background: define key concepts, models, mathematical notation, and frameworks.
+        Be comprehensive — the committee and external reviewers assess your mastery.
+      • Related work: compare your approach to the most relevant prior work.
+        Organize by theme or approach (not chronologically), e.g., model-based methods,
+        data-driven methods, hybrid approaches.
+      • Identify explicitly what prior work does NOT achieve — this frames your gap.
+      • Every factual claim needs a citation [X]. Use the DOI importer for IEEE Xplore,
+        ACM DL, arXiv, and NeurIPS/ICML/ICLR proceedings.
+      Stanford CS/EE dissertations often cite seminal papers alongside very recent work.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
-  - id: results
-    element_id: chapter
+    title: "Proposed Approach"
+    label: "chapter:methodology"
+    guidance: |
+      The core technical contribution. Describe it with enough detail for replication:
+      • Problem formulation: precise mathematical or computational definition.
+      • System architecture or algorithm design (use block diagrams where helpful).
+      • Key design decisions and their justification — why this approach and not others.
+      • Theoretical analysis: complexity, convergence, correctness proofs, or bounds
+        (where applicable to the contribution type).
+      • Implementation notes relevant to correctness (full code listings → Appendix).
+      Stanford engineering reading committees expect formal rigor:
+      define all symbols, prove claims, and state assumptions explicitly.
+
+  - id: experiments
+    element_id: experimentation
     placement: body
     required: true
-    title: Results
+    title: "Experimental Evaluation"
+    label: "chapter:experiments"
+    guidance: |
+      Stanford committees apply a high bar for experimental rigor. This chapter must:
+      • Describe the experimental setup completely: hardware (GPU model, CPU, memory,
+        cluster configuration), datasets (with statistics), evaluation metrics,
+        baselines, and all hyperparameters.
+      • Present ablation studies to validate each major design decision.
+      • Compare against the strongest baselines — committee members will ask why
+        a particular baseline was omitted.
+      • Report results with statistical reliability: mean ± std, p-values, or
+        confidence intervals where appropriate.
+      • Include failure analysis — honest evaluation of limitations is valued.
+      Figure formatting: use vector graphics (PDF/EPS). Tables: booktabs style.
+      IEEE format: refer to figures as "Fig. X" and tables as "Table X" in text.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: |
+      Interpret results beyond the raw numbers:
+      • Why does the approach work? Provide intuition or theoretical grounding.
+      • Where and why does it fail?
+      • Scaling behavior: how does performance change with data, compute, or problem size?
+      • Broader implications for the field or for downstream applications.
+      In many Stanford engineering dissertations this chapter is merged with
+      Experimental Evaluation or Conclusion. Activate as a separate chapter when
+      the analytical depth justifies it.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusion and Future Work"
+    label: "chapter:conclusion"
+    guidance: |
+      Close with precision and honesty:
+      • Restate each thesis contribution — what the field now knows that it did not.
+      • Summarize the experimental evidence supporting each claim.
+      • Limitations: specific and honest — committees find them; address them first.
+      • Future work: concrete next steps directly tied to your limitations and
+        open questions. Avoid generic statements like "apply this to new domains."
+      Stanford dissertations frequently lead to journal publications (TPAMI, JACM,
+      IEEE Trans., JMLR). The committee will ask about publication plans —
+      address this briefly here.
+      Length: 5–15 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
     title: References
+    guidance: |
+      IEEE numbered bibliography: entries appear in order of first citation.
+      Auto-generated from your .bib file at compilation.
+      Stanford requires complete citations for all referenced work. Include:
+      • Journal papers: author(s), title, journal, vol., no., pp., month year, DOI.
+      • Conference papers: author(s), title, conference name (abbreviated), city,
+        year, pp., DOI.
+      • arXiv preprints: include arXiv ID (e.g., arXiv:2106.12345 [cs.LG])
+        and submission date.
+      • Technical reports: institution, report number, year.
+      Use the DOI importer to get properly formatted IEEE entries from Crossref.
+      Typical PhD dissertation: 100–250 references.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
     title: Appendices
+    guidance: |
+      Supplementary material that would interrupt the main narrative:
+      • Extended proofs, derivations, or mathematical details.
+      • Full algorithm listings or pseudocode that are too long for the main text.
+      • Additional experimental results: extra ablations, datasets, hyperparameter sweeps.
+      • Dataset documentation, data collection protocols, or preprocessing pipelines.
+      • Code availability: include repository URL (GitHub, Stanford Digital Repository).
+        Stanford ScholarWorks can host large supplementary files.
+      Label: Appendix A, B… with descriptive titles; cross-reference from the main text
+      (e.g., "Details of the proof appear in Appendix A").

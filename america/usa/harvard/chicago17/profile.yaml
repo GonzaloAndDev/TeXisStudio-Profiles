@@ -1,14 +1,37 @@
 schema_version: "1.0.0"
 id: us_harvard_chicago17
-name: "Harvard - Thesis (Chicago 17)"
-status: experimental
+name: "Harvard GSAS - Dissertation (Chicago 17)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: chicago-notes
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las Harvard GSAS Dissertation Specifications.
+# Chicago 17th edition Notes-Bibliography style — standard for Harvard
+# humanities programs (History, Literature, Philosophy, Religion, Classics).
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra Harvard GSAS Dissertation Specifications"
+  source_urls:
+    - "https://gsas.harvard.edu/academics/dissertations/prepare-submit-dissertation"
+    - "https://gsas.harvard.edu/sites/default/files/GSAS-Thesis-Specifications.pdf"
+    - "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Harvard GSAS Dissertation Specifications (same as APA7 variant).
+# Left margin 1.5" (38.1mm) for binding; all others 1" (25.4mm).
+# Double spacing required. Font 12pt minimum.
+# Footnotes: single-spaced, 10pt acceptable.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +40,290 @@ page_layout:
     left: 38.1mm
     right: 25.4mm
   line_spacing: 2.0
+
+# ── Límites de palabras ───────────────────────────────────────────
+# Harvard GSAS: abstract máx 350 palabras (ProQuest requirement).
+# Humanities dissertations: typically 80,000–120,000 words (body text).
+max_abstract_words: 350
+
 packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      Auto-generated from project metadata.
+      Harvard GSAS title page must include: dissertation title, author's full name,
+      degree (e.g., "Doctor of Philosophy"), department/program,
+      month and year of graduation.
+      No page number on the title page.
+
+  - id: copyright_page
+    element_id: declaration
+    placement: front_matter
+    required: false
+    title: "Copyright"
+    guidance: |
+      Optional but strongly recommended. Standard format:
+      "© [Year] [Full Name]. All rights reserved."
+      Or include a Creative Commons license for open access.
+      Immediately following the title page. No page number.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
     title: Abstract
+    guidance: |
+      Harvard GSAS requires:
+      • Maximum 350 words (ProQuest and Harvard repository requirement).
+      • Written in English.
+      • Standalone: no footnotes, no citations, no undefined terms.
+      Structure:
+        1. The central argument or intervention — state it in the first sentence.
+        2. Historical, literary, or theoretical context.
+        3. Summary of the dissertation's chapters or sections.
+        4. Significance: what does this work contribute to the field?
+      The abstract is submitted separately to ProQuest — it will be read in isolation
+      by researchers who discover the dissertation through keyword search.
+      Humanities abstracts should be argumentative, not merely descriptive.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
     title: Acknowledgements
+    guidance: |
+      Optional. Acknowledge: dissertation committee (advisor and readers),
+      archivists and librarians who facilitated access to primary sources,
+      funding agencies (required — include grant/fellowship numbers),
+      fellowships (e.g., Mellon, Whiting, ACLS, Fulbright), and personal support.
+      Typical length: half page to one full page.
+      Funding example: "This research was supported by the Mellon Foundation
+      Dissertation Completion Fellowship."
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Generated automatically. Must include all front matter (except title page),
+      all chapters (with their full titles), appendices, and bibliography.
+      The chapter titles in the Table of Contents should exactly match
+      the chapter headings — committees notice discrepancies.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures / Illustrations"
+    guidance: |
+      Required if the dissertation contains figures, maps, plates, or illustrations.
+      Auto-generated from captions. Label as "Fig." or "Illustration" consistently.
+      Especially important for art history, archaeology, and visual studies dissertations.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Required if the dissertation contains tables. Auto-generated from captions.
+      Enable if you have 5 or more tables.
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: Dedication
+    guidance: |
+      Optional. Brief — typically 1–3 lines.
+      No heading is printed; the profile handles formatting.
+
+  # ── Body ──────────────────────────────────────────────────────────
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      The introduction makes your dissertation's central argument and establishes
+      its intellectual stakes. A strong Harvard humanities introduction:
+      1. Opens with a specific scene, problem, or question — not a broad statement
+         of field. The first paragraph should announce the argument.
+      2. Defines the central intervention: what does this dissertation claim
+         that existing scholarship does not? Be explicit and confident.
+      3. Situates the work: historical period, geography, archive, corpus.
+      4. Engages the relevant literature (brief synthesis — full treatment in
+         the following chapter or integrated per chapter).
+      5. Describes the theoretical or methodological approach.
+      6. Presents the chapter structure with a paragraph per chapter summarizing
+         each chapter's argument (not just its content).
+      Chicago 17 Notes-Bibliography: citations appear as footnotes (or endnotes).
+      First citation of a work: full footnote. Subsequent: shortened form.
+      Use Ibid. only when the reference is immediately prior.
+      Length: 20–40 pages is standard for Harvard humanities dissertations.
+
   - id: literature_review
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Historiography / State of the Field"
+    label: "chapter:literature"
+    guidance: |
+      In humanities dissertations this chapter is typically called "Historiography,"
+      "State of the Field," or "Theoretical and Methodological Foundations."
+      Rename the chapter title to match your discipline's conventions.
+      Harvard GSAS expectations:
+      • Organize thematically, by school of thought, or by methodology —
+        never as a chronological summary of "what each scholar said."
+      • Identify the major interpretive debates and your position within them.
+      • Critically engage prior work: where it succeeds, where it falls short,
+        and why this dissertation's approach is necessary.
+      • Introduce the theoretical frameworks you employ (e.g., subaltern studies,
+        memory theory, critical race theory, new historicism) and justify their use.
+      • Be ruthlessly selective — cite the most significant work, not everything.
+      Chicago 17: cite primary sources and secondary literature in footnotes.
+      For archival work, introduce your primary source base here or in the next chapter.
+      Length: 20–50 pages depending on scope.
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: false
+    title: "Theoretical Framework"
+    label: "chapter:theory"
+    guidance: |
+      For dissertations with substantial theoretical investment (e.g., critical theory,
+      philosophy, literary theory, postcolonial studies).
+      Develop your theoretical lens: what framework(s) do you employ, why are they
+      appropriate for your object of study, and how do you operationalize key concepts?
+      Acknowledge the framework's limitations and potential critiques.
+      In many humanities dissertations this is woven into the Introduction or the
+      Historiography chapter — activate as a standalone chapter only when your
+      theoretical contribution is itself part of the original argument.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
+    title: "Method and Sources"
+    label: "chapter:methodology"
+    guidance: |
+      Rename to fit your discipline: "Archival Method," "Textual Analysis,"
+      "Oral History Methodology," "Material Culture and Sources," etc.
+      This chapter must address:
+      • Primary source base: what archives, collections, manuscripts, or corpora
+        did you consult? Where are they located? What are their limitations?
+      • Method of reading/interpretation: how do you analyze your sources?
+        (Close reading, discourse analysis, quantitative text analysis, oral history,
+        ethnography, etc.)
+      • Language and translation: if sources are in multiple languages, explain
+        your approach to translation and any transliteration conventions used.
+      • Positionality: how does your position as researcher affect interpretation?
+        Required for oral history and ethnographic work; appropriate for many
+        other humanities methods.
+      • Ethical considerations: IRB approval if human subjects are involved;
+        community consent for oral history archives.
+
   - id: results
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Results
+    title: "Chapter Two"
+    label: "chapter:two"
+    guidance: |
+      Rename this section to your second chapter's actual title (e.g., "The Archive
+      of Silence: Memory and State Violence, 1936–1945").
+      In humanities dissertations, body chapters present the dissertation's argument
+      through sustained engagement with primary sources. Each chapter should:
+      • Open with a clear statement of the chapter's argument and its relationship
+        to the dissertation's overall thesis.
+      • Develop a specific aspect of the larger argument through close analysis.
+      • Engage primary sources (archival documents, literary texts, images, oral
+        testimonies) in depth — not as illustration but as evidence.
+      • Engage the relevant secondary literature in footnotes or in the body text.
+      • Close by connecting the chapter's findings to the broader argument and
+        pointing forward to the next chapter.
+      Chicago 17 footnotes: use to cite, to add commentary that would interrupt
+      the main argument, or to acknowledge alternative interpretations.
+      Typical chapter length: 40–70 pages.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Chapter Three"
+    label: "chapter:three"
+    guidance: |
+      Rename to your third chapter's actual title.
+      See guidance for Chapter Two — the same structural principles apply.
+      Additional considerations for middle chapters:
+      • Each chapter must stand alone as a coherent argument and also function
+        as part of the dissertation's larger arc.
+      • Transitions between chapters matter: the conclusion of each chapter should
+        anticipate the next.
+      • Avoid repeating material from earlier chapters — assume your reader has
+        read them.
+      Activate additional chapters (Chapters Four, Five, etc.) using the Appendices
+      section or by duplicating this section. Dissertations in history and literature
+      typically have 4–6 body chapters.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusion"
+    label: "chapter:conclusion"
+    guidance: |
+      The conclusion advances the argument — it does not merely summarize the chapters.
+      A strong Harvard humanities conclusion:
+      • Restates the dissertation's central claim now enriched by the evidence
+        presented across all chapters.
+      • Synthesizes the implications: what does this argument mean for the field,
+        for related fields, or for broader public debates?
+      • Opens outward: suggests new questions, problems, or archives that this
+        dissertation reveals but does not resolve.
+      • Briefly sketches the path to publication — committees will ask which
+        chapters are being developed for journals or which press you are targeting.
+      Avoid restating chapter summaries — the committee has read the dissertation.
+      Length: 10–25 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
-    title: References
+    title: Bibliography
+    guidance: |
+      Chicago 17 Notes-Bibliography: the bibliography lists all works cited.
+      Format: hanging indent, alphabetical by author's last name.
+      Divided into sections if appropriate:
+        A. Primary Sources (by category: Archival Collections, Published Documents,
+           Newspapers and Periodicals, Oral History Interviews, etc.)
+        B. Secondary Sources (monographs, articles, dissertations, online resources)
+      Generated automatically from your .bib file at compilation.
+      Chicago 17 bibliography entries differ from footnote citations —
+      biber/biblatex-chicago handles this automatically.
+      Expected volume: 150–500 references for a PhD dissertation in humanities.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
     title: Appendices
+    guidance: |
+      Supplementary material not central to the main argument:
+      • Document transcriptions or translations (if too long for the main text).
+      • Statistical tables, data, or corpus lists.
+      • Interview transcripts or consent forms.
+      • Archival finding aids or provenance notes.
+      • Maps, genealogies, or chronologies.
+      Label: Appendix A, Appendix B… with descriptive titles.
+      Cross-reference from the main text (see Appendix A for the full list of…).

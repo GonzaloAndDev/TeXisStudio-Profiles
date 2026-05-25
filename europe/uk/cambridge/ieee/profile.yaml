@@ -1,81 +1,278 @@
 schema_version: "1.0.0"
 id: uk_cambridge_ieee
-name: "Cambridge - Thesis (IEEE)"
-status: experimental
+name: "Cambridge - PhD Thesis (IEEE)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: ieee
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las guías del Cambridge Graduate Office.
+# Misma normativa de formato que Cambridge APA7 — difiere solo en estilo
+# de citas. IEEE para Ingeniería, Ciencias de la Computación y Física.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra Cambridge Graduate Office Format Guidelines"
+  source_urls:
+    - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis"
+    - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"
+    - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/thesis-submission"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Cambridge Graduate Office — "Format your thesis".
+# Margen izquierdo mínimo 40 mm (encuadernación), restantes mínimo 20 mm.
+# Interlineado doble recomendado (1.5 aceptado).
+# Tamaño de letra: mínimo 10 pt, convencionalmente 12 pt.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
     top: 25mm
     bottom: 25mm
-    left: 35mm
+    left: 40mm
     right: 25mm
   line_spacing: 2.0
+
+# ── Límites de palabras ───────────────────────────────────────────
+# Cambridge Graduate Office — límite estándar para tesis de PhD.
+# Excluye bibliografía, apéndices, notas al pie y figuras.
+# Engineering and Technology: 65,000 words (check your department).
+# General limit: 80,000 words.
+max_words: 80000
+max_abstract_words: 300
+
 packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      Cambridge Graduate Office requires the following elements on the title page:
+      • Full thesis title.
+      • Author's full name.
+      • College name.
+      • "This dissertation is submitted for the degree of Doctor of Philosophy."
+      • Month and Year of submission (e.g., "May 2026").
+      • "This dissertation is the result of my own work and includes nothing
+        which is the outcome of work done in collaboration except as declared
+        in the Preface and specified in the text." (declaration — may go on
+        a separate page).
+      Cambridge does not have a signature page — your supervisor submits
+      approval through the CamSIS system.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
     title: Abstract
+    guidance: |
+      Cambridge Graduate Office requirements:
+      • Maximum 300 words (deposited in the Apollo repository and ProQuest).
+      • Must be in English.
+      • Self-contained: no citations, no figures, no undefined acronyms.
+      Structure for an engineering/CS thesis:
+        1. One sentence stating the research problem and its significance.
+        2. Proposed approach or methodology (2–3 sentences).
+        3. Key contributions and results (2–3 sentences with specifics).
+        4. Impact: what does the field gain from this work?
+      The abstract is submitted separately and indexed by the British Library —
+      write it as a standalone piece that conveys the novelty clearly.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
     title: Acknowledgements
+    guidance: |
+      Acknowledge: supervisor(s) and PhD committee, departmental colleagues,
+      funding bodies (mandatory — include grant numbers).
+      EPSRC, BBSRC, Wellcome Trust, Royal Society, and EU project numbers
+      must be cited verbatim as required by the funder.
+      Example: "This work was funded by the Engineering and Physical Sciences
+      Research Council (EPSRC) under grant EP/X000000/0."
+      Typical length: half to one page.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Generated automatically from section headings.
+      Cambridge requires a complete Table of Contents with accurate page numbers.
+      Depth: chapters and major sections (levels 1–3 recommended for
+      technical theses with significant internal structure).
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: |
+      Required if the thesis contains figures. Auto-generated from captions.
+      Each entry: figure number, abbreviated caption, page number.
+      Enable if you have 5 or more figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Required if the thesis contains tables. Auto-generated from captions.
+      Enable if you have 5 or more tables.
+
+  # ── Body ──────────────────────────────────────────────────────────
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
-  - id: literature_review
-    element_id: chapter
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      The introduction establishes the research problem and the thesis contribution:
+      1. Motivation: what technical or scientific problem does this thesis address?
+         Why is it significant? (Industrial, societal, or fundamental impact.)
+      2. Limitations of current approaches: brief critical review — what cannot
+         be done today that this thesis enables?
+      3. Thesis statement: explicit statement of the contributions.
+         Cambridge examiners assess novelty directly — state what is new clearly.
+      4. Dissertation organization: one short paragraph per chapter.
+      IEEE style: citations are numeric [1], [2], [3] in order of first appearance.
+      Cambridge engineering departments expect technical precision and depth from
+      the opening pages. The examiners are domain experts.
+      Length: 10–20 pages.
+
+  - id: background
+    element_id: theoretical_framework
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Background and Related Work"
+    label: "chapter:background"
+    guidance: |
+      Establish the technical foundations and survey prior art:
+      • Background: definitions, mathematical framework, models, and algorithms
+        the examiner needs to evaluate your contribution.
+      • Related work: compare approaches by theme — not by author.
+        Identify what existing methods achieve and where they fail.
+      • Explicitly state the gap: what remains unsolved and why your approach
+        is the right response to that gap.
+      • Every factual claim requires a citation [X]. Use the DOI importer
+        for IEEE Xplore, ACM Digital Library, arXiv.
+      Cambridge engineering PhDs: cite published journal and conference papers
+      (ICASSP, NeurIPS, CVPR, ICLR, etc.) and the most relevant arXiv preprints.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
-  - id: results
-    element_id: chapter
+    title: "Proposed Methodology"
+    label: "chapter:methodology"
+    guidance: |
+      The core technical contribution. Must be complete enough for replication:
+      • Problem formulation: mathematical or computational definition.
+      • System design or algorithm description (with diagrams where helpful).
+      • Theoretical analysis: complexity, convergence, correctness, or bounds.
+      • Key design choices with justification.
+      • Implementation details relevant to correctness (full listings → Appendix).
+      Cambridge examiners apply a strict standard: every claim must be stated
+      as a theorem/proposition/lemma (if formal) or as an empirically testable
+      hypothesis (if experimental). Ambiguity in the contribution is the most
+      common reason for major corrections.
+
+  - id: experiments
+    element_id: experimentation
     placement: body
     required: true
-    title: Results
+    title: "Experimental Evaluation"
+    label: "chapter:experiments"
+    guidance: |
+      Cambridge examiners evaluate experimental rigor closely. Required elements:
+      • Experimental setup: hardware (GPU model, CPU, RAM), datasets (statistics,
+        splits), baselines, evaluation metrics, and all hyperparameters.
+      • Ablation studies justifying each major design decision.
+      • Comparison against the strongest baselines — committee members know the
+        literature and will notice if a key baseline is absent.
+      • Statistical reporting: mean ± std over multiple runs, confidence intervals
+        or significance tests where appropriate.
+      • Honest failure analysis: where and why does the method fail?
+      Figure formatting: vector graphics (PDF/EPS). Tables: booktabs style.
+      IEEE: "Fig. X" and "Table X" in the text.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: |
+      Interpret the results beyond the numbers:
+      • Why does the approach work? Can you provide theoretical intuition?
+      • Where does it fail, and what does that reveal about the problem?
+      • Scalability: how does performance change with data, compute, or problem scale?
+      • Generalisability: which aspects transfer to related problems?
+      In many Cambridge engineering theses this is merged with the Experimental
+      Evaluation or the Conclusion. Activate standalone only when the analytical
+      depth warrants it.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusions and Future Work"
+    label: "chapter:conclusion"
+    guidance: |
+      Cambridge examiners read the conclusion carefully — it must match the claims
+      in the Introduction:
+      • Restate each contribution with the evidence from the thesis.
+        Do not introduce new claims here.
+      • Honest limitations: be specific about what the method cannot do.
+      • Future work: concrete, specific directions tied to limitations and
+        open questions.
+      • Publications arising from the thesis: list any papers published or under
+        review. Cambridge examiners require this.
+      Length: 5–15 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
     title: References
+    guidance: |
+      IEEE numbered bibliography: entries in order of first citation.
+      Auto-generated from your .bib file at compilation.
+      Cambridge requires complete citations. Include:
+      • Journal papers: author(s), title, journal, vol., no., pp., year, DOI.
+      • Conference papers: author(s), title, proceedings (abbreviated), city,
+        year, pp., DOI.
+      • arXiv: author(s), title, arXiv:XXXX.XXXXX [field], year.
+      Use the DOI importer to obtain correctly formatted IEEE entries from Crossref.
+      Typical Cambridge engineering PhD: 100–250 references.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
     title: Appendices
+    guidance: |
+      Technical material that would interrupt the main narrative:
+      • Extended proofs or derivations.
+      • Full algorithm listings or pseudocode.
+      • Additional experimental results and ablations.
+      • Dataset documentation or preprocessing pipelines.
+      • Code availability: repository URL (GitHub, Zenodo, etc.).
+        The British Library requires data availability statements.
+      Label: Appendix A, B… with descriptive titles; cross-reference from the text.

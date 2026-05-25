@@ -1,14 +1,35 @@
 schema_version: "1.0.0"
 id: de_tum_ieee
 name: "TU Munich - Dissertation (IEEE)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: ieee
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las directrices de la TUM Graduate School
+# (Promotionsbüro) para dissertaciones doctorales.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra TUM Graduate School Doctoral Procedure"
+  source_urls:
+    - "https://www.gs.tum.de/en/graduate-school/doctoral-studies/doctoral-procedure/"
+    - "https://www.gs.tum.de/en/graduate-school/doctoral-studies/thesis-submission/"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: TUM Promotionsbüro — doctoral thesis formatting requirements.
+# Left margin 35 mm (binding), right/top/bottom 25 mm.
+# Spacing: 1.5 (standard at TUM; some faculties require 2.0).
+# Font: 11–12pt; Times New Roman or equivalent serif.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
@@ -17,65 +38,228 @@ page_layout:
     left: 35mm
     right: 25mm
   line_spacing: 1.5
+
+# ── Límites de palabras ───────────────────────────────────────────
+# TUM does not impose a universal word limit.
+# Typical engineering/CS PhD: 100–200 pages.
+# Abstract (Zusammenfassung + Summary): typically 250–500 words each.
+max_abstract_words: 500
+
 packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
-  - id: abstract
+    guidance: |
+      The TUM title page must include:
+      • TUM logo (Technische Universität München).
+      • Full dissertation title (in the language of the thesis).
+      • Author's full name.
+      • "Vollständiger Abdruck der von der [Fakultät / School of X] der
+        Technischen Universität München zur Erlangung des akademischen Grades
+        eines Doktors der [Ingenieurwissenschaften / Naturwissenschaften / etc.]
+        genehmigten Dissertation."
+      • Vorsitzende(r) der Prüfungskommission and Prüfer der Dissertation
+        (supervisor(s) and committee — listed with name and TUM chair/affiliation).
+      • "Die Dissertation wurde am [date] bei der Technischen Universität
+        München eingereicht und durch die [Fakultät] am [date] angenommen."
+      Verify the exact German wording with the Promotionsbüro of your faculty —
+      TUM Schools have slightly different formulations.
+
+  - id: zusammenfassung
     element_id: abstract
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Zusammenfassung (Abstract auf Deutsch)"
+    guidance: |
+      TUM requires an abstract in German (Zusammenfassung) for all doctoral theses,
+      even if the thesis is written in English. Typically 250–500 words.
+      Structure (structured abstract):
+        1. Problemstellung: was ist das wissenschaftliche oder technische Problem?
+        2. Ansatz und Methodik: wie wurde das Problem angegangen?
+        3. Ergebnisse: wichtigste Ergebnisse (mit konkreten Zahlen oder Befunden).
+        4. Bedeutung: was trägt die Arbeit zum Forschungsfeld bei?
+
+  - id: abstract_english
+    element_id: abstract_en
+    placement: front_matter
+    required: true
+    title: "Summary (Abstract in English)"
+    guidance: |
+      TUM also requires an English abstract (Summary) for all doctoral theses.
+      Typically 250–500 words. Self-contained: no citations, no undefined acronyms.
+      Structure:
+        1. Research problem and its significance.
+        2. Proposed approach and methodology.
+        3. Key results and contributions.
+        4. Impact: what the field gains from this work.
+      The Summary is submitted to ProQuest and the TUM library catalog.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
     title: Acknowledgements
+    guidance: |
+      Optional but standard. Acknowledge: doctoral supervisor (Betreuer) and
+      committee members (Prüfungskommission), DFG, BMBF, EU Horizon, DAAD,
+      or industry partners (with project/grant numbers).
+      Example: "This work was funded by the Deutsche Forschungsgemeinschaft
+      (DFG) under project number [XXX-XXXXXX]."
+      Typical length: half to one page.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Generated automatically. Must include all front matter, body chapters,
+      appendices, and bibliography, with accurate page numbers.
+      TUM engineering theses often include a "List of Symbols and Abbreviations"
+      (Symbolverzeichnis) — enable the Nomenclature section if needed.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: |
+      Required if the thesis contains figures. Auto-generated. Enable for 5+.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Required if the thesis contains tables. Auto-generated. Enable for 5+.
+
+  # ── Body ──────────────────────────────────────────────────────────
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
-  - id: literature_review
-    element_id: chapter
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      The introduction must establish the research problem, context, and contribution:
+      1. Motivation: what technical or industrial problem does this thesis address?
+         TUM has strong industry links — practical relevance is valued alongside
+         fundamental contributions.
+      2. Problem statement: clear, specific, and bounded.
+      3. Limitations of existing approaches: what cannot be done today?
+      4. Thesis contributions: list explicitly.
+      5. Chapter overview: one paragraph per chapter.
+      IEEE: numeric citations [1], [2] in order of first appearance.
+      Length: 10–20 pages.
+
+  - id: background
+    element_id: theoretical_framework
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Background and Related Work"
+    label: "chapter:background"
+    guidance: |
+      Technical foundations and state of the art:
+      • Background: mathematical framework, core concepts, and prior models.
+      • Related work: organized by technical approach, not by chronology.
+        Identify what prior methods achieve and where they fail.
+      • Explicitly state the gap that this thesis fills.
+      • Every factual claim needs a citation [X].
+      TUM dissertations frequently cite IEEE Transactions, ACM journals,
+      conference proceedings (ICASSP, CVPR, NeurIPS, ICLR), and VDI/DIN standards.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
-  - id: results
-    element_id: chapter
+    title: "Proposed Approach"
+    label: "chapter:methodology"
+    guidance: |
+      Core technical contribution with full reproducibility:
+      • Problem formulation: mathematical or formal definition.
+      • System design or algorithm description (with block diagrams).
+      • Theoretical analysis: complexity, bounds, or convergence proofs.
+      • Key design decisions and their justification.
+      • Implementation details relevant to correctness.
+      TUM technical committees (Prüfungskommission) include external expert
+      examiners — the contribution must be unambiguously stated and proven.
+
+  - id: experiments
+    element_id: experimentation
     placement: body
     required: true
-    title: Results
+    title: "Experimental Evaluation"
+    label: "chapter:experiments"
+    guidance: |
+      TUM committees apply strong experimental standards. Include:
+      • Experimental setup: hardware, software environment, datasets, baselines,
+        metrics, and hyperparameters.
+      • Ablation studies for each major design decision.
+      • Comparison to the strongest relevant baselines.
+      • Statistical significance: report mean ± std, or confidence intervals.
+      • Failure analysis.
+      Industry relevance: if the thesis has industrial motivation, include
+      evaluation on realistic or industry-standard benchmarks.
+      IEEE: "Fig. X" and "Table X" in text. Vector graphics for all plots.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: |
+      Interpret results beyond raw numbers:
+      • Why does the proposed approach work?
+      • Where does it fail? Honest failure analysis.
+      • Industrial applicability and scalability.
+      • Comparison to the state of the art in the broader context.
+      Often merged with Experimental Evaluation or Conclusion in TUM theses.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusion and Outlook"
+    label: "chapter:conclusion"
+    guidance: |
+      Close with precision:
+      • Restate contributions — what the field now knows because of this thesis.
+      • Summarize key experimental results supporting each contribution.
+      • Limitations: specific and honest.
+      • Outlook (Ausblick): concrete future research directions.
+      • List publications arising from the thesis (Veröffentlichungen im Rahmen
+        dieser Arbeit) — TUM Promotionsbüro may require a publications list.
+      Length: 5–15 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
     title: References
+    guidance: |
+      IEEE numbered bibliography in order of first citation.
+      Auto-generated from your .bib file. Include DOIs for all available entries.
+      TUM accepts arXiv preprints — include arXiv ID and submission date.
+      Expected volume: 80–200 references for an engineering PhD.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
     title: Appendices
+    guidance: |
+      Supplementary technical material:
+      • Extended proofs or mathematical derivations.
+      • Full algorithm listings.
+      • Additional experimental results.
+      • Dataset descriptions and preprocessing pipelines.
+      • Code availability: GitHub/GitLab URL or TUM Data Repository.
+      Label: Appendix A, B… Cross-reference from the main text.

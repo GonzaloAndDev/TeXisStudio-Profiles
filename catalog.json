@@ -590,11 +590,11 @@
     {
       "id": "de_tum_ieee",
       "name": "TU Munich - Dissertation (IEEE)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Technische Universitaet Muenchen dissertation for engineering, IEEE",
+      "description": "TUM doctoral dissertation for engineering and natural sciences — IEEE style, Zusammenfassung + Summary required, verified against TUM Graduate School guidelines",
       "tags": [
         "tum",
         "munich",
@@ -608,8 +608,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/europe/germany/tum/ieee/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.gs.tum.de/en/graduate-school/doctoral-studies/doctoral-procedure/",
+        "https://www.gs.tum.de/en/graduate-school/doctoral-studies/thesis-submission/"
+      ]
     },
     {
       "id": "it_sapienza_apa7",
@@ -636,17 +639,18 @@
     },
     {
       "id": "nl_tudelft_ieee",
-      "name": "TU Delft - Thesis (IEEE)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "TU Delft - Dissertation (IEEE)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "TU Delft MSc/PhD thesis for engineering and technology, IEEE",
+      "description": "TU Delft doctoral dissertation for engineering — IEEE style, Stellingen (propositions), Summary + Samenvatting, verified against TU Delft Promotiereglement",
       "tags": [
         "tudelft",
         "netherlands",
         "ieee",
-        "engineering"
+        "engineering",
+        "stellingen"
       ],
       "institution": "Delft University of Technology",
       "country": "netherlands",
@@ -654,8 +658,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/europe/netherlands/tudelft/ieee/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.tudelft.nl/en/education/phd",
+        "https://www.tudelft.nl/over-tu-delft/strategie/integriteitsbeleid/wetenschappelijke-integriteit/promoties"
+      ]
     },
     {
       "id": "es_ucm_apa7",
@@ -734,17 +741,18 @@
     },
     {
       "id": "uk_cambridge_ieee",
-      "name": "Cambridge - Thesis (IEEE)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "Cambridge - PhD Thesis (IEEE)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "University of Cambridge PhD thesis for engineering and natural sciences, IEEE",
+      "description": "University of Cambridge PhD thesis for engineering and natural sciences — IEEE style, A4, 40mm left margin, 80k word limit, verified against Cambridge Graduate Office guidelines",
       "tags": [
         "cambridge",
         "uk",
         "ieee",
-        "engineering"
+        "engineering",
+        "phd"
       ],
       "institution": "University of Cambridge",
       "country": "uk",
@@ -752,8 +760,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/europe/uk/cambridge/ieee/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis",
+        "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"
+      ]
     },
     {
       "id": "uk_oxford_mhra",

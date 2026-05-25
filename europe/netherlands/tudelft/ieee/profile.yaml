@@ -1,14 +1,37 @@
 schema_version: "1.0.0"
 id: nl_tudelft_ieee
-name: "TU Delft - Thesis (IEEE)"
-status: experimental
+name: "TU Delft - Dissertation (IEEE)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: ieee
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra el TU Delft Promotiereglement (doctoral regulations)
+# y las directrices de la TU Delft Graduate School.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra TU Delft Promotiereglement"
+  source_urls:
+    - "https://www.tudelft.nl/en/education/phd"
+    - "https://www.tudelft.nl/over-tu-delft/strategie/integriteitsbeleid/wetenschappelijke-integriteit/promoties"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# TU Delft PhD dissertations are typically printed in a custom format
+# (often 170×240 mm), but the standard A4 format is accepted for the
+# digital submission. Printed binding dissertations use a specific
+# TU Delft corporate style — consult the TU Delft PhD guide for print specs.
+# Left margin 35 mm (binding), right 25 mm, top/bottom 25 mm.
+# Spacing: 1.5 standard.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
@@ -17,65 +40,254 @@ page_layout:
     left: 35mm
     right: 25mm
   line_spacing: 1.5
+
+# ── Límites de palabras ───────────────────────────────────────────
+# TU Delft does not impose a standard word limit.
+# Typical engineering/CS PhD: 100–200 pages, excluding appendices.
+# Summary: typically 1–2 pages (500–1000 words) in English.
+# Samenvatting: 1–2 pages in Dutch.
+max_abstract_words: 500
+
 packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
-  - id: abstract
+    guidance: |
+      TU Delft has a mandatory title page format. Include:
+      • Full dissertation title and subtitle (if any).
+      • "Proefschrift" (dissertation in Dutch) or "Dissertation" in English.
+      • "ter verkrijging van de graad van doctor aan de Technische Universiteit
+        Delft, op gezag van de Rector Magnificus [name], voorzitter van het
+        College voor Promoties, in het openbaar te verdedigen op [day], [date]
+        om [time] uur."
+        (Dutch: for obtaining the degree of doctor at TU Delft)
+      • Author's full name, born in [city, country].
+      • TU Delft logo (required in the official format).
+      The committee page (Samenstelling promotiecommissie) immediately follows
+      the title page and lists: Rector Magnificus (voorzitter), Promotor(en),
+      and all committee members with their affiliations.
+      Contact the TU Delft Graduate School for the exact current wording.
+
+  - id: propositions
+    element_id: declaration
+    placement: front_matter
+    required: false
+    title: "Propositions (Stellingen)"
+    guidance: |
+      The Stellingen (Propositions) are a defining feature of Dutch PhD dissertations.
+      TU Delft requires 10 propositions accompanying the dissertation, submitted
+      separately but printed as a loose sheet distributed at the defence.
+      Requirements:
+      • 10 propositions total.
+      • At least 5 must be directly related to the dissertation topic.
+      • The remaining propositions may be from the candidate's field or broader
+        academic/societal topics (these stimulate discussion at the defence).
+      • Must be approved by the promotor(s) before submission.
+      Note: in TeXisStudio, the propositions are authored separately and not
+      compiled into the main PDF — use this section for drafting only.
+
+  - id: summary
+    element_id: abstract_en
+    placement: front_matter
+    required: true
+    title: "Summary"
+    guidance: |
+      English summary of the dissertation. Required by TU Delft for all PhD theses.
+      Typically 1–2 pages (500–1000 words).
+      Structure:
+        1. Research problem and motivation.
+        2. Approach and methodology.
+        3. Key findings and contributions.
+        4. Significance for the field.
+      The summary appears in the thesis and is submitted to the TU Delft
+      repository (Institutional Repository) and ProQuest.
+
+  - id: samenvatting
     element_id: abstract
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Samenvatting (Summary in Dutch)"
+    guidance: |
+      Dutch summary of the dissertation. Required by TU Delft for all PhD theses,
+      even if the thesis is written in English.
+      Same structure and length as the English Summary.
+      If Dutch is not your first language, it is standard to have a native speaker
+      check the Samenvatting before submission.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Acknowledgements
+    title: "Acknowledgements / Dankwoord"
+    guidance: |
+      Optional but almost universal in Dutch dissertations. Can be written
+      in English ("Acknowledgements"), Dutch ("Dankwoord"), or both.
+      Acknowledge: promotor(en) and committee members (copromotor), departmental
+      colleagues, NWO, STW (TTW), EU Horizon, ERC, or industrial partners
+      (with project/grant reference numbers).
+      The Dankwoord is often the most-read section — write it with care.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Generated automatically. Must include all front matter, body chapters,
+      appendices, bibliography, summary, and samenvatting.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: |
+      Auto-generated from figure captions. Enable for 5 or more figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Auto-generated from table captions. Enable for 5 or more tables.
+
+  # ── Body ──────────────────────────────────────────────────────────
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
-  - id: literature_review
-    element_id: chapter
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      The introduction establishes the research challenge and the dissertation's
+      contribution:
+      1. Context and motivation: what problem does this thesis address and why
+         does it matter? (Scientific, engineering, or societal relevance.)
+      2. Limitations of existing approaches: what cannot be done today?
+      3. Research questions or objectives: explicitly stated.
+      4. Contributions: list with precision.
+      5. Thesis outline: one paragraph per chapter.
+      IEEE: numeric citations [1], [2] in order of appearance.
+      TU Delft engineering committees expect both technical rigor and clarity
+      about the societal relevance of the work ("valorisation").
+      Length: 10–20 pages.
+
+  - id: background
+    element_id: theoretical_framework
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Background and Literature Review"
+    label: "chapter:background"
+    guidance: |
+      Technical foundations and survey of prior art:
+      • Background: mathematical models, algorithms, and frameworks needed to
+        evaluate your contribution.
+      • Literature review: organized by approach or mechanism — not chronologically.
+        Identify what existing methods achieve and where they fall short.
+      • Gap statement: what remains unsolved and why your approach addresses it.
+      TU Delft PhD theses frequently appear in high-impact journals (IEEE Trans.,
+      Nature Electronics, etc.) prior to or after dissertation submission.
+      Cite the most recent relevant work from IEEE Xplore, ACM DL, arXiv.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
-  - id: results
-    element_id: chapter
+    title: "Proposed Approach"
+    label: "chapter:methodology"
+    guidance: |
+      Core technical contribution with full reproducibility:
+      • Problem formulation: precise mathematical or computational definition.
+      • System design or algorithm (with block diagrams or pseudocode).
+      • Theoretical analysis: complexity, bounds, or convergence.
+      • Design decisions and their justification.
+      • Implementation details relevant to correctness.
+      TU Delft promotiecommissies are typically 5–8 experts including external
+      (outside TU Delft) and international members — the contribution must be
+      clearly and rigorously stated.
+
+  - id: experiments
+    element_id: experimentation
     placement: body
     required: true
-    title: Results
+    title: "Experimental Evaluation"
+    label: "chapter:experiments"
+    guidance: |
+      Experimental rigor is expected by TU Delft committees. Include:
+      • Experimental setup: hardware, datasets (with statistics), baselines,
+        metrics, and hyperparameters.
+      • Ablation studies for major design decisions.
+      • Comparison against the strongest relevant baselines.
+      • Statistical reliability: mean ± std, confidence intervals, or
+        significance tests across multiple runs.
+      • Honest failure analysis.
+      TU Delft values both fundamental results and practical applicability.
+      Include validation on real-world or industrially relevant benchmarks
+      where your research has practical motivation.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: |
+      Interpret results in broader context:
+      • Why does the method work? Theoretical intuition.
+      • Where and why does it fail?
+      • Scalability and generalisability.
+      • Industrial or societal implications.
+      Often merged with Experimental Evaluation in TU Delft engineering theses.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusions and Recommendations"
+    label: "chapter:conclusion"
+    guidance: |
+      Close with precision:
+      • Restate each contribution with supporting evidence.
+      • Limitations: specific and honest.
+      • Recommendations (aanbevelingen): concrete future research directions
+        tied to your open questions and limitations.
+      • Valorisation: TU Delft encourages a brief note on the societal and
+        economic value of the research (relevant for industry-funded PhDs).
+      • List publications arising from the thesis — required for the TU Delft
+        repository record.
+      Length: 5–15 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
     title: References
+    guidance: |
+      IEEE numbered bibliography in order of first citation.
+      Auto-generated from your .bib file. Include DOIs for all available entries.
+      TU Delft dissertations frequently include highly cited publications from
+      IEEE Xplore, ACM, and Nature family journals.
+      Typical volume: 100–250 references.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
     title: Appendices
+    guidance: |
+      Supplementary technical material:
+      • Extended proofs or derivations.
+      • Full algorithm listings or pseudocode.
+      • Additional experimental results.
+      • Dataset documentation.
+      • Code and data availability: GitHub URL or TU Delft repository (4TU.ResearchData).
+      TU Delft has a data management policy — ensure datasets are deposited
+      in an approved repository (4TU.ResearchData, Zenodo, etc.) before submission.
+      Label: Appendix A, B… Cross-reference from the main text.

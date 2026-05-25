@@ -1,14 +1,33 @@
 schema_version: "1.0.0"
 id: mx_ipn_apa7
 name: "IPN - Tesis (APA 7)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra lineamientos de la Secretaría de Investigación
+# y Posgrado (SIP) y la COFAA del Instituto Politécnico Nacional.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra lineamientos SIP-IPN y COFAA"
+  source_urls:
+    - "https://www.sip.ipn.mx/posgrado/titulacion"
+    - "https://www.ipn.mx/posgrado/"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# IPN: papel carta, márgenes estándar LATAM (izq 3 cm, resto 2-2.5 cm).
+# Interlineado: 1.5. Fuente: Times New Roman 12pt.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +36,162 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
+
+max_abstract_words: 350
+
 packages: []
+
 sections:
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      La portada oficial del IPN incluye:
+      • Logotipo del IPN y del Centro o Escuela (CINVESTAV, ESIME, UPIITA, etc.).
+      • Nombre completo del Centro o Escuela.
+      • Título completo de la tesis.
+      • "TESIS que para obtener el grado de [Maestro/Doctor] en Ciencias con
+        especialidad en [área], PRESENTA:"
+      • Nombre del autor.
+      • Nombre del director de tesis y adscripción.
+      • Ciudad de México / [Ciudad], [Mes] [Año].
+      Cada unidad académica del IPN puede tener un formato de portada específico —
+      verifica con la Secretaría Académica de tu Centro.
+
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaracion de Autenticidad"
+    title: "Declaración de Autenticidad"
+    guidance: |
+      El IPN exige una declaración de originalidad. La SIP puede requerir
+      además un Acta de No Adeudo y certificación del Comité Tutorial.
+      Verifica los documentos específicos que requiere tu centro/escuela.
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
-  - id: abstract
+    title: "Resumen"
+    guidance: |
+      Resumen en español, 200–350 palabras.
+      Problema, metodología, resultados y aportación. Palabras clave (4–6).
+
+  - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: Abstract
+    title: "Abstract"
+    guidance: |
+      Abstract en inglés. Recomendado para tesis con publicación internacional.
+      Máximo 350 palabras. Keywords (4–6).
+
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Agradecimientos
+    title: "Agradecimientos"
+    guidance: |
+      Reconoce al director de tesis, comité tutorial, becas SIP/IPN,
+      CONACYT/CONAHCYT (con número de beca), COFAA, y proyectos de investigación
+      del Centro (clave SIP del proyecto).
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice General"
+    guidance: Generado automáticamente. Incluye todos los capítulos, anexos y referencias.
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Índice de Figuras"
+    guidance: Activa si tienes 5 o más figuras.
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Índice de Tablas"
+    guidance: Activa si tienes 5 o más tablas.
+
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción"
+    label: "capitulo:introduccion"
+    guidance: |
+      Contextualización del problema, planteamiento, justificación,
+      preguntas de investigación, objetivos, hipótesis y estructura.
+      El IPN tiene perfil politécnico — si tu investigación tiene
+      aplicación tecnológica, describe la relevancia ingenieril o industrial.
+
   - id: marco_teorico
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teorico"
+    title: "Marco Teórico y Estado del Arte"
+    label: "capitulo:marcoteorico"
+    guidance: |
+      Fundamentos teóricos y revisión crítica del estado del arte.
+      Organiza por temas o enfoques técnicos.
+      Identifica el vacío que justifica tu investigación.
+      APA 7: (Autor, año) en el texto.
+
   - id: metodologia
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Metodologia
+    title: "Metodología"
+    label: "capitulo:metodologia"
+    guidance: |
+      Diseño de investigación, herramientas y equipos utilizados,
+      procedimiento experimental o de análisis, validación y
+      consideraciones éticas si aplica.
+
   - id: resultados
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Resultados
+    title: "Resultados"
+    label: "capitulo:resultados"
+    guidance: |
+      Hallazgos objetivos organizados por objetivo específico.
+      Tablas y figuras APA 7. Sin interpretación en este capítulo.
+
+  - id: discusion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+    label: "capitulo:discusion"
+    guidance: Interpretación de resultados, comparación con literatura y limitaciones.
+
   - id: conclusiones
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusiones
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: |
+      Responde objetivos, resume aportaciones originales,
+      señala limitaciones y propone trabajo futuro.
+
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: APA 7ª edición, lista alfabética, sangría francesa, DOI cuando disponible.
+
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apendices"
+    title: "Apéndices"
+    guidance: Datos adicionales, código fuente, planos o diagramas técnicos.

@@ -1,14 +1,34 @@
 schema_version: "1.0.0"
 id: mx_tec_apa7
 name: "Tec de Monterrey - Tesis (APA 7)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las Normas de Titulación del Tec de Monterrey
+# (Vicerrectoría Académica / Escuela de Posgrado).
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra Normas de Titulación Tec de Monterrey"
+  source_urls:
+    - "https://serviciosescolares.tec.mx/PostgradoYEd/titulacion"
+    - "https://normatec.itesm.mx/"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Tec de Monterrey: papel carta, márgenes 1" (25.4mm) todos excepto
+# izquierdo 3 cm (encuadernación). Interlineado doble (APA style).
+# Fuente: Times New Roman o Arial 12pt.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +37,173 @@ page_layout:
     left: 30mm
     right: 25.4mm
   line_spacing: 2.0
+
+max_abstract_words: 350
+
 packages: []
+
 sections:
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      La portada del Tec debe incluir:
+      • Logotipo del Tecnológico de Monterrey.
+      • Escuela o Departamento correspondiente.
+      • Título completo de la tesis.
+      • "TESIS presentada como requisito parcial para obtener el grado de
+        [Maestro en / Doctor en] [Nombre del programa]."
+      • Nombre completo del autor.
+      • Nombre del asesor principal y co-asesor (si aplica).
+      • "Monterrey, Nuevo León / [Campus], [Mes] [Año]."
+      Descarga la plantilla de portada oficial de tu programa en el portal
+      de titulación del Tec — el formato varía por escuela.
+
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaracion de Autenticidad"
+    title: "Declaración de Integridad Académica"
+    guidance: |
+      El Tec de Monterrey exige una Declaración de Integridad Académica
+      (Academic Integrity Statement). Texto estándar:
+      "El autor del presente trabajo declara que, a su leal saber y entender,
+      éste es trabajo original y no existe plagio alguno, en el sentido
+      establecido por las normas del Tec de Monterrey."
+      El Tec utiliza herramientas de detección de plagio (Turnitin) — el porcentaje
+      de similitud aceptable es el definido por tu programa (típicamente < 15%).
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
-  - id: abstract
+    title: "Resumen"
+    guidance: |
+      Resumen en español, 150–350 palabras.
+      Incluye: pregunta de investigación, metodología, hallazgos principales
+      y aportación al campo. Al final: Palabras clave (4–6).
+      Autocontenido: sin citas, sin figuras, sin acrónimos no definidos.
+
+  - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: Abstract
+    title: "Abstract"
+    guidance: |
+      Abstract en inglés. Requerido en programas internacionales del Tec.
+      Máximo 350 palabras. Misma estructura que el Resumen.
+      El Tec tiene programas en inglés (EGADE, CITEM, etc.) que pueden requerir
+      que toda la tesis esté en inglés — verifica con tu coordinación.
+
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Agradecimientos
+    title: "Agradecimientos"
+    guidance: |
+      Opcional. Reconoce al asesor, miembros del comité y a las fuentes
+      de financiamiento. Si recibiste beca CONAHCYT, Tec o empresa patrocinadora,
+      menciona el número de beca o convenio.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Tabla de Contenido"
+    guidance: Generado automáticamente con números de página exactos.
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Lista de Figuras"
+    guidance: Activa si tienes 5 o más figuras. APA 7.
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Lista de Tablas"
+    guidance: Activa si tienes 5 o más tablas. APA 7.
+
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción"
+    label: "capitulo:introduccion"
+    guidance: |
+      Contextualización, planteamiento del problema, justificación, preguntas
+      de investigación, objetivos, hipótesis (si aplica) y estructura de la tesis.
+      El Tec valora la relevancia aplicada: explica el impacto práctico o de negocio
+      del problema que abordas.
+      Extensión típica: 10–20 páginas.
+
   - id: marco_teorico
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teorico"
+    title: "Marco Teórico"
+    label: "capitulo:marcoteorico"
+    guidance: |
+      Fundamentos conceptuales y revisión crítica de la literatura.
+      Organiza por temas o enfoques — no como resumen secuencial de autores.
+      Identifica el vacío que justifica tu investigación.
+      APA 7: (Autor, año) en el texto.
+
   - id: metodologia
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Metodologia
+    title: "Metodología"
+    label: "capitulo:metodologia"
+    guidance: |
+      Diseño de investigación, muestra, instrumentos, procedimiento,
+      análisis estadístico y consideraciones éticas.
+      El Tec valora métodos mixtos y estudios de caso corporativos.
+
   - id: resultados
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Resultados
+    title: "Resultados"
+    label: "capitulo:resultados"
+    guidance: |
+      Hallazgos objetivos organizados por pregunta de investigación.
+      Tablas y figuras APA 7. Sin interpretación en este capítulo.
+
+  - id: discusion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+    label: "capitulo:discusion"
+    guidance: |
+      Interpretación de resultados, comparación con literatura, implicaciones
+      prácticas (muy valoradas en el Tec) y limitaciones.
+
   - id: conclusiones
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusiones
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: |
+      Responde preguntas de investigación, resume aportaciones, menciona
+      limitaciones y sugiere investigación futura.
+
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: APA 7ª edición, lista alfabética, sangría francesa, DOI obligatorio cuando disponible.
+
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apendices"
+    title: "Apéndices"
+    guidance: Materiales complementarios. Turnitin report si lo requiere tu programa.

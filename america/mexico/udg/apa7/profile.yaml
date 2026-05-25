@@ -1,14 +1,30 @@
 schema_version: "1.0.0"
 id: mx_udg_apa7
 name: "UdeG - Tesis (APA 7)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra lineamientos del Sistema de Educación
+# Media Superior y Coordinación General Académica de la UdeG.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra lineamientos Coordinación Académica UdeG"
+  source_urls:
+    - "https://www.udg.mx/es/posgrado"
+    - "https://www.udg.mx/es/educacion/oferta-educativa/posgrado/doctorado"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +33,156 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
+
+max_abstract_words: 350
+
 packages: []
+
 sections:
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      Portada oficial de la Universidad de Guadalajara. Incluye:
+      • Escudo y nombre de la Universidad de Guadalajara.
+      • Centro Universitario o División de Estudios correspondiente
+        (CU Valles, CUCEA, CUCSH, CUCS, etc.).
+      • Título de la tesis.
+      • "TESIS para obtener el grado de [Maestro/Doctor] en [Programa]."
+      • Nombre del autor.
+      • Director de tesis e institución.
+      • Guadalajara, Jalisco, [Mes] [Año].
+      Verifica el formato de portada con la Coordinación de Posgrado
+      de tu Centro Universitario.
+
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaracion de Autenticidad"
+    title: "Declaración de Autenticidad"
+    guidance: |
+      Declaración de originalidad requerida por la UdeG.
+      El Centro Universitario puede pedir además un acta del Comité Tutorial.
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
-  - id: abstract
+    title: "Resumen"
+    guidance: |
+      Resumen en español, 200–350 palabras.
+      Pregunta de investigación, metodología, resultados y aportación.
+      Palabras clave (4–6).
+
+  - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: Abstract
+    title: "Abstract"
+    guidance: Abstract en inglés. Recomendado. Máximo 350 palabras.
+
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Agradecimientos
+    title: "Agradecimientos"
+    guidance: |
+      Reconoce al director de tesis, comité tutorial, becas CONAHCYT
+      y Programa de Fortalecimiento de la Calidad Educativa (PFCE) UdeG
+      o proyectos UDG-PRO.
+
+  - id: dedicatoria
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+    guidance: Opcional. Una o tres líneas. Sin encabezado impreso.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice General"
+    guidance: Generado automáticamente con números de página exactos.
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Índice de Figuras"
+    guidance: Activa si tienes 5 o más figuras.
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Índice de Tablas"
+    guidance: Activa si tienes 5 o más tablas.
+
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción"
+    label: "capitulo:introduccion"
+    guidance: |
+      Contextualización, planteamiento del problema, justificación, preguntas
+      de investigación, objetivos, hipótesis y estructura de la tesis.
+
   - id: marco_teorico
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teorico"
+    title: "Marco Teórico"
+    label: "capitulo:marcoteorico"
+    guidance: |
+      Fundamentos conceptuales y revisión crítica de la literatura.
+      Organiza por temas. APA 7: (Autor, año).
+
   - id: metodologia
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Metodologia
+    title: "Metodología"
+    label: "capitulo:metodologia"
+    guidance: Diseño, muestra, instrumentos, procedimiento, análisis y ética.
+
   - id: resultados
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Resultados
+    title: "Resultados"
+    label: "capitulo:resultados"
+    guidance: Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación.
+
+  - id: discusion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+    label: "capitulo:discusion"
+    guidance: Interpretación, comparación con literatura, implicaciones y limitaciones.
+
   - id: conclusiones
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusiones
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: Responde preguntas, resume aportaciones, señala limitaciones y trabajo futuro.
+
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: APA 7ª edición, lista alfabética, sangría francesa. DOI cuando disponible.
+
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apendices"
+    title: "Apéndices"
+    guidance: Instrumentos, datos adicionales. Etiqueta Apéndice A, B…

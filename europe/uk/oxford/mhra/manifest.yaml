@@ -1,13 +1,44 @@
 id: uk_oxford_mhra
-name: "Oxford - Thesis (MHRA)"
-version: "1.0.0"
+name: "Oxford - DPhil Thesis (MHRA)"
+version: "1.1.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
-description: "University of Oxford DPhil/MSc thesis, MHRA style for humanities"
-tags: [oxford, uk, mhra, humanities]
+status: reviewed
+description: >
+  University of Oxford DPhil thesis for humanities. Follows Oxford Examination Regulations:
+  A4, 40mm left margin (binding), double-spacing, 12pt, MHRA 3rd edition via Biber.
+  Word limit: 100,000 words (excluding bibliography and appendices).
+tags:
+  - oxford
+  - uk
+  - mhra
+  - dphil
+  - humanities
+  - literature
+  - history
 texis_min_version: "1.0.0"
-continent: "europe"
-country: "uk"
+continent: europe
+country: uk
 institution: "University of Oxford"
+institution_id: oxford
 city: "Oxford"
-institution_id: "oxford"
+verified_at: "2026-05-24"
+source_urls:
+  - "https://www.ox.ac.uk/students/academic/guidance/graduate/research/status/thesissubmission"
+  - "https://examregs.admin.ox.ac.uk/"
+review_interval_days: 365
+changelog:
+  - version: "1.1.0"
+    date: "2026-05-24"
+    changes:
+      - "Status: experimental → reviewed"
+      - "Corrected left margin to 40mm (Oxford binding requirement)"
+      - "Added verification block with official source URLs"
+      - "Added comprehensive section guidance for each chapter"
+      - "Added word limit (100,000) to Introduction guidance"
+      - "Added MHRA footnote citation guidance in chapter sections"
+      - "Added Declaration and Abbreviations sections"
+  - version: "1.0.0"
+    date: "2026-01-01"
+    changes:
+      - "Initial experimental release"

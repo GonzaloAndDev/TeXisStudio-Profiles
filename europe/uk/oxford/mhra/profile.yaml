@@ -1,77 +1,242 @@
+schema_version: "1.0.0"
 id: uk_oxford_mhra
-name: "Oxford - Thesis (MHRA)"
+name: "Oxford - DPhil Thesis (MHRA)"
+status: reviewed
 latex_engine: xelatex
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: mhra
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-24 contra las guías de la Oxford Graduate School.
+# Fuente principal: Examination Regulations y Style Guide oficial.
+verification:
+  verified_at: "2026-05-24"
+  verified_by: "TeXisStudio Community — revisado contra Oxford University Examination Regulations y Graduate School guidelines"
+  source_urls:
+    - "https://www.ox.ac.uk/students/academic/guidance/graduate/research/status/thesissubmission"
+    - "https://www.torch.ox.ac.uk/article/a-brief-guide-to-mhra-style"
+    - "https://examregs.admin.ox.ac.uk/"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Oxford Examination Regulations — thesis submission guidelines.
+# Margen izquierdo: mínimo 30mm + 10mm encuadernación = 40mm efectivo.
+# Restantes: mínimo 15mm, convencionalmente 25mm.
+# Interlineado doble (requerido). Fuente 10–12pt.
+# Límite de palabras DPhil: 100,000 palabras (sin bibliografía, apéndices).
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
     top: 25mm
     bottom: 25mm
-    left: 35mm
+    left: 40mm
     right: 25mm
   line_spacing: 2.0
+
+# ── Límites de palabras ───────────────────────────────────────────
+# Fuente: Oxford Examination Regulations — DPhil thesis word limit.
+# El límite excluye bibliografía, apéndices, notas al pie y figuras.
+max_words: 100000
+max_abstract_words: 300
+
+packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      Oxford Examination Regulations require the title page to include:
+      • Full title of the thesis.
+      • Your full name as registered.
+      • College name.
+      • Degree for which submitted (e.g. "Doctor of Philosophy").
+      • Term and year of submission (e.g. "Michaelmas Term 2025").
+      No student number, no supervisor name on the title page.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Abstract"
+    guidance: |
+      Oxford DPhil abstract: must not exceed 300 words.
+      Must be submitted separately to the Examination Schools at the time of thesis submission.
+      Include: degree applied for, your name, college, title, and term/year.
+      Summarise the research problem, methods, principal findings, and contribution.
+      No citations. No abbreviations unless defined. Clear, accessible language.
+      The abstract is deposited in the Oxford Research Archive (ORA) and is publicly accessible.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Acknowledgements
+    title: "Acknowledgements"
+    guidance: |
+      Thank your supervisor and co-supervisors, funding bodies (mandatory if funded),
+      college, department, collaborators, and ethics boards if relevant.
+      Note your sources of funding (scholarships, grants, project numbers).
+      Typical length: half a page.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Auto-generated. Must list all front matter, chapters, and back matter with page numbers.
+      Include List of Figures and List of Tables if applicable.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+
+  - id: abbreviations
+    element_id: acronyms
+    placement: front_matter
+    required: false
+    title: "List of Abbreviations"
+
+  # ── Body ─────────────────────────────────────────────────────────
   - id: introduction
     element_id: chapter
     placement: body
     required: true
-    title: Introduction
+    title: "Introduction"
+    label: "ch:introduction"
+    guidance: |
+      The DPhil introduction establishes the scholarly context and originality claim.
+      Must include:
+      1. Statement of the research problem and its scholarly significance.
+      2. The specific gap or question your thesis addresses.
+      3. Your central argument or thesis statement.
+      4. What is original in your contribution.
+      5. Scope, limitations, and methodology overview.
+      6. Structure of the thesis.
+      Oxford examiners assess whether the thesis "forms a significant contribution to learning."
+      Word limit for the entire DPhil thesis: 100,000 words
+      (excluding bibliography, appendices, footnotes).
+
   - id: literature_review
     element_id: chapter
     placement: body
     required: true
     title: "Literature Review"
+    label: "ch:literature"
+    guidance: |
+      For humanities DPhil, the literature review is often integrated into chapters
+      rather than a standalone section. If you use a standalone review:
+      • Position your work within existing scholarship.
+      • Demonstrate mastery of relevant primary and secondary sources.
+      • Identify the scholarly debate your thesis enters.
+      MHRA style: use footnotes for citations, not in-text references.
+      Oxford DPhil in humanities typically cites 200–500+ sources.
+
   - id: methodology
     element_id: chapter
     placement: body
-    required: true
-    title: Methodology
-  - id: results
+    required: false
+    title: "Methodology and Sources"
+    label: "ch:methodology"
+    guidance: |
+      For humanities DPhil, discuss:
+      • Primary sources used and their nature (archival, literary, material culture).
+      • Methodological approach (close reading, archival analysis, comparative, etc.).
+      • Languages and translation issues if applicable.
+      • Scope of sources and justification for selection.
+      This chapter is mandatory for social science DPhils; optional for some humanities theses.
+
+  - id: chapter_1
     element_id: chapter
     placement: body
     required: true
-    title: Results
-  - id: discussion
+    title: "Chapter 1"
+    label: "ch:one"
+    guidance: |
+      Each body chapter should develop one main argument.
+      MHRA style notes:
+      • Footnote citations: Author, Title (Place: Publisher, Year), page.
+      • Subsequent citations: Author, Short Title, page.
+      • Ibid. for immediately preceding source.
+      Chapter length: typically 8,000–15,000 words depending on total thesis length.
+
+  - id: chapter_2
     element_id: chapter
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Chapter 2"
+    label: "ch:two"
+
+  - id: chapter_3
+    element_id: chapter
+    placement: body
+    required: false
+    title: "Chapter 3"
+    label: "ch:three"
+
+  - id: chapter_4
+    element_id: chapter
+    placement: body
+    required: false
+    title: "Chapter 4"
+    label: "ch:four"
+
   - id: conclusion
     element_id: chapter
     placement: body
     required: true
-    title: Conclusion
-  - id: references
+    title: "Conclusion"
+    label: "ch:conclusion"
+    guidance: |
+      Synthesise the argument developed across all chapters.
+      • Restate the central thesis in light of what has been demonstrated.
+      • Articulate the contribution to knowledge — what does your thesis now allow
+        scholars to say or think differently?
+      • Indicate avenues for further research.
+      • Oxford examiners (two appointed examiners, one internal, one external) will
+        probe the conclusions in the viva voce examination.
+      Typical length: 4,000–8,000 words.
+
+  # ── Back matter ──────────────────────────────────────────────────
+  - id: bibliography
     element_id: bibliography
     placement: back_matter
     required: true
-    title: References
+    title: "Bibliography"
+    guidance: |
+      MHRA bibliography: auto-generated by Biber, formatted per MHRA 3rd edition.
+      Structure: Primary Sources first, then Secondary Sources (alphabetically by author).
+      Include all works cited in footnotes.
+      For archival sources, list the repository, collection, and document reference.
+      The bibliography does NOT count toward the 100,000-word limit.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: Appendices
+    title: "Appendices"
+    guidance: |
+      Appendices do NOT count toward the word limit.
+      Include: primary source transcriptions, data tables, interview transcripts,
+      archival inventories, maps, genealogical tables.
+      Label: Appendix A, B, C with descriptive titles.
+      Reference each appendix from the main text.

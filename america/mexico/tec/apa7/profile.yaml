@@ -1,6 +1,9 @@
+schema_version: "1.0.0"
 id: mx_tec_apa7
 name: "Tec de Monterrey - Tesis (APA 7)"
+status: experimental
 latex_engine: xelatex
+compiler: "latexmk"
 document_class:
   name: book
   options: [12pt, letterpaper, oneside]
@@ -14,6 +17,7 @@ page_layout:
     left: 30mm
     right: 25.4mm
   line_spacing: 2.0
+packages: []
 sections:
   - id: portada
     element_id: cover

@@ -1,77 +1,307 @@
+schema_version: "1.0.0"
 id: uk_cambridge_apa7
-name: "Cambridge - Thesis (APA 7)"
+name: "Cambridge - PhD Thesis (APA 7)"
+status: reviewed
 latex_engine: xelatex
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-24 contra las guías del Cambridge Graduate Office.
+# Las fuentes originales están en verification.source_urls.
+# Revisar anualmente o cuando Cambridge publique nuevas guías.
+verification:
+  verified_at: "2026-05-24"
+  verified_by: "TeXisStudio Community — revisado contra Cambridge Graduate Office Format Guidelines"
+  source_urls:
+    - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis"
+    - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"
+    - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/thesis-submission"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Cambridge Graduate Office — "Format your thesis"
+# Margen izquierdo mínimo 40 mm (encuadernación), restantes mínimo 20 mm.
+# Interlineado doble recomendado (1.5 aceptado).
+# Tamaño de letra: mínimo 10 pt, convencionalmente 12 pt.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
     top: 25mm
     bottom: 25mm
-    left: 35mm
+    left: 40mm
     right: 25mm
   line_spacing: 2.0
+
+# ── Límites de palabras ───────────────────────────────────────────
+# Fuente: Cambridge Graduate Office — límite estándar para tesis de PhD.
+# El límite excluye bibliografía, apéndices, notas al pie y figuras.
+max_words: 80000
+max_abstract_words: 300
+
+packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
-  - id: abstract
-    element_id: abstract
+    guidance: |
+      Cambridge Graduate Office requires the following elements on the title page:
+      • Full title of the thesis.
+      • Your full name as registered with the University.
+      • College name.
+      • Degree for which it is submitted (e.g. "Doctor of Philosophy").
+      • Month and year of submission.
+      Do NOT include your student ID or supervisor name on the title page.
+      No page number on this page.
+
+  - id: declaration
+    element_id: chapter
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Declaration"
+    guidance: |
+      Cambridge requires a signed declaration that the thesis is your own work.
+      Required text (Cambridge Graduate Office):
+        "This thesis is the result of my own work and includes nothing which is the
+         outcome of work done in collaboration except as declared in the Preface and
+         specified in the text. It is not substantially the same as any that I have
+         submitted, or am submitting, for a degree or diploma or other qualification
+         at the University of Cambridge or any other University or similar institution
+         [...]. It does not exceed the prescribed word limit for the relevant Degree
+         Committee."
+      Adapt the bracketed text per your Degree Committee's specific wording.
+      Word limit statement: include your actual word count.
+
+  - id: abstract
+    element_id: abstract_en
+    placement: front_matter
+    required: true
+    title: "Abstract"
+    guidance: |
+      Cambridge Graduate Office: abstract must not exceed 300 words.
+      The abstract must be bound in the thesis.
+      Required header: university name, full name, thesis title, degree, date.
+      Content: summarise the problem, method, principal results, and conclusions.
+      No citations, no abbreviations unless defined, no footnotes.
+      The abstract is separately submitted to ProQuest/EThOS for indexing —
+      every word counts for discoverability.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Acknowledgements
+    title: "Acknowledgements"
+    guidance: |
+      Acknowledge your supervisor, funding bodies (mandatory if externally funded),
+      collaborators, and any third-party data or material providers.
+      If your research involved human subjects, acknowledge ethics approval here
+      (e.g. "This research was approved by the Cambridge Psychology Research Ethics
+      Committee, reference PREC/2023/xxx").
+      Typical length: half to one page.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Auto-generated from chapter and section headings.
+      Should list all front matter, chapters, and back matter with page numbers.
+      List of Figures and List of Tables are optional but recommended if you have
+      more than 5 figures or tables respectively.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: |
+      Include if you have 5 or more numbered figures.
+      Auto-generated — every figure must have a caption.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Include if you have 5 or more numbered tables.
+      Auto-generated — every table must have a caption.
+
+  - id: abbreviations
+    element_id: acronyms
+    placement: front_matter
+    required: false
+    title: "List of Abbreviations"
+    guidance: |
+      List all abbreviations and acronyms used in the thesis.
+      Format: ACRONYM — Full term (field if ambiguous).
+      Sort alphabetically. Also define each abbreviation at first use in the text.
+
+  # ── Body ─────────────────────────────────────────────────────────
   - id: introduction
     element_id: chapter
     placement: body
     required: true
-    title: Introduction
+    title: "Introduction"
+    label: "ch:introduction"
+    guidance: |
+      The introduction must establish:
+      1. The research problem and its significance in the field.
+      2. The gap in existing knowledge that your thesis addresses.
+      3. Your research questions or hypotheses.
+      4. The original contribution to knowledge (Cambridge examiners will test this directly).
+      5. Scope and limitations.
+      6. Chapter outline.
+      Cambridge PhD examiners expect you to articulate what is NEW in your work.
+      Typical length: 8–15 pages (varies by discipline).
+      Word limit for the entire PhD thesis: 80,000 words (excluding bibliography,
+      appendices, tables, and figures) for most Degree Committees.
+      Check your specific Degree Committee's regulations — some faculties differ.
+
   - id: literature_review
     element_id: chapter
     placement: body
     required: true
     title: "Literature Review"
+    label: "ch:literature"
+    guidance: |
+      A Cambridge PhD literature review demonstrates command of the field.
+      Expected depth: systematic coverage of work from the last 5–10 years,
+      plus seminal older works.
+      Structure critically — do not summarise paper by paper. Instead:
+      • Group by theme, methodology, or chronological development.
+      • Critique each strand: what it shows and what it leaves unresolved.
+      • Build to the gap statement that motivates your research.
+      Recommended sources: Web of Science, Scopus, PsycINFO, JSTOR.
+      Use the DOI importer in TeXisStudio to cite articles correctly in APA 7.
+      Tip: Cambridge examiners read the literature review to assess whether you
+      know the field better than any single published paper in it.
+
+  - id: theoretical_framework
+    element_id: chapter
+    placement: body
+    required: false
+    title: "Theoretical Framework"
+    label: "ch:theory"
+    guidance: |
+      Develop the conceptual or theoretical foundation of your research.
+      Relevant for social science, humanities, or interdisciplinary PhDs.
+      Distinguish clearly between theoretical framework (the lens you use)
+      and literature review (the empirical context).
+      Include: key theoretical concepts, their definitions as you use them,
+      and why this framework is appropriate for your research questions.
+
   - id: methodology
     element_id: chapter
     placement: body
     required: true
-    title: Methodology
+    title: "Methodology"
+    label: "ch:methodology"
+    guidance: |
+      Describe your research design with sufficient detail for replication.
+      For empirical/quantitative research:
+      • Research design (experimental, survey, longitudinal, case study).
+      • Sample: size, selection criteria, demographics, power analysis.
+      • Instruments and materials: validated scales, stimuli, apparatus.
+      • Procedure: exact steps participants followed.
+      • Analysis: statistical methods, software (with version), alpha levels.
+      For qualitative research:
+      • Epistemological position and its justification.
+      • Data collection method (interviews, observation, document analysis).
+      • Sampling strategy (purposive, theoretical, snowball).
+      • Analysis method (thematic, grounded theory, discourse analysis).
+      • Reflexivity and positionality statement.
+      • Trustworthiness measures (member checking, thick description).
+      Include your ethics approval reference number.
+
   - id: results
     element_id: chapter
     placement: body
     required: true
-    title: Results
+    title: "Results"
+    label: "ch:results"
+    guidance: |
+      Present findings without interpretation.
+      For quantitative results:
+      • Report descriptive statistics first (M, SD, range, N).
+      • Report inferential tests: test statistic, df, p-value, effect size (Cohen's d, η², r).
+      • Use tables for complex comparisons; figures for trends and distributions.
+      • APA 7 format for statistics: t(48) = 3.12, p = .003, d = 0.87.
+      For qualitative results:
+      • Organise by theme, not by participant.
+      • Support each theme with representative quotations (with participant codes).
+      • Report negative cases — instances that challenged your themes.
+      Do not discuss implications here — save that for the Discussion chapter.
+
   - id: discussion
     element_id: chapter
     placement: body
     required: true
-    title: Discussion
+    title: "Discussion"
+    label: "ch:discussion"
+    guidance: |
+      Interpret your results in relation to your research questions and the literature.
+      A strong Cambridge PhD discussion:
+      • Addresses each research question/hypothesis directly.
+      • Situates findings within the broader literature — agree, disagree, extend.
+      • Offers a theoretical account of unexpected results.
+      • Discusses practical and theoretical implications.
+      • Acknowledges limitations honestly — examiners credit intellectual honesty.
+      • Discusses threats to validity and generalisability.
+      Avoid merely re-stating results. The discussion is where you demonstrate
+      your capacity for independent scholarly reasoning.
+
   - id: conclusion
     element_id: chapter
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusion"
+    label: "ch:conclusion"
+    guidance: |
+      Synthesise the thesis rather than summarise it.
+      • Articulate the original contribution to knowledge — what does your thesis
+        now allow the field to say that it could not say before?
+      • Answer your research questions directly.
+      • State the practical implications for policy, practice, or future research.
+      • Propose specific directions for future work.
+      • End with a closing statement that places your work in the broader context.
+      Cambridge examiners will read the conclusion to judge originality.
+      Typical length: 5–10 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
-    title: References
+    title: "References"
+    guidance: |
+      Auto-generated by Biber from your .bib file in APA 7 format.
+      APA 7 conventions at Cambridge: use DOI when available (mandatory for recent articles).
+      Do not include works not cited in the text.
+      For a Cambridge PhD: typically 100–300+ references.
+      Use the DOI importer in TeXisStudio to add references directly from Crossref.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: Appendices
+    title: "Appendices"
+    guidance: |
+      Appendices do NOT count toward the 80,000-word limit.
+      Include: interview guides, survey instruments, ethics documentation,
+      supplementary tables, extended code, additional analyses.
+      Label: Appendix A, Appendix B, etc., each with a descriptive title.
+      Each appendix should be referenced in the main text.

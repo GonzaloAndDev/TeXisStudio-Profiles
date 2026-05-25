@@ -1,6 +1,9 @@
+schema_version: "1.0.0"
 id: br_unicamp_abnt
 name: "UNICAMP - Dissertacao (ABNT)"
+status: experimental
 latex_engine: xelatex
+compiler: "latexmk"
 document_class:
   name: book
   options: [12pt, a4paper, oneside]
@@ -14,6 +17,7 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
+packages: []
 sections:
   - id: capa
     element_id: cover

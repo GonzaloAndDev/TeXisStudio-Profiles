@@ -1,13 +1,44 @@
 id: uk_cambridge_apa7
-name: "Cambridge - Thesis (APA 7)"
-version: "1.0.0"
+name: "Cambridge - PhD Thesis (APA 7)"
+version: "1.1.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
-description: "University of Cambridge PhD thesis for social sciences and psychology, APA 7"
-tags: [cambridge, uk, apa7, social_sciences]
+status: reviewed
+description: >
+  University of Cambridge PhD thesis for social sciences, psychology, and education.
+  Follows Cambridge Graduate Office format guidelines: A4, 40mm left margin (binding),
+  double-spacing, 12pt, APA 7 bibliography via Biber. Word limit: 80,000 words.
+tags:
+  - cambridge
+  - uk
+  - apa7
+  - phd
+  - social_sciences
+  - psychology
+  - education
 texis_min_version: "1.0.0"
-continent: "europe"
-country: "uk"
+continent: europe
+country: uk
 institution: "University of Cambridge"
+institution_id: cambridge
 city: "Cambridge"
-institution_id: "cambridge"
+verified_at: "2026-05-24"
+source_urls:
+  - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis"
+  - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"
+review_interval_days: 365
+changelog:
+  - version: "1.1.0"
+    date: "2026-05-24"
+    changes:
+      - "Status: experimental → reviewed"
+      - "Corrected left margin to 40mm (Cambridge binding requirement)"
+      - "Added Declaration section (required by Cambridge Graduate Office)"
+      - "Added verification block with official source URLs"
+      - "Added comprehensive section guidance for each chapter"
+      - "Added word limit (80,000) to Introduction guidance"
+      - "Added Abstract 300-word limit and ProQuest submission note"
+  - version: "1.0.0"
+    date: "2026-01-01"
+    changes:
+      - "Initial experimental release"

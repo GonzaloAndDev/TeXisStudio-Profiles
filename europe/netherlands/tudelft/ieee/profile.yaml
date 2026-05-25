@@ -1,6 +1,9 @@
+schema_version: "1.0.0"
 id: nl_tudelft_ieee
 name: "TU Delft - Thesis (IEEE)"
+status: experimental
 latex_engine: xelatex
+compiler: "latexmk"
 document_class:
   name: book
   options: [12pt, a4paper, oneside]
@@ -14,6 +17,7 @@ page_layout:
     left: 35mm
     right: 25mm
   line_spacing: 1.5
+packages: []
 sections:
   - id: title_page
     element_id: cover

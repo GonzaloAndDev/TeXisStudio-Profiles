@@ -210,17 +210,19 @@
     },
     {
       "id": "mx_unam_apa7",
-      "name": "UNAM - Tesis (APA 7)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "UNAM - Tesis/Disertación (APA 7)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis de posgrado UNAM conforme a lineamientos DGAE, estilo APA 7",
+      "description": "Tesis de posgrado UNAM — lineamientos CEP y DGAE, estilo APA 7ª edición, guidance completa en español",
       "tags": [
         "unam",
         "mexico",
         "apa7",
-        "posgrado"
+        "posgrado",
+        "ciencias-sociales",
+        "humanidades"
       ],
       "institution": "Universidad Nacional Autonoma de Mexico",
       "country": "mexico",
@@ -228,23 +230,27 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/mexico/unam/apa7/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.posgrado.unam.mx/doctorado/",
+        "https://www.dgae.unam.mx/tramites/titulacion/"
+      ]
     },
     {
       "id": "mx_unam_vancouver",
       "name": "UNAM - Ciencias de la Salud (Vancouver)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis UNAM para medicina y ciencias de la salud, estilo Vancouver",
+      "description": "Tesis UNAM para medicina, odontología y ciencias de la salud — estilo Vancouver/ICMJE, estructura IMRD, guidance completa en español",
       "tags": [
         "unam",
         "mexico",
         "vancouver",
         "medicina",
-        "salud"
+        "salud",
+        "imrd"
       ],
       "institution": "Universidad Nacional Autonoma de Mexico",
       "country": "mexico",
@@ -252,8 +258,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/mexico/unam/vancouver/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.facmed.unam.mx/espec/titulacion.html",
+        "https://www.icmje.org/recommendations/"
+      ]
     },
     {
       "id": "us_harvard_apa7",
@@ -368,17 +377,19 @@
     },
     {
       "id": "us_chicago_chicago17",
-      "name": "UChicago - Thesis (Chicago 17)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "UChicago - Dissertation (Chicago 17 Author-Date)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "University of Chicago thesis, Chicago 17 Author-Date, social sciences",
+      "description": "University of Chicago dissertation for Social Sciences, Chicago 17 Author-Date — verified against UChicago Dissertation Submission Guidelines",
       "tags": [
         "uchicago",
         "usa",
         "chicago17",
-        "humanities"
+        "social-sciences",
+        "sociology",
+        "political-science"
       ],
       "institution": "University of Chicago",
       "country": "usa",
@@ -386,8 +397,12 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/usa/uchicago/chicago17/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://grad.uchicago.edu/academic-affairs/deadlines-policies/dissertation-submission-guidelines/",
+        "https://grad.uchicago.edu/academic-affairs/dissertation-submission/",
+        "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html"
+      ]
     },
     {
       "id": "cn_pku_gbt",

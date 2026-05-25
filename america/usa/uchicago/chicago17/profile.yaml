@@ -1,14 +1,36 @@
 schema_version: "1.0.0"
 id: us_chicago_chicago17
-name: "UChicago - Thesis (Chicago 17)"
-status: experimental
+name: "UChicago - Dissertation (Chicago 17 Author-Date)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: chicago-authordate
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las UChicago Dissertation Submission Guidelines.
+# Chicago 17 Author-Date style — used in Social Sciences, Economics, Political
+# Science, Sociology, Anthropology. (Humanities programs use Notes-Bibliography.)
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra UChicago Dissertation Submission Guidelines"
+  source_urls:
+    - "https://grad.uchicago.edu/academic-affairs/deadlines-policies/dissertation-submission-guidelines/"
+    - "https://grad.uchicago.edu/academic-affairs/dissertation-submission/"
+    - "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: UChicago Dissertation Submission Guidelines.
+# Left margin 1.5" (38.1mm) for binding; top, right, bottom 1" (25.4mm).
+# Double spacing required. Font 10–12pt, 12pt standard.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +39,264 @@ page_layout:
     left: 38.1mm
     right: 25.4mm
   line_spacing: 2.0
+
+# ── Límites de palabras ───────────────────────────────────────────
+# UChicago does not set a universal word limit.
+# Abstract: ProQuest requires ≤ 350 words for PhD.
+# Typical Social Sciences PhD: 80,000–150,000 words.
+max_abstract_words: 350
+
 packages: []
+
 sections:
+  # ── Front matter ─────────────────────────────────────────────────
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      Auto-generated from project metadata.
+      UChicago title page must include:
+      • Full dissertation title.
+      • Author's full name.
+      • "A dissertation submitted to the Faculty of the [Division/Department]
+        in candidacy for the degree of Doctor of Philosophy."
+      • Department name.
+      • "The University of Chicago"
+      • Month and Year (e.g., "June 2026").
+      The reading committee (typically 3 members) approves the dissertation through
+      the Dissertation Tracking System — a separate signature page is not included
+      in the submitted manuscript.
+
+  - id: copyright_page
+    element_id: declaration
+    placement: front_matter
+    required: false
+    title: "Copyright"
+    guidance: |
+      Optional but strongly recommended.
+      Standard format: "Copyright © [Year] by [Full Name]. All rights reserved."
+      Or include a Creative Commons license (recommended for open access).
+      Verso of the title page; no page number.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
     title: Abstract
+    guidance: |
+      UChicago requires an abstract; ProQuest indexes it separately.
+      • Maximum 350 words (ProQuest PhD limit).
+      • Written in English.
+      • Standalone: no parenthetical citations, no tables, no equations.
+      Structure for Social Sciences:
+        1. Research question or theoretical puzzle — lead with it.
+        2. Theoretical framework and methodology (1–2 sentences each).
+        3. Main empirical findings or theoretical contributions.
+        4. Significance: implications for the field or for policy.
+      The abstract is the most-read part of the dissertation — it must make
+      the contribution clear to readers outside your subfield.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
     title: Acknowledgements
+    guidance: |
+      Optional. Acknowledge: dissertation committee (chair and readers),
+      funding agencies (required — include grant numbers and award IDs),
+      fellowships, data providers, and research participants (anonymized).
+      Typical length: half page to one page.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: |
+      Generated automatically from your section headings.
+      Must include all front matter (except title page), body chapters,
+      appendices, and bibliography, with accurate page numbers.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: |
+      Required if the dissertation contains figures, maps, or illustrations.
+      Auto-generated from captions. Enable if you have 5 or more figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: |
+      Required if the dissertation contains tables. Auto-generated from captions.
+      Enable if you have 5 or more tables.
+
+  # ── Body ──────────────────────────────────────────────────────────
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      The introduction defines the research puzzle and positions the dissertation's
+      contribution. At UChicago, Social Sciences committees expect precision and
+      intellectual ambition from the opening pages:
+      1. Research question or theoretical puzzle — state it explicitly in the first
+         paragraph. What is unresolved in the literature that this dissertation addresses?
+      2. Motivation: why does it matter theoretically and empirically?
+      3. Core argument or hypothesis.
+      4. Brief overview of the theoretical framework and empirical strategy.
+      5. Preview of findings and their implications.
+      6. Chapter-by-chapter outline.
+      Chicago 17 Author-Date: in-text citations as (Author Year) or (Author Year, page).
+      Length: 15–30 pages.
+
   - id: literature_review
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Theory and Literature"
+    label: "chapter:literature"
+    guidance: |
+      At UChicago, this chapter is typically titled "Theory and Literature,"
+      "Theoretical Framework," or "Situating the Argument."
+      Rename to match your department's conventions.
+      UChicago Social Sciences expectations:
+      • Organize by theoretical approach, mechanism, or debate — not as a
+        sequential review of publications.
+      • Identify the central theoretical tension or unresolved empirical question.
+      • Position your argument within or against the dominant traditions.
+      • Derive testable hypotheses or analytical propositions from the theory.
+      • Be precise about what prior work establishes and where it fails.
+      Chicago Author-Date: use (Author Year) for all in-text citations.
+      For recent working papers or preprints, include access date.
+      Length: 20–50 pages.
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: false
+    title: "Theoretical Framework"
+    label: "chapter:theory"
+    guidance: |
+      Activate as a separate chapter when your theoretical contribution is
+      substantial and distinct from the literature review.
+      Develop the causal argument, formal model, or conceptual framework that
+      drives your empirical analysis. State assumptions explicitly and derive
+      observable implications that the subsequent empirical chapters test.
+      Common in political economy, sociological theory, and rational choice work.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
+    title: "Research Design"
+    label: "chapter:methodology"
+    guidance: |
+      Rename to fit your approach: "Research Design," "Data and Methods,"
+      "Empirical Strategy," or "Case Selection and Method."
+      This chapter must establish the credibility of your causal claims. Include:
+      • Research design: observational, quasi-experimental, experimental, or
+        interpretive. Justify why this design answers your research question.
+      • Case selection: logic of case choice; typicality, variation, or
+        representativeness as appropriate.
+      • Data: sources, collection procedures, sample characteristics, and
+        any collection instruments.
+      • Analytic method: regression, process tracing, comparative-historical,
+        discourse analysis, etc. Justify choices and acknowledge limitations.
+      • Identification strategy: how do you address confounding, endogeneity,
+        or selection bias?
+      • IRB/ethical approval if human subjects research.
+      UChicago committees are rigorous about causal inference — be precise.
+
   - id: results
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Results
+    title: "Empirical Analysis"
+    label: "chapter:results"
+    guidance: |
+      Present your primary empirical findings. Rename to reflect your approach
+      (e.g., "Case Study: Brazil, 1985–2005", "Panel Analysis of OECD Countries",
+      "Ethnographic Evidence from Chicago's South Side").
+      For quantitative dissertations:
+      • Report main results with statistical significance, effect sizes, and
+        confidence intervals.
+      • Present robustness checks and sensitivity analyses.
+      • Include Tables and Figures with clear captions; reference each in the text.
+      For qualitative/interpretive dissertations:
+      • Present cases or themes systematically, with primary source evidence.
+      • Tie each piece of evidence to the analytical framework.
+      This section may span multiple chapters — duplicate as needed.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: |
+      Interpret findings in relation to your theoretical framework and prior literature.
+      • What does this evidence mean for the theory or hypothesis?
+      • Which findings confirm, refute, or modify the existing literature?
+      • Why do unexpected results occur?
+      • What are the scope conditions and generalizability of your findings?
+      In many UChicago dissertations this is integrated into the empirical chapters
+      or the conclusion. Activate as a standalone chapter when the analysis is
+      conceptually substantial.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusion"
+    label: "chapter:conclusion"
+    guidance: |
+      The conclusion synthesizes contributions and advances the conversation:
+      • Restate the dissertation's core argument with the full weight of the
+        evidence behind it.
+      • Summarize the key empirical contributions and their theoretical implications.
+      • Address scope conditions: where and when do your findings apply?
+      • Policy implications (where relevant to your field).
+      • Future research: specific questions opened by your findings that require
+        different data, methods, or theoretical frameworks.
+      Do not merely restate chapter summaries — advance the argument.
+      Length: 10–25 pages.
+
+  # ── Back matter ──────────────────────────────────────────────────
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
     title: References
+    guidance: |
+      Chicago 17 Author-Date: alphabetical by first author's last name,
+      hanging indent. Auto-generated from your .bib file at compilation.
+      Author-Date references differ from Notes-Bibliography:
+      • Books: Last, First. Year. Title. Place: Publisher.
+      • Articles: Last, First. Year. "Title." Journal Vol (No.): pp. DOI.
+      • Working papers include NBER/SSRN ID and year.
+      biber/biblatex-chicago handles Author-Date formatting automatically.
+      Expected volume: 100–400 references for a Social Sciences PhD.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
     title: Appendices
+    guidance: |
+      Supplementary material that would interrupt the main narrative:
+      • Formal proofs of theoretical results.
+      • Additional regression tables, robustness checks, or placebo tests.
+      • Variable definitions, data sources, and codebook.
+      • Survey instruments or interview protocols.
+      • Supplementary case evidence.
+      Label: Appendix A, B… with descriptive titles.
+      Cross-reference from the text (see Appendix A for variable definitions).

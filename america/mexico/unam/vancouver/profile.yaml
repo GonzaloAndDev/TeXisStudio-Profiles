@@ -1,14 +1,36 @@
 schema_version: "1.0.0"
 id: mx_unam_vancouver
 name: "UNAM - Ciencias de la Salud (Vancouver)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: vancouver
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra lineamientos de la Facultad de Medicina
+# UNAM y recomendaciones ICMJE para publicaciones biomédicas.
+# Revisar anualmente — ICMJE actualiza sus recomendaciones periódicamente.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra lineamientos Fac. Medicina UNAM e ICMJE"
+  source_urls:
+    - "https://www.facmed.unam.mx/espec/titulacion.html"
+    - "https://www.icmje.org/recommendations/"
+    - "https://www.nlm.nih.gov/bsd/uniform_requirements.html"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Lineamientos Facultad de Medicina UNAM (programa de posgrado).
+# Márgenes: izquierdo 3 cm, derecho 2 cm, superior/inferior 2.5 cm.
+# Interlineado: 1.5. Fuente: Times New Roman 12pt.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
@@ -17,40 +39,278 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
+
+# ── Límites de palabras ───────────────────────────────────────────
+# La UNAM no establece un límite universal de palabras.
+# Resumen: 250–300 palabras (recomendado ICMJE); máximo 350 para ProQuest.
+# Tesis clínicas: típicamente 60–150 páginas.
+max_abstract_words: 350
+
 packages: []
+
 sections:
+  # ── Preliminares ──────────────────────────────────────────────────
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      Portada oficial de la UNAM. Debe incluir:
+      • Logotipo y nombre de la UNAM y de la Facultad o Instituto.
+      • Nombre completo del programa de especialización o posgrado.
+      • Título de la tesis (centrado, en mayúsculas y minúsculas).
+      • "TESIS que para obtener el título/grado de [Especialista en / Doctor en]
+        [Nombre de la especialidad/área], PRESENTA:"
+      • Nombre completo del autor(a).
+      • Nombre del director(a) de tesis y adscripción institucional.
+      • Ciudad de México, mes y año.
+      Las especialidades médicas (UNAM-IMSS, UNAM-ISSSTE, Hospital General, etc.)
+      tienen formatos de portada específicos — consulta la coordinación de tu programa.
+
+  - id: declaracion
+    element_id: declaration
+    placement: front_matter
+    required: false
+    title: "Declaración de Originalidad"
+    guidance: |
+      Algunas especializaciones y programas de doctorado de ciencias de la
+      salud en la UNAM requieren una Carta de Originalidad o Declaración bajo
+      protesta de decir verdad de que la tesis es trabajo original.
+      Verifica el requisito con la División de Estudios de Posgrado de tu Facultad.
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
+    title: "Resumen"
+    guidance: |
+      Resumen estructurado en español. ICMJE recomienda 250 palabras máximo
+      para artículos de investigación; para tesis de grado: 200–350 palabras.
+      Estructura recomendada (resumen estructurado):
+        • Antecedentes/Introducción: una o dos oraciones contextualizando el problema.
+        • Objetivo: objetivo general del estudio (en una sola oración).
+        • Métodos: diseño del estudio, población, intervención/exposición,
+          variables de desenlace, análisis estadístico.
+        • Resultados: hallazgos principales con datos numéricos clave
+          (n, porcentajes, valores p o IC 95% principales).
+        • Conclusiones: implicación clínica o científica principal.
+      Al final: 3–6 Palabras clave (preferentemente del MeSH/DeCS español).
+
+  - id: abstract_ingles
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract"
+    guidance: |
+      Abstract estructurado en inglés. Recomendado para visibilidad internacional
+      y requisito de PubMed/Medline si la tesis se adapta a publicación.
+      Máximo 350 palabras. Misma estructura que el Resumen:
+      Background, Objective, Methods, Results, Conclusions.
+      Keywords: 3–6 términos del Medical Subject Headings (MeSH).
+
+  - id: agradecimientos
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+    guidance: |
+      Opcional. Reconoce: director(a) y asesor(es) de tesis, jefatura
+      del servicio o departamento donde se realizó la investigación,
+      pacientes o participantes del estudio (de manera anónima),
+      fuentes de financiamiento (CONAHCYT, DGAPA-PAPIIT, fondos hospitalarios).
+      Incluye número de protocolo si el estudio fue registrado en un CLIS
+      (Comité Local de Investigación en Salud) del IMSS, ISSSTE, etc.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice"
+    guidance: |
+      Índice general con números de página. Generado automáticamente.
+      Las tesis de ciencias de la salud en México suelen listar también
+      el índice de tablas y el índice de figuras.
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Índice de Tablas"
+    guidance: |
+      Obligatorio si hay 5 o más tablas. Generado automáticamente.
+      Vancouver designa las tablas como "Cuadro X" o "Tabla X" — sé consistente.
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Índice de Figuras"
+    guidance: |
+      Obligatorio si hay 5 o más figuras, imágenes o gráficas.
+      Generado automáticamente. Vancouver: "Figura X" en el texto.
+
+  # ── Cuerpo ────────────────────────────────────────────────────────
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción y Antecedentes"
+    label: "capitulo:introduccion"
+    guidance: |
+      En ciencias de la salud la Introducción y los Antecedentes suelen ser
+      un solo capítulo o secciones contiguas. Incluye:
+      1. Contextualización epidemiológica: prevalencia, incidencia, carga de
+         enfermedad, relevancia en el contexto mexicano y global.
+      2. Fisiopatología o marco conceptual de la enfermedad/problema clínico.
+      3. Estado del arte: revisión crítica de la literatura más relevante
+         (últimos 5–10 años + obras fundacionales).
+         Vancouver: citas numéricas en orden de aparición [1], [2].
+      4. Planteamiento del problema: ¿qué vacío de conocimiento o problema
+         clínico no resuelto justifica esta tesis?
+      5. Justificación: relevancia clínica, epidemiológica o científica.
+      6. Hipótesis (si aplica al diseño).
+      7. Objetivo general y objetivos específicos.
+      Vancouver: primera cita de una fuente lleva su número; si se vuelve a
+      citar usa el mismo número original.
+      Extensión típica: 15–30 páginas.
+
+  - id: planteamiento
+    element_id: theoretical_framework
+    placement: body
+    required: false
+    title: "Marco Teórico"
+    label: "capitulo:marcoteorico"
+    guidance: |
+      Opcional. Para tesis de básica o de ciencias biomédicas con componente
+      teórico relevante (bioquímica, farmacología, genética, bioestadística).
+      Desarrolla los fundamentos teóricos del modelo biológico, mecanismo
+      molecular, o metodología de análisis que sustentan la tesis.
+      En muchas tesis clínicas este contenido se integra en la Introducción.
+
   - id: materiales_metodos
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: "Materiales y Metodos"
+    title: "Material y Métodos"
+    label: "capitulo:metodos"
+    guidance: |
+      Sección crítica para la reproducibilidad. Estructura ICMJE:
+      • Diseño del estudio: observacional (cohorte, casos y controles,
+        transversal), experimental (ECA, pre-post, serie de tiempo),
+        o cualitativo. Justifica la elección.
+      • Lugar y período: hospital, clínica, laboratorio; fechas de
+        inicio y término de recolección de datos.
+      • Población: criterios de inclusión y exclusión, definición operacional
+        de casos.
+      • Muestra: tamaño de muestra calculado con fórmula explícita, nivel de
+        confianza, potencia y parámetros utilizados. Tipo de muestreo.
+      • Variables: definición operacional, tipo (cuantitativa continua/discreta,
+        cualitativa nominal/ordinal) y unidades de medición.
+      • Intervención o exposición (si aplica): descripción precisa y reproducible.
+      • Instrumentos y técnicas: validados o estandarizados con sus referencias.
+      • Análisis estadístico: software (SPSS, Stata, R, MedCalc, GraphPad),
+        pruebas estadísticas con justificación (paramétrico/no paramétrico),
+        nivel de significancia (generalmente α = 0.05).
+      • Consideraciones éticas: número de registro del Comité de Ética e
+        Investigación (CEI), número de registro ante COFEPRIS si aplica,
+        registro ClinicalTrials.gov (si ECA), consentimiento informado.
+      Extensión típica: 10–20 páginas.
+
   - id: resultados
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Resultados
+    title: "Resultados"
+    label: "capitulo:resultados"
+    guidance: |
+      Presenta los hallazgos de forma objetiva y ordenada, sin interpretación.
+      • Inicia con las características sociodemográficas de la población
+        (Tabla 1 o Cuadro 1 con características basales).
+      • Reporta resultados en el orden de los objetivos específicos.
+      • Cuantitativo: reporta media ± DE o mediana (RIC) según distribución;
+        comparaciones con estadístico, p y tamaño del efecto; IC 95%.
+        Usa tablas para datos numéricos extensos y figuras para tendencias.
+      • Cualitativo: presenta categorías temáticas con verbatims representativos.
+      • Todas las tablas y figuras deben ir numeradas secuencialmente y
+        referenciadas en el texto antes de su aparición.
+      • Vancouver: cada tabla tiene un título breve arriba; cada figura tiene
+        una leyenda detallada debajo.
+      Extensión típica: 15–40 páginas.
+
   - id: discusion
-    element_id: chapter
+    element_id: discussion
     placement: body
     required: true
-    title: "Discusion"
+    title: "Discusión"
+    label: "capitulo:discusion"
+    guidance: |
+      La discusión interpreta los resultados en el contexto de la literatura.
+      Estructura recomendada por ICMJE para discusiones biomédicas:
+      1. Resumen del hallazgo principal (primera oración de la discusión).
+      2. Comparación con estudios similares: ¿confirman, contradicen o matizan
+         tus resultados? ¿A qué se deben las discrepancias?
+      3. Mecanismos propuestos: ¿cómo explicas biológica o clínicamente
+         los hallazgos observados?
+      4. Implicaciones clínicas: ¿qué cambia en la práctica médica?
+         (Sé conservador — evita afirmaciones no respaldadas por la evidencia.)
+      5. Limitaciones del estudio: sesgo de selección, sesgo de información,
+         confusión residual, tamaño de muestra, generalización.
+         Sé específico y honesto — los revisores y el comité siempre las buscan.
+      6. Fortalezas del estudio.
+      7. Investigación futura: preguntas que quedan sin responder.
+      Extensión típica: 15–30 páginas.
+
+  - id: conclusiones
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: |
+      Las conclusiones responden directamente a los objetivos específicos.
+      Cada conclusión debe:
+      • Derivarse directamente de los resultados (sin inferencias no respaldadas).
+      • Estar redactada en lenguaje declarativo afirmativo o negativo.
+      • Incluir el nivel de certeza si aplica (e.g., los resultados sugieren,
+        se demostró, no se encontró diferencia significativa).
+      Evita concluir más allá de lo que los datos permiten.
+      Agrega brevemente las recomendaciones prácticas o de política sanitaria
+      si la evidencia lo justifica.
+      Extensión típica: 1–5 páginas (las conclusiones en ciencias de la salud
+      suelen ser más concisas que en ciencias sociales).
+
+  # ── Finales ───────────────────────────────────────────────────────
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: |
+      Estilo Vancouver (ICMJE): numeradas en orden de primera aparición en el texto.
+      Generadas automáticamente desde tu archivo .bib por biber/biblatex-vancouver.
+      Formato de entrada estándar:
+      • Artículo: Apellido N, Apellido N. Título del artículo.
+        Nombre Rev Abreviado. año;vol(num):pp–pp. DOI o PMID.
+      • Libro: Apellido N. Título. Ciudad: Editorial; año. p. pp.
+      • Capítulo: Apellido N. Título capítulo. En: Editor A, editor.
+        Título libro. Ciudad: Editorial; año. p. pp–pp.
+      Abreviaciones de revistas: usa el Index Medicus / PubMed.
+      DOI obligatorio cuando esté disponible; si no, URL + fecha de acceso.
+      Número máximo recomendado por ICMJE para artículos: 30–40 refs.
+      Tesis: sin límite estricto; típicamente 60–150 referencias.
+
+  - id: apendices
+    element_id: appendix
+    placement: back_matter
+    required: false
+    title: "Apéndices"
+    guidance: |
+      Materiales complementarios:
+      • Dictamen del Comité de Ética e Investigación.
+      • Formato de consentimiento informado (versión final aprobada).
+      • Instrumentos de recolección: cuestionarios, escalas, formatos de captura.
+      • Registro ClinicalTrials.gov o equivalente (si aplica).
+      • Tablas de datos extendidas o resultados de sensibilidad.
+      • Autorización de la institución donde se realizó el estudio.
+      Etiqueta: Apéndice A, B… con título descriptivo.

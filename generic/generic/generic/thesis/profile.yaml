@@ -1,14 +1,38 @@
 schema_version: "1.0.0"
 id: generic_thesis
-name: "Tesis Generica"
-status: experimental
+name: "Tesis Genérica"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Perfil genérico ───────────────────────────────────────────────
+# Perfil base para tesis de licenciatura, maestría o doctorado cuando
+# no existe un perfil específico para tu institución.
+# Basado en convenciones académicas estándar y APA 7ª edición.
+# Si tu institución tiene normativa específica, verifica los lineamientos
+# de tu coordinación o programa de posgrado.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas generales"
+  source_urls:
+    - "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
+    - "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Convención general para tesis en español: A4, márgenes estándar.
+# APA 7 para publicaciones: 2.54 cm todos los márgenes (doble espacio).
+# Tesis en México y América Latina: izquierdo 3 cm, resto 2-2.5 cm.
+# Interlineado: 1.5 (estándar en LATAM); doble espacio en EE.UU./Europa.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +41,283 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
+
+# ── Límites de palabras ───────────────────────────────────────────
+# APA 7 recomienda resúmenes de 150–250 palabras para artículos;
+# para tesis: 200–350 palabras. Ajusta según los lineamientos de tu programa.
+max_abstract_words: 350
+
 packages: []
+
 sections:
+  # ── Preliminares ──────────────────────────────────────────────────
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      La portada es la primera impresión de tu tesis. Incluye:
+      • Logotipo y nombre de tu institución (universidad / facultad / departamento).
+      • Título completo de la tesis (informativo y específico, sin abreviaturas).
+      • Tipo de documento: "TESIS" o "DISERTACIÓN" y el grado al que aspira
+        (e.g., "para obtener el grado de Licenciado(a) en / Maestro(a) en /
+        Doctor(a) en [nombre del campo]").
+      • Nombre completo del autor o autores.
+      • Nombre del director o directora de tesis.
+      • Ciudad, mes y año de presentación.
+      Consulta a tu coordinación o programa — muchas instituciones tienen
+      un formato de portada oficial que debes seguir exactamente.
+
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaracion de Autenticidad"
+    title: "Declaración de Autenticidad"
+    guidance: |
+      La Declaración de Autenticidad certifica que el trabajo es tuyo y que las
+      fuentes están correctamente citadas. Texto estándar (adapta si tu institución
+      tiene un formato específico):
+      "Declaro bajo protesta de decir verdad que el presente trabajo es original
+      y ha sido elaborado por el suscrito. Todas las fuentes consultadas han sido
+      debidamente citadas y referenciadas conforme a las normas aplicables."
+      Algunas universidades exigen que esta declaración vaya firmada, notariada,
+      o en un formato específico — verifica con tu programa.
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
-  - id: abstract
+    title: "Resumen"
+    guidance: |
+      El resumen en español es el primer elemento académico que leerán otros
+      investigadores. Recomendado: 150–350 palabras.
+      APA 7 (para tesis y trabajos de estudiantes) recomienda incluir:
+        1. El problema de investigación (1–2 oraciones).
+        2. Los participantes o datos empleados (si aplica).
+        3. La metodología o enfoque utilizado.
+        4. Los hallazgos o conclusiones principales.
+        5. Las implicaciones o aportaciones del estudio.
+      Al final agrega 4–6 Palabras clave separadas por punto y coma.
+      Debe ser autocontenido: sin citas, sin figuras, sin acrónimos no definidos.
+
+  - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: Abstract
+    title: "Abstract"
+    guidance: |
+      Abstract en inglés. Opcional pero recomendado para visibilidad internacional.
+      Máximo 350 palabras. Misma estructura que el Resumen.
+      Agrega al final: Keywords: (4–6 términos en inglés).
+      Obligatorio si tu programa requiere publicación en bases de datos internacionales
+      (Scopus, Web of Science, ProQuest Dissertations & Theses).
+
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Agradecimientos
+    title: "Agradecimientos"
+    guidance: |
+      Sección opcional pero convencional. Reconoce a quienes contribuyeron
+      a tu investigación: director de tesis, comité o sinodales, colegas,
+      bibliotecarios, participantes del estudio, y a quienes te apoyaron
+      personalmente durante el proceso.
+      Si tu investigación fue financiada con beca o recurso externo
+      (CONAHCYT, CONACYT, DGAPA, etc.), es obligatorio mencionarlo con
+      el número de proyecto o beca.
+      Longitud típica: media a una página.
+
+  - id: dedicatoria
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+    guidance: |
+      Opcional. Una o tres líneas. Sin encabezado impreso.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice"
+    guidance: |
+      Generado automáticamente. Incluye todos los preliminares (excepto la portada),
+      los capítulos del cuerpo, los apéndices y las referencias.
+      Verifica que los números de página sean exactos antes de imprimir.
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Índice de Figuras"
+    guidance: |
+      Activa esta sección si tu tesis tiene 5 o más figuras, gráficas o imágenes.
+      APA 7: numera las figuras de forma continua (Figura 1, Figura 2…)
+      y referéncialas en el texto antes de que aparezcan.
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Índice de Tablas"
+    guidance: |
+      Activa si tienes 5 o más tablas. APA 7: numera las tablas de forma
+      continua (Tabla 1, Tabla 2…) y referéncialas en el texto.
+
+  # ── Cuerpo ────────────────────────────────────────────────────────
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción"
+    label: "capitulo:introduccion"
+    guidance: |
+      La introducción enmarca tu investigación y convence al lector de su
+      importancia. Estructura recomendada:
+      1. Contextualización general del tema de investigación.
+      2. Planteamiento del problema: ¿qué vacío de conocimiento, contradicción
+         o necesidad práctica aborda tu tesis?
+      3. Justificación: ¿por qué importa resolverlo? (relevancia teórica, social,
+         económica, clínica, tecnológica, etc.)
+      4. Pregunta(s) de investigación: formuladas de manera precisa y acotada.
+      5. Objetivo general y objetivos específicos (concretos y medibles).
+      6. Hipótesis o supuesto de trabajo (si tu diseño lo requiere).
+      7. Alcance y delimitaciones del estudio.
+      8. Estructura de la tesis: un párrafo breve por capítulo.
+      Extensión típica para licenciatura: 10–20 páginas.
+      Para posgrado: 15–30 páginas.
+
   - id: marco_teorico
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teorico"
+    title: "Marco Teórico y Revisión de Literatura"
+    label: "capitulo:marcoteorico"
+    guidance: |
+      El marco teórico es la base conceptual de tu investigación. Incluye:
+      • Definición y discusión de los conceptos y teorías fundamentales
+        que sustenta tu trabajo.
+      • Revisión crítica de la literatura: ¿qué se sabe sobre el tema?
+        ¿Cuáles son los enfoques principales? ¿Dónde están los debates?
+      • Identificación del vacío o la contradicción que justifica tu estudio.
+      • Posicionamiento teórico: ¿qué perspectiva adoptas y por qué?
+      APA 7: cita con (Autor, año) o Autor (año) para citas narrativas.
+      Para citas textuales incluye número de página: (Autor, año, p. xx).
+      Organiza por temas o corrientes, no como lista de autores.
+      Extensión típica: 20–50 páginas.
+
   - id: metodologia
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Metodologia
+    title: "Metodología"
+    label: "capitulo:metodologia"
+    guidance: |
+      La metodología describe con suficiente detalle cómo realizaste tu investigación.
+      Incluye:
+      • Enfoque: cuantitativo, cualitativo o mixto. Justifica la elección.
+      • Diseño de investigación: experimental, cuasiexperimental, correlacional,
+        descriptivo, fenomenológico, estudio de caso, etc.
+      • Población y muestra (o corpus de análisis): criterios de selección y tamaño.
+      • Instrumentos o técnicas de recolección de datos: describe cada uno,
+        cita el instrumento si es publicado, e indica si fue adaptado o creado.
+      • Procedimiento de recolección: cuándo, dónde y cómo se obtuvieron los datos.
+      • Análisis de datos: software utilizado y técnicas de análisis.
+      • Consideraciones éticas: consentimiento informado, confidencialidad,
+        aprobación del Comité de Ética si se trabajó con seres humanos.
+      • Limitaciones metodológicas.
+      Extensión típica: 10–25 páginas.
+
   - id: resultados
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Resultados
+    title: "Resultados"
+    label: "capitulo:resultados"
+    guidance: |
+      Presenta los hallazgos de manera objetiva, sin interpretación ni conclusiones.
+      Organiza los resultados conforme a tus preguntas de investigación u objetivos.
+      Para datos cuantitativos:
+      • Reporta estadísticas descriptivas primero (medias, desviaciones estándar,
+        porcentajes).
+      • Luego las pruebas inferenciales (t, F, χ², correlaciones, regresiones) con
+        sus estadísticos, valores p y tamaños del efecto.
+      • Acompaña con tablas y figuras APA 7 con notas al pie.
+      Para datos cualitativos:
+      • Presenta categorías o temas emergentes con citas textuales representativas.
+      • Asegura la confidencialidad de los participantes.
+      APA 7: "La Tabla 1 muestra…", "En la Figura 2 se observa…".
+      Cada tabla y figura debe ser mencionada en el texto antes de aparecer.
+
+  - id: discusion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+    label: "capitulo:discusion"
+    guidance: |
+      La discusión interpreta los resultados y los conecta con el marco teórico
+      y la literatura revisada.
+      Estructura recomendada:
+      • Primera oración: retoma la pregunta de investigación y respóndela
+        directamente con base en tus resultados.
+      • Compara con estudios previos: ¿coinciden, contradicen o matizan
+        tus hallazgos la literatura existente? ¿Por qué?
+      • Explica resultados inesperados.
+      • Implicaciones teóricas y prácticas de los hallazgos.
+      • Limitaciones del estudio.
+      • Sugerencias de investigación futura específicas.
+      En muchas tesis de licenciatura este capítulo se fusiona con Resultados
+      o con Conclusiones. Activa como capítulo independiente si lo requieres.
+
   - id: conclusiones
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusiones
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: |
+      Las conclusiones responden directamente a tu(s) pregunta(s) de investigación
+      y a tus objetivos.
+      • Responde cada pregunta de investigación o verifica cada hipótesis.
+      • Resume las aportaciones originales de tu trabajo al campo de conocimiento.
+      • Implicaciones prácticas o aplicaciones posibles.
+      • Limitaciones del estudio (sé honesto — el comité las encontrará de todas formas).
+      • Líneas de investigación futura: concretas y acotadas.
+      No repitas los resultados — el comité ya leyó ese capítulo.
+      Extensión típica: 5–15 páginas.
+
+  # ── Finales ───────────────────────────────────────────────────────
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: |
+      APA 7ª edición: lista alfabética por apellido del primer autor,
+      sangría francesa. Generada automáticamente desde tu archivo .bib.
+      Puntos clave APA 7:
+      • Cursiva para títulos de libros, revistas y tesis.
+      • Sin cursiva para artículos y capítulos.
+      • DOI en formato URL: https://doi.org/xxxxx (sin punto final).
+      • Para fuentes consultadas en línea: URL y fecha de acceso.
+      • Tesis: Apellido, N. (Año). Título [Tesis de licenciatura/maestría/doctorado,
+        Nombre de la Universidad]. Repositorio o base de datos.
+      Incluye solo las fuentes que citas en el cuerpo del texto.
+
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apendices"
+    title: "Apéndices"
+    guidance: |
+      Materiales complementarios que son demasiado extensos para el cuerpo principal
+      o que interrumpirían el flujo narrativo:
+      • Instrumentos completos (cuestionarios, escalas, guías de entrevista).
+      • Datos brutos o tablas estadísticas adicionales.
+      • Transcripciones de entrevistas o grupos de enfoque.
+      • Cartas de aprobación ética y formatos de consentimiento informado.
+      • Materiales de estímulo o protocolos de intervención.
+      Etiqueta: Apéndice A, B… con título descriptivo.
+      Referencia desde el texto: "(véase Apéndice A)".

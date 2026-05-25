@@ -797,16 +797,17 @@
     },
     {
       "id": "generic_tesina",
-      "name": "Tesina Generica",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "Tesina Genérica",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Version compacta para trabajos monograficos y tesinas",
+      "description": "Plantilla genérica para tesinas y trabajos académicos — APA 7, español, guidance completa para estructura de desarrollo y conclusiones",
       "tags": [
         "tesina",
         "generico",
-        "apa"
+        "apa",
+        "licenciatura"
       ],
       "institution": "",
       "country": "generic",
@@ -814,21 +815,24 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/generic/generic/generic/tesina/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
+      ]
     },
     {
       "id": "generic_thesis",
-      "name": "Tesis Generica",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "Tesis Genérica",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Estructura completa para cualquier disciplina academica",
+      "description": "Plantilla genérica para tesis de licenciatura, maestría o doctorado — APA 7, español, estructura completa con guidance detallada",
       "tags": [
         "tesis",
         "generico",
-        "apa"
+        "apa",
+        "posgrado"
       ],
       "institution": "",
       "country": "generic",
@@ -836,8 +840,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/generic/generic/generic/thesis/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf",
+        "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+      ]
     }
   ]
 }

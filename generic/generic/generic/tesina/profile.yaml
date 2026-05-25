@@ -1,14 +1,35 @@
 schema_version: "1.0.0"
 id: generic_tesina
-name: "Tesina Generica"
-status: experimental
+name: "Tesina Genérica"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Perfil genérico para tesina ───────────────────────────────────
+# La tesina es un trabajo académico menor que la tesis: más breve, enfocado
+# en un tema específico, sin la exigencia de contribución original al
+# conocimiento que tiene una tesis doctoral.
+# Se usa como modalidad de titulación en licenciatura y en algunos posgrados.
+# Basado en convenciones APA 7ª edición para trabajos académicos de estudiantes.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas"
+  source_urls:
+    - "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# Convención para tesina en México y América Latina.
+# Carta (más común) o A4 según institución.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,35 +38,142 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
+
+# ── Límites de palabras ───────────────────────────────────────────
+# Tesinas de licenciatura: típicamente 30–80 páginas (10,000–25,000 palabras).
+# Resumen: 150–300 palabras.
+max_abstract_words: 300
+
 packages: []
+
 sections:
+  # ── Preliminares ──────────────────────────────────────────────────
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      La portada debe incluir:
+      • Logotipo y nombre de la institución, facultad o escuela.
+      • Título completo de la tesina (claro y específico).
+      • "TESINA" y el grado o certificado al que aspira
+        (e.g., "para obtener el título de Licenciado(a) en [campo]").
+      • Nombre completo del autor.
+      • Nombre del asesor o director.
+      • Ciudad, mes y año.
+      Consulta el formato oficial de portada de tu programa.
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
+    title: "Resumen"
+    guidance: |
+      Resumen breve de la tesina. 150–300 palabras.
+      Incluye: el tema, el objetivo, el método empleado, los principales
+      hallazgos y la aportación o conclusión central.
+      Al final: 4–6 Palabras clave.
+      Sin citas, sin figuras, sin acrónimos no definidos.
+
+  - id: agradecimientos
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+    guidance: |
+      Opcional. Agradece a tu asesor, a las personas que facilitaron
+      el acceso a datos o información, y al apoyo personal recibido.
+      Longitud típica: un párrafo o media página.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice"
+    guidance: |
+      Generado automáticamente. Incluye todos los capítulos y apartados
+      con sus números de página.
+
+  # ── Cuerpo ────────────────────────────────────────────────────────
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción"
+    label: "capitulo:introduccion"
+    guidance: |
+      La introducción sitúa el tema y justifica el trabajo.
+      Incluye:
+      1. Presentación del tema: ¿de qué trata la tesina?
+      2. Relevancia: ¿por qué es importante este tema?
+      3. Pregunta o propósito central del trabajo.
+      4. Objetivo(s) del estudio.
+      5. Breve descripción de la estructura de la tesina.
+      Extensión típica: 3–8 páginas.
+
   - id: desarrollo
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: Desarrollo
+    title: "Desarrollo"
+    label: "capitulo:desarrollo"
+    guidance: |
+      El desarrollo es el cuerpo principal de la tesina. Puedes estructurarlo
+      de las siguientes maneras según el tipo de trabajo:
+      Tesina teórica / ensayo académico:
+        • Revisión y análisis crítico de la literatura relevante.
+        • Desarrollo del argumento o postura central con apoyo bibliográfico.
+        • Discusión de distintas perspectivas o enfoques.
+      Tesina de investigación empírica (pequeña escala):
+        • Marco teórico breve.
+        • Metodología: diseño, muestra, instrumentos, procedimiento.
+        • Resultados y análisis.
+        • Discusión de los hallazgos.
+      Tesina de diseño o proyecto:
+        • Diagnóstico o justificación del problema.
+        • Propuesta de intervención o diseño.
+        • Evaluación o validación.
+      Divide este capítulo en apartados con subtítulos claros.
+      APA 7: cita con (Autor, año) o Autor (año).
+      Extensión típica: 25–60 páginas.
+
   - id: conclusiones
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusiones
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: |
+      Las conclusiones sintetizan lo que aprendiste o demostraste.
+      • Responde a la pregunta o propósito central de la tesina.
+      • Resume los puntos principales del desarrollo.
+      • Señala implicaciones o aplicaciones.
+      • Reconoce las limitaciones del trabajo.
+      • Sugiere posibles líneas de trabajo futuro o profundización.
+      Extensión típica: 3–8 páginas.
+      Evita introducir información nueva que no hayas discutido antes.
+
+  # ── Finales ───────────────────────────────────────────────────────
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: |
+      APA 7ª edición: lista alfabética, sangría francesa.
+      Solo incluye las fuentes que citaste en el texto.
+      Generada automáticamente desde tu archivo .bib.
+      Incluye DOI cuando esté disponible.
+
+  - id: apendices
+    element_id: appendix
+    placement: back_matter
+    required: false
+    title: "Apéndices"
+    guidance: |
+      Opcional. Materiales adicionales de apoyo:
+      • Instrumentos de recolección (si los usaste).
+      • Tablas de datos extensas.
+      • Materiales de análisis adicionales.
+      Etiqueta: Apéndice A, B… Referencia desde el texto.

@@ -1,14 +1,33 @@
 schema_version: "1.0.0"
 id: es_ucm_apa7
-name: "UCM Madrid - Tesis (APA 7)"
-status: experimental
+name: "UCM Madrid - Tesis Doctoral (APA 7)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra el Reglamento de Doctorado de la UCM
+# y las directrices de la Escuela de Doctorado (EDCM).
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra Reglamento de Doctorado UCM y EDCM"
+  source_urls:
+    - "https://www.ucm.es/posgrado-doctorado"
+    - "https://www.ucm.es/escueladoctorado/reglamento-doctorado"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# UCM: A4, márgenes estándar España (izq 3.5cm, resto 2.5cm).
+# Interlineado: 1.5. Fuente: Times New Roman o similar 12pt.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
@@ -17,65 +36,176 @@ page_layout:
     left: 35mm
     right: 25mm
   line_spacing: 1.5
+
+max_abstract_words: 350
+
 packages: []
+
 sections:
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      La portada oficial de la UCM incluye:
+      • Logotipo de la Universidad Complutense de Madrid.
+      • Nombre de la Facultad o Departamento.
+      • Título completo de la tesis doctoral.
+      • "TESIS DOCTORAL" (en mayúsculas).
+      • "presentada por [Nombre del autor/a]."
+      • "dirigida por [Dr./Dra. Nombre del Director/a]."
+      • "para optar al grado de Doctor/a por la Universidad Complutense de Madrid."
+      • Madrid, [Año].
+      La Escuela de Doctorado (EDCM) puede tener un formato normalizado —
+      descarga la plantilla desde el portal de la EDCM.
+
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaracion de Autenticidad"
+    title: "Declaración de Autoría y Originalidad"
+    guidance: |
+      La UCM exige una Declaración de Autoría y Originalidad conforme
+      al artículo 9 del Reglamento de Doctorado UCM.
+      Texto estándar: "D./Dña. [nombre], con DNI/NIE [número], declaro que
+      la presente tesis doctoral es de mi autoría, original e inédita,
+      que no ha sido presentada en ninguna otra institución y que los
+      resultados son verídicos."
+      Puede requerirse también la firma del director de tesis.
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
-  - id: abstract
+    title: "Resumen"
+    guidance: |
+      Resumen en español, 200–350 palabras.
+      Problema, objetivos, metodología, resultados y conclusiones.
+      Palabras clave (4–6).
+
+  - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
-    required: false
-    title: Abstract
+    required: true
+    title: "Abstract"
+    guidance: |
+      La UCM exige resumen en inglés para las tesis doctorales.
+      Máximo 350 palabras. Misma estructura que el Resumen.
+      Keywords (4–6). Requerido para el depósito en TESEO y en la
+      base de datos de la Biblioteca UCM.
+
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Agradecimientos
+    title: "Agradecimientos"
+    guidance: |
+      Reconoce al director/a de tesis, tribunal, becas (FPI, FPU, contrato predoctoral
+      UCM) y proyectos de investigación del Ministerio (PID, PIE) o la Comunidad
+      de Madrid (PRICIT) con referencia del proyecto.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice"
+    guidance: Generado automáticamente. Requerido por la EDCM.
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Índice de Figuras"
+    guidance: Activa si tienes 5 o más figuras.
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Índice de Tablas"
+    guidance: Activa si tienes 5 o más tablas.
+
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción"
+    label: "capitulo:introduccion"
+    guidance: |
+      Contextualización, planteamiento del problema, justificación,
+      preguntas de investigación, objetivos, hipótesis y estructura.
+      APA 7: (Autor, año) en el texto.
+      La UCM requiere que la introducción muestre dominio del campo.
+
   - id: marco_teorico
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teorico"
+    title: "Marco Teórico y Revisión de la Literatura"
+    label: "capitulo:marcoteorico"
+    guidance: |
+      Revisión crítica de la literatura y fundamentos teóricos.
+      Organiza por corrientes teóricas o debates — no cronológicamente.
+      Identifica el vacío que justifica la tesis.
+
   - id: metodologia
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Metodologia
+    title: "Metodología"
+    label: "capitulo:metodologia"
+    guidance: |
+      Diseño, muestra, instrumentos, procedimiento, análisis y ética.
+      Si la investigación implica seres humanos: aprobación del Comité
+      de Ética de Investigación (CEISH-UCM o similar).
+
   - id: resultados
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Resultados
+    title: "Resultados"
+    label: "capitulo:resultados"
+    guidance: Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación.
+
+  - id: discusion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+    label: "capitulo:discusion"
+    guidance: Interpretación, comparación con literatura, implicaciones y limitaciones.
+
   - id: conclusiones
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusiones
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: |
+      Responde preguntas de investigación, resume aportaciones, señala
+      limitaciones y propone investigación futura.
+      La UCM puede exigir separar "Conclusiones" de "Discusión" —
+      verifica con tu director y la normativa de tu programa.
+
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: |
+      APA 7ª edición, lista alfabética, sangría francesa.
+      Generada automáticamente. Incluye DOI cuando disponible.
+      La EDCM puede exigir que las referencias estén en un capítulo
+      final con numeración continua — verifica los requisitos de tu programa.
+
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apendices"
+    title: "Apéndices"
+    guidance: |
+      Instrumentos, datos adicionales, declaraciones éticas,
+      publicaciones derivadas de la tesis (si las presentas como compendio).
+      Las tesis por compendio de publicaciones (modalidad frecuente en UCM)
+      requieren incluir los artículos publicados en apéndices o capítulos.

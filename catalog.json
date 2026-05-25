@@ -5,15 +5,16 @@
     {
       "id": "ar_uba_apa7",
       "name": "UBA - Tesis (APA 7)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis de la Universidad de Buenos Aires, APA 7",
+      "description": "Tesis UBA — Declaración Jurada, CONICET/ANPCyT/UBACyT, APA 7, guidance en español",
       "tags": [
         "uba",
         "argentina",
-        "apa7"
+        "apa7",
+        "conicet"
       ],
       "institution": "Universidad de Buenos Aires",
       "country": "argentina",
@@ -21,8 +22,10 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/argentina/uba/apa7/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.uba.ar/posgrado/"
+      ]
     },
     {
       "id": "br_unicamp_abnt",
@@ -73,15 +76,16 @@
     {
       "id": "ca_mcgill_apa7",
       "name": "McGill - Thesis (APA 7)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "McGill University thesis, APA 7, GPS guidelines",
+      "description": "McGill University thesis — GPS guidelines, Résumé français optional, NSERC/SSHRC/CIHR, double spacing, APA 7",
       "tags": [
         "mcgill",
         "canada",
-        "apa7"
+        "apa7",
+        "bilingual"
       ],
       "institution": "McGill University",
       "country": "canada",
@@ -89,21 +93,25 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/canada/mcgill/apa7/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.mcgill.ca/gps/thesis/thesis-guidelines",
+        "https://www.mcgill.ca/gps/thesis/thesis-submission"
+      ]
     },
     {
       "id": "cl_uchile_apa7",
       "name": "U. de Chile - Tesis (APA 7)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis de la Universidad de Chile, APA 7",
+      "description": "Tesis U. de Chile — ANID/FONDECYT/Becas Chile, CEISH, VID, APA 7, guidance en español",
       "tags": [
         "uchile",
         "chile",
-        "apa7"
+        "apa7",
+        "anid"
       ],
       "institution": "Universidad de Chile",
       "country": "chile",
@@ -111,8 +119,10 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/america/chile/uchile/apa7/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.uchile.cl/postgrado"
+      ]
     },
     {
       "id": "mx_ipn_apa7",
@@ -577,16 +587,18 @@
     {
       "id": "de_lmu_apa7",
       "name": "LMU Munich - Dissertation (APA 7)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Ludwig-Maximilians-Universitaet Muenchen dissertation, APA 7",
+      "description": "LMU doctoral dissertation for psychology and social sciences — APA 7, Zusammenfassung required, verified against LMU Graduate School guidelines",
       "tags": [
         "lmu",
         "munich",
         "germany",
-        "apa7"
+        "apa7",
+        "psychology",
+        "social-sciences"
       ],
       "institution": "Ludwig-Maximilians-Universitaet Muenchen",
       "country": "germany",
@@ -594,8 +606,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/europe/germany/lmu/apa7/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.lmu.de/en/research/graduate-education/",
+        "https://www.gs.lmu.de/en/"
+      ]
     },
     {
       "id": "de_tum_ieee",
@@ -676,17 +691,18 @@
     },
     {
       "id": "es_ucm_apa7",
-      "name": "UCM Madrid - Tesis (APA 7)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "UCM Madrid - Tesis Doctoral (APA 7)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis doctoral de la Universidad Complutense de Madrid, APA 7",
+      "description": "Tesis doctoral UCM — Reglamento EDCM, Declaración de Autoría, resumen en inglés obligatorio, APA 7, guidance en español",
       "tags": [
         "ucm",
         "madrid",
         "espana",
-        "apa7"
+        "apa7",
+        "doctorado"
       ],
       "institution": "Universidad Complutense de Madrid",
       "country": "spain",
@@ -694,17 +710,20 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/europe/spain/ucm/apa7/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.ucm.es/posgrado-doctorado",
+        "https://www.ucm.es/escueladoctorado/reglamento-doctorado"
+      ]
     },
     {
       "id": "se_kth_ieee",
-      "name": "KTH - Thesis (IEEE)",
-      "status": "experimental",
-      "version": "1.0.0",
+      "name": "KTH - Doctoral Thesis (IEEE)",
+      "status": "reviewed",
+      "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "KTH Royal Institute of Technology thesis for engineering and technology, IEEE",
+      "description": "KTH doctoral dissertation — TRITA number, Sammanfattning, Vinnova/VR/SSF, IEEE style, verified against KTH regulations",
       "tags": [
         "kth",
         "sweden",
@@ -717,8 +736,11 @@
       "texis_min_version": "1.0.0",
       "profile_url": "https://raw.githubusercontent.com/GonzaloAndDev/TeXisStudio-Profiles/main/europe/sweden/kth/ieee/profile.yaml",
       "sha256": null,
-      "verified_at": null,
-      "source_urls": []
+      "verified_at": "2026-05-25",
+      "source_urls": [
+        "https://www.kth.se/en/studies/phd/graduating/licentiate-and-doctoral-thesis",
+        "https://www.kth.se/en/studies/phd/regulations"
+      ]
     },
     {
       "id": "uk_cambridge_apa7",

@@ -1,14 +1,34 @@
 schema_version: "1.0.0"
 id: de_lmu_apa7
 name: "LMU Munich - Dissertation (APA 7)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las directrices de la LMU Graduate School
+# y la Promotionsordnung de las Fakultäten relevantes.
+# APA 7 para psicología, ciencias sociales y educación.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra LMU Graduate School Doctoral Guidelines"
+  source_urls:
+    - "https://www.lmu.de/en/research/graduate-education/"
+    - "https://www.gs.lmu.de/en/"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# LMU: A4, márgenes estándar alemanes (izq 3.5cm, resto 2.5cm).
+# Interlineado: 1.5. Fuente: Times New Roman o equivalente serif 12pt.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
@@ -17,65 +37,148 @@ page_layout:
     left: 35mm
     right: 25mm
   line_spacing: 1.5
+
+max_abstract_words: 500
+
 packages: []
+
 sections:
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
-  - id: abstract
+    guidance: |
+      LMU title page includes:
+      • LMU München logo.
+      • Full dissertation title.
+      • "Dissertation zur Erlangung des Doktorgrades der [Sozialwissenschaften /
+        Psychologie / etc.] an der Ludwig-Maximilians-Universität München."
+      • "vorgelegt von [Full Name]" and birthplace.
+      • Supervisor (Betreuer/Betreuerin): name and LMU chair.
+      • "München, [Jahr]."
+      Verify exact wording with the Promotionsbüro of your Fakultät.
+
+  - id: zusammenfassung
     element_id: abstract
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Zusammenfassung (auf Deutsch)"
+    guidance: |
+      LMU requires a German abstract (Zusammenfassung) for all dissertations.
+      250–500 words. Structured abstract:
+      Problemstellung, Methode, Ergebnisse, Schlussfolgerungen.
+
+  - id: abstract_en
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract (in English)"
+    guidance: |
+      English abstract. Required for dissertations submitted to international
+      databases (PsycINFO, PubMed, ProQuest). Max 500 words.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Acknowledgements
+    title: "Acknowledgements / Danksagung"
+    guidance: |
+      Acknowledge supervisor(s), committee members, funding (DFG, BMBF,
+      EU Horizon, LMU research grants — with project numbers).
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: Auto-generated. Complete with page numbers.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: Enable for 5+ figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: Enable for 5+ tables.
+
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      Establishes research problem, motivation, gap, research questions,
+      theoretical framework, and dissertation structure.
+      APA 7: (Author, year) citations throughout.
+      Length: 10–25 pages.
+
   - id: literature_review
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Theoretical Background and Literature Review"
+    label: "chapter:literature"
+    guidance: |
+      Conceptual foundations and critical review of prior work.
+      Organized by theory or research area — not chronologically.
+      Identify the gap that this dissertation fills.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
+    title: "Methodology"
+    label: "chapter:methodology"
+    guidance: |
+      Research design, participants/sample, measures, procedure,
+      statistical analysis, and ethical approval (Ethics Committee, DGPs).
+
   - id: results
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Results
+    title: "Results"
+    label: "chapter:results"
+    guidance: Objective findings. Tables and figures APA 7. No interpretation here.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
     required: true
-    title: Discussion
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: |
+      Interpretation in relation to theory and prior literature.
+      Implications, limitations, and future research directions.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "General Conclusions"
+    label: "chapter:conclusion"
+    guidance: |
+      Synthesizes contributions, limitations, and outlook.
+      Often brief in social science dissertations (5–15 pages).
+
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
-    title: References
+    title: "References"
+    guidance: APA 7 — alphabetical, hanging indent. Auto-generated.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: Appendices
+    title: "Appendices"
+    guidance: Materials, instruments, additional tables.

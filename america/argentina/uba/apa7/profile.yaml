@@ -1,81 +1,194 @@
 schema_version: "1.0.0"
 id: ar_uba_apa7
 name: "UBA - Tesis (APA 7)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra lineamientos del Rectorado de la UBA
+# y disposiciones de la Comisión de Doctorado de las Facultades.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra lineamientos UBA Rectorado y Comisión de Doctorado"
+  source_urls:
+    - "https://www.uba.ar/posgrado/"
+    - "https://www.uba.ar/download/academicos/doctorales/reglamento.pdf"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# UBA: A4, márgenes estándar LATAM (izq 3cm, resto 2.5cm).
+# Interlineado: 1.5. Fuente: Times New Roman 12pt.
+# El formato varía por Facultad — verifica con tu unidad académica.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
     top: 25mm
     bottom: 25mm
-    left: 35mm
+    left: 30mm
     right: 25mm
   line_spacing: 1.5
+
+max_abstract_words: 350
+
 packages: []
+
 sections:
   - id: portada
     element_id: cover
     placement: front_matter
     required: true
-    title: Portada
+    title: "Portada"
+    guidance: |
+      La portada oficial de la UBA incluye:
+      • Logotipo y nombre de la Universidad de Buenos Aires.
+      • Nombre de la Facultad (FCE, FFyL, FMED, etc.).
+      • Nombre del programa de doctorado.
+      • Título completo de la tesis.
+      • "Tesis presentada para optar al título de Doctor/a en [campo]."
+      • Nombre completo del autor/a.
+      • Director/a de tesis y co-director/a (si aplica).
+      • Buenos Aires, [Mes] [Año].
+      Cada facultad tiene un formato de portada específico —
+      descárgalo de la Secretaría de Posgrado de tu unidad académica.
+
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaracion de Autenticidad"
+    title: "Declaración Jurada de Autoría"
+    guidance: |
+      La UBA exige una Declaración Jurada de Autoría y Originalidad.
+      El Rectorado o la Facultad puede requerir formulario específico firmado.
+      Texto estándar: "El/la suscripto/a declara bajo juramento que la presente
+      tesis es de su autoría, que no ha sido presentada anteriormente para
+      obtener ningún título en ninguna institución y que todas las fuentes
+      consultadas han sido correctamente citadas."
+
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumen
-  - id: abstract
+    title: "Resumen"
+    guidance: |
+      Resumen en español, 200–350 palabras.
+      Problema, objetivos, metodología, resultados y conclusiones.
+      Palabras clave (4–6).
+
+  - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: Abstract
+    title: "Abstract"
+    guidance: |
+      Abstract en inglés. Recomendado para visibilidad internacional.
+      Máximo 350 palabras. Keywords (4–6).
+
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Agradecimientos
+    title: "Agradecimientos"
+    guidance: |
+      Reconoce al director/a, comisión evaluadora, becas CONICET, ANPCyT
+      (PICT), UBACyT (Programas de Reconocimiento Institucional UBA),
+      MINCYT u otros fondos. Incluye número de proyecto o beca.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice General"
+    guidance: Generado automáticamente. Números de página exactos.
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Índice de Figuras"
+    guidance: Activa si tienes 5 o más figuras.
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Índice de Tablas"
+    guidance: Activa si tienes 5 o más tablas.
+
   - id: introduccion
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: "Introduccion"
+    title: "Introducción"
+    label: "capitulo:introduccion"
+    guidance: |
+      Contextualización, planteamiento del problema, justificación,
+      preguntas de investigación, objetivos e hipótesis. Estructura.
+      APA 7: (Autor, año) en el texto.
+
   - id: marco_teorico
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teorico"
+    title: "Marco Teórico"
+    label: "capitulo:marcoteorico"
+    guidance: |
+      Revisión crítica y fundamentos conceptuales.
+      Organiza por corrientes teóricas. Identifica el vacío de la tesis.
+
   - id: metodologia
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Metodologia
+    title: "Metodología"
+    label: "capitulo:metodologia"
+    guidance: |
+      Diseño, muestra, instrumentos, procedimiento, análisis.
+      Aprobación del Comité de Ética institucional si involucra seres humanos.
+
   - id: resultados
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Resultados
+    title: "Resultados"
+    label: "capitulo:resultados"
+    guidance: Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación.
+
+  - id: discusion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+    label: "capitulo:discusion"
+    guidance: Interpretación, comparación con literatura, implicaciones y limitaciones.
+
   - id: conclusiones
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusiones
+    title: "Conclusiones"
+    label: "capitulo:conclusiones"
+    guidance: Responde objetivos, resume aportaciones, limitaciones y trabajo futuro.
+
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: Referencias
+    title: "Referencias"
+    guidance: APA 7ª edición, lista alfabética, sangría francesa.
+
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apendices"
+    title: "Apéndices"
+    guidance: Instrumentos, datos adicionales, dictamen ético. Apéndice A, B…

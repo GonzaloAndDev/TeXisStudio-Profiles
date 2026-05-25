@@ -1,14 +1,34 @@
 schema_version: "1.0.0"
 id: se_kth_ieee
-name: "KTH - Thesis (IEEE)"
-status: experimental
+name: "KTH - Doctoral Thesis (IEEE)"
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, a4paper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: ieee
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las KTH Doctoral Programme Regulations
+# y las directrices de la KTH School of Electrical Engineering.
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra KTH Doctoral Programme Regulations"
+  source_urls:
+    - "https://www.kth.se/en/studies/phd/graduating/licentiate-and-doctoral-thesis"
+    - "https://www.kth.se/en/studies/phd/regulations"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# KTH uses a specific printed format (B5 170×242mm for hard cover).
+# For digital submission and standard typesetting: A4.
+# Left margin 35mm (binding), right/top/bottom 25mm. Spacing 1.5.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - a4paper
+    - oneside
+
 page_layout:
   paper: a4paper
   margins:
@@ -17,65 +37,146 @@ page_layout:
     left: 35mm
     right: 25mm
   line_spacing: 1.5
+
+max_abstract_words: 500
+
 packages: []
+
 sections:
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      KTH doctoral thesis title page includes:
+      • KTH Royal Institute of Technology logo.
+      • Full thesis title and subtitle.
+      • Author's full name, TRITA number (assigned by KTH library),
+        ISBN and ISSN (assigned for KTH dissertations).
+      • "Doctoral Thesis in [field], KTH Royal Institute of Technology."
+      • Stockholm, Sweden, [Year].
+      The TRITA number and ISBN are assigned by the KTH library when you
+      register for dissertation printing. Contact biblioteca@kth.se.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Abstract"
+    guidance: |
+      KTH requires an abstract in English. Typically 300–500 words.
+      Self-contained: no citations, no undefined acronyms.
+      Structure: problem, approach, key results, contributions.
+
+  - id: sammanfattning
+    element_id: abstract
+    placement: front_matter
+    required: false
+    title: "Sammanfattning (Swedish Abstract)"
+    guidance: |
+      Swedish abstract. Recommended for KTH dissertations even when the
+      thesis is written in English. Same structure as the English abstract.
+      If Swedish is not your first language, have a native speaker review it.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Acknowledgements
+    title: "Acknowledgements"
+    guidance: |
+      Acknowledge supervisors (Handledare), committee members, Vinnova,
+      Swedish Research Council (VR), Swedish Foundation for Strategic Research
+      (SSF), KTH research funding. Include grant numbers.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: Auto-generated. Complete with page numbers.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: Enable for 5+ figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: Enable for 5+ tables.
+
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
-  - id: literature_review
-    element_id: chapter
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      Problem statement, motivation, limitations of current approaches,
+      research contributions, and thesis structure.
+      IEEE: numeric [1], [2] citations.
+      KTH licentiate and doctoral theses often consist of a "kappa"
+      (cover essay) + appended papers. This profile covers the monograph format.
+
+  - id: background
+    element_id: theoretical_framework
     placement: body
     required: true
-    title: "Literature Review"
+    title: "Background"
+    label: "chapter:background"
+    guidance: Technical foundations and related work. Gap statement.
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
-  - id: results
-    element_id: chapter
+    title: "Methodology"
+    label: "chapter:methodology"
+    guidance: System design, algorithms, theoretical analysis, design decisions.
+
+  - id: experiments
+    element_id: experimentation
     placement: body
     required: true
-    title: Results
+    title: "Experimental Results"
+    label: "chapter:experiments"
+    guidance: |
+      Experimental setup, ablations, comparison to baselines,
+      statistical reporting. IEEE: Fig. X and Table X.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
-    required: true
-    title: Discussion
+    required: false
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: Interpretation, limitations, scalability, industry relevance.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusions and Future Work"
+    label: "chapter:conclusion"
+    guidance: |
+      Restate contributions, limitations, future directions.
+      List publications arising from the thesis (required by KTH library).
+
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
-    title: References
+    title: "References"
+    guidance: IEEE numbered bibliography. Auto-generated.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: Appendices
+    title: "Appendices"
+    guidance: Proofs, additional results, code availability (KTH Data Repository).

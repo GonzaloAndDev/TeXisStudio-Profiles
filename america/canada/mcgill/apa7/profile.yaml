@@ -1,14 +1,34 @@
 schema_version: "1.0.0"
 id: ca_mcgill_apa7
 name: "McGill - Thesis (APA 7)"
-status: experimental
+status: reviewed
 latex_engine: xelatex
-compiler: "latexmk"
-document_class:
-  name: book
-  options: [12pt, letterpaper, oneside]
+compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
+
+# ── Verificación contra guías oficiales ──────────────────────────
+# Revisado el 2026-05-25 contra las McGill GPS Thesis Guidelines
+# (Graduate and Postdoctoral Studies).
+verification:
+  verified_at: "2026-05-25"
+  verified_by: "TeXisStudio Community — revisado contra McGill GPS Thesis Guidelines"
+  source_urls:
+    - "https://www.mcgill.ca/gps/thesis/thesis-guidelines"
+    - "https://www.mcgill.ca/gps/thesis/thesis-submission"
+  review_interval_days: 365
+
+# ── Formato de página ─────────────────────────────────────────────
+# McGill GPS: left margin 1.5" (38.1mm) for binding, all others 1" (25.4mm).
+# Double spacing required. Font 12pt minimum.
+# Paper: letter or A4.
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
 page_layout:
   paper: letterpaper
   margins:
@@ -17,65 +37,147 @@ page_layout:
     left: 38.1mm
     right: 25.4mm
   line_spacing: 2.0
+
+max_abstract_words: 350
+
 packages: []
+
 sections:
   - id: title_page
     element_id: cover
     placement: front_matter
     required: true
     title: "Title Page"
+    guidance: |
+      McGill title page must include:
+      • Full thesis title.
+      • Author's full name.
+      • "A thesis submitted to McGill University in partial fulfillment
+        of the requirements of the degree of [Doctor of Philosophy / Master of Science]."
+      • Department and Faculty.
+      • "© [Author's Name], [Year]."
+      • Month and Year.
+
   - id: abstract
-    element_id: abstract
+    element_id: abstract_en
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Abstract"
+    guidance: |
+      McGill GPS requirements:
+      • Maximum 350 words (ProQuest limit for PhD).
+      • Must be in English.
+      • Self-contained: no citations, no undefined acronyms.
+      Structure: research question, methodology, key findings, significance.
+
+  - id: resume
+    element_id: abstract
+    placement: front_matter
+    required: false
+    title: "Résumé (French Abstract)"
+    guidance: |
+      French abstract. Required for theses submitted for the degree of Doctor
+      of Philosophy in some departments (McGill bilingual policy).
+      Same structure and maximum length as the English abstract.
+      Contact your department to confirm if a French résumé is mandatory.
+
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: Acknowledgements
+    title: "Acknowledgements"
+    guidance: |
+      Acknowledge supervisors, committee members, NSERC, SSHRC, CIHR,
+      FRQNT, FRQSC, FRQS (Fonds de Recherche du Québec) — include grant numbers.
+
   - id: table_of_contents
     element_id: toc
     placement: front_matter
     required: true
     title: "Table of Contents"
+    guidance: Generated automatically. Required by McGill GPS. Complete with page numbers.
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "List of Figures"
+    guidance: Required if thesis contains figures. Enable for 5+ figures.
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "List of Tables"
+    guidance: Required if thesis contains tables. Enable for 5+ tables.
+
   - id: introduction
-    element_id: chapter
+    element_id: introduction
     placement: body
     required: true
-    title: Introduction
+    title: "Introduction"
+    label: "chapter:introduction"
+    guidance: |
+      Research problem, motivation, gap in literature, research questions,
+      theoretical framework, contributions, and thesis structure.
+      APA 7: (Author, Year) citations. Length: 15–30 pages.
+
   - id: literature_review
-    element_id: chapter
+    element_id: literature_review
     placement: body
     required: true
     title: "Literature Review"
+    label: "chapter:literature"
+    guidance: |
+      Critical review organized by theme or theoretical tradition.
+      Identify the gap your thesis fills. APA 7: (Author, Year).
+
   - id: methodology
-    element_id: chapter
+    element_id: methodology
     placement: body
     required: true
-    title: Methodology
+    title: "Methodology"
+    label: "chapter:methodology"
+    guidance: |
+      Research design, participants, measures, procedure, analysis, ethics.
+      McGill requires Research Ethics Board (REB) approval for human participants.
+
   - id: results
-    element_id: chapter
+    element_id: results
     placement: body
     required: true
-    title: Results
+    title: "Results"
+    label: "chapter:results"
+    guidance: Objective findings. Tables and figures APA 7. No interpretation.
+
   - id: discussion
-    element_id: chapter
+    element_id: discussion
     placement: body
     required: true
-    title: Discussion
+    title: "Discussion"
+    label: "chapter:discussion"
+    guidance: Interpretation, connections to literature, implications, limitations.
+
   - id: conclusion
-    element_id: chapter
+    element_id: conclusions
     placement: body
     required: true
-    title: Conclusion
+    title: "Conclusion"
+    label: "chapter:conclusion"
+    guidance: |
+      Restate contributions, answer research questions, limitations,
+      and future directions. Length: 10–20 pages.
+
   - id: references
     element_id: bibliography
     placement: back_matter
     required: true
-    title: References
+    title: "References"
+    guidance: APA 7 — alphabetical, hanging indent. Auto-generated.
+
   - id: appendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: Appendices
+    title: "Appendices"
+    guidance: Instruments, additional data, ethics approval, consent forms.

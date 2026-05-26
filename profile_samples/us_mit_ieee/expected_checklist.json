@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "us_mit_ieee",
+  "description": "Expected validation state for the us_mit_ieee sample project",
+  "expected": {
+    "validation_errors": 0,
+    "required_sections_present": [
+      "title_page",
+      "abstract_en",
+      "table_of_contents",
+      "introduction",
+      "theoretical_framework",
+      "methodology",
+      "results",
+      "conclusions",
+      "references"
+    ],
+    "max_abstract_words_limit": 350,
+    "page_layout": {
+      "paper": "letterpaper",
+      "margins": {
+        "top": "25.4mm",
+        "bottom": "25.4mm",
+        "left": "38.1mm",
+        "right": "25.4mm"
+      },
+      "line_spacing": 2.0
+    },
+    "latex_engine": "xelatex",
+    "bibliography_backend": "biber",
+    "bibliography_style": "ieee"
+  },
+  "notes": "This sample project covers the golden path for a doctoral thesis at MIT using IEEE style. It exercises: title page, English abstract (under 350 words), acknowledgements with funding, TOC, figure and table lists, all required body sections, and a references section with 3 properly formatted IEEE entries."
+}

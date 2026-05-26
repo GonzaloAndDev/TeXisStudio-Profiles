@@ -1,0 +1,235 @@
+schema_version: "1.0.0"
+id: sample-mit-ieee-001
+created_at: "2026-05-26T00:00:00Z"
+updated_at: "2026-05-26T00:00:00Z"
+profile_id: us_mit_ieee
+
+metadata:
+  title: "Sample MIT Thesis — Contributions to Distributed Systems"
+  document_kind: tesis
+  academic_level: doctorado
+  language: en
+  city: Cambridge
+  year: 2026
+  keywords:
+    - distributed systems
+    - fault tolerance
+    - consensus protocols
+
+institution:
+  name: "Massachusetts Institute of Technology"
+  faculty: "School of Engineering"
+  department: "Department of Electrical Engineering and Computer Science"
+  country: USA
+
+student:
+  full_name: "Jane Doe"
+  email: "janedoe@mit.edu"
+  advisors:
+    - "Prof. John Smith"
+  committee:
+    - full_name: "Prof. Alice Johnson"
+      role: "Committee Chair"
+    - full_name: "Prof. Bob Williams"
+      role: "Committee Member"
+  orcid: "0000-0002-1825-0097"
+
+latex_config:
+  document_class:
+    name: book
+    options:
+      - 12pt
+      - letterpaper
+      - oneside
+  engine: xelatex
+  compiler: latexmk
+  bibliography_backend: biber
+  bibliography_style: ieee
+  packages_required: []
+  typography: {}
+  page_layout:
+    paper: letterpaper
+    margins:
+      top: 25.4mm
+      bottom: 25.4mm
+      left: 38.1mm
+      right: 25.4mm
+    line_spacing: 2.0
+
+sections:
+  - id: title_page
+    element_id: title_page
+    title: "Title Page"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: abstract
+    element_id: abstract_en
+    title: Abstract
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: abs-p1
+        content: >
+          This thesis presents novel contributions to the field of distributed systems,
+          focusing on fault-tolerant consensus protocols for large-scale deployments.
+          We propose and analyze three algorithms that improve upon the state of the art
+          in terms of latency, throughput, and resilience to Byzantine failures.
+          Experimental evaluation on a 1000-node testbed demonstrates a 40% reduction
+          in median consensus latency compared to existing approaches.
+          The theoretical contributions include formal proofs of correctness and
+          complexity bounds for each protocol.
+    fields: {}
+    children: []
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    title: Acknowledgements
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: ack-p1
+        content: >
+          This research was supported by the National Science Foundation under
+          Grant No. CNS-2026001 and by DARPA under Contract HR001126C0042.
+          I am grateful to my advisor, Prof. John Smith, for his guidance and support.
+    fields: {}
+    children: []
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    title: Table of Contents
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    title: List of Figures
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    title: List of Tables
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: introduction
+    element_id: introduction
+    title: Introduction
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: intro-p1
+        content: >
+          Distributed systems underpin modern cloud infrastructure, yet fundamental
+          challenges in fault tolerance and consensus remain open. This thesis addresses
+          three open problems in the design of consensus protocols for geographically
+          distributed deployments.
+      - type: paragraph
+        id: intro-p2
+        content: >
+          The thesis is organized as follows. Chapter 2 reviews related work on
+          consensus protocols and fault tolerance. Chapter 3 presents our proposed
+          approach. Chapter 4 describes the experimental evaluation. Chapter 5 concludes.
+    fields: {}
+    children: []
+
+  - id: background
+    element_id: theoretical_framework
+    title: Background and Related Work
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: bg-p1
+        content: >
+          The consensus problem, first formalized by Lamport et al. [1], requires a set
+          of processes to agree on a single value despite failures. Paxos [2] and Raft [3]
+          are the most widely deployed consensus algorithms in production systems.
+    fields: {}
+    children: []
+
+  - id: methodology
+    element_id: methodology
+    title: Proposed Approach
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: meth-p1
+        content: >
+          We propose FastBFT, a Byzantine fault-tolerant consensus protocol that
+          achieves O(log n) communication complexity per round under optimistic conditions.
+          The protocol operates in three phases: pre-prepare, prepare, and commit.
+    fields: {}
+    children: []
+
+  - id: experiments
+    element_id: results
+    title: Experimental Evaluation
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: exp-p1
+        content: >
+          We evaluated FastBFT on a 1000-node testbed hosted across three AWS regions.
+          Median consensus latency was 12ms under fault-free conditions, compared to
+          20ms for PBFT and 18ms for HotStuff.
+    fields: {}
+    children: []
+
+  - id: conclusion
+    element_id: conclusions
+    title: Conclusion and Future Work
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: conc-p1
+        content: >
+          This thesis presented three contributions to Byzantine fault-tolerant consensus.
+          FastBFT achieves 40% lower latency than existing approaches while maintaining
+          formal safety and liveness guarantees. Future work includes deployment in
+          heterogeneous network environments and integration with existing cloud orchestrators.
+    fields: {}
+    children: []
+
+  - id: references
+    element_id: references
+    title: References
+    placement: back_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+file_states: {}

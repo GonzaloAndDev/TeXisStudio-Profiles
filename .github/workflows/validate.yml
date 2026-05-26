@@ -1,0 +1,107 @@
+name: Validate Profiles
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-yaml:
+    name: Validate YAML syntax
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml jsonschema --quiet
+
+      - name: Validate all YAML files
+        run: |
+          python - <<'PY'
+          import yaml, pathlib, sys
+          errors = []
+          for path in sorted(pathlib.Path('.').rglob('*.yaml')):
+              if '.git' in path.parts:
+                  continue
+              try:
+                  yaml.safe_load(path.read_text(encoding='utf-8'))
+              except Exception as e:
+                  errors.append(f"YAML ERROR {path}: {e}")
+          if errors:
+              for e in errors:
+                  print(e)
+              sys.exit(1)
+          count = len([p for p in pathlib.Path('.').rglob('*.yaml') if '.git' not in p.parts])
+          print(f"OK: {count} archivos YAML validos")
+          PY
+
+  validate-catalog:
+    name: Verify dist/catalog.json is up to date (D2)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml --quiet
+
+      - name: Regenerate catalog and check for diff
+        run: |
+          python3 .github/scripts/build_catalog.py
+          git diff --exit-code dist/catalog.json || (
+            echo ""
+            echo "ERROR: dist/catalog.json está desactualizado."
+            echo "Ejecuta: python3 .github/scripts/build_catalog.py"
+            echo "y haz commit del resultado."
+            exit 1
+          )
+
+  validate-profiles-structure:
+    name: Validate profile structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml --quiet
+
+      - name: Check required fields in profile.yaml files
+        run: |
+          python - <<'PY'
+          import yaml, pathlib, sys
+          errors = []
+          REQUIRED = ['id', 'name', 'schema_version', 'status', 'document_class',
+                      'latex_engine', 'bibliography_backend', 'bibliography_style', 'sections']
+          REVIEWED_REQUIRED_VERIFICATION = ['source_urls']
+          for path in sorted(pathlib.Path('.').rglob('profile.yaml')):
+              if '.git' in path.parts:
+                  continue
+              try:
+                  p = yaml.safe_load(path.read_text(encoding='utf-8'))
+              except Exception as e:
+                  errors.append(f"PARSE ERROR {path}: {e}")
+                  continue
+              for field in REQUIRED:
+                  if field not in p:
+                      errors.append(f"MISSING FIELD '{field}' in {path}")
+              status = p.get('status', '')
+              if status in ('reviewed', 'verified'):
+                  ver = p.get('verification', {}) or {}
+                  for f in REVIEWED_REQUIRED_VERIFICATION:
+                      val = ver.get(f)
+                      if not val:
+                          errors.append(f"POL_REVIEWED_NO_SOURCE_URLS: {path} (status={status})")
+          if errors:
+              for e in errors:
+                  print(e)
+              sys.exit(1)
+          count = len(list(pathlib.Path('.').rglob('profile.yaml')))
+          print(f"OK: {count} perfiles validos")
+          PY

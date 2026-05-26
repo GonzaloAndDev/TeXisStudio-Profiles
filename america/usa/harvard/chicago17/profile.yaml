@@ -12,6 +12,8 @@ bibliography_style: chicago-notes
 # Chicago 17th edition Notes-Bibliography style — standard for Harvard
 # humanities programs (History, Literature, Philosophy, Religion, Classics).
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra Harvard GSAS Dissertation Specifications"
   source_urls:

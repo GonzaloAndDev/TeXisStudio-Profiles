@@ -12,6 +12,8 @@ bibliography_style: vancouver
 # UNAM y recomendaciones ICMJE para publicaciones biomédicas.
 # Revisar anualmente — ICMJE actualiza sus recomendaciones periódicamente.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra lineamientos Fac. Medicina UNAM e ICMJE"
   source_urls:

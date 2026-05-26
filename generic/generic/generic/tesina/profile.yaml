@@ -14,6 +14,8 @@ bibliography_style: apa
 # Se usa como modalidad de titulación en licenciatura y en algunos posgrados.
 # Basado en convenciones APA 7ª edición para trabajos académicos de estudiantes.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas"
   source_urls:

@@ -12,6 +12,8 @@ bibliography_style: apa
 # y la Promotionsordnung de las Fakultäten relevantes.
 # APA 7 para psicología, ciencias sociales y educación.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra LMU Graduate School Doctoral Guidelines"
   source_urls:

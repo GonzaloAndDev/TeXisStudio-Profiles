@@ -12,6 +12,8 @@ bibliography_style: apa
 # Universidad de Chile y las directrices de la VID (Vicerrectoría de
 # Investigación y Desarrollo).
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra Reglamentos de Postgrado UChile y VID"
   source_urls:

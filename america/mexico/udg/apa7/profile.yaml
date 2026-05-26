@@ -11,6 +11,8 @@ bibliography_style: apa
 # Revisado el 2026-05-25 contra lineamientos del Sistema de Educación
 # Media Superior y Coordinación General Académica de la UdeG.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra lineamientos Coordinación Académica UdeG"
   source_urls:

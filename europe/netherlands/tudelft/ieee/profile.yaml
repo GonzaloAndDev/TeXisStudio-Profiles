@@ -11,6 +11,8 @@ bibliography_style: ieee
 # Revisado el 2026-05-25 contra el TU Delft Promotiereglement (doctoral regulations)
 # y las directrices de la TU Delft Graduate School.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra TU Delft Promotiereglement"
   source_urls:

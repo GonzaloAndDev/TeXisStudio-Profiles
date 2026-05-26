@@ -11,6 +11,8 @@ bibliography_style: apa
 # Revisado el 2026-05-25 contra el Reglamento de Doctorado de la UCM
 # y las directrices de la Escuela de Doctorado (EDCM).
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra Reglamento de Doctorado UCM y EDCM"
   source_urls:

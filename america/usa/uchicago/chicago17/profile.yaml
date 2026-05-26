@@ -12,6 +12,8 @@ bibliography_style: chicago-authordate
 # Chicago 17 Author-Date style — used in Social Sciences, Economics, Political
 # Science, Sociology, Anthropology. (Humanities programs use Notes-Bibliography.)
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra UChicago Dissertation Submission Guidelines"
   source_urls:

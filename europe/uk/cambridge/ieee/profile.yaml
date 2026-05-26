@@ -12,6 +12,8 @@ bibliography_style: ieee
 # Misma normativa de formato que Cambridge APA7 — difiere solo en estilo
 # de citas. IEEE para Ingeniería, Ciencias de la Computación y Física.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra Cambridge Graduate Office Format Guidelines"
   source_urls:

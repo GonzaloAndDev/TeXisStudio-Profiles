@@ -14,6 +14,8 @@ bibliography_style: apa
 # Si tu institución tiene normativa específica, verifica los lineamientos
 # de tu coordinación o programa de posgrado.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas generales"
   source_urls:

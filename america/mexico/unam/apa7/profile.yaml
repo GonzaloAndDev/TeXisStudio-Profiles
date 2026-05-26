@@ -12,6 +12,8 @@ bibliography_style: apa
 # Estudios de Posgrado (CEP-UNAM) y guías de titulación DGAE.
 # Revisar anualmente — la CEP actualiza sus lineamientos cada ciclo.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra lineamientos CEP-UNAM y DGAE"
   source_urls:

@@ -11,6 +11,8 @@ bibliography_style: ieee
 # Revisado el 2026-05-25 contra las directrices de la TUM Graduate School
 # (Promotionsbüro) para dissertaciones doctorales.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra TUM Graduate School Doctoral Procedure"
   source_urls:

@@ -11,6 +11,8 @@ bibliography_style: apa
 # Revisado el 2026-05-25 contra lineamientos del Rectorado de la UBA
 # y disposiciones de la Comisión de Doctorado de las Facultades.
 verification:
+  reviewed_at: "2026-05-25"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
   verified_by: "TeXisStudio Community — revisado contra lineamientos UBA Rectorado y Comisión de Doctorado"
   source_urls:

@@ -12,6 +12,8 @@ bibliography_style: apa
 # Las fuentes originales están en verification.source_urls.
 # Revisar anualmente o cuando Cambridge publique nuevas guías.
 verification:
+  reviewed_at: "2026-05-24"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-24"
   verified_by: "TeXisStudio Community — revisado contra Cambridge Graduate Office Format Guidelines"
   source_urls:

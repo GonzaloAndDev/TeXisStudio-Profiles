@@ -11,6 +11,8 @@ bibliography_style: mhra
 # Revisado el 2026-05-24 contra las guías de la Oxford Graduate School.
 # Fuente principal: Examination Regulations y Style Guide oficial.
 verification:
+  reviewed_at: "2026-05-24"
+  reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-24"
   verified_by: "TeXisStudio Community — revisado contra Oxford University Examination Regulations y Graduate School guidelines"
   source_urls:

@@ -61,7 +61,7 @@ jobs:
           )
 
   validate-profiles-structure:
-    name: Validate profile structure
+    name: Validate profile structure and policy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -72,16 +72,16 @@ jobs:
 
       - run: pip install pyyaml --quiet
 
-      - name: Check required fields in profile.yaml files
+      - name: Check required fields and policy (POL_* rules)
         run: |
           python - <<'PY'
           import yaml, pathlib, sys
           errors = []
+          warnings = []
           REQUIRED = ['id', 'name', 'schema_version', 'status', 'document_class',
                       'latex_engine', 'bibliography_backend', 'bibliography_style', 'sections']
-          REVIEWED_REQUIRED_VERIFICATION = ['source_urls']
           for path in sorted(pathlib.Path('.').rglob('profile.yaml')):
-              if '.git' in path.parts:
+              if '.git' in path.parts or 'profile_samples' in path.parts:
                   continue
               try:
                   p = yaml.safe_load(path.read_text(encoding='utf-8'))
@@ -92,16 +92,86 @@ jobs:
                   if field not in p:
                       errors.append(f"MISSING FIELD '{field}' in {path}")
               status = p.get('status', '')
+              ver = p.get('verification') or {}
               if status in ('reviewed', 'verified'):
-                  ver = p.get('verification', {}) or {}
-                  for f in REVIEWED_REQUIRED_VERIFICATION:
-                      val = ver.get(f)
-                      if not val:
-                          errors.append(f"POL_REVIEWED_NO_SOURCE_URLS: {path} (status={status})")
+                  # POL_REVIEWED_NO_SOURCE_URLS
+                  if not ver.get('source_urls'):
+                      errors.append(f"POL_REVIEWED_NO_SOURCE_URLS: {path}")
+                  # POL_REVIEWED_NO_DATE
+                  if not ver.get('reviewed_at') and not ver.get('verified_at'):
+                      errors.append(f"POL_REVIEWED_NO_DATE: {path}")
+                  # POL_REVIEWED_NO_INTERVAL
+                  if not ver.get('review_interval_days'):
+                      warnings.append(f"POL_REVIEWED_NO_INTERVAL (warning): {path}")
+              if status == 'verified':
+                  # POL_VERIFIED_NO_VERIFIED_AT
+                  if not ver.get('verified_at'):
+                      errors.append(f"POL_VERIFIED_NO_VERIFIED_AT: {path}")
+                  # POL_VERIFIED_NO_VERIFIED_BY
+                  if not ver.get('verified_by'):
+                      errors.append(f"POL_VERIFIED_NO_VERIFIED_BY: {path}")
+          for w in warnings:
+              print(f"WARN: {w}")
           if errors:
               for e in errors:
-                  print(e)
+                  print(f"ERROR: {e}")
               sys.exit(1)
-          count = len(list(pathlib.Path('.').rglob('profile.yaml')))
+          count = len([p for p in pathlib.Path('.').rglob('profile.yaml')
+                       if '.git' not in p.parts and 'profile_samples' not in p.parts])
           print(f"OK: {count} perfiles validos")
+          PY
+
+  validate-sample-projects:
+    name: Validate sample project structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml --quiet
+
+      - name: Validate sample project YAML and structure
+        run: |
+          python - <<'PY'
+          import yaml, json, pathlib, sys
+          errors = []
+          samples_dir = pathlib.Path('profile_samples')
+          if not samples_dir.exists():
+              print("OK: no sample projects directory (skipping)")
+              sys.exit(0)
+          for sample in sorted(samples_dir.iterdir()):
+              if not sample.is_dir():
+                  continue
+              project_dir = sample / 'project.texis'
+              project_yaml = project_dir / 'tesis.project.yaml'
+              checklist = sample / 'expected_checklist.json'
+              if not project_yaml.exists():
+                  errors.append(f"MISSING tesis.project.yaml in {sample}")
+                  continue
+              if not checklist.exists():
+                  errors.append(f"MISSING expected_checklist.json in {sample}")
+              try:
+                  p = yaml.safe_load(project_yaml.read_text(encoding='utf-8'))
+              except Exception as e:
+                  errors.append(f"YAML ERROR in {project_yaml}: {e}")
+                  continue
+              for field in ['schema_version', 'profile_id', 'metadata', 'sections']:
+                  if field not in p:
+                      errors.append(f"MISSING '{field}' in {project_yaml}")
+              if checklist.exists():
+                  try:
+                      json.loads(checklist.read_text(encoding='utf-8'))
+                  except Exception as e:
+                      errors.append(f"JSON ERROR in {checklist}: {e}")
+              print(f"  OK: {sample.name} (profile_id={p.get('profile_id','?')}, "
+                    f"sections={len(p.get('sections', []))})")
+          if errors:
+              for e in errors:
+                  print(f"ERROR: {e}")
+              sys.exit(1)
+          count = sum(1 for s in samples_dir.iterdir() if s.is_dir())
+          print(f"OK: {count} sample project(s) valid")
           PY

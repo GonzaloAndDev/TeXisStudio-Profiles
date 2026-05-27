@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
 id: us_mit_ieee
 name: "MIT - Thesis (IEEE)"
-status: reviewed
+status: verified
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
@@ -12,9 +12,10 @@ bibliography_style: ieee
 # Revisar anualmente — MIT Libraries actualiza las especificaciones.
 verification:
   reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra MIT Thesis Preparation Guide"
+  reviewed_by: "TeXisStudio Community — revisado contra MIT Thesis Preparation Guide"
+  verified_at: "2026-05-27"
+  verified_by: "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber + pdfinfo/pdffonts)"
+  ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26521375446"
   source_urls:
     - "https://libraries.mit.edu/distinctive-collections/thesis-specs/"
     - "https://libguides.mit.edu/cite-write/thesis"

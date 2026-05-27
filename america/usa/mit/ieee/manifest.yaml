@@ -4,6 +4,7 @@ version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 description: "MIT thesis for engineering and sciences, IEEE citation style, DSpace submission"
+status: verified
 tags: [mit, usa, ieee, engineering, sciences]
 texis_min_version: "1.0.0"
 continent: "america"

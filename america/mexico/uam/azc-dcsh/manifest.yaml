@@ -1,0 +1,18 @@
+id: mx_uam_azc_dcsh
+name: "UAM Azcapotzalco — DCSH"
+description: "División de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades."
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+continent: america
+country: mexico
+institution: uam
+city: "Ciudad de México"
+bibliography_style: chicago-authordate
+tags:
+  - uam
+  - mexico
+  - ciencias-sociales
+  - humanidades
+  - azcapotzalco
+  - dcsh

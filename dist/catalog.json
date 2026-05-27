@@ -185,6 +185,54 @@
       "style_id": "azc-cbi"
     },
     {
+      "id": "mx_uam_azc_dcsh",
+      "name": "UAM Azcapotzalco — DCSH",
+      "description": "División de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades.",
+      "author": "TeXisStudio Community",
+      "version": "1.0.0",
+      "license": "CC BY 4.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "uam",
+      "city": "Ciudad de México",
+      "bibliography_style": "chicago-authordate",
+      "tags": [
+        "uam",
+        "mexico",
+        "ciencias-sociales",
+        "humanidades",
+        "azcapotzalco",
+        "dcsh"
+      ],
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_azc_dcsh.zip",
+      "sha256": null,
+      "style_id": "azc-dcsh"
+    },
+    {
+      "id": "mx_uam_cua_dci",
+      "name": "UAM Cuajimalpa — DCI",
+      "description": "División de Ciencias de la Información, UAM Cuajimalpa. Computación, Tecnologías de la Información y Diseño de la Comunicación Gráfica.",
+      "author": "TeXisStudio Community",
+      "version": "1.0.0",
+      "license": "CC BY 4.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "uam",
+      "city": "Ciudad de México",
+      "bibliography_style": "apa",
+      "tags": [
+        "uam",
+        "mexico",
+        "computacion",
+        "tecnologias-informacion",
+        "cuajimalpa",
+        "dci"
+      ],
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_cua_dci.zip",
+      "sha256": null,
+      "style_id": "cua-dci"
+    },
+    {
       "id": "mx_uam_izt_cbi",
       "name": "UAM Iztapalapa — CBI",
       "description": "División de Ciencias Básicas e Ingeniería, UAM Iztapalapa. Física, Química, Matemáticas e Ingeniería Eléctrica.",
@@ -208,6 +256,55 @@
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_izt_cbi.zip",
       "sha256": null,
       "style_id": "izt-cbi"
+    },
+    {
+      "id": "mx_uam_izt_dcsh",
+      "name": "UAM Iztapalapa — CSH",
+      "description": "División de Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociología, Historia, Lingüística, Comunicación, Economía, Psicología Social.",
+      "author": "TeXisStudio Community",
+      "version": "1.0.0",
+      "license": "CC BY 4.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "uam",
+      "city": "Ciudad de México",
+      "bibliography_style": "chicago-authordate",
+      "tags": [
+        "uam",
+        "mexico",
+        "ciencias-sociales",
+        "humanidades",
+        "iztapalapa",
+        "csh"
+      ],
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_izt_dcsh.zip",
+      "sha256": null,
+      "style_id": "izt-dcsh"
+    },
+    {
+      "id": "mx_uam_xoc_dcbs",
+      "name": "UAM Xochimilco — DCBS",
+      "description": "División de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición y Veterinaria.",
+      "author": "TeXisStudio Community",
+      "version": "1.0.0",
+      "license": "CC BY 4.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "uam",
+      "city": "Ciudad de México",
+      "bibliography_style": "vancouver",
+      "tags": [
+        "uam",
+        "mexico",
+        "biologia",
+        "salud",
+        "medicina",
+        "xochimilco",
+        "dcbs"
+      ],
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_xoc_dcbs.zip",
+      "sha256": null,
+      "style_id": "xoc-dcbs"
     },
     {
       "id": "mx_uanl_apa7",

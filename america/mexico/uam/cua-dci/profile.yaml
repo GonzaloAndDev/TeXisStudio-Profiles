@@ -1,0 +1,183 @@
+schema_version: "1.0.0"
+id: mx_uam_cua_dci
+name: "UAM Cuajimalpa — DCI"
+description: >
+  Perfil para tesis y trabajos de investigación de la División de Ciencias
+  de la Información (DCI) de la UAM Unidad Cuajimalpa. Cubre licenciaturas en
+  Computación, Tecnologías de la Información, Ciencias de la Computación y
+  Diseño de la Comunicación Gráfica. El campus Cuajimalpa enfatiza proyectos
+  de vinculación entre tecnología, diseño y sociedad.
+status: reviewed
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+tags:
+  - uam
+  - mexico
+  - computacion
+  - tecnologias-informacion
+  - informatica
+  - cuajimalpa
+  - dci
+  - licenciatura
+  - posgrado
+
+verification:
+  reviewed_at: "2026-05-27"
+  reviewed_by: "TeXisStudio Community — revisado contra lineamientos DCI UAM-Cuajimalpa"
+  source_urls:
+    - "https://dci.cua.uam.mx/"
+    - "https://cua.uam.mx/lineamientos-tesis/"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
+latex_engine: xelatex
+compiler: latexmk
+bibliography_backend: biber
+# APA 7: estilo estándar en DCI UAM-Cuajimalpa para computación y tecnología.
+bibliography_style: apa
+
+# ── Formato de página ─────────────────────────────────────────────
+# DCI UAM-Cuajimalpa: márgenes UAM estándar.
+# Interlineado 1.5: indicado para trabajo de tesis en DCI.
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 25mm
+  line_spacing: 1.5
+
+max_words: 70000
+max_abstract_words: 350
+
+sections:
+  - id: title_page
+    element_id: title_page
+    placement: front_matter
+    required: true
+    title: "Portada"
+    guidance: >
+      Portada oficial UAM-DCI: logo UAM, nombre de la universidad, unidad,
+      división, área de investigación, título del trabajo, nombre del alumno,
+      matrícula, trimestre y año, y nombre del director de tesis.
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+
+  - id: abstract_es
+    element_id: abstract_es
+    placement: front_matter
+    required: true
+    title: "Resumen"
+    guidance: >
+      Máximo 350 palabras. Debe incluir: contexto del problema, objetivo
+      principal, metodología técnica empleada, resultados o contribuciones
+      clave y conclusiones.
+
+  - id: abstract_en
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract"
+    guidance: "Traducción del resumen al inglés. Obligatorio para posgrado."
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    placement: front_matter
+    required: true
+    title: "Índice General"
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Lista de Figuras"
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Lista de Tablas"
+
+  - id: introduction
+    element_id: introduction
+    placement: body
+    required: true
+    title: "Introducción"
+    guidance: >
+      Contexto tecnológico o del sistema de información, planteamiento del
+      problema, objetivo general, objetivos específicos, alcance y
+      organización del documento.
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: true
+    title: "Marco Teórico y Estado del Arte"
+    guidance: >
+      Revisión de conceptos fundamentales y trabajos relacionados. En DCI se
+      valora la revisión de literatura técnica reciente (congresos ACM, IEEE,
+      artículos en Scopus o WoS) y la identificación del gap de conocimiento.
+
+  - id: methodology
+    element_id: methodology
+    placement: body
+    required: true
+    title: "Metodología"
+    guidance: >
+      Metodología de desarrollo o investigación: SCRUM, RUP, Design Science,
+      experimentación controlada, etc. Incluir diagrama de arquitectura
+      del sistema si aplica, casos de uso, y criterios de evaluación.
+
+  - id: results
+    element_id: results
+    placement: body
+    required: true
+    title: "Resultados"
+    guidance: >
+      Descripción del sistema desarrollado, experimentos realizados,
+      métricas de evaluación y comparación con trabajos relacionados.
+
+  - id: discussion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+
+  - id: conclusions
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones y Trabajo Futuro"
+    guidance: "Conclusiones técnicas, limitaciones del trabajo y líneas de desarrollo futuro."
+
+  - id: references
+    element_id: references
+    placement: back_matter
+    required: true
+    title: "Referencias"
+    guidance: "Formato APA 7. Incluir DOI cuando esté disponible."
+
+  - id: appendix
+    element_id: appendix
+    placement: appendix
+    required: false
+    title: "Apéndices"
+    guidance: "Código fuente relevante, diagramas adicionales, datos de experimentos, etc."

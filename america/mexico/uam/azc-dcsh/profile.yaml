@@ -1,0 +1,185 @@
+schema_version: "1.0.0"
+id: mx_uam_azc_dcsh
+name: "UAM Azcapotzalco — DCSH"
+description: >
+  Perfil para tesis y reportes de investigación de la División de Ciencias
+  Sociales y Humanidades (DCSH) de la UAM Unidad Azcapotzalco. Cubre las
+  licenciaturas en Administración, Economía, Sociología y Humanidades.
+status: reviewed
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+tags:
+  - uam
+  - mexico
+  - ciencias-sociales
+  - humanidades
+  - administracion
+  - economia
+  - sociologia
+  - azcapotzalco
+  - dcsh
+  - licenciatura
+  - posgrado
+
+verification:
+  reviewed_at: "2026-05-27"
+  reviewed_by: "TeXisStudio Community — revisado contra lineamientos DCSH UAM-Azc"
+  source_urls:
+    - "https://dcsh.azc.uam.mx/"
+    - "https://dcsh.azc.uam.mx/formatos/lineamientos_trabajo_terminal.pdf"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
+latex_engine: xelatex
+compiler: latexmk
+bibliography_backend: biber
+# Chicago Author-Date es el estilo predominante en ciencias sociales UAM
+bibliography_style: chicago-authordate
+
+# ── Formato de página ─────────────────────────────────────────────
+# DCSH UAM-Azcapotzalco: márgenes estándar UAM (2.5 cm) con
+# margen izquierdo de 3 cm para encuadernado.
+# Interlineado doble según lineamientos DCSH para trabajos terminales.
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 25mm
+  line_spacing: 2.0
+
+max_words: 60000
+max_abstract_words: 300
+
+sections:
+  - id: title_page
+    element_id: title_page
+    placement: front_matter
+    required: true
+    title: "Portada"
+    guidance: >
+      Portada oficial UAM-DCSH: logo UAM, nombre de la universidad, unidad,
+      división, departamento, título del trabajo de investigación o tesis,
+      nombre del alumno, matrícula, trimestre y año, nombre del asesor o
+      director y co-asesor (si aplica).
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+
+  - id: abstract_es
+    element_id: abstract_es
+    placement: front_matter
+    required: true
+    title: "Resumen"
+    guidance: >
+      Máximo 300 palabras. Debe incluir: planteamiento del problema,
+      objetivo general, metodología, principales hallazgos y conclusiones.
+      Evitar citas bibliográficas en el resumen.
+
+  - id: abstract_en
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract"
+    guidance: "Resumen en inglés. Recomendado para posgrado."
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    placement: front_matter
+    required: true
+    title: "Índice General"
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Lista de Figuras"
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Lista de Tablas"
+
+  - id: introduction
+    element_id: introduction
+    placement: body
+    required: true
+    title: "Introducción"
+    guidance: >
+      Contexto general, justificación, planteamiento del problema,
+      pregunta de investigación, hipótesis u objetivos, y estructura
+      del trabajo.
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: true
+    title: "Marco Teórico-Conceptual"
+    guidance: >
+      Revisión crítica de la literatura. En ciencias sociales se espera
+      un posicionamiento explícito del autor respecto a los enfoques teóricos.
+      Usar estilo Chicago Author-Date para las citas.
+
+  - id: methodology
+    element_id: methodology
+    placement: body
+    required: true
+    title: "Metodología"
+    guidance: >
+      Estrategia metodológica: cualitativa, cuantitativa o mixta.
+      Unidades de análisis, técnicas de recolección de datos, criterios
+      de selección, y consideraciones éticas si aplica.
+
+  - id: results
+    element_id: results
+    placement: body
+    required: true
+    title: "Resultados y Análisis"
+    guidance: "Presentación y análisis crítico de los hallazgos."
+
+  - id: discussion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+
+  - id: conclusions
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones"
+    guidance: >
+      Síntesis de hallazgos, respuesta a la pregunta de investigación,
+      limitaciones, aportaciones al campo y líneas de investigación futura.
+
+  - id: references
+    element_id: references
+    placement: back_matter
+    required: true
+    title: "Bibliografía"
+    guidance: "Formato Chicago Author-Date. Incluir todas las fuentes citadas en el texto."
+
+  - id: appendix
+    element_id: appendix
+    placement: appendix
+    required: false
+    title: "Anexos"
+    guidance: "Instrumentos de recolección, transcripciones, tablas complementarias, etc."

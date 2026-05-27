@@ -1,0 +1,18 @@
+id: mx_uam_cua_dci
+name: "UAM Cuajimalpa — DCI"
+description: "División de Ciencias de la Información, UAM Cuajimalpa. Computación, Tecnologías de la Información y Diseño de la Comunicación Gráfica."
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+continent: america
+country: mexico
+institution: uam
+city: "Ciudad de México"
+bibliography_style: apa
+tags:
+  - uam
+  - mexico
+  - computacion
+  - tecnologias-informacion
+  - cuajimalpa
+  - dci

@@ -1,0 +1,19 @@
+id: mx_uam_xoc_dcbs
+name: "UAM Xochimilco — DCBS"
+description: "División de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición y Veterinaria."
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+continent: america
+country: mexico
+institution: uam
+city: "Ciudad de México"
+bibliography_style: vancouver
+tags:
+  - uam
+  - mexico
+  - biologia
+  - salud
+  - medicina
+  - xochimilco
+  - dcbs

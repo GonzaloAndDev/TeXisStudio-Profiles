@@ -1,0 +1,189 @@
+schema_version: "1.0.0"
+id: mx_uam_xoc_dcbs
+name: "UAM Xochimilco — DCBS"
+description: >
+  Perfil para tesis y trabajos de investigación de la División de Ciencias
+  Biológicas y de la Salud (DCBS) de la UAM Unidad Xochimilco. Cubre las
+  licenciaturas en Medicina, Odontología, Enfermería, Biología, Nutrición,
+  Veterinaria y Agronomía, así como posgrados en ciencias de la salud.
+status: reviewed
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+tags:
+  - uam
+  - mexico
+  - biologia
+  - salud
+  - medicina
+  - odontologia
+  - nutricion
+  - veterinaria
+  - xochimilco
+  - dcbs
+  - licenciatura
+  - posgrado
+
+verification:
+  reviewed_at: "2026-05-27"
+  reviewed_by: "TeXisStudio Community — revisado contra lineamientos DCBS UAM-Xochimilco"
+  source_urls:
+    - "https://dcbs.xoc.uam.mx/"
+    - "https://dcbs.xoc.uam.mx/posgrados/lineamientos/"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
+latex_engine: xelatex
+compiler: latexmk
+bibliography_backend: biber
+# Vancouver: estándar internacional en ciencias de la salud y biomedicina.
+bibliography_style: vancouver
+
+# ── Formato de página ─────────────────────────────────────────────
+# DCBS UAM-Xochimilco: márgenes UAM estándar.
+# Interlineado 1.5: recomendado para trabajos de salud y biología.
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 25mm
+  line_spacing: 1.5
+
+max_words: 60000
+max_abstract_words: 250
+
+sections:
+  - id: title_page
+    element_id: title_page
+    placement: front_matter
+    required: true
+    title: "Portada"
+    guidance: >
+      Portada oficial UAM-DCBS: logo UAM, nombre de la universidad, unidad,
+      división y departamento, título del trabajo de investigación, nombre
+      del alumno, matrícula, trimestre y año, y nombre del director de tesis.
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+
+  - id: abstract_es
+    element_id: abstract_es
+    placement: front_matter
+    required: true
+    title: "Resumen"
+    guidance: >
+      Máximo 250 palabras. Estructura IMRyD abreviada: antecedentes,
+      objetivo, métodos, resultados y conclusión principal.
+      No incluir citas bibliográficas ni abreviaturas sin definir.
+
+  - id: abstract_en
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract"
+    guidance: "Traducción exacta del resumen al inglés. Obligatorio para posgrado."
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    placement: front_matter
+    required: true
+    title: "Índice"
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Lista de Figuras"
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Lista de Tablas"
+
+  - id: introduction
+    element_id: introduction
+    placement: body
+    required: true
+    title: "Introducción"
+    guidance: >
+      Antecedentes del problema, relevancia clínica o biológica,
+      justificación, pregunta de investigación e hipótesis (si aplica).
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: true
+    title: "Marco Teórico"
+    guidance: >
+      Revisión del estado del arte. En ciencias de la salud se espera
+      revisión de literatura reciente (últimos 5 años preferentemente)
+      con énfasis en estudios controlados y revisiones sistemáticas.
+
+  - id: methodology
+    element_id: methodology
+    placement: body
+    required: true
+    title: "Metodología"
+    guidance: >
+      Tipo de estudio (observacional, experimental, clínico, etc.),
+      población y muestra, criterios de inclusión/exclusión, variables,
+      procedimientos, instrumentos y análisis estadístico.
+      Incluir aprobación del comité de ética si aplica.
+
+  - id: results
+    element_id: results
+    placement: body
+    required: true
+    title: "Resultados"
+    guidance: >
+      Presentación objetiva de los hallazgos sin interpretación.
+      Usar tablas y figuras cuando sean más claras que el texto.
+      Reportar medidas de frecuencia, tendencia central y dispersión.
+
+  - id: discussion
+    element_id: discussion
+    placement: body
+    required: true
+    title: "Discusión"
+    guidance: >
+      Interpretación de los resultados en contexto con la literatura.
+      Discutir limitaciones del estudio. No repetir los resultados.
+
+  - id: conclusions
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones"
+    guidance: "Conclusiones breves, directamente derivadas de los resultados."
+
+  - id: references
+    element_id: references
+    placement: back_matter
+    required: true
+    title: "Referencias"
+    guidance: "Formato Vancouver (numerado, en orden de aparición). Máximo 60 referencias para licenciatura, sin límite para posgrado."
+
+  - id: appendix
+    element_id: appendix
+    placement: appendix
+    required: false
+    title: "Anexos"
+    guidance: "Instrumentos de medición, cartas de consentimiento informado, aprobaciones de comité, etc."

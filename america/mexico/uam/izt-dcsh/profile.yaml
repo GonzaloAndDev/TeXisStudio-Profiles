@@ -1,0 +1,176 @@
+schema_version: "1.0.0"
+id: mx_uam_izt_dcsh
+name: "UAM Iztapalapa — CSH"
+description: >
+  Perfil para tesis y trabajos de investigación de la División de Ciencias
+  Sociales y Humanidades (CSH) de la UAM Unidad Iztapalapa. Cubre
+  licenciaturas en Sociología, Historia, Lingüística, Comunicación Social,
+  Economía y Psicología Social.
+status: reviewed
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+tags:
+  - uam
+  - mexico
+  - ciencias-sociales
+  - humanidades
+  - sociologia
+  - historia
+  - lingüistica
+  - psicologia
+  - iztapalapa
+  - csh
+  - licenciatura
+  - posgrado
+
+verification:
+  reviewed_at: "2026-05-27"
+  reviewed_by: "TeXisStudio Community — revisado contra lineamientos CSH UAM-Iztapalapa"
+  source_urls:
+    - "https://csh.izt.uam.mx/"
+    - "https://csh.izt.uam.mx/formatos/"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
+latex_engine: xelatex
+compiler: latexmk
+bibliography_backend: biber
+# Chicago Author-Date: usado en humanidades y ciencias sociales
+bibliography_style: chicago-authordate
+
+# ── Formato de página ─────────────────────────────────────────────
+# CSH UAM-Iztapalapa: márgenes estándar UAM.
+# Interlineado doble (lineamientos CSH para tesis de licenciatura y posgrado).
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 25mm
+  line_spacing: 2.0
+
+max_words: 70000
+max_abstract_words: 300
+
+sections:
+  - id: title_page
+    element_id: title_page
+    placement: front_matter
+    required: true
+    title: "Portada"
+    guidance: >
+      Portada oficial UAM-CSH: logo UAM, nombre de la universidad, unidad,
+      división y departamento, título de la tesis o trabajo terminal,
+      nombre del alumno, matrícula, trimestre y año, nombre del asesor.
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+
+  - id: abstract_es
+    element_id: abstract_es
+    placement: front_matter
+    required: true
+    title: "Resumen"
+    guidance: "Máximo 300 palabras. Incluye objetivo, metodología y hallazgos principales."
+
+  - id: abstract_en
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract"
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    placement: front_matter
+    required: true
+    title: "Índice"
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Lista de Figuras"
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Lista de Cuadros"
+    guidance: "En CSH se prefiere 'cuadros' en lugar de 'tablas'."
+
+  - id: introduction
+    element_id: introduction
+    placement: body
+    required: true
+    title: "Introducción"
+    guidance: >
+      Presentación del problema de investigación, relevancia, pregunta de
+      investigación, hipótesis (si aplica) y organización del trabajo.
+      En humanidades puede ser más extensa (10-15 páginas).
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: true
+    title: "Marco Teórico"
+    guidance: >
+      Debate teórico y posicionamiento del autor. En CSH-Iztapalapa se valora
+      la profundidad en la discusión de enfoques teóricos y la articulación
+      explícita con el problema de investigación.
+
+  - id: methodology
+    element_id: methodology
+    placement: body
+    required: true
+    title: "Metodología"
+    guidance: >
+      Paradigma de investigación, diseño, técnicas (entrevistas, encuestas,
+      análisis de discurso, etnografía, etc.) y justificación de su elección.
+
+  - id: results
+    element_id: results
+    placement: body
+    required: true
+    title: "Análisis y Resultados"
+
+  - id: discussion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+
+  - id: conclusions
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones"
+
+  - id: references
+    element_id: references
+    placement: back_matter
+    required: true
+    title: "Fuentes de Consulta"
+    guidance: "Formato Chicago Author-Date. Incluir fuentes primarias y secundarias."
+
+  - id: appendix
+    element_id: appendix
+    placement: appendix
+    required: false
+    title: "Apéndices"

@@ -1,0 +1,18 @@
+id: mx_uam_azc_cbi
+name: "UAM Azcapotzalco — CBI"
+description: "División de Ciencias Básicas e Ingeniería, UAM Azcapotzalco. Ingeniería, Computación, Sistemas y Matemáticas Aplicadas."
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+continent: america
+country: mexico
+institution: uam
+city: "Ciudad de México"
+bibliography_style: apa
+tags:
+  - uam
+  - mexico
+  - ingenieria
+  - computacion
+  - azcapotzalco
+  - cbi

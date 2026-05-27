@@ -1,0 +1,165 @@
+schema_version: "1.0.0"
+id: mx_uam_izt_cbi
+name: "UAM Iztapalapa — CBI"
+description: >
+  Perfil para tesis e Idóneas Comunicaciones de Resultados (ICR) de la
+  División de Ciencias Básicas e Ingeniería (CBI) de la UAM Unidad
+  Iztapalapa. Cubre Física, Química, Matemáticas e Ingeniería Eléctrica.
+status: reviewed
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+tags:
+  - uam
+  - mexico
+  - ciencias
+  - fisica
+  - quimica
+  - matematicas
+  - ingenieria
+  - iztapalapa
+  - cbi
+  - licenciatura
+  - posgrado
+  - icr
+
+verification:
+  reviewed_at: "2026-05-27"
+  reviewed_by: "TeXisStudio Community — revisado contra lineamientos CBI UAM-Izt"
+  source_urls:
+    - "https://cbi.izt.uam.mx/"
+    - "https://cbi.izt.uam.mx/consejo_divisional/documentos/lineamientos/alumnos/posgrado/01_lp_lineamientos_particulares_del_sistema_de_posgrado_divisional.pdf"
+    - "https://divcsh.izt.uam.mx/posgrado/psicologia_social/wp-content/uploads/2025/01/Lista-de-verificacion-previa-al-envio-de-la-ICR_Tesis-Doctoral.pdf"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
+latex_engine: xelatex
+compiler: latexmk
+bibliography_backend: biber
+bibliography_style: apa
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Lineamientos CBI UAM-Iztapalapa.
+# Papel: carta (letterpaper). Márgenes estándar académicos.
+# Interlineado: 1.5 (requerido en posgrado, recomendado en licenciatura).
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 25mm
+  line_spacing: 1.5
+
+max_words: 80000
+max_abstract_words: 300
+
+sections:
+  - id: title_page
+    element_id: title_page
+    placement: front_matter
+    required: true
+    title: "Portada"
+    guidance: >
+      La portada debe incluir: logo UAM, nombre de la universidad y unidad,
+      división, departamento y área de investigación, título del trabajo,
+      nombre del sustentante, grado al que se opta, nombre del asesor(es),
+      trimestre-año de presentación.
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+
+  - id: abstract_es
+    element_id: abstract_es
+    placement: front_matter
+    required: true
+    title: "Resumen"
+    guidance: "Máximo 300 palabras. Describe el problema, métodos empleados y principales resultados."
+
+  - id: abstract_en
+    element_id: abstract_en
+    placement: front_matter
+    required: true
+    title: "Abstract"
+    guidance: "Resumen en inglés obligatorio para posgrado (ICR, Maestría, Doctorado)."
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    placement: front_matter
+    required: true
+    title: "Índice"
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Lista de Figuras"
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Lista de Tablas"
+
+  - id: introduction
+    element_id: introduction
+    placement: body
+    required: true
+    title: "Introducción"
+    guidance: "Antecedentes, planteamiento del problema, hipótesis y objetivos."
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: true
+    title: "Marco Teórico y Estado del Arte"
+    guidance: "Revisión bibliográfica y fundamentos teóricos."
+
+  - id: methodology
+    element_id: methodology
+    placement: body
+    required: true
+    title: "Metodología y Desarrollo Experimental"
+    guidance: "Materiales, métodos y procedimientos experimentales o computacionales."
+
+  - id: results
+    element_id: results
+    placement: body
+    required: true
+    title: "Resultados y Discusión"
+    guidance: "Presenta resultados con figuras, tablas y análisis estadístico cuando aplique."
+
+  - id: conclusions
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones y Perspectivas"
+    guidance: "Conclusiones sobre la hipótesis planteada y propuestas de trabajo futuro."
+
+  - id: references
+    element_id: references
+    placement: back_matter
+    required: true
+    title: "Referencias"
+    guidance: "Formato APA 7 para ciencias sociales; IEEE o Vancouver para ciencias exactas."
+
+  - id: appendix
+    element_id: appendix
+    placement: appendix
+    required: false
+    title: "Apéndices"

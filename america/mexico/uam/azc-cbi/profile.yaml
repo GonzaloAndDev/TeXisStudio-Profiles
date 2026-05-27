@@ -1,0 +1,166 @@
+schema_version: "1.0.0"
+id: mx_uam_azc_cbi
+name: "UAM Azcapotzalco — CBI"
+description: >
+  Perfil para tesis y reportes de investigación de la División de Ciencias
+  Básicas e Ingeniería (CBI) de la UAM Unidad Azcapotzalco. Cubre las
+  licenciaturas en Ingeniería, Computación, Sistemas y Matemáticas Aplicadas.
+status: reviewed
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+tags:
+  - uam
+  - mexico
+  - ingenieria
+  - computacion
+  - azcapotzalco
+  - cbi
+  - licenciatura
+  - posgrado
+
+verification:
+  reviewed_at: "2026-05-27"
+  reviewed_by: "TeXisStudio Community — revisado contra lineamientos CBI UAM-Azc"
+  source_urls:
+    - "https://cbi.azc.uam.mx/"
+    - "https://cyadposgrados.azc.uam.mx/files/lineamientos/formato_maestria_doctorado.pdf"
+    - "https://www.overleaf.com/latex/templates/plantilla-tesis-uam-azcapotzalco/bhxfwqdzhhdp"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
+latex_engine: xelatex
+compiler: latexmk
+bibliography_backend: biber
+bibliography_style: apa
+
+# ── Formato de página ─────────────────────────────────────────────
+# Fuente: Lineamientos CBI UAM-Azcapotzalco y plantilla oficial Overleaf.
+# Papel: carta (letterpaper). Márgenes: 2.5 cm todos los lados.
+# Para tesis de posgrado con encuadernado: margen izquierdo 3 cm.
+# Interlineado: 1.5 (recomendado por CBI para legibilidad).
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 25mm
+  line_spacing: 1.5
+
+max_words: 80000
+max_abstract_words: 350
+
+sections:
+  - id: title_page
+    element_id: title_page
+    placement: front_matter
+    required: true
+    title: "Portada"
+    guidance: >
+      La portada debe incluir: logo UAM, nombre de la universidad, unidad,
+      división y departamento, título del trabajo, nombre del alumno,
+      matrícula, trimestre y año, y nombre del asesor.
+
+  - id: dedication
+    element_id: dedication
+    placement: front_matter
+    required: false
+    title: "Dedicatoria"
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    placement: front_matter
+    required: false
+    title: "Agradecimientos"
+
+  - id: abstract_es
+    element_id: abstract_es
+    placement: front_matter
+    required: true
+    title: "Resumen"
+    guidance: "Máximo 350 palabras. Incluye: antecedentes, problema, metodología, aportaciones y conclusiones."
+
+  - id: abstract_en
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract"
+    guidance: "Resumen en inglés. Obligatorio para tesis de posgrado; recomendado para licenciatura."
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    placement: front_matter
+    required: true
+    title: "Índice General"
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    placement: front_matter
+    required: false
+    title: "Lista de Figuras"
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    placement: front_matter
+    required: false
+    title: "Lista de Tablas"
+
+  - id: introduction
+    element_id: introduction
+    placement: body
+    required: true
+    title: "Introducción"
+    guidance: "Presenta el contexto, planteamiento del problema, objetivos e hipótesis."
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    placement: body
+    required: true
+    title: "Marco Teórico"
+    guidance: "Revisión del estado del arte y fundamentos teóricos del trabajo."
+
+  - id: methodology
+    element_id: methodology
+    placement: body
+    required: true
+    title: "Metodología"
+    guidance: "Describe el método, herramientas y procedimientos empleados."
+
+  - id: results
+    element_id: results
+    placement: body
+    required: true
+    title: "Resultados"
+    guidance: "Presenta y analiza los resultados obtenidos."
+
+  - id: discussion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+
+  - id: conclusions
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones"
+    guidance: "Conclusiones, limitaciones y trabajo futuro."
+
+  - id: references
+    element_id: references
+    placement: back_matter
+    required: true
+    title: "Referencias"
+
+  - id: appendix
+    element_id: appendix
+    placement: appendix
+    required: false
+    title: "Anexos"

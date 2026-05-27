@@ -1,0 +1,19 @@
+id: mx_uam_izt_cbi
+name: "UAM Iztapalapa — CBI"
+description: "División de Ciencias Básicas e Ingeniería, UAM Iztapalapa. Física, Química, Matemáticas e Ingeniería Eléctrica."
+author: "TeXisStudio Community"
+version: "1.0.0"
+license: "CC BY 4.0"
+continent: america
+country: mexico
+institution: uam
+city: "Ciudad de México"
+bibliography_style: apa
+tags:
+  - uam
+  - mexico
+  - ciencias
+  - fisica
+  - quimica
+  - iztapalapa
+  - cbi

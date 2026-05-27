@@ -136,6 +136,7 @@ jobs:
           sudo apt-get install -y \
             texlive-xetex \
             texlive-bibtex-extra \
+            texlive-publishers \
             texlive-science \
             texlive-fonts-recommended \
             texlive-fonts-extra \
@@ -144,8 +145,8 @@ jobs:
             latexmk \
             poppler-utils
           # Verificar que los paquetes clave estén disponibles
-          kpsewhich apa.bbx  || echo "WARN: apa.bbx no encontrado, intentar con tlmgr"
-          kpsewhich ieee.bbx || echo "WARN: ieee.bbx no encontrado"
+          kpsewhich apa.bbx  || echo "WARN: apa.bbx no encontrado"
+          kpsewhich ieee.bbx || { echo "ERROR: ieee.bbx no encontrado — instala texlive-publishers"; exit 1; }
 
       # ── Instalar Rust para compilar texis-cli ──
       - name: Install Rust toolchain

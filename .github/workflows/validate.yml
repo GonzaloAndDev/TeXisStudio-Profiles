@@ -3,6 +3,12 @@ name: Validate Profiles
 on:
   push:
   pull_request:
+  workflow_dispatch:
+    inputs:
+      texisstudio_ref:
+        description: "Commit SHA, tag, or branch of GonzaloAndDev/TeXisStudio for P3"
+        required: false
+        type: string
 
 jobs:
   validate-yaml:
@@ -172,14 +178,41 @@ jobs:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
 
+      - name: Resolve pinned TeXisStudio ref for P3
+        id: texis_ref
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.texisstudio_ref }}" ]; then
+            REF="${{ github.event.inputs.texisstudio_ref }}"
+          else
+            REF="$(grep -v '^[[:space:]]*#' .github/p3-texisstudio-ref.txt | sed '/^[[:space:]]*$/d' | head -n1 | tr -d '[:space:]')"
+          fi
+
+          if [ -z "$REF" ]; then
+            echo "ERROR: P3 TeXisStudio ref vacío"
+            exit 1
+          fi
+
+          echo "ref=$REF" >> "$GITHUB_OUTPUT"
+          echo "Using TeXisStudio ref: $REF"
+
       # El código fuente de TeXisStudio-main está embebido en profile_samples como referencia
-      # Para compilar necesitamos el repo principal — lo clonamos en un directorio temporal
+      # Para compilar necesitamos el repo principal — lo clonamos en una referencia PINNED
+      # para que el sample verificado no dependa de un main flotante.
       - name: Clone TeXisStudio main repo
         uses: actions/checkout@v4
         with:
           repository: GonzaloAndDev/TeXisStudio
           path: _texis_main
+          ref: ${{ steps.texis_ref.outputs.ref }}
           # Si el repo es privado, añadir: token: ${{ secrets.GH_PAT }}
+
+      - name: Show resolved TeXisStudio commit
+        working-directory: _texis_main
+        run: |
+          echo "Requested ref: ${{ steps.texis_ref.outputs.ref }}"
+          git rev-parse HEAD
+          git log -1 --oneline
 
       - name: Cache Rust build artifacts
         uses: actions/cache@v4
@@ -193,7 +226,7 @@ jobs:
 
       - name: Build texis-cli
         working-directory: _texis_main
-        run: cargo build --release -p texis-cli
+        run: cargo build --release --locked -p texis-cli
 
       - name: Validate sample project structure
         run: |
@@ -215,6 +248,27 @@ jobs:
           }
           echo "OK: compilación completada"
 
+      - name: Assert bibliography was actually generated
+        run: |
+          SAMPLE=profile_samples/us_mit_ieee/project.texis
+          BBL="$SAMPLE/build/main.bbl"
+          LOG="$SAMPLE/build/main.log"
+          if [ ! -s "$BBL" ]; then
+            echo "ERROR: bibliography file missing or empty: $BBL"
+            exit 1
+          fi
+          if grep -q "Empty bibliography" "$LOG"; then
+            echo "ERROR: main.log still reports empty bibliography"
+            tail -60 "$LOG" || true
+            exit 1
+          fi
+          if grep -q "Please (re)run Biber" "$LOG"; then
+            echo "ERROR: main.log still asks to rerun Biber"
+            tail -60 "$LOG" || true
+            exit 1
+          fi
+          echo "OK: bibliografía generada y resuelta"
+
       - name: Run postflight (pdfinfo + pdffonts)
         run: |
           PDF=profile_samples/us_mit_ieee/project.texis/build/main.pdf
@@ -225,6 +279,17 @@ jobs:
           pdfinfo "$PDF"
           pdffonts "$PDF"
           echo "OK: postflight PDF aprobado"
+
+      - name: Upload LaTeX logs as artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: us_mit_ieee_build_logs
+          path: |
+            profile_samples/us_mit_ieee/project.texis/build/main.log
+            profile_samples/us_mit_ieee/project.texis/build/main.bbl
+            profile_samples/us_mit_ieee/project.texis/build/main.bcf
+          if-no-files-found: warn
 
       - name: Upload compiled PDF as artifact
         uses: actions/upload-artifact@v4

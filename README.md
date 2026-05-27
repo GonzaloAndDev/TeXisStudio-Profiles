@@ -220,4 +220,4 @@ https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/c
 Los perfiles se distribuyen bajo **CC-BY-4.0** salvo indicacion contraria en `manifest.yaml`.
 
 Independientes de la licencia del software TeXisStudio (AGPL v3 + Commons Clause).
-<!-- ci-trigger: 2026-05-27T01:44:12 -->
+<!-- ci-trigger: 2026-05-27T01:56:45 -->

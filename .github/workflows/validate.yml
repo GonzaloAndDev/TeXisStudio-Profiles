@@ -324,6 +324,58 @@ jobs:
           fi
           echo "OK: todos los artefactos de salida presentes"
 
+      - name: Export delivery package (P2.2 — secuencia contractual completa)
+        run: |
+          TEXIS=_texis_main/target/release/texis
+          SAMPLE=profile_samples/us_mit_ieee/project.texis
+          OUTDIR=profile_samples/us_mit_ieee/delivery_output
+
+          mkdir -p "$OUTDIR"
+          $TEXIS export-delivery "$SAMPLE" --output "$OUTDIR" --mode draft || {
+            echo "ERROR: texis export-delivery falló"
+            exit 1
+          }
+          echo "OK: paquete de entrega generado"
+
+      - name: Assert delivery package artifacts (P2.2 gate)
+        run: |
+          OUTDIR=profile_samples/us_mit_ieee/delivery_output
+          ERRORS=0
+
+          # ZIP de entrega debe existir
+          ZIP_COUNT=$(find "$OUTDIR" -name "*_entrega.zip" | wc -l)
+          if [ "$ZIP_COUNT" -eq 0 ]; then
+            echo "ERROR: no se encontró *_entrega.zip en $OUTDIR"
+            ERRORS=$((ERRORS+1))
+          else
+            ZIP=$(find "$OUTDIR" -name "*_entrega.zip" | head -1)
+            echo "OK: ZIP generado — $(basename $ZIP) ($(wc -c < $ZIP) bytes)"
+
+            # Verificar artefactos críticos dentro del ZIP
+            for artifact in \
+              "thesis.pdf" \
+              "compliance_report.json" \
+              "postflight_report.json" \
+              "compilation_reproducibility.json" \
+              "manifest.sha256.json" \
+              "submission_checklist.md" \
+              "README.txt"
+            do
+              if unzip -l "$ZIP" | grep -q "$artifact"; then
+                echo "  OK: $artifact presente"
+              else
+                echo "  ERROR: $artifact ausente del ZIP"
+                ERRORS=$((ERRORS+1))
+              fi
+            done
+          fi
+
+          if [ $ERRORS -ne 0 ]; then
+            echo "TOTAL: $ERRORS artefacto(s) faltante(s) en el paquete de entrega"
+            exit 1
+          fi
+          echo "OK: paquete de entrega completo y verificado"
+
       - name: Upload LaTeX logs as artifact
         uses: actions/upload-artifact@v4
         if: always()
@@ -341,6 +393,14 @@ jobs:
         with:
           name: us_mit_ieee_compiled_pdf
           path: profile_samples/us_mit_ieee/project.texis/build/main.pdf
+          if-no-files-found: warn
+
+      - name: Upload delivery package as artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: us_mit_ieee_delivery_package
+          path: profile_samples/us_mit_ieee/delivery_output/*.zip
           if-no-files-found: warn
 
   validate-sample-projects:

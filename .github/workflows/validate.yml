@@ -116,6 +116,9 @@ jobs:
                   # POL_VERIFIED_NO_VERIFIED_BY
                   if not ver.get('verified_by'):
                       errors.append(f"POL_VERIFIED_NO_VERIFIED_BY: {path}")
+                  # POL_VERIFIED_NO_CI_EVIDENCE — evidencia de CI obligatoria (P1.8/P3 audit v2.2)
+                  if not ver.get('ci_evidence'):
+                      errors.append(f"POL_VERIFIED_NO_CI_EVIDENCE: {path}")
           for w in warnings:
               print(f"WARN: {w}")
           if errors:
@@ -237,6 +240,16 @@ jobs:
           fi
           echo "OK: estructura del sample us_mit_ieee verificada"
 
+      - name: Validate sample project (P2.2 — preflight before compile)
+        run: |
+          TEXIS=_texis_main/target/release/texis
+          SAMPLE=profile_samples/us_mit_ieee/project.texis
+          $TEXIS validate "$SAMPLE" || {
+            echo "ERROR: texis validate reportó errores. Resolver antes de compilar."
+            exit 1
+          }
+          echo "OK: validación preflight pasada"
+
       - name: Generate LaTeX and compile
         run: |
           TEXIS=_texis_main/target/release/texis
@@ -279,6 +292,37 @@ jobs:
           pdfinfo "$PDF"
           pdffonts "$PDF"
           echo "OK: postflight PDF aprobado"
+
+      - name: Assert build output artifacts (P2.2 — output contracts)
+        run: |
+          SAMPLE=profile_samples/us_mit_ieee/project.texis/build
+          ERRORS=0
+          # PDF compilado
+          if [ ! -f "$SAMPLE/main.pdf" ]; then
+            echo "ERROR: main.pdf no existe"
+            ERRORS=$((ERRORS+1))
+          else
+            echo "OK: main.pdf existe ($(wc -c < $SAMPLE/main.pdf) bytes)"
+          fi
+          # Bibliografía generada
+          if [ ! -s "$SAMPLE/main.bbl" ]; then
+            echo "ERROR: main.bbl no existe o está vacío"
+            ERRORS=$((ERRORS+1))
+          else
+            echo "OK: main.bbl existe"
+          fi
+          # Log de compilación
+          if [ ! -f "$SAMPLE/main.log" ]; then
+            echo "ERROR: main.log no existe"
+            ERRORS=$((ERRORS+1))
+          else
+            echo "OK: main.log existe ($(wc -l < $SAMPLE/main.log) líneas)"
+          fi
+          if [ $ERRORS -ne 0 ]; then
+            echo "TOTAL: $ERRORS artifact(s) faltantes"
+            exit 1
+          fi
+          echo "OK: todos los artefactos de salida presentes"
 
       - name: Upload LaTeX logs as artifact
         uses: actions/upload-artifact@v4

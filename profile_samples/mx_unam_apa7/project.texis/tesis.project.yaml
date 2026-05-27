@@ -1,0 +1,348 @@
+schema_version: "1.0.0"
+id: sample-unam-apa7-001
+created_at: "2026-05-27T00:00:00Z"
+updated_at: "2026-05-27T00:00:00Z"
+profile_id: mx_unam_apa7
+
+metadata:
+  title: "Efectos del cambio climático en la biodiversidad de ecosistemas tropicales mexicanos"
+  document_kind: tesis
+  academic_level: posgrado
+  language: es
+  city: "Ciudad de México"
+  year: 2026
+  keywords:
+    - cambio climático
+    - biodiversidad
+    - ecosistemas tropicales
+    - México
+
+institution:
+  name: "Universidad Nacional Autónoma de México"
+  faculty: "Posgrado en Ciencias Biológicas"
+  department: "Instituto de Biología"
+  country: México
+
+student:
+  full_name: "María Elena González Ramírez"
+  email: "mgonzalez@posgrado.unam.mx"
+  advisors:
+    - "Dr. Alejandro Reyes Hernández"
+  committee:
+    - full_name: "Dra. Carmen López Ortiz"
+      role: "Presidente del jurado"
+    - full_name: "Dr. Roberto Martínez Silva"
+      role: "Vocal"
+    - full_name: "Dra. Ana Paula Sánchez Cruz"
+      role: "Vocal"
+
+latex_config:
+  document_class:
+    name: book
+    options:
+      - 12pt
+      - letterpaper
+      - oneside
+  engine: xelatex
+  compiler: latexmk
+  bibliography_backend: biber
+  bibliography_style: apa
+  packages_required: []
+  typography: {}
+  page_layout:
+    paper: letterpaper
+    margins:
+      top: 25mm
+      bottom: 25mm
+      left: 30mm
+      right: 20mm
+    line_spacing: 1.5
+
+sections:
+  - id: title_page
+    element_id: title_page
+    title: "Portada"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: dedication
+    element_id: dedication
+    title: "Dedicatoria"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: ded-p1
+        content: >
+          A mis padres, por su apoyo incondicional durante estos años de estudio.
+          A todos los que creen que la ciencia puede cambiar el mundo.
+    fields: {}
+    children: []
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    title: "Agradecimientos"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: ack-p1
+        content: >
+          Esta investigación fue financiada por el Consejo Nacional de Humanidades,
+          Ciencias y Tecnologías (CONAHCYT) mediante la beca No. 789456 y el proyecto
+          PAPIIT IN201024 de la UNAM. Agradezco profundamente al Dr. Alejandro Reyes
+          por su guía y al equipo del Laboratorio de Ecología del Cambio Climático.
+    fields: {}
+    children: []
+
+  - id: abstract_es
+    element_id: abstract_es
+    title: "Resumen"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: resumen-p1
+        content: >
+          El cambio climático representa una de las principales amenazas para la
+          biodiversidad global. En México, los ecosistemas tropicales albergan una
+          proporción significativa de la biodiversidad del planeta, pero son
+          particularmente vulnerables a las alteraciones climáticas. Esta tesis
+          analiza los efectos del cambio climático en la composición de especies,
+          abundancias relativas y funcionamiento de ecosistemas tropicales en tres
+          regiones representativas de México: Chiapas, Oaxaca y la Península de
+          Yucatán. Se emplearon modelos de nicho ecológico, análisis de series
+          temporales de temperatura y precipitación, y evaluaciones de campo para
+          caracterizar los cambios observados y proyectados. Los resultados indican
+          una disminución significativa en la riqueza de especies de anfibios y
+          reptiles, y un desplazamiento altitudinal de comunidades de aves hacia
+          zonas más elevadas. Se proponen medidas de mitigación y corredores
+          biológicos como estrategia de conservación prioritaria.
+    fields: {}
+    children: []
+
+  - id: abstract_en
+    element_id: abstract_en
+    title: "Abstract"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: abstract-p1
+        content: >
+          Climate change represents one of the main threats to global biodiversity.
+          In Mexico, tropical ecosystems harbor a significant proportion of the planet's
+          biodiversity but are particularly vulnerable to climate alterations. This thesis
+          analyzes the effects of climate change on species composition, relative
+          abundances, and ecosystem functioning in three representative tropical regions
+          of Mexico: Chiapas, Oaxaca, and the Yucatán Peninsula. Ecological niche models,
+          temperature and precipitation time series analyses, and field assessments were
+          used to characterize observed and projected changes. Results indicate a
+          significant decline in amphibian and reptile species richness, and an altitudinal
+          shift of bird communities toward higher elevations. Biological corridors are
+          proposed as a priority conservation strategy.
+    fields: {}
+    children: []
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    title: "Índice General"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    title: "Lista de Figuras"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    title: "Lista de Cuadros"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: introduction
+    element_id: introduction
+    title: "Introducción"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: intro-p1
+        content: >
+          Los ecosistemas tropicales de México constituyen uno de los reservorios
+          de biodiversidad más importantes del mundo. Sin embargo, el acelerado
+          proceso de cambio climático amenaza la estabilidad de estas comunidades
+          biológicas y los servicios ecosistémicos que proveen.
+      - type: paragraph
+        id: intro-p2
+        content: >
+          Esta investigación se propone caracterizar los efectos ya observados del
+          cambio climático en tres ecosistemas tropicales representativos del país,
+          así como proyectar los cambios esperados bajo distintos escenarios de
+          emisiones de gases de efecto invernadero para el año 2050.
+      - type: citation
+        id: intro-c1
+        citation_key: ipcc2021
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    title: "Marco Teórico"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: marco-p1
+        content: >
+          La biodiversidad puede entenderse como la variedad de formas de vida en
+          la Tierra, incluyendo la diversidad genética, de especies y de ecosistemas.
+          Los modelos de nicho ecológico permiten proyectar la distribución potencial
+          de las especies bajo diferentes escenarios climáticos.
+      - type: citation
+        id: marco-c1
+        citation_key: peterson2011
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: marco-p2
+        content: >
+          Los escenarios de trayectorias socioeconómicas compartidas (SSP) del IPCC
+          proporcionan el marco de referencia para modelar los futuros climáticos posibles.
+          En este trabajo se utilizan principalmente los escenarios SSP2-4.5 y SSP5-8.5.
+      - type: citation
+        id: marco-c2
+        citation_key: diaz2019
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: methodology
+    element_id: methodology
+    title: "Metodología"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: met-p1
+        content: >
+          Se delimitaron tres polígonos de estudio correspondientes a las regiones
+          de los Altos de Chiapas, la Sierra Norte de Oaxaca y la selva mediana de
+          Campeche. En cada región se realizaron muestreos estacionales durante 2023
+          y 2024 mediante transectos de 500 metros para aves y cuadrantes de 50 m²
+          para herpetofauna.
+      - type: paragraph
+        id: met-p2
+        content: >
+          Los modelos de nicho ecológico se construyeron con MaxEnt v3.4.4 utilizando
+          capas bioclimáticas de CHELSA a resolución de 1 km². Se evaluó el desempeño
+          de los modelos mediante curvas ROC y el estadístico AUC.
+    fields: {}
+    children: []
+
+  - id: results
+    element_id: results
+    title: "Resultados"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: res-p1
+        content: >
+          Se registraron 312 especies de aves, 87 de anfibios y 143 de reptiles en
+          las tres regiones de estudio. El análisis temporal indica una reducción
+          promedio del 18\% en la riqueza de anfibios entre 2015 y 2024 en las zonas
+          de menor altitud (por debajo de los 800 msnm).
+      - type: paragraph
+        id: res-p2
+        content: >
+          Los modelos de distribución proyectan que bajo el escenario SSP5-8.5,
+          el 34\% de las especies de reptiles estudiadas perderían más del 50\% de
+          su área de distribución actual para 2050. Las especies endémicas muestran
+          mayor vulnerabilidad que las de distribución amplia.
+    fields: {}
+    children: []
+
+  - id: discussion
+    element_id: discussion
+    title: "Discusión"
+    placement: body
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: disc-p1
+        content: >
+          Los resultados concuerdan con las tendencias globales reportadas por el IPCC
+          y con estudios previos en otras regiones tropicales de Latinoamérica. La
+          reducción en la diversidad de herpetofauna es consistente con el fenómeno
+          de desecación de charcas temporales asociado al aumento de temperaturas.
+    fields: {}
+    children: []
+
+  - id: conclusions
+    element_id: conclusions
+    title: "Conclusiones"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: conc-p1
+        content: >
+          Los ecosistemas tropicales mexicanos están experimentando cambios
+          significativos atribuibles al cambio climático. La reducción en la riqueza
+          de anfibios y el desplazamiento altitudinal de las comunidades de aves
+          confirman las predicciones de los modelos climáticos para la región.
+          La implementación urgente de corredores biológicos entre reservas naturales
+          es la medida de conservación con mayor costo-efectividad identificada en
+          este estudio.
+    fields: {}
+    children: []
+
+  - id: references
+    element_id: references
+    title: "Referencias"
+    placement: back_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+file_states: {}

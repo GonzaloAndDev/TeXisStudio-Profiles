@@ -136,6 +136,7 @@ jobs:
           sudo apt-get install -y \
             texlive-xetex \
             texlive-bibtex-extra \
+            texlive-latex-recommended \
             texlive-publishers \
             texlive-science \
             texlive-latex-extra \
@@ -145,9 +146,27 @@ jobs:
             biber \
             latexmk \
             poppler-utils
-          # Verificar que los paquetes clave estén disponibles
-          kpsewhich apa.bbx  || echo "WARN: apa.bbx no encontrado"
-          kpsewhich ieee.bbx || { echo "ERROR: ieee.bbx no encontrado — instala texlive-publishers"; exit 1; }
+          # Verificar explícitamente los paquetes que TeXisStudio genera siempre.
+          for sty in \
+            fontspec.sty \
+            geometry.sty \
+            graphicx.sty \
+            booktabs.sty \
+            longtable.sty \
+            caption.sty \
+            setspace.sty \
+            microtype.sty \
+            csquotes.sty \
+            hyperref.sty \
+            listings.sty \
+            algorithm.sty \
+            algpseudocode.sty \
+            biblatex.sty
+          do
+            kpsewhich "$sty" >/dev/null || { echo "ERROR: $sty no encontrado en TeX Live"; exit 1; }
+          done
+          # Verificar estilos biblatex necesarios para IEEE
+          kpsewhich ieee.bbx >/dev/null || { echo "ERROR: ieee.bbx no encontrado — instala texlive-publishers"; exit 1; }
 
       # ── Instalar Rust para compilar texis-cli ──
       - name: Install Rust toolchain

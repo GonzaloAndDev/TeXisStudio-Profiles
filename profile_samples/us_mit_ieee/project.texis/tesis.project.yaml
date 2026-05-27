@@ -167,9 +167,34 @@ sections:
       - type: paragraph
         id: bg-p1
         content: >
-          The consensus problem, first formalized by Lamport et al. [1], requires a set
-          of processes to agree on a single value despite failures. Paxos [2] and Raft [3]
-          are the most widely deployed consensus algorithms in production systems.
+          The consensus problem requires a set of processes to agree on a single value
+          despite failures.
+      - type: citation
+        id: bg-c1
+        citation_key: lamport1978time
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: bg-p2
+        content: >
+          Paxos and Raft are among the most widely deployed consensus algorithms in
+          production systems and remain core points of comparison for new proposals.
+      - type: citation
+        id: bg-c2
+        citation_key: lamport2001paxos
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: bg-c3
+        citation_key: ongaro2014raft
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
     fields: {}
     children: []
 

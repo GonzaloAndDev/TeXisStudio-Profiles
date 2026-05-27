@@ -316,6 +316,12 @@ jobs:
           python - <<'PY'
           import yaml, json, pathlib, sys
           errors = []
+
+          def iter_sections(sections):
+              for section in sections or []:
+                  yield section
+                  yield from iter_sections(section.get('children') or [])
+
           samples_dir = pathlib.Path('profile_samples')
           if not samples_dir.exists():
               print("OK: no sample projects directory (skipping)")
@@ -339,6 +345,22 @@ jobs:
               for field in ['schema_version', 'profile_id', 'metadata', 'sections']:
                   if field not in p:
                       errors.append(f"MISSING '{field}' in {project_yaml}")
+              has_bib = (project_dir / 'content' / 'bibliography' / 'references.bib').exists()
+              has_references_section = any(
+                  s.get('enabled', True) and s.get('element_id') == 'references'
+                  for s in iter_sections(p.get('sections'))
+              )
+              citation_blocks = sum(
+                  1
+                  for s in iter_sections(p.get('sections'))
+                  for b in (s.get('blocks') or [])
+                  if b.get('type') == 'citation'
+              )
+              if has_bib and has_references_section and citation_blocks == 0:
+                  errors.append(
+                      f"MISSING citation blocks in {project_yaml} — sample has references.bib "
+                      f"and a references section but no semantic citations."
+                  )
               if checklist.exists():
                   try:
                       json.loads(checklist.read_text(encoding='utf-8'))

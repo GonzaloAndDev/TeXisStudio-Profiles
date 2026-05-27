@@ -121,6 +121,94 @@ jobs:
           print(f"OK: {count} perfiles validos")
           PY
 
+  compile-sample-us-mit-ieee:
+    name: P3 — Compile us_mit_ieee sample project with LaTeX
+    runs-on: ubuntu-latest
+    # Solo ejecutar en main/master para ahorrar minutos de CI en PRs de baja prioridad
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    steps:
+      - uses: actions/checkout@v4
+
+      # ── Instalar TeX Live con paquetes requeridos por us_mit_ieee (IEEE + APA) ──
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y \
+            texlive-xetex \
+            texlive-bibtex-extra \
+            texlive-science \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-lang-spanish \
+            biber \
+            latexmk \
+            poppler-utils
+          # Verificar que los paquetes clave estén disponibles
+          kpsewhich apa.bbx  || echo "WARN: apa.bbx no encontrado, intentar con tlmgr"
+          kpsewhich ieee.bbx || echo "WARN: ieee.bbx no encontrado"
+
+      # ── Instalar Rust para compilar texis-cli ──
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust build artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+
+      # El código fuente de TeXisStudio-main está embebido en profile_samples como referencia
+      # Para compilar necesitamos el repo principal — lo clonamos en un directorio temporal
+      - name: Clone TeXisStudio main repo
+        uses: actions/checkout@v4
+        with:
+          repository: GonzaloAndDev/TeXisStudio
+          path: _texis_main
+          # Si el repo es privado, añadir: token: ${{ secrets.GH_PAT }}
+
+      - name: Build texis-cli
+        working-directory: _texis_main
+        run: cargo build --release -p texis-cli
+
+      - name: Validate sample project structure
+        run: |
+          SAMPLE=profile_samples/us_mit_ieee
+          if [ ! -f "$SAMPLE/project.texis/tesis.project.yaml" ]; then
+            echo "ERROR: tesis.project.yaml no encontrado en $SAMPLE/project.texis"
+            exit 1
+          fi
+          echo "OK: estructura del sample us_mit_ieee verificada"
+
+      - name: Generate LaTeX and compile
+        run: |
+          TEXIS=_texis_main/target/release/texis
+          SAMPLE=profile_samples/us_mit_ieee/project.texis
+          $TEXIS compile "$SAMPLE" --backend latexmk
+          echo "OK: compilación completada"
+
+      - name: Run postflight (pdfinfo + pdffonts)
+        run: |
+          PDF=profile_samples/us_mit_ieee/project.texis/build/main.pdf
+          if [ ! -f "$PDF" ]; then
+            echo "ERROR: PDF no generado en $PDF"
+            exit 1
+          fi
+          pdfinfo "$PDF"
+          pdffonts "$PDF"
+          echo "OK: postflight PDF aprobado"
+
+      - name: Upload compiled PDF as artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: us_mit_ieee_compiled_pdf
+          path: profile_samples/us_mit_ieee/project.texis/build/main.pdf
+          if-no-files-found: warn
+
   validate-sample-projects:
     name: Validate sample project structure
     runs-on: ubuntu-latest

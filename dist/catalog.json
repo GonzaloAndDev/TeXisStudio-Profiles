@@ -1,0 +1,1731 @@
+{
+  "profiles": [
+    {
+      "id": "ar_uba_apa7",
+      "name": "UBA - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis de la Universidad de Buenos Aires, APA 7",
+      "tags": [
+        "uba",
+        "argentina",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "argentina",
+      "institution": "uba",
+      "city": "Buenos Aires",
+      "institution_id": "uba",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/ar_uba_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "br_unicamp_abnt",
+      "name": "UNICAMP - Dissertacao (ABNT)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Dissertacao da Universidade Estadual de Campinas, ABNT NBR 6023:2018",
+      "tags": [
+        "unicamp",
+        "brasil",
+        "abnt",
+        "mestrado"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "brazil",
+      "institution": "unicamp",
+      "city": "Campinas",
+      "institution_id": "unicamp",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/br_unicamp_abnt.zip",
+      "sha256": null,
+      "style_id": "abnt"
+    },
+    {
+      "id": "br_usp_abnt",
+      "name": "USP - Dissertacao (ABNT)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Dissertacao de mestrado/doutorado da Universidade de Sao Paulo, ABNT NBR 6023:2018",
+      "tags": [
+        "usp",
+        "brasil",
+        "abnt",
+        "mestrado"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "brazil",
+      "institution": "usp",
+      "city": "Sao Paulo",
+      "institution_id": "usp",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/br_usp_abnt.zip",
+      "sha256": null,
+      "style_id": "abnt"
+    },
+    {
+      "id": "ca_mcgill_apa7",
+      "name": "McGill - Thesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "McGill University thesis, APA 7, GPS guidelines",
+      "tags": [
+        "mcgill",
+        "canada",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "canada",
+      "institution": "mcgill",
+      "city": "Montreal",
+      "institution_id": "mcgill",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/ca_mcgill_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "cl_uchile_apa7",
+      "name": "U. de Chile - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis de la Universidad de Chile, APA 7",
+      "tags": [
+        "uchile",
+        "chile",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "chile",
+      "institution": "uchile",
+      "city": "Santiago",
+      "institution_id": "uchile",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cl_uchile_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "mx_ipn_apa7",
+      "name": "IPN - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis del Instituto Politecnico Nacional, lineamientos SEPI",
+      "tags": [
+        "ipn",
+        "politecnico",
+        "mexico",
+        "apa7",
+        "ingenieria"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "ipn",
+      "city": "Ciudad de Mexico",
+      "institution_id": "ipn",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_ipn_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "mx_tec_apa7",
+      "name": "Tec de Monterrey - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis del Instituto Tecnologico y de Estudios Superiores de Monterrey, APA 7",
+      "tags": [
+        "tec",
+        "itesm",
+        "monterrey",
+        "mexico",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "tec",
+      "city": "Monterrey",
+      "institution_id": "tec",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_tec_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "mx_uanl_apa7",
+      "name": "UANL - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis de la Universidad Autonoma de Nuevo Leon, APA 7",
+      "tags": [
+        "uanl",
+        "nuevo_leon",
+        "mexico",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "uanl",
+      "city": "Monterrey",
+      "institution_id": "uanl",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uanl_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "mx_udg_apa7",
+      "name": "UdeG - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis de la Universidad de Guadalajara, APA 7",
+      "tags": [
+        "udg",
+        "guadalajara",
+        "mexico",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "udg",
+      "city": "Guadalajara",
+      "institution_id": "udg",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_udg_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "mx_unam_vancouver",
+      "name": "UNAM - Ciencias de la Salud (Vancouver)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis UNAM para medicina y ciencias de la salud, estilo Vancouver",
+      "tags": [
+        "unam",
+        "mexico",
+        "vancouver",
+        "medicina",
+        "salud"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "unam",
+      "city": "Ciudad de Mexico",
+      "institution_id": "unam",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_unam_vancouver.zip",
+      "sha256": null,
+      "style_id": "vancouver"
+    },
+    {
+      "id": "mx_unam_apa7",
+      "name": "UNAM - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis de posgrado UNAM conforme a lineamientos DGAE, estilo APA 7",
+      "tags": [
+        "unam",
+        "mexico",
+        "apa7",
+        "posgrado"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "unam",
+      "city": "Ciudad de Mexico",
+      "institution_id": "unam",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_unam_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "us_harvard_apa7",
+      "name": "Harvard - Thesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Harvard GSAS thesis for psychology and social sciences, APA 7",
+      "tags": [
+        "harvard",
+        "usa",
+        "apa7",
+        "psychology"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "usa",
+      "institution": "harvard",
+      "city": "Cambridge, MA",
+      "institution_id": "harvard",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_harvard_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "us_harvard_chicago17",
+      "name": "Harvard - Thesis (Chicago 17)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Harvard GSAS thesis for humanities and social sciences, Chicago 17 Notes-Bibliography",
+      "tags": [
+        "harvard",
+        "usa",
+        "chicago17",
+        "humanities"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "usa",
+      "institution": "harvard",
+      "city": "Cambridge, MA",
+      "institution_id": "harvard",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_harvard_chicago17.zip",
+      "sha256": null,
+      "style_id": "chicago17"
+    },
+    {
+      "id": "us_mit_ieee",
+      "name": "MIT - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "MIT thesis for engineering and sciences, IEEE citation style, DSpace submission",
+      "tags": [
+        "mit",
+        "usa",
+        "ieee",
+        "engineering",
+        "sciences"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "usa",
+      "institution": "mit",
+      "city": "Cambridge, MA",
+      "institution_id": "mit",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_mit_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "us_stanford_ieee",
+      "name": "Stanford - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Stanford thesis for engineering and computer science, IEEE style",
+      "tags": [
+        "stanford",
+        "usa",
+        "ieee",
+        "engineering",
+        "cs"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "usa",
+      "institution": "stanford",
+      "city": "Stanford, CA",
+      "institution_id": "stanford",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_stanford_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "us_chicago_chicago17",
+      "name": "UChicago - Thesis (Chicago 17)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "University of Chicago thesis, Chicago 17 Author-Date, social sciences",
+      "tags": [
+        "uchicago",
+        "usa",
+        "chicago17",
+        "humanities"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "usa",
+      "institution": "uchicago",
+      "city": "Chicago, IL",
+      "institution_id": "uchicago",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_chicago_chicago17.zip",
+      "sha256": null,
+      "style_id": "chicago17"
+    },
+    {
+      "id": "cn_pku_gbt",
+      "name": "Peking University - Thesis (GB/T 7714)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Peking University thesis, GB/T 7714-2015",
+      "tags": [
+        "pku",
+        "beijing",
+        "china",
+        "gbt7714"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "asia",
+      "country": "china",
+      "institution": "pku",
+      "city": "Beijing",
+      "institution_id": "pku",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cn_pku_gbt.zip",
+      "sha256": null,
+      "style_id": "gbt7714"
+    },
+    {
+      "id": "cn_tsinghua_gbt",
+      "name": "Tsinghua - Thesis (GB/T 7714)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tsinghua University thesis, GB/T 7714-2015 Chinese national standard",
+      "tags": [
+        "tsinghua",
+        "china",
+        "gbt7714"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "asia",
+      "country": "china",
+      "institution": "tsinghua",
+      "city": "Beijing",
+      "institution_id": "tsinghua",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cn_tsinghua_gbt.zip",
+      "sha256": null,
+      "style_id": "gbt7714"
+    },
+    {
+      "id": "in_iit_bombay_ieee",
+      "name": "IIT Bombay - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Indian Institute of Technology Bombay thesis for engineering, IEEE",
+      "tags": [
+        "iit",
+        "bombay",
+        "india",
+        "ieee",
+        "engineering"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "asia",
+      "country": "india",
+      "institution": "iit_bombay",
+      "city": "Mumbai",
+      "institution_id": "iit_bombay",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/in_iit_bombay_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "jp_kyoto_apa7",
+      "name": "Kyoto University - Thesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Kyoto University thesis for humanities and social sciences, APA 7",
+      "tags": [
+        "kyoto",
+        "japan",
+        "apa7",
+        "humanities"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "asia",
+      "country": "japan",
+      "institution": "kyoto",
+      "city": "Kyoto",
+      "institution_id": "kyoto",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/jp_kyoto_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "jp_utokyo_ieee",
+      "name": "U Tokyo - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "University of Tokyo thesis for engineering and sciences, IEEE",
+      "tags": [
+        "utokyo",
+        "tokyo",
+        "japan",
+        "ieee"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "asia",
+      "country": "japan",
+      "institution": "utokyo",
+      "city": "Tokyo",
+      "institution_id": "utokyo",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/jp_utokyo_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "sg_nus_ieee",
+      "name": "NUS - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "National University of Singapore thesis for computing and engineering, IEEE",
+      "tags": [
+        "nus",
+        "singapore",
+        "ieee",
+        "engineering"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "asia",
+      "country": "singapore",
+      "institution": "nus",
+      "city": "Singapore",
+      "institution_id": "nus",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/sg_nus_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "kr_snu_apa7",
+      "name": "Seoul National University - Thesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Seoul National University thesis, APA 7 or IEEE common",
+      "tags": [
+        "snu",
+        "korea",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "asia",
+      "country": "south_korea",
+      "institution": "snu",
+      "city": "Seoul",
+      "institution_id": "snu",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/kr_snu_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "de_lmu_apa7",
+      "name": "LMU Munich - Dissertation (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Ludwig-Maximilians-Universitaet Muenchen dissertation, APA 7",
+      "tags": [
+        "lmu",
+        "munich",
+        "germany",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "germany",
+      "institution": "lmu",
+      "city": "Munich",
+      "institution_id": "lmu",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/de_lmu_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "de_tum_ieee",
+      "name": "TU Munich - Dissertation (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Technische Universitaet Muenchen dissertation for engineering, IEEE",
+      "tags": [
+        "tum",
+        "munich",
+        "germany",
+        "ieee",
+        "engineering"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "germany",
+      "institution": "tum",
+      "city": "Munich",
+      "institution_id": "tum",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/de_tum_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "it_sapienza_apa7",
+      "name": "Sapienza Roma - Tesi (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesi di laurea magistrale Sapienza Universita di Roma, APA 7",
+      "tags": [
+        "sapienza",
+        "roma",
+        "italy",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "italy",
+      "institution": "sapienza",
+      "city": "Rome",
+      "institution_id": "sapienza",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/it_sapienza_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "nl_tudelft_ieee",
+      "name": "TU Delft - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "TU Delft MSc/PhD thesis for engineering and technology, IEEE",
+      "tags": [
+        "tudelft",
+        "netherlands",
+        "ieee",
+        "engineering"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "netherlands",
+      "institution": "tudelft",
+      "city": "Delft",
+      "institution_id": "tudelft",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/nl_tudelft_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "es_ucm_apa7",
+      "name": "UCM Madrid - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis doctoral de la Universidad Complutense de Madrid, APA 7",
+      "tags": [
+        "ucm",
+        "madrid",
+        "espana",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "spain",
+      "institution": "ucm",
+      "city": "Madrid",
+      "institution_id": "ucm",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/es_ucm_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "se_kth_ieee",
+      "name": "KTH - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "KTH Royal Institute of Technology thesis for engineering and technology, IEEE",
+      "tags": [
+        "kth",
+        "sweden",
+        "ieee",
+        "engineering"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "sweden",
+      "institution": "kth",
+      "city": "Stockholm",
+      "institution_id": "kth",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/se_kth_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "uk_cambridge_apa7",
+      "name": "Cambridge - PhD Thesis (APA 7)",
+      "version": "1.1.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "status": "reviewed",
+      "description": "University of Cambridge PhD thesis for social sciences, psychology, and education. Follows Cambridge Graduate Office format guidelines: A4, 40mm left margin (binding), double-spacing, 12pt, APA 7 bibliography via Biber. Word limit: 80,000 words.\n",
+      "tags": [
+        "cambridge",
+        "uk",
+        "apa7",
+        "phd",
+        "social_sciences",
+        "psychology",
+        "education"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "uk",
+      "institution": "cambridge",
+      "institution_id": "cambridge",
+      "city": "Cambridge",
+      "verified_at": "2026-05-24",
+      "source_urls": [
+        "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis",
+        "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"
+      ],
+      "review_interval_days": 365,
+      "changelog": [
+        {
+          "version": "1.1.0",
+          "date": "2026-05-24",
+          "changes": [
+            "Status: experimental → reviewed",
+            "Corrected left margin to 40mm (Cambridge binding requirement)",
+            "Added Declaration section (required by Cambridge Graduate Office)",
+            "Added verification block with official source URLs",
+            "Added comprehensive section guidance for each chapter",
+            "Added word limit (80,000) to Introduction guidance",
+            "Added Abstract 300-word limit and ProQuest submission note"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-01-01",
+          "changes": [
+            "Initial experimental release"
+          ]
+        }
+      ],
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/uk_cambridge_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7"
+    },
+    {
+      "id": "uk_cambridge_ieee",
+      "name": "Cambridge - Thesis (IEEE)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "University of Cambridge PhD thesis for engineering and natural sciences, IEEE",
+      "tags": [
+        "cambridge",
+        "uk",
+        "ieee",
+        "engineering"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "uk",
+      "institution": "cambridge",
+      "city": "Cambridge",
+      "institution_id": "cambridge",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/uk_cambridge_ieee.zip",
+      "sha256": null,
+      "style_id": "ieee"
+    },
+    {
+      "id": "uk_oxford_mhra",
+      "name": "Oxford - DPhil Thesis (MHRA)",
+      "version": "1.1.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "status": "reviewed",
+      "description": "University of Oxford DPhil thesis for humanities. Follows Oxford Examination Regulations: A4, 40mm left margin (binding), double-spacing, 12pt, MHRA 3rd edition via Biber. Word limit: 100,000 words (excluding bibliography and appendices).\n",
+      "tags": [
+        "oxford",
+        "uk",
+        "mhra",
+        "dphil",
+        "humanities",
+        "literature",
+        "history"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "europe",
+      "country": "uk",
+      "institution": "oxford",
+      "institution_id": "oxford",
+      "city": "Oxford",
+      "verified_at": "2026-05-24",
+      "source_urls": [
+        "https://www.ox.ac.uk/students/academic/guidance/graduate/research/status/thesissubmission",
+        "https://examregs.admin.ox.ac.uk/"
+      ],
+      "review_interval_days": 365,
+      "changelog": [
+        {
+          "version": "1.1.0",
+          "date": "2026-05-24",
+          "changes": [
+            "Status: experimental → reviewed",
+            "Corrected left margin to 40mm (Oxford binding requirement)",
+            "Added verification block with official source URLs",
+            "Added comprehensive section guidance for each chapter",
+            "Added word limit (100,000) to Introduction guidance",
+            "Added MHRA footnote citation guidance in chapter sections",
+            "Added Declaration and Abbreviations sections"
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-01-01",
+          "changes": [
+            "Initial experimental release"
+          ]
+        }
+      ],
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/uk_oxford_mhra.zip",
+      "sha256": null,
+      "style_id": "mhra"
+    },
+    {
+      "id": "generic_tesina",
+      "name": "Tesina Generica",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Version compacta para trabajos monograficos y tesinas",
+      "tags": [
+        "tesina",
+        "generico",
+        "apa"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "generic",
+      "country": "generic",
+      "institution_id": "generic",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_tesina.zip",
+      "sha256": null,
+      "institution": "generic",
+      "style_id": "tesina"
+    },
+    {
+      "id": "generic_thesis",
+      "name": "Tesis Generica",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Estructura completa para cualquier disciplina academica",
+      "tags": [
+        "tesis",
+        "generico",
+        "apa"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "generic",
+      "country": "generic",
+      "institution_id": "generic",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_thesis.zip",
+      "sha256": null,
+      "institution": "generic",
+      "style_id": "thesis"
+    }
+  ],
+  "citation_styles": [
+    {
+      "id": "apa7",
+      "name": "APA 7",
+      "full_name": "American Psychological Association, 7th Edition",
+      "year": 2020,
+      "organization": "American Psychological Association",
+      "official_url": "https://apastyle.apa.org",
+      "type": "author_date",
+      "biblatex_style": "apa",
+      "biblatex_options": [
+        "natbib=true",
+        "uniquelist=false"
+      ],
+      "disciplines": [
+        "psychology",
+        "education",
+        "social_sciences",
+        "business",
+        "nursing",
+        "communications"
+      ],
+      "regions_primary": [
+        "USA",
+        "Canada",
+        "Latin America",
+        "Australia"
+      ],
+      "in_text_format": "(Author, Year)",
+      "in_text_narrative": "Author (Year)",
+      "bibliography_title": "References",
+      "description": "The most widely used citation style globally. Required by most psychology, education, and social science programs. Seventh edition (2020) introduced DOI as hyperlink, up to 20 authors, and cleaner formatting rules.\n",
+      "notes": "Default style for most Latin American universities. Nearly universal at bachelor/master level in Mexico.",
+      "sort_order": 1
+    },
+    {
+      "id": "vancouver",
+      "name": "Vancouver",
+      "full_name": "Vancouver / ICMJE Recommendations",
+      "year": 2019,
+      "organization": "International Committee of Medical Journal Editors",
+      "official_url": "https://www.icmje.org/recommendations",
+      "type": "numeric",
+      "biblatex_style": "vancouver",
+      "biblatex_options": [],
+      "disciplines": [
+        "medicine",
+        "nursing",
+        "pharmacy",
+        "dentistry",
+        "health_sciences",
+        "biomedical_research"
+      ],
+      "regions_primary": [
+        "Global — medical and health sciences"
+      ],
+      "in_text_format": "[1]",
+      "in_text_narrative": "Smith et al. [1]",
+      "bibliography_title": "References",
+      "description": "Numeric citation style mandatory for health sciences and medicine worldwide. References are numbered in order of appearance. Standard for most clinical and biomedical journals indexed in MEDLINE/PubMed.\n",
+      "notes": "Required for UNAM medicine, IPN health programs, and most Latin American medical schools.",
+      "sort_order": 2
+    },
+    {
+      "id": "ieee",
+      "name": "IEEE",
+      "full_name": "IEEE Citation Style",
+      "year": 2018,
+      "organization": "Institute of Electrical and Electronics Engineers",
+      "official_url": "https://ieee.org/publications/authors/references.html",
+      "type": "numeric",
+      "biblatex_style": "ieee",
+      "biblatex_options": [
+        "backend=biber"
+      ],
+      "disciplines": [
+        "electrical_engineering",
+        "computer_science",
+        "telecommunications",
+        "robotics",
+        "electronics",
+        "mechatronics"
+      ],
+      "regions_primary": [
+        "Global — engineering and technology programs"
+      ],
+      "in_text_format": "[1]",
+      "in_text_narrative": "Smith et al. [1]",
+      "bibliography_title": "References",
+      "description": "Numeric style standard for engineering, computer science, and technology disciplines. References are numbered by order of citation. Widely adopted at MIT, Stanford, TU Delft, TU Munich, IIT Bombay, NUS, and virtually all engineering schools globally.\n",
+      "notes": "De facto standard for engineering theses worldwide.",
+      "sort_order": 3
+    },
+    {
+      "id": "chicago17_notes",
+      "name": "Chicago 17 (Notes)",
+      "full_name": "Chicago Manual of Style, 17th Edition — Notes-Bibliography",
+      "year": 2017,
+      "organization": "University of Chicago Press",
+      "official_url": "https://www.chicagomanualofstyle.org",
+      "type": "notes_bibliography",
+      "biblatex_style": "verbose-note",
+      "biblatex_options": [
+        "backend=biber"
+      ],
+      "disciplines": [
+        "history",
+        "literature",
+        "arts",
+        "philosophy",
+        "religious_studies",
+        "music",
+        "film_studies"
+      ],
+      "regions_primary": [
+        "USA",
+        "UK",
+        "Canada — humanities programs"
+      ],
+      "in_text_format": "Footnote¹",
+      "in_text_narrative": "Footnote¹",
+      "bibliography_title": "Bibliography",
+      "description": "Notes-Bibliography system used in humanities disciplines. Citations appear as footnotes or endnotes; a full bibliography is included at the end. Preferred at Harvard, UChicago, and many UK and US humanities departments.\n",
+      "notes": "Dominant in history and literature programs. Oxford and Cambridge humanities also accept this style.",
+      "sort_order": 4
+    },
+    {
+      "id": "chicago17_authordate",
+      "name": "Chicago 17 (Author-Date)",
+      "full_name": "Chicago Manual of Style, 17th Edition — Author-Date",
+      "year": 2017,
+      "organization": "University of Chicago Press",
+      "official_url": "https://www.chicagomanualofstyle.org",
+      "type": "author_date",
+      "biblatex_style": "chicago-authordate",
+      "biblatex_options": [
+        "backend=biber"
+      ],
+      "disciplines": [
+        "economics",
+        "political_science",
+        "sociology",
+        "anthropology",
+        "geography",
+        "social_sciences"
+      ],
+      "regions_primary": [
+        "USA",
+        "Canada — social sciences programs"
+      ],
+      "in_text_format": "(Author Year)",
+      "in_text_narrative": "Author (Year)",
+      "bibliography_title": "References",
+      "description": "Author-Date variant of Chicago, preferred in social sciences and economics. In-text citations use (Author Year) format. Required at UChicago social science programs and common in economics globally.\n",
+      "notes": "Often used alongside Notes-Bibliography at the same institution, depending on department.",
+      "sort_order": 5
+    },
+    {
+      "id": "mla9",
+      "name": "MLA 9",
+      "full_name": "MLA Handbook, 9th Edition",
+      "year": 2021,
+      "organization": "Modern Language Association",
+      "official_url": "https://www.mla.org/MLA-Style",
+      "type": "author_page",
+      "biblatex_style": "mla",
+      "biblatex_options": [
+        "backend=biber"
+      ],
+      "disciplines": [
+        "literature",
+        "language",
+        "linguistics",
+        "film_studies",
+        "cultural_studies",
+        "rhetoric"
+      ],
+      "regions_primary": [
+        "USA",
+        "Canada — language and literature programs"
+      ],
+      "in_text_format": "(Author Page)",
+      "in_text_narrative": "Author (Page)",
+      "bibliography_title": "Works Cited",
+      "description": "Standard for language, literature, and cultural studies in North America. Uses parenthetical author-page citations. Ninth edition (2021) simplified formatting rules and introduced more flexible source types.\n",
+      "notes": "Required for literature and language programs at Harvard, Yale, and most US liberal arts colleges.",
+      "sort_order": 6
+    },
+    {
+      "id": "harvard",
+      "name": "Harvard",
+      "full_name": "Harvard Referencing Style",
+      "year": 2021,
+      "organization": "No single governing body — widely adopted standard",
+      "official_url": "https://www.bibguru.com/guides/harvard-citation-guide/",
+      "type": "author_date",
+      "biblatex_style": "apa",
+      "biblatex_options": [
+        "backend=biber"
+      ],
+      "disciplines": [
+        "business",
+        "management",
+        "economics",
+        "social_sciences",
+        "sciences"
+      ],
+      "regions_primary": [
+        "UK",
+        "Australia",
+        "Ireland",
+        "South Africa",
+        "parts of Europe and Latin America"
+      ],
+      "in_text_format": "(Author Year)",
+      "in_text_narrative": "Author (Year)",
+      "bibliography_title": "References",
+      "description": "Author-date style similar to APA, widely used in UK and Australian universities. Common in business, management, and social science programs outside the USA. No single authoritative manual — institutions often define their own variant.\n",
+      "notes": "Often preferred over APA at European MBAs and UK social science programs.",
+      "sort_order": 7
+    },
+    {
+      "id": "mhra",
+      "name": "MHRA",
+      "full_name": "Modern Humanities Research Association Style Guide, 3rd Edition",
+      "year": 2013,
+      "organization": "Modern Humanities Research Association",
+      "official_url": "https://www.mhra.org.uk/style",
+      "type": "notes_bibliography",
+      "biblatex_style": "verbose-note",
+      "biblatex_options": [
+        "backend=biber"
+      ],
+      "disciplines": [
+        "humanities",
+        "history",
+        "literature",
+        "philosophy",
+        "linguistics",
+        "arts"
+      ],
+      "regions_primary": [
+        "UK",
+        "Ireland — humanities programs"
+      ],
+      "in_text_format": "Footnote¹",
+      "in_text_narrative": "Footnote¹",
+      "bibliography_title": "Bibliography",
+      "description": "UK humanities standard similar to Chicago Notes-Bibliography. Widely required at Oxford, Cambridge, UCL, and other Russell Group universities for dissertations in history, literature, and arts.\n",
+      "notes": "Oxford's default style for many humanities departments. Slightly different from Chicago Notes in formatting.",
+      "sort_order": 8
+    },
+    {
+      "id": "abnt",
+      "name": "ABNT",
+      "full_name": "ABNT NBR 6023:2018 — Associacao Brasileira de Normas Tecnicas",
+      "year": 2018,
+      "organization": "Associacao Brasileira de Normas Tecnicas (ABNT)",
+      "official_url": "https://www.abnt.org.br",
+      "type": "author_date",
+      "biblatex_style": "abnt",
+      "biblatex_options": [
+        "backend=biber",
+        "compat=true"
+      ],
+      "disciplines": [
+        "all_disciplines"
+      ],
+      "regions_primary": [
+        "Brazil — mandatory for all Brazilian university theses"
+      ],
+      "in_text_format": "(AUTOR, Ano)",
+      "in_text_narrative": "Autor (Ano)",
+      "bibliography_title": "Referencias",
+      "description": "Mandatory standard for all academic works submitted to Brazilian universities. NBR 6023:2018 governs bibliographic references; NBR 10520:2002 governs in-text citations. Required at USP, UNICAMP, UFRJ, and all federal and state universities.\n",
+      "notes": "Not optional in Brazil — any thesis submitted to a Brazilian institution must use ABNT.",
+      "sort_order": 9
+    },
+    {
+      "id": "gb7714",
+      "name": "GB/T 7714",
+      "full_name": "GB/T 7714-2015 — Chinese National Standard for Bibliographic References",
+      "year": 2015,
+      "organization": "Standardization Administration of China (SAC)",
+      "official_url": "https://std.samr.gov.cn",
+      "type": "numeric",
+      "biblatex_style": "gb7714-2015",
+      "biblatex_options": [
+        "backend=biber"
+      ],
+      "disciplines": [
+        "all_disciplines"
+      ],
+      "regions_primary": [
+        "China — mandatory for all Chinese-language academic theses"
+      ],
+      "in_text_format": "[1]",
+      "in_text_narrative": "[1]",
+      "bibliography_title": "References / Cankaowenxian",
+      "description": "Mandatory Chinese national standard for bibliographic references in academic works. Numeric style, ordered by appearance. Required at Tsinghua, Peking University, Fudan, Zhejiang, and all Chinese universities for Chinese-language theses.\n",
+      "notes": "Chinese students writing English-language theses at international programs may use IEEE or APA instead.",
+      "sort_order": 10
+    }
+  ],
+  "institutions": {
+    "america/argentina/uba": {
+      "id": "uba",
+      "name": "Universidad de Buenos Aires",
+      "acronym": "UBA",
+      "continent": "america",
+      "country": "argentina",
+      "website": "https://www.uba.ar",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "america/brazil/unicamp": {
+      "id": "unicamp",
+      "name": "Universidade Estadual de Campinas",
+      "acronym": "UNICAMP",
+      "continent": "america",
+      "country": "brazil",
+      "website": "https://www.unicamp.br",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "30mm",
+          "bottom": "20mm",
+          "left": "30mm",
+          "right": "20mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "america/brazil/usp": {
+      "id": "usp",
+      "name": "Universidade de Sao Paulo",
+      "acronym": "USP",
+      "continent": "america",
+      "country": "brazil",
+      "website": "https://www.usp.br",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "30mm",
+          "bottom": "20mm",
+          "left": "30mm",
+          "right": "20mm"
+        },
+        "line_spacing": 1.5
+      },
+      "notes": "ABNT NBR 14724:2011 obrigatorio. Margens ABNT.\n"
+    },
+    "america/canada/mcgill": {
+      "id": "mcgill",
+      "name": "McGill University",
+      "acronym": "McGill",
+      "continent": "america",
+      "country": "canada",
+      "website": "https://www.mcgill.ca",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25.4mm",
+          "bottom": "25.4mm",
+          "left": "38.1mm",
+          "right": "25.4mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      },
+      "notes": "GPS (Graduate and Postdoctoral Studies) guidelines.\n"
+    },
+    "america/chile/uchile": {
+      "id": "uchile",
+      "name": "Universidad de Chile",
+      "acronym": "U. Chile",
+      "continent": "america",
+      "country": "chile",
+      "website": "https://www.uchile.cl",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "america/mexico/ipn": {
+      "id": "ipn",
+      "name": "Instituto Politecnico Nacional",
+      "acronym": "IPN",
+      "continent": "america",
+      "country": "mexico",
+      "website": "https://www.ipn.mx",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "30mm",
+          "right": "20mm"
+        },
+        "line_spacing": 1.5,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      },
+      "notes": "Lineamientos SEPI para posgrado.\n"
+    },
+    "america/mexico/tec": {
+      "id": "tec",
+      "name": "Tecnologico de Monterrey",
+      "acronym": "ITESM",
+      "continent": "america",
+      "country": "mexico",
+      "website": "https://www.tec.mx",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25.4mm",
+          "bottom": "25.4mm",
+          "left": "30mm",
+          "right": "25.4mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      }
+    },
+    "america/mexico/uanl": {
+      "id": "uanl",
+      "name": "Universidad Autonoma de Nuevo Leon",
+      "acronym": "UANL",
+      "continent": "america",
+      "country": "mexico",
+      "website": "https://www.uanl.mx",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "30mm",
+          "right": "20mm"
+        },
+        "line_spacing": 1.5,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      }
+    },
+    "america/mexico/udg": {
+      "id": "udg",
+      "name": "Universidad de Guadalajara",
+      "acronym": "UdeG",
+      "continent": "america",
+      "country": "mexico",
+      "website": "https://www.udg.mx",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "30mm",
+          "right": "20mm"
+        },
+        "line_spacing": 1.5,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      }
+    },
+    "america/mexico/unam": {
+      "id": "unam",
+      "name": "Universidad Nacional Autonoma de Mexico",
+      "acronym": "UNAM",
+      "continent": "america",
+      "country": "mexico",
+      "website": "https://www.unam.mx",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "30mm",
+          "right": "20mm"
+        },
+        "line_spacing": 1.5,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      },
+      "notes": "Lineamientos DGAE. A4 en posgrado; Carta en algunas licenciaturas.\n"
+    },
+    "america/usa/harvard": {
+      "id": "harvard",
+      "name": "Harvard University",
+      "acronym": "Harvard",
+      "continent": "america",
+      "country": "usa",
+      "website": "https://www.harvard.edu",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25.4mm",
+          "bottom": "25.4mm",
+          "left": "38.1mm",
+          "right": "25.4mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      },
+      "notes": "GSAS Thesis Office. Submit via ProQuest. Citation style varies by department.\n"
+    },
+    "america/usa/mit": {
+      "id": "mit",
+      "name": "Massachusetts Institute of Technology",
+      "acronym": "MIT",
+      "continent": "america",
+      "country": "usa",
+      "website": "https://www.mit.edu",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25.4mm",
+          "bottom": "25.4mm",
+          "left": "38.1mm",
+          "right": "25.4mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      },
+      "notes": "1.5in left margin for archival scanning. Submit via DSpace@MIT.\n"
+    },
+    "america/usa/stanford": {
+      "id": "stanford",
+      "name": "Stanford University",
+      "acronym": "Stanford",
+      "continent": "america",
+      "country": "usa",
+      "website": "https://www.stanford.edu",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25.4mm",
+          "bottom": "25.4mm",
+          "left": "38.1mm",
+          "right": "25.4mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      }
+    },
+    "america/usa/uchicago": {
+      "id": "uchicago",
+      "name": "University of Chicago",
+      "acronym": "UChicago",
+      "continent": "america",
+      "country": "usa",
+      "website": "https://www.uchicago.edu",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25.4mm",
+          "bottom": "25.4mm",
+          "left": "38.1mm",
+          "right": "25.4mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      }
+    },
+    "asia/china/pku": {
+      "id": "pku",
+      "name": "Peking University",
+      "acronym": "PKU",
+      "continent": "asia",
+      "country": "china",
+      "website": "https://www.pku.edu.cn",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "30mm",
+          "bottom": "25mm",
+          "left": "30mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "asia/china/tsinghua": {
+      "id": "tsinghua",
+      "name": "Tsinghua University",
+      "acronym": "THU",
+      "continent": "asia",
+      "country": "china",
+      "website": "https://www.tsinghua.edu.cn",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "30mm",
+          "bottom": "25mm",
+          "left": "30mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      },
+      "notes": "GB/T 7714-2015 obligatorio para tesis en chino.\n"
+    },
+    "asia/india/iit_bombay": {
+      "id": "iit_bombay",
+      "name": "Indian Institute of Technology Bombay",
+      "acronym": "IITB",
+      "continent": "asia",
+      "country": "india",
+      "website": "https://www.iitb.ac.in",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "asia/japan/kyoto": {
+      "id": "kyoto",
+      "name": "Kyoto University",
+      "acronym": "Kyodai",
+      "continent": "asia",
+      "country": "japan",
+      "website": "https://www.kyoto-u.ac.jp",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "asia/japan/utokyo": {
+      "id": "utokyo",
+      "name": "University of Tokyo",
+      "acronym": "UTokyo",
+      "continent": "asia",
+      "country": "japan",
+      "website": "https://www.u-tokyo.ac.jp",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "asia/singapore/nus": {
+      "id": "nus",
+      "name": "National University of Singapore",
+      "acronym": "NUS",
+      "continent": "asia",
+      "country": "singapore",
+      "website": "https://www.nus.edu.sg",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "asia/south_korea/snu": {
+      "id": "snu",
+      "name": "Seoul National University",
+      "acronym": "SNU",
+      "continent": "asia",
+      "country": "south_korea",
+      "website": "https://www.snu.ac.kr",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "europe/germany/lmu": {
+      "id": "lmu",
+      "name": "Ludwig-Maximilians-Universitaet Muenchen",
+      "acronym": "LMU",
+      "continent": "europe",
+      "country": "germany",
+      "website": "https://www.lmu.de",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      }
+    },
+    "europe/germany/tum": {
+      "id": "tum",
+      "name": "Technische Universitaet Muenchen",
+      "acronym": "TUM",
+      "continent": "europe",
+      "country": "germany",
+      "website": "https://www.tum.de",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "europe/italy/sapienza": {
+      "id": "sapienza",
+      "name": "Sapienza Universita di Roma",
+      "acronym": "Sapienza",
+      "continent": "europe",
+      "country": "italy",
+      "website": "https://www.uniroma1.it",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "europe/netherlands/tudelft": {
+      "id": "tudelft",
+      "name": "Delft University of Technology",
+      "acronym": "TU Delft",
+      "continent": "europe",
+      "country": "netherlands",
+      "website": "https://www.tudelft.nl",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "europe/spain/ucm": {
+      "id": "ucm",
+      "name": "Universidad Complutense de Madrid",
+      "acronym": "UCM",
+      "continent": "europe",
+      "country": "spain",
+      "website": "https://www.ucm.es",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      }
+    },
+    "europe/sweden/kth": {
+      "id": "kth",
+      "name": "KTH Royal Institute of Technology",
+      "acronym": "KTH",
+      "continent": "europe",
+      "country": "sweden",
+      "website": "https://www.kth.se",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 1.5
+      }
+    },
+    "europe/uk/cambridge": {
+      "id": "cambridge",
+      "name": "University of Cambridge",
+      "acronym": "Cambridge",
+      "continent": "europe",
+      "country": "uk",
+      "website": "https://www.cam.ac.uk",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman",
+        "font_size": "12pt"
+      },
+      "notes": "Student Registry guidelines. PhD max 80k words.\n"
+    },
+    "europe/uk/oxford": {
+      "id": "oxford",
+      "name": "University of Oxford",
+      "acronym": "Oxford",
+      "continent": "europe",
+      "country": "uk",
+      "website": "https://www.ox.ac.uk",
+      "default_format": {
+        "paper": "a4paper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "35mm",
+          "right": "25mm"
+        },
+        "line_spacing": 2.0,
+        "font_main": "Times New Roman or Garamond",
+        "font_size": "12pt"
+      },
+      "notes": "Bodleian iSkills guidelines. DPhil min 80k words.\n"
+    },
+    "generic/generic/generic": {
+      "id": "generic",
+      "name": "Perfil Generico",
+      "acronym": "GEN",
+      "continent": "generic",
+      "country": "generic",
+      "default_format": {
+        "paper": "letterpaper",
+        "margins": {
+          "top": "25mm",
+          "bottom": "25mm",
+          "left": "30mm",
+          "right": "20mm"
+        },
+        "line_spacing": 1.5
+      },
+      "notes": "Plantillas independientes de institucion.\n"
+    }
+  }
+}

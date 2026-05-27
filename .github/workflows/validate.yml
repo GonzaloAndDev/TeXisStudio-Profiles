@@ -226,7 +226,7 @@ jobs:
 
       - name: Build texis-cli
         working-directory: _texis_main
-        run: cargo build --release --locked -p texis-cli
+        run: cargo build --release -p texis-cli
 
       - name: Validate sample project structure
         run: |

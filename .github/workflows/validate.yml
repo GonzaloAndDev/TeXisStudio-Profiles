@@ -138,6 +138,7 @@ jobs:
             texlive-bibtex-extra \
             texlive-publishers \
             texlive-science \
+            texlive-latex-extra \
             texlive-fonts-recommended \
             texlive-fonts-extra \
             texlive-lang-spanish \
@@ -188,7 +189,11 @@ jobs:
         run: |
           TEXIS=_texis_main/target/release/texis
           SAMPLE=profile_samples/us_mit_ieee/project.texis
-          $TEXIS compile "$SAMPLE" --backend latexmk
+          $TEXIS compile "$SAMPLE" --backend latexmk || {
+            echo "--- LaTeX build log ---"
+            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -60 || echo "(no build log)"
+            exit 1
+          }
           echo "OK: compilación completada"
 
       - name: Run postflight (pdfinfo + pdffonts)

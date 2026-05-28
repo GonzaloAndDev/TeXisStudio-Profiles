@@ -242,11 +242,10 @@ sections:
         id: marco-p1
         content: >
           Un sistema dinámico de la forma $\dot{x} = f(x, u, t)$, donde
-          $x \in \mathbb{R}^n$ es el vector de estados, $u \in \mathbb{R}^m$
-          es la entrada de control y $t$ es el tiempo, se dice que es controlable
-          si existe una ley de control $u(t)$ que transfiere el sistema de
-          cualquier estado inicial $x_0$ a cualquier estado final $x_f$ en
-          tiempo finito.
+          $x$ es el vector de estados en $\mathbf{R}^n$, $u$ es la entrada
+          de control y $t$ es el tiempo, se dice que es controlable si existe
+          una ley de control $u(t)$ que transfiere el sistema de cualquier
+          estado inicial $x_0$ a cualquier estado final $x_f$ en tiempo finito.
       - type: citation
         id: marco-c1
         citation_key: khalil2002nonlinear
@@ -296,7 +295,7 @@ sections:
           $u = u_{eq} + u_s$, donde $u_{eq}$ es el control equivalente que
           mantiene al sistema en la superficie de deslizamiento y $u_s$ es el
           término discontinuo que garantiza la condición de alcance
-          $s \dot{s} \leq -\eta |s|$, con $\eta > 0$.
+          $s \cdot \dot{s} \leq -\eta |s|$, con $\eta > 0$.
       - type: citation
         id: met-c1
         citation_key: astrom2002pid
@@ -411,7 +410,7 @@ sections:
           Potencia fotovoltaica instalada: 30 kWp. Potencia eólica instalada:
           25 kW. Capacidad de almacenamiento: 50 kWh (banco de baterías LiFePO4).
           Inductancia de filtro: $L = 2.5$ mH. Capacitancia de filtro:
-          $C = 50$ μF.
+          $C = 50$ uF (microfaradios).
     fields: {}
     children: []
 

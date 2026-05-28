@@ -328,12 +328,12 @@ sections:
       - type: paragraph
         id: meth-p2
         content: >
-          Let $X \in \mathbb{R}^{n \times d}$ denote the input sequence of
+          Let $X \in \mathbf{R}^{n \times d}$ denote the input sequence of
           $n$ tokens, each embedded in dimension $d$. Standard self-attention
           computes $\text{Attention}(Q, K, V) = \text{softmax}(QK^T / \sqrt{d_k})V$,
-          with complexity $\mathcal{O}(n^2 d)$. Our locality-sensitive hashing
+          with complexity $O(n^2 d)$. Our locality-sensitive hashing
           approach partitions the sequence into buckets of size $b$, reducing
-          complexity to $\mathcal{O}(nb^2 d / n) = \mathcal{O}(b^2 d)$.
+          complexity to $O(nb^2 d / n) = O(b^2 d)$.
     fields: {}
     children: []
 

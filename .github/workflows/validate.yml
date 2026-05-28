@@ -497,6 +497,17 @@ jobs:
           $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
           echo "OK: mx_unam_vancouver complete"
 
+      - name: Compile mx_unam_apa7 sample
+        run: |
+          TEXIS=_texis_main/target/release/texis
+          SAMPLE=profile_samples/mx_unam_apa7/project.texis
+          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for mx_unam_apa7"; exit 1; }
+          $TEXIS compile "$SAMPLE" --backend latexmk || {
+            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
+          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: mx_unam_apa7 PDF generated" || { echo "ERROR: no PDF"; exit 1; }
+          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
+          echo "OK: mx_unam_apa7 complete"
+
       - name: Upload PDFs from additional samples
         uses: actions/upload-artifact@v4
         if: always()
@@ -506,6 +517,7 @@ jobs:
             profile_samples/uk_cambridge_apa7/project.texis/build/main.pdf
             profile_samples/mx_uam_izt_cbi/project.texis/build/main.pdf
             profile_samples/mx_unam_vancouver/project.texis/build/main.pdf
+            profile_samples/mx_unam_apa7/project.texis/build/main.pdf
           if-no-files-found: warn
 
   validate-sample-projects:

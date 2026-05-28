@@ -358,6 +358,7 @@
       "version": "1.0.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
+      "status": "verified",
       "description": "Tesis UNAM para medicina y ciencias de la salud, estilo Vancouver",
       "tags": [
         "unam",
@@ -372,6 +373,8 @@
       "institution": "unam",
       "city": "Ciudad de Mexico",
       "institution_id": "unam",
+      "verified_at": "2026-05-28",
+      "ci_evidence": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_unam_vancouver.zip",
       "sha256": null,
       "style_id": "vancouver"
@@ -382,6 +385,7 @@
       "version": "1.0.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
+      "status": "verified",
       "description": "Tesis de posgrado UNAM conforme a lineamientos DGAE, estilo APA 7",
       "tags": [
         "unam",
@@ -395,6 +399,8 @@
       "institution": "unam",
       "city": "Ciudad de Mexico",
       "institution_id": "unam",
+      "verified_at": "2026-05-28",
+      "ci_evidence": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_unam_apa7.zip",
       "sha256": null,
       "style_id": "apa7"
@@ -822,7 +828,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "status": "reviewed",
+      "status": "verified",
       "description": "University of Cambridge PhD thesis for social sciences, psychology, and education. Follows Cambridge Graduate Office format guidelines: A4, 40mm left margin (binding), double-spacing, 12pt, APA 7 bibliography via Biber. Word limit: 80,000 words.\n",
       "tags": [
         "cambridge",
@@ -839,7 +845,8 @@
       "institution": "cambridge",
       "institution_id": "cambridge",
       "city": "Cambridge",
-      "verified_at": "2026-05-24",
+      "verified_at": "2026-05-28",
+      "ci_evidence": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667",
       "source_urls": [
         "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis",
         "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"

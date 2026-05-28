@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
 id: mx_unam_vancouver
 name: "UNAM - Ciencias de la Salud (Vancouver)"
-status: reviewed
+status: verified
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
@@ -14,8 +14,9 @@ bibliography_style: vancouver
 verification:
   reviewed_at: "2026-05-25"
   reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra lineamientos Fac. Medicina UNAM e ICMJE"
+  verified_at: "2026-05-28"
+  verified_by: "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)"
+  ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"
   source_urls:
     - "https://www.facmed.unam.mx/espec/titulacion.html"
     - "https://www.icmje.org/recommendations/"

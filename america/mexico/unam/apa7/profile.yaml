@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
 id: mx_unam_apa7
 name: "UNAM - Tesis/Disertación (APA 7)"
-status: reviewed
+status: verified
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
@@ -14,8 +14,9 @@ bibliography_style: apa
 verification:
   reviewed_at: "2026-05-25"
   reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra lineamientos CEP-UNAM y DGAE"
+  verified_at: "2026-05-28"
+  verified_by: "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)"
+  ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"
   source_urls:
     - "https://www.posgrado.unam.mx/doctorado/"
     - "https://www.dgae.unam.mx/tramites/titulacion/"

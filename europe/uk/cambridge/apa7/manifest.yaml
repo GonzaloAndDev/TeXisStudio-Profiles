@@ -3,7 +3,7 @@ name: "Cambridge - PhD Thesis (APA 7)"
 version: "1.1.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
-status: reviewed
+status: verified
 description: >
   University of Cambridge PhD thesis for social sciences, psychology, and education.
   Follows Cambridge Graduate Office format guidelines: A4, 40mm left margin (binding),
@@ -22,7 +22,8 @@ country: uk
 institution: "University of Cambridge"
 institution_id: cambridge
 city: "Cambridge"
-verified_at: "2026-05-24"
+verified_at: "2026-05-28"
+ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"
 source_urls:
   - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis"
   - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"

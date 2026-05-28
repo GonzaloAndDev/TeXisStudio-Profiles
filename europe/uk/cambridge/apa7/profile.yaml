@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
 id: uk_cambridge_apa7
 name: "Cambridge - PhD Thesis (APA 7)"
-status: reviewed
+status: verified
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
@@ -14,8 +14,9 @@ bibliography_style: apa
 verification:
   reviewed_at: "2026-05-24"
   reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-24"
-  verified_by: "TeXisStudio Community — revisado contra Cambridge Graduate Office Format Guidelines"
+  verified_at: "2026-05-28"
+  verified_by: "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)"
+  ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"
   source_urls:
     - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis"
     - "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis"

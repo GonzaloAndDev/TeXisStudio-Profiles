@@ -3,6 +3,7 @@ name: "UNAM - Ciencias de la Salud (Vancouver)"
 version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
+status: verified
 description: "Tesis UNAM para medicina y ciencias de la salud, estilo Vancouver"
 tags: [unam, mexico, vancouver, medicina, salud]
 texis_min_version: "1.0.0"
@@ -11,3 +12,5 @@ country: "mexico"
 institution: "Universidad Nacional Autonoma de Mexico"
 city: "Ciudad de Mexico"
 institution_id: "unam"
+verified_at: "2026-05-28"
+ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"

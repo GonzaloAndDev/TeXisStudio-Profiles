@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "uk_cambridge_apa7",
+  "description": "Expected validation state for the uk_cambridge_apa7 sample project (Cambridge PhD, APA 7, NLP/CS)",
+  "expected": {
+    "validation_errors": 0,
+    "required_sections_present": [
+      "title_page",
+      "declaration",
+      "abstract_en",
+      "table_of_contents",
+      "introduction",
+      "theoretical_framework",
+      "methodology",
+      "results",
+      "conclusions",
+      "references"
+    ],
+    "max_abstract_words_limit": 300,
+    "page_layout": {
+      "paper": "a4paper",
+      "margins": {
+        "top": "25mm",
+        "bottom": "25mm",
+        "left": "40mm",
+        "right": "20mm"
+      },
+      "line_spacing": 2.0
+    },
+    "latex_engine": "xelatex",
+    "bibliography_backend": "biber",
+    "bibliography_style": "apa"
+  },
+  "notes": "Cambridge PhD thesis in NLP/Computer Science, APA 7. Stress-tests: 2 supervisors + 3-person examining committee, Declaration section, 8 BibTeX entries across 5 types (article, book, inproceedings, techreport, misc), mathematical notation in methodology (inline and display math), Nomenclature section, Appendix with hyperparameter tables, 8 citation blocks across 4 sections, cross-lingual NLP context. Uses A4 paper with 40mm left margin (Cambridge binding requirement)."
+}

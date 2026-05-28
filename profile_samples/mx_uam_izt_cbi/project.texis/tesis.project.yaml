@@ -1,0 +1,418 @@
+schema_version: "1.0.0"
+id: sample-uam-izt-cbi-001
+created_at: "2026-05-27T00:00:00Z"
+updated_at: "2026-05-27T00:00:00Z"
+profile_id: mx_uam_izt_cbi
+
+metadata:
+  title: "Control Adaptativo por Modos Deslizantes para Sistemas de Potencia con Generación Distribuida"
+  document_kind: tesis
+  academic_level: posgrado
+  language: es
+  city: "Ciudad de México"
+  year: 2026
+  keywords:
+    - control adaptativo
+    - modos deslizantes
+    - sistemas de potencia
+    - generación distribuida
+    - energías renovables
+
+institution:
+  name: "Universidad Autónoma Metropolitana"
+  faculty: "División de Ciencias Básicas e Ingeniería"
+  department: "Departamento de Ingeniería Eléctrica"
+  country: México
+
+student:
+  full_name: "Carlos Andrés Mendoza Reyes"
+  email: "camr@izt.uam.mx"
+  advisors:
+    - "Dr. Roberto Sánchez Orantes"
+    - "Dra. Patricia Montiel Álvarez"
+  committee:
+    - full_name: "Dr. Jorge Luis Hernández Cuevas"
+      role: "Presidente del Jurado"
+    - full_name: "Dr. Miguel Ángel Flores Torres"
+      role: "Vocal"
+    - full_name: "Dra. Lucía Orozco Mendoza"
+      role: "Vocal"
+    - full_name: "Dr. Ernesto Vázquez Sánchez"
+      role: "Vocal"
+    - full_name: "Dr. Roberto Sánchez Orantes"
+      role: "Director de Tesis"
+
+latex_config:
+  document_class:
+    name: book
+    options:
+      - 12pt
+      - letterpaper
+      - oneside
+  engine: xelatex
+  compiler: latexmk
+  bibliography_backend: biber
+  bibliography_style: apa
+  packages_required: []
+  typography: {}
+  page_layout:
+    paper: letterpaper
+    margins:
+      top: 25mm
+      bottom: 25mm
+      left: 30mm
+      right: 25mm
+    line_spacing: 1.5
+
+sections:
+  - id: title_page
+    element_id: title_page
+    title: "Portada"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: dedication
+    element_id: dedication
+    title: "Dedicatoria"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: ded-p1
+        content: >
+          A mis padres, Rosario y Andrés, cuyo apoyo incondicional hizo posible
+          este trabajo. A mis compañeros del Laboratorio de Control y Sistemas
+          de Potencia de la UAM-I.
+    fields: {}
+    children: []
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    title: "Agradecimientos"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: ack-p1
+        content: >
+          Este trabajo fue realizado con el apoyo del Consejo Nacional de
+          Humanidades, Ciencias y Tecnologías (CONAHCYT) mediante la beca
+          No. 867234, y del proyecto SEP-CONACyT CB-2019-01 No. 287145
+          "Sistemas de Control para Microrredes con Integración de Energías
+          Renovables". Agradezco profundamente a mis directores de tesis,
+          el Dr. Roberto Sánchez Orantes y la Dra. Patricia Montiel Álvarez,
+          por su guía, paciencia y rigor académico.
+    fields: {}
+    children: []
+
+  - id: abstract_es
+    element_id: abstract_es
+    title: "Resumen"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: res-p1
+        content: >
+          La integración masiva de fuentes de generación distribuida basadas en
+          energías renovables impone retos técnicos importantes a los sistemas
+          de potencia modernos. La naturaleza intermitente y no lineal de estas
+          fuentes requiere estrategias de control robustas que garanticen
+          estabilidad ante perturbaciones y variaciones paramétricas. En este
+          trabajo se propone un esquema de control adaptativo por modos
+          deslizantes (AMD) para microrredes de corriente alterna con integración
+          de generación fotovoltaica y eólica. Se demuestra la estabilidad
+          asintótica del sistema en lazo cerrado mediante la teoría de Lyapunov
+          y se valida el desempeño mediante simulaciones en MATLAB/Simulink
+          comparadas con el control PID convencional. Los resultados muestran
+          una reducción del 42\% en el tiempo de establecimiento y una mejora
+          del 28\% en el rechazo de perturbaciones.
+    fields: {}
+    children: []
+
+  - id: abstract_en
+    element_id: abstract_en
+    title: "Abstract"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: abs-p1
+        content: >
+          The massive integration of distributed generation sources based on
+          renewable energies poses important technical challenges to modern
+          power systems. The intermittent and nonlinear nature of these sources
+          requires robust control strategies that guarantee stability under
+          disturbances and parametric variations. This work proposes an adaptive
+          sliding mode control (SMC) scheme for AC microgrids integrating
+          photovoltaic and wind generation. Asymptotic stability of the
+          closed-loop system is proved via Lyapunov theory and performance
+          is validated through MATLAB/Simulink simulations compared against
+          conventional PID control. Results show a 42\% reduction in settling
+          time and a 28\% improvement in disturbance rejection.
+    fields: {}
+    children: []
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    title: "Índice General"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    title: "Lista de Figuras"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    title: "Lista de Tablas"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: introduction
+    element_id: introduction
+    title: "Introducción"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: intro-p1
+        content: >
+          Los sistemas de potencia contemporáneos enfrentan una transición
+          acelerada hacia fuentes de energía renovable. Esta transición, aunque
+          necesaria desde una perspectiva ambiental, introduce complejidades
+          técnicas significativas relacionadas con la estabilidad, la calidad
+          de la energía y el control de flujos de potencia.
+      - type: citation
+        id: intro-c1
+        citation_key: ogata2010modern
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: intro-p2
+        content: >
+          El control por modos deslizantes es una técnica de control no lineal
+          robusto que ha demostrado ser particularmente efectiva en sistemas con
+          incertidumbres y perturbaciones. Su aplicación a microrredes con
+          generación distribuida representa una línea de investigación activa
+          y de alta relevancia práctica.
+      - type: citation
+        id: intro-c2
+        citation_key: sontag1989smooth
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    title: "Marco Teórico"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: marco-p1
+        content: >
+          Un sistema dinámico de la forma $\dot{x} = f(x, u, t)$, donde
+          $x \in \mathbb{R}^n$ es el vector de estados, $u \in \mathbb{R}^m$
+          es la entrada de control y $t$ es el tiempo, se dice que es controlable
+          si existe una ley de control $u(t)$ que transfiere el sistema de
+          cualquier estado inicial $x_0$ a cualquier estado final $x_f$ en
+          tiempo finito.
+      - type: citation
+        id: marco-c1
+        citation_key: khalil2002nonlinear
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: marco-p2
+        content: >
+          La superficie de deslizamiento $s(x) = 0$ define una variedad en el
+          espacio de estados hacia la cual el controlador atrae al sistema.
+          Una vez que la trayectoria alcanza esta variedad, permanece en ella
+          y evoluciona hacia el punto de equilibrio.
+      - type: citation
+        id: marco-c2
+        citation_key: slotine1991applied
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: methodology
+    element_id: methodology
+    title: "Metodología"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: met-p1
+        content: >
+          Se modela la microrred como un sistema de ecuaciones diferenciales
+          no lineales. El modelo de la fuente fotovoltaica se obtiene a partir
+          del circuito equivalente de un diodo, mientras que el generador
+          eólico se modela mediante la curva de potencia $P = \frac{1}{2}
+          \rho A C_p(\lambda, \beta) v_w^3$, donde $\rho$ es la densidad
+          del aire, $A$ el área del rotor, $C_p$ el coeficiente de potencia,
+          $\lambda$ la relación de velocidad en la punta del álabe y $v_w$
+          la velocidad del viento.
+      - type: paragraph
+        id: met-p2
+        content: >
+          La ley de control adaptativa propuesta es de la forma
+          $u = u_{eq} + u_s$, donde $u_{eq}$ es el control equivalente que
+          mantiene al sistema en la superficie de deslizamiento y $u_s$ es el
+          término discontinuo que garantiza la condición de alcance
+          $s \dot{s} \leq -\eta |s|$, con $\eta > 0$.
+      - type: citation
+        id: met-c1
+        citation_key: astrom2002pid
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: results
+    element_id: results
+    title: "Resultados"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: res-p1
+        content: >
+          Las simulaciones se realizaron en MATLAB R2024a con el paquete
+          Simulink, en una microrred de prueba de 400 V, 50 Hz, con una
+          carga activa de 50 kW y una carga reactiva de 20 kVAR. Se evaluaron
+          tres escenarios: (1) operación normal, (2) variación de la irradiancia
+          solar de 1000 a 400 W/m² en 0.5 s, y (3) conexión brusca de una
+          carga adicional de 15 kW.
+      - type: paragraph
+        id: res-p2
+        content: >
+          El esquema AMD propuesto mostró un tiempo de establecimiento de
+          $T_s = 0.08$ s frente a $T_s = 0.14$ s del control PID en el
+          escenario 2, confirmando la mejora del 42\% reportada en el resumen.
+          La variación máxima de tensión en el escenario 3 fue de $\pm 3.1\%$
+          para AMD y $\pm 5.8\%$ para PID, ambas dentro de los límites de la
+          norma IEC 61000-4-15.
+    fields: {}
+    children: []
+
+  - id: discussion
+    element_id: discussion
+    title: "Discusión"
+    placement: body
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: disc-p1
+        content: >
+          Los resultados obtenidos son consistentes con los reportados en la
+          literatura para controladores de modos deslizantes en microrredes.
+          La principal contribución de este trabajo es la demostración formal
+          de estabilidad asintótica mediante una función de Lyapunov candidata
+          que incorpora los parámetros de adaptación como estados adicionales.
+      - type: citation
+        id: disc-c1
+        citation_key: franklin1998digital
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: conclusions
+    element_id: conclusions
+    title: "Conclusiones"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: conc-p1
+        content: >
+          Se propuso y validó un esquema de control adaptativo por modos
+          deslizantes para microrredes de corriente alterna con integración
+          de generación fotovoltaica y eólica. La prueba de estabilidad
+          mediante la teoría de Lyapunov y los resultados de simulación
+          confirman la superioridad del esquema propuesto frente al control
+          PID convencional en términos de tiempo de establecimiento y rechazo
+          de perturbaciones.
+      - type: paragraph
+        id: conc-p2
+        content: >
+          Como trabajo futuro se propone la validación experimental en el
+          banco de pruebas de microrredes del Laboratorio de Control y Sistemas
+          de Potencia de la UAM-I, y la extensión del esquema a microrredes
+          de corriente continua.
+    fields: {}
+    children: []
+
+  - id: references
+    element_id: references
+    title: "Referencias"
+    placement: back_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: appendix_a
+    element_id: appendix
+    title: "Apéndice A: Parámetros del Sistema de Prueba"
+    placement: appendix
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: app-p1
+        content: >
+          Tensión nominal: 400 V (fase-fase). Frecuencia nominal: 50 Hz.
+          Potencia fotovoltaica instalada: 30 kWp. Potencia eólica instalada:
+          25 kW. Capacidad de almacenamiento: 50 kWh (banco de baterías LiFePO4).
+          Inductancia de filtro: $L = 2.5$ mH. Capacitancia de filtro:
+          $C = 50$ μF.
+    fields: {}
+    children: []
+
+file_states: {}

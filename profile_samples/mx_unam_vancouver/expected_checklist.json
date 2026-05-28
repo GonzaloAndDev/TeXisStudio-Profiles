@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "mx_unam_vancouver",
+  "description": "Expected validation state for mx_unam_vancouver — UNAM salud (iSGLT-2 nefropatía, estudio de cohorte retrospectivo)",
+  "expected": {
+    "validation_errors": 0,
+    "required_sections_present": [
+      "title_page",
+      "abstract_es",
+      "table_of_contents",
+      "introduction",
+      "theoretical_framework",
+      "methodology",
+      "results",
+      "conclusions",
+      "references"
+    ],
+    "max_abstract_words_limit": 250,
+    "page_layout": {
+      "paper": "a4paper",
+      "line_spacing": 1.5
+    },
+    "latex_engine": "xelatex",
+    "bibliography_backend": "biber",
+    "bibliography_style": "vancouver"
+  },
+  "notes": "UNAM health sciences — Vancouver style (numbered). IMRyD structure with Antecedentes/Objetivo/Métodos/Resultados/Conclusiones embedded in structured abstracts. 5-person committee. Spanish + English abstracts. 8 BibTeX entries (WHO report, journal articles, book, KDIGO guideline). 9 citation blocks across 5 sections. Statistical terminology (HR, IC, p-values). Nephrology/endocrinology clinical research context. Clinical exclusion/inclusion criteria in methodology. Tests: Vancouver numbered bibliography style, medical terminology, structured abstract format."
+}

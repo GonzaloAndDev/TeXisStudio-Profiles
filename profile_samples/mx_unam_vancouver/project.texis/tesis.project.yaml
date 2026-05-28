@@ -1,0 +1,395 @@
+schema_version: "1.0.0"
+id: sample-unam-vancouver-001
+created_at: "2026-05-27T00:00:00Z"
+updated_at: "2026-05-27T00:00:00Z"
+profile_id: mx_unam_vancouver
+
+metadata:
+  title: "Eficacia del tratamiento con inhibidores de SGLT-2 en la progresión de nefropatía diabética en pacientes mexicanos: estudio de cohorte retrospectivo"
+  document_kind: tesis
+  academic_level: posgrado
+  language: es
+  city: "Ciudad de México"
+  year: 2026
+  keywords:
+    - nefropatía diabética
+    - inhibidores SGLT-2
+    - diabetes mellitus tipo 2
+    - enfermedad renal crónica
+    - cohorte retrospectiva
+
+institution:
+  name: "Universidad Nacional Autónoma de México"
+  faculty: "Posgrado en Ciencias Médicas, Odontológicas y de la Salud"
+  department: "Facultad de Medicina"
+  country: México
+
+student:
+  full_name: "Alejandra Sofía Gutiérrez Villanueva"
+  email: "asgv@posgrado.unam.mx"
+  advisors:
+    - "Dr. Héctor Miguel Torres Ríos"
+  committee:
+    - full_name: "Dra. Carmen Soledad López Arteaga"
+      role: "Presidente del Jurado"
+    - full_name: "Dr. Francisco Javier Ramos Cervantes"
+      role: "Vocal"
+    - full_name: "Dra. Mariana Soto Hernández"
+      role: "Vocal"
+    - full_name: "Dr. Enrique Pedraza Chávez"
+      role: "Vocal"
+    - full_name: "Dr. Héctor Miguel Torres Ríos"
+      role: "Director de Tesis"
+
+latex_config:
+  document_class:
+    name: book
+    options:
+      - 12pt
+      - a4paper
+      - oneside
+  engine: xelatex
+  compiler: latexmk
+  bibliography_backend: biber
+  bibliography_style: vancouver
+  packages_required: []
+  typography: {}
+  page_layout:
+    paper: a4paper
+    margins:
+      top: 25mm
+      bottom: 25mm
+      left: 30mm
+      right: 20mm
+    line_spacing: 1.5
+
+sections:
+  - id: title_page
+    element_id: title_page
+    title: "Portada"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: abstract_es
+    element_id: abstract_es
+    title: "Resumen"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: res-p1
+        content: >
+          Antecedentes: La nefropatía diabética es la principal causa de
+          enfermedad renal crónica terminal en México. Los inhibidores del
+          cotransportador sodio-glucosa tipo 2 (iSGLT-2) han demostrado
+          efectos nefroprotectores en ensayos clínicos controlados, pero
+          su efectividad en poblaciones latinoamericanas en práctica clínica
+          real es poco conocida.
+      - type: paragraph
+        id: res-p2
+        content: >
+          Objetivo: Evaluar la eficacia de los iSGLT-2 en la reducción de
+          la progresión de nefropatía diabética en pacientes con diabetes
+          mellitus tipo 2 atendidos en el Hospital General de México
+          durante 2019-2024. Métodos: Estudio de cohorte retrospectivo.
+          Se incluyeron 342 pacientes con DM2 y nefropatía diabética
+          estadios G2-G4 (TFGe 15-89 mL/min/1.73 m²). La variable
+          principal fue la reducción de TFGe ≥30\% o inicio de terapia
+          renal sustitutiva. Resultados: Los pacientes con iSGLT-2 mostraron
+          una reducción del riesgo relativo de 38\% (IC 95\%: 24-49\%,
+          p\textless0.001) para el desenlace compuesto. Conclusiones: Los
+          iSGLT-2 reducen significativamente la progresión de nefropatía
+          diabética en pacientes mexicanos en condiciones de práctica clínica
+          real.
+    fields: {}
+    children: []
+
+  - id: abstract_en
+    element_id: abstract_en
+    title: "Abstract"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: abs-p1
+        content: >
+          Background: Diabetic nephropathy is the leading cause of end-stage
+          renal disease in Mexico. SGLT-2 inhibitors have demonstrated
+          nephroprotective effects in randomised trials, but their real-world
+          effectiveness in Latin American populations remains poorly understood.
+          Objective: To evaluate the efficacy of SGLT-2 inhibitors in reducing
+          diabetic nephropathy progression in type 2 diabetes patients at the
+          Hospital General de México, 2019-2024. Methods: Retrospective cohort
+          study including 342 patients with DM2 and diabetic nephropathy stages
+          G2-G4. Primary outcome: ≥30\% eGFR decline or renal replacement
+          therapy initiation. Results: SGLT-2 inhibitor users showed a 38\%
+          relative risk reduction (95\% CI: 24-49\%, p\textless0.001) for the
+          composite outcome. Conclusions: SGLT-2 inhibitors significantly reduce
+          diabetic nephropathy progression in Mexican patients under real-world
+          conditions.
+    fields: {}
+    children: []
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    title: "Índice"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    title: "Lista de Tablas"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    title: "Lista de Figuras"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: introduction
+    element_id: introduction
+    title: "Introducción"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: intro-p1
+        content: >
+          La diabetes mellitus tipo 2 (DM2) representa uno de los mayores
+          problemas de salud pública a nivel mundial. La Organización Mundial
+          de la Salud estima que más de 422 millones de personas viven con
+          diabetes en el mundo, y México ocupa el noveno lugar en prevalencia
+          global con aproximadamente 13.7 millones de adultos afectados.
+      - type: citation
+        id: intro-c1
+        citation_key: who2021diabetes
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: intro-c2
+        citation_key: fernandez2021prevalence
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: intro-p2
+        content: >
+          La nefropatía diabética (ND) es la complicación microvascular más
+          prevalente de la DM2 y la principal causa de enfermedad renal crónica
+          terminal (ERCT) en México. Aproximadamente el 20-40\% de los pacientes
+          con DM2 desarrollarán nefropatía diabética a lo largo de su vida,
+          con importantes implicaciones en morbilidad, mortalidad y calidad
+          de vida.
+      - type: citation
+        id: intro-c3
+        citation_key: koye2018prevalence
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: theoretical_framework
+    element_id: theoretical_framework
+    title: "Marco Teórico"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: marco-p1
+        content: >
+          Los inhibidores del cotransportador sodio-glucosa tipo 2 (iSGLT-2)
+          constituyen una clase relativamente nueva de agentes hipoglucemiantes
+          que actúan bloqueando la reabsorción de glucosa en el túbulo proximal
+          renal, promoviendo la glucosuria. Además de sus efectos glucémicos,
+          los iSGLT-2 han demostrado efectos cardiovasculares y renales
+          independientes del control glucémico.
+      - type: citation
+        id: marco-c1
+        citation_key: nauck2021incretin
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: marco-p2
+        content: >
+          El estudio CREDENCE demostró que la canagliflozina redujo en un
+          30\% el riesgo del desenlace renal primario compuesto en pacientes
+          con DM2 y nefropatía diabética establecida. Estos resultados fueron
+          corroborados por el estudio DAPA-CKD con dapagliflozina y el estudio
+          EMPA-KIDNEY con empagliflozina.
+      - type: citation
+        id: marco-c2
+        citation_key: perkovic2019canagliflozin
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: marco-c3
+        citation_key: kdigo2022clinical
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: methodology
+    element_id: methodology
+    title: "Metodología"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: met-p1
+        content: >
+          Diseño del estudio: Estudio de cohorte retrospectivo. Período de
+          seguimiento: enero de 2019 a diciembre de 2024 (máximo 60 meses).
+          Lugar: Consulta externa de Endocrinología y Nefrología del
+          Hospital General de México "Dr. Eduardo Liceaga".
+      - type: paragraph
+        id: met-p2
+        content: >
+          Criterios de inclusión: (1) diagnóstico confirmado de DM2 según
+          criterios ADA; (2) nefropatía diabética estadios G2a-G4 (TFGe
+          15-89 mL/min/1.73 m² por CKD-EPI); (3) albuminuria ≥30 mg/g
+          en dos determinaciones separadas por ≥3 meses; (4) seguimiento
+          mínimo de 12 meses. Criterios de exclusión: enfermedad renal
+          no diabética, trasplante renal previo, neoplasia activa.
+      - type: paragraph
+        id: met-p3
+        content: >
+          Variable desenlace: Compuesta de: reducción de TFGe ≥30\% sostenida,
+          inicio de terapia renal sustitutiva (diálisis o trasplante), o muerte
+          de causa renal. Análisis estadístico: Regresión de Cox multivariada
+          ajustando por edad, sexo, HbA1c basal, TFGe basal, tipo de iSGLT-2,
+          uso de IECA/ARA-II y duración de la diabetes. Nivel de significancia
+          α = 0.05.
+    fields: {}
+    children: []
+
+  - id: results
+    element_id: results
+    title: "Resultados"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: res-p1
+        content: >
+          Se identificaron 342 pacientes elegibles: 178 en el grupo iSGLT-2
+          (canagliflozina 47\%, dapagliflozina 38\%, empagliflozina 15\%)
+          y 164 en el grupo control (tratamiento convencional). La mediana
+          de seguimiento fue de 38 meses (RIC: 24-52). No hubo diferencias
+          significativas entre grupos en las características basales.
+      - type: paragraph
+        id: res-p2
+        content: >
+          El desenlace compuesto ocurrió en el 14.6\% del grupo iSGLT-2 vs.
+          23.2\% del grupo control (HR ajustado 0.62, IC 95\% 0.51-0.76,
+          p\textless0.001). La reducción fue consistente en todos los subgrupos
+          analizados, incluyendo pacientes con TFGe basal \textless45
+          mL/min/1.73 m² (HR 0.68, IC 95\% 0.52-0.88).
+    fields: {}
+    children: []
+
+  - id: discussion
+    element_id: discussion
+    title: "Discusión"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: disc-p1
+        content: >
+          Los resultados de este estudio confirman, en condiciones de práctica
+          clínica real en México, la eficacia nefroprotectora de los iSGLT-2
+          previamente demostrada en ensayos clínicos controlados. La magnitud
+          del beneficio observado (HR 0.62) es comparable a la reportada en
+          CREDENCE y DAPA-CKD.
+      - type: citation
+        id: disc-c1
+        citation_key: tuttle2022diabetic
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: disc-c2
+        citation_key: brenner2021renal
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: disc-p2
+        content: >
+          Las principales limitaciones del estudio incluyen su diseño
+          retrospectivo (posible sesgo de confusión por indicación), la
+          heterogeneidad en los tipos de iSGLT-2 utilizados y la ausencia
+          de datos sobre adherencia al tratamiento.
+    fields: {}
+    children: []
+
+  - id: conclusions
+    element_id: conclusions
+    title: "Conclusiones"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: conc-p1
+        content: >
+          Los inhibidores de SGLT-2 reducen significativamente la progresión
+          de nefropatía diabética en pacientes mexicanos con DM2 en condiciones
+          de práctica clínica real. El beneficio es consistente independientemente
+          del estadio de función renal basal y del tipo específico de iSGLT-2
+          utilizado. Estos resultados respaldan la incorporación de iSGLT-2
+          como terapia estándar en pacientes con DM2 y nefropatía diabética
+          en el sistema de salud mexicano.
+    fields: {}
+    children: []
+
+  - id: references
+    element_id: references
+    title: "Referencias"
+    placement: back_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+file_states: {}

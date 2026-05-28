@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "mx_uam_izt_cbi",
+  "description": "Expected validation state for mx_uam_izt_cbi — UAM Iztapalapa CBI (control adaptativo, ingeniería eléctrica)",
+  "expected": {
+    "validation_errors": 0,
+    "required_sections_present": [
+      "title_page",
+      "abstract_es",
+      "table_of_contents",
+      "introduction",
+      "theoretical_framework",
+      "methodology",
+      "results",
+      "conclusions",
+      "references"
+    ],
+    "max_abstract_words_limit": 350,
+    "page_layout": {
+      "paper": "letterpaper",
+      "margins": {
+        "top": "25mm",
+        "bottom": "25mm",
+        "left": "30mm",
+        "right": "25mm"
+      },
+      "line_spacing": 1.5
+    },
+    "latex_engine": "xelatex",
+    "bibliography_backend": "biber",
+    "bibliography_style": "apa"
+  },
+  "notes": "UAM Iztapalapa CBI — posgrado en ingeniería eléctrica. Alta exigencia: 2 directores + 5-person committee (presidente + 3 vocales + director), Spanish+English abstract (both present), CONAHCYT + project funding in acknowledgements, 8 BibTeX entries (article, book, inproceedings, techreport), nonlinear control math (Lyapunov, sliding mode, differential equations), 9 citation blocks distributed across 5 sections, appendix with system parameters. Tests the full CBI UAM-Iztapalapa institutional structure."
+}

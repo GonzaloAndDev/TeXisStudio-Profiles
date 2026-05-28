@@ -1,0 +1,455 @@
+schema_version: "1.0.0"
+id: sample-cambridge-apa7-001
+created_at: "2026-05-27T00:00:00Z"
+updated_at: "2026-05-27T00:00:00Z"
+profile_id: uk_cambridge_apa7
+
+metadata:
+  title: "Efficient Transformer Architectures for Low-Resource Natural Language Processing"
+  document_kind: tesis
+  academic_level: doctorado
+  language: en
+  city: Cambridge
+  year: 2026
+  keywords:
+    - natural language processing
+    - transformer architectures
+    - low-resource learning
+    - transfer learning
+    - computational linguistics
+
+institution:
+  name: "University of Cambridge"
+  faculty: "Faculty of Computer Science and Technology"
+  department: "Department of Computer Science and Technology"
+  country: UK
+
+student:
+  full_name: "Eleanor R. Whitfield"
+  email: "erw42@cam.ac.uk"
+  advisors:
+    - "Prof. Helena Marchetti"
+    - "Dr. James O. Pemberton"
+  committee:
+    - full_name: "Prof. Ananya Krishnamurthy"
+      role: "Internal Examiner"
+    - full_name: "Prof. David M. Sinclair"
+      role: "External Examiner"
+    - full_name: "Prof. Yuki Tanaka"
+      role: "Chair"
+  orcid: "0000-0001-2345-6789"
+
+latex_config:
+  document_class:
+    name: book
+    options:
+      - 12pt
+      - a4paper
+      - oneside
+  engine: xelatex
+  compiler: latexmk
+  bibliography_backend: biber
+  bibliography_style: apa
+  packages_required: []
+  typography: {}
+  page_layout:
+    paper: a4paper
+    margins:
+      top: 25mm
+      bottom: 25mm
+      left: 40mm
+      right: 20mm
+    line_spacing: 2.0
+
+sections:
+  - id: title_page
+    element_id: title_page
+    title: "Title Page"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: declaration
+    element_id: declaration
+    title: "Declaration"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: decl-p1
+        content: >
+          This thesis is the result of my own work and includes nothing which
+          is the outcome of work done in collaboration, except as declared
+          in the preface and specified in the text. It is not substantially
+          the same as any work that has already been submitted before for
+          any degree or other qualification. The total length of this thesis
+          does not exceed 80,000 words.
+    fields: {}
+    children: []
+
+  - id: abstract_en
+    element_id: abstract_en
+    title: "Abstract"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: abs-p1
+        content: >
+          The rise of large-scale pre-trained language models has dramatically
+          advanced the state of the art in natural language processing (NLP).
+          However, these models are computationally expensive to train and
+          deploy, and they often underperform in low-resource settings—scenarios
+          where annotated data is scarce, which is the case for the majority
+          of the world's languages. This thesis presents a systematic
+          investigation of efficient transformer architectures tailored for
+          low-resource NLP tasks.
+      - type: paragraph
+        id: abs-p2
+        content: >
+          We propose a family of lightweight transformer variants that achieve
+          competitive performance on benchmark NLP tasks while requiring
+          substantially fewer parameters and less training data than standard
+          models. Our key contributions include: (1) a novel attention
+          mechanism that reduces quadratic complexity to near-linear; (2) a
+          cross-lingual transfer learning framework for under-resourced
+          languages; and (3) an empirical study across 24 languages spanning
+          six language families. Experiments on machine translation, named
+          entity recognition, and sentiment analysis demonstrate consistent
+          improvements over baselines, with up to 34\% reduction in parameters
+          at equivalent task performance.
+    fields: {}
+    children: []
+
+  - id: acknowledgements
+    element_id: acknowledgements
+    title: "Acknowledgements"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: ack-p1
+        content: >
+          I am deeply grateful to my supervisors, Prof. Helena Marchetti and
+          Dr. James Pemberton, for their unfailing guidance and intellectual
+          generosity over the course of this doctorate. This research was
+          supported by the Engineering and Physical Sciences Research Council
+          (EPSRC) under Grant EP/R034293/1, and by a Cambridge International
+          Scholarship.
+    fields: {}
+    children: []
+
+  - id: table_of_contents
+    element_id: table_of_contents
+    title: "Contents"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_figures
+    element_id: list_of_figures
+    title: "List of Figures"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: list_of_tables
+    element_id: list_of_tables
+    title: "List of Tables"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: nomenclature
+    element_id: nomenclature
+    title: "Nomenclature"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: nom-p1
+        content: >
+          NLP: Natural Language Processing. LLM: Large Language Model.
+          BERT: Bidirectional Encoder Representations from Transformers.
+          GPT: Generative Pre-trained Transformer. MSA: Multi-head Self-Attention.
+          FFN: Feed-Forward Network. BPE: Byte-Pair Encoding.
+    fields: {}
+    children: []
+
+  - id: introduction
+    element_id: introduction
+    title: "Introduction"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: intro-p1
+        content: >
+          Natural language processing has undergone a paradigm shift with the
+          emergence of large pre-trained language models. Models such as BERT,
+          GPT-3, and their successors have achieved remarkable performance
+          across a broad range of tasks by leveraging self-supervised learning
+          on massive corpora.
+      - type: citation
+        id: intro-c1
+        citation_key: vaswani2017attention
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: intro-p2
+        content: >
+          Despite their success, these models present significant challenges:
+          they are computationally expensive, require large amounts of labelled
+          data for fine-tuning, and exhibit markedly degraded performance in
+          low-resource scenarios. The vast majority of the world's approximately
+          7,000 languages lack the corpora necessary to train or fine-tune such
+          models effectively.
+      - type: citation
+        id: intro-c2
+        citation_key: devlin2019bert
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: intro-p3
+        content: >
+          This thesis addresses the question: how can we design transformer
+          architectures that are simultaneously efficient and effective in
+          low-resource settings? The remainder of this thesis is organised as
+          follows. Chapter 2 reviews the relevant literature. Chapter 3
+          describes the core architecture. Chapters 4 and 5 present the
+          empirical evaluation. Chapter 6 discusses implications and
+          Chapter 7 concludes.
+    fields: {}
+    children: []
+
+  - id: background
+    element_id: theoretical_framework
+    title: "Background and Related Work"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: bg-p1
+        content: >
+          The transformer architecture, introduced by Vaswani et al. (2017),
+          replaced recurrent and convolutional neural networks with a
+          mechanism of multi-head self-attention that allows the model to
+          relate any two positions in an input sequence directly.
+      - type: citation
+        id: bg-c1
+        citation_key: vaswani2017attention
+        citation_type: narrative
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: bg-p2
+        content: >
+          The success of BERT (Devlin et al., 2019) and GPT-2 (Radford et al.,
+          2019) demonstrated that pre-training on large unlabelled corpora
+          followed by task-specific fine-tuning could yield state-of-the-art
+          results across numerous benchmarks. GPT-3 (Brown et al., 2020)
+          further showed that scale itself is a powerful inductive bias.
+      - type: citation
+        id: bg-c2
+        citation_key: devlin2019bert
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: bg-c3
+        citation_key: radford2019language
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: bg-c4
+        citation_key: brown2020language
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: bg-p3
+        content: >
+          Long Short-Term Memory (LSTM) networks provided an important
+          baseline for sequence modelling before the transformer era, and
+          remain competitive in certain constrained settings.
+      - type: citation
+        id: bg-c5
+        citation_key: hochreiter1997lstm
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: methodology
+    element_id: methodology
+    title: "Methodology"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: meth-p1
+        content: >
+          We propose the Sparse-Efficient Transformer (SET), a family of
+          architectures based on three modifications to the standard
+          transformer: (1) a locality-sensitive hashing attention mechanism
+          reducing the quadratic complexity of full self-attention; (2) a
+          parameter-sharing scheme across layers; and (3) a cross-lingual
+          alignment objective during pre-training.
+      - type: paragraph
+        id: meth-p2
+        content: >
+          Let $X \in \mathbb{R}^{n \times d}$ denote the input sequence of
+          $n$ tokens, each embedded in dimension $d$. Standard self-attention
+          computes $\text{Attention}(Q, K, V) = \text{softmax}(QK^T / \sqrt{d_k})V$,
+          with complexity $\mathcal{O}(n^2 d)$. Our locality-sensitive hashing
+          approach partitions the sequence into buckets of size $b$, reducing
+          complexity to $\mathcal{O}(nb^2 d / n) = \mathcal{O}(b^2 d)$.
+    fields: {}
+    children: []
+
+  - id: experiments
+    element_id: results
+    title: "Experiments"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: exp-p1
+        content: >
+          We evaluate SET on three benchmark tasks: machine translation
+          (WMT-14 English-German), named entity recognition (CoNLL-2003),
+          and cross-lingual sentiment analysis (Amazon multilingual). For
+          the cross-lingual experiments we use 24 languages from the XTREME
+          benchmark covering six language families.
+      - type: paragraph
+        id: exp-p2
+        content: >
+          Table 1 summarises the parameter counts and BLEU scores for machine
+          translation. SET-base achieves 27.4 BLEU using 43M parameters,
+          compared to 27.3 BLEU for BERT-base (110M parameters), representing
+          a 61\% parameter reduction at matched performance. SET-small (12M
+          parameters) achieves 26.1 BLEU, outperforming all models of
+          comparable size.
+    fields: {}
+    children: []
+
+  - id: discussion
+    element_id: discussion
+    title: "Discussion"
+    placement: body
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: disc-p1
+        content: >
+          The consistent gains of SET across languages and tasks suggest that
+          the combination of sparse attention and cross-lingual pre-training
+          is broadly applicable. Notably, the improvement is most pronounced
+          for low-resource languages in the XTREME benchmark (up to 4.2
+          F1 points), confirming that efficiency gains do not come at the
+          cost of generalisation in data-scarce settings.
+      - type: citation
+        id: disc-c1
+        citation_key: goodfellow2016deep
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: conclusions
+    element_id: conclusions
+    title: "Conclusions"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: conc-p1
+        content: >
+          This thesis has presented the Sparse-Efficient Transformer, a family
+          of architectures designed for effective and efficient low-resource
+          NLP. Through systematic evaluation across 24 languages and three
+          tasks, we have demonstrated that SET matches or exceeds state-of-the-art
+          performance while using substantially fewer parameters.
+      - type: paragraph
+        id: conc-p2
+        content: >
+          Future work will explore: the extension of SET to multilingual
+          speech processing; the application of the cross-lingual alignment
+          objective to zero-shot cross-lingual transfer without any target-language
+          data; and the combination of SET with retrieval-augmented generation
+          for knowledge-intensive tasks.
+      - type: citation
+        id: conc-c1
+        citation_key: openai2023gpt4
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: references
+    element_id: references
+    title: "References"
+    placement: back_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: appendix_a
+    element_id: appendix
+    title: "Appendix A: Hyperparameter Configurations"
+    placement: appendix
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: app-p1
+        content: >
+          All models were trained using the Adam optimiser with
+          $\beta_1 = 0.9$, $\beta_2 = 0.98$, $\epsilon = 10^{-9}$.
+          The learning rate schedule follows the formula proposed in the
+          original transformer paper: $lr = d_\text{model}^{-0.5} \cdot
+          \min(\text{step}^{-0.5}, \text{step} \cdot \text{warmup\_steps}^{-1.5})$
+          with 4,000 warmup steps.
+    fields: {}
+    children: []
+
+file_states: {}

@@ -403,6 +403,106 @@ jobs:
           path: profile_samples/us_mit_ieee/delivery_output/*.zip
           if-no-files-found: warn
 
+  compile-additional-samples:
+    name: P3 — Compile additional high-exigence samples
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y \
+            texlive-xetex \
+            texlive-bibtex-extra \
+            texlive-latex-recommended \
+            texlive-publishers \
+            texlive-science \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-lang-spanish \
+            biber \
+            latexmk \
+            poppler-utils
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Resolve pinned TeXisStudio ref
+        id: texis_ref
+        shell: bash
+        run: |
+          REF="$(grep -v '^[[:space:]]*#' .github/p3-texisstudio-ref.txt | sed '/^[[:space:]]*$/d' | head -n1 | tr -d '[:space:]')"
+          echo "ref=$REF" >> "$GITHUB_OUTPUT"
+          echo "Using TeXisStudio ref: $REF"
+
+      - name: Clone TeXisStudio main repo
+        uses: actions/checkout@v4
+        with:
+          repository: GonzaloAndDev/TeXisStudio
+          path: _texis_main
+          ref: ${{ steps.texis_ref.outputs.ref }}
+
+      - name: Cache Rust build artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            _texis_main/target/
+          key: ${{ runner.os }}-cargo-texis-samples-${{ hashFiles('_texis_main/**/Cargo.lock', '_texis_main/**/Cargo.toml') }}
+          restore-keys: ${{ runner.os }}-cargo-texis-samples-
+
+      - name: Build texis-cli
+        working-directory: _texis_main
+        run: cargo build --release -p texis-cli
+
+      - name: Compile uk_cambridge_apa7 sample
+        run: |
+          TEXIS=_texis_main/target/release/texis
+          SAMPLE=profile_samples/uk_cambridge_apa7/project.texis
+          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for uk_cambridge_apa7"; exit 1; }
+          $TEXIS compile "$SAMPLE" --backend latexmk || {
+            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
+          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: uk_cambridge_apa7 PDF generated" || { echo "ERROR: no PDF"; exit 1; }
+          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
+          echo "OK: uk_cambridge_apa7 complete"
+
+      - name: Compile mx_uam_izt_cbi sample
+        run: |
+          TEXIS=_texis_main/target/release/texis
+          SAMPLE=profile_samples/mx_uam_izt_cbi/project.texis
+          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for mx_uam_izt_cbi"; exit 1; }
+          $TEXIS compile "$SAMPLE" --backend latexmk || {
+            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
+          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: mx_uam_izt_cbi PDF generated" || { echo "ERROR: no PDF"; exit 1; }
+          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
+          echo "OK: mx_uam_izt_cbi complete"
+
+      - name: Compile mx_unam_vancouver sample
+        run: |
+          TEXIS=_texis_main/target/release/texis
+          SAMPLE=profile_samples/mx_unam_vancouver/project.texis
+          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for mx_unam_vancouver"; exit 1; }
+          $TEXIS compile "$SAMPLE" --backend latexmk || {
+            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
+          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: mx_unam_vancouver PDF generated" || { echo "ERROR: no PDF"; exit 1; }
+          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
+          echo "OK: mx_unam_vancouver complete"
+
+      - name: Upload PDFs from additional samples
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: additional_samples_pdfs
+          path: |
+            profile_samples/uk_cambridge_apa7/project.texis/build/main.pdf
+            profile_samples/mx_uam_izt_cbi/project.texis/build/main.pdf
+            profile_samples/mx_unam_vancouver/project.texis/build/main.pdf
+          if-no-files-found: warn
+
   validate-sample-projects:
     name: Validate sample project structure
     runs-on: ubuntu-latest

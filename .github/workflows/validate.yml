@@ -537,6 +537,9 @@ jobs:
           python - <<'PY'
           import yaml, json, pathlib, sys
           errors = []
+          ALLOWED_ACADEMIC_LEVELS = {
+              "bachillerato", "tecnico", "licenciatura", "maestria", "doctorado"
+          }
 
           def iter_sections(sections):
               for section in sections or []:
@@ -566,6 +569,13 @@ jobs:
               for field in ['schema_version', 'profile_id', 'metadata', 'sections']:
                   if field not in p:
                       errors.append(f"MISSING '{field}' in {project_yaml}")
+              metadata = p.get('metadata') or {}
+              academic_level = metadata.get('academic_level')
+              if academic_level not in ALLOWED_ACADEMIC_LEVELS:
+                  errors.append(
+                      f"INVALID academic_level '{academic_level}' in {project_yaml} "
+                      f"(allowed: {', '.join(sorted(ALLOWED_ACADEMIC_LEVELS))})"
+                  )
               has_bib = (project_dir / 'content' / 'bibliography' / 'references.bib').exists()
               has_references_section = any(
                   s.get('enabled', True) and s.get('element_id') == 'references'

@@ -241,11 +241,11 @@ sections:
       - type: paragraph
         id: marco-p1
         content: >
-          Un sistema dinámico de la forma $\dot{x} = f(x, u, t)$, donde
-          $x$ es el vector de estados en $\mathbf{R}^n$, $u$ es la entrada
-          de control y $t$ es el tiempo, se dice que es controlable si existe
-          una ley de control $u(t)$ que transfiere el sistema de cualquier
-          estado inicial $x_0$ a cualquier estado final $x_f$ en tiempo finito.
+          Un sistema dinámico de la forma dx/dt = f(x, u, t), donde x es el
+          vector de estados, u es la entrada de control y t es el tiempo, se
+          dice que es controlable si existe una ley de control u(t) que
+          transfiere el sistema de cualquier estado inicial x0 a cualquier
+          estado final xf en tiempo finito.
       - type: citation
         id: marco-c1
         citation_key: khalil2002nonlinear
@@ -256,7 +256,7 @@ sections:
       - type: paragraph
         id: marco-p2
         content: >
-          La superficie de deslizamiento $s(x) = 0$ define una variedad en el
+          La superficie de deslizamiento s(x) = 0 define una variedad en el
           espacio de estados hacia la cual el controlador atrae al sistema.
           Una vez que la trayectoria alcanza esta variedad, permanece en ella
           y evoluciona hacia el punto de equilibrio.
@@ -283,19 +283,17 @@ sections:
           Se modela la microrred como un sistema de ecuaciones diferenciales
           no lineales. El modelo de la fuente fotovoltaica se obtiene a partir
           del circuito equivalente de un diodo, mientras que el generador
-          eólico se modela mediante la curva de potencia $P = \frac{1}{2}
-          \rho A C_p(\lambda, \beta) v_w^3$, donde $\rho$ es la densidad
-          del aire, $A$ el área del rotor, $C_p$ el coeficiente de potencia,
-          $\lambda$ la relación de velocidad en la punta del álabe y $v_w$
-          la velocidad del viento.
+          eólico se modela mediante la curva de potencia, función de la
+          densidad del aire, el area del rotor, el coeficiente de potencia Cp,
+          la relacion de velocidad en la punta del alabe y la velocidad del viento.
       - type: paragraph
         id: met-p2
         content: >
-          La ley de control adaptativa propuesta es de la forma
-          $u = u_{eq} + u_s$, donde $u_{eq}$ es el control equivalente que
-          mantiene al sistema en la superficie de deslizamiento y $u_s$ es el
-          término discontinuo que garantiza la condición de alcance
-          $s \cdot \dot{s} \leq -\eta |s|$, con $\eta > 0$.
+          La ley de control adaptativa propuesta es de la forma u = u_eq + u_s,
+          donde u_eq es el control equivalente que mantiene al sistema en la
+          superficie de deslizamiento y u_s es el termino discontinuo que
+          garantiza la condicion de alcance s * ds/dt menor o igual a -eta*|s|,
+          con eta mayor que cero.
       - type: citation
         id: met-c1
         citation_key: astrom2002pid
@@ -325,12 +323,11 @@ sections:
       - type: paragraph
         id: res-p2
         content: >
-          El esquema AMD propuesto mostró un tiempo de establecimiento de
-          $T_s = 0.08$ s frente a $T_s = 0.14$ s del control PID en el
-          escenario 2, confirmando la mejora del 42\% reportada en el resumen.
-          La variación máxima de tensión en el escenario 3 fue de $\pm 3.1\%$
-          para AMD y $\pm 5.8\%$ para PID, ambas dentro de los límites de la
-          norma IEC 61000-4-15.
+          El esquema AMD propuesto mostro un tiempo de establecimiento de
+          Ts = 0.08 s frente a Ts = 0.14 s del control PID en el escenario 2,
+          confirmando la mejora del 42\% reportada en el resumen. La variacion
+          maxima de tension en el escenario 3 fue de +/-3.1\% para AMD y
+          +/-5.8\% para PID, ambas dentro de los limites de la norma IEC 61000-4-15.
     fields: {}
     children: []
 
@@ -409,8 +406,7 @@ sections:
           Tensión nominal: 400 V (fase-fase). Frecuencia nominal: 50 Hz.
           Potencia fotovoltaica instalada: 30 kWp. Potencia eólica instalada:
           25 kW. Capacidad de almacenamiento: 50 kWh (banco de baterías LiFePO4).
-          Inductancia de filtro: $L = 2.5$ mH. Capacitancia de filtro:
-          $C = 50$ uF (microfaradios).
+          Inductancia de filtro: L = 2.5 mH. Capacitancia de filtro: C = 50 uF.
     fields: {}
     children: []
 

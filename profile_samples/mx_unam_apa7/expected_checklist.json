@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "profile_id": "mx_unam_apa7",
-  "description": "Expected validation state for the mx_unam_apa7 sample project (UNAM posgrado, APA 7, ciencias biológicas)",
+  "description": "Expected validation state for the mx_unam_apa7 sample project (UNAM posgrado, APA 7, biodiversidad tropical — enhanced)",
   "expected": {
     "validation_errors": 0,
     "required_sections_present": [
@@ -30,5 +30,5 @@
     "bibliography_backend": "biber",
     "bibliography_style": "apa"
   },
-  "notes": "Sample UNAM posgrado thesis in Ciencias Biológicas, APA 7 style. Exercises: portada, resumen en español, abstract en inglés (both present), dedicatoria, agradecimientos with CONAHCYT/PAPIIT funding, índice, all required body sections (introducción through conclusiones), and references in APA style with 3 entries: IPCC report, Peterson book, Díaz 2019 Science article. Language: Spanish. Uses \\% in LaTeX content for percentage signs."
+  "notes": "UNAM posgrado — Ciencias Biológicas, biodiversidad tropical y cambio climático. Enhanced: 10 BibTeX entries across 5 types (IPCC report, books, journal articles, CONABIO report), 13 citation blocks distributed across 5 sections (intro×3, marco×4, met×2, disc×2), Spanish + English abstracts, MaxEnt ecological niche modelling methodology, SSP climate scenarios, herpetofauna and avifauna field surveys, CONAHCYT + PAPIIT funding. Candidate for verified status once CI passes."
 }

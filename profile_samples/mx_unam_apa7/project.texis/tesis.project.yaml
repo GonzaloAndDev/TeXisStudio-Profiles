@@ -210,6 +210,28 @@ sections:
         page:
         prefix:
         suffix:
+      - type: paragraph
+        id: intro-p3
+        content: >
+          México concentra entre el 10 y el 12\% de la biodiversidad mundial en
+          apenas el 1.5\% de la superficie terrestre del planeta. Esta megadiversidad
+          se ve amenazada por la redistribución geográfica de las especies en respuesta
+          al cambio climático, un fenómeno documentado en todos los grupos taxonómicos
+          y regiones del país.
+      - type: citation
+        id: intro-c2
+        citation_key: conabio2020biodiversidad
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: intro-c3
+        citation_key: pecl2017biodiversity
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
     fields: {}
     children: []
 
@@ -247,6 +269,29 @@ sections:
         page:
         prefix:
         suffix:
+      - type: paragraph
+        id: marco-p3
+        content: >
+          La extinción acelerada de especies como consecuencia del cambio climático
+          ha sido cuantificada por Urban (2015), quien estimó que el 16\% de las
+          especies analizadas globalmente enfrentan riesgo de extinción bajo los
+          escenarios de temperatura más pesimistas. En México, la herpetofauna
+          tropical es especialmente vulnerable dado que sus rangos de tolerancia
+          térmica son estrechos y su movilidad es limitada.
+      - type: citation
+        id: marco-c3
+        citation_key: urban2015accelerating
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: marco-c4
+        citation_key: ochoa2021amphibians
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
     fields: {}
     children: []
 
@@ -270,7 +315,22 @@ sections:
         content: >
           Los modelos de nicho ecológico se construyeron con MaxEnt v3.4.4 utilizando
           capas bioclimáticas de CHELSA a resolución de 1 km². Se evaluó el desempeño
-          de los modelos mediante curvas ROC y el estadístico AUC.
+          de los modelos mediante curvas ROC y el estadístico AUC. Se siguió el protocolo
+          de modelado de nichos ecológicos propuesto por Soberón y Peterson (2005).
+      - type: citation
+        id: met-c1
+        citation_key: soberon2005interpretation
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: citation
+        id: met-c2
+        citation_key: parmesan2006ecological
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
     fields: {}
     children: []
 
@@ -312,6 +372,28 @@ sections:
           y con estudios previos en otras regiones tropicales de Latinoamérica. La
           reducción en la diversidad de herpetofauna es consistente con el fenómeno
           de desecación de charcas temporales asociado al aumento de temperaturas.
+      - type: citation
+        id: disc-c1
+        citation_key: pecl2017biodiversity
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: disc-p2
+        content: >
+          Los patrones observados en la distribución altitudinal de las aves son
+          congruentes con el desplazamiento de biomas documentado en estudios globales.
+          La mayor afectación en las zonas de menor altitud es consistente con la
+          hipótesis de trampa climática, según la cual las especies de baja elevación
+          carecen de la opción de migrar a altitudes mayores.
+      - type: citation
+        id: disc-c2
+        citation_key: beyer2020global
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
     fields: {}
     children: []
 

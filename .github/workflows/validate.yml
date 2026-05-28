@@ -474,9 +474,14 @@ jobs:
         run: |
           TEXIS=_texis_main/target/release/texis
           SAMPLE=profile_samples/mx_uam_izt_cbi/project.texis
-          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for mx_uam_izt_cbi"; exit 1; }
-          $TEXIS compile "$SAMPLE" --backend latexmk || {
-            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
+          echo "=== texis validate ===" && $TEXIS validate "$SAMPLE" 2>&1 || {
+            echo "ERROR: validate failed for mx_uam_izt_cbi"; exit 1; }
+          echo "=== texis compile ===" && $TEXIS compile "$SAMPLE" --backend latexmk 2>&1 || {
+            echo "=== main.log (last 60 lines) ==="
+            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -60 || echo "(no build log)"
+            echo "=== main.bbl ==="
+            cat "$SAMPLE/build/main.bbl" 2>/dev/null || echo "(no bbl)"
+            exit 1; }
           [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: mx_uam_izt_cbi PDF generated" || { echo "ERROR: no PDF"; exit 1; }
           $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
           echo "OK: mx_uam_izt_cbi complete"

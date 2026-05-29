@@ -47,7 +47,12 @@ page_layout:
 # Abstract (Zusammenfassung + Summary): typically 250–500 words each.
 max_abstract_words: 500
 
-packages: []
+packages:
+  - siunitx
+  - pgfplots
+  - circuitikz
+  - cancel
+  - xfrac
 
 sections:
   # ── Front matter ─────────────────────────────────────────────────

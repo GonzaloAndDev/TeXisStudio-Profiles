@@ -58,6 +58,13 @@ page_layout:
 max_words: 70000
 max_abstract_words: 350
 
+packages:
+  - siunitx       # unidades físicas y de cómputo: \SI{1}{\giga\byte}
+  - pgfplots      # gráficas de rendimiento y análisis
+  - cancel        # cancelaciones algebraicas
+  - xfrac         # fracciones inline
+
+
 sections:
   - id: title_page
     element_id: title_page

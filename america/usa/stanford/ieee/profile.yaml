@@ -47,7 +47,12 @@ page_layout:
 # Typical PhD: 100–200 pages depending on department.
 max_abstract_words: 350
 
-packages: []
+packages:
+  - siunitx
+  - pgfplots
+  - circuitikz
+  - cancel
+  - xfrac
 
 sections:
   # ── Front matter ─────────────────────────────────────────────────

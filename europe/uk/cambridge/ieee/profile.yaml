@@ -51,7 +51,12 @@ page_layout:
 max_words: 80000
 max_abstract_words: 300
 
-packages: []
+packages:
+  - siunitx
+  - pgfplots
+  - circuitikz
+  - cancel
+  - xfrac
 
 sections:
   # ── Front matter ─────────────────────────────────────────────────

@@ -60,6 +60,13 @@ page_layout:
 max_words: 80000
 max_abstract_words: 300
 
+packages:
+  - siunitx       # unidades físicas: \SI{9.8}{m/s^2}, \si{\mega\watt}
+  - pgfplots      # gráficos: \begin{axis}...\end{axis}
+  - circuitikz    # circuitos eléctricos: \begin{circuitikz}
+  - physics       # notación física: \dv{}{}, \pdv{}{}, \abs{}, \norm{}
+  - cancel        # cancelaciones algebraicas: \cancel{x}, \bcancel{y}
+
 sections:
   - id: title_page
     element_id: title_page

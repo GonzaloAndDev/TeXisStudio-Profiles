@@ -48,7 +48,12 @@ page_layout:
 # Abstract: submitted separately to MIT Libraries; guideline ≤ 350 words.
 max_abstract_words: 350
 
-packages: []
+packages:
+  - siunitx       # unidades físicas: \SI{9.8}{m/s^2}, \si{\kilo\gram}
+  - pgfplots      # gráficos de datos: \begin{axis}...\end{axis}
+  - circuitikz    # circuitos: \begin{circuitikz}
+  - cancel        # cancelaciones algebraicas: \cancel{x}
+  - xfrac         # fracciones inline: \sfrac{1}{2}
 
 sections:
   # ── Front matter ─────────────────────────────────────────────────

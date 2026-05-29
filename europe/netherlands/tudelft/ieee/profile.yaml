@@ -50,7 +50,12 @@ page_layout:
 # Samenvatting: 1–2 pages in Dutch.
 max_abstract_words: 500
 
-packages: []
+packages:
+  - siunitx
+  - pgfplots
+  - circuitikz
+  - cancel
+  - xfrac
 
 sections:
   # ── Front matter ─────────────────────────────────────────────────

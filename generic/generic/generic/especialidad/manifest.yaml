@@ -1,0 +1,14 @@
+id: generic_especialidad
+name: "Trabajo de Especialidad Genérico"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Perfil genérico para trabajos de especialidad y proyectos aplicados de posgrado profesional"
+tags: [especialidad, generico, apa, posgrado]
+texis_min_version: "1.0.0"
+continent: "generic"
+country: "generic"
+institution_id: "generic"
+academic_level: especialidad
+discipline: all_disciplines
+profile_scope: degree_specific

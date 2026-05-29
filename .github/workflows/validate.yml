@@ -86,6 +86,13 @@ jobs:
           warnings = []
           REQUIRED = ['id', 'name', 'schema_version', 'status', 'document_class',
                       'latex_engine', 'bibliography_backend', 'bibliography_style', 'sections']
+          ALLOWED_LEVELS = {
+              'bachillerato', 'tecnico', 'licenciatura',
+              'especialidad', 'maestria', 'doctorado', 'posdoctorado',
+          }
+          ALLOWED_SCOPE = {
+              'institutional', 'degree_specific', 'program_specific', 'discipline_specific',
+          }
           for path in sorted(pathlib.Path('.').rglob('profile.yaml')):
               if '.git' in path.parts or 'profile_samples' in path.parts:
                   continue
@@ -119,6 +126,63 @@ jobs:
                   # POL_VERIFIED_NO_CI_EVIDENCE — evidencia de CI obligatoria (P1.8/P3 audit v2.2)
                   if not ver.get('ci_evidence'):
                       errors.append(f"POL_VERIFIED_NO_CI_EVIDENCE: {path}")
+
+          for path in sorted(pathlib.Path('.').rglob('manifest.yaml')):
+              if '.git' in path.parts or 'profile_samples' in path.parts:
+                  continue
+              try:
+                  m = yaml.safe_load(path.read_text(encoding='utf-8'))
+              except Exception as e:
+                  errors.append(f"MANIFEST PARSE ERROR {path}: {e}")
+                  continue
+
+              level = m.get('academic_level')
+              if level is not None and level not in ALLOWED_LEVELS:
+                  errors.append(f"MANIFEST_INVALID_ACADEMIC_LEVEL: {path} -> {level}")
+
+              target_levels = m.get('target_levels')
+              if target_levels is not None:
+                  if not isinstance(target_levels, list) or not target_levels:
+                      errors.append(f"MANIFEST_INVALID_TARGET_LEVELS: {path} -> debe ser lista no vacia")
+                  else:
+                      invalid_target_levels = [lvl for lvl in target_levels if lvl not in ALLOWED_LEVELS]
+                      if invalid_target_levels:
+                          errors.append(
+                              f"MANIFEST_INVALID_TARGET_LEVELS: {path} -> {', '.join(map(str, invalid_target_levels))}"
+                          )
+                      if level is not None and level not in target_levels:
+                          errors.append(
+                              f"MANIFEST_ACADEMIC_LEVEL_NOT_IN_TARGET_LEVELS: {path} -> {level}"
+                          )
+
+              scope = m.get('profile_scope')
+              if scope is not None and scope not in ALLOWED_SCOPE:
+                  errors.append(f"MANIFEST_INVALID_PROFILE_SCOPE: {path} -> {scope}")
+
+              discipline = m.get('discipline')
+              if discipline is not None and (not isinstance(discipline, str) or not discipline.strip()):
+                  errors.append(f"MANIFEST_INVALID_DISCIPLINE: {path}")
+
+              program = m.get('program_name')
+              if program is not None and (not isinstance(program, str) or not program.strip()):
+                  errors.append(f"MANIFEST_INVALID_PROGRAM_NAME: {path}")
+
+              faculty = m.get('faculty')
+              if faculty is not None and (not isinstance(faculty, str) or not faculty.strip()):
+                  errors.append(f"MANIFEST_INVALID_FACULTY: {path}")
+
+              department = m.get('department')
+              if department is not None and (not isinstance(department, str) or not department.strip()):
+                  errors.append(f"MANIFEST_INVALID_DEPARTMENT: {path}")
+
+              if scope == 'discipline_specific' and not discipline:
+                  errors.append(f"MANIFEST_DISCIPLINE_SCOPE_WITHOUT_DISCIPLINE: {path}")
+              if scope == 'program_specific' and not program:
+                  errors.append(f"MANIFEST_PROGRAM_SCOPE_WITHOUT_PROGRAM: {path}")
+              if scope == 'degree_specific' and not (level or program):
+                  errors.append(f"MANIFEST_DEGREE_SCOPE_WITHOUT_LEVEL_OR_PROGRAM: {path}")
+              if scope == 'degree_specific' and level is None and not target_levels and not program:
+                  errors.append(f"MANIFEST_DEGREE_SCOPE_WITHOUT_LEVELS_OR_PROGRAM: {path}")
           for w in warnings:
               print(f"WARN: {w}")
           if errors:

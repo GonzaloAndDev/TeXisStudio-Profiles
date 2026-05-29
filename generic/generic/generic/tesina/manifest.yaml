@@ -9,3 +9,6 @@ texis_min_version: "1.0.0"
 continent: "generic"
 country: "generic"
 institution_id: "generic"
+academic_level: licenciatura
+discipline: all_disciplines
+profile_scope: degree_specific

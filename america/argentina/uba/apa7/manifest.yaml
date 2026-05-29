@@ -11,3 +11,5 @@ country: "argentina"
 institution: "Universidad de Buenos Aires"
 city: "Buenos Aires"
 institution_id: "uba"
+discipline: all_disciplines
+profile_scope: institutional

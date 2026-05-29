@@ -6,9 +6,15 @@ version: "1.0.0"
 license: "CC BY 4.0"
 continent: america
 country: mexico
-institution: uam
+institution: "Universidad Autonoma Metropolitana"
 city: "Ciudad de México"
+institution_id: uam
+faculty: "Unidad Iztapalapa"
+department: "División de Ciencias Sociales y Humanidades"
 bibliography_style: chicago-authordate
+discipline: social_sciences
+program_name: "CSH Iztapalapa"
+profile_scope: program_specific
 tags:
   - uam
   - mexico

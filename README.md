@@ -5,6 +5,11 @@ Repositorio oficial de perfiles para [TeXisStudio](https://github.com/GonzaloAnd
 Cada perfil define la estructura de secciones, estilo bibliografico y configuracion LaTeX
 para un tipo de documento academico. Se instalan desde la app en **Biblioteca > Comunidad**.
 
+La direccion editorial actual es:
+- **perfil base por institucion** como regla general
+- **variante por grado** cuando el contrato cambie entre licenciatura, maestria, doctorado, especialidad o posdoctorado
+- **variante por programa o area** solo cuando la institucion realmente exija diferencias formales
+
 ---
 
 ## Estructura del repositorio
@@ -12,7 +17,7 @@ para un tipo de documento academico. Se instalan desde la app en **Biblioteca > 
 ```
 <continente>/<pais>/<institucion>/
   _institution.yaml          ← configuracion compartida de la institucion
-  <estilo>/
+  <variante>/
     profile.yaml             ← definicion completa del perfil
     manifest.yaml            ← metadata para la biblioteca
 ```
@@ -26,13 +31,43 @@ europe/uk/oxford/
     manifest.yaml
 europe/uk/cambridge/
   _institution.yaml
-  ieee/
-    profile.yaml
-    manifest.yaml
   apa7/
     profile.yaml
     manifest.yaml
+  ieee/
+    profile.yaml
+    manifest.yaml
+america/mexico/uam/
+  _institution.yaml
+  izt-cbi/
+    profile.yaml
+    manifest.yaml
+  azc-dcsh/
+    profile.yaml
+    manifest.yaml
 ```
+
+### Taxonomia editorial recomendada
+
+Todo perfil deberia poder declararse, en catalogo o manifest, con estos ejes:
+
+- `institution_id`
+- `continent`
+- `country`
+- `academic_level` opcional
+- `target_levels` opcional
+- `discipline` opcional
+- `program_name` opcional
+- `faculty` opcional
+- `department` opcional
+- `profile_scope`
+  - `institutional`
+  - `degree_specific`
+  - `program_specific`
+  - `discipline_specific`
+
+No todos los perfiles necesitan todos los campos.
+La regla es: **no especializar si no hay una diferencia real de formato o exigencia**.
 
 ---
 
@@ -129,7 +164,35 @@ texis_min_version: "1.0.0"
 institution_id: "sorbonne"
 continent: "europe"
 country: "france"
+academic_level: "doctorado"            # opcional
+target_levels: ["maestria", "doctorado"] # opcional, cuando cubra varios grados reales
+discipline: "humanities"               # opcional
+program_name: "Doctorat en Humanités"  # opcional
+faculty: "Faculté des Lettres"         # opcional
+department: "École doctorale"          # opcional
+profile_scope: "discipline_specific"   # institutional | degree_specific | program_specific | discipline_specific
 ```
+
+### Campos editoriales recomendados en `manifest.yaml`
+
+Usa estos campos cuando realmente agreguen claridad:
+
+| Campo | Cuándo usarlo |
+|---|---|
+| `academic_level` | Cuando el perfil sea claramente para licenciatura, maestría, doctorado, etc. |
+| `target_levels` | Cuando el perfil sirva de forma legítima para varios grados y no convenga mentir con un solo `academic_level` |
+| `discipline` | Cuando el perfil sea para un área académica concreta: `engineering`, `humanities`, `social_sciences`, `health_sciences`… |
+| `program_name` | Cuando el perfil represente una escuela, división o programa específico |
+| `faculty` | Cuando el perfil dependa de una facultad, unidad o escuela con identidad formal propia |
+| `department` | Cuando convenga registrar la división, departamento o instancia académica responsable |
+| `profile_scope` | Siempre que puedas: `institutional`, `degree_specific`, `program_specific`, `discipline_specific` |
+
+Regla práctica:
+- si solo cambia la universidad, usa `institutional`
+- si cambia por grado, usa `degree_specific`
+- si cambia por carrera, facultad o posgrado concreto, usa `program_specific`
+- si cambia por área amplia (ingeniería, humanidades, salud), usa `discipline_specific`
+- si cubre maestría + doctorado con el mismo contrato, usa `target_levels` para decirlo explícitamente
 
 ### `profile.yaml` de tu perfil
 

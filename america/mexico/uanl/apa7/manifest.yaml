@@ -11,3 +11,5 @@ country: "mexico"
 institution: "Universidad Autonoma de Nuevo Leon"
 city: "Monterrey"
 institution_id: "uanl"
+discipline: all_disciplines
+profile_scope: institutional

@@ -11,3 +11,5 @@ country: "chile"
 institution: "Universidad de Chile"
 city: "Santiago"
 institution_id: "uchile"
+discipline: all_disciplines
+profile_scope: institutional

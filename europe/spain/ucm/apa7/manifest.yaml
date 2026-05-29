@@ -11,3 +11,6 @@ country: "spain"
 institution: "Universidad Complutense de Madrid"
 city: "Madrid"
 institution_id: "ucm"
+academic_level: doctorado
+discipline: all_disciplines
+profile_scope: institutional

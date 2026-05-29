@@ -15,12 +15,24 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "argentina",
-      "institution": "uba",
+      "institution": "Universidad de Buenos Aires",
       "city": "Buenos Aires",
       "institution_id": "uba",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/ar_uba_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra lineamientos UBA Rectorado y Comisión de Doctorado",
+      "source_urls": [
+        "https://www.uba.ar/posgrado/",
+        "https://www.uba.ar/download/academicos/doctorales/reglamento.pdf"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "br_unicamp_abnt",
@@ -38,12 +50,16 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "brazil",
-      "institution": "unicamp",
+      "institution": "Universidade Estadual de Campinas",
       "city": "Campinas",
       "institution_id": "unicamp",
+      "academic_level": "maestria",
+      "discipline": "all_disciplines",
+      "profile_scope": "degree_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/br_unicamp_abnt.zip",
       "sha256": null,
-      "style_id": "abnt"
+      "style_id": "abnt",
+      "status": "experimental"
     },
     {
       "id": "br_usp_abnt",
@@ -61,12 +77,19 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "brazil",
-      "institution": "usp",
+      "institution": "Universidade de Sao Paulo",
       "city": "Sao Paulo",
       "institution_id": "usp",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/br_usp_abnt.zip",
       "sha256": null,
-      "style_id": "abnt"
+      "style_id": "abnt",
+      "status": "experimental"
     },
     {
       "id": "ca_mcgill_apa7",
@@ -83,12 +106,24 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "canada",
-      "institution": "mcgill",
+      "institution": "McGill University",
       "city": "Montreal",
       "institution_id": "mcgill",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/ca_mcgill_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra McGill GPS Thesis Guidelines",
+      "source_urls": [
+        "https://www.mcgill.ca/gps/thesis/thesis-guidelines",
+        "https://www.mcgill.ca/gps/thesis/thesis-submission"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "cl_uchile_apa7",
@@ -105,12 +140,24 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "chile",
-      "institution": "uchile",
+      "institution": "Universidad de Chile",
       "city": "Santiago",
       "institution_id": "uchile",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cl_uchile_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra Reglamentos de Postgrado UChile y VID",
+      "source_urls": [
+        "https://www.uchile.cl/postgrado",
+        "https://www.vid.uchile.cl/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_ipn_apa7",
@@ -129,12 +176,31 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "ipn",
+      "institution": "Instituto Politecnico Nacional",
       "city": "Ciudad de Mexico",
       "institution_id": "ipn",
+      "faculty": "Posgrado",
+      "department": "Sección de Estudios de Posgrado e Investigación",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "engineering",
+      "program_name": "SEPI / Posgrado e Investigacion",
+      "profile_scope": "program_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_ipn_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra lineamientos SIP-IPN y COFAA",
+      "source_urls": [
+        "https://www.sip.ipn.mx/posgrado/titulacion",
+        "https://www.ipn.mx/posgrado/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_tec_apa7",
@@ -153,12 +219,24 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "tec",
+      "institution": "Tecnologico de Monterrey",
       "city": "Monterrey",
       "institution_id": "tec",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_tec_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra Normas de Titulación Tec de Monterrey",
+      "source_urls": [
+        "https://serviciosescolares.tec.mx/PostgradoYEd/titulacion",
+        "https://normatec.itesm.mx/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_uam_azc_cbi",
@@ -169,9 +247,15 @@
       "license": "CC BY 4.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "uam",
+      "institution": "Universidad Autonoma Metropolitana",
       "city": "Ciudad de México",
+      "institution_id": "uam",
+      "faculty": "Unidad Azcapotzalco",
+      "department": "División de Ciencias Básicas e Ingeniería",
       "bibliography_style": "apa",
+      "discipline": "engineering",
+      "program_name": "CBI Azcapotzalco",
+      "profile_scope": "program_specific",
       "tags": [
         "uam",
         "mexico",
@@ -182,7 +266,16 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_azc_cbi.zip",
       "sha256": null,
-      "style_id": "azc-cbi"
+      "style_id": "azc-cbi",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-27",
+      "reviewed_by": "TeXisStudio Community — revisado contra lineamientos CBI UAM-Azc",
+      "source_urls": [
+        "https://cbi.azc.uam.mx/",
+        "https://cyadposgrados.azc.uam.mx/files/lineamientos/formato_maestria_doctorado.pdf",
+        "https://www.overleaf.com/latex/templates/plantilla-tesis-uam-azcapotzalco/bhxfwqdzhhdp"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_uam_azc_dcsh",
@@ -193,9 +286,15 @@
       "license": "CC BY 4.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "uam",
+      "institution": "Universidad Autonoma Metropolitana",
       "city": "Ciudad de México",
+      "institution_id": "uam",
+      "faculty": "Unidad Azcapotzalco",
+      "department": "División de Ciencias Sociales y Humanidades",
       "bibliography_style": "chicago-authordate",
+      "discipline": "social_sciences",
+      "program_name": "DCSH Azcapotzalco",
+      "profile_scope": "program_specific",
       "tags": [
         "uam",
         "mexico",
@@ -206,7 +305,15 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_azc_dcsh.zip",
       "sha256": null,
-      "style_id": "azc-dcsh"
+      "style_id": "azc-dcsh",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-27",
+      "reviewed_by": "TeXisStudio Community — revisado contra lineamientos DCSH UAM-Azc",
+      "source_urls": [
+        "https://dcsh.azc.uam.mx/",
+        "https://dcsh.azc.uam.mx/formatos/lineamientos_trabajo_terminal.pdf"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_uam_cua_dci",
@@ -217,9 +324,15 @@
       "license": "CC BY 4.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "uam",
+      "institution": "Universidad Autonoma Metropolitana",
       "city": "Ciudad de México",
+      "institution_id": "uam",
+      "faculty": "Unidad Cuajimalpa",
+      "department": "División de Ciencias de la Información",
       "bibliography_style": "apa",
+      "discipline": "computing",
+      "program_name": "DCI Cuajimalpa",
+      "profile_scope": "program_specific",
       "tags": [
         "uam",
         "mexico",
@@ -230,7 +343,15 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_cua_dci.zip",
       "sha256": null,
-      "style_id": "cua-dci"
+      "style_id": "cua-dci",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-27",
+      "reviewed_by": "TeXisStudio Community — revisado contra lineamientos DCI UAM-Cuajimalpa",
+      "source_urls": [
+        "https://dci.cua.uam.mx/",
+        "https://cua.uam.mx/lineamientos-tesis/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_uam_izt_cbi",
@@ -241,9 +362,15 @@
       "license": "CC BY 4.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "uam",
+      "institution": "Universidad Autonoma Metropolitana",
       "city": "Ciudad de México",
+      "institution_id": "uam",
+      "faculty": "Unidad Iztapalapa",
+      "department": "División de Ciencias Básicas e Ingeniería",
       "bibliography_style": "apa",
+      "discipline": "natural_sciences",
+      "program_name": "CBI Iztapalapa",
+      "profile_scope": "program_specific",
       "tags": [
         "uam",
         "mexico",
@@ -255,7 +382,16 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_izt_cbi.zip",
       "sha256": null,
-      "style_id": "izt-cbi"
+      "style_id": "izt-cbi",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-27",
+      "reviewed_by": "TeXisStudio Community — revisado contra lineamientos CBI UAM-Izt",
+      "source_urls": [
+        "https://cbi.izt.uam.mx/",
+        "https://cbi.izt.uam.mx/consejo_divisional/documentos/lineamientos/alumnos/posgrado/01_lp_lineamientos_particulares_del_sistema_de_posgrado_divisional.pdf",
+        "https://divcsh.izt.uam.mx/posgrado/psicologia_social/wp-content/uploads/2025/01/Lista-de-verificacion-previa-al-envio-de-la-ICR_Tesis-Doctoral.pdf"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_uam_izt_dcsh",
@@ -266,9 +402,15 @@
       "license": "CC BY 4.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "uam",
+      "institution": "Universidad Autonoma Metropolitana",
       "city": "Ciudad de México",
+      "institution_id": "uam",
+      "faculty": "Unidad Iztapalapa",
+      "department": "División de Ciencias Sociales y Humanidades",
       "bibliography_style": "chicago-authordate",
+      "discipline": "social_sciences",
+      "program_name": "CSH Iztapalapa",
+      "profile_scope": "program_specific",
       "tags": [
         "uam",
         "mexico",
@@ -279,7 +421,15 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_izt_dcsh.zip",
       "sha256": null,
-      "style_id": "izt-dcsh"
+      "style_id": "izt-dcsh",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-27",
+      "reviewed_by": "TeXisStudio Community — revisado contra lineamientos CSH UAM-Iztapalapa",
+      "source_urls": [
+        "https://csh.izt.uam.mx/",
+        "https://csh.izt.uam.mx/formatos/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_uam_xoc_dcbs",
@@ -290,9 +440,15 @@
       "license": "CC BY 4.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "uam",
+      "institution": "Universidad Autonoma Metropolitana",
       "city": "Ciudad de México",
+      "institution_id": "uam",
+      "faculty": "Unidad Xochimilco",
+      "department": "División de Ciencias Biológicas y de la Salud",
       "bibliography_style": "vancouver",
+      "discipline": "health_sciences",
+      "program_name": "DCBS Xochimilco",
+      "profile_scope": "program_specific",
       "tags": [
         "uam",
         "mexico",
@@ -304,7 +460,15 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_xoc_dcbs.zip",
       "sha256": null,
-      "style_id": "xoc-dcbs"
+      "style_id": "xoc-dcbs",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-27",
+      "reviewed_by": "TeXisStudio Community — revisado contra lineamientos DCBS UAM-Xochimilco",
+      "source_urls": [
+        "https://dcbs.xoc.uam.mx/",
+        "https://dcbs.xoc.uam.mx/posgrados/lineamientos/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_uanl_apa7",
@@ -322,35 +486,24 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "uanl",
+      "institution": "Universidad Autonoma de Nuevo Leon",
       "city": "Monterrey",
       "institution_id": "uanl",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uanl_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
-    },
-    {
-      "id": "mx_udg_apa7",
-      "name": "UdeG - Tesis (APA 7)",
-      "version": "1.0.0",
-      "author": "TeXisStudio Community",
-      "license": "CC-BY-4.0",
-      "description": "Tesis de la Universidad de Guadalajara, APA 7",
-      "tags": [
-        "udg",
-        "guadalajara",
-        "mexico",
-        "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra lineamientos Posgrado UANL",
+      "source_urls": [
+        "https://www.uanl.mx/posgrado/",
+        "https://www.uanl.mx/tramites/titulacion/"
       ],
-      "texis_min_version": "1.0.0",
-      "continent": "america",
-      "country": "mexico",
-      "institution": "udg",
-      "city": "Guadalajara",
-      "institution_id": "udg",
-      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_udg_apa7.zip",
-      "sha256": null,
-      "style_id": "apa7"
+      "review_interval_days": 365
     },
     {
       "id": "mx_unam_vancouver",
@@ -370,14 +523,27 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "unam",
+      "institution": "Universidad Nacional Autonoma de Mexico",
       "city": "Ciudad de Mexico",
       "institution_id": "unam",
+      "faculty": "Sistema de Posgrado",
+      "discipline": "health_sciences",
+      "program_name": "Medicina y Ciencias de la Salud",
+      "profile_scope": "discipline_specific",
       "verified_at": "2026-05-28",
       "ci_evidence": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_unam_vancouver.zip",
       "sha256": null,
-      "style_id": "vancouver"
+      "style_id": "vancouver",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_by": "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)",
+      "source_urls": [
+        "https://www.facmed.unam.mx/espec/titulacion.html",
+        "https://www.icmje.org/recommendations/",
+        "https://www.nlm.nih.gov/bsd/uniform_requirements.html"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "mx_unam_apa7",
@@ -396,14 +562,66 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "mexico",
-      "institution": "unam",
+      "institution": "Universidad Nacional Autonoma de Mexico",
       "city": "Ciudad de Mexico",
       "institution_id": "unam",
+      "faculty": "Sistema de Posgrado",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "all_disciplines",
+      "program_name": "Posgrado UNAM",
+      "profile_scope": "program_specific",
       "verified_at": "2026-05-28",
       "ci_evidence": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_unam_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_by": "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)",
+      "source_urls": [
+        "https://www.posgrado.unam.mx/doctorado/",
+        "https://www.dgae.unam.mx/tramites/titulacion/",
+        "https://www.unam.mx/acerca-de-la-unam/normatividad/"
+      ],
+      "review_interval_days": 365
+    },
+    {
+      "id": "mx_udg_apa7",
+      "name": "UdeG - Tesis (APA 7)",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Tesis de la Universidad de Guadalajara, APA 7",
+      "tags": [
+        "udg",
+        "guadalajara",
+        "mexico",
+        "apa7"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "america",
+      "country": "mexico",
+      "institution": "Universidad de Guadalajara",
+      "city": "Guadalajara",
+      "institution_id": "udg",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_udg_apa7.zip",
+      "sha256": null,
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra lineamientos Coordinación Académica UdeG",
+      "source_urls": [
+        "https://www.udg.mx/es/posgrado",
+        "https://www.udg.mx/es/educacion/oferta-educativa/posgrado/doctorado"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "us_harvard_apa7",
@@ -421,12 +639,26 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "usa",
-      "institution": "harvard",
+      "institution": "Harvard University",
       "city": "Cambridge, MA",
       "institution_id": "harvard",
+      "academic_level": "doctorado",
+      "discipline": "social_sciences",
+      "program_name": "Psychology and Social Sciences",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_harvard_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra Harvard GSAS Dissertation Specifications",
+      "source_urls": [
+        "https://gsas.harvard.edu/academics/dissertations/prepare-submit-dissertation",
+        "https://gsas.harvard.edu/sites/default/files/GSAS-Thesis-Specifications.pdf"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "us_harvard_chicago17",
@@ -444,12 +676,27 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "usa",
-      "institution": "harvard",
+      "institution": "Harvard University",
       "city": "Cambridge, MA",
       "institution_id": "harvard",
+      "academic_level": "doctorado",
+      "discipline": "humanities",
+      "program_name": "Humanities and Social Sciences",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_harvard_chicago17.zip",
       "sha256": null,
-      "style_id": "chicago17"
+      "style_id": "chicago17",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra Harvard GSAS Dissertation Specifications",
+      "source_urls": [
+        "https://gsas.harvard.edu/academics/dissertations/prepare-submit-dissertation",
+        "https://gsas.harvard.edu/sites/default/files/GSAS-Thesis-Specifications.pdf",
+        "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "us_mit_ieee",
@@ -469,12 +716,26 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "usa",
-      "institution": "mit",
+      "institution": "Massachusetts Institute of Technology",
       "city": "Cambridge, MA",
       "institution_id": "mit",
+      "academic_level": "doctorado",
+      "discipline": "engineering",
+      "program_name": "Engineering and Sciences",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_mit_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community — revisado contra MIT Thesis Preparation Guide",
+      "verified_at": "2026-05-27",
+      "verified_by": "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber + pdfinfo/pdffonts)",
+      "source_urls": [
+        "https://libraries.mit.edu/distinctive-collections/thesis-specs/",
+        "https://libguides.mit.edu/cite-write/thesis"
+      ],
+      "review_interval_days": 365,
+      "ci_evidence": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26521375446"
     },
     {
       "id": "us_stanford_ieee",
@@ -493,12 +754,26 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "usa",
-      "institution": "stanford",
+      "institution": "Stanford University",
       "city": "Stanford, CA",
       "institution_id": "stanford",
+      "academic_level": "doctorado",
+      "discipline": "engineering",
+      "program_name": "Engineering and Computer Science",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_stanford_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra Stanford ETD Formatting Guidelines",
+      "source_urls": [
+        "https://registrar.stanford.edu/current-students/graduate-students/dissertations-and-theses",
+        "https://registrar.stanford.edu/sites/default/files/dissertations-theses/formatting-guidelines.pdf"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "us_chicago_chicago17",
@@ -516,12 +791,27 @@
       "texis_min_version": "1.0.0",
       "continent": "america",
       "country": "usa",
-      "institution": "uchicago",
+      "institution": "University of Chicago",
       "city": "Chicago, IL",
       "institution_id": "uchicago",
+      "academic_level": "doctorado",
+      "discipline": "social_sciences",
+      "program_name": "Social Sciences",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_chicago_chicago17.zip",
       "sha256": null,
-      "style_id": "chicago17"
+      "style_id": "chicago17",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra UChicago Dissertation Submission Guidelines",
+      "source_urls": [
+        "https://grad.uchicago.edu/academic-affairs/deadlines-policies/dissertation-submission-guidelines/",
+        "https://grad.uchicago.edu/academic-affairs/dissertation-submission/",
+        "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "cn_pku_gbt",
@@ -539,12 +829,19 @@
       "texis_min_version": "1.0.0",
       "continent": "asia",
       "country": "china",
-      "institution": "pku",
+      "institution": "Peking University",
       "city": "Beijing",
       "institution_id": "pku",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cn_pku_gbt.zip",
       "sha256": null,
-      "style_id": "gbt7714"
+      "style_id": "gbt7714",
+      "status": "experimental"
     },
     {
       "id": "cn_tsinghua_gbt",
@@ -561,12 +858,19 @@
       "texis_min_version": "1.0.0",
       "continent": "asia",
       "country": "china",
-      "institution": "tsinghua",
+      "institution": "Tsinghua University",
       "city": "Beijing",
       "institution_id": "tsinghua",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cn_tsinghua_gbt.zip",
       "sha256": null,
-      "style_id": "gbt7714"
+      "style_id": "gbt7714",
+      "status": "experimental"
     },
     {
       "id": "in_iit_bombay_ieee",
@@ -585,12 +889,16 @@
       "texis_min_version": "1.0.0",
       "continent": "asia",
       "country": "india",
-      "institution": "iit_bombay",
+      "institution": "Indian Institute of Technology Bombay",
       "city": "Mumbai",
       "institution_id": "iit_bombay",
+      "discipline": "engineering",
+      "program_name": "Engineering",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/in_iit_bombay_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "experimental"
     },
     {
       "id": "jp_kyoto_apa7",
@@ -608,12 +916,16 @@
       "texis_min_version": "1.0.0",
       "continent": "asia",
       "country": "japan",
-      "institution": "kyoto",
+      "institution": "Kyoto University",
       "city": "Kyoto",
       "institution_id": "kyoto",
+      "discipline": "humanities",
+      "program_name": "Humanities and Social Sciences",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/jp_kyoto_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "experimental"
     },
     {
       "id": "jp_utokyo_ieee",
@@ -631,12 +943,20 @@
       "texis_min_version": "1.0.0",
       "continent": "asia",
       "country": "japan",
-      "institution": "utokyo",
+      "institution": "University of Tokyo",
       "city": "Tokyo",
       "institution_id": "utokyo",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "engineering",
+      "program_name": "Engineering and Sciences",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/jp_utokyo_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "experimental"
     },
     {
       "id": "sg_nus_ieee",
@@ -654,12 +974,20 @@
       "texis_min_version": "1.0.0",
       "continent": "asia",
       "country": "singapore",
-      "institution": "nus",
+      "institution": "National University of Singapore",
       "city": "Singapore",
       "institution_id": "nus",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "engineering",
+      "program_name": "Computing and Engineering",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/sg_nus_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "experimental"
     },
     {
       "id": "kr_snu_apa7",
@@ -676,12 +1004,15 @@
       "texis_min_version": "1.0.0",
       "continent": "asia",
       "country": "south_korea",
-      "institution": "snu",
+      "institution": "Seoul National University",
       "city": "Seoul",
       "institution_id": "snu",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/kr_snu_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "experimental"
     },
     {
       "id": "de_lmu_apa7",
@@ -699,12 +1030,25 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "germany",
-      "institution": "lmu",
+      "institution": "Ludwig-Maximilians-Universitaet Muenchen",
       "city": "Munich",
       "institution_id": "lmu",
+      "academic_level": "doctorado",
+      "discipline": "all_disciplines",
+      "profile_scope": "degree_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/de_lmu_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra LMU Graduate School Doctoral Guidelines",
+      "source_urls": [
+        "https://www.lmu.de/en/research/graduate-education/",
+        "https://www.gs.lmu.de/en/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "de_tum_ieee",
@@ -723,12 +1067,26 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "germany",
-      "institution": "tum",
+      "institution": "Technische Universitaet Muenchen",
       "city": "Munich",
       "institution_id": "tum",
+      "academic_level": "doctorado",
+      "discipline": "engineering",
+      "program_name": "Engineering",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/de_tum_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra TUM Graduate School Doctoral Procedure",
+      "source_urls": [
+        "https://www.gs.tum.de/en/graduate-school/doctoral-studies/doctoral-procedure/",
+        "https://www.gs.tum.de/en/graduate-school/doctoral-studies/thesis-submission/"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "it_sapienza_apa7",
@@ -746,12 +1104,16 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "italy",
-      "institution": "sapienza",
+      "institution": "Sapienza Universita di Roma",
       "city": "Rome",
       "institution_id": "sapienza",
+      "academic_level": "maestria",
+      "discipline": "all_disciplines",
+      "profile_scope": "degree_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/it_sapienza_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "experimental"
     },
     {
       "id": "nl_tudelft_ieee",
@@ -769,12 +1131,29 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "netherlands",
-      "institution": "tudelft",
+      "institution": "Delft University of Technology",
       "city": "Delft",
       "institution_id": "tudelft",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "engineering",
+      "program_name": "Engineering and Technology",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/nl_tudelft_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra TU Delft Promotiereglement",
+      "source_urls": [
+        "https://www.tudelft.nl/en/education/phd",
+        "https://www.tudelft.nl/over-tu-delft/strategie/integriteitsbeleid/wetenschappelijke-integriteit/promoties"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "es_ucm_apa7",
@@ -792,12 +1171,25 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "spain",
-      "institution": "ucm",
+      "institution": "Universidad Complutense de Madrid",
       "city": "Madrid",
       "institution_id": "ucm",
+      "academic_level": "doctorado",
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/es_ucm_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra Reglamento de Doctorado UCM y EDCM",
+      "source_urls": [
+        "https://www.ucm.es/posgrado-doctorado",
+        "https://www.ucm.es/escueladoctorado/reglamento-doctorado"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "se_kth_ieee",
@@ -815,12 +1207,29 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "sweden",
-      "institution": "kth",
+      "institution": "KTH Royal Institute of Technology",
       "city": "Stockholm",
       "institution_id": "kth",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "engineering",
+      "program_name": "Engineering and Technology",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/se_kth_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra KTH Doctoral Programme Regulations",
+      "source_urls": [
+        "https://www.kth.se/en/studies/phd/graduating/licentiate-and-doctoral-thesis",
+        "https://www.kth.se/en/studies/phd/regulations"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "uk_cambridge_apa7",
@@ -842,9 +1251,13 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "uk",
-      "institution": "cambridge",
+      "institution": "University of Cambridge",
       "institution_id": "cambridge",
       "city": "Cambridge",
+      "academic_level": "doctorado",
+      "discipline": "social_sciences",
+      "program_name": "Social Sciences, Psychology, and Education",
+      "profile_scope": "discipline_specific",
       "verified_at": "2026-05-28",
       "ci_evidence": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667",
       "source_urls": [
@@ -876,7 +1289,10 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/uk_cambridge_apa7.zip",
       "sha256": null,
-      "style_id": "apa7"
+      "style_id": "apa7",
+      "reviewed_at": "2026-05-24",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_by": "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)"
     },
     {
       "id": "uk_cambridge_ieee",
@@ -894,12 +1310,27 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "uk",
-      "institution": "cambridge",
+      "institution": "University of Cambridge",
       "city": "Cambridge",
       "institution_id": "cambridge",
+      "academic_level": "doctorado",
+      "discipline": "engineering",
+      "program_name": "Engineering and Natural Sciences",
+      "profile_scope": "discipline_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/uk_cambridge_ieee.zip",
       "sha256": null,
-      "style_id": "ieee"
+      "style_id": "ieee",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — revisado contra Cambridge Graduate Office Format Guidelines",
+      "source_urls": [
+        "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/format-your-thesis",
+        "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis",
+        "https://www.cambridgestudents.cam.ac.uk/your-course/graduate-study/write-your-thesis/thesis-submission"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "uk_oxford_mhra",
@@ -921,9 +1352,13 @@
       "texis_min_version": "1.0.0",
       "continent": "europe",
       "country": "uk",
-      "institution": "oxford",
+      "institution": "University of Oxford",
       "institution_id": "oxford",
       "city": "Oxford",
+      "academic_level": "doctorado",
+      "discipline": "humanities",
+      "program_name": "DPhil in Humanities",
+      "profile_scope": "discipline_specific",
       "verified_at": "2026-05-24",
       "source_urls": [
         "https://www.ox.ac.uk/students/academic/guidance/graduate/research/status/thesissubmission",
@@ -954,7 +1389,43 @@
       ],
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/uk_oxford_mhra.zip",
       "sha256": null,
-      "style_id": "mhra"
+      "style_id": "mhra",
+      "reviewed_at": "2026-05-24",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_by": "TeXisStudio Community — revisado contra Oxford University Examination Regulations y Graduate School guidelines"
+    },
+    {
+      "id": "generic_posdoctorado",
+      "name": "Informe Posdoctoral Genérico",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Perfil genérico para informes, memorias y monografías de trabajo posdoctoral",
+      "tags": [
+        "posdoctorado",
+        "generico",
+        "apa",
+        "investigacion"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "generic",
+      "country": "generic",
+      "institution_id": "generic",
+      "academic_level": "posdoctorado",
+      "discipline": "all_disciplines",
+      "profile_scope": "degree_specific",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_posdoctorado.zip",
+      "sha256": null,
+      "institution": "Perfil Generico",
+      "style_id": "posdoctorado",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-28",
+      "reviewed_by": "TeXisStudio Community",
+      "source_urls": [
+        "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf",
+        "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "generic_tesina",
@@ -972,10 +1443,22 @@
       "continent": "generic",
       "country": "generic",
       "institution_id": "generic",
+      "academic_level": "licenciatura",
+      "discipline": "all_disciplines",
+      "profile_scope": "degree_specific",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_tesina.zip",
       "sha256": null,
-      "institution": "generic",
-      "style_id": "tesina"
+      "institution": "Perfil Generico",
+      "style_id": "tesina",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas",
+      "source_urls": [
+        "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
+      ],
+      "review_interval_days": 365
     },
     {
       "id": "generic_thesis",
@@ -993,10 +1476,59 @@
       "continent": "generic",
       "country": "generic",
       "institution_id": "generic",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
+      "discipline": "all_disciplines",
+      "profile_scope": "institutional",
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_thesis.zip",
       "sha256": null,
-      "institution": "generic",
-      "style_id": "thesis"
+      "institution": "Perfil Generico",
+      "style_id": "thesis",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-25",
+      "reviewed_by": "TeXisStudio Community",
+      "verified_at": "2026-05-25",
+      "verified_by": "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas generales",
+      "source_urls": [
+        "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf",
+        "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+      ],
+      "review_interval_days": 365
+    },
+    {
+      "id": "generic_especialidad",
+      "name": "Trabajo de Especialidad Genérico",
+      "version": "1.0.0",
+      "author": "TeXisStudio Community",
+      "license": "CC-BY-4.0",
+      "description": "Perfil genérico para trabajos de especialidad y proyectos aplicados de posgrado profesional",
+      "tags": [
+        "especialidad",
+        "generico",
+        "apa",
+        "posgrado"
+      ],
+      "texis_min_version": "1.0.0",
+      "continent": "generic",
+      "country": "generic",
+      "institution_id": "generic",
+      "academic_level": "especialidad",
+      "discipline": "all_disciplines",
+      "profile_scope": "degree_specific",
+      "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_especialidad.zip",
+      "sha256": null,
+      "institution": "Perfil Generico",
+      "style_id": "especialidad",
+      "status": "reviewed",
+      "reviewed_at": "2026-05-28",
+      "reviewed_by": "TeXisStudio Community",
+      "source_urls": [
+        "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf",
+        "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+      ],
+      "review_interval_days": 365
     }
   ],
   "citation_styles": [

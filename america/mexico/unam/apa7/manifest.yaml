@@ -12,5 +12,10 @@ country: "mexico"
 institution: "Universidad Nacional Autonoma de Mexico"
 city: "Ciudad de Mexico"
 institution_id: "unam"
+faculty: "Sistema de Posgrado"
+target_levels: ["maestria", "doctorado"]
+discipline: all_disciplines
+program_name: "Posgrado UNAM"
+profile_scope: program_specific
 verified_at: "2026-05-28"
 ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"

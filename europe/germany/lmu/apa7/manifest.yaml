@@ -11,3 +11,6 @@ country: "germany"
 institution: "Ludwig-Maximilians-Universitaet Muenchen"
 city: "Munich"
 institution_id: "lmu"
+academic_level: doctorado
+discipline: all_disciplines
+profile_scope: degree_specific

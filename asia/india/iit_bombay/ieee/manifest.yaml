@@ -11,3 +11,6 @@ country: "india"
 institution: "Indian Institute of Technology Bombay"
 city: "Mumbai"
 institution_id: "iit_bombay"
+discipline: engineering
+program_name: "Engineering"
+profile_scope: discipline_specific

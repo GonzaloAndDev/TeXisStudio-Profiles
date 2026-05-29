@@ -11,3 +11,7 @@ country: "sweden"
 institution: "KTH Royal Institute of Technology"
 city: "Stockholm"
 institution_id: "kth"
+target_levels: ["maestria", "doctorado"]
+discipline: engineering
+program_name: "Engineering and Technology"
+profile_scope: discipline_specific

@@ -11,3 +11,7 @@ country: "usa"
 institution: "Harvard University"
 city: "Cambridge, MA"
 institution_id: "harvard"
+academic_level: doctorado
+discipline: social_sciences
+program_name: "Psychology and Social Sciences"
+profile_scope: discipline_specific

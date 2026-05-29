@@ -11,3 +11,7 @@ country: "singapore"
 institution: "National University of Singapore"
 city: "Singapore"
 institution_id: "nus"
+target_levels: ["maestria", "doctorado"]
+discipline: engineering
+program_name: "Computing and Engineering"
+profile_scope: discipline_specific

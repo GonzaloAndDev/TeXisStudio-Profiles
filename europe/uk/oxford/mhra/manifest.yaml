@@ -22,6 +22,10 @@ country: uk
 institution: "University of Oxford"
 institution_id: oxford
 city: "Oxford"
+academic_level: doctorado
+discipline: humanities
+program_name: "DPhil in Humanities"
+profile_scope: discipline_specific
 verified_at: "2026-05-24"
 source_urls:
   - "https://www.ox.ac.uk/students/academic/guidance/graduate/research/status/thesissubmission"

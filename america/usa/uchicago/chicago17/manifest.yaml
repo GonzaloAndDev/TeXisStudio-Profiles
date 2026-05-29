@@ -11,3 +11,7 @@ country: "usa"
 institution: "University of Chicago"
 city: "Chicago, IL"
 institution_id: "uchicago"
+academic_level: doctorado
+discipline: social_sciences
+program_name: "Social Sciences"
+profile_scope: discipline_specific

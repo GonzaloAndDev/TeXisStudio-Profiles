@@ -22,29 +22,6 @@ def sha256_file(path: str) -> str:
 
 catalog: dict = {"profiles": [], "citation_styles": [], "institutions": {}}
 
-# Perfiles a profundidad 4: continent/country/institution/style_id/
-for root, dirs, files in os.walk("."):
-    dirs.sort()
-    if "manifest.yaml" in files and "profile.yaml" in files:
-        norm = root.replace("\\", "/").lstrip("./")
-        parts = [p for p in norm.split("/") if p]
-        if len(parts) == 4:
-            continent, country, institution, style_id = parts
-            with open(os.path.join(root, "manifest.yaml"), encoding="utf-8") as f:
-                m = yaml.safe_load(f)
-            pid = m.get("id", style_id)
-            zip_path = f"dist/{pid}.zip"
-            m["download_url"] = (
-                "https://github.com/GonzaloAndDev/TeXisStudio-Profiles"
-                f"/releases/latest/download/{pid}.zip"
-            )
-            m["sha256"] = sha256_file(zip_path) if os.path.exists(zip_path) else None
-            m["continent"] = continent
-            m["country"] = country
-            m["institution"] = institution
-            m["style_id"] = style_id
-            catalog["profiles"].append(m)
-
 # Metadata de instituciones (_institution.yaml)
 for root, dirs, files in os.walk("."):
     dirs.sort()
@@ -56,6 +33,44 @@ for root, dirs, files in os.walk("."):
             with open(os.path.join(root, "_institution.yaml"), encoding="utf-8") as f:
                 inst_data = yaml.safe_load(f)
             catalog["institutions"][inst_key] = inst_data
+
+# Perfiles a profundidad 4: continent/country/institution/style_id/
+for root, dirs, files in os.walk("."):
+    dirs.sort()
+    if "manifest.yaml" in files and "profile.yaml" in files:
+        norm = root.replace("\\", "/").lstrip("./")
+        parts = [p for p in norm.split("/") if p]
+        if len(parts) == 4:
+            continent, country, institution, style_id = parts
+            inst_key = "/".join([continent, country, institution])
+            inst_data = catalog["institutions"].get(inst_key, {})
+            with open(os.path.join(root, "manifest.yaml"), encoding="utf-8") as f:
+                m = yaml.safe_load(f)
+            with open(os.path.join(root, "profile.yaml"), encoding="utf-8") as f:
+                p = yaml.safe_load(f)
+            pid = m.get("id", style_id)
+            zip_path = f"dist/{pid}.zip"
+            m["download_url"] = (
+                "https://github.com/GonzaloAndDev/TeXisStudio-Profiles"
+                f"/releases/latest/download/{pid}.zip"
+            )
+            m["sha256"] = sha256_file(zip_path) if os.path.exists(zip_path) else None
+            m["continent"] = continent
+            m["country"] = country
+            m["institution_id"] = m.get("institution_id", institution)
+            manifest_institution = m.get("institution")
+            if not manifest_institution or manifest_institution == institution:
+                m["institution"] = inst_data.get("name", manifest_institution or institution)
+            else:
+                m["institution"] = manifest_institution
+            m["style_id"] = m.get("style_id", style_id)
+            if not m.get("status") and p.get("status"):
+                m["status"] = p.get("status")
+            verification = p.get("verification") or {}
+            for key in ["reviewed_at", "reviewed_by", "verified_at", "verified_by", "source_urls", "review_interval_days", "ci_evidence"]:
+                if key not in m and key in verification:
+                    m[key] = verification[key]
+            catalog["profiles"].append(m)
 
 # Estilos bibliograficos
 styles_dir = "citation_styles"

@@ -11,3 +11,6 @@ country: "china"
 institution: "Tsinghua University"
 city: "Beijing"
 institution_id: "tsinghua"
+target_levels: ["maestria", "doctorado"]
+discipline: all_disciplines
+profile_scope: institutional

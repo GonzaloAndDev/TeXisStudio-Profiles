@@ -11,3 +11,7 @@ country: "japan"
 institution: "University of Tokyo"
 city: "Tokyo"
 institution_id: "utokyo"
+target_levels: ["maestria", "doctorado"]
+discipline: engineering
+program_name: "Engineering and Sciences"
+profile_scope: discipline_specific

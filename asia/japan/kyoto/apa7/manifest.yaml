@@ -11,3 +11,6 @@ country: "japan"
 institution: "Kyoto University"
 city: "Kyoto"
 institution_id: "kyoto"
+discipline: humanities
+program_name: "Humanities and Social Sciences"
+profile_scope: discipline_specific

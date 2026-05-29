@@ -1,0 +1,14 @@
+id: generic_posdoctorado
+name: "Informe Posdoctoral Genérico"
+version: "1.0.0"
+author: "TeXisStudio Community"
+license: "CC-BY-4.0"
+description: "Perfil genérico para informes, memorias y monografías de trabajo posdoctoral"
+tags: [posdoctorado, generico, apa, investigacion]
+texis_min_version: "1.0.0"
+continent: "generic"
+country: "generic"
+institution_id: "generic"
+academic_level: posdoctorado
+discipline: all_disciplines
+profile_scope: degree_specific

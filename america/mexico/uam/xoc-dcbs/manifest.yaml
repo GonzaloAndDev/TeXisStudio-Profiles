@@ -6,9 +6,15 @@ version: "1.0.0"
 license: "CC BY 4.0"
 continent: america
 country: mexico
-institution: uam
+institution: "Universidad Autonoma Metropolitana"
 city: "Ciudad de México"
+institution_id: uam
+faculty: "Unidad Xochimilco"
+department: "División de Ciencias Biológicas y de la Salud"
 bibliography_style: vancouver
+discipline: health_sciences
+program_name: "DCBS Xochimilco"
+profile_scope: program_specific
 tags:
   - uam
   - mexico

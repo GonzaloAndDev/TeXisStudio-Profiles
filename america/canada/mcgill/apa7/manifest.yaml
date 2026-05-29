@@ -11,3 +11,5 @@ country: "canada"
 institution: "McGill University"
 city: "Montreal"
 institution_id: "mcgill"
+discipline: all_disciplines
+profile_scope: institutional

@@ -11,3 +11,5 @@ country: "south_korea"
 institution: "Seoul National University"
 city: "Seoul"
 institution_id: "snu"
+discipline: all_disciplines
+profile_scope: institutional

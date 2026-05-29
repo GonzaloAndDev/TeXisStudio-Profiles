@@ -11,3 +11,6 @@ country: "italy"
 institution: "Sapienza Universita di Roma"
 city: "Rome"
 institution_id: "sapienza"
+academic_level: maestria
+discipline: all_disciplines
+profile_scope: degree_specific

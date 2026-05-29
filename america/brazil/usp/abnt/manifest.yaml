@@ -11,3 +11,6 @@ country: "brazil"
 institution: "Universidade de Sao Paulo"
 city: "Sao Paulo"
 institution_id: "usp"
+target_levels: ["maestria", "doctorado"]
+discipline: all_disciplines
+profile_scope: institutional

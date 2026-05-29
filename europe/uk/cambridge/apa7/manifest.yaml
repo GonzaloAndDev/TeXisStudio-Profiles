@@ -22,6 +22,10 @@ country: uk
 institution: "University of Cambridge"
 institution_id: cambridge
 city: "Cambridge"
+academic_level: doctorado
+discipline: social_sciences
+program_name: "Social Sciences, Psychology, and Education"
+profile_scope: discipline_specific
 verified_at: "2026-05-28"
 ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"
 source_urls:

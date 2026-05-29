@@ -6,9 +6,15 @@ version: "1.0.0"
 license: "CC BY 4.0"
 continent: america
 country: mexico
-institution: uam
+institution: "Universidad Autonoma Metropolitana"
 city: "Ciudad de México"
+institution_id: uam
+faculty: "Unidad Azcapotzalco"
+department: "División de Ciencias Básicas e Ingeniería"
 bibliography_style: apa
+discipline: engineering
+program_name: "CBI Azcapotzalco"
+profile_scope: program_specific
 tags:
   - uam
   - mexico

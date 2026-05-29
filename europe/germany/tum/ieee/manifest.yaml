@@ -11,3 +11,7 @@ country: "germany"
 institution: "Technische Universitaet Muenchen"
 city: "Munich"
 institution_id: "tum"
+academic_level: doctorado
+discipline: engineering
+program_name: "Engineering"
+profile_scope: discipline_specific

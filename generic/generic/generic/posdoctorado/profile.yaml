@@ -1,0 +1,145 @@
+schema_version: "1.0.0"
+id: generic_posdoctorado
+name: "Informe Posdoctoral Genérico"
+status: reviewed
+latex_engine: xelatex
+compiler: latexmk
+bibliography_backend: biber
+bibliography_style: apa
+
+verification:
+  reviewed_at: "2026-05-28"
+  reviewed_by: "TeXisStudio Community"
+  source_urls:
+    - "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
+    - "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+  review_interval_days: 365
+
+document_class:
+  name: book
+  options:
+    - 12pt
+    - letterpaper
+    - oneside
+
+page_layout:
+  paper: letterpaper
+  margins:
+    top: 25mm
+    bottom: 25mm
+    left: 30mm
+    right: 20mm
+  line_spacing: 1.5
+
+max_abstract_words: 350
+
+packages: []
+
+sections:
+  - id: portada
+    element_id: cover
+    placement: front_matter
+    required: true
+    title: "Portada"
+    guidance: |
+      Incluye institución anfitriona, proyecto o estancia posdoctoral,
+      título del informe o monografía, investigador responsable, mentor
+      o supervisor, sede y fecha.
+
+  - id: resumen
+    element_id: abstract
+    placement: front_matter
+    required: true
+    title: "Resumen"
+    guidance: |
+      Sintetiza la agenda posdoctoral, objetivos, enfoque metodológico,
+      contribuciones, resultados y proyección futura. Longitud sugerida:
+      200–350 palabras.
+
+  - id: abstract_ingles
+    element_id: abstract_en
+    placement: front_matter
+    required: false
+    title: "Abstract"
+    guidance: |
+      Recomendado cuando el informe posdoctoral circulará internacionalmente
+      o se reportará a una convocatoria externa.
+
+  - id: indice
+    element_id: toc
+    placement: front_matter
+    required: true
+    title: "Índice"
+    guidance: |
+      Generado automáticamente. Revisa la consistencia final de la paginación.
+
+  - id: introduccion
+    element_id: introduction
+    placement: body
+    required: true
+    title: "Introducción"
+    guidance: |
+      Presenta el campo de investigación, la agenda del proyecto y el
+      posicionamiento del trabajo dentro de la línea posdoctoral.
+
+  - id: estado_arte
+    element_id: literature_review
+    placement: body
+    required: true
+    title: "Estado del Arte"
+    guidance: |
+      Desarrolla una revisión crítica del estado actual del campo,
+      identifica vacíos y justifica la aportación del trabajo posdoctoral.
+
+  - id: metodologia
+    element_id: methodology
+    placement: body
+    required: true
+    title: "Metodología"
+    guidance: |
+      Explica diseño, corpus o datos, procedimientos, protocolos, herramientas,
+      reproducibilidad y consideraciones éticas según corresponda.
+
+  - id: resultados
+    element_id: results
+    placement: body
+    required: true
+    title: "Resultados"
+    guidance: |
+      Presenta resultados, productos académicos, prototipos, artículos,
+      datasets o avances verificables obtenidos durante la estancia.
+
+  - id: discusion
+    element_id: discussion
+    placement: body
+    required: true
+    title: "Discusión"
+    guidance: |
+      Interpreta el alcance de los resultados, su novedad, limitaciones,
+      y relación con el estado del arte.
+
+  - id: conclusiones
+    element_id: conclusions
+    placement: body
+    required: true
+    title: "Conclusiones"
+    guidance: |
+      Resume las aportaciones del trabajo posdoctoral y su impacto
+      científico, metodológico o aplicado.
+
+  - id: referencias
+    element_id: bibliography
+    placement: back_matter
+    required: true
+    title: "Referencias"
+    guidance: |
+      Lista final de referencias citadas, en formato APA 7.
+
+  - id: anexos
+    element_id: appendix
+    placement: back_matter
+    required: false
+    title: "Anexos"
+    guidance: |
+      Evidencia complementaria: instrumentos, tablas extendidas, protocolos,
+      productos, documentación técnica o material suplementario.

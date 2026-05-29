@@ -11,3 +11,6 @@ country: "brazil"
 institution: "Universidade Estadual de Campinas"
 city: "Campinas"
 institution_id: "unicamp"
+academic_level: maestria
+discipline: all_disciplines
+profile_scope: degree_specific

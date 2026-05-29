@@ -11,3 +11,9 @@ country: "mexico"
 institution: "Instituto Politecnico Nacional"
 city: "Ciudad de Mexico"
 institution_id: "ipn"
+faculty: "Posgrado"
+department: "Sección de Estudios de Posgrado e Investigación"
+target_levels: ["maestria", "doctorado"]
+discipline: engineering
+program_name: "SEPI / Posgrado e Investigacion"
+profile_scope: program_specific

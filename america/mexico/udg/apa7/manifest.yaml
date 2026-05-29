@@ -11,3 +11,5 @@ country: "mexico"
 institution: "Universidad de Guadalajara"
 city: "Guadalajara"
 institution_id: "udg"
+discipline: all_disciplines
+profile_scope: institutional

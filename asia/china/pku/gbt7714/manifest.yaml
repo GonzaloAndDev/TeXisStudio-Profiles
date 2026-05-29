@@ -11,3 +11,6 @@ country: "china"
 institution: "Peking University"
 city: "Beijing"
 institution_id: "pku"
+target_levels: ["maestria", "doctorado"]
+discipline: all_disciplines
+profile_scope: institutional

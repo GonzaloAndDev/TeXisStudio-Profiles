@@ -11,3 +11,7 @@ country: "uk"
 institution: "University of Cambridge"
 city: "Cambridge"
 institution_id: "cambridge"
+academic_level: doctorado
+discipline: engineering
+program_name: "Engineering and Natural Sciences"
+profile_scope: discipline_specific

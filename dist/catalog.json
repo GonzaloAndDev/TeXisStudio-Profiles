@@ -216,7 +216,7 @@
       "program_name": "SEPI / Posgrado e Investigacion",
       "profile_scope": "program_specific",
       "novice_safe": true,
-      "sample_available": false,
+      "sample_available": true,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_ipn_apa7.zip",
       "sha256": null,
       "style_id": "apa7",

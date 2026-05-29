@@ -4,6 +4,7 @@ version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 description: "Kyoto University thesis for humanities and social sciences, APA 7"
+target_levels: ["maestria", "doctorado"]
 tags: [kyoto, japan, apa7, humanities]
 texis_min_version: "1.0.0"
 continent: "asia"
@@ -14,3 +15,5 @@ institution_id: "kyoto"
 discipline: humanities
 program_name: "Humanities and Social Sciences"
 profile_scope: discipline_specific
+novice_safe: false
+sample_available: false

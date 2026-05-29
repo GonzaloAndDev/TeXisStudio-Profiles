@@ -17,3 +17,5 @@ target_levels: ["maestria", "doctorado"]
 discipline: engineering
 program_name: "SEPI / Posgrado e Investigacion"
 profile_scope: program_specific
+novice_safe: true
+sample_available: false

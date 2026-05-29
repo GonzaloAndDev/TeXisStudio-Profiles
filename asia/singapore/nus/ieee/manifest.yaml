@@ -15,3 +15,5 @@ target_levels: ["maestria", "doctorado"]
 discipline: engineering
 program_name: "Computing and Engineering"
 profile_scope: discipline_specific
+novice_safe: false
+sample_available: false

@@ -12,6 +12,9 @@ institution: "University of Cambridge"
 city: "Cambridge"
 institution_id: "cambridge"
 academic_level: doctorado
+target_levels: ["doctorado"]
 discipline: engineering
 program_name: "Engineering and Natural Sciences"
 profile_scope: discipline_specific
+novice_safe: true
+sample_available: false

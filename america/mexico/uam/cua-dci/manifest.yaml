@@ -15,6 +15,7 @@ bibliography_style: apa
 discipline: computing
 program_name: "DCI Cuajimalpa"
 profile_scope: program_specific
+target_levels: ["licenciatura", "maestria"]
 tags:
   - uam
   - mexico
@@ -22,3 +23,5 @@ tags:
   - tecnologias-informacion
   - cuajimalpa
   - dci
+novice_safe: true
+sample_available: false

@@ -4,6 +4,8 @@ version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 status: verified
+novice_safe: true
+sample_available: true
 description: "Tesis de posgrado UNAM conforme a lineamientos DGAE, estilo APA 7"
 tags: [unam, mexico, apa7, posgrado]
 texis_min_version: "1.0.0"

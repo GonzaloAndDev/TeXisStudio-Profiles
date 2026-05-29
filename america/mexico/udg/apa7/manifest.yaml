@@ -4,6 +4,7 @@ version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 description: "Tesis de la Universidad de Guadalajara, APA 7"
+target_levels: ["licenciatura", "maestria", "doctorado"]
 tags: [udg, guadalajara, mexico, apa7]
 texis_min_version: "1.0.0"
 continent: "america"
@@ -13,3 +14,5 @@ city: "Guadalajara"
 institution_id: "udg"
 discipline: all_disciplines
 profile_scope: institutional
+novice_safe: true
+sample_available: false

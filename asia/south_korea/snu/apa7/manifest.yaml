@@ -4,6 +4,7 @@ version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 description: "Seoul National University thesis, APA 7 or IEEE common"
+target_levels: ["maestria", "doctorado"]
 tags: [snu, korea, apa7]
 texis_min_version: "1.0.0"
 continent: "asia"
@@ -13,3 +14,5 @@ city: "Seoul"
 institution_id: "snu"
 discipline: all_disciplines
 profile_scope: institutional
+novice_safe: false
+sample_available: false

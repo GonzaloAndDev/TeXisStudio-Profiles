@@ -12,5 +12,8 @@ institution: "Sapienza Universita di Roma"
 city: "Rome"
 institution_id: "sapienza"
 academic_level: maestria
+target_levels: ["maestria"]
 discipline: all_disciplines
 profile_scope: degree_specific
+novice_safe: false
+sample_available: false

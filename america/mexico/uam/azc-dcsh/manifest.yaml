@@ -15,6 +15,7 @@ bibliography_style: chicago-authordate
 discipline: social_sciences
 program_name: "DCSH Azcapotzalco"
 profile_scope: program_specific
+target_levels: ["licenciatura", "maestria"]
 tags:
   - uam
   - mexico
@@ -22,3 +23,5 @@ tags:
   - humanidades
   - azcapotzalco
   - dcsh
+novice_safe: true
+sample_available: false

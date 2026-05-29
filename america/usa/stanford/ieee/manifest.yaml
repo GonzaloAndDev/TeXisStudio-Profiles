@@ -12,6 +12,9 @@ institution: "Stanford University"
 city: "Stanford, CA"
 institution_id: "stanford"
 academic_level: doctorado
+target_levels: ["maestria", "doctorado"]
 discipline: engineering
 program_name: "Engineering and Computer Science"
 profile_scope: discipline_specific
+novice_safe: true
+sample_available: false

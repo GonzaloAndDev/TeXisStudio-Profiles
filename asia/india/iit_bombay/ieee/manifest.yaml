@@ -4,6 +4,7 @@ version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 description: "Indian Institute of Technology Bombay thesis for engineering, IEEE"
+target_levels: ["maestria", "doctorado"]
 tags: [iit, bombay, india, ieee, engineering]
 texis_min_version: "1.0.0"
 continent: "asia"
@@ -14,3 +15,5 @@ institution_id: "iit_bombay"
 discipline: engineering
 program_name: "Engineering"
 profile_scope: discipline_specific
+novice_safe: false
+sample_available: false

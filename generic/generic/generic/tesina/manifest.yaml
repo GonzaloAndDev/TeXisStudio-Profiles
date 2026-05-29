@@ -10,5 +10,8 @@ continent: "generic"
 country: "generic"
 institution_id: "generic"
 academic_level: licenciatura
+target_levels: ["licenciatura"]
 discipline: all_disciplines
 profile_scope: degree_specific
+novice_safe: true
+sample_available: false

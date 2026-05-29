@@ -5,6 +5,8 @@ author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 description: "MIT thesis for engineering and sciences, IEEE citation style, DSpace submission"
 status: verified
+novice_safe: true
+sample_available: true
 tags: [mit, usa, ieee, engineering, sciences]
 texis_min_version: "1.0.0"
 continent: "america"
@@ -13,6 +15,7 @@ institution: "Massachusetts Institute of Technology"
 city: "Cambridge, MA"
 institution_id: "mit"
 academic_level: doctorado
+target_levels: ["doctorado"]
 discipline: engineering
 program_name: "Engineering and Sciences"
 profile_scope: discipline_specific

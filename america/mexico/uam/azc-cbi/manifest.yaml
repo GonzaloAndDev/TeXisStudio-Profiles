@@ -15,6 +15,7 @@ bibliography_style: apa
 discipline: engineering
 program_name: "CBI Azcapotzalco"
 profile_scope: program_specific
+target_levels: ["licenciatura", "maestria"]
 tags:
   - uam
   - mexico
@@ -22,3 +23,5 @@ tags:
   - computacion
   - azcapotzalco
   - cbi
+novice_safe: true
+sample_available: false

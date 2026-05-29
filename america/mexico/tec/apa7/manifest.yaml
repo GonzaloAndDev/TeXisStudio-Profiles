@@ -4,6 +4,7 @@ version: "1.0.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 description: "Tesis del Instituto Tecnologico y de Estudios Superiores de Monterrey, APA 7"
+target_levels: ["licenciatura", "maestria", "doctorado"]
 tags: [tec, itesm, monterrey, mexico, apa7]
 texis_min_version: "1.0.0"
 continent: "america"
@@ -13,3 +14,5 @@ city: "Monterrey"
 institution_id: "tec"
 discipline: all_disciplines
 profile_scope: institutional
+novice_safe: true
+sample_available: false

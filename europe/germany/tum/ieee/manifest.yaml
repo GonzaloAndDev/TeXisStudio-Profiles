@@ -12,6 +12,9 @@ institution: "Technische Universitaet Muenchen"
 city: "Munich"
 institution_id: "tum"
 academic_level: doctorado
+target_levels: ["maestria", "doctorado"]
 discipline: engineering
 program_name: "Engineering"
 profile_scope: discipline_specific
+novice_safe: true
+sample_available: false

@@ -15,6 +15,7 @@ bibliography_style: apa
 discipline: natural_sciences
 program_name: "CBI Iztapalapa"
 profile_scope: program_specific
+target_levels: ["licenciatura", "maestria", "doctorado"]
 tags:
   - uam
   - mexico
@@ -23,3 +24,5 @@ tags:
   - quimica
   - iztapalapa
   - cbi
+novice_safe: true
+sample_available: true

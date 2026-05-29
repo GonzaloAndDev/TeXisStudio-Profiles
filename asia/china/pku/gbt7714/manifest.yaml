@@ -14,3 +14,5 @@ institution_id: "pku"
 target_levels: ["maestria", "doctorado"]
 discipline: all_disciplines
 profile_scope: institutional
+novice_safe: false
+sample_available: false

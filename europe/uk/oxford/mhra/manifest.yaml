@@ -4,6 +4,8 @@ version: "1.1.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 status: reviewed
+novice_safe: true
+sample_available: false
 description: >
   University of Oxford DPhil thesis for humanities. Follows Oxford Examination Regulations:
   A4, 40mm left margin (binding), double-spacing, 12pt, MHRA 3rd edition via Biber.
@@ -23,6 +25,7 @@ institution: "University of Oxford"
 institution_id: oxford
 city: "Oxford"
 academic_level: doctorado
+target_levels: ["doctorado"]
 discipline: humanities
 program_name: "DPhil in Humanities"
 profile_scope: discipline_specific

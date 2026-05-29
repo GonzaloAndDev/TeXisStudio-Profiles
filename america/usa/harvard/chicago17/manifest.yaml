@@ -12,6 +12,9 @@ institution: "Harvard University"
 city: "Cambridge, MA"
 institution_id: "harvard"
 academic_level: doctorado
+target_levels: ["doctorado"]
 discipline: humanities
 program_name: "Humanities and Social Sciences"
 profile_scope: discipline_specific
+novice_safe: true
+sample_available: false

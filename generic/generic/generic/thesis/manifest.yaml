@@ -12,3 +12,5 @@ institution_id: "generic"
 target_levels: ["maestria", "doctorado"]
 discipline: all_disciplines
 profile_scope: institutional
+novice_safe: true
+sample_available: false

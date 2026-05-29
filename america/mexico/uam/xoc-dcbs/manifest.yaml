@@ -15,6 +15,7 @@ bibliography_style: vancouver
 discipline: health_sciences
 program_name: "DCBS Xochimilco"
 profile_scope: program_specific
+target_levels: ["licenciatura", "maestria"]
 tags:
   - uam
   - mexico
@@ -23,3 +24,5 @@ tags:
   - medicina
   - xochimilco
   - dcbs
+novice_safe: true
+sample_available: false

@@ -7,6 +7,11 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Tesis de la Universidad de Buenos Aires, APA 7",
+      "target_levels": [
+        "licenciatura",
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "uba",
         "argentina",
@@ -20,6 +25,8 @@
       "institution_id": "uba",
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/ar_uba_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -54,8 +61,13 @@
       "city": "Campinas",
       "institution_id": "unicamp",
       "academic_level": "maestria",
+      "target_levels": [
+        "maestria"
+      ],
       "discipline": "all_disciplines",
       "profile_scope": "degree_specific",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/br_unicamp_abnt.zip",
       "sha256": null,
       "style_id": "abnt",
@@ -86,6 +98,8 @@
       ],
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/br_usp_abnt.zip",
       "sha256": null,
       "style_id": "abnt",
@@ -98,6 +112,10 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "McGill University thesis, APA 7, GPS guidelines",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "mcgill",
         "canada",
@@ -111,6 +129,8 @@
       "institution_id": "mcgill",
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/ca_mcgill_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -132,6 +152,11 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Tesis de la Universidad de Chile, APA 7",
+      "target_levels": [
+        "licenciatura",
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "uchile",
         "chile",
@@ -145,6 +170,8 @@
       "institution_id": "uchile",
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cl_uchile_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -188,6 +215,8 @@
       "discipline": "engineering",
       "program_name": "SEPI / Posgrado e Investigacion",
       "profile_scope": "program_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_ipn_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -209,6 +238,11 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Tesis del Instituto Tecnologico y de Estudios Superiores de Monterrey, APA 7",
+      "target_levels": [
+        "licenciatura",
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "tec",
         "itesm",
@@ -224,6 +258,8 @@
       "institution_id": "tec",
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_tec_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -256,6 +292,10 @@
       "discipline": "engineering",
       "program_name": "CBI Azcapotzalco",
       "profile_scope": "program_specific",
+      "target_levels": [
+        "licenciatura",
+        "maestria"
+      ],
       "tags": [
         "uam",
         "mexico",
@@ -264,6 +304,8 @@
         "azcapotzalco",
         "cbi"
       ],
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_azc_cbi.zip",
       "sha256": null,
       "style_id": "azc-cbi",
@@ -295,6 +337,10 @@
       "discipline": "social_sciences",
       "program_name": "DCSH Azcapotzalco",
       "profile_scope": "program_specific",
+      "target_levels": [
+        "licenciatura",
+        "maestria"
+      ],
       "tags": [
         "uam",
         "mexico",
@@ -303,6 +349,8 @@
         "azcapotzalco",
         "dcsh"
       ],
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_azc_dcsh.zip",
       "sha256": null,
       "style_id": "azc-dcsh",
@@ -333,6 +381,10 @@
       "discipline": "computing",
       "program_name": "DCI Cuajimalpa",
       "profile_scope": "program_specific",
+      "target_levels": [
+        "licenciatura",
+        "maestria"
+      ],
       "tags": [
         "uam",
         "mexico",
@@ -341,6 +393,8 @@
         "cuajimalpa",
         "dci"
       ],
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_cua_dci.zip",
       "sha256": null,
       "style_id": "cua-dci",
@@ -371,6 +425,11 @@
       "discipline": "natural_sciences",
       "program_name": "CBI Iztapalapa",
       "profile_scope": "program_specific",
+      "target_levels": [
+        "licenciatura",
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "uam",
         "mexico",
@@ -380,6 +439,8 @@
         "iztapalapa",
         "cbi"
       ],
+      "novice_safe": true,
+      "sample_available": true,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_izt_cbi.zip",
       "sha256": null,
       "style_id": "izt-cbi",
@@ -411,6 +472,10 @@
       "discipline": "social_sciences",
       "program_name": "CSH Iztapalapa",
       "profile_scope": "program_specific",
+      "target_levels": [
+        "licenciatura",
+        "maestria"
+      ],
       "tags": [
         "uam",
         "mexico",
@@ -419,6 +484,8 @@
         "iztapalapa",
         "csh"
       ],
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_izt_dcsh.zip",
       "sha256": null,
       "style_id": "izt-dcsh",
@@ -449,6 +516,10 @@
       "discipline": "health_sciences",
       "program_name": "DCBS Xochimilco",
       "profile_scope": "program_specific",
+      "target_levels": [
+        "licenciatura",
+        "maestria"
+      ],
       "tags": [
         "uam",
         "mexico",
@@ -458,6 +529,8 @@
         "xochimilco",
         "dcbs"
       ],
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uam_xoc_dcbs.zip",
       "sha256": null,
       "style_id": "xoc-dcbs",
@@ -477,6 +550,11 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Tesis de la Universidad Autonoma de Nuevo Leon, APA 7",
+      "target_levels": [
+        "licenciatura",
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "uanl",
         "nuevo_leon",
@@ -491,6 +569,8 @@
       "institution_id": "uanl",
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_uanl_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -512,7 +592,14 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "status": "verified",
+      "novice_safe": true,
+      "sample_available": true,
       "description": "Tesis UNAM para medicina y ciencias de la salud, estilo Vancouver",
+      "target_levels": [
+        "licenciatura",
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "unam",
         "mexico",
@@ -552,6 +639,8 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "status": "verified",
+      "novice_safe": true,
+      "sample_available": true,
       "description": "Tesis de posgrado UNAM conforme a lineamientos DGAE, estilo APA 7",
       "tags": [
         "unam",
@@ -595,6 +684,11 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Tesis de la Universidad de Guadalajara, APA 7",
+      "target_levels": [
+        "licenciatura",
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "udg",
         "guadalajara",
@@ -609,6 +703,8 @@
       "institution_id": "udg",
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/mx_udg_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -643,9 +739,14 @@
       "city": "Cambridge, MA",
       "institution_id": "harvard",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "social_sciences",
       "program_name": "Psychology and Social Sciences",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_harvard_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -680,9 +781,14 @@
       "city": "Cambridge, MA",
       "institution_id": "harvard",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "humanities",
       "program_name": "Humanities and Social Sciences",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_harvard_chicago17.zip",
       "sha256": null,
       "style_id": "chicago17",
@@ -706,6 +812,8 @@
       "license": "CC-BY-4.0",
       "description": "MIT thesis for engineering and sciences, IEEE citation style, DSpace submission",
       "status": "verified",
+      "novice_safe": true,
+      "sample_available": true,
       "tags": [
         "mit",
         "usa",
@@ -720,6 +828,9 @@
       "city": "Cambridge, MA",
       "institution_id": "mit",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "engineering",
       "program_name": "Engineering and Sciences",
       "profile_scope": "discipline_specific",
@@ -758,9 +869,15 @@
       "city": "Stanford, CA",
       "institution_id": "stanford",
       "academic_level": "doctorado",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
       "discipline": "engineering",
       "program_name": "Engineering and Computer Science",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_stanford_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -795,9 +912,14 @@
       "city": "Chicago, IL",
       "institution_id": "uchicago",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "social_sciences",
       "program_name": "Social Sciences",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/us_chicago_chicago17.zip",
       "sha256": null,
       "style_id": "chicago17",
@@ -838,6 +960,8 @@
       ],
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cn_pku_gbt.zip",
       "sha256": null,
       "style_id": "gbt7714",
@@ -867,6 +991,8 @@
       ],
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/cn_tsinghua_gbt.zip",
       "sha256": null,
       "style_id": "gbt7714",
@@ -879,6 +1005,10 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Indian Institute of Technology Bombay thesis for engineering, IEEE",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "iit",
         "bombay",
@@ -895,6 +1025,8 @@
       "discipline": "engineering",
       "program_name": "Engineering",
       "profile_scope": "discipline_specific",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/in_iit_bombay_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -907,6 +1039,10 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Kyoto University thesis for humanities and social sciences, APA 7",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "kyoto",
         "japan",
@@ -922,6 +1058,8 @@
       "discipline": "humanities",
       "program_name": "Humanities and Social Sciences",
       "profile_scope": "discipline_specific",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/jp_kyoto_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -953,6 +1091,8 @@
       "discipline": "engineering",
       "program_name": "Engineering and Sciences",
       "profile_scope": "discipline_specific",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/jp_utokyo_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -984,6 +1124,8 @@
       "discipline": "engineering",
       "program_name": "Computing and Engineering",
       "profile_scope": "discipline_specific",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/sg_nus_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -996,6 +1138,10 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "description": "Seoul National University thesis, APA 7 or IEEE common",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
       "tags": [
         "snu",
         "korea",
@@ -1009,6 +1155,8 @@
       "institution_id": "snu",
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/kr_snu_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -1034,8 +1182,13 @@
       "city": "Munich",
       "institution_id": "lmu",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "all_disciplines",
       "profile_scope": "degree_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/de_lmu_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -1071,9 +1224,15 @@
       "city": "Munich",
       "institution_id": "tum",
       "academic_level": "doctorado",
+      "target_levels": [
+        "maestria",
+        "doctorado"
+      ],
       "discipline": "engineering",
       "program_name": "Engineering",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/de_tum_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -1108,8 +1267,13 @@
       "city": "Rome",
       "institution_id": "sapienza",
       "academic_level": "maestria",
+      "target_levels": [
+        "maestria"
+      ],
       "discipline": "all_disciplines",
       "profile_scope": "degree_specific",
+      "novice_safe": false,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/it_sapienza_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -1141,6 +1305,8 @@
       "discipline": "engineering",
       "program_name": "Engineering and Technology",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/nl_tudelft_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -1175,8 +1341,13 @@
       "city": "Madrid",
       "institution_id": "ucm",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/es_ucm_apa7.zip",
       "sha256": null,
       "style_id": "apa7",
@@ -1217,6 +1388,8 @@
       "discipline": "engineering",
       "program_name": "Engineering and Technology",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/se_kth_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -1238,6 +1411,8 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "status": "verified",
+      "novice_safe": true,
+      "sample_available": true,
       "description": "University of Cambridge PhD thesis for social sciences, psychology, and education. Follows Cambridge Graduate Office format guidelines: A4, 40mm left margin (binding), double-spacing, 12pt, APA 7 bibliography via Biber. Word limit: 80,000 words.\n",
       "tags": [
         "cambridge",
@@ -1255,6 +1430,9 @@
       "institution_id": "cambridge",
       "city": "Cambridge",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "social_sciences",
       "program_name": "Social Sciences, Psychology, and Education",
       "profile_scope": "discipline_specific",
@@ -1314,9 +1492,14 @@
       "city": "Cambridge",
       "institution_id": "cambridge",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "engineering",
       "program_name": "Engineering and Natural Sciences",
       "profile_scope": "discipline_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/uk_cambridge_ieee.zip",
       "sha256": null,
       "style_id": "ieee",
@@ -1339,6 +1522,8 @@
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
       "status": "reviewed",
+      "novice_safe": true,
+      "sample_available": false,
       "description": "University of Oxford DPhil thesis for humanities. Follows Oxford Examination Regulations: A4, 40mm left margin (binding), double-spacing, 12pt, MHRA 3rd edition via Biber. Word limit: 100,000 words (excluding bibliography and appendices).\n",
       "tags": [
         "oxford",
@@ -1356,6 +1541,9 @@
       "institution_id": "oxford",
       "city": "Oxford",
       "academic_level": "doctorado",
+      "target_levels": [
+        "doctorado"
+      ],
       "discipline": "humanities",
       "program_name": "DPhil in Humanities",
       "profile_scope": "discipline_specific",
@@ -1412,8 +1600,13 @@
       "country": "generic",
       "institution_id": "generic",
       "academic_level": "posdoctorado",
+      "target_levels": [
+        "posdoctorado"
+      ],
       "discipline": "all_disciplines",
       "profile_scope": "degree_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_posdoctorado.zip",
       "sha256": null,
       "institution": "Perfil Generico",
@@ -1444,8 +1637,13 @@
       "country": "generic",
       "institution_id": "generic",
       "academic_level": "licenciatura",
+      "target_levels": [
+        "licenciatura"
+      ],
       "discipline": "all_disciplines",
       "profile_scope": "degree_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_tesina.zip",
       "sha256": null,
       "institution": "Perfil Generico",
@@ -1482,6 +1680,8 @@
       ],
       "discipline": "all_disciplines",
       "profile_scope": "institutional",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_thesis.zip",
       "sha256": null,
       "institution": "Perfil Generico",
@@ -1515,8 +1715,13 @@
       "country": "generic",
       "institution_id": "generic",
       "academic_level": "especialidad",
+      "target_levels": [
+        "especialidad"
+      ],
       "discipline": "all_disciplines",
       "profile_scope": "degree_specific",
+      "novice_safe": true,
+      "sample_available": false,
       "download_url": "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/generic_especialidad.zip",
       "sha256": null,
       "institution": "Perfil Generico",

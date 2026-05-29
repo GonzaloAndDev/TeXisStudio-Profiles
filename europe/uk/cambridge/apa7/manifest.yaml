@@ -4,6 +4,8 @@ version: "1.1.0"
 author: "TeXisStudio Community"
 license: "CC-BY-4.0"
 status: verified
+novice_safe: true
+sample_available: true
 description: >
   University of Cambridge PhD thesis for social sciences, psychology, and education.
   Follows Cambridge Graduate Office format guidelines: A4, 40mm left margin (binding),
@@ -23,6 +25,7 @@ institution: "University of Cambridge"
 institution_id: cambridge
 city: "Cambridge"
 academic_level: doctorado
+target_levels: ["doctorado"]
 discipline: social_sciences
 program_name: "Social Sciences, Psychology, and Education"
 profile_scope: discipline_specific

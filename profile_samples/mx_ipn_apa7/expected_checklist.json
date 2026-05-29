@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "mx_ipn_apa7",
+  "description": "Expected validation state for mx_ipn_apa7 — IPN SEPI (IA aplicada a medicina en dispositivos embebidos)",
+  "expected": {
+    "validation_errors": 0,
+    "required_sections_present": [
+      "portada",
+      "declaracion",
+      "resumen",
+      "indice",
+      "introduccion",
+      "marco_teorico",
+      "metodologia",
+      "resultados",
+      "conclusiones",
+      "referencias"
+    ],
+    "max_abstract_words_limit": 350,
+    "page_layout": {
+      "paper": "letterpaper",
+      "margins": {
+        "top": "25mm",
+        "bottom": "25mm",
+        "left": "30mm",
+        "right": "20mm"
+      },
+      "line_spacing": 1.5
+    },
+    "latex_engine": "xelatex",
+    "bibliography_backend": "biber",
+    "bibliography_style": "apa"
+  },
+  "notes": "IPN SEPI maestría en cómputo. Tema: compresión de CNNs para imágenes médicas en dispositivos embebidos. Alta exigencia: 6 referencias (articles, proceedings, inproceedings), 1 ecuación numerada con \\eqref{}, 1 figura PNG, 1 tabla booktabs 6×5, abstract ES+EN, acknowledgements con CONAHCYT+SIP, apéndice con hiperparámetros. Prueba el pipeline IPN completo con declaración de autenticidad obligatoria."
+}

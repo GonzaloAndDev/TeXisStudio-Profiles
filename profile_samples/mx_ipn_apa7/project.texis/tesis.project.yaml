@@ -1,0 +1,450 @@
+schema_version: "1.0.0"
+id: sample-ipn-apa7-001
+created_at: "2026-05-29T00:00:00Z"
+updated_at: "2026-05-29T00:00:00Z"
+profile_id: mx_ipn_apa7
+
+metadata:
+  title: "Optimización de Redes Neuronales Convolucionales para Clasificación de Imágenes Médicas en Entornos de Recursos Limitados"
+  document_kind: tesis
+  academic_level: maestria
+  language: es
+  city: "Ciudad de México"
+  year: 2026
+  keywords:
+    - redes neuronales convolucionales
+    - clasificación de imágenes médicas
+    - compresión de modelos
+    - edge computing
+    - aprendizaje profundo
+
+institution:
+  name: "Instituto Politécnico Nacional"
+  faculty: "Centro de Investigación en Computación"
+  department: "Programa de Maestría en Ciencias en Ingeniería de Cómputo"
+  country: México
+
+student:
+  full_name: "Daniela Ramírez Solano"
+  email: "d.ramirez@cic.ipn.mx"
+  advisors:
+    - "Dr. Alejandro Cruz Ramos"
+    - "Dr. Juan Carlos Olivares Rojas"
+  committee:
+    - full_name: "Dr. Marco Antonio Moreno Armendáriz"
+      role: "Presidente del Comité Tutorial"
+    - full_name: "Dra. Ixchel Lina Reyes"
+      role: "Vocal"
+    - full_name: "Dr. Gustavo Olague Caballero"
+      role: "Vocal"
+
+latex_config:
+  document_class:
+    name: book
+    options:
+      - 12pt
+      - letterpaper
+      - oneside
+  engine: xelatex
+  compiler: latexmk
+  bibliography_backend: biber
+  bibliography_style: apa
+  packages_required: []
+  typography:
+    paper_size:
+    font_size:
+    margin_cm:
+    line_spacing:
+  page_layout:
+    paper: letterpaper
+    margins:
+      top: 25mm
+      bottom: 25mm
+      left: 30mm
+      right: 20mm
+    line_spacing: 1.5
+
+sections:
+  - id: portada
+    element_id: cover
+    title: "Portada"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: declaracion
+    element_id: declaration
+    title: "Declaración de Autenticidad"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: decl-p1
+        content: >
+          La autora declara bajo protesta de decir verdad que el trabajo
+          presentado en esta tesis es original y que los resultados obtenidos
+          en la misma son auténticos y originales. Los textos, figuras, tablas
+          y demás datos tomados de otras obras han sido debidamente citados
+          conforme a los lineamientos del Sistema APA séptima edición.
+    fields: {}
+    children: []
+
+  - id: resumen
+    element_id: abstract
+    title: "Resumen"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: res-p1
+        content: >
+          El despliegue de modelos de inteligencia artificial en dispositivos
+          con recursos computacionales limitados representa uno de los desafíos
+          centrales del área de edge computing. Esta tesis propone y evalúa un
+          esquema de compresión y cuantización para redes neuronales
+          convolucionales (CNNs) orientado a la clasificación de imágenes
+          médicas en entornos embebidos. Partiendo de una arquitectura
+          MobileNetV3 preentrenada en ImageNet, se aplican técnicas de poda
+          estructurada y cuantización dinámica de 8 bits para obtener modelos
+          con hasta un 78\% de reducción en parámetros, manteniendo una pérdida
+          de exactitud inferior al 2\% en el conjunto de datos CheXpert
+          (radiografías de tórax, $n = 224{,}316$). Los modelos comprimidos
+          alcanzan tiempos de inferencia de 38 ms en Raspberry Pi 4, lo que
+          los hace viables para sistemas de diagnóstico de primer nivel en
+          comunidades con infraestructura limitada.
+    fields: {}
+    children: []
+
+  - id: abstract_ingles
+    element_id: abstract_en
+    title: "Abstract"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: abs-p1
+        content: >
+          Deploying artificial intelligence models on resource-constrained devices
+          is a central challenge in edge computing. This thesis proposes and evaluates
+          a compression and quantization scheme for convolutional neural networks
+          (CNNs) targeted at medical image classification in embedded environments.
+          Starting from a MobileNetV3 architecture pretrained on ImageNet, we apply
+          structured pruning and dynamic 8-bit quantization to obtain models with
+          up to 78\% parameter reduction while maintaining accuracy loss below 2\%
+          on the CheXpert dataset (chest X-rays, $n = 224{,}316$). Compressed models
+          achieve 38 ms inference on Raspberry Pi 4, making them viable for first-level
+          diagnostic systems in underserved communities.
+    fields: {}
+    children: []
+
+  - id: agradecimientos
+    element_id: acknowledgements
+    title: "Agradecimientos"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: agr-p1
+        content: >
+          Esta investigación fue realizada con el apoyo del Consejo Nacional
+          de Humanidades, Ciencias y Tecnologías (CONAHCYT) mediante la beca
+          No. 1047582, y del proyecto SIP-IPN No. 20240234 "Inteligencia
+          Artificial Aplicada al Diagnóstico Médico en Zonas Rurales". La
+          autora agradece al Dr. Alejandro Cruz Ramos por su dirección y
+          confianza, y al Centro de Investigación en Computación del IPN por
+          el acceso a la infraestructura de cómputo y la formación académica
+          de excelencia.
+    fields: {}
+    children: []
+
+  - id: indice
+    element_id: toc
+    title: "Índice General"
+    placement: front_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: indice_figuras
+    element_id: list_of_figures
+    title: "Índice de Figuras"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: indice_tablas
+    element_id: list_of_tables
+    title: "Índice de Tablas"
+    placement: front_matter
+    required: false
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: introduccion
+    element_id: introduction
+    title: "Introducción"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: intro-p1
+        content: >
+          La medicina moderna genera cantidades masivas de imágenes diagnósticas
+          — radiografías, tomografías, resonancias magnéticas — que rebasan la
+          capacidad de revisión humana en muchos sistemas de salud. Los modelos
+          de aprendizaje profundo han demostrado desempeño comparable al de
+          especialistas en tareas de clasificación radiológica
+          (Rajpurkar et al., 2022), pero su implementación práctica
+          enfrenta una barrera fundamental: el costo computacional.
+      - type: citation
+        id: intro-c1
+        citation_key: rajpurkar2022ai
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: paragraph
+        id: intro-p2
+        content: >
+          En regiones con infraestructura tecnológica limitada, los hospitales
+          de primer nivel carecen de servidores GPU. Una solución viable es el
+          despliegue en dispositivos embebidos de bajo costo. Esta tesis propone
+          un marco sistemático de compresión de CNNs que equilibra exactitud
+          diagnóstica, tamaño del modelo y velocidad de inferencia.
+    fields: {}
+    children: []
+
+  - id: marco_teorico
+    element_id: theoretical_framework
+    title: "Marco Teórico"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: heading
+        id: mt-h1
+        level: section
+        content: "Redes Neuronales Convolucionales"
+      - type: paragraph
+        id: mt-p1
+        content: >
+          Una CNN aplica convoluciones sobre la entrada espacial mediante filtros
+          aprendidos. La operación de convolución 2D para el mapa de activación
+          de la capa $l$ se define como:
+      - type: equation
+        id: eq-conv
+        latex_content: >
+          y_{i,j}^{(k)} = \sigma\!\left(\sum_{c=1}^{C}\sum_{p=0}^{K-1}\sum_{q=0}^{K-1}
+          w_{p,q,c}^{(k)} \cdot x_{i+p,\,j+q,\,c}^{(l-1)} + b^{(k)}\right)
+        label: ec:conv2d
+        numbered: true
+      - type: raw_latex
+        id: mt-ref-eq1
+        user_confirmed: true
+        content: >
+          donde $y_{i,j}^{(k)}$ es la activación del filtro $k$ en posición $(i,j)$,
+          definida en~\eqref{ec:conv2d}.
+      - type: citation
+        id: mt-c1
+        citation_key: lecun1998gradient
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+      - type: heading
+        id: mt-h2
+        level: section
+        content: "Compresión de Modelos"
+      - type: paragraph
+        id: mt-p2
+        content: >
+          Las técnicas de compresión buscan reducir parámetros y operaciones
+          de punto flotante (FLOPs) sin sacrificar desempeño. Las principales
+          categorías son: poda (pruning), cuantización, destilación del
+          conocimiento y descomposición de tensores.
+      - type: citation
+        id: mt-c2
+        citation_key: han2015deep
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: metodologia
+    element_id: methodology
+    title: "Metodología"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: met-p1
+        content: >
+          Se adoptó un diseño experimental comparativo. Se partió de
+          MobileNetV3-Large preentrenada en ImageNet y se aplicaron tres
+          esquemas de compresión: poda por magnitud de pesos, poda estructurada
+          de canales y cuantización dinámica de 8 bits (INT8). El conjunto de
+          datos de evaluación fue CheXpert con las 14 etiquetas de patologías
+          torácicas.
+      - type: table
+        id: tab-config
+        caption: "Configuraciones de compresión evaluadas. La exactitud base sin compresión fue 87.4% en el conjunto de prueba de CheXpert."
+        source: "Elaboración propia"
+        label: tab:configuraciones
+        include_in_list: true
+        table_style: booktabs
+        headers:
+          - "Configuración"
+          - "Técnica"
+          - "Reducción de parámetros"
+          - "Exactitud (\\%)"
+          - "Inferencia (ms)"
+        rows:
+          - ["Base", "Sin compresión", "0%", "87.4", "142"]
+          - ["Poda-30", "Magnitud 30%", "31%", "86.9", "98"]
+          - ["Poda-50", "Magnitud 50%", "52%", "85.8", "74"]
+          - ["Struct-40", "Canales 40%", "43%", "85.1", "61"]
+          - ["INT8", "Cuantización 8-bit", "74%", "85.6", "38"]
+          - ["Struct+INT8", "Combinada", "78%", "85.4", "38"]
+      - type: citation
+        id: met-c1
+        citation_key: howard2019searching
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: resultados
+    element_id: results
+    title: "Resultados"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: res-p1
+        content: >
+          La configuración Struct+INT8 obtuvo la mejor relación compresión-exactitud:
+          78\% de reducción en parámetros (de 5.4 M a 1.19 M), exactitud del 85.4\%
+          (pérdida de 2.0 puntos porcentuales respecto a la base), y tiempo de
+          inferencia de 38 ms en Raspberry Pi 4 (Tabla~\ref{tab:configuraciones}).
+          Las curvas precisión-recall para todas las configuraciones se muestran
+          en la Figura~\ref{fig:curvas_pr}.
+      - type: figure
+        id: fig-curvas
+        file: curvas_precision_recall.png
+        caption: "Curvas de precisión-recall para las seis configuraciones evaluadas en la tarea de detección de atelectasia (CheXpert, conjunto de prueba). La configuración Struct+INT8 mantiene un AUC-PR de 0.81 frente a 0.83 del modelo base."
+        source: "Elaboración propia"
+        width: full
+        label: fig:curvas_pr
+        include_in_list: true
+      - type: citation
+        id: res-c1
+        citation_key: irvin2019chexpert
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: discusion
+    element_id: discussion
+    title: "Discusión"
+    placement: body
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: disc-p1
+        content: >
+          Los resultados son consistentes con la literatura en compresión de
+          redes para imágenes médicas. La pérdida de exactitud del 2.0\% en
+          el escenario de mayor compresión es clínicamente aceptable para
+          sistemas de apoyo al diagnóstico de primer nivel, donde la prioridad
+          es la sensibilidad (recall), no la especificidad absoluta.
+      - type: citation
+        id: disc-c1
+        citation_key: jacob2018quantization
+        citation_type: parenthetical
+        page:
+        prefix:
+        suffix:
+    fields: {}
+    children: []
+
+  - id: conclusiones
+    element_id: conclusions
+    title: "Conclusiones"
+    placement: body
+    required: true
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: conc-p1
+        content: >
+          Se demostró que es posible comprimir una CNN de clasificación médica
+          hasta el 78\% en parámetros manteniendo una pérdida de exactitud
+          inferior al 2\% y alcanzando tiempos de inferencia compatibles con
+          dispositivos embebidos de bajo costo. La contribución metodológica
+          es el marco de evaluación multicriterio (exactitud, latencia,
+          tamaño de modelo) que permite seleccionar la configuración de
+          compresión adecuada según el contexto de despliegue.
+      - type: paragraph
+        id: conc-p2
+        content: >
+          Como trabajo futuro se propone extender el marco a arquitecturas
+          transformer ligeras (MobileViT) y validar el modelo en un prototipo
+          físico de telemedicina con conexión a un sistema HIS hospitalario.
+    fields: {}
+    children: []
+
+  - id: referencias
+    element_id: references
+    title: "Referencias"
+    placement: back_matter
+    required: true
+    enabled: true
+    blocks: []
+    fields: {}
+    children: []
+
+  - id: apendices
+    element_id: appendix
+    title: "Apéndice A: Hiperparámetros de Entrenamiento"
+    placement: appendix
+    required: false
+    enabled: true
+    blocks:
+      - type: paragraph
+        id: ap-p1
+        content: >
+          Optimizador: Adam con tasa de aprendizaje inicial $\eta = 10^{-4}$,
+          decaimiento coseno. Tamaño de batch: 32. Épocas de fine-tuning: 20.
+          Regularización: dropout $p = 0.2$, weight decay $\lambda = 10^{-4}$.
+          Aumento de datos: rotación $\pm 15°$, flip horizontal, zoom $\pm 10\%$.
+          Implementación en PyTorch 2.2 con CUDA 12.1. Evaluación en
+          Raspberry Pi 4 (4 GB RAM, ARM Cortex-A72).
+    fields: {}
+    children: []
+
+file_states: {}

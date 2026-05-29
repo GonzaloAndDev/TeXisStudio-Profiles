@@ -260,6 +260,30 @@ sections:
           espacio de estados hacia la cual el controlador atrae al sistema.
           Una vez que la trayectoria alcanza esta variedad, permanece en ella
           y evoluciona hacia el punto de equilibrio.
+      - type: raw_latex
+        id: marco-ref-ec1
+        user_confirmed: true
+        content: >
+          La superficie de deslizamiento se define mediante la ecuación~\eqref{ec:superficie_deslizamiento}:
+      - type: equation
+        id: eq-sliding-surface
+        latex_content: >
+          s(\mathbf{x}) = c_1 e + c_2 \dot{e} + \int_0^t e(\tau)\,d\tau = 0
+        label: ec:superficie_deslizamiento
+        numbered: true
+      - type: raw_latex
+        id: marco-ref-ec2
+        user_confirmed: true
+        content: >
+          La condición de alcance~\eqref{ec:condicion_alcance} garantiza que cualquier trayectoria fuera
+          de la superficie de deslizamiento es atraída hacia ella en tiempo
+          finito:
+      - type: equation
+        id: eq-reaching-condition
+        latex_content: >
+          s \, \dot{s} \leq -\eta \, |s|, \quad \eta > 0
+        label: ec:condicion_alcance
+        numbered: true
       - type: citation
         id: marco-c2
         citation_key: slotine1991applied
@@ -286,14 +310,35 @@ sections:
           eólico se modela mediante la curva de potencia, función de la
           densidad del aire, el area del rotor, el coeficiente de potencia Cp,
           la relacion de velocidad en la punta del alabe y la velocidad del viento.
+      - type: raw_latex
+        id: met-ref-ec3
+        user_confirmed: true
+        content: >
+          La ley de control propuesta~\eqref{ec:ley_control} combina el término equivalente
+          con el término de conmutación:
+      - type: equation
+        id: eq-control-law
+        latex_content: >
+          u = u_{eq} + u_s = -\left(G \frac{\partial s}{\partial x} B\right)^{-1}
+          G \frac{\partial s}{\partial x} A\mathbf{x} - k\,\mathrm{sgn}(s)
+        label: ec:ley_control
+        numbered: true
       - type: paragraph
         id: met-p2
         content: >
-          La ley de control adaptativa propuesta es de la forma u = u_eq + u_s,
-          donde u_eq es el control equivalente que mantiene al sistema en la
-          superficie de deslizamiento y u_s es el termino discontinuo que
-          garantiza la condicion de alcance s * ds/dt menor o igual a -eta*|s|,
-          con eta mayor que cero.
+          La ley de control adaptativa propuesta combina el término equivalente
+          que mantiene al sistema en la superficie de deslizamiento con el
+          término de conmutación discontinua. El parámetro k se adapta en línea
+          mediante un mecanismo de adaptación basado en la norma del error de
+          seguimiento.
+      - type: figure
+        id: fig-arquitectura
+        file: arquitectura_control.png
+        caption: "Arquitectura del sistema de control adaptativo por modos deslizantes propuesto. La señal de referencia proviene del despachador de energía de la microrred."
+        source: "Elaboración propia"
+        width: full
+        label: fig:arquitectura
+        include_in_list: true
       - type: citation
         id: met-c1
         citation_key: astrom2002pid
@@ -320,14 +365,37 @@ sections:
           tres escenarios: (1) operación normal, (2) variación de la irradiancia
           solar de 1000 a 400 W/m² en 0.5 s, y (3) conexión brusca de una
           carga adicional de 15 kW.
+      - type: table
+        id: tab-comparacion
+        caption: "Comparación de desempeño entre el controlador AMD propuesto y el control PID convencional en los tres escenarios de simulación."
+        source: "Elaboración propia mediante simulación en MATLAB R2024a"
+        label: tab:comparacion_desempeno
+        include_in_list: true
+        table_style: booktabs
+        headers:
+          - "Escenario"
+          - "Controlador"
+          - "$T_s$ (s)"
+          - "$\\Delta V_{\\max}$ (\\%)"
+          - "ITAE"
+        rows:
+          - ["Normal (1)", "AMD", "0.05", "1.2", "0.031"]
+          - ["Normal (1)", "PID", "0.09", "2.1", "0.058"]
+          - ["Irradiancia (2)", "AMD", "0.08", "3.1", "0.074"]
+          - ["Irradiancia (2)", "PID", "0.14", "5.8", "0.139"]
+          - ["Carga brusca (3)", "AMD", "0.06", "2.7", "0.052"]
+          - ["Carga brusca (3)", "PID", "0.11", "4.9", "0.098"]
       - type: paragraph
         id: res-p2
         content: >
-          El esquema AMD propuesto mostro un tiempo de establecimiento de
-          Ts = 0.08 s frente a Ts = 0.14 s del control PID en el escenario 2,
-          confirmando la mejora del 42\% reportada en el resumen. La variacion
-          maxima de tension en el escenario 3 fue de +/-3.1\% para AMD y
-          +/-5.8\% para PID, ambas dentro de los limites de la norma IEC 61000-4-15.
+          El esquema AMD propuesto mostró un tiempo de establecimiento de
+          $T_s = 0.08$ s frente a $T_s = 0.14$ s del control PID en el escenario 2
+          (véase Tabla~\ref{tab:comparacion_desempeno}),
+          confirmando la mejora del 42\% reportada en el resumen. La variación
+          máxima de tensión en el escenario 3 fue de $\pm 2.7\%$ para AMD y
+          $\pm 4.9\%$ para PID, ambas dentro de los límites de la norma IEC 61000-4-15.
+          La arquitectura del sistema se ilustra en la
+          Figura~\ref{fig:arquitectura}.
     fields: {}
     children: []
 
@@ -380,6 +448,44 @@ sections:
           banco de pruebas de microrredes del Laboratorio de Control y Sistemas
           de Potencia de la UAM-I, y la extensión del esquema a microrredes
           de corriente continua.
+    fields: {}
+    children: []
+
+  - id: glossary
+    element_id: glossary
+    title: "Glosario"
+    placement: back_matter
+    required: false
+    enabled: true
+    blocks:
+      - type: acronym_entry
+        id: acr-amd
+        acronym: AMD
+        full_form: "Control Adaptativo por Modos Deslizantes"
+      - type: acronym_entry
+        id: acr-pid
+        acronym: PID
+        full_form: "Controlador Proporcional Integral Derivativo"
+      - type: acronym_entry
+        id: acr-smc
+        acronym: SMC
+        full_form: "Sliding Mode Control (Control por Modos Deslizantes)"
+      - type: acronym_entry
+        id: acr-itae
+        acronym: ITAE
+        full_form: "Integral del Tiempo por el Valor Absoluto del Error"
+      - type: glossary_entry
+        id: glos-microrred
+        term: "Microrred"
+        definition: "Sistema eléctrico de pequeña escala que integra fuentes de generación distribuida, cargas y elementos de almacenamiento, capaz de operar tanto conectado a la red como en modo isla."
+      - type: glossary_entry
+        id: glos-lyapunov
+        term: "Función de Lyapunov"
+        definition: "Función escalar $V(x)$ definida positiva cuya derivada temporal a lo largo de las trayectorias del sistema es definida negativa, lo que garantiza la estabilidad asintótica del equilibrio."
+      - type: glossary_entry
+        id: glos-chattering
+        term: "Chattering"
+        definition: "Oscilaciones de alta frecuencia en la señal de control que aparecen cerca de la superficie de deslizamiento debido a la discontinuidad de la ley de control. Se mitiga mediante funciones de saturación o controladores de orden superior."
     fields: {}
     children: []
 

@@ -30,5 +30,5 @@
     "bibliography_backend": "biber",
     "bibliography_style": "apa"
   },
-  "notes": "UAM Iztapalapa CBI — posgrado en ingeniería eléctrica. Alta exigencia: 2 directores + 5-person committee (presidente + 3 vocales + director), Spanish+English abstract (both present), CONAHCYT + project funding in acknowledgements, 8 BibTeX entries (article, book, inproceedings, techreport), nonlinear control math (Lyapunov, sliding mode, differential equations), 9 citation blocks distributed across 5 sections, appendix with system parameters. Tests the full CBI UAM-Iztapalapa institutional structure."
+  "notes": "UAM Iztapalapa CBI — posgrado en ingeniería eléctrica. Corpus pesado: 2 directores + 5-person committee, ES+EN abstract, CONAHCYT funding, 6 BibTeX entries, 6 citation blocks, 3 numbered equations (with \\eqref{} references via raw_latex), 1 figure (PNG placeholder), 1 booktabs table (6-row comparison), glossary section with 4 acronyms + 3 terms, appendix. Tests: bibliography pipeline, figure/table inclusion, equation numbering, glossary/acronym rendering, LoF, LoT, and full CBI UAM-Iztapalapa institutional structure."
 }

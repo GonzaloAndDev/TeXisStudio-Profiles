@@ -67,6 +67,55 @@ packages:
   - physics       # notación física: \dv{}{}, \pdv{}{}, \abs{}, \norm{}
   - cancel        # cancelaciones algebraicas: \cancel{x}, \bcancel{y}
 
+title_page_template:
+  template: |
+    \thispagestyle{empty}
+    \begin{titlepage}
+      \centering
+      \vspace*{0.5cm}
+      {\scshape\large {{ institution_name | latex_escape }}\par}
+      \vspace{0.2cm}
+      {\normalsize {{ faculty | latex_escape }}\par}
+      {% if department is defined and department %}
+      \vspace{0.15cm}
+      {\small {{ department | latex_escape }}\par}
+      {% endif %}
+      \vspace{1.5cm}
+      \begin{minipage}{0.9\textwidth}
+        \centering
+        {\Large\bfseries {{ title | latex_escape }}\par}
+      \end{minipage}
+      \vspace{1.5cm}
+      {\normalsize {{ doc_kind_label }}\par}
+      \vspace{0.3cm}
+      {\small que para obtener el título de:\par}
+      \vspace{0.3cm}
+      {\normalsize\bfseries {{ degree_label }}\par}
+      \vspace{1.5cm}
+      {\small Presenta:\par}
+      \vspace{0.3cm}
+      {\normalsize\bfseries {{ author | latex_escape }}\par}
+      \vspace{1.5cm}
+      {% if advisors %}
+      {\small {{ advisor_label }}\par}
+      \vspace{0.3cm}
+      {% for a in advisors %}
+      {\normalsize {{ a | latex_escape }}\par}
+      {% endfor %}
+      \vspace{0.8cm}
+      {% endif %}
+      {% if committee %}
+      {\small Jurado:\par}
+      \vspace{0.3cm}
+      {% for m in committee %}
+      {\small {{ m.name | latex_escape }}{% if m.role is defined and m.role %} \hfill {\itshape {{ m.role | latex_escape }}}{% endif %}\par}
+      {% endfor %}
+      \vspace{0.8cm}
+      {% endif %}
+      \vfill
+      {\small {{ city | latex_escape }},~{{ year }}\par}
+    \end{titlepage}
+
 sections:
   - id: title_page
     element_id: title_page

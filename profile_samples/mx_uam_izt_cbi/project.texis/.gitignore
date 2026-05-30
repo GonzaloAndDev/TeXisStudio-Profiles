@@ -1,0 +1,18 @@
+# TeXisStudio — archivos generados automáticamente
+# Solo versionar: tesis.project.yaml + content/
+
+build/
+delivery/
+
+# Temporales de LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.synctex.gz

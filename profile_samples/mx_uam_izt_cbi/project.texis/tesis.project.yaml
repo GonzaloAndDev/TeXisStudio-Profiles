@@ -51,8 +51,8 @@ latex_config:
       - oneside
   engine: xelatex
   compiler: latexmk
-  bibliography_backend: biber
-  bibliography_style: apa
+  bibliography_backend: bibtex
+  bibliography_style: authoryear
   packages_required: []
   typography: {}
   page_layout:
@@ -372,6 +372,7 @@ sections:
         label: tab:comparacion_desempeno
         include_in_list: true
         table_style: booktabs
+        raw_headers: true
         headers:
           - "Escenario"
           - "Controlador"
@@ -387,6 +388,7 @@ sections:
           - ["Carga brusca (3)", "PID", "0.11", "4.9", "0.098"]
       - type: paragraph
         id: res-p2
+        verbatim: true
         content: >
           El esquema AMD propuesto mostró un tiempo de establecimiento de
           $T_s = 0.08$ s frente a $T_s = 0.14$ s del control PID en el escenario 2
@@ -481,6 +483,7 @@ sections:
       - type: glossary_entry
         id: glos-lyapunov
         term: "Función de Lyapunov"
+        verbatim: true
         definition: "Función escalar $V(x)$ definida positiva cuya derivada temporal a lo largo de las trayectorias del sistema es definida negativa, lo que garantiza la estabilidad asintótica del equilibrio."
       - type: glossary_entry
         id: glos-chattering

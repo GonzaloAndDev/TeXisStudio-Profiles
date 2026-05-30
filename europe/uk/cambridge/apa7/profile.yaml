@@ -52,6 +52,36 @@ max_abstract_words: 300
 
 packages: []
 
+title_page_template:
+  template: |
+    \thispagestyle{empty}
+    \begin{titlepage}
+      \centering
+      \vspace*{2cm}
+      {\large\scshape {{ institution_name | latex_escape }}\par}
+      {% if faculty is defined and faculty %}
+      \vspace{0.3cm}
+      {\normalsize {{ faculty | latex_escape }}\par}
+      {% endif %}
+      \vspace{3cm}
+      {\huge\bfseries {{ title | latex_escape }}\par}
+      \vspace{3cm}
+      {\normalsize A {{ doc_kind_label }} submitted for the degree of\par}
+      {\large\bfseries {{ degree_label }}\par}
+      \vspace{2.5cm}
+      {\large {{ author | latex_escape }}\par}
+      {% if advisors %}
+      \vspace{1cm}
+      {\normalsize Supervisor{% if advisors|length > 1 %}s{% endif %}:\par}
+      {% for a in advisors %}
+      {\normalsize {{ a | latex_escape }}\par}
+      {% endfor %}
+      {% endif %}
+      \vfill
+      {\normalsize {{ institution_name | latex_escape }}\par}
+      {\normalsize {{ year }}\par}
+    \end{titlepage}
+
 sections:
   # ── Front matter ─────────────────────────────────────────────────
   - id: title_page

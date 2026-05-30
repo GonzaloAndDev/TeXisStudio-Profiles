@@ -1,3 +1,3 @@
 # TeXisStudio commit pinned for P3 sample compilation.
 # Update this only after TeXisStudio CI is green and the P3 sample is revalidated.
-78b3b96eec888a459f1c8693120cc9fd25c3a44a
+12707e1713c5604027d8f944ac8cc68567f7b1f9

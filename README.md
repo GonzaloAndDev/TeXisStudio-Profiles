@@ -1,137 +1,147 @@
-# TeXisStudio — Perfiles de comunidad
+# TeXisStudio — Community Profiles / Perfiles de Comunidad
 
-Repositorio oficial de perfiles para [TeXisStudio](https://github.com/GonzaloAndDev/TeXisStudio).
+> **ES** — Perfiles institucionales y de disciplina para TeXisStudio.  
+> Define márgenes, estilo bibliográfico, estructura de secciones y tipografía para cada institución académica.  
+> **EN** — Institutional and discipline profiles for TeXisStudio.  
+> Defines margins, bibliography style, section structure, and typography for each academic institution.
 
-Cada perfil define la estructura de secciones, estilo bibliografico y configuracion LaTeX
-para un tipo de documento academico. Se instalan desde la app en **Biblioteca > Comunidad**.
-
-La direccion editorial actual es:
-- **perfil base por institucion** como regla general
-- **variante por grado** cuando el contrato cambie entre licenciatura, maestria, doctorado, especialidad o posdoctorado
-- **variante por programa o area** solo cuando la institucion realmente exija diferencias formales
+Part of / Parte del ecosistema **[TeXisStudio](../TeXisStudio/README.md)**  
+Also / También: [TeXisStudio-Plugins](../TeXisStudio-Plugins/README.md) · [TeXisStudio-Languages](../TeXisStudio-Languages/README.md)
 
 ---
 
-## Estructura del repositorio
+## ES — ¿Qué es un perfil?
+
+Un perfil define todo lo que es específico de una institución o disciplina:
+- Márgenes, papel, interlineado y fuente tipográfica
+- Clase de documento LaTeX (`book`, `article`, `report`…)
+- Estilo bibliográfico (APA7, Vancouver, IEEE, Chicago…)
+- Estructura de secciones requeridas (portada, resumen, introducción, conclusiones…)
+- Idioma y configuración babel/polyglossia
+
+El usuario selecciona un perfil al crear un proyecto. A partir de ahí, TeXisStudio genera el LaTeX correcto para esa institución automáticamente.
+
+## EN — What is a profile?
+
+A profile defines everything specific to an institution or discipline:
+- Margins, paper size, line spacing, and typography
+- LaTeX document class (`book`, `article`, `report`…)
+- Bibliography style (APA7, Vancouver, IEEE, Chicago…)
+- Required section structure (cover, abstract, introduction, conclusions…)
+- Language and babel/polyglossia configuration
+
+The user selects a profile when creating a project. From then on, TeXisStudio automatically generates the correct LaTeX for that institution.
+
+---
+
+## Repository structure / Estructura del repositorio
 
 ```
-<continente>/<pais>/<institucion>/
-  _institution.yaml          ← configuracion compartida de la institucion
-  <variante>/
-    profile.yaml             ← definicion completa del perfil
-    manifest.yaml            ← metadata para la biblioteca
+<continent>/<country>/<institution>/
+  _institution.yaml          ← shared institution format / formato compartido
+  <style-or-variant>/
+    profile.yaml             ← full profile definition / definición completa
+    manifest.yaml            ← catalog metadata / metadatos para la biblioteca
+
+citation_styles/             ← bibliography style definitions / estilos bibliográficos
+generic/                     ← generic profiles (no specific institution) / perfiles genéricos
 ```
 
-Ejemplo real:
+Real example / Ejemplo real:
 ```
-europe/uk/oxford/
-  _institution.yaml          ← margenes, fuente, papel de Oxford
-  mhra/
-    profile.yaml
-    manifest.yaml
-europe/uk/cambridge/
+america/mexico/unam/
   _institution.yaml
   apa7/
     profile.yaml
     manifest.yaml
-  ieee/
+  vancouver/
     profile.yaml
     manifest.yaml
-america/mexico/uam/
+europe/uk/oxford/
   _institution.yaml
-  izt-cbi/
-    profile.yaml
-    manifest.yaml
-  azc-dcsh/
+  mhra/
     profile.yaml
     manifest.yaml
 ```
 
-### Taxonomia editorial recomendada
-
-Todo perfil deberia poder declararse, en catalogo o manifest, con estos ejes:
-
-- `institution_id`
-- `continent`
-- `country`
-- `academic_level` opcional
-- `target_levels` opcional
-- `discipline` opcional
-- `program_name` opcional
-- `faculty` opcional
-- `department` opcional
-- `profile_scope`
-  - `institutional`
-  - `degree_specific`
-  - `program_specific`
-  - `discipline_specific`
-
-No todos los perfiles necesitan todos los campos.
-La regla es: **no especializar si no hay una diferencia real de formato o exigencia**.
-
 ---
 
-## Continentes y paises disponibles
+## Available regions / Regiones disponibles
 
-| Continente | Paises |
+| Continent / Continente | Countries / Países |
 |---|---|
 | `america` | mexico, usa, canada, brazil, argentina, chile |
 | `europe` | uk, germany, spain, netherlands, italy, sweden |
 | `asia` | china, japan, south_korea, singapore, india |
-| `generic` | generic (sin institucion especifica) |
+| `generic` | generic (no specific institution / sin institución específica) |
+
+**México (available now / disponibles ahora):** UNAM, IPN, UAM, UANL, UDG, Tec de Monterrey
 
 ---
 
-## Estilos bibliograficos incluidos (`citation_styles/`)
+## Bibliography styles included / Estilos bibliográficos incluidos
 
-| ID | Nombre | Tipo | Uso principal |
+| ID | Name / Nombre | Type / Tipo | Main use / Uso principal |
 |---|---|---|---|
-| `apa7` | APA 7 | Autor-Fecha | Universal — psicologia, educacion, ciencias sociales |
-| `vancouver` | Vancouver | Numerico | Medicina y ciencias de la salud |
-| `ieee` | IEEE | Numerico | Ingenieria, computacion, tecnologia |
-| `chicago17_notes` | Chicago 17 (Notas) | Notas-Bibliog. | Humanidades, historia, literatura |
-| `chicago17_authordate` | Chicago 17 (A-D) | Autor-Fecha | Economia, ciencias sociales |
-| `mla9` | MLA 9 | Autor-Pagina | Literatura, linguistica |
-| `harvard` | Harvard | Autor-Fecha | Negocios, UK, Australia |
-| `mhra` | MHRA | Notas-Bibliog. | Humanidades Reino Unido |
-| `abnt` | ABNT | Autor-Fecha | Brasil — obligatorio |
-| `gb7714` | GB/T 7714 | Numerico | China — norma nacional |
+| `apa7` | APA 7 | Author-Date | Universal — psychology, education, social sciences |
+| `vancouver` | Vancouver | Numeric | Medicine and health sciences |
+| `ieee` | IEEE | Numeric | Engineering, CS, technology |
+| `chicago17_notes` | Chicago 17 (Notes) | Notes-Bibliog. | Humanities, history, literature |
+| `chicago17_authordate` | Chicago 17 (A-D) | Author-Date | Economics, social sciences |
+| `mla9` | MLA 9 | Author-Page | Literature, linguistics |
+| `harvard` | Harvard | Author-Date | Business, UK, Australia |
+| `mhra` | MHRA | Notes-Bibliog. | UK Humanities |
+| `abnt` | ABNT | Author-Date | Brazil — mandatory / Brasil — obligatorio |
+| `gb7714` | GB/T 7714 | Numeric | China — national standard |
 
 ---
 
-## Como contribuir un perfil
+## Editorial taxonomy / Taxonomía editorial recomendada
 
-### Caso 1 — La institucion ya existe
+**ES:** La regla es: no especializar si no hay una diferencia real de formato.
 
-Solo necesitas crear la carpeta del nuevo estilo/carrera:
+- **`institutional`** — el mismo formato para toda la institución (regla general)
+- **`degree_specific`** — cuando el contrato cambia entre licenciatura/maestría/doctorado
+- **`program_specific`** — cuando una facultad o programa exige diferencias formales
+- **`discipline_specific`** — cuando el área (ingeniería, humanidades) exige formato diferente
+
+**EN:** The rule is: do not specialise if there is no real format difference.
+
+- **`institutional`** — same format for the entire institution (general rule)
+- **`degree_specific`** — when the contract changes between bachelor/master/doctoral
+- **`program_specific`** — when a faculty or programme requires formal differences
+- **`discipline_specific`** — when the area (engineering, humanities) requires a different format
+
+---
+
+## Contributing a profile / Cómo contribuir un perfil
+
+### Case 1 — Institution already exists / Caso 1 — Institución ya existe
 
 ```
 america/mexico/unam/
-  _institution.yaml          ← ya existe, no tocar
-  apa7/                      ← ya existe
-  vancouver/                 ← ya existe
-  derecho_chicago17/         ← TU NUEVA CARPETA
+  _institution.yaml          ← already exists, do not modify / ya existe, no tocar
+  apa7/                      ← existing / ya existe
+  derecho_chicago17/         ← YOUR NEW FOLDER / TU NUEVA CARPETA
     profile.yaml
     manifest.yaml
 ```
 
-### Caso 2 — La institucion no existe
-
-Crea la carpeta de la institucion con `_institution.yaml` y tu perfil:
+### Case 2 — New institution / Caso 2 — Institución nueva
 
 ```
 europe/france/sorbonne/
-  _institution.yaml          ← NUEVO: formato de la institucion
+  _institution.yaml          ← NEW — institution shared format / NUEVO — formato compartido
   chicago17/
     profile.yaml
     manifest.yaml
 ```
 
-### `_institution.yaml` — formato compartido de la institucion
+### `_institution.yaml` — shared institution format
 
 ```yaml
 id: sorbonne
-name: "Universite Paris-Sorbonne"
+name: "Université Paris-Sorbonne"
 acronym: "Sorbonne"
 continent: "europe"
 country: "france"
@@ -147,61 +157,32 @@ default_format:
   font_main: "Times New Roman"
   font_size: 12pt
 notes: |
-  Lineamientos de la Direction des etudes doctorales.
+  Guidelines from the Direction des études doctorales.
 ```
 
-### `manifest.yaml` de tu perfil
+### `manifest.yaml` — catalog metadata
 
 ```yaml
 id: fr_sorbonne_chicago17
-name: "Sorbonne — These (Chicago 17)"
+name: "Sorbonne — Thèse (Chicago 17)"
 version: "1.0.0"
-author: "Tu Nombre"
+author: "Your Name / Tu Nombre"
 license: "CC-BY-4.0"
-description: "These de doctorat Sorbonne Universite, Chicago 17 Notes-Bibliography."
-tags: [sorbonne, france, chicago17, humanites, doctorat]
+description: "Thèse de doctorat Sorbonne Université, Chicago 17 Notes-Bibliography."
+tags: [sorbonne, france, chicago17, humanities, doctorat]
 texis_min_version: "1.0.0"
 institution_id: "sorbonne"
 continent: "europe"
 country: "france"
-academic_level: "doctorado"            # opcional
-target_levels: ["maestria", "doctorado"] # opcional, cuando cubra varios grados reales
-discipline: "humanities"               # opcional
-program_name: "Doctorat en Humanités"  # opcional
-faculty: "Faculté des Lettres"         # opcional
-department: "École doctorale"          # opcional
-profile_scope: "discipline_specific"   # institutional | degree_specific | program_specific | discipline_specific
+academic_level: "doctorado"
+profile_scope: "discipline_specific"
 ```
 
-### Campos editoriales recomendados en `manifest.yaml`
-
-Usa estos campos cuando realmente agreguen claridad:
-
-| Campo | Cuándo usarlo |
-|---|---|
-| `academic_level` | Cuando el perfil sea claramente para licenciatura, maestría, doctorado, etc. |
-| `target_levels` | Cuando el perfil sirva de forma legítima para varios grados y no convenga mentir con un solo `academic_level` |
-| `discipline` | Cuando el perfil sea para un área académica concreta: `engineering`, `humanities`, `social_sciences`, `health_sciences`… |
-| `program_name` | Cuando el perfil represente una escuela, división o programa específico |
-| `faculty` | Cuando el perfil dependa de una facultad, unidad o escuela con identidad formal propia |
-| `department` | Cuando convenga registrar la división, departamento o instancia académica responsable |
-| `profile_scope` | Siempre que puedas: `institutional`, `degree_specific`, `program_specific`, `discipline_specific` |
-
-Regla práctica:
-- si solo cambia la universidad, usa `institutional`
-- si cambia por grado, usa `degree_specific`
-- si cambia por carrera, facultad o posgrado concreto, usa `program_specific`
-- si cambia por área amplia (ingeniería, humanidades, salud), usa `discipline_specific`
-- si cubre maestría + doctorado con el mismo contrato, usa `target_levels` para decirlo explícitamente
-
-### `profile.yaml` de tu perfil
-
-Solo especifica lo que es especifico de esta carrera/programa.
-Los margenes, papel y fuente se heredan de `_institution.yaml`.
+### `profile.yaml` — full profile definition
 
 ```yaml
 id: fr_sorbonne_chicago17
-name: "Sorbonne — These (Chicago 17)"
+name: "Sorbonne — Thèse (Chicago 17)"
 latex_engine: xelatex
 document_class:
   name: book
@@ -210,67 +191,49 @@ bibliography_backend: biber
 bibliography_style: chicago-notes
 page_layout:
   paper: a4paper
-  margins:
-    top: 25mm
-    bottom: 25mm
-    left: 35mm
-    right: 25mm
+  margins: { top: 25mm, bottom: 25mm, left: 35mm, right: 25mm }
   line_spacing: 2.0
 sections:
-  - id: title_page
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Page de titre"
-  - id: abstract
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Resume"
-  - id: introduction
-    element_id: chapter
-    placement: body
-    required: true
-    title: Introduction
-  - id: bibliography
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: Bibliographie
+  - { id: title_page, element_id: cover,        placement: front_matter, required: true }
+  - { id: abstract,   element_id: abstract,     placement: front_matter, required: true }
+  - { id: intro,      element_id: chapter,      placement: body,         required: true }
+  - { id: biblio,     element_id: bibliography, placement: back_matter,  required: true }
 ```
 
-### Pasos para contribuir
+### Steps / Pasos
 
-1. **Fork** del repositorio
-2. Encuentra o crea la carpeta de tu institucion
-3. Crea `_institution.yaml` si la institucion es nueva
-4. Crea la carpeta del estilo/carrera con `profile.yaml` + `manifest.yaml`
-5. Abre un **Pull Request** — los perfiles verificados se agregan al catalogo
+1. **Fork** this repository / este repositorio
+2. Find or create your institution folder / Encuentra o crea la carpeta de tu institución
+3. Create `_institution.yaml` if new / Crea `_institution.yaml` si es nueva
+4. Create style folder with `profile.yaml` + `manifest.yaml` / Crea la carpeta con los archivos
+5. Open a **Pull Request** — verified profiles are added to the catalog  
+   Abre un **Pull Request** — los perfiles verificados se agregan al catálogo
 
 ---
 
-## Instalar un perfil en TeXisStudio
+## Installing a profile / Instalar un perfil
 
-### Desde la app
+### From the app / Desde la app
 
-1. Abre TeXisStudio > **Biblioteca** > **Comunidad**
-2. Navega: Continente > Pais > Institucion > estilo
-3. Haz clic en **Instalar**
+1. Open TeXisStudio → **Library / Biblioteca** → **Community / Comunidad**
+2. Browse: Continent → Country → Institution → style  
+   Navega: Continente → País → Institución → estilo
+3. Click **Install / Instalar**
 
-### URL directa
+### Direct URL / URL directa
 
 ```
 https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/<manifest_id>.zip
 ```
 
-Ejemplos:
+Examples / Ejemplos:
 ```
 .../download/mx_unam_apa7.zip
 .../download/us_mit_ieee.zip
 .../download/uk_oxford_mhra.zip
 ```
 
-### Catalogo completo (JSON para la app)
+### Full catalog JSON (used by the app / usado por la app)
 
 ```
 https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/catalog.json
@@ -278,9 +241,9 @@ https://github.com/GonzaloAndDev/TeXisStudio-Profiles/releases/latest/download/c
 
 ---
 
-## Licencia
+## License / Licencia
 
-Los perfiles se distribuyen bajo **CC-BY-4.0** salvo indicacion contraria en `manifest.yaml`.
+Profiles are distributed under **CC-BY-4.0** unless otherwise indicated in `manifest.yaml`.  
+Los perfiles se distribuyen bajo **CC-BY-4.0** salvo indicación contraria en `manifest.yaml`.
 
-Independientes de la licencia del software TeXisStudio (AGPL v3 + Commons Clause).
-<!-- ci-trigger: 2026-05-27T01:56:45 -->
+Independent of / Independientes de la licencia del software TeXisStudio (AGPL v3 + Commons Clause).

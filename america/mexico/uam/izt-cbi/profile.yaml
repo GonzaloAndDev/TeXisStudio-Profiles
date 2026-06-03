@@ -61,10 +61,12 @@ max_words: 80000
 max_abstract_words: 300
 
 packages:
-  - siunitx       # unidades físicas: \SI{9.8}{m/s^2}, \si{\mega\watt}
+  - siunitx       # unidades físicas: \SI{9.8}{\metre\per\second\squared}, \si{\mega\watt}
   - pgfplots      # gráficos: \begin{axis}...\end{axis}
   - circuitikz    # circuitos eléctricos: \begin{circuitikz}
   - physics       # notación física: \dv{}{}, \pdv{}{}, \abs{}, \norm{}
+                  # Nota: physics redefine \div (divergencia ∇·) y \Re/\Im con \mathrm.
+                  # Si necesitas el ÷ original usa {\div} antes de cargar physics.
   - cancel        # cancelaciones algebraicas: \cancel{x}, \bcancel{y}
 
 title_page_template:
@@ -200,12 +202,26 @@ sections:
     title: "Resultados y Discusión"
     guidance: "Presenta resultados con figuras, tablas y análisis estadístico cuando aplique."
 
+  - id: discussion
+    element_id: discussion
+    placement: body
+    required: false
+    title: "Discusión"
+    guidance: "Interpreta los resultados en relación con la hipótesis y la literatura. Compara con trabajos previos."
+
   - id: conclusions
     element_id: conclusions
     placement: body
     required: true
     title: "Conclusiones y Perspectivas"
     guidance: "Conclusiones sobre la hipótesis planteada y propuestas de trabajo futuro."
+
+  - id: glossary
+    element_id: glossary
+    placement: back_matter
+    required: false
+    title: "Glosario"
+    guidance: "Definiciones de términos técnicos y acrónimos utilizados en el documento."
 
   - id: references
     element_id: references

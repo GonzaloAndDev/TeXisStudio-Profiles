@@ -25,8 +25,14 @@ catalog: dict = {"profiles": [], "citation_styles": [], "institutions": {}}
 # Metadata de instituciones (_institution.yaml)
 for root, dirs, files in os.walk("."):
     dirs.sort()
+    # Skip sample projects — they live at a different depth and must not pollute
+    # the institution registry even if they happen to contain _institution.yaml.
+    norm_root = root.replace("\\", "/").lstrip("./")
+    if norm_root.startswith("profile_samples"):
+        dirs.clear()
+        continue
     if "_institution.yaml" in files:
-        norm = root.replace("\\", "/").lstrip("./")
+        norm = norm_root
         parts = [p for p in norm.split("/") if p]
         if len(parts) == 3:
             inst_key = "/".join(parts)

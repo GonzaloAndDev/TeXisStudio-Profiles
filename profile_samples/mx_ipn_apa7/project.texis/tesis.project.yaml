@@ -230,7 +230,7 @@ sections:
     children: []
 
   - id: marco_teorico
-    element_id: theoretical_framework
+    element_id: literature_review
     title: "Marco Teórico"
     placement: body
     required: true
@@ -419,7 +419,7 @@ sections:
     children: []
 
   - id: referencias
-    element_id: references
+    element_id: bibliography
     title: "Referencias"
     placement: back_matter
     required: true

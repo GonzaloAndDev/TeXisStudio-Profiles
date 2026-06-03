@@ -51,8 +51,8 @@ latex_config:
       - oneside
   engine: xelatex
   compiler: latexmk
-  bibliography_backend: bibtex
-  bibliography_style: authoryear
+  bibliography_backend: biber
+  bibliography_style: apa
   packages_required: []
   typography: {}
   page_layout:

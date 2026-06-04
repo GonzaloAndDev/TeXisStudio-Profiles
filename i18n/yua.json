@@ -1,0 +1,2906 @@
+{
+  "schema_version": "1.0.0",
+  "locale": "es",
+  "profiles": {
+    "ar_uba_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "La portada oficial de la UBA incluye:\n• Logotipo y nombre de la Universidad de Buenos Aires.\n• Nombre de la Facultad (FCE, FFyL, FMED, etc.).\n• Nombre del programa de doctorado.\n• Título completo de la tesis.\n• \"Tesis presentada para optar al título de Doctor/a en [campo].\"\n• Nombre completo del autor/a.\n• Director/a de tesis y co-director/a (si aplica).\n• Buenos Aires, [Mes] [Año].\nCada facultad tiene un formato de portada específico —\ndescárgalo de la Secretaría de Posgrado de tu unidad académica.\n"
+        },
+        "declaracion": {
+          "title": "Declaración Jurada de Autoría",
+          "guidance": "La UBA exige una Declaración Jurada de Autoría y Originalidad.\nEl Rectorado o la Facultad puede requerir formulario específico firmado.\nTexto estándar: \"El/la suscripto/a declara bajo juramento que la presente\ntesis es de su autoría, que no ha sido presentada anteriormente para\nobtener ningún título en ninguna institución y que todas las fuentes\nconsultadas han sido correctamente citadas.\"\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español, 200–350 palabras.\nProblema, objetivos, metodología, resultados y conclusiones.\nPalabras clave (4–6).\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce al director/a, comisión evaluadora, becas CONICET, ANPCyT\n(PICT), UBACyT (Programas de Reconocimiento Institucional UBA),\nMINCYT u otros fondos. Incluye número de proyecto o beca.\n"
+        },
+        "indice": {
+          "title": "Índice General",
+          "guidance": "Generado automáticamente. Números de página exactos."
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Activa si tienes 5 o más figuras."
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas."
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "Contextualización, planteamiento del problema, justificación,\npreguntas de investigación, objetivos e hipótesis. Estructura.\nAPA 7: (Autor, año) en el texto.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Revisión crítica y fundamentos conceptuales.\nOrganiza por corrientes teóricas. Identifica el vacío de la tesis.\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "Diseño, muestra, instrumentos, procedimiento, análisis.\nAprobación del Comité de Ética institucional si involucra seres humanos.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación."
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpretación, comparación con literatura, implicaciones y limitaciones."
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Responde objetivos, resume aportaciones, limitaciones y trabajo futuro."
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición, lista alfabética, sangría francesa."
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Instrumentos, datos adicionales, dictamen ético. Apéndice A, B…"
+        }
+      },
+      "name": "UBA - Tesis (APA 7)",
+      "description": "Tesis de la Universidad de Buenos Aires, APA 7",
+      "institution": "Universidad de Buenos Aires"
+    },
+    "br_unicamp_abnt": {
+      "sections": {
+        "capa": {
+          "title": "Capa"
+        },
+        "folha_rosto": {
+          "title": "Folha de Rosto"
+        },
+        "resumo": {
+          "title": "Resumo"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "sumario": {
+          "title": "Sumario"
+        },
+        "introducao": {
+          "title": "Introducao"
+        },
+        "capitulos": {
+          "title": "Capitulos"
+        },
+        "conclusao": {
+          "title": "Conclusao"
+        },
+        "referencias": {
+          "title": "Referencias"
+        }
+      },
+      "name": "UNICAMP - Dissertacao (ABNT)",
+      "description": "Dissertacao da Universidade Estadual de Campinas, ABNT NBR 6023:2018",
+      "institution": "Universidade Estadual de Campinas"
+    },
+    "br_usp_abnt": {
+      "sections": {
+        "capa": {
+          "title": "Capa"
+        },
+        "folha_rosto": {
+          "title": "Folha de Rosto"
+        },
+        "resumo": {
+          "title": "Resumo"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "sumario": {
+          "title": "Sumario"
+        },
+        "introducao": {
+          "title": "Introducao"
+        },
+        "capitulos": {
+          "title": "Capitulos"
+        },
+        "conclusao": {
+          "title": "Conclusao"
+        },
+        "referencias": {
+          "title": "Referencias"
+        }
+      },
+      "name": "USP - Dissertacao (ABNT)",
+      "description": "Dissertacao de mestrado/doutorado da Universidade de Sao Paulo, ABNT NBR 6023:2018",
+      "institution": "Universidade de Sao Paulo"
+    },
+    "ca_mcgill_apa7": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "resume": {
+          "title": "Résumé (French Abstract)",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "literature_review": {
+          "title": "Revisión de literatura",
+          "label": "chapter:literature",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Metodología",
+          "label": "chapter:methodology",
+          "guidance": "Research design, participants, measures, procedure, analysis, ethics.\nMcGill requires Research Ethics Board (REB) approval for human participants.\n"
+        },
+        "results": {
+          "title": "Resultados",
+          "label": "chapter:results",
+          "guidance": "Presenta los hallazgos de forma objetiva y organízalos por pregunta, objetivo o tema. Usa tablas y figuras cuando mejoren la claridad."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpretation, connections to literature, implications, limitations."
+        },
+        "conclusion": {
+          "title": "Conclusión",
+          "label": "chapter:conclusion",
+          "guidance": "Restate contributions, answer research questions, limitations,\nand future directions. Length: 10–20 pages.\n"
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "APA 7 — alphabetical, hanging indent. Auto-generated."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Instruments, additional data, ethics approval, consent forms."
+        }
+      },
+      "name": "McGill - Tesis (APA 7)",
+      "description": "Perfil académico para McGill - Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "McGill University"
+    },
+    "cl_uchile_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "La portada oficial de la U. de Chile incluye:\n• Logotipo y nombre de la Universidad de Chile.\n• Facultad e Instituto o Departamento.\n• Título completo de la tesis.\n• \"TESIS para optar al grado de Doctor en [campo].\"\n• Nombre del autor/a.\n• Profesor/a Guía (director/a de tesis) y co-guía (si aplica).\n• Santiago, Chile, [Mes] [Año].\nVerifica el formato con la Coordinación de Doctorado de tu Facultad.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Autoría",
+          "guidance": "Declaración de originalidad requerida por la U. de Chile.\nLa Unidad de Postgrado puede exigir un acta firmada por el Comité Académico.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español, 200–350 palabras.\nProblema, objetivos, metodología, resultados y conclusiones.\nPalabras clave (4–6).\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce al profesor/a guía, Comité Académico, becas ANID\n(ex-CONICYT: FONDECYT, FONDEF, Becas Chile) — incluye número de proyecto o beca.\nTambién fondos UCH como VID-FONDAP o proyectos de la Vicerrectoría.\n"
+        },
+        "dedicatoria": {
+          "title": "Dedicatoria",
+          "guidance": "Opcional. Una o tres líneas. Sin encabezado impreso."
+        },
+        "indice": {
+          "title": "Índice General",
+          "guidance": "Generado automáticamente. Números de página exactos."
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Activa si tienes 5 o más figuras."
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas."
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "Contextualización, planteamiento del problema, justificación,\npreguntas de investigación, objetivos, hipótesis y estructura.\nAPA 7: (Autor, año) en el texto.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Revisión crítica organizada por temas. Identifica el vacío de la tesis."
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "Diseño, muestra, instrumentos, procedimiento, análisis.\nAprobación del Comité de Ética de Investigación en Seres Humanos (CEISH)\nsi corresponde.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Hallazgos objetivos. Tablas y figuras APA 7."
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpretación, comparación con literatura, implicaciones y limitaciones."
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Responde objetivos, aportaciones, limitaciones y trabajo futuro."
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición, lista alfabética, sangría francesa."
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Instrumentos, datos adicionales, dictamen ético. Apéndice A, B…"
+        }
+      },
+      "name": "U. de Chile - Tesis (APA 7)",
+      "description": "Tesis de la Universidad de Chile, APA 7",
+      "institution": "Universidad de Chile"
+    },
+    "mx_ipn_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "La portada oficial del IPN incluye:\n• Logotipo del IPN y del Centro o Escuela (CINVESTAV, ESIME, UPIITA, etc.).\n• Nombre completo del Centro o Escuela.\n• Título completo de la tesis.\n• \"TESIS que para obtener el grado de [Maestro/Doctor] en Ciencias con\n  especialidad en [área], PRESENTA:\"\n• Nombre del autor.\n• Nombre del director de tesis y adscripción.\n• Ciudad de México / [Ciudad], [Mes] [Año].\nCada unidad académica del IPN puede tener un formato de portada específico —\nverifica con la Secretaría Académica de tu Centro.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Autenticidad",
+          "guidance": "El IPN exige una declaración de originalidad. La SIP puede requerir\nademás un Acta de No Adeudo y certificación del Comité Tutorial.\nVerifica los documentos específicos que requiere tu centro/escuela.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español, 200–350 palabras.\nProblema, metodología, resultados y aportación. Palabras clave (4–6).\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce al director de tesis, comité tutorial, becas SIP/IPN,\nCONACYT/CONAHCYT (con número de beca), COFAA, y proyectos de investigación\ndel Centro (clave SIP del proyecto).\n"
+        },
+        "indice": {
+          "title": "Índice General",
+          "guidance": "Generado automáticamente. Incluye todos los capítulos, anexos y referencias."
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Activa si tienes 5 o más figuras."
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas."
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "Contextualización del problema, planteamiento, justificación,\npreguntas de investigación, objetivos, hipótesis y estructura.\nEl IPN tiene perfil politécnico — si tu investigación tiene\naplicación tecnológica, describe la relevancia ingenieril o industrial.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico y Estado del Arte",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Fundamentos teóricos y revisión crítica del estado del arte.\nOrganiza por temas o enfoques técnicos.\nIdentifica el vacío que justifica tu investigación.\nAPA 7: (Autor, año) en el texto.\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "Diseño de investigación, herramientas y equipos utilizados,\nprocedimiento experimental o de análisis, validación y\nconsideraciones éticas si aplica.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Hallazgos objetivos organizados por objetivo específico.\nTablas y figuras APA 7. Sin interpretación en este capítulo.\n"
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpretación de resultados, comparación con literatura y limitaciones."
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Responde objetivos, resume aportaciones originales,\nseñala limitaciones y propone trabajo futuro.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición, lista alfabética, sangría francesa, DOI cuando disponible."
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Datos adicionales, código fuente, planos o diagramas técnicos."
+        }
+      },
+      "name": "IPN - Tesis (APA 7)",
+      "description": "Tesis del Instituto Politecnico Nacional, lineamientos SEPI",
+      "institution": "Instituto Politecnico Nacional",
+      "department": "Sección de Estudios de Posgrado e Investigación",
+      "faculty": "Posgrado",
+      "program_name": "SEPI / Posgrado e Investigacion"
+    },
+    "mx_tec_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "La portada del Tec debe incluir:\n• Logotipo del Tecnológico de Monterrey.\n• Escuela o Departamento correspondiente.\n• Título completo de la tesis.\n• \"TESIS presentada como requisito parcial para obtener el grado de\n  [Maestro en / Doctor en] [Nombre del programa].\"\n• Nombre completo del autor.\n• Nombre del asesor principal y co-asesor (si aplica).\n• \"Monterrey, Nuevo León / [Campus], [Mes] [Año].\"\nDescarga la plantilla de portada oficial de tu programa en el portal\nde titulación del Tec — el formato varía por escuela.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Integridad Académica",
+          "guidance": "El Tec de Monterrey exige una Declaración de Integridad Académica\n(Academic Integrity Statement). Texto estándar:\n\"El autor del presente trabajo declara que, a su leal saber y entender,\néste es trabajo original y no existe plagio alguno, en el sentido\nestablecido por las normas del Tec de Monterrey.\"\nEl Tec utiliza herramientas de detección de plagio (Turnitin) — el porcentaje\nde similitud aceptable es el definido por tu programa (típicamente < 15%).\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español, 150–350 palabras.\nIncluye: pregunta de investigación, metodología, hallazgos principales\ny aportación al campo. Al final: Palabras clave (4–6).\nAutocontenido: sin citas, sin figuras, sin acrónimos no definidos.\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Opcional. Reconoce al asesor, miembros del comité y a las fuentes\nde financiamiento. Si recibiste beca CONAHCYT, Tec o empresa patrocinadora,\nmenciona el número de beca o convenio.\n"
+        },
+        "indice": {
+          "title": "Tabla de Contenido",
+          "guidance": "Generado automáticamente con números de página exactos."
+        },
+        "indice_figuras": {
+          "title": "Lista de Figuras",
+          "guidance": "Activa si tienes 5 o más figuras. APA 7."
+        },
+        "indice_tablas": {
+          "title": "Lista de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas. APA 7."
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "Contextualización, planteamiento del problema, justificación, preguntas\nde investigación, objetivos, hipótesis (si aplica) y estructura de la tesis.\nEl Tec valora la relevancia aplicada: explica el impacto práctico o de negocio\ndel problema que abordas.\nExtensión típica: 10–20 páginas.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Fundamentos conceptuales y revisión crítica de la literatura.\nOrganiza por temas o enfoques — no como resumen secuencial de autores.\nIdentifica el vacío que justifica tu investigación.\nAPA 7: (Autor, año) en el texto.\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "Diseño de investigación, muestra, instrumentos, procedimiento,\nanálisis estadístico y consideraciones éticas.\nEl Tec valora métodos mixtos y estudios de caso corporativos.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Hallazgos objetivos organizados por pregunta de investigación.\nTablas y figuras APA 7. Sin interpretación en este capítulo.\n"
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpretación de resultados, comparación con literatura, implicaciones\nprácticas (muy valoradas en el Tec) y limitaciones.\n"
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Responde preguntas de investigación, resume aportaciones, menciona\nlimitaciones y sugiere investigación futura.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición, lista alfabética, sangría francesa, DOI obligatorio cuando disponible."
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Materiales complementarios. Turnitin report si lo requiere tu programa."
+        }
+      },
+      "name": "Tec de Monterrey - Tesis (APA 7)",
+      "description": "Tesis del Instituto Tecnologico y de Estudios Superiores de Monterrey, APA 7",
+      "institution": "Tecnologico de Monterrey"
+    },
+    "mx_uam_azc_cbi": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "La portada debe incluir: logo UAM, nombre de la universidad, unidad, división y departamento, título del trabajo, nombre del alumno, matrícula, trimestre y año, y nombre del asesor.\n"
+        },
+        "dedication": {
+          "title": "Dedicatoria"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "Máximo 350 palabras. Incluye: antecedentes, problema, metodología, aportaciones y conclusiones."
+        },
+        "abstract_en": {
+          "title": "Resumen",
+          "guidance": "Resumen en inglés. Obligatorio para tesis de posgrado; recomendado para licenciatura."
+        },
+        "table_of_contents": {
+          "title": "Índice General"
+        },
+        "list_of_figures": {
+          "title": "Lista de Figuras"
+        },
+        "list_of_tables": {
+          "title": "Lista de Tablas"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Presenta el contexto, planteamiento del problema, objetivos e hipótesis."
+        },
+        "theoretical_framework": {
+          "title": "Marco Teórico",
+          "guidance": "Revisión del estado del arte y fundamentos teóricos del trabajo."
+        },
+        "methodology": {
+          "title": "Metodología",
+          "guidance": "Describe el método, herramientas y procedimientos empleados."
+        },
+        "results": {
+          "title": "Resultados",
+          "guidance": "Presenta y analiza los resultados obtenidos."
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusions": {
+          "title": "Conclusiones",
+          "guidance": "Conclusiones, limitaciones y trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendix": {
+          "title": "Anexos"
+        }
+      },
+      "name": "UAM Azcapotzalco — CBI",
+      "description": "División de Ciencias Básicas e Ingeniería, UAM Azcapotzalco. Ingeniería, Computación, Sistemas y Matemáticas Aplicadas.",
+      "institution": "Universidad Autonoma Metropolitana",
+      "department": "División de Ciencias Básicas e Ingeniería",
+      "faculty": "Unidad Azcapotzalco",
+      "program_name": "CBI Azcapotzalco"
+    },
+    "mx_uam_azc_dcsh": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Portada oficial UAM-DCSH: logo UAM, nombre de la universidad, unidad, división, departamento, título del trabajo de investigación o tesis, nombre del alumno, matrícula, trimestre y año, nombre del asesor o director y co-asesor (si aplica).\n"
+        },
+        "dedication": {
+          "title": "Dedicatoria"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "Máximo 300 palabras. Debe incluir: planteamiento del problema, objetivo general, metodología, principales hallazgos y conclusiones. Evitar citas bibliográficas en el resumen.\n"
+        },
+        "abstract_en": {
+          "title": "Resumen",
+          "guidance": "Resumen en inglés. Recomendado para posgrado."
+        },
+        "table_of_contents": {
+          "title": "Índice General"
+        },
+        "list_of_figures": {
+          "title": "Lista de Figuras"
+        },
+        "list_of_tables": {
+          "title": "Lista de Tablas"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Contexto general, justificación, planteamiento del problema, pregunta de investigación, hipótesis u objetivos, y estructura del trabajo.\n"
+        },
+        "theoretical_framework": {
+          "title": "Marco Teórico-Conceptual",
+          "guidance": "Revisión crítica de la literatura. En ciencias sociales se espera un posicionamiento explícito del autor respecto a los enfoques teóricos. Usar estilo Chicago Author-Date para las citas.\n"
+        },
+        "methodology": {
+          "title": "Metodología",
+          "guidance": "Estrategia metodológica: cualitativa, cuantitativa o mixta. Unidades de análisis, técnicas de recolección de datos, criterios de selección, y consideraciones éticas si aplica.\n"
+        },
+        "results": {
+          "title": "Resultados y Análisis",
+          "guidance": "Presentación y análisis crítico de los hallazgos."
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusions": {
+          "title": "Conclusiones",
+          "guidance": "Síntesis de hallazgos, respuesta a la pregunta de investigación, limitaciones, aportaciones al campo y líneas de investigación futura.\n"
+        },
+        "references": {
+          "title": "Bibliografía",
+          "guidance": "Formato Chicago Author-Date. Incluir todas las fuentes citadas en el texto."
+        },
+        "appendix": {
+          "title": "Anexos",
+          "guidance": "Instrumentos de recolección, transcripciones, tablas complementarias, etc."
+        }
+      },
+      "name": "UAM Azcapotzalco — DCSH",
+      "description": "División de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades.",
+      "institution": "Universidad Autonoma Metropolitana",
+      "department": "División de Ciencias Sociales y Humanidades",
+      "faculty": "Unidad Azcapotzalco",
+      "program_name": "DCSH Azcapotzalco"
+    },
+    "mx_uam_cua_dci": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Portada oficial UAM-DCI: logo UAM, nombre de la universidad, unidad, división, área de investigación, título del trabajo, nombre del alumno, matrícula, trimestre y año, y nombre del director de tesis.\n"
+        },
+        "dedication": {
+          "title": "Dedicatoria"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "Máximo 350 palabras. Debe incluir: contexto del problema, objetivo principal, metodología técnica empleada, resultados o contribuciones clave y conclusiones.\n"
+        },
+        "abstract_en": {
+          "title": "Resumen",
+          "guidance": "Traducción del resumen al inglés. Obligatorio para posgrado."
+        },
+        "table_of_contents": {
+          "title": "Índice General"
+        },
+        "list_of_figures": {
+          "title": "Lista de Figuras"
+        },
+        "list_of_tables": {
+          "title": "Lista de Tablas"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Contexto tecnológico o del sistema de información, planteamiento del problema, objetivo general, objetivos específicos, alcance y organización del documento.\n"
+        },
+        "theoretical_framework": {
+          "title": "Marco Teórico y Estado del Arte",
+          "guidance": "Revisión de conceptos fundamentales y trabajos relacionados. En DCI se valora la revisión de literatura técnica reciente (congresos ACM, IEEE, artículos en Scopus o WoS) y la identificación del gap de conocimiento.\n"
+        },
+        "methodology": {
+          "title": "Metodología",
+          "guidance": "Metodología de desarrollo o investigación: SCRUM, RUP, Design Science, experimentación controlada, etc. Incluir diagrama de arquitectura del sistema si aplica, casos de uso, y criterios de evaluación.\n"
+        },
+        "results": {
+          "title": "Resultados",
+          "guidance": "Descripción del sistema desarrollado, experimentos realizados, métricas de evaluación y comparación con trabajos relacionados.\n"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusions": {
+          "title": "Conclusiones y Trabajo Futuro",
+          "guidance": "Conclusiones técnicas, limitaciones del trabajo y líneas de desarrollo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Formato APA 7. Incluir DOI cuando esté disponible."
+        },
+        "appendix": {
+          "title": "Apéndices",
+          "guidance": "Código fuente relevante, diagramas adicionales, datos de experimentos, etc."
+        }
+      },
+      "name": "UAM Cuajimalpa — DCI",
+      "description": "División de Ciencias de la Información, UAM Cuajimalpa. Computación, Tecnologías de la Información y Diseño de la Comunicación Gráfica.",
+      "institution": "Universidad Autonoma Metropolitana",
+      "department": "División de Ciencias de la Información",
+      "faculty": "Unidad Cuajimalpa",
+      "program_name": "DCI Cuajimalpa"
+    },
+    "mx_uam_izt_cbi": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "La portada debe incluir: logo UAM, nombre de la universidad y unidad, división, departamento y área de investigación, título del trabajo, nombre del sustentante, grado al que se opta, nombre del asesor(es), trimestre-año de presentación.\n"
+        },
+        "dedication": {
+          "title": "Dedicatoria"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "Máximo 300 palabras. Describe el problema, métodos empleados y principales resultados."
+        },
+        "abstract_en": {
+          "title": "Resumen",
+          "guidance": "Resumen en inglés obligatorio para posgrado (ICR, Maestría, Doctorado)."
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "list_of_figures": {
+          "title": "Lista de Figuras"
+        },
+        "list_of_tables": {
+          "title": "Lista de Tablas"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Antecedentes, planteamiento del problema, hipótesis y objetivos."
+        },
+        "theoretical_framework": {
+          "title": "Marco Teórico y Estado del Arte",
+          "guidance": "Revisión bibliográfica y fundamentos teóricos."
+        },
+        "methodology": {
+          "title": "Metodología y Desarrollo Experimental",
+          "guidance": "Materiales, métodos y procedimientos experimentales o computacionales."
+        },
+        "results": {
+          "title": "Resultados y Discusión",
+          "guidance": "Presenta resultados con figuras, tablas y análisis estadístico cuando aplique."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "guidance": "Interpreta los resultados en relación con la hipótesis y la literatura. Compara con trabajos previos."
+        },
+        "conclusions": {
+          "title": "Conclusiones y Perspectivas",
+          "guidance": "Conclusiones sobre la hipótesis planteada y propuestas de trabajo futuro."
+        },
+        "glossary": {
+          "title": "Glosario",
+          "guidance": "Definiciones de términos técnicos y acrónimos utilizados en el documento."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Formato APA 7 para ciencias sociales; IEEE o Vancouver para ciencias exactas."
+        },
+        "appendix": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "UAM Iztapalapa — CBI",
+      "description": "División de Ciencias Básicas e Ingeniería, UAM Iztapalapa. Física, Química, Matemáticas e Ingeniería Eléctrica.",
+      "institution": "Universidad Autonoma Metropolitana",
+      "department": "División de Ciencias Básicas e Ingeniería",
+      "faculty": "Unidad Iztapalapa",
+      "program_name": "CBI Iztapalapa"
+    },
+    "mx_uam_izt_dcsh": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Portada oficial UAM-CSH: logo UAM, nombre de la universidad, unidad, división y departamento, título de la tesis o trabajo terminal, nombre del alumno, matrícula, trimestre y año, nombre del asesor.\n"
+        },
+        "dedication": {
+          "title": "Dedicatoria"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "Máximo 300 palabras. Incluye objetivo, metodología y hallazgos principales."
+        },
+        "abstract_en": {
+          "title": "Resumen"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "list_of_figures": {
+          "title": "Lista de Figuras"
+        },
+        "list_of_tables": {
+          "title": "Lista de Cuadros",
+          "guidance": "En CSH se prefiere 'cuadros' en lugar de 'tablas'."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Presentación del problema de investigación, relevancia, pregunta de investigación, hipótesis (si aplica) y organización del trabajo. En humanidades puede ser más extensa (10-15 páginas).\n"
+        },
+        "theoretical_framework": {
+          "title": "Marco Teórico",
+          "guidance": "Debate teórico y posicionamiento del autor. En CSH-Iztapalapa se valora la profundidad en la discusión de enfoques teóricos y la articulación explícita con el problema de investigación.\n"
+        },
+        "methodology": {
+          "title": "Metodología",
+          "guidance": "Paradigma de investigación, diseño, técnicas (entrevistas, encuestas, análisis de discurso, etnografía, etc.) y justificación de su elección.\n"
+        },
+        "results": {
+          "title": "Análisis y Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusions": {
+          "title": "Conclusiones"
+        },
+        "references": {
+          "title": "Fuentes de Consulta",
+          "guidance": "Formato Chicago Author-Date. Incluir fuentes primarias y secundarias."
+        },
+        "appendix": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "UAM Iztapalapa — CSH",
+      "description": "División de Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociología, Historia, Lingüística, Comunicación, Economía, Psicología Social.",
+      "institution": "Universidad Autonoma Metropolitana",
+      "department": "División de Ciencias Sociales y Humanidades",
+      "faculty": "Unidad Iztapalapa",
+      "program_name": "CSH Iztapalapa"
+    },
+    "mx_uam_xoc_dcbs": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Portada oficial UAM-DCBS: logo UAM, nombre de la universidad, unidad, división y departamento, título del trabajo de investigación, nombre del alumno, matrícula, trimestre y año, y nombre del director de tesis.\n"
+        },
+        "dedication": {
+          "title": "Dedicatoria"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "Máximo 250 palabras. Estructura IMRyD abreviada: antecedentes, objetivo, métodos, resultados y conclusión principal. No incluir citas bibliográficas ni abreviaturas sin definir.\n"
+        },
+        "abstract_en": {
+          "title": "Resumen",
+          "guidance": "Traducción exacta del resumen al inglés. Obligatorio para posgrado."
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "list_of_figures": {
+          "title": "Lista de Figuras"
+        },
+        "list_of_tables": {
+          "title": "Lista de Tablas"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Antecedentes del problema, relevancia clínica o biológica, justificación, pregunta de investigación e hipótesis (si aplica).\n"
+        },
+        "theoretical_framework": {
+          "title": "Marco Teórico",
+          "guidance": "Revisión del estado del arte. En ciencias de la salud se espera revisión de literatura reciente (últimos 5 años preferentemente) con énfasis en estudios controlados y revisiones sistemáticas.\n"
+        },
+        "methodology": {
+          "title": "Metodología",
+          "guidance": "Tipo de estudio (observacional, experimental, clínico, etc.), población y muestra, criterios de inclusión/exclusión, variables, procedimientos, instrumentos y análisis estadístico. Incluir aprobación del comité de ética si aplica.\n"
+        },
+        "results": {
+          "title": "Resultados",
+          "guidance": "Presentación objetiva de los hallazgos sin interpretación. Usar tablas y figuras cuando sean más claras que el texto. Reportar medidas de frecuencia, tendencia central y dispersión.\n"
+        },
+        "discussion": {
+          "title": "Discusión",
+          "guidance": "Interpretación de los resultados en contexto con la literatura. Discutir limitaciones del estudio. No repetir los resultados.\n"
+        },
+        "conclusions": {
+          "title": "Conclusiones",
+          "guidance": "Conclusiones breves, directamente derivadas de los resultados."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Formato Vancouver (numerado, en orden de aparición). Máximo 60 referencias para licenciatura, sin límite para posgrado."
+        },
+        "appendix": {
+          "title": "Anexos",
+          "guidance": "Instrumentos de medición, cartas de consentimiento informado, aprobaciones de comité, etc."
+        }
+      },
+      "name": "UAM Xochimilco — DCBS",
+      "description": "División de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición y Veterinaria.",
+      "institution": "Universidad Autonoma Metropolitana",
+      "department": "División de Ciencias Biológicas y de la Salud",
+      "faculty": "Unidad Xochimilco",
+      "program_name": "DCBS Xochimilco"
+    },
+    "mx_uanl_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "Portada oficial UANL. Incluye:\n• Escudo y nombre de la UANL.\n• Nombre de la Facultad o División de Posgrado.\n• Título de la tesis.\n• \"TESIS en opción al grado de [Maestro/Doctor] en [Programa].\"\n• Nombre del autor.\n• Director de tesis.\n• San Nicolás de los Garza, N.L., [Mes] [Año].\nVerifica el formato específico de portada con la Dirección de Posgrado de tu Facultad.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Autenticidad",
+          "guidance": "Declaración de originalidad requerida por la UANL.\nAlgunas facultades requieren carta adicional firmada por el director.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español, 200–350 palabras.\nProblema, objetivo, método, resultados y conclusión principal.\nPalabras clave (4–6).\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce al director de tesis, sinodales, becas CONAHCYT y proyectos\nPAICYT (Programa de Apoyo a la Investigación Científica y Tecnológica UANL).\n"
+        },
+        "indice": {
+          "title": "Índice General",
+          "guidance": "Generado automáticamente. Números de página exactos."
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Activa si tienes 5 o más figuras."
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas."
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "Contextualización, planteamiento del problema, justificación,\npreguntas de investigación, objetivos e hipótesis. Estructura de la tesis.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Revisión crítica de la literatura y fundamentos conceptuales.\nOrganiza por temas. Identifica el vacío. APA 7: (Autor, año).\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "Diseño, muestra, instrumentos, procedimiento, análisis y ética."
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación."
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpretación, comparación con literatura, implicaciones y limitaciones."
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Responde preguntas, resume aportaciones, limitaciones y trabajo futuro."
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición, lista alfabética, sangría francesa."
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Materiales complementarios. Etiqueta Apéndice A, B…"
+        }
+      },
+      "name": "UANL - Tesis (APA 7)",
+      "description": "Tesis de la Universidad Autonoma de Nuevo Leon, APA 7",
+      "institution": "Universidad Autonoma de Nuevo Leon"
+    },
+    "mx_udg_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "Portada oficial de la Universidad de Guadalajara. Incluye:\n• Escudo y nombre de la Universidad de Guadalajara.\n• Centro Universitario o División de Estudios correspondiente\n  (CU Valles, CUCEA, CUCSH, CUCS, etc.).\n• Título de la tesis.\n• \"TESIS para obtener el grado de [Maestro/Doctor] en [Programa].\"\n• Nombre del autor.\n• Director de tesis e institución.\n• Guadalajara, Jalisco, [Mes] [Año].\nVerifica el formato de portada con la Coordinación de Posgrado\nde tu Centro Universitario.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Autenticidad",
+          "guidance": "Declaración de originalidad requerida por la UdeG.\nEl Centro Universitario puede pedir además un acta del Comité Tutorial.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español, 200–350 palabras.\nPregunta de investigación, metodología, resultados y aportación.\nPalabras clave (4–6).\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce al director de tesis, comité tutorial, becas CONAHCYT\ny Programa de Fortalecimiento de la Calidad Educativa (PFCE) UdeG\no proyectos UDG-PRO.\n"
+        },
+        "dedicatoria": {
+          "title": "Dedicatoria",
+          "guidance": "Opcional. Una o tres líneas. Sin encabezado impreso."
+        },
+        "indice": {
+          "title": "Índice General",
+          "guidance": "Generado automáticamente con números de página exactos."
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Activa si tienes 5 o más figuras."
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas."
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "Contextualización, planteamiento del problema, justificación, preguntas\nde investigación, objetivos, hipótesis y estructura de la tesis.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Fundamentos conceptuales y revisión crítica de la literatura.\nOrganiza por temas. APA 7: (Autor, año).\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "Diseño, muestra, instrumentos, procedimiento, análisis y ética."
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación."
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpretación, comparación con literatura, implicaciones y limitaciones."
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Responde preguntas, resume aportaciones, señala limitaciones y trabajo futuro."
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición, lista alfabética, sangría francesa. DOI cuando disponible."
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Instrumentos, datos adicionales. Etiqueta Apéndice A, B…"
+        }
+      },
+      "name": "UdeG - Tesis (APA 7)",
+      "description": "Tesis de la Universidad de Guadalajara, APA 7",
+      "institution": "Universidad de Guadalajara"
+    },
+    "mx_unam_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "Generada automáticamente a partir de los metadatos del proyecto.\nLa portada oficial de la UNAM debe incluir:\n• Logotipo y nombre de la UNAM (escudo universitario).\n• Nombre de la Facultad, Instituto o Escuela Nacional.\n• Nombre completo del programa de posgrado o licenciatura.\n• Título de la tesis (en mayúsculas y minúsculas, centrado).\n• \"TESIS\" o \"DISERTACIÓN\" según corresponda, seguido del grado\n  (e.g., \"que para obtener el grado de Doctor en [campo] presenta:\").\n• Nombre completo del autor (sin abreviaturas).\n• Nombre del director o directora de tesis.\n• Ciudad de México, mes y año (e.g., \"Ciudad de México, junio de 2026\").\nConsulta la plantilla de portada de tu programa — el formato varía\nentre facultades y programas de posgrado.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Autenticidad",
+          "guidance": "La Declaración de Autenticidad certifica que el trabajo es original\ny que las fuentes están correctamente citadas. Contenido estándar:\n\"Declaro que el presente trabajo de tesis es original y de mi autoría.\nTodas las fuentes consultadas han sido debidamente citadas y referenciadas\nconforme a las normas APA séptima edición.\"\nAlgunas facultades y programas exigen adicionalmente:\n• Carta de Responsiva firmada por el director de tesis.\n• Formato específico emitido por la División de Estudios de Posgrado.\nVerifica los requisitos de tu programa — el formulario puede requerirse\nen la Coordinación antes de la impresión final.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español. Recomendado: 200–350 palabras.\nDebe ser autocontenido: sin citas, sin siglas no definidas, sin ecuaciones.\nEstructura recomendada según APA 7ª edición:\n  1. Planteamiento del problema de investigación.\n  2. Objetivo(s) general(es) del estudio.\n  3. Enfoque metodológico y diseño de investigación.\n  4. Principales hallazgos o resultados.\n  5. Conclusiones y aportaciones al campo.\nAl final incluye entre 4 y 6 Palabras clave separadas por punto y coma.\nEl resumen aparecerá en el catálogo del Sistema Bibliotecario de la UNAM\n(UNAM Biblioweb) — redáctalo como pieza independiente.\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Opcional pero convencional en tesis universitarias mexicanas.\nReconoce: director(a) y comité de tesis, sinodales, compañeros de\nlaboratorio o grupo de investigación, instituciones que facilitaron\nacceso a datos o archivos, y apoyo personal.\nSi la investigación recibió financiamiento externo (CONACYT/CONAHCYT,\nDGAPA-PAPIIT, PAPIME, becas internacionales) es obligatorio mencionarlo\ncon el número de proyecto o beca.\nEjemplo: \"Esta investigación fue financiada por CONAHCYT a través\nde la beca de doctorado nacional No. [xxxxx].\"\nLongitud típica: media a una página.\n"
+        },
+        "dedicatoria": {
+          "title": "Dedicatoria",
+          "guidance": "Opcional. Breve — típicamente 1 a 3 líneas.\nSin encabezado impreso; el perfil gestiona el formato.\n"
+        },
+        "indice_general": {
+          "title": "Índice General",
+          "guidance": "Generado automáticamente a partir de los encabezados del documento.\nLa UNAM exige un índice completo con números de página exactos.\nIncluye: todos los preliminares (excepto la portada), los capítulos\ndel cuerpo, los apéndices y las referencias.\nProfundidad recomendada: hasta nivel 2 (capítulos y apartados principales).\n"
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Obligatorio si la tesis contiene figuras, gráficas, mapas o ilustraciones.\nGenerado automáticamente a partir de los pies de figura.\nActiva esta sección si tienes 5 o más figuras.\nEn APA 7, las figuras se designan \"Figura X\" en el texto.\n"
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Obligatorio si la tesis contiene tablas. Generado automáticamente.\nActiva esta sección si tienes 5 o más tablas.\nEn APA 7, las tablas se designan \"Tabla X\" en el texto.\n"
+        },
+        "lista_abreviaturas": {
+          "title": "Lista de Abreviaturas y Acrónimos",
+          "guidance": "Opcional, pero recomendado si la tesis usa más de 10 siglas o acrónimos.\nLista en orden alfabético: sigla en la izquierda, término completo a la derecha.\nEn el cuerpo del texto, define cada sigla la primera vez que aparece\nescribiendo el término completo seguido de la sigla entre paréntesis.\n"
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "La introducción establece el contexto, la problemática y la contribución.\nEstructura recomendada por la UNAM-CEP para tesis de posgrado:\n1. Contextualización: panorama del campo de estudio.\n2. Planteamiento del problema: ¿qué vacío o contradicción existe en el\n   conocimiento actual?\n3. Justificación: ¿por qué es relevante resolverlo? (importancia teórica,\n   práctica o social).\n4. Pregunta(s) de investigación: formuladas de manera precisa.\n5. Objetivo general y objetivos específicos: concretos y medibles.\n6. Hipótesis o supuesto de trabajo (si aplica al diseño de investigación).\n7. Delimitación: alcance espacial, temporal y temático del estudio.\n8. Estructura de la tesis: párrafo breve por capítulo.\nCitas APA 7: (Autor, año) en el texto o Autor (año) en forma narrativa.\nExtensión típica: 15–25 páginas.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico y Revisión de Literatura",
+          "label": "capitulo:marcoteorico",
+          "guidance": "El marco teórico presenta los fundamentos conceptuales y el estado del arte.\nLineamientos CEP-UNAM:\n• Organiza por corrientes teóricas, enfoques o debates — no como resumen\n  secuencial de autores.\n• Define los conceptos clave que emplearás a lo largo de la tesis.\n• Revisa la literatura más relevante (últimos 10 años, más obras fundacionales).\n• Identifica las contradicciones, los vacíos y los debates no resueltos que\n  justifican tu investigación.\n• Concluye posicionando explícitamente tu trabajo dentro del campo.\nCitas APA 7: toda afirmación sobre literatura existente lleva cita.\nPara citas de segunda mano, usa: \"como se citó en Autor (año)\".\nExtensión típica: 30–60 páginas.\n"
+        },
+        "marco_conceptual": {
+          "title": "Marco Conceptual",
+          "label": "capitulo:marcoconceptual",
+          "guidance": "Opcional. Actívalo como capítulo independiente si tu tesis requiere\ndesarrollar un marco analítico propio o si la contribución teórica es\ncentral a la investigación.\nIncluye: definición operacional de variables o categorías de análisis,\nrelaciones conceptuales, modelo o esquema analítico propio.\nEn muchas tesis de ciencias sociales y humanidades el marco conceptual\nse integra dentro del capítulo de Marco Teórico.\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "La metodología debe permitir la replicabilidad del estudio. Incluye:\n• Enfoque y paradigma: cuantitativo, cualitativo o mixto. Justifica\n  la elección con base en el problema y las preguntas de investigación.\n• Diseño de investigación: experimental, cuasiexperimental, correlacional,\n  descriptivo, fenomenológico, hermenéutico, etc.\n• Unidades de análisis, población y muestra (o corpus): criterios de\n  selección, tamaño, procedimiento de muestreo.\n• Instrumentos y técnicas de recolección: encuestas, entrevistas,\n  observación, análisis documental, análisis de contenido, etc.\n  Incluye información sobre validación de instrumentos.\n• Procedimiento de análisis de datos: software utilizado (SPSS, R, Atlas.TI,\n  NVivo), técnicas estadísticas o analíticas.\n• Consideraciones éticas: aprobación del Comité de Ética si se trabajó\n  con seres humanos; consentimiento informado.\n• Limitaciones metodológicas.\nAPA 7: los instrumentos de evaluación estandarizados llevan cita completa.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Presenta los hallazgos de manera objetiva, sin interpretación.\n• Organiza por pregunta de investigación u objetivo específico.\n• Para estudios cuantitativos: reporta estadísticas descriptivas,\n  resultados de pruebas de hipótesis (estadístico, valor p, tamaño\n  del efecto), intervalos de confianza. Tablas y figuras con notas\n  al pie conforme a APA 7.\n• Para estudios cualitativos: presenta categorías o temas emergentes\n  con citas textuales representativas; asegura anonimización de\n  participantes según los compromisos del consentimiento informado.\n• Cada tabla y figura debe ser referenciada en el texto antes de aparecer.\n• APA 7: \"La Tabla X muestra…\", \"En la Figura X se observa…\"\nExtensión: varía; en tesis cuantitativas frecuentemente 30–60 páginas.\n"
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpreta los resultados en relación con el marco teórico y la literatura.\nAPA 7 recomienda iniciar con una declaración de respaldo o no al supuesto/hipótesis.\nUna discusión sólida:\n• Retoma cada resultado y lo conecta con la teoría y la evidencia previa\n  (confirmando, contradiciendo o matizando).\n• Explica los resultados inesperados o contradictorios.\n• Discute las implicaciones teóricas y prácticas.\n• Reconoce honestamente las limitaciones del estudio.\n• Sugiere líneas de investigación futura específicas, derivadas de las\n  limitaciones y los hallazgos no resueltos.\nEn muchas tesis de la UNAM este capítulo se fusiona con Resultados o con\nConclusiones. Actívalo como capítulo independiente si el análisis lo justifica.\n"
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Las conclusiones sintetizan el argumento central y las aportaciones:\n• Responde directamente a cada pregunta de investigación u objetivo.\n• Resume las aportaciones originales: ¿qué sabe ahora el campo que antes\n  no sabía gracias a esta investigación?\n• Implicaciones prácticas, de política pública o de gestión (si aplica).\n• Limitaciones específicas y honestas del trabajo.\n• Líneas de investigación futura concretas y acotadas.\nEvita repetir los resultados — el comité ha leído el capítulo anterior.\nEn tesis doctorales de la UNAM el comité sinodal evaluará la defensa oral;\nlas conclusiones son el texto que mejor prepara esa conversación.\nExtensión típica: 10–20 páginas.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición: lista alfabética por apellido del primer autor,\nsangría francesa, generada automáticamente desde el archivo .bib.\nPuntos de verificación APA 7 en español:\n• Los títulos de libros y revistas van en cursiva.\n• Los títulos de artículos y capítulos van sin comillas (a diferencia\n  de APA 6).\n• DOI en formato de URL: https://doi.org/xxxxx (sin punto al final).\n• Para fuentes en línea: incluye la URL y la fecha de acceso si el\n  contenido puede cambiar.\n• Para tesis no publicadas: Apellido, N. (Año). Título de la tesis\n  [Tesis de doctorado, Universidad Nacional Autónoma de México].\nVolumen esperado para doctorado: 100–300 referencias.\n"
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Materiales complementarios que interrumpirían la narrativa principal:\n• Instrumentos de investigación (cuestionarios, guías de entrevista,\n  rúbricas de observación).\n• Datos brutos, tablas estadísticas extendidas o resultados adicionales.\n• Carta de aprobación del Comité de Ética y formatos de consentimiento.\n• Transcripciones de entrevistas (fragmentos representativos).\n• Cartas de autorización de instituciones colaboradoras.\nEtiqueta: Apéndice A, B… con título descriptivo.\nReferencia desde el texto: \"(véase Apéndice A)\".\n"
+        }
+      },
+      "name": "UNAM - Tesis (APA 7)",
+      "description": "Tesis de posgrado UNAM conforme a lineamientos DGAE, estilo APA 7",
+      "institution": "Universidad Nacional Autonoma de Mexico",
+      "faculty": "Sistema de Posgrado",
+      "program_name": "Posgrado UNAM"
+    },
+    "mx_unam_vancouver": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "Portada oficial de la UNAM. Debe incluir:\n• Logotipo y nombre de la UNAM y de la Facultad o Instituto.\n• Nombre completo del programa de especialización o posgrado.\n• Título de la tesis (centrado, en mayúsculas y minúsculas).\n• \"TESIS que para obtener el título/grado de [Especialista en / Doctor en]\n  [Nombre de la especialidad/área], PRESENTA:\"\n• Nombre completo del autor(a).\n• Nombre del director(a) de tesis y adscripción institucional.\n• Ciudad de México, mes y año.\nLas especialidades médicas (UNAM-IMSS, UNAM-ISSSTE, Hospital General, etc.)\ntienen formatos de portada específicos — consulta la coordinación de tu programa.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Originalidad",
+          "guidance": "Algunas especializaciones y programas de doctorado de ciencias de la\nsalud en la UNAM requieren una Carta de Originalidad o Declaración bajo\nprotesta de decir verdad de que la tesis es trabajo original.\nVerifica el requisito con la División de Estudios de Posgrado de tu Facultad.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen estructurado en español. ICMJE recomienda 250 palabras máximo\npara artículos de investigación; para tesis de grado: 200–350 palabras.\nEstructura recomendada (resumen estructurado):\n  • Antecedentes/Introducción: una o dos oraciones contextualizando el problema.\n  • Objetivo: objetivo general del estudio (en una sola oración).\n  • Métodos: diseño del estudio, población, intervención/exposición,\n    variables de desenlace, análisis estadístico.\n  • Resultados: hallazgos principales con datos numéricos clave\n    (n, porcentajes, valores p o IC 95% principales).\n  • Conclusiones: implicación clínica o científica principal.\nAl final: 3–6 Palabras clave (preferentemente del MeSH/DeCS español).\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Opcional. Reconoce: director(a) y asesor(es) de tesis, jefatura\ndel servicio o departamento donde se realizó la investigación,\npacientes o participantes del estudio (de manera anónima),\nfuentes de financiamiento (CONAHCYT, DGAPA-PAPIIT, fondos hospitalarios).\nIncluye número de protocolo si el estudio fue registrado en un CLIS\n(Comité Local de Investigación en Salud) del IMSS, ISSSTE, etc.\n"
+        },
+        "indice": {
+          "title": "Índice",
+          "guidance": "Índice general con números de página. Generado automáticamente.\nLas tesis de ciencias de la salud en México suelen listar también\nel índice de tablas y el índice de figuras.\n"
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Obligatorio si hay 5 o más tablas. Generado automáticamente.\nVancouver designa las tablas como \"Cuadro X\" o \"Tabla X\" — sé consistente.\n"
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Obligatorio si hay 5 o más figuras, imágenes o gráficas.\nGenerado automáticamente. Vancouver: \"Figura X\" en el texto.\n"
+        },
+        "introduccion": {
+          "title": "Introducción y Antecedentes",
+          "label": "capitulo:introduccion",
+          "guidance": "En ciencias de la salud la Introducción y los Antecedentes suelen ser\nun solo capítulo o secciones contiguas. Incluye:\n1. Contextualización epidemiológica: prevalencia, incidencia, carga de\n   enfermedad, relevancia en el contexto mexicano y global.\n2. Fisiopatología o marco conceptual de la enfermedad/problema clínico.\n3. Estado del arte: revisión crítica de la literatura más relevante\n   (últimos 5–10 años + obras fundacionales).\n   Vancouver: citas numéricas en orden de aparición [1], [2].\n4. Planteamiento del problema: ¿qué vacío de conocimiento o problema\n   clínico no resuelto justifica esta tesis?\n5. Justificación: relevancia clínica, epidemiológica o científica.\n6. Hipótesis (si aplica al diseño).\n7. Objetivo general y objetivos específicos.\nVancouver: primera cita de una fuente lleva su número; si se vuelve a\ncitar usa el mismo número original.\nExtensión típica: 15–30 páginas.\n"
+        },
+        "planteamiento": {
+          "title": "Marco Teórico",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Opcional. Para tesis de básica o de ciencias biomédicas con componente\nteórico relevante (bioquímica, farmacología, genética, bioestadística).\nDesarrolla los fundamentos teóricos del modelo biológico, mecanismo\nmolecular, o metodología de análisis que sustentan la tesis.\nEn muchas tesis clínicas este contenido se integra en la Introducción.\n"
+        },
+        "materiales_metodos": {
+          "title": "Material y Métodos",
+          "label": "capitulo:metodos",
+          "guidance": "Sección crítica para la reproducibilidad. Estructura ICMJE:\n• Diseño del estudio: observacional (cohorte, casos y controles,\n  transversal), experimental (ECA, pre-post, serie de tiempo),\n  o cualitativo. Justifica la elección.\n• Lugar y período: hospital, clínica, laboratorio; fechas de\n  inicio y término de recolección de datos.\n• Población: criterios de inclusión y exclusión, definición operacional\n  de casos.\n• Muestra: tamaño de muestra calculado con fórmula explícita, nivel de\n  confianza, potencia y parámetros utilizados. Tipo de muestreo.\n• Variables: definición operacional, tipo (cuantitativa continua/discreta,\n  cualitativa nominal/ordinal) y unidades de medición.\n• Intervención o exposición (si aplica): descripción precisa y reproducible.\n• Instrumentos y técnicas: validados o estandarizados con sus referencias.\n• Análisis estadístico: software (SPSS, Stata, R, MedCalc, GraphPad),\n  pruebas estadísticas con justificación (paramétrico/no paramétrico),\n  nivel de significancia (generalmente α = 0.05).\n• Consideraciones éticas: número de registro del Comité de Ética e\n  Investigación (CEI), número de registro ante COFEPRIS si aplica,\n  registro ClinicalTrials.gov (si ECA), consentimiento informado.\nExtensión típica: 10–20 páginas.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Presenta los hallazgos de forma objetiva y ordenada, sin interpretación.\n• Inicia con las características sociodemográficas de la población\n  (Tabla 1 o Cuadro 1 con características basales).\n• Reporta resultados en el orden de los objetivos específicos.\n• Cuantitativo: reporta media ± DE o mediana (RIC) según distribución;\n  comparaciones con estadístico, p y tamaño del efecto; IC 95%.\n  Usa tablas para datos numéricos extensos y figuras para tendencias.\n• Cualitativo: presenta categorías temáticas con verbatims representativos.\n• Todas las tablas y figuras deben ir numeradas secuencialmente y\n  referenciadas en el texto antes de su aparición.\n• Vancouver: cada tabla tiene un título breve arriba; cada figura tiene\n  una leyenda detallada debajo.\nExtensión típica: 15–40 páginas.\n"
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "La discusión interpreta los resultados en el contexto de la literatura.\nEstructura recomendada por ICMJE para discusiones biomédicas:\n1. Resumen del hallazgo principal (primera oración de la discusión).\n2. Comparación con estudios similares: ¿confirman, contradicen o matizan\n   tus resultados? ¿A qué se deben las discrepancias?\n3. Mecanismos propuestos: ¿cómo explicas biológica o clínicamente\n   los hallazgos observados?\n4. Implicaciones clínicas: ¿qué cambia en la práctica médica?\n   (Sé conservador — evita afirmaciones no respaldadas por la evidencia.)\n5. Limitaciones del estudio: sesgo de selección, sesgo de información,\n   confusión residual, tamaño de muestra, generalización.\n   Sé específico y honesto — los revisores y el comité siempre las buscan.\n6. Fortalezas del estudio.\n7. Investigación futura: preguntas que quedan sin responder.\nExtensión típica: 15–30 páginas.\n"
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Las conclusiones responden directamente a los objetivos específicos.\nCada conclusión debe:\n• Derivarse directamente de los resultados (sin inferencias no respaldadas).\n• Estar redactada en lenguaje declarativo afirmativo o negativo.\n• Incluir el nivel de certeza si aplica (e.g., los resultados sugieren,\n  se demostró, no se encontró diferencia significativa).\nEvita concluir más allá de lo que los datos permiten.\nAgrega brevemente las recomendaciones prácticas o de política sanitaria\nsi la evidencia lo justifica.\nExtensión típica: 1–5 páginas (las conclusiones en ciencias de la salud\nsuelen ser más concisas que en ciencias sociales).\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "Estilo Vancouver (ICMJE): numeradas en orden de primera aparición en el texto.\nGeneradas automáticamente desde tu archivo .bib por biber/biblatex-vancouver.\nFormato de entrada estándar:\n• Artículo: Apellido N, Apellido N. Título del artículo.\n  Nombre Rev Abreviado. año;vol(num):pp–pp. DOI o PMID.\n• Libro: Apellido N. Título. Ciudad: Editorial; año. p. pp.\n• Capítulo: Apellido N. Título capítulo. En: Editor A, editor.\n  Título libro. Ciudad: Editorial; año. p. pp–pp.\nAbreviaciones de revistas: usa el Index Medicus / PubMed.\nDOI obligatorio cuando esté disponible; si no, URL + fecha de acceso.\nNúmero máximo recomendado por ICMJE para artículos: 30–40 refs.\nTesis: sin límite estricto; típicamente 60–150 referencias.\n"
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Materiales complementarios:\n• Dictamen del Comité de Ética e Investigación.\n• Formato de consentimiento informado (versión final aprobada).\n• Instrumentos de recolección: cuestionarios, escalas, formatos de captura.\n• Registro ClinicalTrials.gov o equivalente (si aplica).\n• Tablas de datos extendidas o resultados de sensibilidad.\n• Autorización de la institución donde se realizó el estudio.\nEtiqueta: Apéndice A, B… con título descriptivo.\n"
+        }
+      },
+      "name": "UNAM - Ciencias de la Salud (Vancouver)",
+      "description": "Tesis UNAM para medicina y ciencias de la salud, estilo Vancouver",
+      "institution": "Universidad Nacional Autonoma de Mexico",
+      "faculty": "Sistema de Posgrado",
+      "program_name": "Medicina y Ciencias de la Salud"
+    },
+    "us_harvard_apa7": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "copyright_page": {
+          "title": "Derechos de autor",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "dedication": {
+          "title": "Dedicatoria",
+          "guidance": "Optional personal dedication. Brief — typically 1–3 lines.\nNo heading or title is usually printed; the profile handles the formatting.\n"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "literature_review": {
+          "title": "Revisión de literatura",
+          "label": "chapter:literature",
+          "guidance": "The literature review demonstrates mastery of the field and positions your contribution.\nHarvard GSAS expectations:\n• Organize thematically or methodologically, not as a sequential summary of papers.\n• Identify schools of thought, debates, and key theoretical divides.\n• Critically evaluate — what each approach does and fails to do.\n• Build explicitly toward the gap your dissertation fills.\n• Cover major journals and recent (last 5–10 years) scholarship; foundational works can be older.\nUse the DOI importer to add papers from Crossref. Zotero integration is available for\nimporting directly from your library.\nLength: 30–60 pages for a humanities or social science dissertation.\n"
+        },
+        "theoretical_framework": {
+          "title": "Marco teórico",
+          "label": "chapter:theory",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Metodología",
+          "label": "chapter:methodology",
+          "guidance": "Detalla el diseño de investigación, datos o muestra, instrumentos, procedimiento, estrategia de análisis, herramientas y consideraciones éticas con detalle suficiente para replicar el estudio."
+        },
+        "results": {
+          "title": "Resultados / hallazgos",
+          "label": "chapter:results",
+          "guidance": "Presenta los hallazgos de forma objetiva y organízalos por pregunta, objetivo o tema. Usa tablas y figuras cuando mejoren la claridad."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusión",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "Harvard - Tesis (APA 7)",
+      "description": "Perfil académico para Harvard - Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Harvard University",
+      "program_name": "Psychology and Social Sciences"
+    },
+    "us_harvard_chicago17": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "copyright_page": {
+          "title": "Derechos de autor",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras / ilustraciones",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "dedication": {
+          "title": "Dedicatoria",
+          "guidance": "Optional. Brief — typically 1–3 lines.\nNo heading is printed; the profile handles formatting.\n"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "literature_review": {
+          "title": "Historiografía / estado del campo",
+          "label": "chapter:literature",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "theoretical_framework": {
+          "title": "Marco teórico",
+          "label": "chapter:theory",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Método y fuentes",
+          "label": "chapter:methodology",
+          "guidance": "Detalla el diseño de investigación, datos o muestra, instrumentos, procedimiento, estrategia de análisis, herramientas y consideraciones éticas con detalle suficiente para replicar el estudio."
+        },
+        "results": {
+          "title": "Capítulo dos",
+          "label": "chapter:two",
+          "guidance": "Presenta los hallazgos de forma objetiva y organízalos por pregunta, objetivo o tema. Usa tablas y figuras cuando mejoren la claridad."
+        },
+        "discussion": {
+          "title": "Capítulo tres",
+          "label": "chapter:three",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusión",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Bibliografía",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "Harvard - Tesis (Chicago 17)",
+      "description": "Perfil académico para Harvard - Tesis (Chicago 17). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Harvard University",
+      "program_name": "Humanities and Social Sciences"
+    },
+    "us_mit_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "background": {
+          "title": "Antecedentes y trabajo relacionado",
+          "label": "chapter:background",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Enfoque propuesto / metodología",
+          "label": "chapter:methodology",
+          "guidance": "Detalla el diseño de investigación, datos o muestra, instrumentos, procedimiento, estrategia de análisis, herramientas y consideraciones éticas con detalle suficiente para replicar el estudio."
+        },
+        "experiments": {
+          "title": "Evaluación experimental",
+          "label": "chapter:experiments",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusión y trabajo futuro",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "MIT - Tesis (IEEE)",
+      "description": "Perfil académico para MIT - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Massachusetts Institute of Technology",
+      "program_name": "Engineering and Sciences"
+    },
+    "us_stanford_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "copyright_page": {
+          "title": "Derechos de autor",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "background": {
+          "title": "Antecedentes y trabajo relacionado",
+          "label": "chapter:background",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Enfoque propuesto",
+          "label": "chapter:methodology",
+          "guidance": "The core technical contribution. Describe it with enough detail for replication:\n• Problem formulation: precise mathematical or computational definition.\n• System architecture or algorithm design (use block diagrams where helpful).\n• Key design decisions and their justification — why this approach and not others.\n• Theoretical analysis: complexity, convergence, correctness proofs, or bounds\n  (where applicable to the contribution type).\n• Implementation notes relevant to correctness (full code listings → Appendix).\nStanford engineering reading committees expect formal rigor:\ndefine all symbols, prove claims, and state assumptions explicitly.\n"
+        },
+        "experiments": {
+          "title": "Evaluación experimental",
+          "label": "chapter:experiments",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusión y trabajo futuro",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "Stanford - Tesis (IEEE)",
+      "description": "Perfil académico para Stanford - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Stanford University",
+      "program_name": "Engineering and Computer Science"
+    },
+    "us_chicago_chicago17": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "copyright_page": {
+          "title": "Derechos de autor",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "literature_review": {
+          "title": "Teoría y literatura",
+          "label": "chapter:literature",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "theoretical_framework": {
+          "title": "Marco teórico",
+          "label": "chapter:theory",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Diseño de investigación",
+          "label": "chapter:methodology",
+          "guidance": "Detalla el diseño de investigación, datos o muestra, instrumentos, procedimiento, estrategia de análisis, herramientas y consideraciones éticas con detalle suficiente para replicar el estudio."
+        },
+        "results": {
+          "title": "Análisis empírico",
+          "label": "chapter:results",
+          "guidance": "Presenta los hallazgos de forma objetiva y organízalos por pregunta, objetivo o tema. Usa tablas y figuras cuando mejoren la claridad."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusión",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "UChicago - Tesis (Chicago 17)",
+      "description": "Perfil académico para UChicago - Tesis (Chicago 17). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "University of Chicago",
+      "program_name": "Social Sciences"
+    },
+    "cn_pku_gbt": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "Peking University - Tesis (GB/T 7714)",
+      "description": "Perfil académico para Peking University - Tesis (GB/T 7714). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Peking University"
+    },
+    "cn_tsinghua_gbt": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "Tsinghua - Tesis (GB/T 7714)",
+      "description": "Perfil académico para Tsinghua - Tesis (GB/T 7714). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Tsinghua University"
+    },
+    "in_iit_bombay_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "IIT Bombay - Tesis (IEEE)",
+      "description": "Perfil académico para IIT Bombay - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Indian Institute of Technology Bombay",
+      "program_name": "Engineering"
+    },
+    "jp_kyoto_apa7": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "Kyoto University - Tesis (APA 7)",
+      "description": "Perfil académico para Kyoto University - Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Kyoto University",
+      "program_name": "Humanities and Social Sciences"
+    },
+    "jp_utokyo_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "U Tokyo - Tesis (IEEE)",
+      "description": "Perfil académico para U Tokyo - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "University of Tokyo",
+      "program_name": "Engineering and Sciences"
+    },
+    "sg_nus_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "NUS - Tesis (IEEE)",
+      "description": "Perfil académico para NUS - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "National University of Singapore",
+      "program_name": "Computing and Engineering"
+    },
+    "kr_snu_apa7": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "Seoul National University - Tesis (APA 7)",
+      "description": "Perfil académico para Seoul National University - Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Seoul National University"
+    },
+    "de_lmu_apa7": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "zusammenfassung": {
+          "title": "Zusammenfassung (auf Deutsch)",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "abstract_en": {
+          "title": "Resumen en inglés",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos / Danksagung",
+          "guidance": "Acknowledge supervisor(s), committee members, funding (DFG, BMBF,\nEU Horizon, LMU research grants — with project numbers).\n"
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Auto-generated. Complete with page numbers."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Establishes research problem, motivation, gap, research questions,\ntheoretical framework, and dissertation structure.\nAPA 7: (Author, year) citations throughout.\nLength: 10–25 pages.\n"
+        },
+        "literature_review": {
+          "title": "Antecedentes teóricos y revisión de literatura",
+          "label": "chapter:literature",
+          "guidance": "Conceptual foundations and critical review of prior work.\nOrganized by theory or research area — not chronologically.\nIdentify the gap that this dissertation fills.\n"
+        },
+        "methodology": {
+          "title": "Metodología",
+          "label": "chapter:methodology",
+          "guidance": "Research design, participants/sample, measures, procedure,\nstatistical analysis, and ethical approval (Ethics Committee, DGPs).\n"
+        },
+        "results": {
+          "title": "Resultados",
+          "label": "chapter:results",
+          "guidance": "Presenta los hallazgos de forma objetiva y organízalos por pregunta, objetivo o tema. Usa tablas y figuras cuando mejoren la claridad."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpretation in relation to theory and prior literature.\nImplications, limitations, and future research directions.\n"
+        },
+        "conclusion": {
+          "title": "Conclusiones generales",
+          "label": "chapter:conclusion",
+          "guidance": "Synthesizes contributions, limitations, and outlook.\nOften brief in social science dissertations (5–15 pages).\n"
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "APA 7 — alphabetical, hanging indent. Auto-generated."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "LMU Munich - Disertación (APA 7)",
+      "description": "Ludwig-Maximilians-Universitaet Muenchen dissertation, APA 7",
+      "institution": "Ludwig-Maximilians-Universitaet Muenchen"
+    },
+    "de_tum_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "zusammenfassung": {
+          "title": "Zusammenfassung (Abstract auf Deutsch)",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "abstract_english": {
+          "title": "Resumen en inglés",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Optional but standard. Acknowledge: doctoral supervisor (Betreuer) and\ncommittee members (Prüfungskommission), DFG, BMBF, EU Horizon, DAAD,\nor industry partners (with project/grant numbers).\nExample: \"This work was funded by the Deutsche Forschungsgemeinschaft\n(DFG) under project number [XXX-XXXXXX].\"\nTypical length: half to one page.\n"
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "background": {
+          "title": "Antecedentes y trabajo relacionado",
+          "label": "chapter:background",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Enfoque propuesto",
+          "label": "chapter:methodology",
+          "guidance": "Detalla el diseño de investigación, datos o muestra, instrumentos, procedimiento, estrategia de análisis, herramientas y consideraciones éticas con detalle suficiente para replicar el estudio."
+        },
+        "experiments": {
+          "title": "Evaluación experimental",
+          "label": "chapter:experiments",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusión y perspectivas",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "TU Munich - Disertación (IEEE)",
+      "description": "Technische Universitaet Muenchen dissertation for engineering, IEEE",
+      "institution": "Technische Universitaet Muenchen",
+      "program_name": "Engineering"
+    },
+    "it_sapienza_apa7": {
+      "sections": {
+        "title_page": {
+          "title": "Portada"
+        },
+        "abstract": {
+          "title": "Resumen"
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos"
+        },
+        "table_of_contents": {
+          "title": "Índice"
+        },
+        "introduction": {
+          "title": "Introducción"
+        },
+        "literature_review": {
+          "title": "Revisión de literatura"
+        },
+        "methodology": {
+          "title": "Metodología"
+        },
+        "results": {
+          "title": "Resultados"
+        },
+        "discussion": {
+          "title": "Discusión"
+        },
+        "conclusion": {
+          "title": "Conclusión"
+        },
+        "references": {
+          "title": "Referencias"
+        },
+        "appendices": {
+          "title": "Apéndices"
+        }
+      },
+      "name": "Sapienza Roma - Tesi (APA 7)",
+      "description": "Tesi di laurea magistrale Sapienza Universita di Roma, APA 7",
+      "institution": "Sapienza Universita di Roma"
+    },
+    "nl_tudelft_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "propositions": {
+          "title": "Propositions (Stellingen)",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "summary": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "samenvatting": {
+          "title": "Samenvatting (Summary in Dutch)",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos / Dankwoord",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "background": {
+          "title": "Antecedentes y revisión de literatura",
+          "label": "chapter:background",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Enfoque propuesto",
+          "label": "chapter:methodology",
+          "guidance": "Core technical contribution with full reproducibility:\n• Problem formulation: precise mathematical or computational definition.\n• System design or algorithm (with block diagrams or pseudocode).\n• Theoretical analysis: complexity, bounds, or convergence.\n• Design decisions and their justification.\n• Implementation details relevant to correctness.\nTU Delft promotiecommissies are typically 5–8 experts including external\n(outside TU Delft) and international members — the contribution must be\nclearly and rigorously stated.\n"
+        },
+        "experiments": {
+          "title": "Evaluación experimental",
+          "label": "chapter:experiments",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusiones y recomendaciones",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "TU Delft - Tesis (IEEE)",
+      "description": "Perfil académico para TU Delft - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "Delft University of Technology",
+      "program_name": "Engineering and Technology"
+    },
+    "es_ucm_apa7": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "La portada oficial de la UCM incluye:\n• Logotipo de la Universidad Complutense de Madrid.\n• Nombre de la Facultad o Departamento.\n• Título completo de la tesis doctoral.\n• \"TESIS DOCTORAL\" (en mayúsculas).\n• \"presentada por [Nombre del autor/a].\"\n• \"dirigida por [Dr./Dra. Nombre del Director/a].\"\n• \"para optar al grado de Doctor/a por la Universidad Complutense de Madrid.\"\n• Madrid, [Año].\nLa Escuela de Doctorado (EDCM) puede tener un formato normalizado —\ndescarga la plantilla desde el portal de la EDCM.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Autoría y Originalidad",
+          "guidance": "La UCM exige una Declaración de Autoría y Originalidad conforme\nal artículo 9 del Reglamento de Doctorado UCM.\nTexto estándar: \"D./Dña. [nombre], con DNI/NIE [número], declaro que\nla presente tesis doctoral es de mi autoría, original e inédita,\nque no ha sido presentada en ninguna otra institución y que los\nresultados son verídicos.\"\nPuede requerirse también la firma del director de tesis.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen en español, 200–350 palabras.\nProblema, objetivos, metodología, resultados y conclusiones.\nPalabras clave (4–6).\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "La UCM exige resumen en inglés para las tesis doctorales.\nMáximo 350 palabras. Misma estructura que el Resumen.\nKeywords (4–6). Requerido para el depósito en TESEO y en la\nbase de datos de la Biblioteca UCM.\n"
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce al director/a de tesis, tribunal, becas (FPI, FPU, contrato predoctoral\nUCM) y proyectos de investigación del Ministerio (PID, PIE) o la Comunidad\nde Madrid (PRICIT) con referencia del proyecto.\n"
+        },
+        "indice": {
+          "title": "Índice",
+          "guidance": "Generado automáticamente. Requerido por la EDCM."
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Activa si tienes 5 o más figuras."
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas."
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "Contextualización, planteamiento del problema, justificación,\npreguntas de investigación, objetivos, hipótesis y estructura.\nAPA 7: (Autor, año) en el texto.\nLa UCM requiere que la introducción muestre dominio del campo.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico y Revisión de la Literatura",
+          "label": "capitulo:marcoteorico",
+          "guidance": "Revisión crítica de la literatura y fundamentos teóricos.\nOrganiza por corrientes teóricas o debates — no cronológicamente.\nIdentifica el vacío que justifica la tesis.\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "Diseño, muestra, instrumentos, procedimiento, análisis y ética.\nSi la investigación implica seres humanos: aprobación del Comité\nde Ética de Investigación (CEISH-UCM o similar).\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación."
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "Interpretación, comparación con literatura, implicaciones y limitaciones."
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Responde preguntas de investigación, resume aportaciones, señala\nlimitaciones y propone investigación futura.\nLa UCM puede exigir separar \"Conclusiones\" de \"Discusión\" —\nverifica con tu director y la normativa de tu programa.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición, lista alfabética, sangría francesa.\nGenerada automáticamente. Incluye DOI cuando disponible.\nLa EDCM puede exigir que las referencias estén en un capítulo\nfinal con numeración continua — verifica los requisitos de tu programa.\n"
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Instrumentos, datos adicionales, declaraciones éticas,\npublicaciones derivadas de la tesis (si las presentas como compendio).\nLas tesis por compendio de publicaciones (modalidad frecuente en UCM)\nrequieren incluir los artículos publicados en apéndices o capítulos.\n"
+        }
+      },
+      "name": "UCM Madrid - Tesis (APA 7)",
+      "description": "Tesis doctoral de la Universidad Complutense de Madrid, APA 7",
+      "institution": "Universidad Complutense de Madrid"
+    },
+    "se_kth_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "sammanfattning": {
+          "title": "Sammanfattning (Swedish Abstract)",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Auto-generated. Complete with page numbers."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "background": {
+          "title": "Antecedentes",
+          "label": "chapter:background",
+          "guidance": "Technical foundations and related work. Gap statement."
+        },
+        "methodology": {
+          "title": "Metodología",
+          "label": "chapter:methodology",
+          "guidance": "System design, algorithms, theoretical analysis, design decisions."
+        },
+        "experiments": {
+          "title": "Resultados experimentales",
+          "label": "chapter:experiments",
+          "guidance": "Experimental setup, ablations, comparison to baselines,\nstatistical reporting. IEEE: Fig. X and Table X.\n"
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpretation, limitations, scalability, industry relevance."
+        },
+        "conclusion": {
+          "title": "Conclusiones y trabajo futuro",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "KTH - Tesis (IEEE)",
+      "description": "Perfil académico para KTH - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "KTH Royal Institute of Technology",
+      "program_name": "Engineering and Technology"
+    },
+    "uk_cambridge_apa7": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "declaration": {
+          "title": "Declaración",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Acknowledge your supervisor, funding bodies (mandatory if externally funded),\ncollaborators, and any third-party data or material providers.\nIf your research involved human subjects, acknowledge ethics approval here\n(e.g. \"This research was approved by the Cambridge Psychology Research Ethics\nCommittee, reference PREC/2023/xxx\").\nTypical length: half to one page.\n"
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "abbreviations": {
+          "title": "Lista de abreviaturas",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "ch:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "literature_review": {
+          "title": "Revisión de literatura",
+          "label": "ch:literature",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "theoretical_framework": {
+          "title": "Marco teórico",
+          "label": "ch:theory",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Metodología",
+          "label": "ch:methodology",
+          "guidance": "Detalla el diseño de investigación, datos o muestra, instrumentos, procedimiento, estrategia de análisis, herramientas y consideraciones éticas con detalle suficiente para replicar el estudio."
+        },
+        "results": {
+          "title": "Resultados",
+          "label": "ch:results",
+          "guidance": "Presenta los hallazgos de forma objetiva y organízalos por pregunta, objetivo o tema. Usa tablas y figuras cuando mejoren la claridad."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "ch:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusión",
+          "label": "ch:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "Cambridge - PhD Tesis (APA 7)",
+      "description": "Perfil académico para Cambridge - PhD Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "University of Cambridge",
+      "program_name": "Social Sciences, Psychology, and Education"
+    },
+    "uk_cambridge_ieee": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Reconoce a asesores, comité, colaboradores, instituciones y fuentes de financiamiento. Incluye números de beca o proyecto cuando aplique."
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras",
+          "guidance": "Activa esta sección cuando el documento contenga varias figuras numeradas. Verifica que cada figura tenga pie y número de página."
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas",
+          "guidance": "Activa esta sección cuando el documento contenga varias tablas numeradas. Verifica que cada tabla tenga título y número de página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "chapter:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "background": {
+          "title": "Antecedentes y trabajo relacionado",
+          "label": "chapter:background",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Metodología propuesta",
+          "label": "chapter:methodology",
+          "guidance": "The core technical contribution. Must be complete enough for replication:\n• Problem formulation: mathematical or computational definition.\n• System design or algorithm description (with diagrams where helpful).\n• Theoretical analysis: complexity, convergence, correctness, or bounds.\n• Key design choices with justification.\n• Implementation details relevant to correctness (full listings → Appendix).\nCambridge examiners apply a strict standard: every claim must be stated\nas a theorem/proposition/lemma (if formal) or as an empirically testable\nhypothesis (if experimental). Ambiguity in the contribution is the most\ncommon reason for major corrections.\n"
+        },
+        "experiments": {
+          "title": "Evaluación experimental",
+          "label": "chapter:experiments",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "label": "chapter:discussion",
+          "guidance": "Interpreta los resultados en relación con la literatura, explica sus implicaciones y discute las limitaciones."
+        },
+        "conclusion": {
+          "title": "Conclusiones y trabajo futuro",
+          "label": "chapter:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "Cambridge - Tesis (IEEE)",
+      "description": "Perfil académico para Cambridge - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "University of Cambridge",
+      "program_name": "Engineering and Natural Sciences"
+    },
+    "uk_oxford_mhra": {
+      "sections": {
+        "title_page": {
+          "title": "Portada",
+          "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
+        },
+        "abstract": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Thank your supervisor and co-supervisors, funding bodies (mandatory if funded),\ncollege, department, collaborators, and ethics boards if relevant.\nNote your sources of funding (scholarships, grants, project numbers).\nTypical length: half a page.\n"
+        },
+        "table_of_contents": {
+          "title": "Índice",
+          "guidance": "Genera esta sección automáticamente y verifica la paginación final antes de entregar."
+        },
+        "list_of_figures": {
+          "title": "Lista de figuras"
+        },
+        "list_of_tables": {
+          "title": "Lista de tablas"
+        },
+        "abbreviations": {
+          "title": "Lista de abreviaturas"
+        },
+        "introduction": {
+          "title": "Introducción",
+          "label": "ch:introduction",
+          "guidance": "Presenta el contexto, planteamiento del problema, justificación, preguntas de investigación, objetivos, alcance y estructura del documento."
+        },
+        "literature_review": {
+          "title": "Revisión de literatura",
+          "label": "ch:literature",
+          "guidance": "Revisa la literatura relevante y los fundamentos teóricos. Organiza por temas o debates e identifica el vacío que aborda tu trabajo."
+        },
+        "methodology": {
+          "title": "Metodología y fuentes",
+          "label": "ch:methodology",
+          "guidance": "Detalla el diseño de investigación, datos o muestra, instrumentos, procedimiento, estrategia de análisis, herramientas y consideraciones éticas con detalle suficiente para replicar el estudio."
+        },
+        "chapter_1": {
+          "title": "Capítulo 1",
+          "label": "ch:one",
+          "guidance": "Completa esta sección conforme a los requisitos del perfil y los lineamientos vigentes de tu institución."
+        },
+        "chapter_2": {
+          "title": "Capítulo 2",
+          "label": "ch:two"
+        },
+        "chapter_3": {
+          "title": "Capítulo 3",
+          "label": "ch:three"
+        },
+        "chapter_4": {
+          "title": "Capítulo 4",
+          "label": "ch:four"
+        },
+        "conclusion": {
+          "title": "Conclusión",
+          "label": "ch:conclusion",
+          "guidance": "Responde las preguntas de investigación, resume la aportación, señala limitaciones y propone trabajo futuro."
+        },
+        "bibliography": {
+          "title": "Bibliografía",
+          "guidance": "Incluye solo las fuentes citadas y sigue el estilo bibliográfico requerido por el perfil."
+        },
+        "appendices": {
+          "title": "Apéndices",
+          "guidance": "Incluye material suplementario como instrumentos, tablas extensas, protocolos, dictámenes o documentación técnica de apoyo."
+        }
+      },
+      "name": "Oxford - DPhil Tesis (MHRA)",
+      "description": "Perfil académico para Oxford - DPhil Tesis (MHRA). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
+      "institution": "University of Oxford",
+      "program_name": "DPhil in Humanities"
+    },
+    "generic_especialidad": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "Incluye institución, programa de especialidad, título del trabajo,\nautor, asesor, ciudad y fecha. Si tu hospital, colegio o programa\ntiene un formato oficial, úsalo como fuente de verdad.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resume el problema profesional abordado, el contexto, la estrategia\nde intervención o análisis, los resultados principales y la utilidad\npráctica del trabajo. Longitud sugerida: 150–300 palabras.\n"
+        },
+        "indice": {
+          "title": "Índice",
+          "guidance": "Generado automáticamente. Revisa la paginación final antes de entregar.\n"
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "guidance": "Presenta el problema profesional o clínico, el contexto institucional,\nla relevancia del trabajo y los objetivos del documento.\n"
+        },
+        "marco_referencial": {
+          "title": "Marco Referencial",
+          "guidance": "Sintetiza la normativa, evidencia previa, protocolos, guías clínicas\no literatura que sustentan el abordaje adoptado.\n"
+        },
+        "metodologia": {
+          "title": "Metodología / Intervención",
+          "guidance": "Describe el diseño del trabajo, procedimiento, criterios de selección,\ninstrumentos, intervención o estrategia aplicada y consideraciones éticas.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "guidance": "Expón los hallazgos, productos, métricas, evaluación o resultados\nobservados del trabajo de especialidad.\n"
+        },
+        "discusion": {
+          "title": "Discusión",
+          "guidance": "Interpreta los resultados, compara con literatura o estándares,\nreconoce limitaciones y señala implicaciones prácticas.\n"
+        },
+        "conclusiones": {
+          "title": "Conclusiones y Recomendaciones",
+          "guidance": "Resume el aporte profesional del trabajo, su utilidad aplicada y\nrecomendaciones para continuidad o mejora.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "Lista final de referencias en APA 7. Incluye solo las fuentes citadas.\n"
+        },
+        "anexos": {
+          "title": "Anexos",
+          "guidance": "Material complementario: instrumentos, protocolos, formatos, tablas\nextensas o documentación técnica de apoyo.\n"
+        }
+      },
+      "name": "Trabajo de Especialidad Genérico",
+      "description": "Perfil genérico para trabajos de especialidad y proyectos aplicados de posgrado profesional"
+    },
+    "generic_posdoctorado": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "Incluye institución anfitriona, proyecto o estancia posdoctoral,\ntítulo del informe o monografía, investigador responsable, mentor\no supervisor, sede y fecha.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Sintetiza la agenda posdoctoral, objetivos, enfoque metodológico,\ncontribuciones, resultados y proyección futura. Longitud sugerida:\n200–350 palabras.\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Recomendado cuando el informe posdoctoral circulará internacionalmente\no se reportará a una convocatoria externa.\n"
+        },
+        "indice": {
+          "title": "Índice",
+          "guidance": "Generado automáticamente. Revisa la consistencia final de la paginación.\n"
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "guidance": "Presenta el campo de investigación, la agenda del proyecto y el\nposicionamiento del trabajo dentro de la línea posdoctoral.\n"
+        },
+        "estado_arte": {
+          "title": "Estado del Arte",
+          "guidance": "Desarrolla una revisión crítica del estado actual del campo,\nidentifica vacíos y justifica la aportación del trabajo posdoctoral.\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "guidance": "Explica diseño, corpus o datos, procedimientos, protocolos, herramientas,\nreproducibilidad y consideraciones éticas según corresponda.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "guidance": "Presenta resultados, productos académicos, prototipos, artículos,\ndatasets o avances verificables obtenidos durante la estancia.\n"
+        },
+        "discusion": {
+          "title": "Discusión",
+          "guidance": "Interpreta el alcance de los resultados, su novedad, limitaciones,\ny relación con el estado del arte.\n"
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "guidance": "Resume las aportaciones del trabajo posdoctoral y su impacto\ncientífico, metodológico o aplicado.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "Lista final de referencias citadas, en formato APA 7.\n"
+        },
+        "anexos": {
+          "title": "Anexos",
+          "guidance": "Evidencia complementaria: instrumentos, tablas extendidas, protocolos,\nproductos, documentación técnica o material suplementario.\n"
+        }
+      },
+      "name": "Informe Posdoctoral Genérico",
+      "description": "Perfil genérico para informes, memorias y monografías de trabajo posdoctoral"
+    },
+    "generic_tesina": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "La portada debe incluir:\n• Logotipo y nombre de la institución, facultad o escuela.\n• Título completo de la tesina (claro y específico).\n• \"TESINA\" y el grado o certificado al que aspira\n  (e.g., \"para obtener el título de Licenciado(a) en [campo]\").\n• Nombre completo del autor.\n• Nombre del asesor o director.\n• Ciudad, mes y año.\nConsulta el formato oficial de portada de tu programa.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "Resumen breve de la tesina. 150–300 palabras.\nIncluye: el tema, el objetivo, el método empleado, los principales\nhallazgos y la aportación o conclusión central.\nAl final: 4–6 Palabras clave.\nSin citas, sin figuras, sin acrónimos no definidos.\n"
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Opcional. Agradece a tu asesor, a las personas que facilitaron\nel acceso a datos o información, y al apoyo personal recibido.\nLongitud típica: un párrafo o media página.\n"
+        },
+        "indice": {
+          "title": "Índice",
+          "guidance": "Generado automáticamente. Incluye todos los capítulos y apartados\ncon sus números de página.\n"
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "La introducción sitúa el tema y justifica el trabajo.\nIncluye:\n1. Presentación del tema: ¿de qué trata la tesina?\n2. Relevancia: ¿por qué es importante este tema?\n3. Pregunta o propósito central del trabajo.\n4. Objetivo(s) del estudio.\n5. Breve descripción de la estructura de la tesina.\nExtensión típica: 3–8 páginas.\n"
+        },
+        "desarrollo": {
+          "title": "Desarrollo",
+          "label": "capitulo:desarrollo",
+          "guidance": "El desarrollo es el cuerpo principal de la tesina. Puedes estructurarlo\nde las siguientes maneras según el tipo de trabajo:\nTesina teórica / ensayo académico:\n  • Revisión y análisis crítico de la literatura relevante.\n  • Desarrollo del argumento o postura central con apoyo bibliográfico.\n  • Discusión de distintas perspectivas o enfoques.\nTesina de investigación empírica (pequeña escala):\n  • Marco teórico breve.\n  • Metodología: diseño, muestra, instrumentos, procedimiento.\n  • Resultados y análisis.\n  • Discusión de los hallazgos.\nTesina de diseño o proyecto:\n  • Diagnóstico o justificación del problema.\n  • Propuesta de intervención o diseño.\n  • Evaluación o validación.\nDivide este capítulo en apartados con subtítulos claros.\nAPA 7: cita con (Autor, año) o Autor (año).\nExtensión típica: 25–60 páginas.\n"
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Las conclusiones sintetizan lo que aprendiste o demostraste.\n• Responde a la pregunta o propósito central de la tesina.\n• Resume los puntos principales del desarrollo.\n• Señala implicaciones o aplicaciones.\n• Reconoce las limitaciones del trabajo.\n• Sugiere posibles líneas de trabajo futuro o profundización.\nExtensión típica: 3–8 páginas.\nEvita introducir información nueva que no hayas discutido antes.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición: lista alfabética, sangría francesa.\nSolo incluye las fuentes que citaste en el texto.\nGenerada automáticamente desde tu archivo .bib.\nIncluye DOI cuando esté disponible.\n"
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Opcional. Materiales adicionales de apoyo:\n• Instrumentos de recolección (si los usaste).\n• Tablas de datos extensas.\n• Materiales de análisis adicionales.\nEtiqueta: Apéndice A, B… Referencia desde el texto.\n"
+        }
+      },
+      "name": "Tesina Generica",
+      "description": "Version compacta para trabajos monograficos y tesinas"
+    },
+    "generic_thesis": {
+      "sections": {
+        "portada": {
+          "title": "Portada",
+          "guidance": "La portada es la primera impresión de tu tesis. Incluye:\n• Logotipo y nombre de tu institución (universidad / facultad / departamento).\n• Título completo de la tesis (informativo y específico, sin abreviaturas).\n• Tipo de documento: \"TESIS\" o \"DISERTACIÓN\" y el grado al que aspira\n  (e.g., \"para obtener el grado de Licenciado(a) en / Maestro(a) en /\n  Doctor(a) en [nombre del campo]\").\n• Nombre completo del autor o autores.\n• Nombre del director o directora de tesis.\n• Ciudad, mes y año de presentación.\nConsulta a tu coordinación o programa — muchas instituciones tienen\nun formato de portada oficial que debes seguir exactamente.\n"
+        },
+        "declaracion": {
+          "title": "Declaración de Autenticidad",
+          "guidance": "La Declaración de Autenticidad certifica que el trabajo es tuyo y que las\nfuentes están correctamente citadas. Texto estándar (adapta si tu institución\ntiene un formato específico):\n\"Declaro bajo protesta de decir verdad que el presente trabajo es original\ny ha sido elaborado por el suscrito. Todas las fuentes consultadas han sido\ndebidamente citadas y referenciadas conforme a las normas aplicables.\"\nAlgunas universidades exigen que esta declaración vaya firmada, notariada,\no en un formato específico — verifica con tu programa.\n"
+        },
+        "resumen": {
+          "title": "Resumen",
+          "guidance": "El resumen en español es el primer elemento académico que leerán otros\ninvestigadores. Recomendado: 150–350 palabras.\nAPA 7 (para tesis y trabajos de estudiantes) recomienda incluir:\n  1. El problema de investigación (1–2 oraciones).\n  2. Los participantes o datos empleados (si aplica).\n  3. La metodología o enfoque utilizado.\n  4. Los hallazgos o conclusiones principales.\n  5. Las implicaciones o aportaciones del estudio.\nAl final agrega 4–6 Palabras clave separadas por punto y coma.\nDebe ser autocontenido: sin citas, sin figuras, sin acrónimos no definidos.\n"
+        },
+        "abstract_ingles": {
+          "title": "Resumen",
+          "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
+        },
+        "agradecimientos": {
+          "title": "Agradecimientos",
+          "guidance": "Sección opcional pero convencional. Reconoce a quienes contribuyeron\na tu investigación: director de tesis, comité o sinodales, colegas,\nbibliotecarios, participantes del estudio, y a quienes te apoyaron\npersonalmente durante el proceso.\nSi tu investigación fue financiada con beca o recurso externo\n(CONAHCYT, CONACYT, DGAPA, etc.), es obligatorio mencionarlo con\nel número de proyecto o beca.\nLongitud típica: media a una página.\n"
+        },
+        "dedicatoria": {
+          "title": "Dedicatoria",
+          "guidance": "Opcional. Una o tres líneas. Sin encabezado impreso.\n"
+        },
+        "indice": {
+          "title": "Índice",
+          "guidance": "Generado automáticamente. Incluye todos los preliminares (excepto la portada),\nlos capítulos del cuerpo, los apéndices y las referencias.\nVerifica que los números de página sean exactos antes de imprimir.\n"
+        },
+        "indice_figuras": {
+          "title": "Índice de Figuras",
+          "guidance": "Activa esta sección si tu tesis tiene 5 o más figuras, gráficas o imágenes.\nAPA 7: numera las figuras de forma continua (Figura 1, Figura 2…)\ny referéncialas en el texto antes de que aparezcan.\n"
+        },
+        "indice_tablas": {
+          "title": "Índice de Tablas",
+          "guidance": "Activa si tienes 5 o más tablas. APA 7: numera las tablas de forma\ncontinua (Tabla 1, Tabla 2…) y referéncialas en el texto.\n"
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "label": "capitulo:introduccion",
+          "guidance": "La introducción enmarca tu investigación y convence al lector de su\nimportancia. Estructura recomendada:\n1. Contextualización general del tema de investigación.\n2. Planteamiento del problema: ¿qué vacío de conocimiento, contradicción\n   o necesidad práctica aborda tu tesis?\n3. Justificación: ¿por qué importa resolverlo? (relevancia teórica, social,\n   económica, clínica, tecnológica, etc.)\n4. Pregunta(s) de investigación: formuladas de manera precisa y acotada.\n5. Objetivo general y objetivos específicos (concretos y medibles).\n6. Hipótesis o supuesto de trabajo (si tu diseño lo requiere).\n7. Alcance y delimitaciones del estudio.\n8. Estructura de la tesis: un párrafo breve por capítulo.\nExtensión típica para licenciatura: 10–20 páginas.\nPara posgrado: 15–30 páginas.\n"
+        },
+        "marco_teorico": {
+          "title": "Marco Teórico y Revisión de Literatura",
+          "label": "capitulo:marcoteorico",
+          "guidance": "El marco teórico es la base conceptual de tu investigación. Incluye:\n• Definición y discusión de los conceptos y teorías fundamentales\n  que sustenta tu trabajo.\n• Revisión crítica de la literatura: ¿qué se sabe sobre el tema?\n  ¿Cuáles son los enfoques principales? ¿Dónde están los debates?\n• Identificación del vacío o la contradicción que justifica tu estudio.\n• Posicionamiento teórico: ¿qué perspectiva adoptas y por qué?\nAPA 7: cita con (Autor, año) o Autor (año) para citas narrativas.\nPara citas textuales incluye número de página: (Autor, año, p. xx).\nOrganiza por temas o corrientes, no como lista de autores.\nExtensión típica: 20–50 páginas.\n"
+        },
+        "metodologia": {
+          "title": "Metodología",
+          "label": "capitulo:metodologia",
+          "guidance": "La metodología describe con suficiente detalle cómo realizaste tu investigación.\nIncluye:\n• Enfoque: cuantitativo, cualitativo o mixto. Justifica la elección.\n• Diseño de investigación: experimental, cuasiexperimental, correlacional,\n  descriptivo, fenomenológico, estudio de caso, etc.\n• Población y muestra (o corpus de análisis): criterios de selección y tamaño.\n• Instrumentos o técnicas de recolección de datos: describe cada uno,\n  cita el instrumento si es publicado, e indica si fue adaptado o creado.\n• Procedimiento de recolección: cuándo, dónde y cómo se obtuvieron los datos.\n• Análisis de datos: software utilizado y técnicas de análisis.\n• Consideraciones éticas: consentimiento informado, confidencialidad,\n  aprobación del Comité de Ética si se trabajó con seres humanos.\n• Limitaciones metodológicas.\nExtensión típica: 10–25 páginas.\n"
+        },
+        "resultados": {
+          "title": "Resultados",
+          "label": "capitulo:resultados",
+          "guidance": "Presenta los hallazgos de manera objetiva, sin interpretación ni conclusiones.\nOrganiza los resultados conforme a tus preguntas de investigación u objetivos.\nPara datos cuantitativos:\n• Reporta estadísticas descriptivas primero (medias, desviaciones estándar,\n  porcentajes).\n• Luego las pruebas inferenciales (t, F, χ², correlaciones, regresiones) con\n  sus estadísticos, valores p y tamaños del efecto.\n• Acompaña con tablas y figuras APA 7 con notas al pie.\nPara datos cualitativos:\n• Presenta categorías o temas emergentes con citas textuales representativas.\n• Asegura la confidencialidad de los participantes.\nAPA 7: \"La Tabla 1 muestra…\", \"En la Figura 2 se observa…\".\nCada tabla y figura debe ser mencionada en el texto antes de aparecer.\n"
+        },
+        "discusion": {
+          "title": "Discusión",
+          "label": "capitulo:discusion",
+          "guidance": "La discusión interpreta los resultados y los conecta con el marco teórico\ny la literatura revisada.\nEstructura recomendada:\n• Primera oración: retoma la pregunta de investigación y respóndela\n  directamente con base en tus resultados.\n• Compara con estudios previos: ¿coinciden, contradicen o matizan\n  tus hallazgos la literatura existente? ¿Por qué?\n• Explica resultados inesperados.\n• Implicaciones teóricas y prácticas de los hallazgos.\n• Limitaciones del estudio.\n• Sugerencias de investigación futura específicas.\nEn muchas tesis de licenciatura este capítulo se fusiona con Resultados\no con Conclusiones. Activa como capítulo independiente si lo requieres.\n"
+        },
+        "conclusiones": {
+          "title": "Conclusiones",
+          "label": "capitulo:conclusiones",
+          "guidance": "Las conclusiones responden directamente a tu(s) pregunta(s) de investigación\ny a tus objetivos.\n• Responde cada pregunta de investigación o verifica cada hipótesis.\n• Resume las aportaciones originales de tu trabajo al campo de conocimiento.\n• Implicaciones prácticas o aplicaciones posibles.\n• Limitaciones del estudio (sé honesto — el comité las encontrará de todas formas).\n• Líneas de investigación futura: concretas y acotadas.\nNo repitas los resultados — el comité ya leyó ese capítulo.\nExtensión típica: 5–15 páginas.\n"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "guidance": "APA 7ª edición: lista alfabética por apellido del primer autor,\nsangría francesa. Generada automáticamente desde tu archivo .bib.\nPuntos clave APA 7:\n• Cursiva para títulos de libros, revistas y tesis.\n• Sin cursiva para artículos y capítulos.\n• DOI en formato URL: https://doi.org/xxxxx (sin punto final).\n• Para fuentes consultadas en línea: URL y fecha de acceso.\n• Tesis: Apellido, N. (Año). Título [Tesis de licenciatura/maestría/doctorado,\n  Nombre de la Universidad]. Repositorio o base de datos.\nIncluye solo las fuentes que citas en el cuerpo del texto.\n"
+        },
+        "apendices": {
+          "title": "Apéndices",
+          "guidance": "Materiales complementarios que son demasiado extensos para el cuerpo principal\no que interrumpirían el flujo narrativo:\n• Instrumentos completos (cuestionarios, escalas, guías de entrevista).\n• Datos brutos o tablas estadísticas adicionales.\n• Transcripciones de entrevistas o grupos de enfoque.\n• Cartas de aprobación ética y formatos de consentimiento informado.\n• Materiales de estímulo o protocolos de intervención.\nEtiqueta: Apéndice A, B… con título descriptivo.\nReferencia desde el texto: \"(véase Apéndice A)\".\n"
+        }
+      },
+      "name": "Tesis Generica",
+      "description": "Estructura completa para cualquier disciplina academica"
+    }
+  },
+  "institutions": {
+    "america/argentina/uba": {
+      "name": "Universidad de Buenos Aires"
+    },
+    "america/brazil/unicamp": {
+      "name": "Universidade Estadual de Campinas"
+    },
+    "america/brazil/usp": {
+      "name": "Universidade de Sao Paulo"
+    },
+    "america/canada/mcgill": {
+      "name": "McGill University"
+    },
+    "america/chile/uchile": {
+      "name": "Universidad de Chile"
+    },
+    "america/mexico/ipn": {
+      "name": "Instituto Politecnico Nacional"
+    },
+    "america/mexico/tec": {
+      "name": "Tecnologico de Monterrey"
+    },
+    "america/mexico/uanl": {
+      "name": "Universidad Autonoma de Nuevo Leon"
+    },
+    "america/mexico/udg": {
+      "name": "Universidad de Guadalajara"
+    },
+    "america/mexico/unam": {
+      "name": "Universidad Nacional Autonoma de Mexico"
+    },
+    "america/usa/harvard": {
+      "name": "Harvard University"
+    },
+    "america/usa/mit": {
+      "name": "Massachusetts Institute of Technology"
+    },
+    "america/usa/stanford": {
+      "name": "Stanford University"
+    },
+    "america/usa/uchicago": {
+      "name": "University of Chicago"
+    },
+    "asia/china/pku": {
+      "name": "Peking University"
+    },
+    "asia/china/tsinghua": {
+      "name": "Tsinghua University"
+    },
+    "asia/india/iit_bombay": {
+      "name": "Indian Institute of Technology Bombay"
+    },
+    "asia/japan/kyoto": {
+      "name": "Kyoto University"
+    },
+    "asia/japan/utokyo": {
+      "name": "University of Tokyo"
+    },
+    "asia/singapore/nus": {
+      "name": "National University of Singapore"
+    },
+    "asia/south_korea/snu": {
+      "name": "Seoul National University"
+    },
+    "europe/germany/lmu": {
+      "name": "Ludwig-Maximilians-Universitaet Muenchen"
+    },
+    "europe/germany/tum": {
+      "name": "Technische Universitaet Muenchen"
+    },
+    "europe/italy/sapienza": {
+      "name": "Sapienza Universita di Roma"
+    },
+    "europe/netherlands/tudelft": {
+      "name": "Delft University of Technology"
+    },
+    "europe/spain/ucm": {
+      "name": "Universidad Complutense de Madrid"
+    },
+    "europe/sweden/kth": {
+      "name": "KTH Royal Institute of Technology"
+    },
+    "europe/uk/cambridge": {
+      "name": "University of Cambridge"
+    },
+    "europe/uk/oxford": {
+      "name": "University of Oxford"
+    },
+    "generic/generic/generic": {
+      "name": "Perfil Generico"
+    }
+  },
+  "citation_styles": {
+    "abnt": {
+      "name": "ABNT",
+      "description": "Perfil de estilo bibliográfico para ABNT."
+    },
+    "apa7": {
+      "name": "APA 7",
+      "description": "Perfil de estilo bibliográfico para APA 7."
+    },
+    "chicago17_authordate": {
+      "name": "Chicago 17 (Author-Date)",
+      "description": "Perfil de estilo bibliográfico para Chicago 17 (Author-Date)."
+    },
+    "chicago17_notes": {
+      "name": "Chicago 17 (Notes)",
+      "description": "Perfil de estilo bibliográfico para Chicago 17 (Notes)."
+    },
+    "gb7714": {
+      "name": "GB/T 7714",
+      "description": "Perfil de estilo bibliográfico para GB/T 7714."
+    },
+    "harvard": {
+      "name": "Harvard",
+      "description": "Author-date style similar to APA, widely used in UK and Australian universities. Common in business, management, and social science programs outside the USA. No single authoritative manual — institutions often define their own variant.\n"
+    },
+    "ieee": {
+      "name": "IEEE",
+      "description": "Perfil de estilo bibliográfico para IEEE."
+    },
+    "mhra": {
+      "name": "MHRA",
+      "description": "Perfil de estilo bibliográfico para MHRA."
+    },
+    "mla9": {
+      "name": "MLA 9",
+      "description": "Standard for language, literature, and cultural studies in North America. Uses parenthetical author-page citations. Ninth edition (2021) simplified formatting rules and introduced more flexible source types.\n"
+    },
+    "vancouver": {
+      "name": "Vancouver",
+      "description": "Perfil de estilo bibliográfico para Vancouver."
+    }
+  }
+}

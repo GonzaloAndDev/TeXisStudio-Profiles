@@ -2767,6 +2767,190 @@
       },
       "name": "Generic Thesis",
       "description": "Academic profile for a generic thesis. Follow the profile metadata, required sections and bibliography style."
+    },
+    "company.internship": {
+      "name": "Internship / Residency Report",
+      "description": "Format for reports on professional residence and business stays. Includes company description, activities and results. Bibliography APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "The cover page is automatically generated with institutional data.\nIt will include: name of the student, company, internship period, academic institution and career.\nYou don't need to write content here — set the data in the project metadata."
+        },
+        "table_of_contents": {
+          "guidance": "The index is generated automatically.\nYou don't need to write anything here."
+        },
+        "introduction": {
+          "title": "Introduction",
+          "guidance": "Contextualize the report and present to the reader the purpose of the practices:\n• Career and professional profile of the practitioner.\n• Name of the company and area where the internships were carried out.\n• Period and total duration.\n• General objective of the residency: what problem or organizational need was addressed?\n• Brief description of the report structure.\nLength: 1–2 pages."
+        },
+        "company_description": {
+          "title": "Company Description",
+          "guidance": "Present the organization where you did the internship:\n• Full name, company name and business line.\n• Brief history and mission/vision.\n• General organizational chart (you can insert a figure).\n• Area or department where you worked and its function within the company.\n• Technological infrastructure relevant to your activities.\nDo not copy the company's website verbatim — paraphrase and cite the source."
+        },
+        "activities": {
+          "title": "Activities developed",
+          "guidance": "Describe chronologically or by project the activities you carried out:\n• For each activity: objective, description of the process, tools or technologies used.\n• Include screenshots, diagrams or tables when they support the explanation.\n• Mention the challenges encountered and how you resolved them.\n• You can organize by weeks, sprints, project phases or work areas.\nThis is the longest section of the report — be specific and technical."
+        },
+        "results": {
+          "title": "Results and contributions",
+          "guidance": "Present the specific products and contributions of your residence:\n• Completed deliverables (systems, reports, manuals, process improvements).\n• Metrics or evidence of impact where possible (time saved, errors reduced, etc.).\n• Developed professional skills.\n• Comparison between the proposed objectives and what was achieved.\nBe objective: if something was not concluded, explain why."
+        },
+        "conclusions": {
+          "title": "Conclusions",
+          "guidance": "Close the report with a professional reflection:\n• Were the residency objectives met?\n• What professional learning did you obtain?\n• How did the experience complement your academic training?\n• Recommendations for future practitioners or for the company.\nLength: 1–2 pages."
+        },
+        "references": {
+          "title": "References",
+          "guidance": "List the sources consulted during the practices: technical manuals, standards, articles, websites.\nThe list is automatically generated from your .bib.\nAPA style 7. Use the DOI importer to easily add academic references."
+        },
+        "appendices": {
+          "title": "Annexes",
+          "guidance": "Includes support material that would be very extensive in the main body:\n• Letter of acceptance from the company.\n• Letter of completion/evaluation from the business tutor.\n• Weekly logs (if required by your institution).\n• Relevant source code.\n• User or technical manuals developed.\n• Photographic evidence of the workplace.\nNumber each annex (Annex A, B…) and refer to them from the text."
+        }
+      },
+      "meta": "Bibliography APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Engineering / Technical report",
+      "description": "Technical report with sections on approach, design, implementation and testing. IEEE Bibliography. Ideal for engineering thesis and professional residency.",
+      "sections": {
+        "title_page": {
+          "guidance": "The cover page is automatically generated with the project data.\nYou don't need to write content here."
+        },
+        "table_of_contents": {
+          "guidance": "The index is generated automatically.\nYou don't need to write anything here."
+        },
+        "abstract_es": {
+          "title": "Summary",
+          "guidance": "Technical summary of 150–250 words. In engineering it must be specific:\n• Problem that the work solves.\n• Approach or technology used.\n• Main result (metric, performance, improvement).\n• Conclusion or key contribution.\nNo references, no equations, no undefined acronyms."
+        },
+        "introduction": {
+          "title": "Introduction",
+          "guidance": "Contextualize the technical problem and motivate the work:\n• Context: technological area, industry or application.\n• Motivation: why is it important to solve this problem?\n• Related works: very brief review of existing solutions and their limitations.\n• Objective and specific contribution of the work.\n• Document organization.\nIn IEEE, citations are numerical: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Problem Statement",
+          "guidance": "Define the technical problem with formal precision:\n• Detailed description of the problem: symptoms, context, restrictions.\n• Functional and non-functional requirements.\n• Success Criteria: How will you know you solved it?\n• Scope and limitations of the project.\n• Minimum necessary theoretical framework: concepts, models or theories on which the solution is based.\nUse diagrams, requirements tables and use cases if applicable."
+        },
+        "design": {
+          "title": "Design and architecture",
+          "guidance": "Present the proposed solution before implementing it:\n• System architecture (component diagram, layers, modules).\n• Design decisions and justification of chosen technologies.\n• Flowchart or main algorithm.\n• Data model if applicable (ER, BD schema).\n• User interface (wireframes or mockups if applicable).\nThe design should be independent of the implementation — a third party should be able to implement it from this section."
+        },
+        "implementation": {
+          "title": "Implementation",
+          "guidance": "Describe how the solution was built:\n• Development environment: languages, frameworks, platforms, versions.\n• Description of the modules or components implemented.\n• Relevant code fragments (only the most illustrative ones, not the entire code).\n• Implementation challenges and solutions adopted.\n• Infrastructure configuration if applicable (servers, containers, BD).\nThe complete code is in the Annexes — here only the most representative."
+        },
+        "testing": {
+          "title": "Testing and validation",
+          "guidance": "Demonstrate that the solution works and meets the requirements:\n• Test plan: types (unitary, integration, system, acceptance).\n• Test cases: input, action, expected result, obtained result.\n• Performance metrics if applicable (response time, memory usage, precision).\n• Comparison with baseline or related work.\n• Analysis of results: what worked? no? because?\nPresent results in tables or graphs when possible."
+        },
+        "conclusions": {
+          "title": "Conclusions and future work",
+          "guidance": "Close the work with technical rigor:\n• Review of the objectives achieved vs. those raised.\n• Original contributions of the work.\n• Identified technical limitations.\n• Future work: concrete improvements, possible extensions, open problems.\nIn IEEE it is common to mention possible publications or industrial applications."
+        },
+        "references": {
+          "title": "References",
+          "guidance": "In IEEE the references are numerical and appear in order of first mention.\nThe list is automatically generated from your .bib when you compile.\nFor IEEE articles and conferences: Use the DOI importer to get the correct entry.\nBe sure to include the DOI in each reference — IEEE requires it."
+        },
+        "appendices": {
+          "title": "Annexes",
+          "guidance": "Complementary technical material:\n• Complete source code (main modules).\n• Installation and configuration scripts.\n• User or technical manuals.\n• Detailed diagrams (full ERD, sequence diagrams, etc.).\n• Test data or datasets.\nNumber: Appendix A, B… and refer to them from the main text."
+        }
+      },
+      "meta": "Bibliography IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Graduate thesis",
+      "description": "Profile for master's and doctorate: literature review, state of the art, approach, experimentation, glossary and acronyms. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "The cover page is automatically generated with the project data.\nFor postgraduate studies, configure in the metadata: full name, director, co-director (if applicable) and synodal committee.\nYou don't need to write content here."
+        },
+        "table_of_contents": {
+          "guidance": "The table of contents is generated automatically.\nYou don't need to write anything here."
+        },
+        "list_of_figures": {
+          "guidance": "The list of figures is automatically generated from all titled figures in your thesis.\nActivate this section if you have 5 or more figures."
+        },
+        "list_of_tables": {
+          "guidance": "The list of tables is automatically generated from all tables with title.\nActivate this section if you have 5 or more tables."
+        },
+        "list_of_algorithms": {
+          "guidance": "Automatically generated list of algorithms for computational or engineering theses.\nOnly activate if you present 3 or more pseudocodes or numbered algorithms."
+        },
+        "acronyms": {
+          "title": "List of Abbreviations and Acronyms",
+          "guidance": "List all acronyms and abbreviations used in the thesis with their full meaning.\nFormat: SIGLA — Full meaning (e.g. CNN — Convolutional Neural Network).\nSort alphabetically. It also defines the first time each acronym appears in the text."
+        },
+        "abstract_es": {
+          "title": "Summary",
+          "guidance": "The graduate summary answers in 250–350 words:\n• Motivation: why is this problem important?\n• Problem: What question or hypothesis are you addressing?\n• Method: main approach and technique.\n• Contribution: results and original contribution to the state of the art.\n• Impact: theoretical or practical implications.\nNo appointments. No equations. 5–8 Keywords at the end."
+        },
+        "abstract_en": {
+          "title": "Abstract",
+          "guidance": "Accurate translation of the summary into English. Not a machine translation — check it.\nKeywords: in English, preferably terms from the thesaurus of your discipline.\nMandatory for postgraduate studies — it is the version that appears in international repositories."
+        },
+        "dedication": {
+          "title": "Dedication",
+          "guidance": "Short and personal text. Dedicate work to those who deserve it most.\nNo special formatting — the profile is centered on a separate page."
+        },
+        "acknowledgements": {
+          "title": "Thanks",
+          "guidance": "Formally thank those who contributed to the work:\n• Thesis director and co-director.\n• Synodal committee / reviewers.\n• Funders: scholarships, projects, institutions (mandatory for projects with external support).\n• Technical collaborators, laboratories, companies.\n• Family and personal support (at the end, briefly).\nExtension: half a page."
+        },
+        "introduction": {
+          "title": "Introduction",
+          "guidance": "The introduction of a postgraduate thesis is more demanding than that of a bachelor's degree. You must:\n1. Contextualize the problem in the current state of the art.\n2. Identify the specific knowledge gap that your thesis addresses.\n3. Clearly state the hypothesis or research question.\n4. List the objectives (general and specific).\n5. Describe the original contribution (what is new in your work?).\n6. Justify the scope and delimitations.\n7. Describe the organization of the chapters.\nA doctoral committee will evaluate whether the contribution is original and independent. Be precise.\nTypical length: 5–10 pages."
+        },
+        "literature_review": {
+          "title": "Review of Literature and State of the Art",
+          "guidance": "This is the section that demonstrates your mastery of the field. You must:\n• Systematically cover relevant works from the last 5–10 years (classics may be older).\n• Organize by theme, focus, or chronology — not as a list of summaries.\n• Critically compare the proposals: strengths, weaknesses, limitations.\n• Identify the gap that your thesis fills (\"no previous work has addressed X\").\n• End with a comparative table of related works if possible.\nFor doctorate: this review must be exhaustive and cover all aspects of the problem.\nStrategy: Search Scopus, WoS, ACM DL, IEEE Xplore. Use the DOI importer for each item."
+        },
+        "theoretical_framework": {
+          "title": "Theoretical Framework",
+          "guidance": "Develop the theoretical and mathematical foundations necessary to understand your proposal.\nUnlike the literature review, here you delve into the key concepts:\n• Formal definitions and mathematical notation.\n• Theoretical models on which your work is based.\n• Relevant theorems or properties (with citations or proof if original).\nActivate this section if your thesis requires more than 5–6 pages of theoretical basis."
+        },
+        "problem_statement": {
+          "title": "Problem Statement and Hypotheses",
+          "guidance": "Formally define the problem that your thesis solves:\n• Precise formulation: in exact sciences, use mathematical notation if applicable.\n• Hypotheses or research conjectures (for doctorate: verifiable and falsifiable hypothesis).\n• Assumptions and restrictions of the model.\n• Why the problem is difficult: computational complexity, lack of data, theoretical ambiguity.\n• Evaluation criteria: how will you measure the success of your proposal?\nThis section should be able to be read independently as a problem specification."
+        },
+        "methodology": {
+          "title": "Methodology",
+          "guidance": "Describe the methodological approach with the rigor required by the postgraduate level:\n• Research paradigm: positivist, constructivist, mixed.\n• Type of research: experimental, quasi-experimental, case study, simulation, modeling.\n• Specific research design.\n• Data sources: origin, characteristics, collection or generation process.\n• Pipeline or complete process from data to results.\n• Specific tools, languages, libraries and versions.\nEnough detail for complete replicability."
+        },
+        "experimentation": {
+          "title": "Experimentation and Development",
+          "guidance": "Document the development or experimentation process in detail:\n• Experimental setup: hardware, hyperparameters, test conditions.\n• Experiments performed and their purpose (ablation study, comparison of variants).\n• Relevant intermediate observations (not just the final result).\n• Decisions made during the process and their justification.\nActivate this section if your work has a significant experimental component\nseparable from the general methodology."
+        },
+        "results": {
+          "title": "Results",
+          "guidance": "Present the results with the statistical rigor required by the postgraduate course:\n• Organize by objective or hypothesis.\n• For quantitative results: mean, standard deviation, confidence intervals, statistical significance.\n• Comparative tables with baseline, own variants and state of the art.\n• Figures with error bars when applicable.\n• For qualitative results: theoretical saturation, triangulation, representative quotes.\nDon't interpret here — just present the data."
+        },
+        "discussion": {
+          "title": "Discussion",
+          "guidance": "The discussion of a postgraduate thesis must demonstrate scientific maturity:\n• Interpret each result in relation to your hypothesis.\n• Compare with state-of-the-art works: do you surpass, equal, or fall short?\n• Explains discrepancies with theoretical foundations.\n• Discuss theoretical implications: what does it mean for the field?\n• Discuss practical implications: what applications are derived?\n• Honest limitations: Don't hide weaknesses, the committee will see them anyway.\n• Threats to validity if applicable (internal, external, construct validity)."
+        },
+        "conclusions": {
+          "title": "Conclusions and Future Work",
+          "guidance": "Close the thesis with a researcher's vision:\n• Responds directly to each specific objective set.\n• Clearly states the original contribution to knowledge.\n• For doctorate: demonstrates that the contribution meets the criteria of originality and independence.\n• Specific and realistic future work: open problems, extensions, applications.\n• Final reflection on the impact of work on the discipline.\nTypical length: 3–5 pages."
+        },
+        "references": {
+          "title": "References",
+          "guidance": "The reference list is automatically generated from your .bib when compiling with APA 7.\nFor postgraduate studies, 80–200+ high-quality references (indexed articles, technical books) are expected.\nUse the DOI importer to add articles from Crossref with one click.\nAvoid references to blogs, Wikipedia, or non-peer-reviewed sites as primary sources."
+        },
+        "publications": {
+          "title": "Derived Publications",
+          "guidance": "List the published or submitted works derived from this thesis:\n• Articles in indexed journals (Q1, Q2, Scopus, WoS).\n• Presentations at national and international conferences.\n• Book chapters, patents, technical reports.\nFor each: complete reference + status (published / accepted / submitted / in preparation).\nPrevious publications are a sign of quality and can lighten the defense."
+        },
+        "glossary": {
+          "title": "Glossary",
+          "guidance": "Define specialized terms that a reader who is not an expert in your subspecialty would need to know.\nFormat: Term — Concise definition.\nDo not include terms that have already been defined in the Theoretical Framework — the glossary is for recurring but not central terms."
+        },
+        "appendices": {
+          "title": "Annexes",
+          "guidance": "Supplementary technical material that does not belong to the main flow:\n• Long or secondary mathematical proofs.\n• Source code (main modules, experiment scripts).\n• Complete data tables or additional results.\n• Data collection instruments.\n• Ethical approval letters, confidentiality agreements.\nNumber: Appendix A, B… with descriptive titles."
+        }
+      },
+      "meta": "Bibliography APA 7 · XeLaTeX"
     }
   },
   "institutions": {

@@ -409,11 +409,11 @@
         },
         "indice_figuras": {
           "title": "Liste des figures",
-          "guidance": "Activez-le si vous avez 5 chiffres ou plus. APA7."
+          "guidance": "Activez-le si vous avez 5 chiffres ou plus. APA 7."
         },
         "indice_tablas": {
           "title": "Liste des tableaux",
-          "guidance": "Activez-le si vous avez 5 tables ou plus. APA7."
+          "guidance": "Activez-le si vous avez 5 tables ou plus. APA 7."
         },
         "introduccion": {
           "title": "Présentation",
@@ -2767,6 +2767,190 @@
       },
       "name": "Thèse générique",
       "description": "Profil académique pour une thèse générique. Respectez les métadonnées du profil, les sections requises et le style bibliographique."
+    },
+    "company.internship": {
+      "name": "Rapport de stage / résidence professionnelle",
+      "description": "Modèle pour les rapports de résidence professionnelle et de stages en entreprise. Inclut la description de l'entreprise, les activités et les résultats. Bibliographie APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "La page de garde est générée automatiquement avec les données institutionnelles.\nIl comprendra : le nom de l'étudiant, l'entreprise, la période de stage, l'établissement académique et le parcours.\nVous n'avez pas besoin d'écrire du contenu ici : définissez les données dans les métadonnées du projet."
+        },
+        "table_of_contents": {
+          "guidance": "L'index est généré automatiquement.\nVous n'avez pas besoin d'écrire quoi que ce soit ici."
+        },
+        "introduction": {
+          "title": "Présentation",
+          "guidance": "Contextualiser le rapport et présenter au lecteur l'objet des pratiques :\n• Carrière et profil professionnel du praticien.\n• Nom de l'entreprise et zone où les stages ont été effectués.\n• Période et durée totale.\n• Objectif général de la résidence : quel problème ou besoin organisationnel a été abordé ?\n• Brève description de la structure du rapport.\nLongueur : 1 à 2 pages."
+        },
+        "company_description": {
+          "title": "Description de l'entreprise",
+          "guidance": "Présentez l'organisation où vous avez effectué le stage :\n• Nom complet, raison sociale et secteur d'activité.\n• Bref historique et mission/vision.\n• Organigramme général (vous pouvez insérer un chiffre).\n• Domaine ou service dans lequel vous avez travaillé et sa fonction au sein de l'entreprise.\n• Infrastructure technologique pertinente à vos activités.\nNe copiez pas textuellement le site Web de l'entreprise : paraphrasez et citez la source."
+        },
+        "activities": {
+          "title": "Activités développées",
+          "guidance": "Décrivez chronologiquement ou par projet les activités que vous avez réalisées :\n• Pour chaque activité : objectif, description du processus, des outils ou technologies utilisés.\n• Incluez des captures d'écran, des diagrammes ou des tableaux lorsqu'ils soutiennent l'explication.\n• Mentionnez les défis rencontrés et comment vous les avez résolus.\n• Vous pouvez organiser par semaines, sprints, phases de projet ou zones de travail.\nIl s'agit de la section la plus longue du rapport : soyez précis et technique."
+        },
+        "results": {
+          "title": "Résultats et contributions",
+          "guidance": "Présentez les produits et apports spécifiques de votre résidence :\n• Livrables terminés (systèmes, rapports, manuels, améliorations des processus).\n• Mesures ou preuves de l'impact lorsque cela est possible (temps gagné, erreurs réduites, etc.).\n• Compétences professionnelles développées.\n• Comparaison entre les objectifs proposés et ce qui a été réalisé.\nSoyez objectif : si quelque chose n'a pas été conclu, expliquez pourquoi."
+        },
+        "conclusions": {
+          "title": "Conclusions",
+          "guidance": "Clôturez le rapport avec une réflexion professionnelle :\n• Les objectifs de la résidence ont-ils été atteints ?\n• Quelle formation professionnelle avez-vous acquise ?\n• Comment l'expérience a-t-elle complété votre formation académique ?\n• Recommandations aux futurs praticiens ou à l'entreprise.\nLongueur : 1 à 2 pages."
+        },
+        "references": {
+          "title": "Références",
+          "guidance": "Listez les sources consultées lors des pratiques : manuels techniques, normes, articles, sites internet.\nLa liste est automatiquement générée à partir de votre .bib.\nStyle APA 7. Utilisez l'importateur DOI pour ajouter facilement des références académiques."
+        },
+        "appendices": {
+          "title": "Annexes",
+          "guidance": "Comprend du matériel de support qui serait très complet dans le corps principal :\n• Lettre d'acceptation de l'entreprise.\n• Lettre de fin/évaluation du tuteur en entreprise.\n• Journaux hebdomadaires (si requis par votre institution).\n• Code source pertinent.\n• Manuels d'utilisation ou techniques élaborés.\n• Preuve photographique du lieu de travail.\nNumérotez chaque annexe (Annexe A, B…) et faites-y référence à partir du texte."
+        }
+      },
+      "meta": "Bibliographie APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Ingénierie / Rapport technique",
+      "description": "Rapport technique avec sections de problématique, conception, mise en œuvre et essais. Bibliographie IEEE. Idéal pour les mémoires d'ingénierie et la résidence professionnelle.",
+      "sections": {
+        "title_page": {
+          "guidance": "La page de garde est automatiquement générée avec les données du projet.\nVous n'avez pas besoin d'écrire du contenu ici."
+        },
+        "table_of_contents": {
+          "guidance": "L'index est généré automatiquement.\nVous n'avez pas besoin d'écrire quoi que ce soit ici."
+        },
+        "abstract_es": {
+          "title": "Résumé",
+          "guidance": "Résumé technique de 150 à 250 mots. En ingénierie cela doit être précis :\n• Problème que le travail résout.\n• Approche ou technologie utilisée.\n• Résultat principal (métrique, performance, amélioration).\n• Conclusion ou contribution clé.\nPas de références, pas d'équations, pas d'acronymes non définis."
+        },
+        "introduction": {
+          "title": "Présentation",
+          "guidance": "Contextualiser le problème technique et motiver le travail :\n• Contexte : domaine technologique, industrie ou application.\n• Motivation : pourquoi est-il important de résoudre ce problème ?\n• Travaux connexes : très bref aperçu des solutions existantes et de leurs limites.\n• Objectif et apport spécifique de l'ouvrage.\n• Organisation des documents.\nDans IEEE, les citations sont numériques : [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Énoncé du problème",
+          "guidance": "Définir le problème technique avec une précision formelle :\n• Description détaillée du problème : symptômes, contexte, restrictions.\n• Exigences fonctionnelles et non fonctionnelles.\n• Critères de réussite : Comment saurez-vous que vous avez résolu le problème ?\n• Portée et limites du projet.\n• Cadre théorique minimum nécessaire : concepts, modèles ou théories sur lesquels repose la solution.\nUtilisez des diagrammes, des tableaux d'exigences et des cas d'utilisation, le cas échéant."
+        },
+        "design": {
+          "title": "Conception et architecture",
+          "guidance": "Présentez la solution proposée avant de la mettre en œuvre :\n• Architecture système (schéma des composants, couches, modules).\n• Décisions de conception et justification des technologies choisies.\n• Organigramme ou algorithme principal.\n• Modèle de données le cas échéant (schéma ER, BD).\n• Interface utilisateur (wireframes ou maquettes le cas échéant).\nLa conception doit être indépendante de la mise en œuvre : un tiers doit pouvoir la mettre en œuvre à partir de cette section."
+        },
+        "implementation": {
+          "title": "Mise en œuvre",
+          "guidance": "Décrivez comment la solution a été créée :\n• Environnement de développement : langages, frameworks, plateformes, versions.\n• Description des modules ou composants mis en œuvre.\n• Fragments de code pertinents (uniquement les plus illustratifs, pas le code dans son intégralité).\n• Défis de mise en œuvre et solutions adoptées.\n• Configuration de l'infrastructure si applicable (serveurs, conteneurs, BD).\nLe code complet se trouve dans les annexes — ici seulement le plus représentatif."
+        },
+        "testing": {
+          "title": "Tests et validation",
+          "guidance": "Démontrer que la solution fonctionne et répond aux exigences :\n• Plan de tests : types (unitaire, intégration, système, recette).\n• Cas de tests : saisie, action, résultat attendu, résultat obtenu.\n• Mesures de performances le cas échéant (temps de réponse, utilisation de la mémoire, précision).\n• Comparaison avec la ligne de base ou des travaux connexes.\n• Analyse des résultats : qu'est-ce qui a fonctionné ? Non? parce que?\nPrésentez les résultats sous forme de tableaux ou de graphiques lorsque cela est possible."
+        },
+        "conclusions": {
+          "title": "Conclusions et travaux futurs",
+          "guidance": "Clôturer les travaux avec rigueur technique :\n• Bilan des objectifs atteints versus ceux relevés.\n• Contributions originales de l'œuvre.\n• Limites techniques identifiées.\n• Travaux futurs : améliorations concrètes, extensions possibles, problèmes ouverts.\nDans IEEE, il est courant de mentionner d'éventuelles publications ou applications industrielles."
+        },
+        "references": {
+          "title": "Références",
+          "guidance": "Dans IEEE les références sont numériques et apparaissent par ordre de première mention.\nLa liste est automatiquement générée à partir de votre .bib lors de la compilation.\nPour les articles et conférences IEEE : utilisez l'importateur DOI pour obtenir l'entrée correcte.\nAssurez-vous d'inclure le DOI dans chaque référence — le IEEE l'exige."
+        },
+        "appendices": {
+          "title": "Annexes",
+          "guidance": "Matériel technique complémentaire :\n• Code source complet (modules principaux).\n• Scripts d'installation et de configuration.\n• Manuels d'utilisation ou techniques.\n• Schémas détaillés (ERD complet, diagrammes de séquence, etc.).\n• Tester des données ou des ensembles de données.\nNuméro : Annexe A, B… et faites-y référence à partir du texte principal."
+        }
+      },
+      "meta": "Bibliographie IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Thèse de master / doctorat",
+      "description": "Profil pour master et doctorat : revue de littérature, état de l'art, problématique, expérimentation, glossaire et acronymes. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "La page de garde est automatiquement générée avec les données du projet.\nPour les études postuniversitaires, configurez dans les métadonnées : nom complet, directeur, codirecteur (le cas échéant) et comité synodal.\nVous n'avez pas besoin d'écrire du contenu ici."
+        },
+        "table_of_contents": {
+          "guidance": "La table des matières est générée automatiquement.\nVous n'avez pas besoin d'écrire quoi que ce soit ici."
+        },
+        "list_of_figures": {
+          "guidance": "La liste des figures est automatiquement générée à partir de toutes les figures intitulées de votre thèse.\nActivez cette section si vous avez 5 chiffres ou plus."
+        },
+        "list_of_tables": {
+          "guidance": "La liste des tables est automatiquement générée à partir de toutes les tables avec titre.\nActivez cette section si vous avez 5 tables ou plus."
+        },
+        "list_of_algorithms": {
+          "guidance": "Liste d'algorithmes générée automatiquement pour les thèses de calcul ou d'ingénierie.\nN'activez que si vous présentez 3 pseudocodes ou algorithmes numérotés ou plus."
+        },
+        "acronyms": {
+          "title": "Liste des abréviations et des acronymes",
+          "guidance": "Énumérez tous les acronymes et abréviations utilisés dans la thèse avec leur signification complète.\nFormat : SIGLA — Signification complète (par exemple CNN — Réseau neuronal convolutif).\nTrier par ordre alphabétique. Il définit également la première fois où chaque acronyme apparaît dans le texte."
+        },
+        "abstract_es": {
+          "title": "Résumé",
+          "guidance": "Le résumé des diplômés répond en 250 à 350 mots :\n• Motivation : pourquoi ce problème est-il important ?\n• Problème : à quelle question ou hypothèse répondez-vous ?\n• Méthode : approche principale et technique.\n• Contribution : résultats et contribution originale à l'état de l'art.\n• Impact : implications théoriques ou pratiques.\nPas de rendez-vous. Pas d'équations. 5 à 8 mots clés à la fin."
+        },
+        "abstract_en": {
+          "title": "Résumé",
+          "guidance": "Traduction précise du résumé en anglais. Il ne s'agit pas d'une traduction automatique : vérifiez-la.\nMots-clés : en anglais, de préférence des termes issus du thésaurus de votre discipline.\nObligatoire pour les études de troisième cycle — c'est la version qui apparaît dans les référentiels internationaux."
+        },
+        "dedication": {
+          "title": "Dévouement",
+          "guidance": "Texte court et personnel. Dédiez votre travail à ceux qui le méritent le plus.\nPas de formatage particulier : le profil est centré sur une page distincte."
+        },
+        "acknowledgements": {
+          "title": "Merci",
+          "guidance": "Remercier formellement ceux qui ont contribué au travail :\n• Directeur et codirecteur de thèse.\n• Comité synodal/réviseurs.\n• Bailleurs de fonds : bourses, projets, institutions (obligatoire pour les projets avec soutien extérieur).\n• Collaborateurs techniques, laboratoires, entreprises.\n• Soutien familial et personnel (à la fin, brièvement).\nExtension : une demi-page."
+        },
+        "introduction": {
+          "title": "Présentation",
+          "guidance": "L'introduction d'une thèse de troisième cycle est plus exigeante que celle d'un baccalauréat. Vous devez :\n1. Contextualiser le problème dans l’état actuel de l’art.\n2. Identifiez le manque de connaissances spécifique auquel votre thèse répond.\n3. Énoncez clairement l’hypothèse ou la question de recherche.\n4. Énumérez les objectifs (généraux et spécifiques).\n5. Décrivez la contribution originale (qu'y a-t-il de nouveau dans votre travail ?).\n6. Justifiez la portée et les limites.\n7. Décrivez l'organisation des chapitres.\nUn comité doctoral évaluera si la contribution est originale et indépendante. Être précis.\nLongueur typique : 5 à 10 pages."
+        },
+        "literature_review": {
+          "title": "Revue de la littérature et état de l'art",
+          "guidance": "C'est la section qui démontre votre maîtrise du domaine. Vous devez :\n• Couvrir systématiquement les œuvres pertinentes des 5 à 10 dernières années (les classiques peuvent être plus anciens).\n• Organisez par thème, objectif ou chronologie – et non sous forme de liste de résumés.\n• Comparez de manière critique les propositions : forces, faiblesses, limites.\n• Identifiez la lacune que votre thèse comble (« aucun travail antérieur n'a abordé X »).\n• Terminez par un tableau comparatif des ouvrages connexes si possible.\nPour le doctorat : cet examen doit être exhaustif et couvrir tous les aspects de la problématique.\nStratégie : Recherche Scopus, WoS, ACM DL, IEEE Xplore. Utilisez l'importateur DOI pour chaque élément."
+        },
+        "theoretical_framework": {
+          "title": "Cadre théorique",
+          "guidance": "Développez les fondements théoriques et mathématiques nécessaires à la compréhension de votre proposition.\nContrairement à la revue de la littérature, vous approfondissez ici les concepts clés :\n• Définitions formelles et notation mathématique.\n• Modèles théoriques sur lesquels repose votre travail.\n• Théorèmes ou propriétés pertinents (avec citations ou preuves si originales).\nActivez cette section si votre thèse nécessite plus de 5 à 6 pages de base théorique."
+        },
+        "problem_statement": {
+          "title": "Énoncé du problème et hypothèses",
+          "guidance": "Définissez formellement le problème que votre thèse résout :\n• Formulation précise : en sciences exactes, utiliser la notation mathématique le cas échéant.\n• Hypothèses ou conjectures de recherche (pour le doctorat : hypothèse vérifiable et réfutable).\n• Hypothèses et restrictions du modèle.\n• Pourquoi le problème est difficile : complexité informatique, manque de données, ambiguïté théorique.\n• Critères d'évaluation : comment mesurerez-vous le succès de votre proposition ?\nCette section doit pouvoir être lue indépendamment en tant que spécification de problème."
+        },
+        "methodology": {
+          "title": "Méthodologie",
+          "guidance": "Décrire l'approche méthodologique avec la rigueur requise par le niveau postuniversitaire :\n• Paradigme de recherche : positiviste, constructiviste, mixte.\n• Type de recherche : expérimentale, quasi-expérimentale, étude de cas, simulation, modélisation.\n• Conception de recherche spécifique.\n• Sources des données : origine, caractéristiques, processus de collecte ou de génération.\n• Pipeline ou processus complet depuis les données jusqu'aux résultats.\n• Outils, langages, bibliothèques et versions spécifiques.\nSuffisamment de détails pour une réplicabilité complète."
+        },
+        "experimentation": {
+          "title": "Expérimentation et développement",
+          "guidance": "Documentez en détail le processus de développement ou d'expérimentation :\n• Montage expérimental : matériel, hyperparamètres, conditions de tests.\n• Expériences réalisées et leur finalité (étude d'ablation, comparaison de variantes).\n• Observations intermédiaires pertinentes (pas seulement le résultat final).\n• Les décisions prises au cours du processus et leur justification.\nActivez cette section si votre travail comporte une composante expérimentale importante\nséparable de la méthodologie générale."
+        },
+        "results": {
+          "title": "Résultats",
+          "guidance": "Présenter les résultats avec la rigueur statistique requise par le cursus postuniversitaire :\n• Organisez par objectif ou hypothèse.\n• Pour les résultats quantitatifs : moyenne, écart type, intervalles de confiance, signification statistique.\n• Tableaux comparatifs avec référence, variantes propres et état de l'art.\n• Chiffres avec barres d'erreur le cas échéant.\n• Pour des résultats qualitatifs : saturation théorique, triangulation, cotations représentatives.\nN'interprétez pas ici : présentez simplement les données."
+        },
+        "discussion": {
+          "title": "Discussion",
+          "guidance": "La discussion d'une thèse de troisième cycle doit démontrer une maturité scientifique :\n• Interprétez chaque résultat par rapport à votre hypothèse.\n• Comparez avec les œuvres les plus modernes : dépassez-vous, égalez-vous ou êtes-vous en deçà ?\n• Explique les divergences avec les fondements théoriques.\n• Discutez des implications théoriques : qu'est-ce que cela signifie pour le domaine ?\n• Discutez des implications pratiques : quelles applications en découlent ?\n• Limites honnêtes : Ne cachez pas vos faiblesses, le comité les verra de toute façon.\n• Menaces pour la validité, le cas échéant (validité interne, externe, de construction)."
+        },
+        "conclusions": {
+          "title": "Conclusions et travaux futurs",
+          "guidance": "Clôturez la thèse avec une vision de chercheur :\n• Répond directement à chaque ensemble d'objectifs spécifiques.\n• Énonce clairement la contribution originale à la connaissance.\n• Pour le doctorat : démontre que la contribution répond aux critères d'originalité et d'indépendance.\n• Travaux futurs spécifiques et réalistes : problèmes ouverts, extensions, applications.\n• Réflexion finale sur l'impact du travail sur la discipline.\nLongueur typique : 3 à 5 pages."
+        },
+        "references": {
+          "title": "Références",
+          "guidance": "La liste de références est automatiquement générée à partir de votre .bib lors de la compilation avec APA 7.\nPour les études de troisième cycle, plus de 80 à 200 références de haute qualité (articles indexés, ouvrages techniques) sont attendues.\nUtilisez l'importateur DOI pour ajouter des articles de Crossref en un seul clic.\nÉvitez les références à des blogs, à Wikipédia ou à des sites non évalués par des pairs comme sources principales."
+        },
+        "publications": {
+          "title": "Publications dérivées",
+          "guidance": "Listez les travaux publiés ou soumis issus de cette thèse :\n• Articles dans des revues indexées (Q1, Q2, Scopus, WoS).\n• Présentations lors de conférences nationales et internationales.\n• Chapitres de livres, brevets, rapports techniques.\nPour chacun : référence complète + statut (publié / accepté / soumis / en préparation).\nLes publications antérieures sont un gage de qualité et peuvent alléger la défense."
+        },
+        "glossary": {
+          "title": "Glossaire",
+          "guidance": "Définissez les termes spécialisés qu'un lecteur qui n'est pas un expert dans votre sous-spécialité aurait besoin de connaître.\nFormat : Terme – Définition concise.\nN'incluez pas les termes qui ont déjà été définis dans le cadre théorique : le glossaire est destiné aux termes récurrents mais pas centraux."
+        },
+        "appendices": {
+          "title": "Annexes",
+          "guidance": "Matériel technique complémentaire n'appartenant pas au flux principal :\n• Preuves mathématiques longues ou secondaires.\n• Code source (modules principaux, scripts d'expérimentation).\n• Tableaux de données complets ou résultats supplémentaires.\n• Instruments de collecte de données.\n• Lettres d'approbation éthiques, accords de confidentialité.\nNuméro : Annexe A, B… avec titres descriptifs."
+        }
+      },
+      "meta": "Bibliographie APA 7 · XeLaTeX"
     }
   },
   "institutions": {
@@ -2867,7 +3051,7 @@
       "description": "Profil de style bibliographique pour ABNT."
     },
     "apa7": {
-      "name": "APA7",
+      "name": "APA 7",
       "description": "Profil de style bibliographique pour APA 7."
     },
     "chicago17_authordate": {

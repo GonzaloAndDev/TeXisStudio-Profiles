@@ -2767,6 +2767,190 @@
       },
       "name": "Algemene scriptie",
       "description": "Academisch profiel voor een generieke scriptie. Volg de profielmetadata, vereiste secties en bibliografiestijl."
+    },
+    "company.internship": {
+      "name": "Stage-/residentierapport",
+      "description": "Formaat voor rapporten over professionele en zakelijke verblijven. Inclusief bedrijfsbeschrijving, activiteiten en resultaten. Bibliografie APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Het voorblad wordt automatisch gegenereerd met institutionele gegevens.\nHet bevat: naam van de student, bedrijf, stageperiode, academische instelling en carrière.\nU hoeft hier geen inhoud te schrijven; stel de gegevens in de projectmetagegevens in."
+        },
+        "table_of_contents": {
+          "guidance": "De index wordt automatisch gegenereerd.\nJe hoeft hier niets te schrijven."
+        },
+        "introduction": {
+          "title": "Introductie",
+          "guidance": "Contextualiseer het rapport en presenteer aan de lezer het doel van de praktijken:\n• Carrière- en beroepsprofiel van de beoefenaar.\n• Naam van het bedrijf en gebied waar de stages zijn uitgevoerd.\n• Periode en totale duur.\n• Algemene doelstelling van de residentie: welk probleem of welke organisatorische behoefte werd aangepakt?\n• Korte beschrijving van de rapportstructuur.\nLengte: 1–2 pagina's."
+        },
+        "company_description": {
+          "title": "Bedrijfsbeschrijving",
+          "guidance": "Presenteer de organisatie waar je stage hebt gelopen:\n• Volledige naam, bedrijfsnaam en bedrijfslijn.\n• Korte geschiedenis en missie/visie.\n• Algemeen organigram (u kunt een figuur invoegen).\n• Gebied of afdeling waar u heeft gewerkt en de functie ervan binnen het bedrijf.\n• Technologische infrastructuur relevant voor uw activiteiten.\nKopieer de website van het bedrijf niet woordelijk; parafraseer en vermeld de bron."
+        },
+        "activities": {
+          "title": "Activiteiten ontwikkeld",
+          "guidance": "Beschrijf chronologisch of per project de activiteiten die u heeft uitgevoerd:\n• Voor elke activiteit: doelstelling, beschrijving van het proces, de gebruikte tools of technologieën.\n• Voeg schermafbeeldingen, diagrammen of tabellen toe als deze de uitleg ondersteunen.\n• Noem de uitdagingen die u tegenkwam en hoe u deze hebt opgelost.\n• U kunt indelen op weken, sprints, projectfasen of werkgebieden.\nDit is het langste gedeelte van het rapport. Wees specifiek en technisch."
+        },
+        "results": {
+          "title": "Resultaten en bijdragen",
+          "guidance": "Presenteer de specifieke producten en bijdragen van uw woning:\n• Voltooide deliverables (systemen, rapporten, handleidingen, procesverbeteringen).\n• Cijfers of bewijs van impact waar mogelijk (tijdbesparing, minder fouten, etc.).\n• Ontwikkelde professionele vaardigheden.\n• Vergelijking tussen de voorgestelde doelstellingen en wat er is bereikt.\nWees objectief: als iets niet is afgerond, leg dan uit waarom."
+        },
+        "conclusions": {
+          "title": "Conclusies",
+          "guidance": "Sluit het rapport af met een professionele reflectie:\n• Zijn de verblijfsdoelstellingen behaald?\n• Welke professionele kennis heb je verworven?\n• Hoe was de ervaring een aanvulling op uw academische opleiding?\n• Aanbevelingen voor toekomstige beoefenaars of voor het bedrijf.\nLengte: 1–2 pagina's."
+        },
+        "references": {
+          "title": "Referenties",
+          "guidance": "Maak een lijst van de bronnen die tijdens de praktijken zijn geraadpleegd: technische handleidingen, normen, artikelen, websites.\nDe lijst wordt automatisch gegenereerd vanuit uw .bib.\nAPA-stijl 7. Gebruik de DOI-importer om eenvoudig academische referenties toe te voegen."
+        },
+        "appendices": {
+          "title": "Bijlagen",
+          "guidance": "Bevat ondersteunend materiaal dat zeer uitgebreid zou zijn in de hoofdtekst:\n• Acceptatiebrief van het bedrijf.\n• Afrondingsbrief/evaluatie van de bedrijfsdocent.\n• Wekelijkse logboeken (indien vereist door uw instelling).\n• Relevante broncode.\n• Gebruiker- of technische handleidingen ontwikkeld.\n• Fotografisch bewijs van de werkplek.\nNummer elke bijlage (bijlage A, B…) en verwijs ernaar vanuit de tekst."
+        }
+      },
+      "meta": "Bibliografie APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Technisch/technisch rapport",
+      "description": "Technisch rapport met secties over aanpak, ontwerp, implementatie en testen. IEEE Bibliografie. Ideaal voor een ingenieursscriptie en professionele residentie.",
+      "sections": {
+        "title_page": {
+          "guidance": "Het voorblad wordt automatisch gegenereerd met de projectgegevens.\nU hoeft hier geen inhoud te schrijven."
+        },
+        "table_of_contents": {
+          "guidance": "De index wordt automatisch gegenereerd.\nJe hoeft hier niets te schrijven."
+        },
+        "abstract_es": {
+          "title": "Samenvatting",
+          "guidance": "Technische samenvatting van 150–250 woorden. In de techniek moet het specifiek zijn:\n• Probleem dat het werk oplost.\n• Aanpak of gebruikte technologie.\n• Belangrijkste resultaat (statistiek, prestatie, verbetering).\n• Conclusie of belangrijkste bijdrage.\nGeen referenties, geen vergelijkingen, geen ongedefinieerde acroniemen."
+        },
+        "introduction": {
+          "title": "Introductie",
+          "guidance": "Contextualiseer het technische probleem en motiveer het werk:\n• Context: technologisch gebied, industrie of toepassing.\n• Motivatie: waarom is het belangrijk om dit probleem op te lossen?\n• Gerelateerde werken: zeer kort overzicht van bestaande oplossingen en hun beperkingen.\n• Objectieve en specifieke bijdrage van het werk.\n• Documentorganisatie.\nIn IEEE zijn citaten numeriek: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Probleemverklaring",
+          "guidance": "Definieer het technische probleem met formele precisie:\n• Gedetailleerde beschrijving van het probleem: symptomen, context, beperkingen.\n• Functionele en niet-functionele eisen.\n• Succescriteria: hoe weet je of je het hebt opgelost?\n• Reikwijdte en beperkingen van het project.\n• Minimaal noodzakelijk theoretisch kader: concepten, modellen of theorieën waarop de oplossing is gebaseerd.\nGebruik diagrammen, vereistentabellen en gebruiksscenario's indien van toepassing."
+        },
+        "design": {
+          "title": "Ontwerp en architectuur",
+          "guidance": "Presenteer de voorgestelde oplossing voordat u deze implementeert:\n• Systeemarchitectuur (componentendiagram, lagen, modules).\n• Ontwerpbeslissingen en verantwoording van gekozen technologieën.\n• Stroomdiagram of hoofdalgoritme.\n• Datamodel indien van toepassing (ER, BD schema).\n• Gebruikersinterface (wireframes of mockups indien van toepassing).\nHet ontwerp moet onafhankelijk zijn van de implementatie; een derde partij moet het vanuit deze sectie kunnen implementeren."
+        },
+        "implementation": {
+          "title": "Implementatie",
+          "guidance": "Beschrijf hoe de oplossing is gebouwd:\n• Ontwikkelomgeving: talen, frameworks, platforms, versies.\n• Beschrijving van de geïmplementeerde modules of componenten.\n• Relevante codefragmenten (alleen de meest illustratieve, niet de gehele code).\n• Implementatie-uitdagingen en aangenomen oplossingen.\n• Infrastructuurconfiguratie indien van toepassing (servers, containers, BD).\nDe volledige code staat in de bijlagen — hier alleen de meest representatieve."
+        },
+        "testing": {
+          "title": "Testen en validatie",
+          "guidance": "Laat zien dat de oplossing werkt en aan de eisen voldoet:\n• Testplan: typen (unitair, integratie, systeem, acceptatie).\n• Testgevallen: input, actie, verwacht resultaat, behaald resultaat.\n• Prestatiestatistieken, indien van toepassing (responstijd, geheugengebruik, precisie).\n• Vergelijking met basiswerk of gerelateerd werk.\n• Analyse van de resultaten: wat werkte? Nee? omdat?\nPresenteer resultaten indien mogelijk in tabellen of grafieken."
+        },
+        "conclusions": {
+          "title": "Conclusies en toekomstig werk",
+          "guidance": "Sluit het werk af met technische nauwgezetheid:\n• Evaluatie van de bereikte doelstellingen versus de gestelde doelen.\n• Originele bijdragen van het werk.\n• Geïdentificeerde technische beperkingen.\n• Toekomstig werk: concrete verbeteringen, mogelijke uitbreidingen, openstaande problemen.\nIn IEEE is het gebruikelijk om mogelijke publicaties of industriële toepassingen te vermelden."
+        },
+        "references": {
+          "title": "Referenties",
+          "guidance": "In IEEE zijn de referenties numeriek en verschijnen ze in volgorde van eerste vermelding.\nDe lijst wordt automatisch gegenereerd op basis van uw .bib wanneer u compileert.\nVoor IEEE-artikelen en conferenties: Gebruik de DOI-importer om de juiste invoer te verkrijgen.\nZorg ervoor dat u de DOI in elke referentie vermeldt; IEEE vereist dit."
+        },
+        "appendices": {
+          "title": "Bijlagen",
+          "guidance": "Aanvullend technisch materiaal:\n• Volledige broncode (hoofdmodules).\n• Installatie- en configuratiescripts.\n• Gebruikers- of technische handleidingen.\n• Gedetailleerde schema's (volledige ERD, sequentiediagrammen, etc.).\n• Testgegevens of datasets.\nNummer: Bijlage A, B… en verwijs ernaar vanuit de hoofdtekst."
+        }
+      },
+      "meta": "Bibliografie IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Afstudeerscriptie",
+      "description": "Profiel voor master en doctoraat: literatuuronderzoek, stand van zaken, aanpak, experimenteren, woordenlijst en acroniemen. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Het voorblad wordt automatisch gegenereerd met de projectgegevens.\nVoor postdoctorale studies configureert u in de metadata: volledige naam, directeur, mededirecteur (indien van toepassing) en synodale commissie.\nU hoeft hier geen inhoud te schrijven."
+        },
+        "table_of_contents": {
+          "guidance": "De inhoudsopgave wordt automatisch gegenereerd.\nJe hoeft hier niets te schrijven."
+        },
+        "list_of_figures": {
+          "guidance": "De lijst met figuren wordt automatisch gegenereerd op basis van alle getitelde figuren in je proefschrift.\nActiveer deze sectie als je 5 of meer figuren hebt."
+        },
+        "list_of_tables": {
+          "guidance": "De lijst met tabellen wordt automatisch gegenereerd uit alle tabellen met titel.\nActiveer deze sectie als u 5 of meer tafels heeft."
+        },
+        "list_of_algorithms": {
+          "guidance": "Automatisch gegenereerde lijst met algoritmen voor computationele of technische scripties.\nActiveer alleen als u 3 of meer pseudocodes of genummerde algoritmen presenteert."
+        },
+        "acronyms": {
+          "title": "Lijst met afkortingen en acroniemen",
+          "guidance": "Maak een lijst van alle acroniemen en afkortingen die in het proefschrift worden gebruikt, met hun volledige betekenis.\nFormaat: SIGLA — Volledige betekenis (bijv. CNN — Convolutioneel Neuraal Netwerk).\nAlfabetisch sorteren. Het definieert ook de eerste keer dat elk acroniem in de tekst verschijnt."
+        },
+        "abstract_es": {
+          "title": "Samenvatting",
+          "guidance": "De samenvatting voor afgestudeerden antwoordt in 250-350 woorden:\n• Motivatie: waarom is dit probleem belangrijk?\n• Probleem: Welke vraag of hypothese behandel je?\n• Methode: hoofdaanpak en techniek.\n• Bijdrage: resultaten en originele bijdrage aan de stand van de techniek.\n• Impact: theoretische of praktische implicaties.\nGeen afspraken. Geen vergelijkingen. 5–8 Trefwoorden aan het einde."
+        },
+        "abstract_en": {
+          "title": "Samenvatting",
+          "guidance": "Nauwkeurige vertaling van de samenvatting in het Engels. Geen machinevertaling – controleer het.\nTrefwoorden: in het Engels, bij voorkeur termen uit de thesaurus van uw vakgebied.\nVerplicht voor postdoctorale studies. Het is de versie die in internationale repositories verschijnt."
+        },
+        "dedication": {
+          "title": "Toewijding",
+          "guidance": "Korte en persoonlijke tekst. Wijd werk toe aan degenen die het het meest verdienen.\nGeen speciale opmaak: het profiel is gecentreerd op een aparte pagina."
+        },
+        "acknowledgements": {
+          "title": "Bedankt",
+          "guidance": "Bedank degenen die hebben bijgedragen aan het werk formeel:\n• Scriptiedirecteur en mededirecteur.\n• Synodale commissie / reviewers.\n• Financiers: beurzen, projecten, instellingen (verplicht voor projecten met externe ondersteuning).\n• Technische medewerkers, laboratoria, bedrijven.\n• Familie- en persoonlijke steun (aan het einde, kort).\nExtensie: een halve pagina."
+        },
+        "introduction": {
+          "title": "Introductie",
+          "guidance": "De introductie van een postdoctorale scriptie vergt meer eisen dan die van een bachelordiploma. Je moet:\n1. Contextualiseer het probleem in de huidige stand van de techniek.\n2. Identificeer de specifieke kennislacune die jouw scriptie aanpakt.\n3. Formuleer de hypothese of onderzoeksvraag duidelijk.\n4. Noem de doelstellingen (algemeen en specifiek).\n5. Beschrijf de oorspronkelijke bijdrage (wat is nieuw in je werk?).\n6. Motiveer de reikwijdte en afbakeningen.\n7. Beschrijf de indeling van de hoofdstukken.\nEen promotiecommissie beoordeelt of de bijdrage origineel en onafhankelijk is. Wees nauwkeurig.\nTypische lengte: 5–10 pagina's."
+        },
+        "literature_review": {
+          "title": "Literatuuroverzicht en stand van zaken",
+          "guidance": "Dit is het gedeelte dat uw beheersing van het vakgebied laat zien. Je moet:\n• Behandel systematisch relevante werken van de afgelopen 5-10 jaar (klassiekers kunnen ouder zijn).\n• Organiseer op thema, focus of chronologie – niet als een lijst met samenvattingen.\n• Vergelijk de voorstellen kritisch: sterke punten, zwakke punten, beperkingen.\n• Identificeer de leemte die uw scriptie opvult (\"geen eerder werk heeft X aangepakt\").\n• Eindig indien mogelijk met een vergelijkende tabel van verwante werken.\nVoor doctoraten: dit overzicht moet uitputtend zijn en alle aspecten van het probleem bestrijken.\nStrategie: Zoek Scopus, WoS, ACM DL, IEEE Xplore. Gebruik voor elk artikel de DOI-importeur."
+        },
+        "theoretical_framework": {
+          "title": "Theoretisch raamwerk",
+          "guidance": "Ontwikkel de theoretische en wiskundige basis die nodig is om uw voorstel te begrijpen.\nIn tegenstelling tot het literatuuronderzoek verdiep je je hier in de belangrijkste concepten:\n• Formele definities en wiskundige notatie.\n• Theoretische modellen waarop je werk is gebaseerd.\n• Relevante stellingen of eigenschappen (met citaten of bewijs indien origineel).\nActiveer deze sectie als je scriptie meer dan 5-6 pagina's theoretische basis nodig heeft."
+        },
+        "problem_statement": {
+          "title": "Probleemverklaring en hypothesen",
+          "guidance": "Definieer formeel het probleem dat je proefschrift oplost:\n• Nauwkeurige formulering: gebruik in de exacte wetenschappen, indien van toepassing, wiskundige notatie.\n• Hypotheses of onderzoeksvermoedens (voor doctoraat: verifieerbare en falsifieerbare hypothese).\n• Aannames en beperkingen van het model.\n• Waarom het probleem moeilijk is: computationele complexiteit, gebrek aan gegevens, theoretische ambiguïteit.\n• Evaluatiecriteria: hoe meet u het succes van uw voorstel?\nDeze sectie zou zelfstandig gelezen moeten kunnen worden als een probleemspecificatie."
+        },
+        "methodology": {
+          "title": "Methodologie",
+          "guidance": "Beschrijf de methodologische aanpak met de nauwkeurigheid die vereist is voor het postdoctorale niveau:\n• Onderzoeksparadigma: positivistisch, constructivistisch, gemengd.\n• Type onderzoek: experimenteel, quasi-experimenteel, case study, simulatie, modellering.\n• Specifiek onderzoeksontwerp.\n• Gegevensbronnen: herkomst, kenmerken, verzamel- of generatieproces.\n• Pipeline of compleet proces van data naar resultaten.\n• Specifieke tools, talen, bibliotheken en versies.\nGenoeg details voor volledige repliceerbaarheid."
+        },
+        "experimentation": {
+          "title": "Experimentatie en ontwikkeling",
+          "guidance": "Documenteer het ontwikkelings- of experimenteerproces in detail:\n• Experimentele opzet: hardware, hyperparameters, testomstandigheden.\n• Uitgevoerde experimenten en hun doel (ablatieonderzoek, vergelijking van varianten).\n• Relevante tussenwaarnemingen (niet alleen het eindresultaat).\n• Beslissingen die tijdens het proces worden genomen en de rechtvaardiging daarvan.\nActiveer deze sectie als uw werk een aanzienlijke experimentele component bevat\nscheidbaar van de algemene methodologie."
+        },
+        "results": {
+          "title": "Resultaten",
+          "guidance": "Presenteer de resultaten met de statistische nauwkeurigheid die vereist is voor de postdoctorale cursus:\n• Organiseer op doelstelling of hypothese.\n• Voor kwantitatieve resultaten: gemiddelde, standaarddeviatie, betrouwbaarheidsintervallen, statistische significantie.\n• Vergelijkende tabellen met baseline, eigen varianten en stand van de techniek.\n• Cijfers met foutbalken, indien van toepassing.\n• Voor kwalitatieve resultaten: theoretische verzadiging, triangulatie, representatieve citaten.\nInterpreteer hier niet, presenteer alleen de gegevens."
+        },
+        "discussion": {
+          "title": "Discussie",
+          "guidance": "De bespreking van een postdoctorale scriptie moet blijk geven van wetenschappelijke volwassenheid:\n• Interpreteer elk resultaat in relatie tot uw hypothese.\n• Vergelijk met state-of-the-art werken: overtref je, evenaar je of schiet je tekort?\n• Verklaart discrepanties met theoretische grondslagen.\n• Bespreek theoretische implicaties: wat betekent dit voor het vakgebied?\n• Bespreek praktische implicaties: welke toepassingen worden hieruit afgeleid?\n• Eerlijke beperkingen: Verberg zwakke punten niet, de commissie zal ze toch zien.\n• Bedreigingen voor de validiteit, indien van toepassing (intern, extern, constructvaliditeit)."
+        },
+        "conclusions": {
+          "title": "Conclusies en toekomstig werk",
+          "guidance": "Sluit het proefschrift af met de visie van een onderzoeker:\n• Reageert direct op elke specifieke doelstelling.\n• Vermeldt duidelijk de oorspronkelijke bijdrage aan kennis.\n• Bij doctoraat: toont aan dat de bijdrage voldoet aan de criteria originaliteit en onafhankelijkheid.\n• Specifiek en realistisch toekomstig werk: open problemen, uitbreidingen, toepassingen.\n• Eindreflectie over de impact van werk op het vakgebied.\nTypische lengte: 3–5 pagina's."
+        },
+        "references": {
+          "title": "Referenties",
+          "guidance": "De referentielijst wordt automatisch gegenereerd vanuit uw .bib bij het compileren met APA 7.\nVoor postdoctorale studies worden meer dan 80–200 referenties van hoge kwaliteit (geïndexeerde artikelen, technische boeken) verwacht.\nGebruik de DOI-importer om met één klik artikelen uit Crossref toe te voegen.\nVermijd verwijzingen naar blogs, Wikipedia of niet-peer-reviewed sites als primaire bronnen."
+        },
+        "publications": {
+          "title": "Afgeleide publicaties",
+          "guidance": "Maak een lijst van de gepubliceerde of ingezonden werken die zijn afgeleid van dit proefschrift:\n• Artikelen in geïndexeerde tijdschriften (Q1, Q2, Scopus, WoS).\n• Presentaties op nationale en internationale conferenties.\n• Boekhoofdstukken, patenten, technische rapporten.\nVoor elk: volledige referentie + status (gepubliceerd / geaccepteerd / ingediend / in voorbereiding).\nEerdere publicaties zijn een teken van kwaliteit en kunnen de verdediging verlichten."
+        },
+        "glossary": {
+          "title": "Verklarende woordenlijst",
+          "guidance": "Definieer gespecialiseerde termen die een lezer die geen expert is in uw subspecialisme, zou moeten kennen.\nFormaat: Term — Beknopte definitie.\nNeem geen termen op die al in het Theoretisch Kader zijn gedefinieerd; de woordenlijst is bedoeld voor terugkerende maar niet voor centrale termen."
+        },
+        "appendices": {
+          "title": "Bijlagen",
+          "guidance": "Aanvullend technisch materiaal dat niet tot de hoofdstroom behoort:\n• Lange of secundaire wiskundige bewijzen.\n• Broncode (hoofdmodules, experimentscripts).\n• Volledige gegevenstabellen of aanvullende resultaten.\n• Instrumenten voor gegevensverzameling.\n• Ethische goedkeuringsbrieven, vertrouwelijkheidsovereenkomsten.\nNummer: Bijlage A, B… met beschrijvende titels."
+        }
+      },
+      "meta": "Bibliografie APA 7 · XeLaTeX"
     }
   },
   "institutions": {

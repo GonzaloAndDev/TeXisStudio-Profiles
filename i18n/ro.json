@@ -2767,6 +2767,190 @@
       },
       "name": "Teză generică",
       "description": "Profil academic pentru o teză generică. Urmați metadatele profilului, secțiunile necesare și stilul bibliografiei."
+    },
+    "company.internship": {
+      "name": "Raport de stagiu / rezidență",
+      "description": "Format pentru rapoartele privind rezidența profesională și sejururile de afaceri. Include descrierea companiei, activitățile și rezultatele. Bibliografie APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta este generată automat cu date instituționale.\nAcesta va include: numele studentului, firma, perioada de stagiu, instituția academică și cariera.\nNu trebuie să scrieți conținut aici — setați datele în metadatele proiectului."
+        },
+        "table_of_contents": {
+          "guidance": "Indexul este generat automat.\nNu trebuie să scrieți nimic aici."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "Contextualizați raportul și prezentați cititorului scopul practicilor:\n• Cariera și profilul profesional al practicianului.\n• Denumirea companiei și a zonei în care s-au desfășurat stagiile.\n• Perioada și durata totală.\n• Obiectivul general al rezidențiatului: ce problemă sau nevoie organizațională a fost abordată?\n• Scurtă descriere a structurii raportului.\nLungime: 1–2 pagini."
+        },
+        "company_description": {
+          "title": "Descrierea companiei",
+          "guidance": "Prezentați organizația în care ați făcut stagiul:\n• Numele complet, numele companiei și linia de activitate.\n• Scurtă istorie și misiune/viziune.\n• Organigrama generală (puteți introduce o figură).\n• Zona sau departamentul în care ați lucrat și funcția acestuia în cadrul companiei.\n• Infrastructură tehnologică relevantă pentru activitățile dumneavoastră.\nNu copiați site-ul companiei text – parafrazați și citați sursa."
+        },
+        "activities": {
+          "title": "Activități dezvoltate",
+          "guidance": "Descrieți cronologic sau pe proiect activitățile pe care le-ați desfășurat:\n• Pentru fiecare activitate: obiectiv, descrierea procesului, instrumentelor sau tehnologiilor utilizate.\n• Includeți capturi de ecran, diagrame sau tabele atunci când susțin explicația.\n• Menționați provocările întâlnite și cum le-ați rezolvat.\n• Vă puteți organiza pe săptămâni, sprinturi, faze de proiect sau zone de lucru.\nAceasta este cea mai lungă secțiune a raportului — fiți specific și tehnic."
+        },
+        "results": {
+          "title": "Rezultate și contribuții",
+          "guidance": "Prezentați produsele și contribuțiile specifice ale reședinței dvs.:\n• Rezultate finalizate (sisteme, rapoarte, manuale, îmbunătățiri ale proceselor).\n• Valori sau dovezi ale impactului acolo unde este posibil (timp economisit, erori reduse etc.).\n• Abilități profesionale dezvoltate.\n• Comparație între obiectivele propuse și ceea ce s-a realizat.\nFii obiectiv: dacă ceva nu a fost încheiat, explică de ce."
+        },
+        "conclusions": {
+          "title": "Concluzii",
+          "guidance": "Închideți raportul cu o reflecție profesională:\n• Au fost îndeplinite obiectivele rezidențiale?\n• Ce învățare profesională ați obținut?\n• Cum a completat experiența pregătirea dumneavoastră academică?\n• Recomandări pentru viitorii practicieni sau pentru companie.\nLungime: 1–2 pagini."
+        },
+        "references": {
+          "title": "Referințe",
+          "guidance": "Enumerați sursele consultate în timpul practicilor: manuale tehnice, standarde, articole, site-uri web.\nLista este generată automat din .bib.\nStilul APA 7. Utilizați importatorul DOI pentru a adăuga cu ușurință referințe academice."
+        },
+        "appendices": {
+          "title": "Anexe",
+          "guidance": "Include material suport care ar fi foarte extins în corpul principal:\n• Scrisoare de acceptare din partea companiei.\n• Scrisoare de finalizare/evaluare din partea tutorelui de afaceri.\n• Jurnalele săptămânale (dacă este solicitat de instituția dumneavoastră).\n• Cod sursă relevant.\n• Elaborare manuale de utilizare sau tehnice.\n• Dovezi fotografice ale locului de muncă.\nNumerotați fiecare anexă (Anexa A, B…) și faceți referire la ele din text."
+        }
+      },
+      "meta": "Bibliografie APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Raport de inginerie/tehnică",
+      "description": "Raport tehnic cu secțiuni despre abordare, proiectare, implementare și testare. IEEE Bibliografie. Ideal pentru teză de inginerie și rezidențiat profesional.",
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta este generată automat cu datele proiectului.\nNu trebuie să scrieți conținut aici."
+        },
+        "table_of_contents": {
+          "guidance": "Indexul este generat automat.\nNu trebuie să scrieți nimic aici."
+        },
+        "abstract_es": {
+          "title": "Rezumat",
+          "guidance": "Rezumat tehnic de 150–250 de cuvinte. În inginerie trebuie să fie specific:\n• Problemă pe care lucrarea o rezolvă.\n• Abordarea sau tehnologia utilizată.\n• Rezultatul principal (metric, performanță, îmbunătățire).\n• Concluzie sau contribuție cheie.\nFără referințe, fără ecuații, fără acronime nedefinite."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "Contextualizați problema tehnică și motivați munca:\n• Context: domeniu tehnologic, industrie sau aplicație.\n• Motivația: de ce este important să rezolvăm această problemă?\n• Lucrări conexe: trecere în revistă foarte scurtă a soluțiilor existente și a limitărilor acestora.\n• Contribuția obiectivă și specifică a lucrării.\n• Organizarea documentelor.\nÎn IEEE, citările sunt numerice: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Declarația de problemă",
+          "guidance": "Definiți problema tehnică cu precizie formală:\n• Descrierea detaliată a problemei: simptome, context, restricții.\n• Cerințe funcționale și nefuncționale.\n• Criterii de succes: Cum vei ști că ai rezolvat-o?\n• Domeniul de aplicare și limitările proiectului.\n• Cadrul teoretic minim necesar: concepte, modele sau teorii pe care se bazează soluția.\nFolosiți diagrame, tabele de cerințe și cazuri de utilizare, dacă este cazul."
+        },
+        "design": {
+          "title": "Design și arhitectură",
+          "guidance": "Prezentați soluția propusă înainte de a o implementa:\n• Arhitectura sistemului (diagrama componentelor, straturi, module).\n• Deciziile de proiectare și justificarea tehnologiilor alese.\n• Diagramă sau algoritm principal.\n• Model de date, dacă este cazul (schema ER, BD).\n• Interfață cu utilizatorul (wireframes sau machete, dacă este cazul).\nDesignul ar trebui să fie independent de implementare — o terță parte ar trebui să o poată implementa din această secțiune."
+        },
+        "implementation": {
+          "title": "Implementare",
+          "guidance": "Descrieți cum a fost creată soluția:\n• Mediu de dezvoltare: limbaje, cadre, platforme, versiuni.\n• Descrierea modulelor sau componentelor implementate.\n• Fragmente de cod relevante (doar cele mai ilustrative, nu întregul cod).\n• Provocări de implementare și soluții adoptate.\n• Configurarea infrastructurii dacă este cazul (servere, containere, BD).\nCodul complet este în anexe — aici doar cel mai reprezentativ."
+        },
+        "testing": {
+          "title": "Testare și validare",
+          "guidance": "Demonstrați că soluția funcționează și îndeplinește cerințele:\n• Plan de testare: tipuri (unitar, de integrare, de sistem, de acceptare).\n• Cazuri de testare: intrare, acțiune, rezultat așteptat, rezultat obținut.\n• Măsuri de performanță, dacă este cazul (timpul de răspuns, utilizarea memoriei, precizie).\n• Comparație cu munca de referință sau conexă.\n• Analiza rezultatelor: ce a funcționat? nu? deoarece?\nPrezentați rezultatele în tabele sau grafice atunci când este posibil."
+        },
+        "conclusions": {
+          "title": "Concluzii și lucrări viitoare",
+          "guidance": "Închideți lucrarea cu rigoare tehnică:\n• Trecerea în revistă a obiectivelor atinse vs. cele ridicate.\n• Contribuții originale ale lucrării.\n• Limitări tehnice identificate.\n• Lucrări viitoare: îmbunătățiri concrete, posibile extinderi, probleme deschise.\nÎn IEEE se menționează posibile publicații sau aplicații industriale."
+        },
+        "references": {
+          "title": "Referințe",
+          "guidance": "În IEEE referințele sunt numerice și apar în ordinea primei mențiuni.\nLista este generată automat din .bib atunci când compilați.\nPentru articole și conferințe IEEE: utilizați importatorul DOI pentru a obține intrarea corectă.\nAsigurați-vă că includeți DOI în fiecare referință — IEEE necesită acest lucru."
+        },
+        "appendices": {
+          "title": "Anexe",
+          "guidance": "Material tehnic complementar:\n• Cod sursă complet (module principale).\n• Scripturi de instalare și configurare.\n• Manuale de utilizare sau tehnice.\n• Diagrame detaliate (ERD complet, diagrame de secvență etc.).\n• Date de testare sau seturi de date.\nNumăr: Anexele A, B... și consultați-le din textul principal."
+        }
+      },
+      "meta": "Bibliografie IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Teză de licență",
+      "description": "Profil pentru master și doctorat: recenzie literaturii, stadiul tehnicii, abordare, experimentare, glosar și acronime. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta este generată automat cu datele proiectului.\nPentru studiile postuniversitare, configurați în metadate: nume complet, director, co-director (dacă este cazul) și comitetul sinodal.\nNu trebuie să scrieți conținut aici."
+        },
+        "table_of_contents": {
+          "guidance": "Cuprinsul este generat automat.\nNu trebuie să scrieți nimic aici."
+        },
+        "list_of_figures": {
+          "guidance": "Lista figurilor este generată automat din toate figurile cu titlu din teza dumneavoastră.\nActivați această secțiune dacă aveți 5 sau mai multe cifre."
+        },
+        "list_of_tables": {
+          "guidance": "Lista de tabele este generată automat din toate tabelele cu titlu.\nActivați această secțiune dacă aveți 5 sau mai multe mese."
+        },
+        "list_of_algorithms": {
+          "guidance": "Lista de algoritmi generată automat pentru teze de calcul sau de inginerie.\nActivați numai dacă prezentați 3 sau mai multe pseudocoduri sau algoritmi numerotați."
+        },
+        "acronyms": {
+          "title": "Lista de abrevieri și acronime",
+          "guidance": "Enumerați toate acronimele și abrevierile utilizate în teză cu semnificația lor completă.\nFormat: SIGLA — Înțeles complet (de exemplu, CNN — Rețea neuronală convoluțională).\nSortați alfabetic. De asemenea, definește prima dată când fiecare acronim apare în text."
+        },
+        "abstract_es": {
+          "title": "Rezumat",
+          "guidance": "Rezumatul absolventului răspunde în 250-350 de cuvinte:\n• Motivația: de ce este importantă această problemă?\n• Problemă: ce întrebare sau ipoteză vă adresați?\n• Metodă: abordare principală și tehnică.\n• Contribuție: rezultate și contribuție originală la stadiul tehnicii.\n• Impact: implicații teoretice sau practice.\nFără programări. Fara ecuatii. 5–8 cuvinte cheie la sfârșit."
+        },
+        "abstract_en": {
+          "title": "Rezumat",
+          "guidance": "Traducerea corectă a rezumatului în engleză. Nu este o traducere automată - verificați-o.\nCuvinte cheie: în limba engleză, de preferință termeni din tezaurul disciplinei dumneavoastră.\nObligatoriu pentru studiile postuniversitare — este versiunea care apare în arhivele internaționale."
+        },
+        "dedication": {
+          "title": "Dedicație",
+          "guidance": "Text scurt și personal. Dedică munca celor care o merită cel mai mult.\nFără formatare specială — profilul este centrat pe o pagină separată."
+        },
+        "acknowledgements": {
+          "title": "Mulțumesc",
+          "guidance": "Mulțumim oficial celor care au contribuit la lucrare:\n• Director de teză și co-director.\n• Comitetul sinodal/revizori.\n• Finanțatori: burse, proiecte, instituții (obligatoriu pentru proiecte cu sprijin extern).\n• Colaboratori tehnici, laboratoare, firme.\n• Sprijin familial și personal (la final, pe scurt).\nExtensie: jumătate de pagină."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "Introducerea unei teze postuniversitare este mai solicitantă decât cea a unei diplome de licență. Trebuie să:\n1. Contextualizați problema în stadiul actual al tehnicii.\n2. Identificați lipsa de cunoștințe specifică pe care o abordează teza dvs.\n3. Spuneți clar ipoteza sau întrebarea de cercetare.\n4. Enumerați obiectivele (generale și specifice).\n5. Descrieți contribuția inițială (ce este nou în munca dvs.?).\n6. Justificați sfera de aplicare și delimitările.\n7. Descrieţi organizarea capitolelor.\nO comisie de doctorat va evalua dacă contribuția este originală și independentă. Fii precis.\nLungime tipică: 5–10 pagini."
+        },
+        "literature_review": {
+          "title": "Recenzia literaturii și stadiul tehnicii",
+          "guidance": "Aceasta este secțiunea care demonstrează stăpânirea ta în domeniu. Trebuie să:\n• Acoperi sistematic lucrări relevante din ultimii 5-10 ani (clasicii pot fi mai vechi).\n• Organizați după temă, focalizare sau cronologie — nu ca o listă de rezumate.\n• Comparați în mod critic propunerile: puncte forte, puncte slabe, limitări.\n• Identificați golul pe care teza dumneavoastră îl umple („nicio lucrare anterioară nu a abordat X”).\n• Încheiați cu un tabel comparativ al lucrărilor conexe, dacă este posibil.\nPentru doctorat: această recenzie trebuie să fie exhaustivă și să acopere toate aspectele problemei.\nStrategie: Caută Scopus, WoS, ACM DL, IEEE Xplore. Utilizați importatorul DOI pentru fiecare articol."
+        },
+        "theoretical_framework": {
+          "title": "Cadru teoretic",
+          "guidance": "Dezvoltați bazele teoretice și matematice necesare pentru a înțelege propunerea dvs.\nSpre deosebire de revizuirea literaturii de specialitate, aici vă aprofundați în conceptele cheie:\n• Definiții formale și notație matematică.\n• Modele teoretice pe care se bazează munca dumneavoastră.\n• Teoreme sau proprietăți relevante (cu citări sau dovezi dacă sunt originale).\nActivați această secțiune dacă teza dvs. necesită mai mult de 5–6 pagini de bază teoretică."
+        },
+        "problem_statement": {
+          "title": "Enunțarea problemei și ipotezele",
+          "guidance": "Definiți în mod formal problema pe care o rezolvă teza dvs.:\n• Formulare precisă: în științe exacte, folosiți notația matematică dacă este cazul.\n• Ipoteze sau conjecturi de cercetare (pentru doctorat: ipoteze verificabile și falsificabile).\n• Ipoteze și restricții ale modelului.\n• De ce este dificilă problema: complexitate de calcul, lipsă de date, ambiguitate teoretică.\n• Criterii de evaluare: cum veți măsura succesul propunerii dumneavoastră?\nAceastă secțiune ar trebui să poată fi citită independent ca specificație a problemei."
+        },
+        "methodology": {
+          "title": "Metodologie",
+          "guidance": "Descrieți abordarea metodologică cu rigoarea cerută de nivelul postuniversitar:\n• Paradigma cercetării: pozitivistă, constructivistă, mixtă.\n• Tip de cercetare: experimentală, cvasi-experimentală, studiu de caz, simulare, modelare.\n• Design specific de cercetare.\n• Surse de date: origine, caracteristici, proces de colectare sau generare.\n• Conductă sau proces complet de la date la rezultate.\n• Instrumente, limbi, biblioteci și versiuni specifice.\nSuficiente detalii pentru o reproducere completă."
+        },
+        "experimentation": {
+          "title": "Experimentare și dezvoltare",
+          "guidance": "Documentează procesul de dezvoltare sau de experimentare în detaliu:\n• Configurare experimentală: hardware, hiperparametri, condiții de testare.\n• Experimentele efectuate și scopul lor (studiu de ablație, compararea variantelor).\n• Observații intermediare relevante (nu doar rezultatul final).\n• Deciziile luate în timpul procesului și justificarea acestora.\nActivați această secțiune dacă munca dvs. are o componentă experimentală semnificativă\nseparabil de metodologia generală."
+        },
+        "results": {
+          "title": "Rezultate",
+          "guidance": "Prezentați rezultatele cu rigoarea statistică cerută de cursul postuniversitar:\n• Organizați după obiectiv sau ipoteză.\n• Pentru rezultate cantitative: medie, abatere standard, intervale de încredere, semnificație statistică.\n• Tabele comparative cu referință, variante proprii și stadiul tehnicii.\n• Cifre cu bare de eroare atunci când este cazul.\n• Pentru rezultate calitative: saturație teoretică, triangulare, ghilimele reprezentative.\nNu interpretați aici, doar prezentați datele."
+        },
+        "discussion": {
+          "title": "Discuție",
+          "guidance": "Discuția unei teze postuniversitare trebuie să demonstreze maturitatea științifică:\n• Interpretați fiecare rezultat în raport cu ipoteza dvs.\n• Comparați cu lucrările de ultimă generație: depășiți, egalați sau rămâneți scurt?\n• Explică discrepanțe cu fundamentele teoretice.\n• Discutați implicațiile teoretice: ce înseamnă pentru domeniu?\n• Discutați implicațiile practice: ce aplicații sunt derivate?\n• Limitări sincere: Nu ascunde punctele slabe, comitetul le va vedea oricum.\n• Amenințări la adresa validității, dacă este cazul (validitate internă, externă, de construct)."
+        },
+        "conclusions": {
+          "title": "Concluzii și lucrări viitoare",
+          "guidance": "Închideți teza cu viziunea unui cercetător:\n• Răspunde direct la fiecare set de obiective specifice.\n• Afirmă clar contribuția inițială la cunoaștere.\n• Pentru doctorat: demonstrează că contribuția îndeplinește criteriile de originalitate și independență.\n• Lucrări viitoare specifice și realiste: probleme deschise, extensii, aplicații.\n• Reflecție finală asupra impactului muncii asupra disciplinei.\nLungime tipică: 3–5 pagini."
+        },
+        "references": {
+          "title": "Referințe",
+          "guidance": "Lista de referințe este generată automat din .bib la compilarea cu APA 7.\nPentru studiile postuniversitare, sunt așteptate peste 80–200 de referințe de înaltă calitate (articole indexate, cărți tehnice).\nUtilizați importatorul DOI pentru a adăuga articole din Crossref cu un singur clic.\nEvitați trimiterile la bloguri, Wikipedia sau site-uri care nu sunt evaluate de colegi ca surse principale."
+        },
+        "publications": {
+          "title": "Publicații derivate",
+          "guidance": "Enumerați lucrările publicate sau trimise derivate din această teză:\n• Articole în reviste indexate (Q1, Q2, Scopus, WoS).\n• Prezentari la conferinte nationale si internationale.\n• Capitole de carte, brevete, rapoarte tehnice.\nPentru fiecare: referință completă + statut (publicat/acceptat/depus/în pregătire).\nPublicațiile anterioare sunt un semn de calitate și pot ușura apărarea."
+        },
+        "glossary": {
+          "title": "Glosar",
+          "guidance": "Definiți termeni specializați pe care un cititor care nu este un expert în subspecialitatea dvs. ar trebui să-i cunoască.\nFormat: Termen — Definiție concisă.\nNu includeți termeni care au fost deja definiți în cadrul teoretic — glosarul este pentru termeni recurenți, dar nu centrali."
+        },
+        "appendices": {
+          "title": "Anexe",
+          "guidance": "Material tehnic suplimentar care nu aparține fluxului principal:\n• Demonstrații matematice lungi sau secundare.\n• Cod sursă (module principale, scripturi de experiment).\n• Completați tabele de date sau rezultate suplimentare.\n• Instrumente de colectare a datelor.\n• Scrisori de aprobare etică, acorduri de confidențialitate.\nNumăr: apendicele A, B… cu titluri descriptive."
+        }
+      },
+      "meta": "Bibliografie APA 7 · XeLaTeX"
     }
   },
   "institutions": {

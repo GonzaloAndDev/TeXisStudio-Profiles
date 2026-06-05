@@ -2767,6 +2767,190 @@
       },
       "name": "Tesis Generica",
       "description": "Estructura completa para cualquier disciplina academica"
+    },
+    "company.internship": {
+      "name": "Reporte de prácticas / Residencia",
+      "description": "Formato para reportes de residencia profesional y estadías empresariales. Incluye descripción de empresa, actividades y resultados. Bibliografía APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "La portada se genera automáticamente con los datos institucionales.\nIncluirá: nombre del estudiante, empresa, periodo de prácticas, institución académica y carrera.\nNo necesitas escribir contenido aquí — configura los datos en los metadatos del proyecto."
+        },
+        "table_of_contents": {
+          "guidance": "El índice se genera automáticamente.\nNo necesitas escribir nada aquí."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Contextualiza el reporte y presenta al lector el propósito de las prácticas:\n• Carrera y perfil profesional del practicante.\n• Nombre de la empresa y área donde se realizaron las prácticas.\n• Periodo y duración total.\n• Objetivo general de la residencia: ¿qué problema o necesidad organizacional se atendió?\n• Breve descripción de la estructura del reporte.\nExtensión: 1–2 páginas."
+        },
+        "company_description": {
+          "title": "Descripción de la empresa",
+          "guidance": "Presenta la organización donde realizaste las prácticas:\n• Nombre completo, razón social y giro empresarial.\n• Historia breve y misión/visión.\n• Organigrama general (puedes insertar una figura).\n• Área o departamento donde trabajaste y su función dentro de la empresa.\n• Infraestructura tecnológica relevante para tus actividades.\nNo copies textualmente la página web de la empresa — parafrasea y cita la fuente."
+        },
+        "activities": {
+          "title": "Actividades desarrolladas",
+          "guidance": "Describe cronológicamente o por proyecto las actividades que realizaste:\n• Para cada actividad: objetivo, descripción del proceso, herramientas o tecnologías usadas.\n• Incluye capturas de pantalla, diagramas o tablas cuando apoyen la explicación.\n• Menciona los retos encontrados y cómo los resolviste.\n• Puedes organizar por semanas, sprints, fases del proyecto o áreas de trabajo.\nEsta es la sección más extensa del reporte — sé específico y técnico."
+        },
+        "results": {
+          "title": "Resultados y aportaciones",
+          "guidance": "Presenta los productos y contribuciones concretas de tu residencia:\n• Entregables completados (sistemas, reportes, manuales, mejoras de proceso).\n• Métricas o evidencia de impacto cuando sea posible (tiempo ahorrado, errores reducidos, etc.).\n• Competencias profesionales desarrolladas.\n• Comparación entre los objetivos propuestos y lo logrado.\nSé objetivo: si algo no se concluyó, explica por qué."
+        },
+        "conclusions": {
+          "title": "Conclusiones",
+          "guidance": "Cierra el reporte con una reflexión profesional:\n• ¿Se cumplieron los objetivos de la residencia?\n• ¿Qué aprendizajes profesionales obtuviste?\n• ¿Cómo complementó la experiencia tu formación académica?\n• Recomendaciones para futuros practicantes o para la empresa.\nExtensión: 1–2 páginas."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "Lista las fuentes consultadas durante las prácticas: manuales técnicos, normas, artículos, sitios web.\nLa lista se genera automáticamente desde tu .bib.\nEstilo APA 7. Usa el importador DOI para agregar referencias académicas fácilmente."
+        },
+        "appendices": {
+          "title": "Anexos",
+          "guidance": "Incluye material de soporte que sería muy extenso en el cuerpo principal:\n• Carta de aceptación de la empresa.\n• Carta de término / evaluación del tutor empresarial.\n• Bitácoras semanales (si lo exige tu institución).\n• Código fuente relevante.\n• Manuales de usuario o técnicos desarrollados.\n• Evidencias fotográficas del lugar de trabajo.\nNumera cada anexo (Anexo A, B…) y refiérelos desde el texto."
+        }
+      },
+      "meta": "Bibliografía APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Ingeniería / Reporte técnico",
+      "description": "Reporte técnico con secciones de planteamiento, diseño, implementación y pruebas. Bibliografía IEEE. Ideal para tesis de ingeniería y residencia profesional.",
+      "sections": {
+        "title_page": {
+          "guidance": "La portada se genera automáticamente con los datos del proyecto.\nNo necesitas escribir contenido aquí."
+        },
+        "table_of_contents": {
+          "guidance": "El índice se genera automáticamente.\nNo necesitas escribir nada aquí."
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "Resumen técnico de 150–250 palabras. En ingeniería debe ser concreto:\n• Problema que resuelve el trabajo.\n• Enfoque o tecnología utilizada.\n• Resultado principal (métrica, rendimiento, mejora).\n• Conclusión o aportación clave.\nSin referencias, sin ecuaciones, sin acrónimos sin definir."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "Contextualiza el problema técnico y motiva el trabajo:\n• Contexto: área tecnológica, industria o aplicación.\n• Motivación: ¿por qué es importante resolver este problema?\n• Trabajos relacionados: brevísima revisión de soluciones existentes y sus limitaciones.\n• Objetivo y contribución específica del trabajo.\n• Organización del documento.\nEn IEEE, las citas van numéricas: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Planteamiento del problema",
+          "guidance": "Define el problema técnico con precisión formal:\n• Descripción detallada del problema: síntomas, contexto, restricciones.\n• Requerimientos funcionales y no funcionales.\n• Criterios de éxito: ¿cómo sabrás que lo resolviste?\n• Alcance y limitaciones del proyecto.\n• Marco teórico mínimo necesario: conceptos, modelos o teorías en los que se basa la solución.\nUsa diagramas, tablas de requerimientos y casos de uso si aplica."
+        },
+        "design": {
+          "title": "Diseño y arquitectura",
+          "guidance": "Presenta la solución propuesta antes de implementarla:\n• Arquitectura del sistema (diagrama de componentes, capas, módulos).\n• Decisiones de diseño y justificación de tecnologías elegidas.\n• Diagrama de flujo o algoritmo principal.\n• Modelo de datos si aplica (ER, esquema de BD).\n• Interfaz de usuario (wireframes o mockups si aplica).\nEl diseño debe ser independiente de la implementación — un tercero debería poder implementarlo desde esta sección."
+        },
+        "implementation": {
+          "title": "Implementación",
+          "guidance": "Describe cómo se construyó la solución:\n• Entorno de desarrollo: lenguajes, frameworks, plataformas, versiones.\n• Descripción de los módulos o componentes implementados.\n• Fragmentos de código relevantes (solo los más ilustrativos, no todo el código).\n• Desafíos de implementación y soluciones adoptadas.\n• Configuración de infraestructura si aplica (servidores, contenedores, BD).\nEl código completo va en Anexos — aquí solo lo más representativo."
+        },
+        "testing": {
+          "title": "Pruebas y validación",
+          "guidance": "Demuestra que la solución funciona y cumple los requerimientos:\n• Plan de pruebas: tipos (unitarias, integración, sistema, aceptación).\n• Casos de prueba: entrada, acción, resultado esperado, resultado obtenido.\n• Métricas de rendimiento si aplica (tiempo de respuesta, uso de memoria, precisión).\n• Comparación con la línea base o trabajos relacionados.\n• Análisis de resultados: ¿qué funcionó? ¿qué no? ¿por qué?\nPresenta resultados en tablas o gráficas cuando sea posible."
+        },
+        "conclusions": {
+          "title": "Conclusiones y trabajo futuro",
+          "guidance": "Cierra el trabajo con rigor técnico:\n• Revisión de los objetivos logrados vs. los planteados.\n• Contribuciones originales del trabajo.\n• Limitaciones técnicas identificadas.\n• Trabajo futuro: mejoras concretas, extensiones posibles, problemas abiertos.\nEn IEEE es común mencionar posibles publicaciones o aplicaciones industriales."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "En IEEE las referencias son numéricas y aparecen en orden de primera mención.\nLa lista se genera automáticamente desde tu .bib al compilar.\nPara artículos y conferencias IEEE: usa el importador DOI para obtener la entrada correcta.\nAsegúrate de incluir el DOI en cada referencia — IEEE lo exige."
+        },
+        "appendices": {
+          "title": "Anexos",
+          "guidance": "Material técnico complementario:\n• Código fuente completo (módulos principales).\n• Scripts de instalación y configuración.\n• Manuales de usuario o técnicos.\n• Diagramas detallados (ERD completo, diagramas de secuencia, etc.).\n• Datos de prueba o datasets.\nNumera: Apéndice A, B… y refiérelos desde el texto principal."
+        }
+      },
+      "meta": "Bibliografía IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Tesis de posgrado",
+      "description": "Perfil para maestría y doctorado: revisión de literatura, estado del arte, planteamiento, experimentación, glosario y acrónimos. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "La portada se genera automáticamente con los datos del proyecto.\nPara posgrado, configura en los metadatos: nombre completo, director, codirector (si aplica) y comité sinodal.\nNo necesitas escribir contenido aquí."
+        },
+        "table_of_contents": {
+          "guidance": "El índice de contenidos se genera automáticamente.\nNo necesitas escribir nada aquí."
+        },
+        "list_of_figures": {
+          "guidance": "La lista de figuras se genera automáticamente desde todas las figuras con título en tu tesis.\nActiva esta sección si tienes 5 o más figuras."
+        },
+        "list_of_tables": {
+          "guidance": "La lista de tablas se genera automáticamente desde todas las tablas con título.\nActiva esta sección si tienes 5 o más tablas."
+        },
+        "list_of_algorithms": {
+          "guidance": "Lista de algoritmos generada automáticamente para tesis computacionales o de ingeniería.\nSolo activa si presentas 3 o más pseudocódigos o algoritmos numerados."
+        },
+        "acronyms": {
+          "title": "Lista de Abreviaturas y Acrónimos",
+          "guidance": "Lista todos los acrónimos y abreviaturas usados en la tesis con su significado completo.\nFormato: SIGLA — Significado completo (ej. CNN — Convolutional Neural Network).\nOrdena alfabéticamente. Define también la primera vez que cada sigla aparece en el texto."
+        },
+        "abstract_es": {
+          "title": "Resumen",
+          "guidance": "El resumen de posgrado responde en 250–350 palabras:\n• Motivación: ¿por qué es importante este problema?\n• Problema: ¿qué pregunta o hipótesis abordas?\n• Método: enfoque y técnica principal.\n• Contribución: resultados y aportación original al estado del arte.\n• Impacto: implicaciones teóricas o prácticas.\nSin citas. Sin ecuaciones. 5–8 Palabras clave al final."
+        },
+        "abstract_en": {
+          "title": "Abstract",
+          "guidance": "Traducción precisa del resumen al inglés. No una traducción automática — revísala.\nKeywords: en inglés, preferiblemente términos del tesauro de tu disciplina.\nObligatorio para posgrado — es la versión que aparece en repositorios internacionales."
+        },
+        "dedication": {
+          "title": "Dedicatoria",
+          "guidance": "Texto breve y personal. Dedica el trabajo a quienes más lo merecen.\nSin formato especial — el perfil lo centra en página separada."
+        },
+        "acknowledgements": {
+          "title": "Agradecimientos",
+          "guidance": "Agradece formalmente a quienes contribuyeron al trabajo:\n• Director(a) y codirector(a) de tesis.\n• Comité sinodal / revisores.\n• Financiadores: becas, proyectos, instituciones (obligatorio para proyectos con apoyo externo).\n• Colaboradores técnicos, laboratorios, empresas.\n• Familia y apoyo personal (al final, de forma breve).\nExtensión: media a una página."
+        },
+        "introduction": {
+          "title": "Introducción",
+          "guidance": "La introducción de una tesis de posgrado es más exigente que la de licenciatura. Debe:\n1. Contextualizar el problema en el estado del arte actual.\n2. Identificar la brecha de conocimiento específica que tu tesis atiende.\n3. Enunciar claramente la hipótesis o pregunta de investigación.\n4. Listar los objetivos (general y específicos).\n5. Describir la contribución original (¿qué es nuevo en tu trabajo?).\n6. Justificar el alcance y delimitaciones.\n7. Describir la organización de los capítulos.\nUn comité de doctorado evaluará si la contribución es original e independiente. Sé preciso.\nExtensión típica: 5–10 páginas."
+        },
+        "literature_review": {
+          "title": "Revisión de Literatura y Estado del Arte",
+          "guidance": "Esta es la sección que demuestra tu dominio del campo. Debe:\n• Cubrir sistemáticamente los trabajos relevantes de los últimos 5–10 años (clásicos pueden ser más antiguos).\n• Organizar por temas, enfoques o cronología — no como lista de resúmenes.\n• Comparar críticamente las propuestas: fortalezas, debilidades, limitaciones.\n• Identificar el vacío que tu tesis llena (\"ningún trabajo anterior ha abordado X\").\n• Terminar con una tabla comparativa de trabajos relacionados si es posible.\nPara doctorado: esta revisión debe ser exhaustiva y cubrir todas las vertientes del problema.\nEstrategia: busca en Scopus, WoS, ACM DL, IEEE Xplore. Usa el importador DOI para cada artículo."
+        },
+        "theoretical_framework": {
+          "title": "Marco Teórico",
+          "guidance": "Desarrolla los fundamentos teóricos y matemáticos necesarios para entender tu propuesta.\nA diferencia de la revisión de literatura, aquí profundizas en los conceptos clave:\n• Definiciones formales y notación matemática.\n• Modelos teóricos en los que se basa tu trabajo.\n• Teoremas o propiedades relevantes (con citas o demostración si es original).\nActiva esta sección si tu tesis requiere más de 5–6 páginas de base teórica."
+        },
+        "problem_statement": {
+          "title": "Planteamiento del Problema e Hipótesis",
+          "guidance": "Define formalmente el problema que tu tesis resuelve:\n• Formulación precisa: en ciencias exactas, usa notación matemática si aplica.\n• Hipótesis o conjeturas de investigación (para doctorado: hipótesis verificable y falsable).\n• Supuestos y restricciones del modelo.\n• Por qué el problema es difícil: complejidad computacional, falta de datos, ambigüedad teórica.\n• Criterios de evaluación: ¿cómo medirás el éxito de tu propuesta?\nEsta sección debe poder leerse de forma independiente como una especificación del problema."
+        },
+        "methodology": {
+          "title": "Metodología",
+          "guidance": "Describe el enfoque metodológico con el rigor exigido por el nivel de posgrado:\n• Paradigma de investigación: positivista, constructivista, mixto.\n• Tipo de investigación: experimental, cuasiexperimental, estudio de caso, simulación, modelado.\n• Diseño específico de la investigación.\n• Fuentes de datos: origen, características, proceso de recolección o generación.\n• Pipeline o proceso completo desde datos hasta resultados.\n• Herramientas, lenguajes, bibliotecas y versiones específicas.\nSuficiente detalle para replicabilidad completa."
+        },
+        "experimentation": {
+          "title": "Experimentación y Desarrollo",
+          "guidance": "Documenta el proceso de desarrollo o experimentación en detalle:\n• Configuración experimental: hardware, hiperparámetros, condiciones de prueba.\n• Experimentos realizados y su propósito (ablation study, comparación de variantes).\n• Observaciones intermedias relevantes (no solo el resultado final).\n• Decisiones tomadas durante el proceso y su justificación.\nActiva esta sección si tu trabajo tiene componente experimental significativo\nseparable de la metodología general."
+        },
+        "results": {
+          "title": "Resultados",
+          "guidance": "Presenta los resultados con el rigor estadístico que exige el posgrado:\n• Organiza por objetivo o hipótesis.\n• Para resultados cuantitativos: media, desviación estándar, intervalos de confianza, significancia estadística.\n• Tablas comparativas con baseline, variantes propias y estado del arte.\n• Figuras con error bars cuando aplique.\n• Para resultados cualitativos: saturación teórica, triangulación, citas representativas.\nNo interpretes aquí — solo presenta los datos."
+        },
+        "discussion": {
+          "title": "Discusión",
+          "guidance": "La discusión de una tesis de posgrado debe demostrar madurez científica:\n• Interpreta cada resultado en relación a tu hipótesis.\n• Compara con los trabajos del estado del arte: ¿superas, iguales o quedas por debajo?\n• Explica las discrepancias con fundamento teórico.\n• Discute las implicaciones teóricas: ¿qué significa para el campo?\n• Discute las implicaciones prácticas: ¿qué aplicaciones se derivan?\n• Limitaciones honestas: no ocultes las debilidades, el comité las verá de todos modos.\n• Amenazas a la validez si aplica (validez interna, externa, de constructo)."
+        },
+        "conclusions": {
+          "title": "Conclusiones y Trabajo Futuro",
+          "guidance": "Cierra la tesis con visión de investigador:\n• Responde directamente a cada objetivo específico planteado.\n• Enuncia claramente la contribución original al conocimiento.\n• Para doctorado: demuestra que el aporte cumple el criterio de originalidad e independencia.\n• Trabajo futuro específico y realista: problemas abiertos, extensiones, aplicaciones.\n• Reflexión final sobre el impacto del trabajo en la disciplina.\nExtensión típica: 3–5 páginas."
+        },
+        "references": {
+          "title": "Referencias",
+          "guidance": "La lista de referencias se genera automáticamente desde tu .bib al compilar con APA 7.\nPara posgrado se esperan 80–200+ referencias de alta calidad (artículos indexados, libros técnicos).\nUsa el importador DOI para agregar artículos desde Crossref con un clic.\nEvita referencias a blogs, Wikipedia o sitios sin revisión por pares como fuentes primarias."
+        },
+        "publications": {
+          "title": "Publicaciones Derivadas",
+          "guidance": "Lista los trabajos publicados o enviados derivados de esta tesis:\n• Artículos en revistas indexadas (Q1, Q2, Scopus, WoS).\n• Ponencias en congresos nacionales e internacionales.\n• Capítulos de libro, patentes, reportes técnicos.\nPara cada uno: referencia completa + estado (publicado / aceptado / enviado / en preparación).\nLas publicaciones previas son señal de calidad y pueden aligerar la defensa."
+        },
+        "glossary": {
+          "title": "Glosario",
+          "guidance": "Define términos especializados que un lector no experto en tu subespecialidad necesitaría conocer.\nFormato: Término — Definición concisa.\nNo incluyas términos que ya se definieron en el Marco Teórico — el glosario es para términos recurrentes pero no centrales."
+        },
+        "appendices": {
+          "title": "Anexos",
+          "guidance": "Material técnico complementario que no pertenece al flujo principal:\n• Demostraciones matemáticas largas o secundarias.\n• Código fuente (módulos principales, scripts de experimentos).\n• Tablas de datos completos o resultados adicionales.\n• Instrumentos de recolección de datos.\n• Cartas de aprobación ética, convenios de confidencialidad.\nNumera: Apéndice A, B… con títulos descriptivos."
+        }
+      },
+      "meta": "Bibliografía APA 7 · XeLaTeX"
     }
   },
   "institutions": {

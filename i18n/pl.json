@@ -2767,6 +2767,190 @@
       },
       "name": "Teza ogólna",
       "description": "Profil akademicki dla pracy ogólnej. Postępuj zgodnie z metadanymi profilu, wymaganymi sekcjami i stylem bibliografii."
+    },
+    "company.internship": {
+      "name": "Raport stażu/rezydencji",
+      "description": "Format raportów z pobytów pobytowych i służbowych. Zawiera opis firmy, działania i wyniki. Bibliografia APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Strona tytułowa jest generowana automatycznie z danymi instytucji.\nBędzie zawierać: imię i nazwisko studenta, firmę, okres stażu, instytucję akademicką i karierę.\nNie musisz tutaj wpisywać treści – ustaw dane w metadanych projektu."
+        },
+        "table_of_contents": {
+          "guidance": "Indeks jest generowany automatycznie.\nNie musisz tu nic pisać."
+        },
+        "introduction": {
+          "title": "Wprowadzenie",
+          "guidance": "Umieść kontekst raportu i przedstaw czytelnikowi cel praktyk:\n• Kariera i profil zawodowy praktyka.\n• Nazwa firmy i obszar, w którym odbywały się staże.\n• Okres i całkowity czas trwania.\n• Ogólny cel rezydencji: jaki problem lub potrzeba organizacyjna została poruszona?\n• Krótki opis struktury raportu.\nDługość: 1–2 strony."
+        },
+        "company_description": {
+          "title": "Opis firmy",
+          "guidance": "Przedstaw organizację, w której odbywałeś staż:\n• Imię i nazwisko, nazwa firmy i branża.\n• Krótka historia i misja/wizja.\n• Ogólny schemat organizacyjny (można wstawić rysunek).\n• Obszar lub dział, w którym pracowałeś i jego funkcja w firmie.\n• Infrastruktura technologiczna odpowiednia dla Twojej działalności.\nNie kopiuj dosłownie strony internetowej firmy – sparafrazuj i podaj źródło."
+        },
+        "activities": {
+          "title": "Opracowano działania",
+          "guidance": "Opisz chronologicznie lub według projektu zrealizowane działania:\n• Dla każdego działania: cel, opis procesu, użyte narzędzia lub technologie.\n• Dołącz zrzuty ekranu, diagramy lub tabele, jeśli potwierdzają wyjaśnienia.\n• Wspomnij o napotkanych wyzwaniach i sposobie ich rozwiązania.\n• Można organizować według tygodni, sprintów, faz projektu lub obszarów roboczych.\nTo najdłuższa część raportu – powinna być konkretna i techniczna."
+        },
+        "results": {
+          "title": "Wyniki i wkład",
+          "guidance": "Przedstaw konkretne produkty i wkłady swojego miejsca zamieszkania:\n• Gotowe produkty (systemy, raporty, podręczniki, ulepszenia procesów).\n• Wskaźniki lub dowody wpływu, jeśli to możliwe (oszczędność czasu, redukcja błędów itp.).\n• Rozwinięte umiejętności zawodowe.\n• Porównanie zaproponowanych celów z tym, co osiągnięto.\nBądź obiektywny: jeśli coś nie zostało zawarte, wyjaśnij dlaczego."
+        },
+        "conclusions": {
+          "title": "Wnioski",
+          "guidance": "Zakończ raport profesjonalną refleksją:\n• Czy cele rezydencji zostały osiągnięte?\n• Jakie wykształcenie zawodowe zdobyłeś?\n• W jaki sposób to doświadczenie uzupełniło Twoje wykształcenie akademickie?\n• Rekomendacje dla przyszłych praktyków lub dla firmy.\nDługość: 1–2 strony."
+        },
+        "references": {
+          "title": "Odniesienia",
+          "guidance": "Wymień źródła, z których korzystałeś podczas praktyk: instrukcje techniczne, normy, artykuły, strony internetowe.\nLista jest generowana automatycznie z Twojego pliku .bib.\nStyl APA 7. Użyj importera DOI, aby łatwo dodawać referencje akademickie."
+        },
+        "appendices": {
+          "title": "Załączniki",
+          "guidance": "Zawiera materiały pomocnicze, które w części głównej byłyby bardzo obszerne:\n• List akceptacyjny od firmy.\n• List ukończenia/oceny od tutora biznesowego.\n• Cotygodniowe dzienniki (jeśli wymaga tego Twoja instytucja).\n• Odpowiedni kod źródłowy.\n• Opracowano instrukcje obsługi lub instrukcje techniczne.\n• Dokumentacja fotograficzna miejsca pracy.\nPonumeruj każdy załącznik (Załącznik A, B…) i powołuj się na nie w tekście."
+        }
+      },
+      "meta": "Bibliografia APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Raport inżynieryjny/techniczny",
+      "description": "Raport techniczny zawierający sekcje dotyczące podejścia, projektowania, wdrażania i testowania. Bibliografia IEEE. Idealny do prac inżynierskich i rezydentury zawodowej.",
+      "sections": {
+        "title_page": {
+          "guidance": "Strona tytułowa jest generowana automatycznie z danymi projektu.\nNie musisz tutaj pisać treści."
+        },
+        "table_of_contents": {
+          "guidance": "Indeks jest generowany automatycznie.\nNie musisz tu nic pisać."
+        },
+        "abstract_es": {
+          "title": "Podsumowanie",
+          "guidance": "Streszczenie techniczne zawierające 150–250 słów. W inżynierii musi to być konkretne:\n• Problem, który rozwiązuje praca.\n• Zastosowane podejście lub technologia.\n• Główny wynik (metryka, wydajność, poprawa).\n• Wnioski lub kluczowy wkład.\nŻadnych odniesień, żadnych równań, żadnych niezdefiniowanych akronimów."
+        },
+        "introduction": {
+          "title": "Wprowadzenie",
+          "guidance": "Umieść kontekst problemu technicznego i zmotywuj pracę:\n• Kontekst: obszar technologiczny, przemysł lub zastosowanie.\n• Motywacja: dlaczego rozwiązanie tego problemu jest ważne?\n• Prace powiązane: bardzo krótki przegląd istniejących rozwiązań i ich ograniczeń.\n• Cel i konkretny wkład pracy.\n• Organizacja dokumentów.\nW IEEE cytaty są numeryczne: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Opis problemu",
+          "guidance": "Zdefiniuj problem techniczny z formalną precyzją:\n• Szczegółowy opis problemu: objawy, kontekst, ograniczenia.\n• Wymagania funkcjonalne i niefunkcjonalne.\n• Kryteria sukcesu: Po czym poznasz, że udało Ci się rozwiązać problem?\n• Zakres i ograniczenia projektu.\n• Minimalne niezbędne ramy teoretyczne: koncepcje, modele lub teorie, na których opiera się rozwiązanie.\nJeśli ma to zastosowanie, korzystaj z diagramów, tabel wymagań i przypadków użycia."
+        },
+        "design": {
+          "title": "Projektowanie i architektura",
+          "guidance": "Zaprezentuj proponowane rozwiązanie przed jego wdrożeniem:\n• Architektura systemu (schemat komponentów, warstwy, moduły).\n• Decyzje projektowe i uzasadnienie wybranych technologii.\n• Schemat blokowy lub główny algorytm.\n• Model danych, jeśli dotyczy (schemat ER, BD).\n• Interfejs użytkownika (modele szkieletowe lub makiety, jeśli dotyczy).\nProjekt powinien być niezależny od implementacji — strona trzecia powinna móc go wdrożyć z tej sekcji."
+        },
+        "implementation": {
+          "title": "Wdrożenie",
+          "guidance": "Opisz, jak zbudowano rozwiązanie:\n• Środowisko programistyczne: języki, frameworki, platformy, wersje.\n• Opis zaimplementowanych modułów lub komponentów.\n• Odpowiednie fragmenty kodu (tylko te najbardziej ilustracyjne, a nie cały kod).\n• Wyzwania wdrożeniowe i przyjęte rozwiązania.\n• Konfiguracja infrastruktury, jeśli ma to zastosowanie (serwery, kontenery, BD).\nPełny kod znajduje się w załącznikach — tutaj tylko najbardziej reprezentatywny."
+        },
+        "testing": {
+          "title": "Testowanie i walidacja",
+          "guidance": "Wykaż, że rozwiązanie działa i spełnia wymagania:\n• Plan testów: rodzaje (jednostkowy, integracyjny, systemowy, akceptacyjny).\n• Przypadki testowe: wejście, działanie, oczekiwany wynik, uzyskany wynik.\n• Wskaźniki wydajności, jeśli mają zastosowanie (czas odpowiedzi, wykorzystanie pamięci, precyzja).\n• Porównanie z pracą bazową lub pokrewną.\n• Analiza wyników: co zadziałało? NIE? ponieważ?\nJeśli to możliwe, przedstawiaj wyniki w tabelach lub wykresach."
+        },
+        "conclusions": {
+          "title": "Wnioski i dalsze prace",
+          "guidance": "Zakończ pracę z zachowaniem rygoru technicznego:\n• Przegląd osiągniętych celów i założonych celów.\n• Oryginalne wkłady pracy.\n• Zidentyfikowane ograniczenia techniczne.\n• Przyszłe prace: konkretne ulepszenia, możliwe rozszerzenia, otwarte problemy.\nW IEEE często wspomina się o możliwych publikacjach lub zastosowaniach przemysłowych."
+        },
+        "references": {
+          "title": "Odniesienia",
+          "guidance": "W IEEE odniesienia są numeryczne i pojawiają się w kolejności pierwszej wzmianki.\nLista jest automatycznie generowana z pliku .bib podczas kompilacji.\nW przypadku artykułów i konferencji IEEE: Użyj importera DOI, aby uzyskać poprawny wpis.\nPamiętaj o uwzględnieniu DOI w każdym numerze referencyjnym — IEEE tego wymaga."
+        },
+        "appendices": {
+          "title": "Załączniki",
+          "guidance": "Dodatkowy materiał techniczny:\n• Kompletny kod źródłowy (główne moduły).\n• Skrypty instalacyjne i konfiguracyjne.\n• Instrukcje użytkownika lub techniczne.\n• Szczegółowe diagramy (pełne ERD, diagramy sekwencji itp.).\n• Dane testowe lub zbiory danych.\nNumer: Dodatek A, B… i odsyłaj do nich z tekstu głównego."
+        }
+      },
+      "meta": "Bibliografia IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Praca dyplomowa",
+      "description": "Profil studiów magisterskich i doktoranckich: przegląd literatury, stan wiedzy, podejście, eksperymenty, glosariusz i akronimy. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Strona tytułowa jest generowana automatycznie z danymi projektu.\nW przypadku studiów podyplomowych skonfiguruj w metadanych: imię i nazwisko, dyrektora, współdyrektora (jeśli dotyczy) i komitet synodalny.\nNie musisz tutaj pisać treści."
+        },
+        "table_of_contents": {
+          "guidance": "Spis treści jest generowany automatycznie.\nNie musisz tu nic pisać."
+        },
+        "list_of_figures": {
+          "guidance": "Lista rycin jest generowana automatycznie ze wszystkich zatytułowanych rycin w Twojej pracy.\nAktywuj tę sekcję, jeśli masz 5 lub więcej figurek."
+        },
+        "list_of_tables": {
+          "guidance": "Lista tabel jest generowana automatycznie ze wszystkich tabel posiadających tytuły.\nAktywuj tę sekcję, jeśli masz 5 lub więcej stołów."
+        },
+        "list_of_algorithms": {
+          "guidance": "Automatycznie generowana lista algorytmów do prac obliczeniowych lub inżynierskich.\nAktywuj tylko wtedy, gdy przedstawisz 3 lub więcej pseudokodów lub algorytmów numerowanych."
+        },
+        "acronyms": {
+          "title": "Lista skrótów i akronimów",
+          "guidance": "Wymień wszystkie akronimy i skróty użyte w pracy, wraz z ich pełnym znaczeniem.\nFormat: SIGLA — pełne znaczenie (np. CNN — konwolucyjna sieć neuronowa).\nSortuj alfabetycznie. Określa także, kiedy dany akronim pojawia się w tekście po raz pierwszy."
+        },
+        "abstract_es": {
+          "title": "Podsumowanie",
+          "guidance": "Podsumowanie absolwenta zawiera odpowiedzi w 250–350 słowach:\n• Motywacja: dlaczego ten problem jest ważny?\n• Problem: Do jakiego pytania lub hipotezy się odnosisz?\n• Metoda: główne podejście i technika.\n• Wkład: wyniki i oryginalny wkład w stan wiedzy.\n• Wpływ: implikacje teoretyczne lub praktyczne.\nŻadnych spotkań. Żadnych równań. Na końcu 5–8 słów kluczowych."
+        },
+        "abstract_en": {
+          "title": "Streszczenie",
+          "guidance": "Dokładne tłumaczenie podsumowania na język angielski. To nie jest tłumaczenie maszynowe – sprawdź.\nSłowa kluczowe: w języku angielskim, najlepiej terminy ze słownika Twojej dyscypliny.\nObowiązkowe na studiach podyplomowych – taka wersja pojawia się w międzynarodowych repozytoriach."
+        },
+        "dedication": {
+          "title": "Poświęcenie",
+          "guidance": "Krótki i osobisty tekst. Poświęć pracę tym, którzy najbardziej na nią zasługują.\nBez specjalnego formatowania — profil jest wyśrodkowany na osobnej stronie."
+        },
+        "acknowledgements": {
+          "title": "Dzięki",
+          "guidance": "Formalnie podziękuj tym, którzy przyczynili się do tej pracy:\n• Kierownik pracy dyplomowej i współreżyser.\n• Komisja synodalna / recenzenci.\n• Fundatorzy: stypendia, projekty, instytucje (obowiązkowe w przypadku projektów ze wsparciem zewnętrznym).\n• Współpracownicy techniczni, laboratoria, firmy.\n• Wsparcie rodzinne i osobiste (na koniec, krótko).\nRozszerzenie: pół strony."
+        },
+        "introduction": {
+          "title": "Wprowadzenie",
+          "guidance": "Wprowadzenie pracy podyplomowej jest bardziej wymagające niż licencjata. Musisz:\n1. Kontekstualizuj problem w świetle aktualnego stanu wiedzy.\n2. Zidentyfikuj konkretną lukę w wiedzy, którą wypełnia Twoja praca dyplomowa.\n3. Jasno określ hipotezę lub pytanie badawcze.\n4. Wymień cele (ogólne i szczegółowe).\n5. Opisz oryginalny wkład (co nowego w Twojej pracy?).\n6. Uzasadnić zakres i ograniczenia.\n7. Opisz organizację rozdziałów.\nKomisja doktorska oceni, czy wkład jest oryginalny i niezależny. Dokładnie.\nTypowa długość: 5–10 stron."
+        },
+        "literature_review": {
+          "title": "Przegląd literatury i stanu techniki",
+          "guidance": "To jest sekcja, która demonstruje Twoje mistrzostwo w tej dziedzinie. Musisz:\n• Systematycznie omawiaj istotne dzieła z ostatnich 5–10 lat (klasyka może być starsza).\n• Organizuj według tematu, zainteresowań lub chronologii — a nie w formie listy podsumowań.\n• Krytycznie porównaj propozycje: mocne, słabe strony, ograniczenia.\n• Zidentyfikuj lukę, którą wypełnia Twoja praca („żadna poprzednia praca nie dotyczyła X”).\n• Jeśli to możliwe, zakończ tabelą porównawczą powiązanych prac.\nW przypadku doktoratu: recenzja ta musi być wyczerpująca i obejmować wszystkie aspekty problemu.\nStrategia: Szukaj Scopus, WoS, ACM DL, IEEE Xplore. Użyj importera DOI dla każdego elementu."
+        },
+        "theoretical_framework": {
+          "title": "Ramy teoretyczne",
+          "guidance": "Opracuj podstawy teoretyczne i matematyczne niezbędne do zrozumienia Twojej propozycji.\nW przeciwieństwie do przeglądu literatury, tutaj zagłębiasz się w kluczowe pojęcia:\n• Definicje formalne i notacja matematyczna.\n• Modele teoretyczne, na których opiera się Twoja praca.\n• Odpowiednie twierdzenia lub właściwości (z cytatami lub dowodem, jeśli jest oryginalny).\nAktywuj tę sekcję, jeśli Twoja praca wymaga więcej niż 5–6 stron podstaw teoretycznych."
+        },
+        "problem_statement": {
+          "title": "Opis problemu i hipotezy",
+          "guidance": "Formalnie zdefiniuj problem, który rozwiązuje Twoja praca:\n• Precyzyjne sformułowanie: w naukach ścisłych należy stosować notację matematyczną, jeśli ma to zastosowanie.\n• Hipotezy lub przypuszczenia badawcze (w przypadku doktoratu: hipoteza weryfikowalna i falsyfikowalna).\n• Założenia i ograniczenia modelu.\n• Dlaczego problem jest trudny: złożoność obliczeniowa, brak danych, niejednoznaczność teoretyczna.\n• Kryteria oceny: w jaki sposób zmierzysz sukces swojej propozycji?\nTę sekcję należy czytać niezależnie jako specyfikację problemu."
+        },
+        "methodology": {
+          "title": "Metodologia",
+          "guidance": "Opisz podejście metodologiczne z rygorem wymaganym na poziomie studiów podyplomowych:\n• Paradygmat badawczy: pozytywistyczny, konstruktywistyczny, mieszany.\n• Rodzaj badań: eksperymentalne, quasi-eksperymentalne, studium przypadku, symulacja, modelowanie.\n• Specjalny projekt badawczy.\n• Źródła danych: pochodzenie, charakterystyka, proces zbierania lub wytwarzania.\n• Potok lub kompletny proces od danych do wyników.\n• Konkretne narzędzia, języki, biblioteki i wersje.\nWystarczająca ilość szczegółów, aby zapewnić pełną powtarzalność."
+        },
+        "experimentation": {
+          "title": "Eksperymentowanie i rozwój",
+          "guidance": "Szczegółowo udokumentuj proces rozwoju lub eksperymentowania:\n• Konfiguracja eksperymentalna: sprzęt, hiperparametry, warunki testowe.\n• Wykonywane eksperymenty i ich cel (badanie ablacji, porównanie wariantów).\n• Odpowiednie obserwacje pośrednie (nie tylko wynik końcowy).\n• Decyzje podejmowane w trakcie procesu i ich uzasadnienie.\nAktywuj tę sekcję, jeśli Twoja praca zawiera znaczący element eksperymentalny\nmożna oddzielić od ogólnej metodologii."
+        },
+        "results": {
+          "title": "Wyniki",
+          "guidance": "Przedstaw wyniki z rygorem statystycznym wymaganym na studiach podyplomowych:\n• Organizuj według celów lub hipotez.\n• Dla wyników ilościowych: średnia, odchylenie standardowe, przedziały ufności, istotność statystyczna.\n• Tabele porównawcze z wartościami bazowymi, własnymi wariantami i stanem wiedzy.\n• Dane ze słupkami błędów, jeśli ma to zastosowanie.\n• W przypadku wyników jakościowych: nasycenie teoretyczne, triangulacja, cytaty reprezentatywne.\nNie interpretuj tutaj – po prostu przedstaw dane."
+        },
+        "discussion": {
+          "title": "Dyskusja",
+          "guidance": "Omówienie pracy podyplomowej musi wykazywać dojrzałość naukową:\n• Interpretuj każdy wynik w odniesieniu do swojej hipotezy.\n• Porównaj z najnowocześniejszymi dziełami: przewyższasz, dorównujesz, czy odbiegasz od nich?\n• Wyjaśnia rozbieżności z podstawami teoretycznymi.\n• Omów implikacje teoretyczne: co to oznacza dla danej dziedziny?\n• Omów praktyczne implikacje: jakie zastosowania zostały wyprowadzone?\n• Uczciwe ograniczenia: Nie ukrywaj słabości, komisja i tak je dostrzeże.\n• Zagrożenia dla ważności, jeśli ma to zastosowanie (ważność wewnętrzna, zewnętrzna, konstrukt)."
+        },
+        "conclusions": {
+          "title": "Wnioski i przyszłe prace",
+          "guidance": "Zakończ pracę wizją badacza:\n• Odpowiada bezpośrednio na każdy konkretny cel.\n• Jasno stwierdza pierwotny wkład w wiedzę.\n• W przypadku doktoratu: wykaże, że wkład spełnia kryteria oryginalności i niezależności.\n• Konkretna i realistyczna przyszła praca: otwarte problemy, rozszerzenia, zastosowania.\n• Końcowa refleksja nad wpływem pracy na dyscyplinę.\nTypowa długość: 3–5 stron."
+        },
+        "references": {
+          "title": "Odniesienia",
+          "guidance": "Lista referencyjna jest generowana automatycznie z pliku .bib podczas kompilacji z APA 7.\nW przypadku studiów podyplomowych oczekuje się ponad 80–200 wysokiej jakości literatury (artykuły indeksowane, książki techniczne).\nUżyj importera DOI, aby jednym kliknięciem dodawać artykuły z Crossref.\nUnikaj odniesień do blogów, Wikipedii lub nierecenzowanych witryn jako głównych źródeł."
+        },
+        "publications": {
+          "title": "Publikacje pochodne",
+          "guidance": "Wymień opublikowane lub nadesłane prace wywodzące się z tej pracy:\n• Artykuły w czasopismach indeksowanych (Q1, Q2, Scopus, WoS).\n• Prezentacje na konferencjach krajowych i międzynarodowych.\n• Rozdziały książek, patenty, raporty techniczne.\nDla każdego: kompletna referencja + status (opublikowany / zaakceptowany / przesłany / w przygotowaniu).\nPoprzednie publikacje są oznaką jakości i mogą odciążyć obronę."
+        },
+        "glossary": {
+          "title": "Słownik",
+          "guidance": "Zdefiniuj specjalistyczne terminy, które powinien znać czytelnik niebędący ekspertem w Twojej specjalizacji.\nFormat: Termin — zwięzła definicja.\nNie uwzględniaj terminów, które zostały już zdefiniowane w Założeniach teoretycznych — glosariusz dotyczy terminów powtarzających się, ale nie kluczowych."
+        },
+        "appendices": {
+          "title": "Załączniki",
+          "guidance": "Dodatkowy materiał techniczny, który nie należy do głównego nurtu:\n• Długie lub wtórne dowody matematyczne.\n• Kod źródłowy (moduły główne, skrypty eksperymentów).\n• Pełne tabele danych lub dodatkowe wyniki.\n• Instrumenty do gromadzenia danych.\n• Listy zatwierdzające etyczne, umowy o zachowaniu poufności.\nNumer: Dodatek A, B… z opisowymi tytułami."
+        }
+      },
+      "meta": "Bibliografia APA 7 · XeLaTeX"
     }
   },
   "institutions": {

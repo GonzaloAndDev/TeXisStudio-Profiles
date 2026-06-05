@@ -2767,6 +2767,190 @@
       },
       "name": "Generische Abschlussarbeit",
       "description": "Akademisches Profil für eine generische Abschlussarbeit. Beachten Sie Profilmetadaten, erforderliche Abschnitte und Bibliografiestil."
+    },
+    "company.internship": {
+      "name": "Praktikums-/Aufenthaltsbericht",
+      "description": "Format für Berichte über berufliche Aufenthalte und geschäftliche Aufenthalte. Enthält eine Unternehmensbeschreibung, Aktivitäten und Ergebnisse. Bibliographie APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Das Deckblatt wird automatisch mit institutionellen Daten generiert.\nDazu gehören: Name des Studierenden, Unternehmen, Praktikumszeitraum, akademische Einrichtung und Werdegang.\nSie müssen hier keinen Inhalt schreiben – legen Sie die Daten in den Projektmetadaten fest."
+        },
+        "table_of_contents": {
+          "guidance": "Der Index wird automatisch generiert.\nSie müssen hier nichts schreiben."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "Kontextualisieren Sie den Bericht und stellen Sie dem Leser den Zweck der Praktiken dar:\n• Werdegang und berufliches Profil des Praktikers.\n• Name des Unternehmens und Bereich, in dem die Praktika durchgeführt wurden.\n• Zeitraum und Gesamtdauer.\n• Allgemeines Ziel der Residenz: Welches Problem oder welcher organisatorische Bedarf wurde angesprochen?\n• Kurze Beschreibung der Berichtsstruktur.\nLänge: 1–2 Seiten."
+        },
+        "company_description": {
+          "title": "Firmenbeschreibung",
+          "guidance": "Stellen Sie die Organisation vor, bei der Sie das Praktikum absolviert haben:\n• Vollständiger Name, Firmenname und Geschäftsbereich.\n• Kurze Geschichte und Mission/Vision.\n• Allgemeines Organigramm (Sie können eine Abbildung einfügen).\n• Bereich oder Abteilung, in der Sie gearbeitet haben, und deren Funktion innerhalb des Unternehmens.\n• Für Ihre Aktivitäten relevante technologische Infrastruktur.\nKopieren Sie die Website des Unternehmens nicht wörtlich, sondern paraphrasieren Sie sie und geben Sie die Quelle an."
+        },
+        "activities": {
+          "title": "Aktivitäten entwickelt",
+          "guidance": "Beschreiben Sie chronologisch oder nach Projekt die von Ihnen durchgeführten Aktivitäten:\n• Für jede Aktivität: Ziel, Beschreibung des Prozesses, der verwendeten Werkzeuge oder Technologien.\n• Fügen Sie Screenshots, Diagramme oder Tabellen hinzu, wenn diese die Erklärung unterstützen.\n• Erwähnen Sie die aufgetretenen Herausforderungen und wie Sie sie gelöst haben.\n• Sie können nach Wochen, Sprints, Projektphasen oder Arbeitsbereichen organisieren.\nDies ist der längste Abschnitt des Berichts – seien Sie spezifisch und technisch."
+        },
+        "results": {
+          "title": "Ergebnisse und Beiträge",
+          "guidance": "Präsentieren Sie die spezifischen Produkte und Beiträge Ihres Wohnsitzes:\n• Abgeschlossene Leistungen (Systeme, Berichte, Handbücher, Prozessverbesserungen).\n• Metriken oder Nachweise der Auswirkungen, sofern möglich (Zeitersparnis, Fehlerreduzierung usw.).\n• Entwickelte berufliche Fähigkeiten.\n• Vergleich zwischen den vorgeschlagenen Zielen und dem, was erreicht wurde.\nSeien Sie objektiv: Wenn etwas nicht abgeschlossen wurde, erklären Sie, warum."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Schließen Sie den Bericht mit einer professionellen Reflexion ab:\n• Wurden die Aufenthaltsziele erreicht?\n• Welche berufliche Ausbildung haben Sie erworben?\n• Wie hat diese Erfahrung Ihre akademische Ausbildung ergänzt?\n• Empfehlungen für zukünftige Praktiker oder für das Unternehmen.\nLänge: 1–2 Seiten."
+        },
+        "references": {
+          "title": "Referenzen",
+          "guidance": "Listen Sie die Quellen auf, die während der Übungen konsultiert wurden: technische Handbücher, Standards, Artikel, Websites.\nDie Liste wird automatisch aus Ihrer .bib generiert.\nAPA-Stil 7. Verwenden Sie den DOI-Importer, um ganz einfach akademische Referenzen hinzuzufügen."
+        },
+        "appendices": {
+          "title": "Anhänge",
+          "guidance": "Enthält unterstützendes Material, das im Hauptteil sehr umfangreich wäre:\n• Zulassungsbescheid des Unternehmens.\n• Abschluss-/Bewertungsschreiben des Business-Tutors.\n• Wöchentliche Protokolle (falls von Ihrer Institution verlangt).\n• Relevanter Quellcode.\n• Benutzer- oder technische Handbücher entwickelt.\n• Fotografische Beweise des Arbeitsplatzes.\nNummerieren Sie jeden Anhang (Anhang A, B…) und verweisen Sie im Text darauf."
+        }
+      },
+      "meta": "Bibliographie APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Engineering/Technischer Bericht",
+      "description": "Technischer Bericht mit Abschnitten zu Ansatz, Design, Implementierung und Tests. IEEE-Bibliographie. Ideal für Ingenieursarbeiten und Berufsaufenthalte.",
+      "sections": {
+        "title_page": {
+          "guidance": "Das Deckblatt wird automatisch mit den Projektdaten generiert.\nSie müssen hier keinen Inhalt schreiben."
+        },
+        "table_of_contents": {
+          "guidance": "Der Index wird automatisch generiert.\nSie müssen hier nichts schreiben."
+        },
+        "abstract_es": {
+          "title": "Zusammenfassung",
+          "guidance": "Technische Zusammenfassung von 150–250 Wörtern. Im Ingenieurwesen muss es konkret sein:\n• Problem, das die Arbeit löst.\n• Ansatz oder verwendete Technologie.\n• Hauptergebnis (Metrik, Leistung, Verbesserung).\n• Schlussfolgerung oder Hauptbeitrag.\nKeine Referenzen, keine Gleichungen, keine undefinierten Akronyme."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "Kontextualisieren Sie das technische Problem und motivieren Sie die Arbeit:\n• Kontext: Technologiebereich, Branche oder Anwendung.\n• Motivation: Warum ist es wichtig, dieses Problem zu lösen?\n• Verwandte Arbeiten: sehr kurzer Überblick über bestehende Lösungen und ihre Einschränkungen.\n• Objektiver und spezifischer Beitrag der Arbeit.\n• Dokumentenorganisation.\nIn IEEE sind Zitate numerisch: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Problemerklärung",
+          "guidance": "Definieren Sie das technische Problem mit formaler Präzision:\n• Detaillierte Beschreibung des Problems: Symptome, Kontext, Einschränkungen.\n• Funktionale und nichtfunktionale Anforderungen.\n• Erfolgskriterien: Woran erkennen Sie, dass Sie das Problem gelöst haben?\n• Umfang und Grenzen des Projekts.\n• Mindestens erforderlicher theoretischer Rahmen: Konzepte, Modelle oder Theorien, auf denen die Lösung basiert.\nVerwenden Sie ggf. Diagramme, Anforderungstabellen und Anwendungsfälle."
+        },
+        "design": {
+          "title": "Design und Architektur",
+          "guidance": "Präsentieren Sie den Lösungsvorschlag, bevor Sie ihn umsetzen:\n• Systemarchitektur (Komponentendiagramm, Schichten, Module).\n• Designentscheidungen und Begründung ausgewählter Technologien.\n• Flussdiagramm oder Hauptalgorithmus.\n• Datenmodell ggf. (ER-, BD-Schema).\n• Benutzeroberfläche (ggf. Wireframes oder Mockups).\nDas Design sollte unabhängig von der Implementierung sein – ein Dritter sollte es von diesem Abschnitt aus implementieren können."
+        },
+        "implementation": {
+          "title": "Implementierung",
+          "guidance": "Beschreiben Sie, wie die Lösung erstellt wurde:\n• Entwicklungsumgebung: Sprachen, Frameworks, Plattformen, Versionen.\n• Beschreibung der implementierten Module bzw. Komponenten.\n• Relevante Codefragmente (nur die anschaulichsten, nicht der gesamte Code).\n• Implementierungsherausforderungen und angenommene Lösungen.\n• ggf. Infrastrukturkonfiguration (Server, Container, BD).\nDer vollständige Code befindet sich in den Anhängen – hier nur der repräsentativste."
+        },
+        "testing": {
+          "title": "Testen und Validieren",
+          "guidance": "Demonstrieren Sie, dass die Lösung funktioniert und die Anforderungen erfüllt:\n• Testplan: Typen (einheitlich, Integration, System, Akzeptanz).\n• Testfälle: Eingabe, Aktion, erwartetes Ergebnis, erhaltenes Ergebnis.\n• Gegebenenfalls Leistungsmetriken (Antwortzeit, Speichernutzung, Präzision).\n• Vergleich mit Baseline- oder verwandten Arbeiten.\n• Analyse der Ergebnisse: Was hat funktioniert? NEIN? Weil?\nPräsentieren Sie die Ergebnisse nach Möglichkeit in Tabellen oder Diagrammen."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen und zukünftige Arbeit",
+          "guidance": "Schließen Sie die Arbeit mit technischer Sorgfalt ab:\n• Überprüfung der erreichten Ziele im Vergleich zu den gesteckten Zielen.\n• Originalbeiträge der Arbeit.\n• Identifizierte technische Einschränkungen.\n• Zukünftige Arbeiten: konkrete Verbesserungen, mögliche Erweiterungen, offene Probleme.\nIn IEEE ist es üblich, mögliche Veröffentlichungen oder industrielle Anwendungen zu erwähnen."
+        },
+        "references": {
+          "title": "Referenzen",
+          "guidance": "In IEEE sind die Referenzen numerisch und erscheinen in der Reihenfolge der ersten Erwähnung.\nDie Liste wird beim Kompilieren automatisch aus Ihrer .bib generiert.\nFür IEEE-Artikel und Konferenzen: Verwenden Sie den DOI-Importer, um den richtigen Eintrag zu erhalten.\nStellen Sie sicher, dass Sie in jeder Referenz den DOI angeben – der IEEE erfordert ihn."
+        },
+        "appendices": {
+          "title": "Anhänge",
+          "guidance": "Ergänzendes technisches Material:\n• Vollständiger Quellcode (Hauptmodule).\n• Installations- und Konfigurationsskripte.\n• Benutzer- oder technische Handbücher.\n• Detaillierte Diagramme (vollständiges ERD, Sequenzdiagramme usw.).\n• Testdaten oder Datensätze.\nNummer: Anhang A, B… und beziehen Sie sich auf diese aus dem Haupttext."
+        }
+      },
+      "meta": "Bibliographie IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Abschlussarbeit",
+      "description": "Profil für Master und Promotion: Literaturrecherche, Stand der Technik, Ansatz, Experimente, Glossar und Akronyme. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Das Deckblatt wird automatisch mit den Projektdaten generiert.\nFür Postgraduiertenstudien konfigurieren Sie in den Metadaten: vollständiger Name, Direktor, Co-Direktor (falls zutreffend) und Synodalausschuss.\nSie müssen hier keinen Inhalt schreiben."
+        },
+        "table_of_contents": {
+          "guidance": "Das Inhaltsverzeichnis wird automatisch generiert.\nSie müssen hier nichts schreiben."
+        },
+        "list_of_figures": {
+          "guidance": "Das Abbildungsverzeichnis wird automatisch aus allen betitelten Abbildungen Ihrer Abschlussarbeit generiert.\nAktivieren Sie diesen Abschnitt, wenn Sie 5 oder mehr Figuren haben."
+        },
+        "list_of_tables": {
+          "guidance": "Die Tabellenliste wird automatisch aus allen Tabellen mit Titel generiert.\nAktivieren Sie diesen Abschnitt, wenn Sie 5 oder mehr Tabellen haben."
+        },
+        "list_of_algorithms": {
+          "guidance": "Automatisch generierte Liste von Algorithmen für rechnerische oder ingenieurwissenschaftliche Abschlussarbeiten.\nNur aktivieren, wenn Sie 3 oder mehr Pseudocodes oder nummerierte Algorithmen präsentieren."
+        },
+        "acronyms": {
+          "title": "Liste der Abkürzungen und Akronyme",
+          "guidance": "Listen Sie alle in der Arbeit verwendeten Akronyme und Abkürzungen mit ihrer vollständigen Bedeutung auf.\nFormat: SIGLA – Vollständige Bedeutung (z. B. CNN – Convolutional Neural Network).\nAlphabetisch sortieren. Es definiert auch, wann jedes Akronym zum ersten Mal im Text erscheint."
+        },
+        "abstract_es": {
+          "title": "Zusammenfassung",
+          "guidance": "Die Abschlusszusammenfassung antwortet in 250–350 Wörtern:\n• Motivation: Warum ist dieses Problem wichtig?\n• Problem: Welche Frage oder Hypothese befassen Sie sich?\n• Methode: Hauptansatz und Technik.\n• Beitrag: Ergebnisse und origineller Beitrag zum Stand der Technik.\n• Auswirkungen: theoretische oder praktische Implikationen.\nKeine Termine. Keine Gleichungen. 5–8 Schlüsselwörter am Ende."
+        },
+        "abstract_en": {
+          "title": "Zusammenfassung",
+          "guidance": "Genaue Übersetzung der Zusammenfassung ins Englische. Keine maschinelle Übersetzung – überprüfen Sie es.\nSchlüsselwörter: auf Englisch, vorzugsweise Begriffe aus dem Thesaurus Ihrer Disziplin.\nFür Postgraduiertenstudien obligatorisch – es handelt sich um die Version, die in internationalen Repositorien erscheint."
+        },
+        "dedication": {
+          "title": "Engagement",
+          "guidance": "Kurzer und persönlicher Text. Widmen Sie Ihre Arbeit denjenigen, die sie am meisten verdienen.\nKeine besondere Formatierung – das Profil wird auf einer separaten Seite zentriert."
+        },
+        "acknowledgements": {
+          "title": "Danke",
+          "guidance": "Bedanken Sie sich offiziell bei denen, die zur Arbeit beigetragen haben:\n• Leiter und Co-Direktor der Abschlussarbeit.\n• Synodalausschuss / Gutachter.\n• Geldgeber: Stipendien, Projekte, Institutionen (zwingend für Projekte mit externer Unterstützung).\n• Technische Mitarbeiter, Labore, Unternehmen.\n• Familiäre und persönliche Unterstützung (am Ende, kurz).\nErweiterung: eine halbe Seite."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "Die Einleitung einer Postgraduiertenarbeit ist anspruchsvoller als die eines Bachelor-Abschlusses. Sie müssen:\n1. Kontextualisieren Sie das Problem im aktuellen Stand der Technik.\n2. Identifizieren Sie die spezifische Wissenslücke, die Ihre Abschlussarbeit adressiert.\n3. Formulieren Sie die Hypothese oder Forschungsfrage klar und deutlich.\n4. Listen Sie die Ziele auf (allgemein und spezifisch).\n5. Beschreiben Sie den ursprünglichen Beitrag (Was ist neu an Ihrer Arbeit?).\n6. Begründen Sie den Umfang und die Abgrenzungen.\n7. Beschreiben Sie die Organisation der Kapitel.\nEin Promotionsausschuss prüft, ob der Beitrag originell und unabhängig ist. Seien Sie präzise.\nTypische Länge: 5–10 Seiten."
+        },
+        "literature_review": {
+          "title": "Rezension der Literatur und des Stands der Technik",
+          "guidance": "Dies ist der Abschnitt, der Ihre Beherrschung des Fachgebiets demonstriert. Sie müssen:\n• Relevante Werke der letzten 5–10 Jahre systematisch abdecken (Klassiker können älter sein).\n• Organisieren Sie nach Thema, Schwerpunkt oder Chronologie – nicht als Liste mit Zusammenfassungen.\n• Vergleichen Sie die Vorschläge kritisch: Stärken, Schwächen, Grenzen.\n• Identifizieren Sie die Lücke, die Ihre Abschlussarbeit füllt („Keine frühere Arbeit hat sich mit X befasst“).\n• Wenn möglich, schließen Sie mit einer Vergleichstabelle verwandter Werke ab.\nFür die Promotion: Diese Rezension muss umfassend sein und alle Aspekte des Problems abdecken.\nStrategie: Suche Scopus, WoS, ACM DL, IEEE Xplore. Verwenden Sie für jedes Element den DOI-Importer."
+        },
+        "theoretical_framework": {
+          "title": "Theoretischer Rahmen",
+          "guidance": "Entwickeln Sie die theoretischen und mathematischen Grundlagen, die zum Verständnis Ihres Vorschlags erforderlich sind.\nIm Gegensatz zur Literaturrecherche befassen Sie sich hier mit den Schlüsselkonzepten:\n• Formale Definitionen und mathematische Notation.\n• Theoretische Modelle, auf denen Ihre Arbeit basiert.\n• Relevante Theoreme oder Eigenschaften (mit Zitaten oder Beweisen, falls original).\nAktivieren Sie diesen Abschnitt, wenn Ihre Abschlussarbeit mehr als 5–6 Seiten theoretischer Grundlagen erfordert."
+        },
+        "problem_statement": {
+          "title": "Problemstellung und Hypothesen",
+          "guidance": "Definieren Sie formal das Problem, das Ihre Abschlussarbeit löst:\n• Präzise Formulierung: Verwenden Sie in den exakten Wissenschaften ggf. die mathematische Notation.\n• Hypothesen oder Forschungsvermutungen (bei Promotion: überprüfbare und falsifizierbare Hypothese).\n• Annahmen und Einschränkungen des Modells.\n• Warum das Problem schwierig ist: Rechenkomplexität, Datenmangel, theoretische Mehrdeutigkeit.\n• Bewertungskriterien: Wie messen Sie den Erfolg Ihres Vorschlags?\nDieser Abschnitt sollte als Problemspezifikation unabhängig lesbar sein."
+        },
+        "methodology": {
+          "title": "Methodik",
+          "guidance": "Beschreiben Sie den methodischen Ansatz mit der Genauigkeit, die für das Postgraduiertenniveau erforderlich ist:\n• Forschungsparadigma: positivistisch, konstruktivistisch, gemischt.\n• Art der Forschung: experimentell, quasi-experimentell, Fallstudie, Simulation, Modellierung.\n• Spezifisches Forschungsdesign.\n• Datenquellen: Herkunft, Merkmale, Erhebungs- oder Generierungsprozess.\n• Pipeline oder vollständiger Prozess von den Daten bis zu den Ergebnissen.\n• Spezifische Tools, Sprachen, Bibliotheken und Versionen.\nGenug Details für eine vollständige Reproduzierbarkeit."
+        },
+        "experimentation": {
+          "title": "Experimente und Entwicklung",
+          "guidance": "Dokumentieren Sie den Entwicklungs- oder Experimentierprozess im Detail:\n• Versuchsaufbau: Hardware, Hyperparameter, Testbedingungen.\n• Durchgeführte Experimente und ihr Zweck (Ablationsstudie, Variantenvergleich).\n• Relevante Zwischenbeobachtungen (nicht nur das Endergebnis).\n• Während des Prozesses getroffene Entscheidungen und deren Begründung.\nAktivieren Sie diesen Abschnitt, wenn Ihre Arbeit eine erhebliche experimentelle Komponente hat\ntrennbar von der allgemeinen Methodik."
+        },
+        "results": {
+          "title": "Ergebnisse",
+          "guidance": "Präsentieren Sie die Ergebnisse mit der für den Aufbaustudiengang erforderlichen statistischen Genauigkeit:\n• Organisieren Sie nach Ziel oder Hypothese.\n• Für quantitative Ergebnisse: Mittelwert, Standardabweichung, Konfidenzintervalle, statistische Signifikanz.\n• Vergleichstabellen mit Baseline, eigenen Varianten und Stand der Technik.\n• Abbildungen ggf. mit Fehlerbalken.\n• Für qualitative Ergebnisse: theoretische Sättigung, Triangulation, repräsentative Zitate.\nInterpretieren Sie hier nicht – präsentieren Sie einfach die Daten."
+        },
+        "discussion": {
+          "title": "Diskussion",
+          "guidance": "Die Diskussion einer Doktorarbeit muss den Nachweis wissenschaftlicher Reife erbringen:\n• Interpretieren Sie jedes Ergebnis in Bezug auf Ihre Hypothese.\n• Vergleichen Sie mit hochmodernen Werken: Übertreffen Sie, erreichen Sie Ihr Niveau oder bleiben Sie zurück?\n• Erklärt Diskrepanzen zu theoretischen Grundlagen.\n• Diskutieren Sie theoretische Implikationen: Was bedeutet das für das Fachgebiet?\n• Diskutieren Sie praktische Implikationen: Welche Anwendungen werden abgeleitet?\n• Ehrliche Einschränkungen: Verstecken Sie keine Schwächen, das Komitee wird sie trotzdem sehen.\n• Ggf. Gefährdungen der Gültigkeit (intern, extern, Konstruktvalidität)."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen und zukünftige Arbeit",
+          "guidance": "Schließen Sie die Arbeit mit der Vision eines Forschers ab:\n• Reagiert direkt auf jede spezifische Zielsetzung.\n• Gibt den ursprünglichen Beitrag zum Wissen klar an.\n• Für die Promotion: weist nach, dass der Beitrag den Kriterien Originalität und Unabhängigkeit entspricht.\n• Spezifische und realistische zukünftige Arbeiten: offene Probleme, Erweiterungen, Anwendungen.\n• Abschließende Überlegungen zu den Auswirkungen der Arbeit auf die Disziplin.\nTypische Länge: 3–5 Seiten."
+        },
+        "references": {
+          "title": "Referenzen",
+          "guidance": "Die Referenzliste wird beim Kompilieren mit APA 7 automatisch aus Ihrer .bib generiert.\nFür das Aufbaustudium werden 80–200+ hochwertige Referenzen (indizierte Artikel, Fachbücher) erwartet.\nVerwenden Sie den DOI-Importer, um Artikel aus Crossref mit einem Klick hinzuzufügen.\nVermeiden Sie Verweise auf Blogs, Wikipedia oder nicht von Experten begutachtete Websites als Primärquellen."
+        },
+        "publications": {
+          "title": "Abgeleitete Veröffentlichungen",
+          "guidance": "Listen Sie die veröffentlichten oder eingereichten Arbeiten auf, die aus dieser Dissertation hervorgegangen sind:\n• Artikel in indexierten Zeitschriften (Q1, Q2, Scopus, WoS).\n• Vorträge auf nationalen und internationalen Konferenzen.\n• Buchkapitel, Patente, technische Berichte.\nJeweils: vollständige Referenz + Status (veröffentlicht / akzeptiert / eingereicht / in Vorbereitung).\nFrühere Veröffentlichungen sind ein Qualitätsmerkmal und können die Verteidigung erleichtern."
+        },
+        "glossary": {
+          "title": "Glossar",
+          "guidance": "Definieren Sie Fachbegriffe, die ein Leser kennen muss, der kein Experte auf Ihrem Fachgebiet ist.\nFormat: Begriff – Prägnante Definition.\nBeziehen Sie keine Begriffe ein, die bereits im Theoretischen Rahmen definiert wurden – das Glossar ist für wiederkehrende, aber nicht zentrale Begriffe gedacht."
+        },
+        "appendices": {
+          "title": "Anhänge",
+          "guidance": "Ergänzendes technisches Material, das nicht zum Hauptfluss gehört:\n• Lange oder sekundäre mathematische Beweise.\n• Quellcode (Hauptmodule, Experimentskripte).\n• Vollständige Datentabellen oder zusätzliche Ergebnisse.\n• Datenerfassungsinstrumente.\n• Ethische Genehmigungsschreiben, Vertraulichkeitsvereinbarungen.\nNummer: Anhang A, B… mit beschreibenden Titeln."
+        }
+      },
+      "meta": "Bibliographie APA 7 · XeLaTeX"
     }
   },
   "institutions": {

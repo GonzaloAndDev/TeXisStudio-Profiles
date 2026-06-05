@@ -2767,6 +2767,190 @@
       },
       "name": "Luận văn chung",
       "description": "Hồ sơ học thuật cho một luận án chung. Tuân theo siêu dữ liệu hồ sơ, các phần bắt buộc và kiểu thư mục."
+    },
+    "company.internship": {
+      "name": "Báo cáo thực tập/cư trú",
+      "description": "Định dạng báo cáo về cư trú chuyên nghiệp và lưu trú công tác. Bao gồm mô tả công ty, hoạt động và kết quả. Thư mục APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Trang bìa được tạo tự động với dữ liệu của tổ chức.\nNó sẽ bao gồm: tên của sinh viên, công ty, thời gian thực tập, cơ sở giáo dục và nghề nghiệp.\nBạn không cần phải viết nội dung ở đây — hãy đặt dữ liệu trong siêu dữ liệu của dự án."
+        },
+        "table_of_contents": {
+          "guidance": "Chỉ mục được tạo tự động.\nBạn không cần phải viết gì ở đây."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Bối cảnh hóa báo cáo và trình bày cho người đọc mục đích của hoạt động thực hành:\n• Hồ sơ nghề nghiệp và chuyên môn của người hành nghề.\n• Tên công ty và khu vực thực tập.\n• Thời gian và tổng thời gian.\n• Mục tiêu chung của nơi cư trú: vấn đề hoặc nhu cầu tổ chức nào đã được giải quyết?\n• Mô tả ngắn gọn cấu trúc báo cáo.\nĐộ dài: 1–2 trang."
+        },
+        "company_description": {
+          "title": "Mô tả công ty",
+          "guidance": "Giới thiệu tổ chức nơi bạn thực tập:\n• Tên đầy đủ, tên công ty và ngành nghề kinh doanh.\n• Tóm tắt lịch sử và sứ mệnh/tầm nhìn.\n• Sơ đồ tổ chức chung (có thể chèn hình).\n• Khu vực hoặc bộ phận nơi bạn làm việc và chức năng của nó trong công ty.\n• Cơ sở hạ tầng công nghệ phù hợp với hoạt động của bạn.\nKhông sao chép nguyên văn trang web của công ty — diễn giải và trích dẫn nguồn."
+        },
+        "activities": {
+          "title": "Các hoạt động được phát triển",
+          "guidance": "Mô tả theo trình tự thời gian hoặc theo dự án các hoạt động bạn đã thực hiện:\n• Đối với từng hoạt động: mục tiêu, mô tả quy trình, công cụ hoặc công nghệ được sử dụng.\n• Bao gồm ảnh chụp màn hình, sơ đồ hoặc bảng biểu khi chúng hỗ trợ cho phần giải thích.\n• Đề cập đến những thách thức gặp phải và cách bạn giải quyết chúng.\n• Bạn có thể sắp xếp theo tuần, giai đoạn nước rút, giai đoạn dự án hoặc khu vực làm việc.\nĐây là phần dài nhất của báo cáo — hãy cụ thể và mang tính kỹ thuật."
+        },
+        "results": {
+          "title": "Kết quả và đóng góp",
+          "guidance": "Trình bày các sản phẩm và đóng góp cụ thể nơi cư trú của bạn:\n• Các sản phẩm bàn giao đã hoàn thiện (hệ thống, báo cáo, sổ tay, cải tiến quy trình).\n• Số liệu hoặc bằng chứng về tác động nếu có thể (tiết kiệm thời gian, giảm sai sót, v.v.).\n• Được phát triển kỹ năng chuyên môn.\n• So sánh giữa mục tiêu đề ra và kết quả đạt được.\nHãy khách quan: nếu điều gì đó chưa được kết luận, hãy giải thích lý do."
+        },
+        "conclusions": {
+          "title": "Kết luận",
+          "guidance": "Kết thúc báo cáo bằng sự phản ánh chuyên nghiệp:\n• Các mục tiêu cư trú có được đáp ứng không?\n• Bạn đã học được kiến ​​thức chuyên môn gì?\n• Trải nghiệm này bổ sung cho quá trình học tập của bạn như thế nào?\n• Khuyến nghị cho những người hành nghề tương lai hoặc cho công ty.\nĐộ dài: 1–2 trang."
+        },
+        "references": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Liệt kê các nguồn được tư vấn trong quá trình thực hành: sổ tay kỹ thuật, tiêu chuẩn, bài viết, website.\nDanh sách được tạo tự động từ .bib của bạn.\nKiểu APA 7. Sử dụng trình nhập DOI để dễ dàng thêm tài liệu tham khảo học thuật."
+        },
+        "appendices": {
+          "title": "Phụ lục",
+          "guidance": "Bao gồm tài liệu hỗ trợ rất phong phú trong nội dung chính:\n• Thư chấp nhận của công ty.\n• Thư hoàn thành/đánh giá của gia sư kinh doanh.\n• Nhật ký hàng tuần (nếu tổ chức của bạn yêu cầu).\n• Mã nguồn liên quan.\n• Hướng dẫn sử dụng hoặc kỹ thuật được phát triển.\n• Bằng chứng hình ảnh về nơi làm việc.\nĐánh số từng phụ lục (Phụ lục A, B…) và tham khảo từ văn bản."
+        }
+      },
+      "meta": "Thư mục APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Báo cáo kỹ thuật/kỹ thuật",
+      "description": "Báo cáo kỹ thuật có các phần về cách tiếp cận, thiết kế, triển khai và thử nghiệm. Thư mục IEEE. Lý tưởng cho luận án kỹ thuật và thực tập chuyên nghiệp.",
+      "sections": {
+        "title_page": {
+          "guidance": "Trang bìa được tạo tự động cùng với dữ liệu dự án.\nBạn không cần phải viết nội dung ở đây."
+        },
+        "table_of_contents": {
+          "guidance": "Chỉ mục được tạo tự động.\nBạn không cần phải viết gì ở đây."
+        },
+        "abstract_es": {
+          "title": "Tóm tắt",
+          "guidance": "Tóm tắt kỹ thuật 150–250 từ. Trong kỹ thuật nó phải cụ thể:\n• Vấn đề mà công việc giải quyết được.\n• Phương pháp tiếp cận hoặc công nghệ được sử dụng.\n• Kết quả chính (số liệu, hiệu suất, cải tiến).\n• Kết luận hoặc đóng góp quan trọng.\nKhông có tài liệu tham khảo, không có phương trình, không có từ viết tắt không xác định."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Bối cảnh hóa vấn đề kỹ thuật và tạo động lực làm việc:\n• Bối cảnh: lĩnh vực công nghệ, ngành công nghiệp hoặc ứng dụng.\n• Động lực: tại sao việc giải quyết vấn đề này lại quan trọng?\n• Công việc liên quan: đánh giá rất ngắn gọn các giải pháp hiện có và hạn chế của chúng.\n• Đóng góp khách quan và cụ thể của công việc.\n• Tổ chức tài liệu.\nTrong IEEE, trích dẫn là số: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Tuyên bố vấn đề",
+          "guidance": "Xác định vấn đề kỹ thuật một cách chính xác về mặt hình thức:\n• Mô tả chi tiết vấn đề: triệu chứng, bối cảnh, hạn chế.\n• Yêu cầu chức năng và phi chức năng.\n• Tiêu chí thành công: Làm sao bạn biết bạn đã giải quyết được vấn đề?\n• Phạm vi và giới hạn của dự án.\n• Khung lý thuyết cần thiết tối thiểu: các khái niệm, mô hình hoặc lý thuyết làm nền tảng cho giải pháp.\nSử dụng sơ đồ, bảng yêu cầu và trường hợp sử dụng nếu có."
+        },
+        "design": {
+          "title": "Thiết kế và kiến trúc",
+          "guidance": "Trình bày giải pháp đề xuất trước khi thực hiện:\n• Kiến trúc hệ thống (sơ đồ thành phần, lớp, mô-đun).\n• Quyết định thiết kế và biện minh cho các công nghệ được lựa chọn.\n• Lưu đồ hoặc thuật toán chính.\n• Mô hình dữ liệu nếu có (lược đồ ER, BD).\n• Giao diện người dùng (wireframe hoặc mô hình nếu có).\nThiết kế phải độc lập với việc triển khai — bên thứ ba có thể triển khai nó từ phần này."
+        },
+        "implementation": {
+          "title": "Triển khai",
+          "guidance": "Mô tả cách xây dựng giải pháp:\n• Môi trường phát triển: ngôn ngữ, framework, nền tảng, phiên bản.\n• Mô tả các mô-đun hoặc thành phần được triển khai.\n• Các đoạn mã có liên quan (chỉ những đoạn có tính minh họa nhất, không phải toàn bộ mã).\n• Những thách thức thực hiện và giải pháp đã được áp dụng.\n• Cấu hình cơ sở hạ tầng nếu có (máy chủ, vùng chứa, BD).\nMã hoàn chỉnh nằm trong các Phụ lục — ở đây chỉ có mã tiêu biểu nhất."
+        },
+        "testing": {
+          "title": "Thử nghiệm và xác nhận",
+          "guidance": "Chứng minh rằng giải pháp hoạt động và đáp ứng các yêu cầu:\n• Kế hoạch kiểm thử: các loại (đơn nhất, tích hợp, hệ thống, chấp nhận).\n• Các ca kiểm thử: đầu vào, hành động, kết quả mong đợi, kết quả thu được.\n• Số liệu hiệu suất nếu có (thời gian phản hồi, mức sử dụng bộ nhớ, độ chính xác).\n• So sánh với công việc cơ bản hoặc công việc liên quan.\n• Phân tích kết quả: điều gì có hiệu quả? KHÔNG? bởi vì?\nTrình bày kết quả dưới dạng bảng hoặc biểu đồ khi có thể."
+        },
+        "conclusions": {
+          "title": "Kết luận và công việc trong tương lai",
+          "guidance": "Kết thúc công việc một cách chặt chẽ về mặt kỹ thuật:\n• Xem xét các mục tiêu đạt được so với những mục tiêu đã đạt được.\n• Đóng góp ban đầu của tác phẩm.\n• Đã xác định được những hạn chế về mặt kỹ thuật.\n• Công việc trong tương lai: những cải tiến cụ thể, khả năng mở rộng, các vấn đề còn tồn tại.\nTrong IEEE người ta thường đề cập đến các ấn phẩm hoặc ứng dụng công nghiệp có thể có."
+        },
+        "references": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Trong IEEE, các tham chiếu là số và xuất hiện theo thứ tự được đề cập đầu tiên.\nDanh sách được tạo tự động từ .bib của bạn khi bạn biên dịch.\nĐối với các bài viết và hội nghị về IEEE: Sử dụng trình nhập DOI để nhận mục nhập chính xác.\nHãy nhớ đưa DOI vào mỗi tài liệu tham khảo — IEEE yêu cầu điều đó."
+        },
+        "appendices": {
+          "title": "Phụ lục",
+          "guidance": "Tài liệu kỹ thuật bổ sung:\n• Mã nguồn hoàn chỉnh (mô-đun chính).\n• Các kịch bản cài đặt và cấu hình.\n• Hướng dẫn sử dụng hoặc kỹ thuật.\n• Sơ đồ chi tiết (ERD đầy đủ, sơ đồ tuần tự, v.v.).\n• Kiểm tra dữ liệu hoặc bộ dữ liệu.\nSố: Phụ lục A, B… và tham khảo từ văn bản chính."
+        }
+      },
+      "meta": "Thư mục IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Luận văn tốt nghiệp",
+      "description": "Hồ sơ thạc sĩ và tiến sĩ: tổng quan tài liệu, hiện đại, phương pháp tiếp cận, thử nghiệm, bảng chú giải thuật ngữ và từ viết tắt. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Trang bìa được tạo tự động cùng với dữ liệu dự án.\nĐối với các nghiên cứu sau đại học, hãy định cấu hình siêu dữ liệu: tên đầy đủ, giám đốc, đồng giám đốc (nếu có) và ủy ban thượng hội đồng.\nBạn không cần phải viết nội dung ở đây."
+        },
+        "table_of_contents": {
+          "guidance": "Mục lục được tạo tự động.\nBạn không cần phải viết gì ở đây."
+        },
+        "list_of_figures": {
+          "guidance": "Danh sách các hình được tạo tự động từ tất cả các hình có tiêu đề trong luận án của bạn.\nKích hoạt phần này nếu bạn có 5 hình trở lên."
+        },
+        "list_of_tables": {
+          "guidance": "Danh sách các bảng được tạo tự động từ tất cả các bảng có tiêu đề.\nKích hoạt phần này nếu bạn có 5 bảng trở lên."
+        },
+        "list_of_algorithms": {
+          "guidance": "Danh sách các thuật toán được tạo tự động cho các luận văn tính toán hoặc kỹ thuật.\nChỉ kích hoạt nếu bạn đưa ra 3 mã giả hoặc thuật toán được đánh số trở lên."
+        },
+        "acronyms": {
+          "title": "Danh sách các từ viết tắt và từ viết tắt",
+          "guidance": "Liệt kê đầy đủ nghĩa các từ viết tắt sử dụng trong luận án.\nĐịnh dạng: SIGLA — Ý nghĩa đầy đủ (ví dụ: CNN — Mạng thần kinh chuyển đổi).\nSắp xếp theo thứ tự abc. Nó cũng xác định lần đầu tiên mỗi từ viết tắt xuất hiện trong văn bản."
+        },
+        "abstract_es": {
+          "title": "Tóm tắt",
+          "guidance": "Câu trả lời tóm tắt tốt nghiệp trong 250–350 từ:\n• Động lực: tại sao vấn đề này lại quan trọng?\n• Vấn đề: Bạn đang giải quyết câu hỏi hoặc giả thuyết nào?\n• Phương pháp: phương pháp và kỹ thuật chính.\n• Đóng góp: kết quả và đóng góp ban đầu cho công nghệ hiện đại.\n• Tác động: ý nghĩa lý luận và thực tiễn.\nKhông có cuộc hẹn. Không có phương trình. 5–8 Từ khóa ở cuối."
+        },
+        "abstract_en": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch chính xác của bản tóm tắt sang tiếng Anh. Không phải bản dịch máy - hãy kiểm tra nó.\nTừ khóa: bằng tiếng Anh, tốt nhất là các thuật ngữ từ từ điển đồng nghĩa về ngành học của bạn.\nBắt buộc đối với các nghiên cứu sau đại học — đây là phiên bản xuất hiện trong các kho lưu trữ quốc tế."
+        },
+        "dedication": {
+          "title": "Cống hiến",
+          "guidance": "Văn bản ngắn gọn và mang tính cá nhân. Hãy dành công việc cho những người xứng đáng nhất.\nKhông có định dạng đặc biệt — hồ sơ được căn giữa trên một trang riêng."
+        },
+        "acknowledgements": {
+          "title": "Cảm ơn",
+          "guidance": "Chính thức cảm ơn những người đã đóng góp cho tác phẩm:\n• Chủ nhiệm và đồng chủ trì luận án.\n• Ủy ban Thượng Hội đồng/người duyệt xét.\n• Nhà tài trợ: học bổng, dự án, tổ chức (bắt buộc đối với các dự án có hỗ trợ từ bên ngoài).\n• Cộng tác viên kỹ thuật, phòng thí nghiệm, công ty.\n• Hỗ trợ của gia đình và cá nhân (ở phần cuối, vắn tắt).\nPhần mở rộng: nửa trang."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Việc làm luận văn sau đại học có yêu cầu khắt khe hơn so với việc làm bằng cử nhân. Bạn phải:\n1. Bối cảnh hóa vấn đề trong tình trạng hiện tại.\n2. Xác định lỗ hổng kiến ​​thức cụ thể mà luận án của bạn giải quyết.\n3. Nêu rõ giả thuyết hoặc câu hỏi nghiên cứu.\n4. Liệt kê các mục tiêu (chung và cụ thể).\n5. Mô tả đóng góp ban đầu (có gì mới trong công việc của bạn?).\n6. Giải thích phạm vi và ranh giới.\n7. Mô tả cách tổ chức các chương.\nMột ủy ban tiến sĩ sẽ đánh giá xem đóng góp đó có nguyên gốc và độc lập hay không. Hãy chính xác.\nĐộ dài thông thường: 5–10 trang."
+        },
+        "literature_review": {
+          "title": "Đánh giá văn học và hiện đại",
+          "guidance": "Đây là phần thể hiện sự thông thạo của bạn trong lĩnh vực này. Bạn phải:\n• Đề cập một cách có hệ thống các tác phẩm có liên quan từ 5–10 năm qua (các tác phẩm kinh điển có thể cũ hơn).\n• Sắp xếp theo chủ đề, trọng tâm hoặc trình tự thời gian — không phải dưới dạng danh sách tóm tắt.\n• So sánh có phê phán các đề xuất: điểm mạnh, điểm yếu, hạn chế.\n• Xác định khoảng trống mà luận án của bạn sẽ lấp đầy (\"chưa có công trình nào trước đây đề cập đến X\").\n• Kết thúc bằng bảng so sánh các tác phẩm liên quan nếu có thể.\nĐối với tiến sĩ: đánh giá này phải toàn diện và bao quát tất cả các khía cạnh của vấn đề.\nChiến lược: Tìm kiếm Scopus, WoS, ACM DL, IEEE Xplore. Sử dụng trình nhập DOI cho từng mặt hàng."
+        },
+        "theoretical_framework": {
+          "title": "Khung lý thuyết",
+          "guidance": "Phát triển nền tảng lý thuyết và toán học cần thiết để hiểu đề xuất của bạn.\nKhông giống như phần đánh giá tài liệu, ở đây bạn đi sâu vào các khái niệm chính:\n• Định nghĩa hình thức và ký hiệu toán học.\n• Các mô hình lý thuyết làm cơ sở cho công việc của bạn.\n• Các định lý hoặc tính chất liên quan (có trích dẫn hoặc chứng minh nếu là bản gốc).\nKích hoạt phần này nếu luận án của bạn yêu cầu nhiều hơn 5–6 trang cơ sở lý thuyết."
+        },
+        "problem_statement": {
+          "title": "Tuyên bố vấn đề và giả thuyết",
+          "guidance": "Xác định chính thức vấn đề mà luận án của bạn giải quyết:\n• Công thức chính xác: trong khoa học chính xác, sử dụng ký hiệu toán học nếu có.\n• Giả thuyết hoặc phỏng đoán nghiên cứu (đối với tiến sĩ: giả thuyết có thể kiểm chứng và giả thuyết).\n• Các giả định và hạn chế của mô hình.\n• Tại sao vấn đề khó: tính toán phức tạp, thiếu dữ liệu, mơ hồ về mặt lý thuyết.\n• Tiêu chí đánh giá: bạn sẽ đo lường mức độ thành công của đề xuất của mình như thế nào?\nPhần này có thể được đọc độc lập dưới dạng đặc tả bài toán."
+        },
+        "methodology": {
+          "title": "Phương pháp",
+          "guidance": "Mô tả cách tiếp cận phương pháp luận một cách chặt chẽ theo yêu cầu của trình độ sau đại học:\n• Mô hình nghiên cứu: thực chứng, kiến tạo, hỗn hợp.\n• Loại hình nghiên cứu: thực nghiệm, bán thực nghiệm, nghiên cứu trường hợp, mô phỏng, mô hình hóa.\n• Thiết kế nghiên cứu cụ thể.\n• Nguồn dữ liệu: nguồn gốc, đặc điểm, quá trình thu thập hoặc tạo lập.\n• Quy trình hoặc quy trình hoàn chỉnh từ dữ liệu đến kết quả.\n• Các công cụ, ngôn ngữ, thư viện và phiên bản cụ thể.\nĐủ chi tiết để có thể nhân rộng hoàn toàn."
+        },
+        "experimentation": {
+          "title": "Thử nghiệm và phát triển",
+          "guidance": "Ghi lại chi tiết quá trình phát triển hoặc thử nghiệm:\n• Thiết lập thử nghiệm: phần cứng, siêu tham số, điều kiện thử nghiệm.\n• Các thí nghiệm được thực hiện và mục đích của chúng (nghiên cứu cắt bỏ, so sánh các biến thể).\n• Các quan sát trung gian có liên quan (không chỉ là kết quả cuối cùng).\n• Các quyết định được đưa ra trong quá trình này và lý do giải thích của chúng.\nKích hoạt phần này nếu tác phẩm của bạn có thành phần thử nghiệm quan trọng\ntách biệt khỏi phương pháp luận chung."
+        },
+        "results": {
+          "title": "Kết quả",
+          "guidance": "Trình bày kết quả một cách chính xác về mặt thống kê theo yêu cầu của khóa học sau đại học:\n• Tổ chức theo mục tiêu hoặc giả thuyết.\n• Đối với kết quả định lượng: giá trị trung bình, độ lệch chuẩn, khoảng tin cậy, ý nghĩa thống kê.\n• Các bảng so sánh với đường cơ sở, các biến thể riêng và hiện đại.\n• Số liệu có thanh lỗi khi áp dụng.\n• Cho kết quả định tính: bão hòa lý thuyết, tam giác, trích dẫn đại diện.\nĐừng diễn giải ở đây - chỉ trình bày dữ liệu."
+        },
+        "discussion": {
+          "title": "Thảo luận",
+          "guidance": "Việc thảo luận luận văn sau đại học phải thể hiện sự trưởng thành về mặt khoa học:\n• Giải thích từng kết quả liên quan đến giả thuyết của bạn.\n• So sánh với các tác phẩm hiện đại: vượt trội, bằng hay kém?\n• Giải thích những khác biệt với cơ sở lý thuyết.\n• Thảo luận về ý nghĩa lý thuyết: nó có ý nghĩa gì đối với lĩnh vực này?\n• Thảo luận ý nghĩa thực tiễn: rút ra được những ứng dụng gì?\n• Hạn chế trung thực: Đừng che giấu điểm yếu, dù thế nào ủy ban cũng sẽ nhìn ra.\n• Các mối đe dọa đối với tính hợp lệ nếu có (tính hợp lệ bên trong, bên ngoài, cấu trúc)."
+        },
+        "conclusions": {
+          "title": "Kết luận và công việc trong tương lai",
+          "guidance": "Kết thúc luận án bằng tầm nhìn của nhà nghiên cứu:\n• Đáp ứng trực tiếp từng bộ mục tiêu cụ thể.\n• Nêu rõ sự đóng góp ban đầu cho kiến ​​thức.\n• Đối với tiến sĩ: chứng minh đóng góp đáp ứng các tiêu chí về tính độc lập và độc lập.\n• Công việc cụ thể và thực tế trong tương lai: các bài toán mở, mở rộng, ứng dụng.\n• Suy nghĩ cuối cùng về tác động của công việc đối với kỷ luật.\nĐộ dài thông thường: 3–5 trang."
+        },
+        "references": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Danh sách tham chiếu được tạo tự động từ .bib của bạn khi biên dịch bằng APA 7.\nĐối với các nghiên cứu sau đại học, dự kiến có hơn 80–200 tài liệu tham khảo chất lượng cao (các bài báo được lập chỉ mục, sách kỹ thuật).\nSử dụng trình nhập DOI để thêm các bài viết từ Crossref chỉ bằng một cú nhấp chuột.\nTránh tham khảo các blog, Wikipedia hoặc các trang web chưa được bình duyệt làm nguồn chính."
+        },
+        "publications": {
+          "title": "Ấn phẩm phái sinh",
+          "guidance": "Liệt kê các công trình đã xuất bản hoặc đệ trình xuất phát từ luận án này:\n• Bài viết trên các tạp chí có chỉ mục (Q1, Q2, Scopus, WoS).\n• Thuyết trình tại các hội nghị trong nước và quốc tế.\n• Chương sách, bằng sáng chế, báo cáo kỹ thuật.\nĐối với mỗi: tài liệu tham khảo đầy đủ + trạng thái (đã xuất bản / được chấp nhận / đã gửi / đang chuẩn bị).\nCác ấn phẩm trước đây là dấu hiệu của chất lượng và có thể làm nhẹ bớt sự biện hộ."
+        },
+        "glossary": {
+          "title": "Bảng thuật ngữ",
+          "guidance": "Xác định các thuật ngữ chuyên ngành mà người đọc không phải là chuyên gia trong lĩnh vực chuyên môn của bạn sẽ cần biết.\nĐịnh dạng: Thuật ngữ - Định nghĩa ngắn gọn.\nKhông bao gồm các thuật ngữ đã được xác định trong Khung lý thuyết — bảng thuật ngữ chỉ dành cho các thuật ngữ định kỳ chứ không phải các thuật ngữ trọng tâm."
+        },
+        "appendices": {
+          "title": "Phụ lục",
+          "guidance": "Tài liệu kỹ thuật bổ sung không thuộc luồng chính:\n• Chứng minh toán học dài hoặc thứ cấp.\n• Mã nguồn (mô-đun chính, kịch bản thử nghiệm).\n• Hoàn thiện bảng số liệu hoặc kết quả bổ sung.\n• Công cụ thu thập dữ liệu.\n• Thư chấp thuận đạo đức, thỏa thuận bảo mật.\nSố: Phụ lục A, B… kèm tiêu đề mô tả."
+        }
+      },
+      "meta": "Thư mục APA 7 · XeLaTeX"
     }
   },
   "institutions": {

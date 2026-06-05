@@ -2767,6 +2767,190 @@
       },
       "name": "Allmän avhandling",
       "description": "Akademisk profil för en generisk avhandling. Följ profilens metadata, obligatoriska avsnitt och bibliografistil."
+    },
+    "company.internship": {
+      "name": "Rapport om praktik/uppehållstillstånd",
+      "description": "Format för rapporter om yrkesboende och affärsvistelser. Inkluderar företagsbeskrivning, aktiviteter och resultat. Bibliografi APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Försättssidan genereras automatiskt med institutionsdata.\nDet kommer att innehålla: namn på studenten, företag, praktikperiod, akademisk institution och karriär.\nDu behöver inte skriva innehåll här – ställ in data i projektets metadata."
+        },
+        "table_of_contents": {
+          "guidance": "Indexet genereras automatiskt.\nDu behöver inte skriva något här."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "Kontextualisera rapporten och presentera syftet med övningarna för läsaren:\n• Karriär och yrkesprofil för utövaren.\n• Namn på företaget och område där praktiken genomfördes.\n• Period och total varaktighet.\n• Allmänt mål för residenset: vilket problem eller organisatoriskt behov åtgärdades?\n• Kort beskrivning av rapportstrukturen.\nLängd: 1–2 sidor."
+        },
+        "company_description": {
+          "title": "Företagsbeskrivning",
+          "guidance": "Presentera organisationen där du gjorde praktiken:\n• Fullständigt namn, företagsnamn och affärsområde.\n• Kort historik och uppdrag/vision.\n• Allmänt organisationsschema (du kan infoga en figur).\n• Område eller avdelning där du arbetat och dess funktion inom företaget.\n• Teknisk infrastruktur som är relevant för dina aktiviteter.\nKopiera inte företagets webbplats ordagrant – omformulera och citera källan."
+        },
+        "activities": {
+          "title": "Utvecklade aktiviteter",
+          "guidance": "Beskriv kronologiskt eller projektvis de aktiviteter du utförde:\n• För varje aktivitet: mål, beskrivning av processen, verktyg eller teknik som används.\n• Inkludera skärmdumpar, diagram eller tabeller när de stödjer förklaringen.\n• Nämn de utmaningar som du stött på och hur du löste dem.\n• Du kan organisera efter veckor, sprintar, projektfaser eller arbetsområden.\nDetta är det längsta avsnittet i rapporten – var specifik och teknisk."
+        },
+        "results": {
+          "title": "Resultat och bidrag",
+          "guidance": "Presentera de specifika produkterna och bidragen från din bostad:\n• Genomförda leveranser (system, rapporter, manualer, processförbättringar).\n• Mätvärden eller bevis på påverkan där det är möjligt (tidsbesparing, minskade fel etc.).\n• Utvecklad professionell kompetens.\n• Jämförelse mellan de föreslagna målen och vad som uppnåddes.\nVar objektiv: om något inte var slutfört, förklara varför."
+        },
+        "conclusions": {
+          "title": "Slutsatser",
+          "guidance": "Stäng rapporten med en professionell reflektion:\n• Uppfylldes bosättningsmålen?\n• Vilken professionell inlärning fick du?\n• Hur kompletterade erfarenheten din akademiska utbildning?\n• Rekommendationer för framtida utövare eller för företaget.\nLängd: 1–2 sidor."
+        },
+        "references": {
+          "title": "Referenser",
+          "guidance": "Lista de källor som konsulterats under övningarna: tekniska manualer, standarder, artiklar, webbplatser.\nListan genereras automatiskt från din .bib.\nAPA-stil 7. Använd DOI-importören för att enkelt lägga till akademiska referenser."
+        },
+        "appendices": {
+          "title": "Bilagor",
+          "guidance": "Innehåller stödmaterial som skulle vara mycket omfattande i huvuddelen:\n• Acceptansbrev från företaget.\n• Kompletteringsbrev/utvärdering från verksamhetshandledaren.\n• Veckologgar (om det krävs av din institution).\n• Relevant källkod.\n• Användar- eller tekniska manualer utvecklade.\n• Fotografiska bevis på arbetsplatsen.\nNumrera varje bilaga (bilaga A, B...) och hänvisa till dem från texten."
+        }
+      },
+      "meta": "Bibliografi APA 7 · XeLaTeX"
+    },
+    "engineering.basic": {
+      "name": "Teknisk/teknisk rapport",
+      "description": "Teknisk rapport med avsnitt om tillvägagångssätt, design, implementering och testning. IEEE Bibliografi. Idealisk för ingenjörsuppsats och yrkesuppehållstillstånd.",
+      "sections": {
+        "title_page": {
+          "guidance": "Försättssidan genereras automatiskt med projektdata.\nDu behöver inte skriva innehåll här."
+        },
+        "table_of_contents": {
+          "guidance": "Indexet genereras automatiskt.\nDu behöver inte skriva något här."
+        },
+        "abstract_es": {
+          "title": "Sammanfattning",
+          "guidance": "Teknisk sammanfattning på 150–250 ord. Inom teknik måste det vara specifikt:\n• Problem som arbetet löser.\n• Tillvägagångssätt eller teknik som används.\n• Huvudresultat (mått, prestanda, förbättring).\n• Slutsats eller nyckelbidrag.\nInga referenser, inga ekvationer, inga odefinierade akronymer."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "Kontextualisera det tekniska problemet och motivera arbetet:\n• Kontext: teknikområde, industri eller tillämpning.\n• Motivation: varför är det viktigt att lösa detta problem?\n• Relaterade arbeten: mycket kort genomgång av befintliga lösningar och deras begränsningar.\n• Objektivt och specifikt bidrag från arbetet.\n• Dokumentorganisation.\nI IEEE är hänvisningar numeriska: [1], [2], [3]."
+        },
+        "problem_statement": {
+          "title": "Problembeskrivning",
+          "guidance": "Definiera det tekniska problemet med formell precision:\n• Detaljerad beskrivning av problemet: symtom, sammanhang, restriktioner.\n• Funktionella och icke-funktionella krav.\n• Framgångskriterier: Hur vet du att du löste det?\n• Projektets omfattning och begränsningar.\n• Minsta nödvändiga teoretiska ram: koncept, modeller eller teorier som lösningen bygger på.\nAnvänd diagram, kravtabeller och användningsfall om tillämpligt."
+        },
+        "design": {
+          "title": "Design och arkitektur",
+          "guidance": "Presentera den föreslagna lösningen innan du implementerar den:\n• Systemarkitektur (komponentdiagram, lager, moduler).\n• Designbeslut och motivering av valda teknologier.\n• Flödesschema eller huvudalgoritm.\n• Datamodell om tillämpligt (ER, BD schema).\n• Användargränssnitt (wireframes eller mockups om tillämpligt).\nDesignen bör vara oberoende av implementeringen – en tredje part bör kunna implementera den från det här avsnittet."
+        },
+        "implementation": {
+          "title": "Implementering",
+          "guidance": "Beskriv hur lösningen byggdes:\n• Utvecklingsmiljö: språk, ramverk, plattformar, versioner.\n• Beskrivning av de implementerade modulerna eller komponenterna.\n• Relevanta kodfragment (endast de mest illustrativa, inte hela koden).\n• Implementeringsutmaningar och antagna lösningar.\n• Infrastrukturkonfiguration om tillämpligt (servrar, behållare, BD).\nDen fullständiga koden finns i bilagorna – här endast den mest representativa."
+        },
+        "testing": {
+          "title": "Testning och validering",
+          "guidance": "Visa att lösningen fungerar och uppfyller kraven:\n• Testplan: typer (enhetlig, integration, system, acceptans).\n• Testfall: input, åtgärd, förväntat resultat, erhållet resultat.\n• Prestandamått om tillämpligt (svarstid, minnesanvändning, precision).\n• Jämförelse med baslinje eller relaterat arbete.\n• Analys av resultat: vad fungerade? inga? därför att?\nPresentera resultat i tabeller eller diagram när det är möjligt."
+        },
+        "conclusions": {
+          "title": "Slutsatser och framtida arbete",
+          "guidance": "Stäng arbetet med teknisk noggrannhet:\n• Granskning av uppnådda mål kontra de som lyfts.\n• Ursprungliga bidrag av verket.\n• Identifierade tekniska begränsningar.\n• Framtida arbete: konkreta förbättringar, möjliga utbyggnader, öppna problem.\nI IEEE är det vanligt att nämna möjliga publikationer eller industriella tillämpningar."
+        },
+        "references": {
+          "title": "Referenser",
+          "guidance": "I IEEE är referenserna numeriska och visas i första omnämnandeordning.\nListan genereras automatiskt från din .bib när du kompilerar.\nFör IEEE-artiklar och konferenser: Använd DOI-importören för att få rätt post.\nSe till att inkludera DOI i varje referens — IEEE kräver det."
+        },
+        "appendices": {
+          "title": "Bilagor",
+          "guidance": "Kompletterande tekniskt material:\n• Komplett källkod (huvudmoduler).\n• Installations- och konfigurationsskript.\n• Användar- eller tekniska manualer.\n• Detaljerade diagram (fullständiga ERD, sekvensdiagram, etc.).\n• Testa data eller datauppsättningar.\nNummer: Bilaga A, B... och hänvisa till dem från huvudtexten."
+        }
+      },
+      "meta": "Bibliografi IEEE · XeLaTeX"
+    },
+    "generic.phd": {
+      "name": "Examensarbete",
+      "description": "Profil för magister- och doktorsexamen: litteraturöversikt, toppmoderna, tillvägagångssätt, experiment, ordlista och akronymer. XeLaTeX, biber, APA 7.",
+      "sections": {
+        "title_page": {
+          "guidance": "Försättssidan genereras automatiskt med projektdata.\nFör forskarstudier, konfigurera i metadata: fullständigt namn, direktör, meddirektör (om tillämpligt) och synodalsnämnd.\nDu behöver inte skriva innehåll här."
+        },
+        "table_of_contents": {
+          "guidance": "Innehållsförteckningen genereras automatiskt.\nDu behöver inte skriva något här."
+        },
+        "list_of_figures": {
+          "guidance": "Listan med figurer genereras automatiskt från alla titelfigurer i din avhandling.\nAktivera det här avsnittet om du har 5 eller fler figurer."
+        },
+        "list_of_tables": {
+          "guidance": "Listan med tabeller genereras automatiskt från alla tabeller med titel.\nAktivera den här sektionen om du har 5 eller fler bord."
+        },
+        "list_of_algorithms": {
+          "guidance": "Automatiskt genererad lista med algoritmer för beräknings- eller tekniska avhandlingar.\nAktivera endast om du presenterar 3 eller fler pseudokoder eller numrerade algoritmer."
+        },
+        "acronyms": {
+          "title": "Lista över förkortningar och akronymer",
+          "guidance": "Lista alla akronymer och förkortningar som används i avhandlingen med deras fulla betydelse.\nFormat: SIGLA — Full betydelse (t.ex. CNN — Convolutional Neural Network).\nSortera alfabetiskt. Den definierar också första gången varje akronym förekommer i texten."
+        },
+        "abstract_es": {
+          "title": "Sammanfattning",
+          "guidance": "Textens sammanfattning svarar med 250–350 ord:\n• Motivation: varför är detta problem viktigt?\n• Problem: Vilken fråga eller hypotes tar du upp?\n• Metod: huvudansats och teknik.\n• Bidrag: resultat och ursprungliga bidrag till den senaste tekniken.\n• Effekt: teoretiska eller praktiska konsekvenser.\nInga möten. Inga ekvationer. 5–8 sökord i slutet."
+        },
+        "abstract_en": {
+          "title": "Abstrakt",
+          "guidance": "Exakt översättning av sammanfattningen till engelska. Inte en maskinöversättning – kontrollera det.\nNyckelord: på engelska, helst termer från tesaurus för din disciplin.\nObligatorisk för forskarstudier — det är versionen som finns i internationella repositories."
+        },
+        "dedication": {
+          "title": "Dedikation",
+          "guidance": "Kort och personlig text. Dedikera arbetet till dem som förtjänar det mest.\nIngen speciell formatering – profilen är centrerad på en separat sida."
+        },
+        "acknowledgements": {
+          "title": "Tack",
+          "guidance": "Tackar formellt de som bidragit till arbetet:\n• Examensledare och medrektor.\n• Synodalsnämnd / granskare.\n• Finansiärer: stipendier, projekt, institutioner (obligatoriskt för projekt med externt stöd).\n• Tekniska samarbetspartners, laboratorier, företag.\n• Familj och personligt stöd (i slutet, kortfattat).\nTillägg: en halv sida."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "Införandet av en doktorsavhandling är mer krävande än en kandidatexamen. Du måste:\n1. Kontextualisera problemet i den nuvarande teknikens ståndpunkt.\n2. Identifiera den specifika kunskapsluckan som din uppsats tar upp.\n3. Ange tydligt hypotesen eller forskningsfrågan.\n4. Lista målen (allmänna och specifika).\n5. Beskriv det ursprungliga bidraget (vad är nytt i ditt arbete?).\n6. Motivera omfattningen och avgränsningarna.\n7. Beskriv kapitlens organisation.\nEn doktorandkommitté kommer att bedöma om bidraget är originellt och oberoende. Var exakt.\nTypisk längd: 5–10 sidor."
+        },
+        "literature_review": {
+          "title": "Recension av litteratur och toppmoderna",
+          "guidance": "Detta är avsnittet som visar att du behärskar området. Du måste:\n• Systematiskt täcka in relevanta verk från de senaste 5–10 åren (klassiker kan vara äldre).\n• Organisera efter tema, fokus eller kronologi – inte som en lista med sammanfattningar.\n• Kritiskt jämföra förslagen: styrkor, svagheter, begränsningar.\n• Identifiera luckan som din avhandling fyller (\"inga tidigare arbeten har tagit upp X\").\n• Avsluta med en jämförande tabell över relaterade verk om möjligt.\nFör doktorsexamen: denna recension måste vara uttömmande och täcka alla aspekter av problemet.\nStrategi: Sök Scopus, WoS, ACM DL, IEEE Xplore. Använd DOI-importören för varje artikel."
+        },
+        "theoretical_framework": {
+          "title": "Teoretisk ram",
+          "guidance": "Utveckla de teoretiska och matematiska grunderna som krävs för att förstå ditt förslag.\nTill skillnad från litteraturöversikten fördjupar du dig här i nyckelbegreppen:\n• Formella definitioner och matematisk notation.\n• Teoretiska modeller som ditt arbete bygger på.\n• Relevanta satser eller egenskaper (med citat eller bevis om original).\nAktivera det här avsnittet om din avhandling kräver mer än 5–6 sidor av teoretisk grund."
+        },
+        "problem_statement": {
+          "title": "Problembeskrivning och hypoteser",
+          "guidance": "Definiera formellt problemet som din avhandling löser:\n• Exakt formulering: i exakta vetenskaper, använd matematisk notation om tillämpligt.\n• Hypoteser eller forskningsantaganden (för doktorsexamen: verifierbar och falsifierbar hypotes).\n• Modellens antaganden och begränsningar.\n• Varför problemet är svårt: beräkningskomplexitet, brist på data, teoretisk oklarhet.\n• Utvärderingskriterier: hur kommer du att mäta framgången för ditt förslag?\nDet här avsnittet ska kunna läsas oberoende som en problemspecifikation."
+        },
+        "methodology": {
+          "title": "Metodik",
+          "guidance": "Beskriv det metodologiska tillvägagångssättet med den rigoritet som krävs av forskarnivån:\n• Forskningsparadigm: positivistisk, konstruktivistisk, blandad.\n• Typ av forskning: experimentell, kvasi-experimentell, fallstudie, simulering, modellering.\n• Specifik forskningsdesign.\n• Datakällor: ursprung, egenskaper, insamlings- eller genereringsprocess.\n• Pipeline eller komplett process från data till resultat.\n• Specifika verktyg, språk, bibliotek och versioner.\nTillräckligt med detaljer för fullständig replikerbarhet."
+        },
+        "experimentation": {
+          "title": "Experiment och utveckling",
+          "guidance": "Dokumentera utvecklings- eller experimentprocessen i detalj:\n• Experimentell inställning: hårdvara, hyperparametrar, testförhållanden.\n• Utförda experiment och deras syfte (ablationsstudie, jämförelse av varianter).\n• Relevanta mellanobservationer (inte bara slutresultatet).\n• Beslut som fattats under processen och deras motivering.\nAktivera det här avsnittet om ditt arbete har en betydande experimentell komponent\nkan skiljas från den allmänna metoden."
+        },
+        "results": {
+          "title": "Resultat",
+          "guidance": "Presentera resultaten med den statistiska noggrannhet som krävs av forskarutbildningen:\n• Organisera efter mål eller hypotes.\n• För kvantitativa resultat: medelvärde, standardavvikelse, konfidensintervall, statistisk signifikans.\n• Jämförande tabeller med baslinje, egna varianter och toppmoderna.\n• Figurer med felstaplar när tillämpligt.\n• För kvalitativa resultat: teoretisk mättnad, triangulering, representativa citat.\nTolka inte här – presentera bara data."
+        },
+        "discussion": {
+          "title": "Diskussion",
+          "guidance": "Diskussionen om en doktorsavhandling måste visa på vetenskaplig mognad:\n• Tolka varje resultat i relation till din hypotes.\n• Jämför med toppmoderna verk: överträffar du, är lika med eller kommer du till korta?\n• Förklarar avvikelser med teoretiska grunder.\n• Diskutera teoretiska implikationer: vad betyder det för området?\n• Diskutera praktiska implikationer: vilka tillämpningar härleds?\n• Ärliga begränsningar: Dölj inte svagheter, kommittén kommer att se dem ändå.\n• Hot mot validitet om tillämpligt (intern, extern, konstruktionsvaliditet)."
+        },
+        "conclusions": {
+          "title": "Slutsatser och framtida arbete",
+          "guidance": "Avsluta avhandlingen med en forskares vision:\n• Svarar direkt på varje specifik måluppsättning.\n• Anger tydligt det ursprungliga bidraget till kunskap.\n• För doktorsexamen: visar att bidraget uppfyller kriterierna för originalitet och oberoende.\n• Specifikt och realistiskt framtida arbete: öppna problem, tillägg, applikationer.\n• Slutlig reflektion över arbetets inverkan på disciplinen.\nTypisk längd: 3–5 sidor."
+        },
+        "references": {
+          "title": "Referenser",
+          "guidance": "Referenslistan genereras automatiskt från din .bib när du kompilerar med APA 7.\nFör forskarstudier förväntas 80–200+ högkvalitativa referenser (indexerade artiklar, tekniska böcker).\nAnvänd DOI-importören för att lägga till artiklar från Crossref med ett klick.\nUndvik referenser till bloggar, Wikipedia eller webbplatser som inte har granskats som primära källor."
+        },
+        "publications": {
+          "title": "Härledda publikationer",
+          "guidance": "Lista de publicerade eller inskickade verk som härrör från denna avhandling:\n• Artiklar i indexerade tidskrifter (Q1, Q2, Scopus, WoS).\n• Presentationer vid nationella och internationella konferenser.\n• Bokkapitel, patent, tekniska rapporter.\nFör varje: fullständig referens + status (publicerad / accepterad / inlämnad / under förberedelse).\nTidigare publiceringar är ett tecken på kvalitet och kan lätta på försvaret."
+        },
+        "glossary": {
+          "title": "Ordlista",
+          "guidance": "Definiera specialiserade termer som en läsare som inte är expert på din subspecialitet skulle behöva känna till.\nFormat: Term — Kortfattad definition.\nInkludera inte termer som redan har definierats i det teoretiska ramverket – ordlistan är för återkommande men inte centrala termer."
+        },
+        "appendices": {
+          "title": "Bilagor",
+          "guidance": "Kompletterande tekniskt material som inte hör till huvudflödet:\n• Långa eller sekundära matematiska bevis.\n• Källkod (huvudmoduler, experimentskript).\n• Komplettera datatabeller eller ytterligare resultat.\n• Instrument för datainsamling.\n• Etiska godkännandebrev, sekretessavtal.\nNummer: Bilaga A, B... med beskrivande rubriker."
+        }
+      },
+      "meta": "Bibliografi APA 7 · XeLaTeX"
     }
   },
   "institutions": {

@@ -14,7 +14,7 @@
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summarizen en English abstract, 200–350 words.\nProblem, objectives, methodology, results, and conclusions.\nKeywords (4–6).\n"
+          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
@@ -54,7 +54,7 @@
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Findings objectives. Tables and figures APA 7. No interpretstion."
+          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
@@ -76,7 +76,7 @@
         }
       },
       "name": "UBA - Thesis (APA 7)",
-      "description": "Thesis de la University of Buenos Aires, APA 7",
+      "description": "Thesis of the University of Buenos Aires, APA 7",
       "institution": "University of Buenos Aires"
     },
     "br_unicamp_abnt": {
@@ -155,7 +155,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "McGill GPS requirements:\n• Maximum 350 words (ProQuest limit for PhD).\n• Must be in English.\n• Self-contained: no citationtions, no undefined acronyms.\nStructure: research question, methodology, key findings, significance.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "resume": {
           "title": "Résumé (French Abstract)",
@@ -180,7 +180,7 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "Research problem, motivation, gap in literature, research questions,\ntheoretical framework, contributions, and thesis structure.\nAPA 7: (Author, Year) citationtions. Length: 15–30 pages.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "literature_review": {
           "title": "Literature Review",
@@ -195,7 +195,7 @@
         "results": {
           "title": "Results",
           "label": "chapter:results",
-          "guidance": "Objective findings. Tables and figures APA 7. No interpretstion."
+          "guidance": "Present your findings objectively and organize them by question, objective, or topic. Use tables and figures when they improve clarity."
         },
         "discussion": {
           "title": "Discussion",
@@ -232,11 +232,11 @@
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summarizen en English abstract, 200–350 words.\nProblem, objectives, methodology, results, and conclusions.\nKeywords (4–6).\n"
+          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "English abstract. Recomendado. Maximum 350 words. Keywords (4–6)."
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
@@ -244,7 +244,7 @@
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. Una o tres líneas. Sin encabezado impreso."
+          "guidance": "Optional. One or three lines. No printed header."
         },
         "indice": {
           "title": "Table of Contents",
@@ -298,7 +298,7 @@
         }
       },
       "name": "U. de Chile - Thesis (APA 7)",
-      "description": "Thesis de la University of Chile, APA 7",
+      "description": "Thesis of the University of Chile, APA 7",
       "institution": "University of Chile"
     },
     "mx_ipn_apa7": {
@@ -313,7 +313,7 @@
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summarizen en English abstract, 200–350 words.\nProblema, methodology, results y contribution. Keywords (4–6).\n"
+          "guidance": "Summary in Spanish, 200–350 words.\nProblem, methodology, results and contribution. Keywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
@@ -348,22 +348,22 @@
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Design de research, tools y equipos utilizados,\nprocedure experimental o de análisis, validación y\nethical considerations if applicable.\n"
+          "guidance": "Research design, tools and equipment used,\nexperimental or analysis procedure, validation and\nethical considerations if applicable."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Findings objectives organizedos por objective específico.\nTables and figures APA 7. No interpretstion en este chapter.\n"
+          "guidance": "Objective findings organized by specific objective.\nTables and figures APA 7. No interpretation in this chapter."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation de results, comparison with the literature y limitaciones."
+          "guidance": "Interpretation of results, comparison with literature and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer objectives, summarize contributions original,\nseñala limitaciones y propone work futuro.\n"
+          "guidance": "Responds to objectives, summarizes original contributions,\npoints out limitations and proposes future work."
         },
         "referencias": {
           "title": "References",
@@ -371,7 +371,7 @@
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Datos adicionales, código fuente, planos o diagramas técnicos."
+          "guidance": "Additional data, source code, plans, or technical diagrams."
         }
       },
       "name": "IPN - Thesis (APA 7)",
@@ -393,7 +393,7 @@
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summarizen en English, 150–350 words.\nInclude: research question, methodology, main findings\ny contribution al campo. At the end: Keywords (4–6).\nSelf-contained: no citationtions, no figures, no undefined acronyms.\n"
+          "guidance": "Summary in Spanish, 150–350 words.\nIncludes: research question, methodology, main findings\nand contribution to the field. At the end: Keywords (4–6).\nSelf-contained: no citations, no figures, no undefined acronyms."
         },
         "abstract_ingles": {
           "title": "Abstract",
@@ -423,27 +423,27 @@
         "marco_teorico": {
           "title": "Theoretical Framework",
           "label": "capitulo:marcoteorico",
-          "guidance": "Fundamentos conceptuales y revisión crítica de la literature.\nOrganize por themes o approaches — no como summarizen secuencial de autores.\nIdentifica el gap que justifies tu research.\nAPA 7: (Author, year) in the text.\n"
+          "guidance": "Conceptual foundations and critical review of the literature.\nOrganize by theme or focus — not as a sequential summary of authors.\nIdentify the gap that justifies your research.\nAPA 7: (Author, year) in the text."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Design de research, sample, instruments, procedure,\nstatistical analysis y ethical considerations.\nEl Tec valora methods mixeds y studys de caso corporativos.\n"
+          "guidance": "Research design, sample, instruments, procedure,\nstatistical analysis and ethical considerations.\nThe Tec values ​​mixed methods and corporate case studies."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Findings objectives organizedos por research question.\nTables and figures APA 7. No interpretstion en este chapter.\n"
+          "guidance": "Objective findings organized by research question.\nTables and figures APA 7. No interpretation in this chapter."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation de results, comparison with the literature, implications\npracticals (muy valoradas en el Tec) y limitaciones.\n"
+          "guidance": "Interpretation of results, comparison with literature, implications\npractices (highly valued at Tec) and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer research questions, summarize contributions, mention\nlimitaciones y sugiere research futura.\n"
+          "guidance": "Answer research questions, summarize contributions, mention\nlimitations and suggests future research."
         },
         "referencias": {
           "title": "References",
@@ -472,7 +472,7 @@
         },
         "abstract_es": {
           "title": "Abstract",
-          "guidance": "Maximum 350 words. Include: background, problema, methodology, contributions y conclusions."
+          "guidance": "Maximum 350 words. Includes: background, problem, methodology, contributions and conclusions."
         },
         "abstract_en": {
           "title": "Abstract",
@@ -538,7 +538,7 @@
         },
         "abstract_es": {
           "title": "Abstract",
-          "guidance": "Maximum 300 words. It must include: problem statement, objective general, methodology, maines findings y conclusions. Evitar citationtions bibliographs en el summarizen.\n"
+          "guidance": "Maximum 300 words. It should include: problem statement, general objective, methodology, main findings and conclusions. Avoid bibliographic citations in the summary."
         },
         "abstract_en": {
           "title": "Abstract",
@@ -574,7 +574,7 @@
         },
         "conclusions": {
           "title": "Conclusions",
-          "guidance": "Sínthesis de findings, respuesta a la research question, limitaciones, contributions al campo y líneas de research futura.\n"
+          "guidance": "Synthesis of findings, answer to the research question, limitations, contributions to the field and lines of future research."
         },
         "references": {
           "title": "Bibliography",
@@ -582,7 +582,7 @@
         },
         "appendix": {
           "title": "Appendices",
-          "guidance": "Instruments de recolección, transcripts, tables supplementarys, etc."
+          "guidance": "Collection instruments, transcriptions, complementary tables, etc."
         }
       },
       "name": "UAM Azcapotzalco — DCSH",
@@ -650,7 +650,7 @@
         },
         "appendix": {
           "title": "Appendices",
-          "guidance": "Código fuente relevante, diagramas adicionales, datos de experimentos, etc."
+          "guidance": "Relevant source code, additional diagrams, experimental data, etc."
         }
       },
       "name": "UAM Cuajimalpa — DCI",
@@ -674,7 +674,7 @@
         },
         "abstract_es": {
           "title": "Abstract",
-          "guidance": "Maximum 300 words. Describe el problema, methods used y maines results."
+          "guidance": "Maximum 300 words. Describe the problem, methods used and main results."
         },
         "abstract_en": {
           "title": "Abstract",
@@ -695,7 +695,7 @@
         },
         "theoretical_framework": {
           "title": "Theoretical Framework and State of the Art",
-          "guidance": "Revisión bibliográfica y fundamentos theoreticals."
+          "guidance": "Bibliographic review and theoretical foundations."
         },
         "methodology": {
           "title": "Methodology and Experimental Development",
@@ -711,11 +711,11 @@
         },
         "conclusions": {
           "title": "Conclusions and Outlook",
-          "guidance": "Conclusions sobre la hypotheses planteada y proposals de work futuro."
+          "guidance": "Conclusions on the proposed hypothesis and proposals for future work."
         },
         "glossary": {
           "title": "Glossary",
-          "guidance": "Definiciones de terms técnicos y acronyms utilizados en el document."
+          "guidance": "Definitions of technical terms and acronyms used in the document."
         },
         "references": {
           "title": "References",
@@ -811,7 +811,7 @@
         },
         "abstract_es": {
           "title": "Abstract",
-          "guidance": "Maximum 250 words. Structure IMRyD abreviada: background, objective, methods, results y main conclusion. Do not include citationtions bibliographs ni abbreviations sin definir.\n"
+          "guidance": "Maximum 250 words. Abbreviated IMRyD structure: background, objective, methods, results and main conclusion. Do not include bibliographical citations or undefined abbreviations."
         },
         "abstract_en": {
           "title": "Abstract",
@@ -878,11 +878,11 @@
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summarizen en English abstract, 200–350 words.\nProblema, objective, method, results y main conclusion.\nKeywords (4–6).\n"
+          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objective, method, results and main conclusion.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "English abstract. Recomendado. Maximum 350 words. Keywords (4–6)."
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
@@ -918,7 +918,7 @@
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Findings objectives. Tables and figures APA 7. No interpretstion."
+          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
@@ -955,11 +955,11 @@
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summarizen en English abstract, 200–350 words.\nResearch question, methodology, results y contribution.\nKeywords (4–6).\n"
+          "guidance": "Summary in Spanish, 200–350 words.\nResearch question, methodology, results and contribution.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "English abstract. Recomendado. Maximum 350 words."
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
@@ -967,7 +967,7 @@
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. Una o tres líneas. Sin encabezado impreso."
+          "guidance": "Optional. One or three lines. No printed header."
         },
         "indice": {
           "title": "Table of Contents",
@@ -999,7 +999,7 @@
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Findings objectives. Tables and figures APA 7. No interpretstion."
+          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
@@ -1009,7 +1009,7 @@
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer questions, summarize contributions, señala limitations and future work."
+          "guidance": "Answers questions, summarizes contributions, points out limitations and future work."
         },
         "referencias": {
           "title": "References",
@@ -1021,7 +1021,7 @@
         }
       },
       "name": "UdeG - Thesis (APA 7)",
-      "description": "Thesis de la University of Guadalajara, APA 7",
+      "description": "Thesis of the University of Guadalajara, APA 7",
       "institution": "University of Guadalajara"
     },
     "mx_unam_apa7": {
@@ -1048,7 +1048,7 @@
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. Breve — typically 1 a 3 líneas.\nSin encabezado impreso; el perfil gestiona el formato.\n"
+          "guidance": "Optional. Brief — typically 1 to 3 lines.\nNo printed header; the profile manages the format."
         },
         "indice_general": {
           "title": "Table of Contents",
@@ -1207,7 +1207,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "Harvard GSAS requires the abstract to be:\n• Maximum 350 words (ProQuest and Harvard repository requirement).\n• Written in English.\n• Standalone: no citationtions, no figures, no equations.\nStructure: one paragraph or short paragraphs covering:\n 1. The research question or problem.\n 2. Methodology and approach.\n 3. Key findings/results.\n 4. Significance and contribution to the field.\nThe abstract is submitted separately to ProQuest Dissertations & Theses —\nensure it accurately represents the full dissertation.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -1252,7 +1252,7 @@
         "results": {
           "title": "Results / Findings",
           "label": "chapter:results",
-          "guidance": "Present findings objectively, without interpretstion.\n• Organize by research question or thematic cluster.\n• Quantitative: report descriptive statistics, inferential results (p-values, effect sizes,\n confidence intervals), tables and figures with clear captions.\n• Qualitative: present themes with illustrative quotations; ensure anonymization.\n• Every table and figure must be referenced in the text.\nAPA 7 citationtion format: use (Author, Year) throughout. Page numbers for direct quotes.\n"
+          "guidance": "Present your findings objectively and organize them by question, objective, or topic. Use tables and figures when they improve clarity."
         },
         "discussion": {
           "title": "Discussion",
@@ -1290,7 +1290,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "Harvard GSAS requires:\n• Maximum 350 words (ProQuest and Harvard repository requirement).\n• Written in English.\n• Standalone: no footnotes, no citationtions, no undefined terms.\nStructure:\n 1. The central argument or intervention — state it in the first sentence.\n 2. Historical, literary, or theoretical context.\n 3. Summary of the dissertation's chapters or sections.\n 4. Significance: what does this work contribute to the field?\nThe abstract is submitted separately to ProQuest — it will be read in isolation\nby researchers who discover the dissertation through keyword search.\nHumanities abstracts should be argumentative, not merely descriptive.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -1315,7 +1315,7 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "The introduction makes your dissertation's central argument and establishes\nits intellectual stakes. A strong Harvard humanities introduction:\n1. Opens with a specific scene, problem, or question — not a broad statement\n  of field. The first paragraph should announce the argument.\n2. Defines the central intervention: what does this dissertation claim\n  that existing scholarship does not? Be explicit and confident.\n3. Situates the work: historical period, geography, archive, corpus.\n4. Engages the relevant literature (brief synthesis — full treatment in\n  the following chapter or integrated per chapter).\n5. Describes the theoretical or methodological approach.\n6. Presents the chapter structure with a paragraph per chapter summarizing\n  each chapter's argument (not just its content).\nChicago 17 Notes-Bibliography: citationtions appear as footnotes (or endnotes).\nFirst citationtion of a work: full footnote. Subsequent: shortened form.\nUse Ibid. only when the reference is immediately prior.\nLength: 20–40 pages is standard for Harvard humanities dissertations.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "literature_review": {
           "title": "Historiography / State of the Field",
@@ -1330,12 +1330,12 @@
         "methodology": {
           "title": "Method and Sources",
           "label": "chapter:methodology",
-          "guidance": "Rename to fit your discipline: \"Archival Method,\" \"Textual Analysis,\"\n\"Oral History Methodology,\" \"Material Culture and Sources,\" etc.\nThis chapter must address:\n• Primary source base: what archives, collections, manuscripts, or corpora\n did you consult? Where are they located? What are their limitations?\n• Method of reading/interpretstion: how do you analyze your sources?\n (Close reading, discourse analysis, quantitative text analysis, oral history,\n ethnography, etc.)\n• Language and translation: if sources are in multiple languages, explain\n your approach to translation and any transliteration conventions used.\n• Positionality: how does your position as researcher affect interpretstion?\n Required for oral history and ethnographic work; appropriate for many\n other humanities methods.\n• Ethical considerations: IRB approval if human subjects are involved;\n community consent for oral history archives.\n"
+          "guidance": "Details the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with sufficient detail to replicate the study."
         },
         "results": {
           "title": "Chapter Two",
           "label": "chapter:two",
-          "guidance": "Rename this section to your second chapter's actual title (e.g., \"The Archive\nof Silence: Memory and State Violence, 1936–1945\").\nIn humanities dissertations, body chapters present the dissertation's argument\nthrough sustained engagement with primary sources. Each chapter should:\n• Open with a clear statement of the chapter's argument and its relationship\n to the dissertation's overall thesis.\n• Develop a specific aspect of the larger argument through close analysis.\n• Engage primary sources (archival documents, literary texts, images, oral\n testimonies) in depth — not as illustration but as evidence.\n• Engage the relevant secondary literature in footnotes or in the body text.\n• Close by connecting the chapter's findings to the broader argument and\n pointing forward to the next chapter.\nChicago 17 footnotes: use to cite, to add commentary that would interrupt\nthe main argument, or to acknowledge alternative interpretstions.\nTypical chapter length: 40–70 pages.\n"
+          "guidance": "Rename this section to your second chapter's actual title (e.g., \"The Archive\nof Silence: Memory and State Violence, 1936–1945\").\nIn humanities dissertations, body chapters present the dissertation's argument\nthrough sustained engagement with primary sources. Each chapter should:\n• Open with a clear statement of the chapter's argument and its relationship\n to the dissertation's overall thesis.\n• Develop a specific aspect of the larger argument through close analysis.\n• Engage primary sources (archival documents, literary texts, images, oral\n testimonies) in depth — not as illustration but as evidence.\n• Engage the relevant secondary literature in footnotes or in the body text.\n• Close by connecting the chapter's findings to the broader argument and\n pointing forward to the next chapter.\nChicago 17 footnotes: use to cite, to add commentary that would interrupt\nthe main argument, or to acknowledge alternative interpretations.\nTypical chapter length: 40–70 pages.\n"
         },
         "discussion": {
           "title": "Chapter Three",
@@ -1349,11 +1349,11 @@
         },
         "references": {
           "title": "Bibliography",
-          "guidance": "Chicago 17 Notes-Bibliography: the bibliography lists all works cited.\nFormat: hanging indent, alphabetical by author's last name.\nDivided into sections if appropriate:\n A. Primary Sources (by category: Archival Collections, Published Documents,\n   Newspapers and Periodicals, Oral History Interviews, etc.)\n B. Secondary Sources (monographs, articles, dissertations, online resources)\nGenerated automatically from your .bib file at compilation.\nChicago 17 bibliography entries differ from footnote citationtions —\nbiber/biblatex-chicago handles this automatically.\nExpected volume: 150–500 references for a PhD dissertation in humanities.\n"
+          "guidance": "Include only the cited sources and follow the bibliographic style required by the profile."
         },
         "appendices": {
           "title": "Appendices",
-          "guidance": "Supplementary material not central to the main argument:\n• Document transcriptions or translations (if too long for the main text).\n• Statistical tables, data, or corpus lists.\n• Interview transcripts or consent forms.\n• Archival finding aids or provenance notes.\n• Maps, genealogies, or chronologies.\nLabel: Appendix A, Appendix B… with descriptive titles.\nCross-reference from the main text (see Appendix A for the full list of…).\n"
+          "guidance": "Includes supplementary material such as instruments, extensive tables, protocols, opinions or supporting technical documentation."
         }
       },
       "name": "Harvard - Thesis (Chicago 17)",
@@ -1369,7 +1369,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "MIT abstract requirements:\n• Submitted separately to MIT Libraries (DSpace) and ProQuest.\n• Maximum 350 words recommended (ProQuest limit: 350 for PhD, 150 for Master's).\n• Must be in English.\n• Cover: research problem, method, key results, significance.\n• No citationtions, no figures, no undefined acronyms.\nThe abstract appears both in the thesis and in the MIT Libraries catalog —\nwrite it as a standalone piece that will be read out of context.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -1390,12 +1390,12 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "The introduction must motivate the work and establish its scope:\n1. Problem context: what is the technical or scientific challenge?\n2. Motivation: why does it matter? (Applications, open questions, limitations of prior art.)\n3. Related work summary: brief overview — full treatment in the next chapter.\n4. Thesis statement: explicit statement of the contribution.\n5. Thesis organizetion: outline of chapters.\nIEEE style: citationtions are numeric [1], [2] in order of first appearance.\nIn engineering at MIT, the introduction should be precise and technically grounded\nfrom the first paragraph — committees expect depth, not accessibility.\nLength: 10–20 pages.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "background": {
           "title": "Background and Related Work",
           "label": "chapter:background",
-          "guidance": "Cover the technical foundations and prior art:\n• Background: define key concepts, mathematical notation, models, and frameworks\n the reader needs to understand the contribution. Be precise — the committee\n will evaluate your mastery of the field.\n• Related work: compare your approach to the most relevant prior work.\n Organize by approach (not by author): clustering methods, learning-based methods, etc.\n• Clearly identify what prior work does NOT do, or where it fails — this is the gap.\n• Every significant claim needs a citationtion [X]. Use the DOI importer for IEEE papers.\nMIT CS/EE dissertations: cite arXiv, ACM DL, IEEE Xplore, NIPS proceedings.\n"
+          "guidance": "Review relevant literature and theoretical foundations. Organize by themes or debates and identify the gap that your work addresses."
         },
         "methodology": {
           "title": "Proposed Approach / Methodology",
@@ -1419,7 +1419,7 @@
         },
         "references": {
           "title": "References",
-          "guidance": "IEEE numbered bibliography: entries appear in order of first citationtion.\nAuto-generated from your .bib file at compilation.\nMIT expects complete citationtions for all referenced work. Include:\n• For journal papers: author(s), title, journal, vol., no., pp., month year, DOI.\n• For conference papers: author(s), title, conference name, city, year, pp., DOI.\n• For arXiv: include the arXiv ID and access date.\nUse the DOI importer to get properly formatted IEEE entries from Crossref.\nTypical PhD dissertation: 100–300 references.\n"
+          "guidance": "Include only the cited sources and follow the bibliographic style required by the profile."
         },
         "appendices": {
           "title": "Appendices",
@@ -1427,7 +1427,7 @@
         }
       },
       "name": "MIT - Thesis (IEEE)",
-      "description": "MIT thesis for engineering and sciences, IEEE citationtion style, DSpace submission",
+      "description": "Academic profile for MIT - Thesis (IEEE). Follow the metadata, required sections and bibliographic style of the profile.",
       "institution": "Massachusetts Institute of Technology",
       "program_name": "Engineering and Sciences"
     },
@@ -1443,7 +1443,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "Stanford ETD requirements for the abstract:\n• Maximum 350 words (ProQuest limit for PhD dissertations).\n• Written in English (additional language versions may follow).\n• Must be self-contained: no citationtions, no figures, no equations,\n no undefined acronyms.\nStructure:\n 1. One sentence stating the research problem.\n 2. Methodology and approach (2–3 sentences).\n 3. Key findings and results (2–3 sentences).\n 4. Significance and contribution to the field (1–2 sentences).\nThe abstract is submitted separately to ProQuest Dissertations & Theses\nand indexed in Stanford SearchWorks — write it as a standalone piece.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -1464,12 +1464,12 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "The introduction must establish the problem, context, and original contribution:\n1. Problem statement: define the technical or scientific challenge precisely.\n2. Motivation: why does it matter? (Real-world applications, fundamental\n  open questions, limitations of current state-of-the-art.)\n3. Brief overview of related work — full treatment in the next chapter.\n4. Dissertation statement: explicit statement of the thesis contribution\n  (what was built, proved, or discovered).\n5. Dissertation organizetion: one paragraph outlining each chapter.\nIEEE citationtion style: numbered [1], [2], [3] in order of first appearance.\nStanford engineering programs expect technical precision from the first sentence —\ncommittee members are domain experts who evaluate rigor, not accessibility.\nLength: 10–25 pages.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "background": {
           "title": "Background and Related Work",
           "label": "chapter:background",
-          "guidance": "Establish the technical foundations and prior art your dissertation builds on:\n• Background: define key concepts, models, mathematical notation, and frameworks.\n Be comprehensive — the committee and external reviewers assess your mastery.\n• Related work: compare your approach to the most relevant prior work.\n Organize by theme or approach (not chronologically), e.g., model-based methods,\n data-driven methods, hybrid approaches.\n• Identify explicitly what prior work does NOT achieve — this frames your gap.\n• Every factual claim needs a citationtion [X]. Use the DOI importer for IEEE Xplore,\n ACM DL, arXiv, and NeurIPS/ICML/ICLR proceedings.\nStanford CS/EE dissertations often cite seminal papers alongside very recent work.\n"
+          "guidance": "Review relevant literature and theoretical foundations. Organize by themes or debates and identify the gap that your work addresses."
         },
         "methodology": {
           "title": "Proposed Approach",
@@ -1493,7 +1493,7 @@
         },
         "references": {
           "title": "References",
-          "guidance": "IEEE numbered bibliography: entries appear in order of first citationtion.\nAuto-generated from your .bib file at compilation.\nStanford requires complete citationtions for all referenced work. Include:\n• Journal papers: author(s), title, journal, vol., no., pp., month year, DOI.\n• Conference papers: author(s), title, conference name (abbreviated), city,\n year, pp., DOI.\n• arXiv preprints: include arXiv ID (e.g., arXiv:2106.12345 [cs.LG])\n and submission date.\n• Technical reports: institution, report number, year.\nUse the DOI importer to get properly formatted IEEE entries from Crossref.\nTypical PhD dissertation: 100–250 references.\n"
+          "guidance": "Include only the cited sources and follow the bibliographic style required by the profile."
         },
         "appendices": {
           "title": "Appendices",
@@ -1517,7 +1517,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "UChicago requires an abstract; ProQuest indexes it separately.\n• Maximum 350 words (ProQuest PhD limit).\n• Written in English.\n• Standalone: no parenthetical citationtions, no tables, no equations.\nStructure for Social Sciences:\n 1. Research question or theoretical puzzle — lead with it.\n 2. Theoretical framework and methodology (1–2 sentences each).\n 3. Main empirical findings or theoretical contributions.\n 4. Significance: implications for the field or for policy.\nThe abstract is the most-read part of the dissertation — it must make\nthe contribution clear to readers outside your subfield.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -1538,12 +1538,12 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "The introduction defines the research puzzle and positions the dissertation's\ncontribution. At UChicago, Social Sciences committees expect precision and\nintellectual ambition from the opening pages:\n1. Research question or theoretical puzzle — state it explicitly in the first\n  paragraph. What is unresolved in the literature that this dissertation addresses?\n2. Motivation: why does it matter theoretically and empirically?\n3. Core argument or hypothesis.\n4. Brief overview of the theoretical framework and empirical strategy.\n5. Preview of findings and their implications.\n6. Chapter-by-chapter outline.\nChicago 17 Author-Date: in-text citationtions as (Author Year) or (Author Year, page).\nLength: 15–30 pages.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "literature_review": {
           "title": "Theory and Literature",
           "label": "chapter:literature",
-          "guidance": "At UChicago, this chapter is typically titled \"Theory and Literature,\"\n\"Theoretical Framework,\" or \"Situating the Argument.\"\nRename to match your department's conventions.\nUChicago Social Sciences expectations:\n• Organize by theoretical approach, mechanism, or debate — not as a\n sequential review of publications.\n• Identify the central theoretical tension or unresolved empirical question.\n• Position your argument within or against the dominant traditions.\n• Derive testable hypotheses or analytical propositions from the theory.\n• Be precise about what prior work establishes and where it fails.\nChicago Author-Date: use (Author Year) for all in-text citationtions.\nFor recent working papers or preprints, include access date.\nLength: 20–50 pages.\n"
+          "guidance": "Review relevant literature and theoretical foundations. Organize by themes or debates and identify the gap that your work addresses."
         },
         "theoretical_framework": {
           "title": "Theoretical Framework",
@@ -1922,7 +1922,7 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "Establishes research problem, motivation, gap, research questions,\ntheoretical framework, and dissertation structure.\nAPA 7: (Author, year) citationtions throughout.\nLength: 10–25 pages.\n"
+          "guidance": "Establishes research problem, motivation, gap, research questions,\ntheoretical framework, and dissertation structure.\nAPA 7: (Author, year) citations throughout.\nLength: 10–25 pages.\n"
         },
         "literature_review": {
           "title": "Theoretical Background and Literature Review",
@@ -1937,7 +1937,7 @@
         "results": {
           "title": "Results",
           "label": "chapter:results",
-          "guidance": "Objective findings. Tables and figures APA 7. No interpretstion here."
+          "guidance": "Present your findings objectively and organize them by question, objective, or topic. Use tables and figures when they improve clarity."
         },
         "discussion": {
           "title": "Discussion",
@@ -1974,7 +1974,7 @@
         },
         "abstract_english": {
           "title": "Summary (Abstract in English)",
-          "guidance": "TUM also requires an English abstract (Summary) for all doctoral theses.\nTypically 250–500 words. Self-contained: no citationtions, no undefined acronyms.\nStructure:\n 1. Research problem and its significance.\n 2. Proposed approach and methodology.\n 3. Key results and contributions.\n 4. Impact: what the field gains from this work.\nThe Summary is submitted to ProQuest and the TUM library catalog.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -1995,12 +1995,12 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "The introduction must establish the research problem, context, and contribution:\n1. Motivation: what technical or industrial problem does this thesis address?\n  TUM has strong industry links — practical relevance is valued alongside\n  fundamental contributions.\n2. Problem statement: clear, specific, and bounded.\n3. Limitations of existing approaches: what cannot be done today?\n4. Thesis contributions: list explicitly.\n5. Chapter overview: one paragraph per chapter.\nIEEE: numeric citationtions [1], [2] in order of first appearance.\nLength: 10–20 pages.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "background": {
           "title": "Background and Related Work",
           "label": "chapter:background",
-          "guidance": "Technical foundations and state of the art:\n• Background: mathematical framework, core concepts, and prior models.\n• Related work: organized by technical approach, not by chronology.\n Identify what prior methods achieve and where they fail.\n• Explicitly state the gap that this thesis fills.\n• Every factual claim needs a citationtion [X].\nTUM dissertations frequently cite IEEE Transactions, ACM journals,\nconference proceedings (ICASSP, CVPR, NeurIPS, ICLR), and VDI/DIN standards.\n"
+          "guidance": "Review relevant literature and theoretical foundations. Organize by themes or debates and identify the gap that your work addresses."
         },
         "methodology": {
           "title": "Proposed Approach",
@@ -2024,7 +2024,7 @@
         },
         "references": {
           "title": "References",
-          "guidance": "IEEE numbered bibliography in order of first citationtion.\nAuto-generated from your .bib file. Include DOIs for all available entries.\nTUM accepts arXiv preprints — include arXiv ID and submission date.\nExpected volume: 80–200 references for an engineering PhD.\n"
+          "guidance": "Include only the cited sources and follow the bibliographic style required by the profile."
         },
         "appendices": {
           "title": "Appendices",
@@ -2116,7 +2116,7 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "The introduction establishes the research challenge and the dissertation's\ncontribution:\n1. Context and motivation: what problem does this thesis address and why\n  does it matter? (Scientific, engineering, or societal relevance.)\n2. Limitations of existing approaches: what cannot be done today?\n3. Research questions or objectives: explicitly stated.\n4. Contributions: list with precision.\n5. Thesis outline: one paragraph per chapter.\nIEEE: numeric citationtions [1], [2] in order of appearance.\nTU Delft engineering committees expect both technical rigor and clarity\nabout the societal relevance of the work (\"valorisation\").\nLength: 10–20 pages.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "background": {
           "title": "Background and Literature Review",
@@ -2145,7 +2145,7 @@
         },
         "references": {
           "title": "References",
-          "guidance": "IEEE numbered bibliography in order of first citationtion.\nAuto-generated from your .bib file. Include DOIs for all available entries.\nTU Delft dissertations frequently include highly cited publications from\nIEEE Xplore, ACM, and Nature family journals.\nTypical volume: 100–250 references.\n"
+          "guidance": "Include only the cited sources and follow the bibliographic style required by the profile."
         },
         "appendices": {
           "title": "Appendices",
@@ -2169,7 +2169,7 @@
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summarizen en English abstract, 200–350 words.\nProblem, objectives, methodology, results, and conclusions.\nKeywords (4–6).\n"
+          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
@@ -2199,7 +2199,7 @@
         "marco_teorico": {
           "title": "Theoretical Framework and Literature Review",
           "label": "capitulo:marcoteorico",
-          "guidance": "Critical review de la literature y fundamentos theoreticals.\nOrganize by theoretical approaches o debates — no cronológicamente.\nIdentifica el gap que justifies la thesis.\n"
+          "guidance": "Critical review of the literature and theoretical foundations.\nOrganize by theoretical currents or debates — not chronologically.\nIdentify the gap that justifies the thesis."
         },
         "metodologia": {
           "title": "Methodology",
@@ -2209,7 +2209,7 @@
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Findings objectives. Tables and figures APA 7. No interpretstion."
+          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
@@ -2242,7 +2242,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "KTH requires an abstract in English. Typically 300–500 words.\nSelf-contained: no citationtions, no undefined acronyms.\nStructure: problem, approach, key results, contributions.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "sammanfattning": {
           "title": "Sammanfattning (Swedish Abstract)",
@@ -2267,7 +2267,7 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "Problem statement, motivation, limitations of current approaches,\nresearch contributions, and thesis structure.\nIEEE: numeric [1], [2] citationtions.\nKTH licentiate and doctoral theses often consist of a \"kappa\"\n(cover essay) + appended papers. This profile covers the monograph format.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "background": {
           "title": "Background",
@@ -2320,7 +2320,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "Cambridge Graduate Office: abstract must not exceed 300 words.\nThe abstract must be bound in the thesis.\nRequired header: university name, full name, thesis title, degree, date.\nContent: summarise the problem, method, main results, and conclusions.\nNo citationtions, no abbreviations unless defined, no footnotes.\nThe abstract is separately submitted to ProQuest/EThOS for indexing —\nevery word counts for discoverability.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -2360,12 +2360,12 @@
         "methodology": {
           "title": "Methodology",
           "label": "ch:methodology",
-          "guidance": "Describe your research design with sufficient detail for replication.\nFor empirical/quantitative research:\n• Research design (experimental, survey, longitudinal, case study).\n• Sample: size, selection criteria, demographics, power analysis.\n• Instruments and materials: validated scales, stimuli, apparatus.\n• Procedure: exact steps participants followed.\n• Analysis: statistical methods, software (with version), alpha levels.\nFor qualitative research:\n• Epistemological position and its justifiestion.\n• Data collection method (interviews, observation, document analysis).\n• Sampling strategy (purposive, theoretical, snowball).\n• Analysis method (thematic, grounded theory, discourse analysis).\n• Reflexivity and positionality statement.\n• Trustworthiness measures (member checking, thick description).\nInclude your ethics approval reference number.\n"
+          "guidance": "Details the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with sufficient detail to replicate the study."
         },
         "results": {
           "title": "Results",
           "label": "ch:results",
-          "guidance": "Present findings without interpretstion.\nFor quantitative results:\n• Report descriptive statistics first (M, SD, range, N).\n• Report inferential tests: test statistic, df, p-value, effect size (Cohen's d, η², r).\n• Use tables for complex comparisons; figures for trends and distributions.\n• APA 7 format for statistics: t(48) = 3.12, p = .003, d = 0.87.\nFor qualitative results:\n• Organise by theme, not by participant.\n• Support each theme with representative quotations (with participant codes).\n• Report negative cases — instances that challenged your themes.\nDo not discuss implications here — save that for the Discussion chapter.\n"
+          "guidance": "Present your findings objectively and organize them by question, objective, or topic. Use tables and figures when they improve clarity."
         },
         "discussion": {
           "title": "Discussion",
@@ -2399,7 +2399,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "Cambridge Graduate Office requirements:\n• Maximum 300 words (deposited in the Apollo repository and ProQuest).\n• Must be in English.\n• Self-contained: no citationtions, no figures, no undefined acronyms.\nStructure for an engineering/CS thesis:\n 1. One sentence stating the research problem and its significance.\n 2. Proposed approach or methodology (2–3 sentences).\n 3. Key contributions and results (2–3 sentences with specifics).\n 4. Impact: what does the field gain from this work?\nThe abstract is submitted separately and indexed by the British Library —\nwrite it as a standalone piece that conveys the novelty clearly.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -2420,12 +2420,12 @@
         "introduction": {
           "title": "Introduction",
           "label": "chapter:introduction",
-          "guidance": "The introduction establishes the research problem and the thesis contribution:\n1. Motivation: what technical or scientific problem does this thesis address?\n  Why is it significant? (Industrial, societal, or fundamental impact.)\n2. Limitations of current approaches: brief critical review — what cannot\n  be done today that this thesis enables?\n3. Thesis statement: explicit statement of the contributions.\n  Cambridge examiners assess novelty directly — state what is new clearly.\n4. Dissertation organizetion: one short paragraph per chapter.\nIEEE style: citationtions are numeric [1], [2], [3] in order of first appearance.\nCambridge engineering departments expect technical precision and depth from\nthe opening pages. The examiners are domain experts.\nLength: 10–20 pages.\n"
+          "guidance": "Presents the context, problem statement, justification, research questions, objectives, scope and structure of the document."
         },
         "background": {
           "title": "Background and Related Work",
           "label": "chapter:background",
-          "guidance": "Establish the technical foundations and survey prior art:\n• Background: definitions, mathematical framework, models, and algorithms\n the examiner needs to evaluate your contribution.\n• Related work: compare approaches by theme — not by author.\n Identify what existing methods achieve and where they fail.\n• Explicitly state the gap: what remains unsolved and why your approach\n is the right response to that gap.\n• Every factual claim requires a citationtion [X]. Use the DOI importer\n for IEEE Xplore, ACM Digital Library, arXiv.\nCambridge engineering PhDs: cite published journal and conference papers\n(ICASSP, NeurIPS, CVPR, ICLR, etc.) and the most relevant arXiv preprints.\n"
+          "guidance": "Review relevant literature and theoretical foundations. Organize by themes or debates and identify the gap that your work addresses."
         },
         "methodology": {
           "title": "Proposed Methodology",
@@ -2449,7 +2449,7 @@
         },
         "references": {
           "title": "References",
-          "guidance": "IEEE numbered bibliography: entries in order of first citationtion.\nAuto-generated from your .bib file at compilation.\nCambridge requires complete citationtions. Include:\n• Journal papers: author(s), title, journal, vol., no., pp., year, DOI.\n• Conference papers: author(s), title, proceedings (abbreviated), city,\n year, pp., DOI.\n• arXiv: author(s), title, arXiv:XXXX.XXXXX [field], year.\nUse the DOI importer to obtain correctly formatted IEEE entries from Crossref.\nTypical Cambridge engineering PhD: 100–250 references.\n"
+          "guidance": "Include only the cited sources and follow the bibliographic style required by the profile."
         },
         "appendices": {
           "title": "Appendices",
@@ -2469,7 +2469,7 @@
         },
         "abstract": {
           "title": "Abstract",
-          "guidance": "Oxford DPhil abstract: must not exceed 300 words.\nMust be submitted separately to the Examination Schools at the time of thesis submission.\nInclude: degree applied for, your name, college, title, and term/year.\nSummarise the research problem, methods, main findings, and contribution.\nNo citationtions. No abbreviations unless defined. Clear, accessible language.\nThe abstract is deposited in the Oxford Research Archive (ORA) and is publicly accessible.\n"
+          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
         },
         "acknowledgements": {
           "title": "Acknowledgements",
@@ -2496,7 +2496,7 @@
         "literature_review": {
           "title": "Literature Review",
           "label": "ch:literature",
-          "guidance": "For humanities DPhil, the literature review is often integrated into chapters\nrather than a standalone section. If you use a standalone review:\n• Position your work within existing scholarship.\n• Demonstrate mastery of relevant primary and secondary sources.\n• Identify the scholarly debate your thesis enters.\nMHRA style: use footnotes for citationtions, not in-text references.\nOxford DPhil in humanities typically cites 200–500+ sources.\n"
+          "guidance": "Review relevant literature and theoretical foundations. Organize by themes or debates and identify the gap that your work addresses."
         },
         "methodology": {
           "title": "Methodology and Sources",
@@ -2506,7 +2506,7 @@
         "chapter_1": {
           "title": "Chapter 1",
           "label": "ch:one",
-          "guidance": "Each body chapter should develop one main argument.\nMHRA style notes:\n• Footnote citationtions: Author, Title (Place: Publisher, Year), page.\n• Subsequent citationtions: Author, Short Title, page.\n• Ibid. for immediately preceding source.\nChapter length: typically 8,000–15,000 words depending on total thesis length.\n"
+          "guidance": "Complete this section in accordance with the profile requirements and current guidelines of your institution."
         },
         "chapter_2": {
           "title": "Chapter 2",
@@ -2527,7 +2527,7 @@
         },
         "bibliography": {
           "title": "Bibliography",
-          "guidance": "MHRA bibliography: auto-generated by Biber, formatted per MHRA 3rd edition.\nStructure: Primary Sources first, then Secondary Sources (alphabetically by author).\nInclude all works cited in footnotes.\nFor archival sources, list the repository, collection, and document reference.\nThe bibliography does NOT count toward the 100,000-word limit.\n"
+          "guidance": "Include only the cited sources and follow the bibliographic style required by the profile."
         },
         "appendices": {
           "title": "Appendices",
@@ -2601,7 +2601,7 @@
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Recomendado cuando el informe postdoctoral circulará internacionalmente\no se reportá a una convocatoria externa.\n"
+          "guidance": "Recommended when the postdoctoral report will be circulated internationally\nor will report to an external call."
         },
         "indice": {
           "title": "Table of Contents",
@@ -2640,7 +2640,7 @@
           "guidance": "Evidencia supplementary: instruments, tables extendidas, protocols,\noutputs, technical documentation o material suplementario.\n"
         }
       },
-      "name": "Informe Posdoctoral Genérico",
+      "name": "Generic Postdoctoral Report",
       "description": "Academic profile for Informe Posdoctoral Genérico. Follow the profile metadata, required sections, and bibliography style."
     },
     "generic_tesina": {
@@ -2712,7 +2712,7 @@
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. Una o tres líneas. Sin encabezado impreso.\n"
+          "guidance": "Optional. One or three lines. No printed header."
         },
         "indice": {
           "title": "Table of Contents",
@@ -2858,21 +2858,21 @@
       "name": "University of Oxford"
     },
     "generic/generic/generic": {
-      "name": "Perfil Generico"
+      "name": "Generic Profile"
     }
   },
   "citation_styles": {
     "abnt": {
       "name": "ABNT",
-      "description": "Mandatory standard for all academic works submitted to Brazilian universities. NBR 6023:2018 governs bibliographic references; NBR 10520:2002 governs in-text citationtions. Required at USP, UNICAMP, UFRJ, and all federal and state universities.\n"
+      "description": "Bibliographic style profile for ABNT."
     },
     "apa7": {
       "name": "APA 7",
-      "description": "The most widely used citationtion style globally. Required by most psychology, education, and social science programs. Seventh edition (2020) introduced DOI as hyperlink, up to 20 authors, and cleaner formatting rules.\n"
+      "description": "Bibliographic style profile for APA 7."
     },
     "chicago17_authordate": {
       "name": "Chicago 17 (Author-Date)",
-      "description": "Author-Date variant of Chicago, preferred in social sciences and economics. In-text citationtions use (Author Year) format. Required at UChicago social science programs and common in economics globally.\n"
+      "description": "Bibliographic style profile for Chicago 17 (Author-Date)."
     },
     "chicago17_notes": {
       "name": "Chicago 17 (Notes)",
@@ -2888,7 +2888,7 @@
     },
     "ieee": {
       "name": "IEEE",
-      "description": "Numeric style standard for engineering, computer science, and technology disciplines. References are numbered by order of citationtion. Widely adopted at MIT, Stanford, TU Delft, TU Munich, IIT Bombay, NUS, and virtually all engineering schools globally.\n"
+      "description": "Bibliographic style profile for IEEE."
     },
     "mhra": {
       "name": "MHRA",
@@ -2896,11 +2896,11 @@
     },
     "mla9": {
       "name": "MLA 9",
-      "description": "Standard for language, literature, and cultural studies in North America. Uses parenthetical author-page citationtions. Ninth edition (2021) simplified formatting rules and introduced more flexible source types.\n"
+      "description": "Standard for language, literature, and cultural studies in North America. Uses parenthetical author-page citations. Ninth edition (2021) simplified formatting rules and introduced more flexible source types.\n"
     },
     "vancouver": {
       "name": "Vancouver",
-      "description": "Numeric citationtion style mandatory for health sciences and medicine worldwide. References are numbered in order of appearance. Standard for most clinical and biomedical journals indexed in MEDLINE/PubMed.\n"
+      "description": "Bibliographic style profile for Vancouver."
     }
   }
 }

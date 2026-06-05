@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Omslag"
+          "title": "Omslag",
+          "guidance": "UNICAMP:s omslagssida ska innehalla: institutionens namn och logotyp, fakultet eller institut, avhandlingens fullstandiga titel, forfattarens namn, stad och ar. Folj ABNT NBR 14724:2011 och UNICAMP:s officiella mall."
         },
         "folha_rosto": {
-          "title": "Titelsida"
+          "title": "Titelsida",
+          "guidance": "Titelsidan (Folha de Rosto) innehaller: forfattarens namn, avhandlingens fullstandiga titel, en not om arbetets art och syfte, handledarens namn samt stad och inlamningsar. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Abstrakt"
+          "title": "Abstrakt",
+          "guidance": "Sammanfattning pa portugisiska (Resumo), upp till 500 ord (ABNT NBR 6028). Den ska vara sjalvstandig: inga citat och inga odefinierade forkortningar. Lagg till 3-5 nyckelord (Palavras-chave) i slutet."
         },
         "abstract": {
-          "title": "Abstrakt"
+          "title": "Abstrakt",
+          "guidance": "Engelsk oversattning av Resumo. Kravs av UNICAMP for master- och doktorsavhandlingar. Behall samma struktur och langd som Resumo. Lagg till 3-5 nyckelord i slutet."
         },
         "sumario": {
-          "title": "Innehållsförteckning"
+          "title": "Innehållsförteckning",
+          "guidance": "Genereras automatiskt. Ska folja formatet ABNT NBR 6027. Listar alla pretextuella delar (utom omslaget), kapitel, referenser och bilagor med exakta sidnummer."
         },
         "introducao": {
-          "title": "Introduktion"
+          "title": "Introduktion",
+          "guidance": "Presenterar forskningsproblemet, motiveringen, forskningsfragorna, malen och avhandlingens struktur. ABNT-citat: (FORFATTARE, ar)."
         },
         "capitulos": {
-          "title": "Kapitel"
+          "title": "Kapitel",
+          "guidance": "Avhandlingens centrala innehall. Dela upp det i tematiska kapitel: teoretiskt ramverk, metod, resultat och diskussion. Varje kapitel borjar pa en ny sida. Anvand ABNT-citeringsstil genomgaende."
         },
         "conclusao": {
-          "title": "Slutsats"
+          "title": "Slutsats",
+          "guidance": "Besvarar forskningsfragorna, sammanfattar bidragen, anger begransningar och foreslar framtida arbete. Inför inte ny information som inte diskuterats tidigare."
         },
         "referencias": {
-          "title": "Referenser"
+          "title": "Referenser",
+          "guidance": "Format ABNT NBR 6023:2018, alfabetisk ordning. Alla kallor som citeras i texten maste finnas har."
         }
       },
       "name": "UNICAMP - Avhandling (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Omslag"
+          "title": "Omslag",
+          "guidance": "USP:s omslagssida ska innehalla: institutionens namn och logotyp, fakultet eller institut, avhandlingens fullstandiga titel, forfattarens namn, stad och ar. Folj ABNT NBR 14724:2011 och USP/FFLCH:s officiella mall."
         },
         "folha_rosto": {
-          "title": "Titelsida"
+          "title": "Titelsida",
+          "guidance": "Titelsidan (Folha de Rosto) innehaller: forfattarens namn, avhandlingens fullstandiga titel, en not om arbetets art och syfte, handledarens namn samt stad och ar. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Abstrakt"
+          "title": "Abstrakt",
+          "guidance": "Sammanfattning pa portugisiska (Resumo), upp till 500 ord (ABNT NBR 6028). Den ska vara sjalvstandig: inga citat och inga odefinierade forkortningar. Lagg till 3-5 nyckelord (Palavras-chave) i slutet."
         },
         "abstract": {
-          "title": "Abstrakt"
+          "title": "Abstrakt",
+          "guidance": "Engelsk oversattning av Resumo. Kravs av USP for master- och doktorsavhandlingar. Behall samma struktur och langd som Resumo. Lagg till 3-5 nyckelord i slutet."
         },
         "sumario": {
-          "title": "Innehållsförteckning"
+          "title": "Innehållsförteckning",
+          "guidance": "Genereras automatiskt. Ska folja formatet ABNT NBR 6027. Listar alla pretextuella delar (utom omslaget), kapitel, referenser och bilagor med exakta sidnummer."
         },
         "introducao": {
-          "title": "Introduktion"
+          "title": "Introduktion",
+          "guidance": "Presenterar forskningsproblemet, motiveringen, forskningsfragorna, malen och avhandlingens struktur. ABNT-citat: (FORFATTARE, ar)."
         },
         "capitulos": {
-          "title": "Kapitel"
+          "title": "Kapitel",
+          "guidance": "Avhandlingens centrala innehall. Dela upp det i tematiska kapitel: teoretiskt ramverk, metod, resultat och diskussion. Varje kapitel borjar pa en ny sida. Anvand ABNT-citeringsstil genomgaende."
         },
         "conclusao": {
-          "title": "Slutsats"
+          "title": "Slutsats",
+          "guidance": "Besvarar forskningsfragorna, sammanfattar bidragen, anger begransningar och foreslar framtida arbete. Inför inte ny information som inte diskuterats tidigare."
         },
         "referencias": {
-          "title": "Referenser"
+          "title": "Referenser",
+          "guidance": "Format ABNT NBR 6023:2018, alfabetisk ordning. Alla kallor som citeras i texten maste finnas har."
         }
       },
       "name": "USP - Avhandling (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografi APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Hälsovetenskap (IMRaD)",
+      "description": "IMRaD-struktur för klinisk och biomedicinsk forskning. Vancouver-stil bibliografi. Idealisk för avhandlingar inom medicin, omvårdnad och hälsovetenskap."
+    },
+    "apa.basic": {
+      "name": "APA Grundläggande",
+      "description": "Förenklad profil för akademiskt arbete med strikt APA 7-stil. Idealisk för rapporter, uppsatser och korta artiklar."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Humaniora",
+      "description": "Avhandlingar i humaniora, samhällsvetenskap och konst med Chicago Notes-Bibliografi stil (17:e uppl.) / Turabian 9:e uppl. Citat visas i numrerade fotnoter. Alfabetiskt ordnad bibliografi i slutet. Vanligt i filosofi, historia, litteratur, samhällsvetenskap och juridik."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Fysik och Matematik",
+      "description": "Kandidat- och masteruppsatser från IPN:s Högre skola för fysik och matematik. Optimerad för matematiskt täta arbeten: satser, bevis, ekvationer. APA eller numerisk citeringsstil beroende på område."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Forskarutbildning i teknik och naturvetenskap",
+      "description": "Avhandlingar från IPN:s sektion för forskarutbildning och forskning. IPN-format med IEEE-bibliografi för teknik eller APA för naturvetenskap. Legal paper, IPN-specifika marginaler."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Bioteknologi",
+      "description": "Avhandlingar från IPN:s Interdisciplinära Yrkesmässiga Enhet för Bioteknologi. Inriktad på biokemi, mikrobiologi, bioprocessteknik, bioinformatik och miljöbioteknik. APA eller Vancouver-bibliografi beroende på område."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Avancerade Teknologier",
+      "description": "Avhandlingar från IPN:s Interdisciplinära Yrkesmässiga Enhet för Avancerade Teknologier. Inriktad på mekatronik, intelligenta system, automatisering och framväxande teknologier. IEEE-bibliografi."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Forskarutbildning",
+      "description": "Masteruppsatser och doktorsavhandlingar från UNAM. Baserat på riktlinjerna från Koordineringen för forskarutbildning (CEP-UNAM). APA 7, XeLaTeX, legal pappersformat."
     }
   },
   "institutions": {

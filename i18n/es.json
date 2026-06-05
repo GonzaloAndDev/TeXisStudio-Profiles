@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Capa"
+          "title": "Capa",
+          "guidance": "La portada de UNICAMP debe incluir: nombre y logotipo de la institución, facultad o instituto, título completo de la tesis, nombre del autor, ciudad y año. Sigue la norma ABNT NBR 14724:2011 y la plantilla oficial de UNICAMP."
         },
         "folha_rosto": {
-          "title": "Folha de Rosto"
+          "title": "Folha de Rosto",
+          "guidance": "La hoja de rosto incluye: nombre del autor, título completo de la tesis, una nota que indique la naturaleza y el objetivo del trabajo, el nombre del profesor orientador, y la ciudad y año de entrega. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Resumo"
+          "title": "Resumo",
+          "guidance": "Resumen en portugués (Resumo), de hasta 500 palabras (ABNT NBR 6028). Debe ser autónomo: sin citas ni abreviaturas no definidas. Incluye de 3 a 5 palabras clave (Palavras-chave) al final."
         },
         "abstract": {
-          "title": "Resumen"
+          "title": "Resumen",
+          "guidance": "Traducción al inglés del Resumo. UNICAMP la exige para disertaciones y tesis doctorales. Mantén la misma estructura y extensión que el Resumo. Incluye de 3 a 5 palabras clave al final."
         },
         "sumario": {
-          "title": "Sumario"
+          "title": "Sumario",
+          "guidance": "Se genera automáticamente. Debe seguir el formato ABNT NBR 6027. Enumera todos los elementos pretextuales (excepto la portada), capítulos, referencias y anexos con números de página exactos."
         },
         "introducao": {
-          "title": "Introducao"
+          "title": "Introducao",
+          "guidance": "Presenta el problema de investigación, la justificación, las preguntas de investigación, los objetivos y la estructura de la disertación. Citas ABNT: (AUTOR, año)."
         },
         "capitulos": {
-          "title": "Capitulos"
+          "title": "Capitulos",
+          "guidance": "Contenido central de la disertación. Divídelo en capítulos temáticos: marco teórico, metodología, resultados y discusión. Cada capítulo comienza en una página nueva. Usa el estilo de citación ABNT en todo el texto."
         },
         "conclusao": {
-          "title": "Conclusao"
+          "title": "Conclusao",
+          "guidance": "Responde las preguntas de investigación, resume las contribuciones, señala las limitaciones y propone trabajo futuro. No introduzcas información nueva que no se haya discutido antes."
         },
         "referencias": {
-          "title": "Referencias"
+          "title": "Referencias",
+          "guidance": "Formato ABNT NBR 6023:2018, en orden alfabético. Todas las fuentes citadas en el texto deben aparecer aquí."
         }
       },
       "name": "UNICAMP - Dissertacao (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Capa"
+          "title": "Capa",
+          "guidance": "La portada de la USP debe incluir: nombre y logotipo de la institución, facultad o instituto, título completo de la tesis, nombre del autor, ciudad y año. Sigue la norma ABNT NBR 14724:2011 y la plantilla oficial de USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Folha de Rosto"
+          "title": "Folha de Rosto",
+          "guidance": "La hoja de rosto incluye: nombre del autor, título completo de la tesis, una nota con la naturaleza y el objetivo del trabajo, el nombre del profesor orientador, y la ciudad y año. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Resumo"
+          "title": "Resumo",
+          "guidance": "Resumen en portugués (Resumo), de hasta 500 palabras (ABNT NBR 6028). Debe ser autónomo: sin citas ni abreviaturas no definidas. Incluye de 3 a 5 palabras clave (Palavras-chave) al final."
         },
         "abstract": {
-          "title": "Resumen"
+          "title": "Resumen",
+          "guidance": "Traducción al inglés del Resumo. La USP la exige para disertaciones y tesis doctorales. Mantén la misma estructura y extensión que el Resumo. Incluye de 3 a 5 palabras clave al final."
         },
         "sumario": {
-          "title": "Sumario"
+          "title": "Sumario",
+          "guidance": "Se genera automáticamente. Debe seguir el formato ABNT NBR 6027. Enumera todos los elementos pretextuales (excepto la portada), capítulos, referencias y anexos con números de página exactos."
         },
         "introducao": {
-          "title": "Introducao"
+          "title": "Introducao",
+          "guidance": "Presenta el problema de investigación, la justificación, las preguntas de investigación, los objetivos y la estructura de la disertación. Citas ABNT: (AUTOR, año)."
         },
         "capitulos": {
-          "title": "Capitulos"
+          "title": "Capitulos",
+          "guidance": "Contenido central de la disertación. Divídelo en capítulos temáticos: marco teórico, metodología, resultados y discusión. Cada capítulo comienza en una página nueva. Usa el estilo de citación ABNT en todo el texto."
         },
         "conclusao": {
-          "title": "Conclusao"
+          "title": "Conclusao",
+          "guidance": "Responde las preguntas de investigación, resume las contribuciones, señala las limitaciones y propone trabajo futuro. No introduzcas información nueva que no se haya discutido antes."
         },
         "referencias": {
-          "title": "Referencias"
+          "title": "Referencias",
+          "guidance": "Formato ABNT NBR 6023:2018, en orden alfabético. Todas las fuentes citadas en el texto deben aparecer aquí."
         }
       },
       "name": "USP - Dissertacao (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografía APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Ciencias de la salud (IMRyD)",
+      "description": "Estructura IMRyD para investigación clínica y biomédica. Bibliografía estilo Vancouver. Ideal para tesis de medicina, enfermería y ciencias de la salud."
+    },
+    "apa.basic": {
+      "name": "APA básico",
+      "description": "Perfil simplificado para trabajos académicos con estilo APA 7 estricto. Ideal para reportes, ensayos y artículos cortos."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Humanidades",
+      "description": "Tesis y disertaciones en humanidades, ciencias sociales y artes con estilo Chicago Notes-Bibliography (17ª ed.) / Turabian 9ª ed. Las citas van en notas al pie de página numeradas, no entre paréntesis. Bibliografía al final ordenada alfabéticamente. Muy usado en filosofía, historia, literatura, ciencias sociales y derecho."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Física y Matemáticas",
+      "description": "Tesis de licenciatura y posgrado de la Escuela Superior de Física y Matemáticas del IPN. Optimizado para trabajos con alta densidad matemática: teoremas, demostraciones, ecuaciones. Estilo APA o numérico según el área."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Posgrado en Ingeniería y Ciencias",
+      "description": "Tesis de la Sección de Estudios de Posgrado e Investigación del IPN. Formato IPN con bibliografía IEEE para ingeniería o APA para ciencias. Papel oficio, márgenes específicos IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotecnología",
+      "description": "Tesis de la Unidad Profesional Interdisciplinaria de Biotecnología del IPN. Orientado a bioquímica, microbiología, ingeniería de bioprocesos, bioinformática y biotecnología ambiental. Bibliografía APA o Vancouver según el área."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Tecnologías Avanzadas",
+      "description": "Tesis de la Unidad Profesional Interdisciplinaria de Tecnologías Avanzadas del IPN. Orientado a mecatrónica, sistemas inteligentes, automatización y tecnologías emergentes. Bibliografía IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Posgrado",
+      "description": "Tesis y disertaciones de posgrado de la UNAM. Basado en las directrices de la Coordinación de Estudios de Posgrado (CEP-UNAM). APA 7, XeLaTeX, formato oficio."
     }
   },
   "institutions": {

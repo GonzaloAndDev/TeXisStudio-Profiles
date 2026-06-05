@@ -2969,6 +2969,38 @@
         }
       },
       "meta": "Bibliography APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Health Sciences (IMRaD)",
+      "description": "IMRaD structure for clinical and biomedical research. Vancouver-style bibliography. Ideal for theses in medicine, nursing, and health sciences."
+    },
+    "apa.basic": {
+      "name": "APA Basic",
+      "description": "Simplified profile for academic work with strict APA 7 style. Ideal for reports, essays, and short articles."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Humanities",
+      "description": "Theses and dissertations in humanities, social sciences, and arts using Chicago Notes-Bibliography style (17th ed.) / Turabian 9th ed. Citations appear in numbered footnotes, not parenthetical references. Alphabetically ordered bibliography at the end. Widely used in philosophy, history, literature, social sciences, and law."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Physics and Mathematics",
+      "description": "Undergraduate and graduate theses from the IPN School of Physics and Mathematics. Optimized for math-dense work: theorems, proofs, equations. APA or numeric citation style depending on the area."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Graduate Studies in Engineering and Sciences",
+      "description": "Theses from the IPN Graduate and Research Studies Section. IPN format with IEEE bibliography for engineering or APA for sciences. Legal paper, IPN-specific margins."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotechnology",
+      "description": "Theses from the IPN Interdisciplinary Professional Unit of Biotechnology. Focused on biochemistry, microbiology, bioprocess engineering, bioinformatics, and environmental biotechnology. APA or Vancouver bibliography depending on the area."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Advanced Technologies",
+      "description": "Theses from the IPN Interdisciplinary Professional Unit of Advanced Technologies. Focused on mechatronics, intelligent systems, automation, and emerging technologies. IEEE bibliography."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Graduate",
+      "description": "Graduate theses and dissertations from UNAM. Based on the guidelines of the Graduate Studies Coordination (CEP-UNAM). APA 7, XeLaTeX, legal paper format."
     }
   },
   "institutions": {

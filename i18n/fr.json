@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Couverture"
+          "title": "Couverture",
+          "guidance": "La page de couverture de l'UNICAMP doit inclure : le nom et le logo de l'institution, la faculté ou l'institut, le titre complet de la thèse, le nom de l'auteur, la ville et l'année. Suivez la norme ABNT NBR 14724:2011 et le modèle officiel de l'UNICAMP."
         },
         "folha_rosto": {
-          "title": "Page de titre"
+          "title": "Page de titre",
+          "guidance": "La page de titre (Folha de Rosto) comprend : le nom de l'auteur, le titre complet de la thèse, une note indiquant la nature et l'objectif du travail, le nom du directeur de recherche, ainsi que la ville et l'année de dépôt. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Résumé"
+          "title": "Résumé",
+          "guidance": "Résumé en portugais (Resumo), jusqu'à 500 mots (ABNT NBR 6028). Il doit être autonome : sans citations ni abréviations non définies. Ajoutez 3 à 5 mots-clés (Palavras-chave) à la fin."
         },
         "abstract": {
-          "title": "Résumé"
+          "title": "Résumé",
+          "guidance": "Traduction anglaise du Resumo. Elle est requise par l'UNICAMP pour les mémoires et thèses de doctorat. Gardez la même structure et la même longueur que le Resumo. Ajoutez 3 à 5 mots-clés à la fin."
         },
         "sumario": {
-          "title": "Table des matières"
+          "title": "Table des matières",
+          "guidance": "Généré automatiquement. Doit suivre le format ABNT NBR 6027. Liste tous les éléments prétextuels (sauf la couverture), les chapitres, les références et les annexes avec des numéros de page exacts."
         },
         "introducao": {
-          "title": "Présentation"
+          "title": "Présentation",
+          "guidance": "Présente le problème de recherche, la justification, les questions de recherche, les objectifs et la structure du mémoire. Citations ABNT : (AUTEUR, année)."
         },
         "capitulos": {
-          "title": "Chapitres"
+          "title": "Chapitres",
+          "guidance": "Contenu principal du mémoire. Divisez-le en chapitres thématiques : cadre théorique, méthodologie, résultats et discussion. Chaque chapitre commence sur une nouvelle page. Utilisez le style de citation ABNT partout."
         },
         "conclusao": {
-          "title": "Conclusion"
+          "title": "Conclusion",
+          "guidance": "Répond aux questions de recherche, résume les contributions, indique les limites et propose des travaux futurs. N'ajoutez pas d'information nouvelle qui n'a pas été discutée auparavant."
         },
         "referencias": {
-          "title": "Références"
+          "title": "Références",
+          "guidance": "Format ABNT NBR 6023:2018, par ordre alphabétique. Toutes les sources citées dans le texte doivent apparaître ici."
         }
       },
       "name": "UNICAMP - Thèse (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Couverture"
+          "title": "Couverture",
+          "guidance": "La page de couverture de l'USP doit inclure : le nom et le logo de l'institution, la faculté ou l'institut, le titre complet de la thèse, le nom de l'auteur, la ville et l'année. Suivez la norme ABNT NBR 14724:2011 et le modèle officiel USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Page de titre"
+          "title": "Page de titre",
+          "guidance": "La page de titre (Folha de Rosto) comprend : le nom de l'auteur, le titre complet de la thèse, une note précisant la nature et l'objectif du travail, le nom du directeur de recherche, ainsi que la ville et l'année. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Résumé"
+          "title": "Résumé",
+          "guidance": "Résumé en portugais (Resumo), jusqu'à 500 mots (ABNT NBR 6028). Il doit être autonome : sans citations ni abréviations non définies. Ajoutez 3 à 5 mots-clés (Palavras-chave) à la fin."
         },
         "abstract": {
-          "title": "Résumé"
+          "title": "Résumé",
+          "guidance": "Traduction anglaise du Resumo. Elle est requise par l'USP pour les mémoires et thèses de doctorat. Gardez la même structure et la même longueur que le Resumo. Ajoutez 3 à 5 mots-clés à la fin."
         },
         "sumario": {
-          "title": "Table des matières"
+          "title": "Table des matières",
+          "guidance": "Généré automatiquement. Doit suivre le format ABNT NBR 6027. Liste tous les éléments prétextuels (sauf la couverture), les chapitres, les références et les annexes avec des numéros de page exacts."
         },
         "introducao": {
-          "title": "Présentation"
+          "title": "Présentation",
+          "guidance": "Présente le problème de recherche, la justification, les questions de recherche, les objectifs et la structure du mémoire. Citations ABNT : (AUTEUR, année)."
         },
         "capitulos": {
-          "title": "Chapitres"
+          "title": "Chapitres",
+          "guidance": "Contenu principal du mémoire. Divisez-le en chapitres thématiques : cadre théorique, méthodologie, résultats et discussion. Chaque chapitre commence sur une nouvelle page. Utilisez le style de citation ABNT partout."
         },
         "conclusao": {
-          "title": "Conclusion"
+          "title": "Conclusion",
+          "guidance": "Répond aux questions de recherche, résume les contributions, indique les limites et propose des travaux futurs. N'ajoutez pas d'information nouvelle qui n'a pas été discutée auparavant."
         },
         "referencias": {
-          "title": "Références"
+          "title": "Références",
+          "guidance": "Format ABNT NBR 6023:2018, par ordre alphabétique. Toutes les sources citées dans le texte doivent apparaître ici."
         }
       },
       "name": "USP - Thèse (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliographie APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Sciences de la santé (IMRaD)",
+      "description": "Structure IMRaD pour la recherche clinique et biomédicale. Bibliographie style Vancouver. Idéal pour les thèses en médecine, soins infirmiers et sciences de la santé."
+    },
+    "apa.basic": {
+      "name": "APA de base",
+      "description": "Profil simplifié pour les travaux académiques avec le style APA 7 strict. Idéal pour les rapports, dissertations et articles courts."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Humanités",
+      "description": "Thèses et mémoires en sciences humaines, sociales et arts selon le style Chicago Notes-Bibliographie (17e éd.) / Turabian 9e éd. Les citations apparaissent en notes de bas de page numérotées. Bibliographie alphabétique à la fin. Très utilisé en philosophie, histoire, littérature, sciences sociales et droit."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Physique et Mathématiques",
+      "description": "Thèses de licence et de master de l'École supérieure de physique et de mathématiques de l'IPN. Optimisé pour les travaux à haute densité mathématique : théorèmes, démonstrations, équations. Style APA ou numérique selon le domaine."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Études supérieures en ingénierie et sciences",
+      "description": "Thèses de la Section des études supérieures et de la recherche de l'IPN. Format IPN avec bibliographie IEEE pour l'ingénierie ou APA pour les sciences. Papier légal, marges spécifiques IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotechnologie",
+      "description": "Thèses de l'Unité Professionnelle Interdisciplinaire de Biotechnologie de l'IPN. Orienté vers la biochimie, la microbiologie, le génie des bioprocédés, la bioinformatique et la biotechnologie environnementale. Bibliographie APA ou Vancouver selon le domaine."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Technologies Avancées",
+      "description": "Thèses de l'Unité Professionnelle Interdisciplinaire de Technologies Avancées de l'IPN. Orienté vers la mécatronique, les systèmes intelligents, l'automatisation et les technologies émergentes. Bibliographie IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Études supérieures",
+      "description": "Thèses et dissertations de master et doctorat de l'UNAM. Basé sur les directives de la Coordination des études supérieures (CEP-UNAM). APA 7, XeLaTeX, format papier légal."
     }
   },
   "institutions": {

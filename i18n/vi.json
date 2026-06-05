@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Bìa"
+          "title": "Bìa",
+          "guidance": "Trang bia UNICAMP phai co: ten va logo cua co so, khoa hoac vien, tieu de day du cua luan van, ten tac gia, thanh pho va nam. Tuan theo ABNT NBR 14724:2011 va mau chinh thuc cua UNICAMP."
         },
         "folha_rosto": {
-          "title": "Trang tiêu đề"
+          "title": "Trang tiêu đề",
+          "guidance": "Trang tieu de (Folha de Rosto) gom: ten tac gia, tieu de day du cua luan van, ghi chu ve tinh chat va muc tieu cua cong trinh, ten giao su huong dan, thanh pho va nam nop. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Tóm tắt"
+          "title": "Tóm tắt",
+          "guidance": "Tom tat bang tieng Bo Dao Nha (Resumo), toi da 500 tu (ABNT NBR 6028). Phai doc doc lap: khong trich dan, khong viet tat chua dinh nghia. Them 3-5 tu khoa (Palavras-chave) o cuoi."
         },
         "abstract": {
-          "title": "Tóm tắt"
+          "title": "Tóm tắt",
+          "guidance": "Ban dich tieng Anh cua Resumo. UNICAMP yeu cau cho luan van va luan an tien si. Giu cung cau truc va do dai nhu Resumo. Them 3-5 tu khoa o cuoi."
         },
         "sumario": {
-          "title": "Mục lục"
+          "title": "Mục lục",
+          "guidance": "Duoc tao tu dong. Phai theo dinh dang ABNT NBR 6027. Liet ke moi phan truoc van ban (tru bia), chuong, tai lieu tham khao va phu luc voi so trang chinh xac."
         },
         "introducao": {
-          "title": "Giới thiệu"
+          "title": "Giới thiệu",
+          "guidance": "Trinh bay van de nghien cuu, ly do, cau hoi nghien cuu, muc tieu va cau truc cua luan van. Trich dan ABNT: (TAC GIA, nam)."
         },
         "capitulos": {
-          "title": "Chương"
+          "title": "Chương",
+          "guidance": "Noi dung cot loi cua luan van. Chia thanh cac chuong theo chu de: co so ly thuyet, phuong phap, ket qua va thao luan. Moi chuong bat dau tren trang moi. Su dung kieu trich dan ABNT xuyen suot."
         },
         "conclusao": {
-          "title": "Kết luận"
+          "title": "Kết luận",
+          "guidance": "Tra loi cau hoi nghien cuu, tom tat dong gop, neu gioi han va de xuat huong nghien cuu tiep theo. Khong dua thong tin moi chua duoc thao luan truoc do."
         },
         "referencias": {
-          "title": "Tài liệu tham khảo"
+          "title": "Tài liệu tham khảo",
+          "guidance": "Dinh dang ABNT NBR 6023:2018, theo thu tu chu cai. Moi nguon duoc trich dan trong van ban phai xuat hien tai day."
         }
       },
       "name": "UNICAMP - Luận văn (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Bìa"
+          "title": "Bìa",
+          "guidance": "Trang bia USP phai co: ten va logo cua co so, khoa hoac vien, tieu de day du cua luan van, ten tac gia, thanh pho va nam. Tuan theo ABNT NBR 14724:2011 va mau chinh thuc USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Trang tiêu đề"
+          "title": "Trang tiêu đề",
+          "guidance": "Trang tieu de (Folha de Rosto) gom: ten tac gia, tieu de day du cua luan van, ghi chu ve tinh chat va muc tieu cua cong trinh, ten giao su huong dan, thanh pho va nam. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Tóm tắt"
+          "title": "Tóm tắt",
+          "guidance": "Tom tat bang tieng Bo Dao Nha (Resumo), toi da 500 tu (ABNT NBR 6028). Phai doc doc lap: khong trich dan, khong viet tat chua dinh nghia. Them 3-5 tu khoa (Palavras-chave) o cuoi."
         },
         "abstract": {
-          "title": "Tóm tắt"
+          "title": "Tóm tắt",
+          "guidance": "Ban dich tieng Anh cua Resumo. USP yeu cau cho luan van va luan an tien si. Giu cung cau truc va do dai nhu Resumo. Them 3-5 tu khoa o cuoi."
         },
         "sumario": {
-          "title": "Mục lục"
+          "title": "Mục lục",
+          "guidance": "Duoc tao tu dong. Phai theo dinh dang ABNT NBR 6027. Liet ke moi phan truoc van ban (tru bia), chuong, tai lieu tham khao va phu luc voi so trang chinh xac."
         },
         "introducao": {
-          "title": "Giới thiệu"
+          "title": "Giới thiệu",
+          "guidance": "Trinh bay van de nghien cuu, ly do, cau hoi nghien cuu, muc tieu va cau truc cua luan van. Trich dan ABNT: (TAC GIA, nam)."
         },
         "capitulos": {
-          "title": "Chương"
+          "title": "Chương",
+          "guidance": "Noi dung cot loi cua luan van. Chia thanh cac chuong theo chu de: co so ly thuyet, phuong phap, ket qua va thao luan. Moi chuong bat dau tren trang moi. Su dung kieu trich dan ABNT xuyen suot."
         },
         "conclusao": {
-          "title": "Kết luận"
+          "title": "Kết luận",
+          "guidance": "Tra loi cau hoi nghien cuu, tom tat dong gop, neu gioi han va de xuat huong nghien cuu tiep theo. Khong dua thong tin moi chua duoc thao luan truoc do."
         },
         "referencias": {
-          "title": "Tài liệu tham khảo"
+          "title": "Tài liệu tham khảo",
+          "guidance": "Dinh dang ABNT NBR 6023:2018, theo thu tu chu cai. Moi nguon duoc trich dan trong van ban phai xuat hien tai day."
         }
       },
       "name": "USP - Luận văn (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Thư mục APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Khoa học Sức khỏe (IMRaD)",
+      "description": "Cấu trúc IMRaD cho nghiên cứu lâm sàng và y sinh. Tài liệu tham khảo theo phong cách Vancouver. Lý tưởng cho luận văn y khoa, điều dưỡng và khoa học sức khỏe."
+    },
+    "apa.basic": {
+      "name": "APA Cơ bản",
+      "description": "Hồ sơ đơn giản hóa cho công việc học thuật theo chuẩn APA 7 nghiêm ngặt. Lý tưởng cho báo cáo, bài luận và bài viết ngắn."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Nhân văn",
+      "description": "Luận văn và luận án trong nhân văn, khoa học xã hội và nghệ thuật theo phong cách Chicago Ghi chú-Thư mục (lần 17) / Turabian lần 9. Trích dẫn xuất hiện trong chú thích cuối trang được đánh số. Thư mục được sắp xếp theo thứ tự bảng chữ cái ở cuối. Phổ biến trong triết học, lịch sử, văn học, khoa học xã hội và luật."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Vật lý và Toán học",
+      "description": "Luận văn đại học và sau đại học từ Trường Cao đẳng Vật lý và Toán học IPN. Tối ưu hóa cho công việc có mật độ toán học cao: định lý, chứng minh, phương trình. Phong cách trích dẫn APA hoặc số tùy theo lĩnh vực."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Cao học Kỹ thuật và Khoa học",
+      "description": "Luận văn từ Bộ phận Nghiên cứu Sau đại học IPN. Định dạng IPN với tài liệu tham khảo IEEE cho kỹ thuật hoặc APA cho khoa học. Giấy legal, lề đặc thù IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Công nghệ sinh học",
+      "description": "Luận văn từ Đơn vị Chuyên nghiệp Liên ngành Công nghệ sinh học IPN. Tập trung vào sinh hóa, vi sinh vật học, kỹ thuật sinh học, tin sinh học và công nghệ sinh học môi trường. Tài liệu tham khảo APA hoặc Vancouver tùy theo lĩnh vực."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Công nghệ Tiên tiến",
+      "description": "Luận văn từ Đơn vị Chuyên nghiệp Liên ngành Công nghệ Tiên tiến IPN. Tập trung vào cơ điện tử, hệ thống thông minh, tự động hóa và công nghệ mới nổi. Tài liệu tham khảo IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Sau đại học",
+      "description": "Luận văn thạc sĩ và tiến sĩ từ UNAM. Dựa trên hướng dẫn của Ban Điều phối Nghiên cứu Sau đại học (CEP-UNAM). APA 7, XeLaTeX, định dạng giấy legal."
     }
   },
   "institutions": {

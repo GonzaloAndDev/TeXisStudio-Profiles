@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Okładka"
+          "title": "Okładka",
+          "guidance": "Strona tytulowa UNICAMP musi zawierac: nazwe i logo instytucji, wydzial lub instytut, pelny tytul pracy, imie i nazwisko autora, miasto i rok. Stosuj norme ABNT NBR 14724:2011 oraz oficjalny szablon UNICAMP."
         },
         "folha_rosto": {
-          "title": "Strona tytułowa"
+          "title": "Strona tytułowa",
+          "guidance": "Karta tytulowa (Folha de Rosto) zawiera: imie i nazwisko autora, pelny tytul pracy, note okreslajaca charakter i cel pracy, nazwisko promotora oraz miasto i rok zlozenia. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Streszczenie"
+          "title": "Streszczenie",
+          "guidance": "Streszczenie po portugalsku (Resumo), do 500 slow (ABNT NBR 6028). Musi byc samodzielne: bez cytowan i niezdefiniowanych skrotow. Na koncu dodaj 3-5 slow kluczowych (Palavras-chave)."
         },
         "abstract": {
-          "title": "Streszczenie"
+          "title": "Streszczenie",
+          "guidance": "Angielskie tlumaczenie Resumo. Wymagane przez UNICAMP dla rozpraw magisterskich i doktorskich. Zachowaj taka sama strukture i dlugosc jak w Resumo. Na koncu dodaj 3-5 slow kluczowych."
         },
         "sumario": {
-          "title": "Spis treści"
+          "title": "Spis treści",
+          "guidance": "Generowane automatycznie. Musi byc zgodne z formatem ABNT NBR 6027. Wymienia wszystkie elementy wstepne (oprocz okladki), rozdzialy, bibliografie i zalaczniki z dokladnymi numerami stron."
         },
         "introducao": {
-          "title": "Wprowadzenie"
+          "title": "Wprowadzenie",
+          "guidance": "Przedstawia problem badawczy, uzasadnienie, pytania badawcze, cele i strukture rozprawy. Cytowania ABNT: (AUTOR, rok)."
         },
         "capitulos": {
-          "title": "Rozdziały"
+          "title": "Rozdziały",
+          "guidance": "Glowna tresc rozprawy. Podziel ja na rozdzialy tematyczne: ramy teoretyczne, metodologia, wyniki i dyskusja. Kazdy rozdzial zaczyna sie na nowej stronie. W calym tekscie stosuj styl cytowan ABNT."
         },
         "conclusao": {
-          "title": "Wniosek"
+          "title": "Wniosek",
+          "guidance": "Odpowiada na pytania badawcze, podsumowuje wklady, wskazuje ograniczenia i proponuje dalsze prace. Nie wprowadzaj nowych informacji, ktore nie byly wczesniej omowione."
         },
         "referencias": {
-          "title": "Odniesienia"
+          "title": "Odniesienia",
+          "guidance": "Format ABNT NBR 6023:2018, kolejnosc alfabetyczna. Wszystkie zrodla cytowane w tekscie musza pojawic sie tutaj."
         }
       },
       "name": "UNICAMP - Rozprawa doktorska (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Okładka"
+          "title": "Okładka",
+          "guidance": "Strona tytulowa USP musi zawierac: nazwe i logo instytucji, wydzial lub instytut, pelny tytul pracy, imie i nazwisko autora, miasto i rok. Stosuj ABNT NBR 14724:2011 oraz oficjalny szablon USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Strona tytułowa"
+          "title": "Strona tytułowa",
+          "guidance": "Karta tytulowa (Folha de Rosto) zawiera: imie i nazwisko autora, pelny tytul pracy, note okreslajaca charakter i cel pracy, nazwisko promotora oraz miasto i rok. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Streszczenie"
+          "title": "Streszczenie",
+          "guidance": "Streszczenie po portugalsku (Resumo), do 500 slow (ABNT NBR 6028). Musi byc samodzielne: bez cytowan i niezdefiniowanych skrotow. Na koncu dodaj 3-5 slow kluczowych (Palavras-chave)."
         },
         "abstract": {
-          "title": "Streszczenie"
+          "title": "Streszczenie",
+          "guidance": "Angielskie tlumaczenie Resumo. Wymagane przez USP dla rozpraw magisterskich i doktorskich. Zachowaj taka sama strukture i dlugosc jak w Resumo. Na koncu dodaj 3-5 slow kluczowych."
         },
         "sumario": {
-          "title": "Spis treści"
+          "title": "Spis treści",
+          "guidance": "Generowane automatycznie. Musi byc zgodne z formatem ABNT NBR 6027. Wymienia wszystkie elementy wstepne (oprocz okladki), rozdzialy, bibliografie i zalaczniki z dokladnymi numerami stron."
         },
         "introducao": {
-          "title": "Wprowadzenie"
+          "title": "Wprowadzenie",
+          "guidance": "Przedstawia problem badawczy, uzasadnienie, pytania badawcze, cele i strukture rozprawy. Cytowania ABNT: (AUTOR, rok)."
         },
         "capitulos": {
-          "title": "Rozdziały"
+          "title": "Rozdziały",
+          "guidance": "Glowna tresc rozprawy. Podziel ja na rozdzialy tematyczne: ramy teoretyczne, metodologia, wyniki i dyskusja. Kazdy rozdzial zaczyna sie na nowej stronie. W calym tekscie stosuj styl cytowan ABNT."
         },
         "conclusao": {
-          "title": "Wniosek"
+          "title": "Wniosek",
+          "guidance": "Odpowiada na pytania badawcze, podsumowuje wklady, wskazuje ograniczenia i proponuje dalsze prace. Nie wprowadzaj nowych informacji, ktore nie byly wczesniej omowione."
         },
         "referencias": {
-          "title": "Odniesienia"
+          "title": "Odniesienia",
+          "guidance": "Format ABNT NBR 6023:2018, kolejnosc alfabetyczna. Wszystkie zrodla cytowane w tekscie musza pojawic sie tutaj."
         }
       },
       "name": "USP - Rozprawa doktorska (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografia APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Nauki o zdrowiu (IMRaD)",
+      "description": "Struktura IMRaD dla badań klinicznych i biomedycznych. Bibliografia w stylu Vancouver. Idealna dla prac dyplomowych z medycyny, pielęgniarstwa i nauk o zdrowiu."
+    },
+    "apa.basic": {
+      "name": "APA Podstawowe",
+      "description": "Uproszczony profil do prac akademickich w ścisłym stylu APA 7. Idealny do raportów, esejów i krótkich artykułów."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Humanistyka",
+      "description": "Prace dyplomowe z nauk humanistycznych, społecznych i sztuki w stylu Chicago Notes-Bibliografia (17. wyd.) / Turabian 9. wyd. Cytaty pojawiają się w ponumerowanych przypisach dolnych. Alfabetycznie porządkowana bibliografia na końcu. Popularne w filozofii, historii, literaturze, naukach społecznych i prawie."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Fizyka i Matematyka",
+      "description": "Prace licencjackie i magisterskie Wyższej Szkoły Fizyki i Matematyki IPN. Zoptymalizowane do prac o dużej gęstości matematycznej: twierdzenia, dowody, równania. Styl APA lub numeryczny w zależności od dziedziny."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Studia podyplomowe z Inżynierii i Nauk",
+      "description": "Prace dyplomowe Sekcji Studiów Podyplomowych i Badań IPN. Format IPN z bibliografią IEEE dla inżynierii lub APA dla nauk. Papier legal, marginesy właściwe IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotechnologia",
+      "description": "Prace dyplomowe Interdyscyplinarnej Jednostki Zawodowej ds. Biotechnologii IPN. Ukierunkowane na biochemię, mikrobiologię, inżynierię bioprocesów, bioinformatykę i biotechnologię środowiskową. Bibliografia APA lub Vancouver w zależności od dziedziny."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Zaawansowane Technologie",
+      "description": "Prace dyplomowe Interdyscyplinarnej Jednostki Zawodowej ds. Zaawansowanych Technologii IPN. Ukierunkowane na mechatronikę, inteligentne systemy, automatyzację i technologie wschodzące. Bibliografia IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Studia podyplomowe",
+      "description": "Prace magisterskie i doktorskie UNAM. Oparte na wytycznych Koordynacji Studiów Podyplomowych (CEP-UNAM). APA 7, XeLaTeX, format papieru legal."
     }
   },
   "institutions": {

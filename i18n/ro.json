@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Copertă"
+          "title": "Copertă",
+          "guidance": "Coperta UNICAMP trebuie sa includa: numele si sigla institutiei, facultatea sau institutul, titlul complet al tezei, numele autorului, orasul si anul. Respectati standardul ABNT NBR 14724:2011 si modelul oficial UNICAMP."
         },
         "folha_rosto": {
-          "title": "Pagina de titlu"
+          "title": "Pagina de titlu",
+          "guidance": "Pagina de titlu (Folha de Rosto) include: numele autorului, titlul complet al tezei, o nota privind natura si obiectivul lucrarii, numele profesorului coordonator, orasul si anul depunerii. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Rezumat"
+          "title": "Rezumat",
+          "guidance": "Rezumat in portugheza (Resumo), pana la 500 de cuvinte (ABNT NBR 6028). Trebuie sa fie autonom: fara citari si fara abrevieri nedefinite. Adaugati 3-5 cuvinte-cheie (Palavras-chave) la final."
         },
         "abstract": {
-          "title": "Rezumat"
+          "title": "Rezumat",
+          "guidance": "Traducerea in engleza a Resumo. Este ceruta de UNICAMP pentru disertatii si teze de doctorat. Pastrati aceeasi structura si lungime ca Resumo. Adaugati 3-5 cuvinte-cheie la final."
         },
         "sumario": {
-          "title": "Cuprins"
+          "title": "Cuprins",
+          "guidance": "Generat automat. Trebuie sa urmeze formatul ABNT NBR 6027. Listeaza toate elementele pretextuale (cu exceptia copertii), capitolele, referintele si anexele cu numere exacte de pagina."
         },
         "introducao": {
-          "title": "Introducere"
+          "title": "Introducere",
+          "guidance": "Prezinta problema de cercetare, justificarea, intrebarile de cercetare, obiectivele si structura disertatiei. Citari ABNT: (AUTOR, an)."
         },
         "capitulos": {
-          "title": "Capitole"
+          "title": "Capitole",
+          "guidance": "Continutul central al disertatiei. Impartiti-l in capitole tematice: cadru teoretic, metodologie, rezultate si discutie. Fiecare capitol incepe pe o pagina noua. Folositi stilul de citare ABNT peste tot."
         },
         "conclusao": {
-          "title": "Concluzie"
+          "title": "Concluzie",
+          "guidance": "Raspunde la intrebarile de cercetare, rezuma contributiile, mentioneaza limitarile si propune lucrari viitoare. Nu introduceti informatii noi care nu au fost discutate anterior."
         },
         "referencias": {
-          "title": "Referințe"
+          "title": "Referințe",
+          "guidance": "Format ABNT NBR 6023:2018, ordine alfabetica. Toate sursele citate in text trebuie sa apara aici."
         }
       },
       "name": "UNICAMP - Disertație (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Copertă"
+          "title": "Copertă",
+          "guidance": "Coperta USP trebuie sa includa: numele si sigla institutiei, facultatea sau institutul, titlul complet al tezei, numele autorului, orasul si anul. Respectati ABNT NBR 14724:2011 si modelul oficial USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Pagina de titlu"
+          "title": "Pagina de titlu",
+          "guidance": "Pagina de titlu (Folha de Rosto) include: numele autorului, titlul complet al tezei, o nota privind natura si obiectivul lucrarii, numele profesorului coordonator, orasul si anul. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Rezumat"
+          "title": "Rezumat",
+          "guidance": "Rezumat in portugheza (Resumo), pana la 500 de cuvinte (ABNT NBR 6028). Trebuie sa fie autonom: fara citari si fara abrevieri nedefinite. Adaugati 3-5 cuvinte-cheie (Palavras-chave) la final."
         },
         "abstract": {
-          "title": "Rezumat"
+          "title": "Rezumat",
+          "guidance": "Traducerea in engleza a Resumo. Este ceruta de USP pentru disertatii si teze de doctorat. Pastrati aceeasi structura si lungime ca Resumo. Adaugati 3-5 cuvinte-cheie la final."
         },
         "sumario": {
-          "title": "Cuprins"
+          "title": "Cuprins",
+          "guidance": "Generat automat. Trebuie sa urmeze formatul ABNT NBR 6027. Listeaza toate elementele pretextuale (cu exceptia copertii), capitolele, referintele si anexele cu numere exacte de pagina."
         },
         "introducao": {
-          "title": "Introducere"
+          "title": "Introducere",
+          "guidance": "Prezinta problema de cercetare, justificarea, intrebarile de cercetare, obiectivele si structura disertatiei. Citari ABNT: (AUTOR, an)."
         },
         "capitulos": {
-          "title": "Capitole"
+          "title": "Capitole",
+          "guidance": "Continutul central al disertatiei. Impartiti-l in capitole tematice: cadru teoretic, metodologie, rezultate si discutie. Fiecare capitol incepe pe o pagina noua. Folositi stilul de citare ABNT peste tot."
         },
         "conclusao": {
-          "title": "Concluzie"
+          "title": "Concluzie",
+          "guidance": "Raspunde la intrebarile de cercetare, rezuma contributiile, mentioneaza limitarile si propune lucrari viitoare. Nu introduceti informatii noi care nu au fost discutate anterior."
         },
         "referencias": {
-          "title": "Referințe"
+          "title": "Referințe",
+          "guidance": "Format ABNT NBR 6023:2018, ordine alfabetica. Toate sursele citate in text trebuie sa apara aici."
         }
       },
       "name": "USP - Disertație (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografie APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Științe ale sănătății (IMRaD)",
+      "description": "Structură IMRaD pentru cercetarea clinică și biomedicală. Bibliografie în stil Vancouver. Ideal pentru teze în medicină, asistență medicală și științele sănătății."
+    },
+    "apa.basic": {
+      "name": "APA de bază",
+      "description": "Profil simplificat pentru lucrări academice cu stilul APA 7 strict. Ideal pentru rapoarte, eseuri și articole scurte."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Umanistică",
+      "description": "Teze și disertații în științe umaniste, sociale și arte cu stilul Chicago Note-Bibliografie (ed. 17) / Turabian ed. 9. Citatele apar în note de subsol numerotate. Bibliografie alfabetică la final. Foarte utilizat în filosofie, istorie, literatură, științe sociale și drept."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Fizică și Matematică",
+      "description": "Teze de licență și masterat ale Școlii Superioare de Fizică și Matematică IPN. Optimizat pentru lucrări cu densitate matematică ridicată: teoreme, demonstrații, ecuații. Stil APA sau numeric în funcție de domeniu."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Studii postuniversitare în Inginerie și Științe",
+      "description": "Teze ale Secției de Studii Postuniversitare și Cercetare IPN. Format IPN cu bibliografie IEEE pentru inginerie sau APA pentru științe. Hârtie legal, margini specifice IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotehnologie",
+      "description": "Teze ale Unității Profesionale Interdisciplinare de Biotehnologie IPN. Orientat spre biochimie, microbiologie, inginerie bioprocese, bioinformatică și biotehnologie de mediu. Bibliografie APA sau Vancouver conform domeniului."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Tehnologii Avansate",
+      "description": "Teze ale Unității Profesionale Interdisciplinare de Tehnologii Avansate IPN. Orientat spre mecatronică, sisteme inteligente, automatizare și tehnologii emergente. Bibliografie IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Studii postuniversitare",
+      "description": "Teze de masterat și doctorat UNAM. Bazat pe ghidurile Coordonării Studiilor Postuniversitare (CEP-UNAM). APA 7, XeLaTeX, format hârtie legal."
     }
   },
   "institutions": {

@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Capa"
+          "title": "Capa",
+          "guidance": "A capa da UNICAMP deve incluir: nome e logotipo da instituição, faculdade ou instituto, título completo da tese, nome do autor, cidade e ano. Siga a norma ABNT NBR 14724:2011 e o modelo oficial da UNICAMP."
         },
         "folha_rosto": {
-          "title": "Página de título"
+          "title": "Página de título",
+          "guidance": "A folha de rosto inclui: nome do autor, título completo da tese, nota indicando a natureza e o objetivo do trabalho, nome do professor orientador, cidade e ano de entrega. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Resumo"
+          "title": "Resumo",
+          "guidance": "Resumo em português, com até 500 palavras (ABNT NBR 6028). Deve ser autônomo: sem citações nem abreviações não definidas. Inclua de 3 a 5 palavras-chave ao final."
         },
         "abstract": {
-          "title": "Resumo"
+          "title": "Resumo",
+          "guidance": "Tradução em inglês do Resumo. Exigida pela UNICAMP para dissertações e teses de doutorado. Mantenha a mesma estrutura e extensão do Resumo. Inclua de 3 a 5 keywords ao final."
         },
         "sumario": {
-          "title": "Índice"
+          "title": "Índice",
+          "guidance": "Gerado automaticamente. Deve seguir o formato ABNT NBR 6027. Lista todos os elementos pré-textuais (exceto a capa), capítulos, referências e anexos com números de página exatos."
         },
         "introducao": {
-          "title": "Introdução"
+          "title": "Introdução",
+          "guidance": "Apresenta o problema de pesquisa, a justificativa, as perguntas de pesquisa, os objetivos e a estrutura da dissertação. Citações ABNT: (AUTOR, ano)."
         },
         "capitulos": {
-          "title": "Capítulos"
+          "title": "Capítulos",
+          "guidance": "Conteúdo central da dissertação. Divida em capítulos temáticos: referencial teórico, metodologia, resultados e discussão. Cada capítulo começa em uma nova página. Use o estilo de citação ABNT em todo o texto."
         },
         "conclusao": {
-          "title": "Conclusão"
+          "title": "Conclusão",
+          "guidance": "Responde às perguntas de pesquisa, resume as contribuições, aponta limitações e propõe trabalhos futuros. Não inclua informações novas que não tenham sido discutidas antes."
         },
         "referencias": {
-          "title": "Referências"
+          "title": "Referências",
+          "guidance": "Formato ABNT NBR 6023:2018, em ordem alfabética. Todas as fontes citadas no texto devem aparecer aqui."
         }
       },
       "name": "UNICAMP - Dissertação (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Capa"
+          "title": "Capa",
+          "guidance": "A capa da USP deve incluir: nome e logotipo da instituição, faculdade ou instituto, título completo da tese, nome do autor, cidade e ano. Siga a ABNT NBR 14724:2011 e o modelo oficial da USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Página de título"
+          "title": "Página de título",
+          "guidance": "A folha de rosto inclui: nome do autor, título completo da tese, nota com a natureza e o objetivo do trabalho, nome do professor orientador, cidade e ano. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Resumo"
+          "title": "Resumo",
+          "guidance": "Resumo em português, com até 500 palavras (ABNT NBR 6028). Deve ser autônomo: sem citações nem abreviações não definidas. Inclua de 3 a 5 palavras-chave ao final."
         },
         "abstract": {
-          "title": "Resumo"
+          "title": "Resumo",
+          "guidance": "Tradução em inglês do Resumo. Exigida pela USP para dissertações e teses de doutorado. Mantenha a mesma estrutura e extensão do Resumo. Inclua de 3 a 5 keywords ao final."
         },
         "sumario": {
-          "title": "Índice"
+          "title": "Índice",
+          "guidance": "Gerado automaticamente. Deve seguir o formato ABNT NBR 6027. Lista todos os elementos pré-textuais (exceto a capa), capítulos, referências e anexos com números de página exatos."
         },
         "introducao": {
-          "title": "Introdução"
+          "title": "Introdução",
+          "guidance": "Apresenta o problema de pesquisa, a justificativa, as perguntas de pesquisa, os objetivos e a estrutura da dissertação. Citações ABNT: (AUTOR, ano)."
         },
         "capitulos": {
-          "title": "Capítulos"
+          "title": "Capítulos",
+          "guidance": "Conteúdo central da dissertação. Divida em capítulos temáticos: referencial teórico, metodologia, resultados e discussão. Cada capítulo começa em uma nova página. Use o estilo de citação ABNT em todo o texto."
         },
         "conclusao": {
-          "title": "Conclusão"
+          "title": "Conclusão",
+          "guidance": "Responde às perguntas de pesquisa, resume as contribuições, aponta limitações e propõe trabalhos futuros. Não inclua informações novas que não tenham sido discutidas antes."
         },
         "referencias": {
-          "title": "Referências"
+          "title": "Referências",
+          "guidance": "Formato ABNT NBR 6023:2018, em ordem alfabética. Todas as fontes citadas no texto devem aparecer aqui."
         }
       },
       "name": "USP - Dissertação (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografia APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Ciências da Saúde (IMRaD)",
+      "description": "Estrutura IMRaD para pesquisa clínica e biomédica. Bibliografia estilo Vancouver. Ideal para teses em medicina, enfermagem e ciências da saúde."
+    },
+    "apa.basic": {
+      "name": "APA Básico",
+      "description": "Perfil simplificado para trabalhos acadêmicos com estilo APA 7 estrito. Ideal para relatórios, ensaios e artigos curtos."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Humanidades",
+      "description": "Teses e dissertações em humanidades, ciências sociais e artes com estilo Chicago Notas-Bibliografia (17ª ed.) / Turabian 9ª ed. As citações aparecem em notas de rodapé numeradas. Bibliografia ordenada alfabeticamente ao final. Muito utilizado em filosofia, história, literatura, ciências sociais e direito."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Física e Matemática",
+      "description": "Teses de graduação e pós-graduação da Escola Superior de Física e Matemática do IPN. Otimizado para trabalhos com alta densidade matemática: teoremas, demonstrações, equações. Estilo APA ou numérico conforme a área."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Pós-graduação em Engenharia e Ciências",
+      "description": "Teses da Seção de Estudos de Pós-graduação e Pesquisa do IPN. Formato IPN com bibliografia IEEE para engenharia ou APA para ciências. Papel ofício, margens específicas IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotecnologia",
+      "description": "Teses da Unidade Profissional Interdisciplinar de Biotecnologia do IPN. Voltado para bioquímica, microbiologia, engenharia de bioprocessos, bioinformática e biotecnologia ambiental. Bibliografia APA ou Vancouver conforme a área."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Tecnologias Avançadas",
+      "description": "Teses da Unidade Profissional Interdisciplinar de Tecnologias Avançadas do IPN. Voltado para mecatrônica, sistemas inteligentes, automação e tecnologias emergentes. Bibliografia IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Pós-graduação",
+      "description": "Teses e dissertações de pós-graduação da UNAM. Baseado nas diretrizes da Coordenação de Estudos de Pós-graduação (CEP-UNAM). APA 7, XeLaTeX, formato ofício."
     }
   },
   "institutions": {

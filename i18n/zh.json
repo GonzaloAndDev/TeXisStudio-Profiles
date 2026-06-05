@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "封面"
+          "title": "封面",
+          "guidance": "UNICAMP 封面必须包含：机构名称和标志、学院或研究所、论文完整题名、作者姓名、城市和年份。请遵循 ABNT NBR 14724:2011 以及 UNICAMP 官方模板。"
         },
         "folha_rosto": {
-          "title": "扉页"
+          "title": "扉页",
+          "guidance": "题名页 (Folha de Rosto) 包括：作者姓名、论文完整题名、说明作品性质和目标的文字、导师姓名，以及提交城市和年份。ABNT NBR 14724。"
         },
         "resumo": {
-          "title": "摘要"
+          "title": "摘要",
+          "guidance": "葡萄牙语摘要 (Resumo)，最多 500 词 (ABNT NBR 6028)。内容应自成一体：不含引用，也不使用未定义缩写。结尾加入 3-5 个关键词 (Palavras-chave)。"
         },
         "abstract": {
-          "title": "摘要"
+          "title": "摘要",
+          "guidance": "Resumo 的英文译文。UNICAMP 要求硕士论文和博士论文提供该部分。结构和长度应与 Resumo 一致。结尾加入 3-5 个关键词。"
         },
         "sumario": {
-          "title": "目录"
+          "title": "目录",
+          "guidance": "自动生成。必须符合 ABNT NBR 6027 格式。列出所有前置部分（封面除外）、章节、参考文献和附录，并使用准确页码。"
         },
         "introducao": {
-          "title": "简介"
+          "title": "简介",
+          "guidance": "介绍研究问题、研究理由、研究问题陈述、目标以及论文结构。ABNT 引文格式：(作者, 年)。"
         },
         "capitulos": {
-          "title": "章节"
+          "title": "章节",
+          "guidance": "论文核心内容。按主题划分章节：理论框架、方法、结果和讨论。每章从新页开始。全文使用 ABNT 引文格式。"
         },
         "conclusao": {
-          "title": "结论"
+          "title": "结论",
+          "guidance": "回答研究问题，总结贡献，说明局限，并提出后续研究方向。不要加入前文未讨论过的新信息。"
         },
         "referencias": {
-          "title": "参考文献"
+          "title": "参考文献",
+          "guidance": "ABNT NBR 6023:2018 格式，按字母顺序排列。正文中引用的所有来源都必须列在这里。"
         }
       },
       "name": "UNICAMP - 论文（ABNT）",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "封面"
+          "title": "封面",
+          "guidance": "USP 封面必须包含：机构名称和标志、学院或研究所、论文完整题名、作者姓名、城市和年份。请遵循 ABNT NBR 14724:2011 以及 USP/FFLCH 官方模板。"
         },
         "folha_rosto": {
-          "title": "扉页"
+          "title": "扉页",
+          "guidance": "题名页 (Folha de Rosto) 包括：作者姓名、论文完整题名、说明作品性质和目标的文字、导师姓名，以及城市和年份。ABNT NBR 14724。"
         },
         "resumo": {
-          "title": "摘要"
+          "title": "摘要",
+          "guidance": "葡萄牙语摘要 (Resumo)，最多 500 词 (ABNT NBR 6028)。内容应自成一体：不含引用，也不使用未定义缩写。结尾加入 3-5 个关键词 (Palavras-chave)。"
         },
         "abstract": {
-          "title": "摘要"
+          "title": "摘要",
+          "guidance": "Resumo 的英文译文。USP 要求硕士论文和博士论文提供该部分。结构和长度应与 Resumo 一致。结尾加入 3-5 个关键词。"
         },
         "sumario": {
-          "title": "目录"
+          "title": "目录",
+          "guidance": "自动生成。必须符合 ABNT NBR 6027 格式。列出所有前置部分（封面除外）、章节、参考文献和附录，并使用准确页码。"
         },
         "introducao": {
-          "title": "简介"
+          "title": "简介",
+          "guidance": "介绍研究问题、研究理由、研究问题陈述、目标以及论文结构。ABNT 引文格式：(作者, 年)。"
         },
         "capitulos": {
-          "title": "章节"
+          "title": "章节",
+          "guidance": "论文核心内容。按主题划分章节：理论框架、方法、结果和讨论。每章从新页开始。全文使用 ABNT 引文格式。"
         },
         "conclusao": {
-          "title": "结论"
+          "title": "结论",
+          "guidance": "回答研究问题，总结贡献，说明局限，并提出后续研究方向。不要加入前文未讨论过的新信息。"
         },
         "referencias": {
-          "title": "参考文献"
+          "title": "参考文献",
+          "guidance": "ABNT NBR 6023:2018 格式，按字母顺序排列。正文中引用的所有来源都必须列在这里。"
         }
       },
       "name": "USP - 论文（ABNT）",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "参考书目APA 7·XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "健康科学（IMRaD）",
+      "description": "用于临床和生物医学研究的IMRaD结构。温哥华格式参考文献。适用于医学、护理和健康科学领域的论文。"
+    },
+    "apa.basic": {
+      "name": "APA 基础",
+      "description": "用于学术写作的简化配置文件，采用严格的APA 7格式。适合报告、论文和短文。"
+    },
+    "chicago.humanities": {
+      "name": "芝加哥 / 图拉比安 — 人文学科",
+      "description": "人文学科、社会科学和艺术领域的论文，使用芝加哥注释-参考文献格式（第17版）/ 图拉比安第9版。引文出现在编号的脚注中，不使用括号引注。末尾按字母顺序排列参考文献。广泛应用于哲学、历史、文学、社会科学和法律领域。"
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — 物理与数学",
+      "description": "IPN物理与数学高等学院的本科及研究生论文。针对数学密集型工作优化：定理、证明、方程。根据领域选用APA或数字引用格式。"
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — 工程与科学研究生",
+      "description": "IPN研究生研究部的论文。IPN格式，工程专业使用IEEE参考文献，科学专业使用APA。法律纸张，IPN特定页边距。"
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — 生物技术",
+      "description": "IPN生物技术跨学科专业单位的论文。侧重于生物化学、微生物学、生物过程工程、生物信息学和环境生物技术。根据领域选用APA或温哥华参考文献格式。"
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — 先进技术",
+      "description": "IPN先进技术跨学科专业单位的论文。侧重于机电一体化、智能系统、自动化和新兴技术。IEEE参考文献格式。"
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — 研究生",
+      "description": "UNAM的硕士和博士论文。基于研究生协调中心（CEP-UNAM）的指导方针。APA 7，XeLaTeX，法律纸张格式。"
     }
   },
   "institutions": {

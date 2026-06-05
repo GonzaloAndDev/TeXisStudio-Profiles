@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Omslag"
+          "title": "Omslag",
+          "guidance": "De UNICAMP-omslagpagina moet bevatten: naam en logo van de instelling, faculteit of instituut, volledige titel van het proefschrift, naam van de auteur, stad en jaar. Volg ABNT NBR 14724:2011 en het officiele UNICAMP-sjabloon."
         },
         "folha_rosto": {
-          "title": "Titelpagina"
+          "title": "Titelpagina",
+          "guidance": "De titelpagina (Folha de Rosto) bevat: naam van de auteur, volledige titel van het proefschrift, een toelichting op aard en doel van het werk, naam van de begeleidend hoogleraar, en stad en jaar van indiening. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Samenvatting"
+          "title": "Samenvatting",
+          "guidance": "Samenvatting in het Portugees (Resumo), maximaal 500 woorden (ABNT NBR 6028). Zelfstandig leesbaar: geen citaten en geen ongedefinieerde afkortingen. Voeg aan het einde 3-5 trefwoorden (Palavras-chave) toe."
         },
         "abstract": {
-          "title": "Samenvatting"
+          "title": "Samenvatting",
+          "guidance": "Engelse vertaling van het Resumo. Vereist door UNICAMP voor master- en doctoraatsproefschriften. Houd dezelfde structuur en lengte aan als het Resumo. Voeg aan het einde 3-5 keywords toe."
         },
         "sumario": {
-          "title": "Inhoudsopgave"
+          "title": "Inhoudsopgave",
+          "guidance": "Automatisch gegenereerd. Moet het formaat ABNT NBR 6027 volgen. Vermeldt alle pretekstuele elementen (behalve de omslag), hoofdstukken, referenties en bijlagen met exacte paginanummers."
         },
         "introducao": {
-          "title": "Introductie"
+          "title": "Introductie",
+          "guidance": "Presenteert het onderzoeksprobleem, de onderbouwing, onderzoeksvragen, doelstellingen en structuur van het proefschrift. ABNT-citaten: (AUTEUR, jaar)."
         },
         "capitulos": {
-          "title": "Hoofdstukken"
+          "title": "Hoofdstukken",
+          "guidance": "Kerninhoud van het proefschrift. Verdeel in thematische hoofdstukken: theoretisch kader, methodologie, resultaten en discussie. Elk hoofdstuk begint op een nieuwe pagina. Gebruik overal ABNT-citatiestijl."
         },
         "conclusao": {
-          "title": "Conclusie"
+          "title": "Conclusie",
+          "guidance": "Beantwoordt de onderzoeksvragen, vat de bijdragen samen, benoemt beperkingen en stelt toekomstig werk voor. Voeg geen nieuwe informatie toe die eerder niet is besproken."
         },
         "referencias": {
-          "title": "Referenties"
+          "title": "Referenties",
+          "guidance": "ABNT NBR 6023:2018-formaat, alfabetische volgorde. Alle bronnen die in de tekst zijn geciteerd moeten hier verschijnen."
         }
       },
       "name": "UNICAMP - Proefschrift (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Omslag"
+          "title": "Omslag",
+          "guidance": "De USP-omslagpagina moet bevatten: naam en logo van de instelling, faculteit of instituut, volledige titel van het proefschrift, naam van de auteur, stad en jaar. Volg ABNT NBR 14724:2011 en het officiele USP/FFLCH-sjabloon."
         },
         "folha_rosto": {
-          "title": "Titelpagina"
+          "title": "Titelpagina",
+          "guidance": "De titelpagina (Folha de Rosto) bevat: naam van de auteur, volledige titel van het proefschrift, een toelichting op aard en doel van het werk, naam van de begeleidend hoogleraar, en stad en jaar. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Samenvatting"
+          "title": "Samenvatting",
+          "guidance": "Samenvatting in het Portugees (Resumo), maximaal 500 woorden (ABNT NBR 6028). Zelfstandig leesbaar: geen citaten en geen ongedefinieerde afkortingen. Voeg aan het einde 3-5 trefwoorden (Palavras-chave) toe."
         },
         "abstract": {
-          "title": "Samenvatting"
+          "title": "Samenvatting",
+          "guidance": "Engelse vertaling van het Resumo. Vereist door USP voor master- en doctoraatsproefschriften. Houd dezelfde structuur en lengte aan als het Resumo. Voeg aan het einde 3-5 keywords toe."
         },
         "sumario": {
-          "title": "Inhoudsopgave"
+          "title": "Inhoudsopgave",
+          "guidance": "Automatisch gegenereerd. Moet het formaat ABNT NBR 6027 volgen. Vermeldt alle pretekstuele elementen (behalve de omslag), hoofdstukken, referenties en bijlagen met exacte paginanummers."
         },
         "introducao": {
-          "title": "Introductie"
+          "title": "Introductie",
+          "guidance": "Presenteert het onderzoeksprobleem, de onderbouwing, onderzoeksvragen, doelstellingen en structuur van het proefschrift. ABNT-citaten: (AUTEUR, jaar)."
         },
         "capitulos": {
-          "title": "Hoofdstukken"
+          "title": "Hoofdstukken",
+          "guidance": "Kerninhoud van het proefschrift. Verdeel in thematische hoofdstukken: theoretisch kader, methodologie, resultaten en discussie. Elk hoofdstuk begint op een nieuwe pagina. Gebruik overal ABNT-citatiestijl."
         },
         "conclusao": {
-          "title": "Conclusie"
+          "title": "Conclusie",
+          "guidance": "Beantwoordt de onderzoeksvragen, vat de bijdragen samen, benoemt beperkingen en stelt toekomstig werk voor. Voeg geen nieuwe informatie toe die eerder niet is besproken."
         },
         "referencias": {
-          "title": "Referenties"
+          "title": "Referenties",
+          "guidance": "ABNT NBR 6023:2018-formaat, alfabetische volgorde. Alle bronnen die in de tekst zijn geciteerd moeten hier verschijnen."
         }
       },
       "name": "USP - Proefschrift (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografie APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Gezondheidswetenschappen (IMRaD)",
+      "description": "IMRaD-structuur voor klinisch en biomedisch onderzoek. Bibliografie in Vancouver-stijl. Ideaal voor scripties in geneeskunde, verpleegkunde en gezondheidswetenschappen."
+    },
+    "apa.basic": {
+      "name": "APA Basis",
+      "description": "Vereenvoudigd profiel voor academisch werk met strikte APA 7-stijl. Ideaal voor rapporten, essays en korte artikelen."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Geesteswetenschappen",
+      "description": "Scripties en dissertaties in geesteswetenschappen, sociale wetenschappen en kunsten met Chicago Noten-Bibliografie stijl (17e ed.) / Turabian 9e ed. Citaten staan in genummerde voetnoten. Alfabetisch geordende bibliografie aan het einde. Veel gebruikt in filosofie, geschiedenis, literatuur, sociale wetenschappen en recht."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Natuur- en Wiskunde",
+      "description": "Bachelor- en masterscripties van de IPN Hogere School voor Natuur- en Wiskunde. Geoptimaliseerd voor wiskundig dichte werken: stellingen, bewijzen, vergelijkingen. APA- of numerieke citierstijl afhankelijk van het vakgebied."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Postdoctorale studies Techniek en Wetenschappen",
+      "description": "Scripties van de IPN-sectie Postdoctorale Studies en Onderzoek. IPN-formaat met IEEE-bibliografie voor techniek of APA voor wetenschappen. Legal papier, IPN-specifieke marges."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotechnologie",
+      "description": "Scripties van de Interdisciplinaire Professionele Eenheid voor Biotechnologie van IPN. Gericht op biochemie, microbiologie, bioprocestechnologie, bio-informatica en milieubiotechnologie. APA- of Vancouver-bibliografie afhankelijk van het vakgebied."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Geavanceerde Technologieën",
+      "description": "Scripties van de Interdisciplinaire Professionele Eenheid voor Geavanceerde Technologieën van IPN. Gericht op mechatronica, intelligente systemen, automatisering en opkomende technologieën. IEEE-bibliografie."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Postdoctorale studies",
+      "description": "Masterscripties en dissertaties van de UNAM. Gebaseerd op de richtlijnen van de Coördinatie van Postdoctorale Studies (CEP-UNAM). APA 7, XeLaTeX, legal papierformaat."
     }
   },
   "institutions": {

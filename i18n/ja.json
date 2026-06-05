@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "カバー"
+          "title": "カバー",
+          "guidance": "UNICAMP の表紙には、機関名とロゴ、学部または研究所、論文の完全な題名、著者名、都市、年を含めます。ABNT NBR 14724:2011 と UNICAMP 公式テンプレートに従ってください。"
         },
         "folha_rosto": {
-          "title": "タイトルページ"
+          "title": "タイトルページ",
+          "guidance": "標題紙 (Folha de Rosto) には、著者名、論文の完全な題名、研究の性質と目的を示す注記、指導教員名、提出都市と年を含めます。ABNT NBR 14724。"
         },
         "resumo": {
-          "title": "要約"
+          "title": "要約",
+          "guidance": "ポルトガル語の要旨 (Resumo)。500語以内 (ABNT NBR 6028)。引用や未定義の略語を含めず、単独で読める内容にします。末尾に 3-5 個のキーワード (Palavras-chave) を含めます。"
         },
         "abstract": {
-          "title": "要約"
+          "title": "要約",
+          "guidance": "Resumo の英訳。UNICAMP では修士論文および博士論文に必要です。Resumo と同じ構成と長さにしてください。末尾に 3-5 個のキーワードを含めます。"
         },
         "sumario": {
-          "title": "目次"
+          "title": "目次",
+          "guidance": "自動生成されます。ABNT NBR 6027 形式に従う必要があります。表紙を除く前付け要素、章、参考文献、付録を正確なページ番号とともに列挙します。"
         },
         "introducao": {
-          "title": "はじめに"
+          "title": "はじめに",
+          "guidance": "研究課題、研究の意義、研究質問、目的、論文の構成を示します。ABNT の引用形式：(著者, 年)。"
         },
         "capitulos": {
-          "title": "章"
+          "title": "章",
+          "guidance": "論文の中心内容です。理論的枠組み、方法、結果、考察などのテーマ別章に分けます。各章は新しいページから始めます。全体で ABNT 引用スタイルを使用します。"
         },
         "conclusao": {
-          "title": "結論"
+          "title": "結論",
+          "guidance": "研究質問に答え、貢献を要約し、限界を示し、今後の研究を提案します。前に議論していない新しい情報は入れないでください。"
         },
         "referencias": {
-          "title": "参考資料"
+          "title": "参考資料",
+          "guidance": "ABNT NBR 6023:2018 形式、アルファベット順。本文で引用したすべての出典をここに記載します。"
         }
       },
       "name": "UNICAMP - 論文 (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "カバー"
+          "title": "カバー",
+          "guidance": "USP の表紙には、機関名とロゴ、学部または研究所、論文の完全な題名、著者名、都市、年を含めます。ABNT NBR 14724:2011 と USP/FFLCH 公式テンプレートに従ってください。"
         },
         "folha_rosto": {
-          "title": "タイトルページ"
+          "title": "タイトルページ",
+          "guidance": "標題紙 (Folha de Rosto) には、著者名、論文の完全な題名、研究の性質と目的を示す注記、指導教員名、都市と年を含めます。ABNT NBR 14724。"
         },
         "resumo": {
-          "title": "要約"
+          "title": "要約",
+          "guidance": "ポルトガル語の要旨 (Resumo)。500語以内 (ABNT NBR 6028)。引用や未定義の略語を含めず、単独で読める内容にします。末尾に 3-5 個のキーワード (Palavras-chave) を含めます。"
         },
         "abstract": {
-          "title": "要約"
+          "title": "要約",
+          "guidance": "Resumo の英訳。USP では修士論文および博士論文に必要です。Resumo と同じ構成と長さにしてください。末尾に 3-5 個のキーワードを含めます。"
         },
         "sumario": {
-          "title": "目次"
+          "title": "目次",
+          "guidance": "自動生成されます。ABNT NBR 6027 形式に従う必要があります。表紙を除く前付け要素、章、参考文献、付録を正確なページ番号とともに列挙します。"
         },
         "introducao": {
-          "title": "はじめに"
+          "title": "はじめに",
+          "guidance": "研究課題、研究の意義、研究質問、目的、論文の構成を示します。ABNT の引用形式：(著者, 年)。"
         },
         "capitulos": {
-          "title": "章"
+          "title": "章",
+          "guidance": "論文の中心内容です。理論的枠組み、方法、結果、考察などのテーマ別章に分けます。各章は新しいページから始めます。全体で ABNT 引用スタイルを使用します。"
         },
         "conclusao": {
-          "title": "結論"
+          "title": "結論",
+          "guidance": "研究質問に答え、貢献を要約し、限界を示し、今後の研究を提案します。前に議論していない新しい情報は入れないでください。"
         },
         "referencias": {
-          "title": "参考資料"
+          "title": "参考資料",
+          "guidance": "ABNT NBR 6023:2018 形式、アルファベット順。本文で引用したすべての出典をここに記載します。"
         }
       },
       "name": "USP - 論文 (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "参考文献 APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "健康科学（IMRaD）",
+      "description": "臨床・生物医学研究のためのIMRaD構造。バンクーバー形式の参考文献。医学・看護学・健康科学の論文に最適。"
+    },
+    "apa.basic": {
+      "name": "APA ベーシック",
+      "description": "厳格なAPA 7スタイルによる学術作業のための簡略化プロフィール。レポート、小論文、短い論文に最適。"
+    },
+    "chicago.humanities": {
+      "name": "シカゴ / チュラビアン — 人文学",
+      "description": "人文学・社会科学・芸術分野のシカゴ注記-参考文献スタイル（第17版）/ チュラビアン第9版による論文。引用は括弧ではなく番号付き脚注に記載。末尾にアルファベット順の参考文献リスト。哲学・歴史・文学・社会科学・法律で広く使用。"
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — 物理・数学",
+      "description": "IPN物理数学高等学校の学部・大学院論文。定理・証明・方程式など数学集中型の作業に最適化。分野に応じてAPA形式または数値形式の引用を使用。"
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — 工学・理学大学院",
+      "description": "IPN大学院研究部の論文。工学分野はIEEE形式、理学分野はAPA形式の参考文献を使用したIPN形式。レガルサイズ用紙、IPN規定の余白。"
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — バイオテクノロジー",
+      "description": "IPN学際的バイオテクノロジー専門ユニットの論文。生化学・微生物学・バイオプロセス工学・バイオインフォマティクス・環境バイオテクノロジーに特化。分野に応じてAPA形式またはバンクーバー形式の参考文献を使用。"
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — 先端技術",
+      "description": "IPN学際的先端技術専門ユニットの論文。メカトロニクス・インテリジェントシステム・自動化・新興技術に特化。IEEE形式の参考文献。"
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — 大学院",
+      "description": "UNAMの修士・博士論文。大学院研究調整部（CEP-UNAM）のガイドラインに基づく。APA 7、XeLaTeX、レガル用紙形式。"
     }
   },
   "institutions": {

@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Kapak"
+          "title": "Kapak",
+          "guidance": "UNICAMP kapak sayfasinda kurum adi ve logosu, fakulte veya enstitu, tezin tam basligi, yazar adi, sehir ve yil bulunmalidir. ABNT NBR 14724:2011 standardini ve UNICAMP resmi sablonunu izleyin."
         },
         "folha_rosto": {
-          "title": "Başlık Sayfası"
+          "title": "Başlık Sayfası",
+          "guidance": "Baslik sayfasi (Folha de Rosto) sunlari icerir: yazar adi, tezin tam basligi, calismanin niteligini ve amacini belirten not, danisman profesorun adi, teslim sehri ve yili. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Özet"
+          "title": "Özet",
+          "guidance": "Portekizce ozet (Resumo), en fazla 500 kelime (ABNT NBR 6028). Kendi basina anlasilir olmalidir: alinti ve tanimlanmamis kisaltma kullanmayin. Sonda 3-5 anahtar kelime (Palavras-chave) ekleyin."
         },
         "abstract": {
-          "title": "Özet"
+          "title": "Özet",
+          "guidance": "Resumo'nun Ingilizce cevirisi. UNICAMP tarafindan yuksek lisans ve doktora tezleri icin gereklidir. Resumo ile ayni yapi ve uzunlugu koruyun. Sonda 3-5 anahtar kelime ekleyin."
         },
         "sumario": {
-          "title": "İçindekiler"
+          "title": "İçindekiler",
+          "guidance": "Otomatik olarak olusturulur. ABNT NBR 6027 formatini izlemelidir. Kapak haric tum on metin ogelerini, bolumleri, kaynaklari ve ekleri kesin sayfa numaralariyla listeler."
         },
         "introducao": {
-          "title": "Giriş"
+          "title": "Giriş",
+          "guidance": "Arastirma problemini, gerekceyi, arastirma sorularini, hedefleri ve tez yapisini sunar. ABNT atiflari: (YAZAR, yil)."
         },
         "capitulos": {
-          "title": "Bölümler"
+          "title": "Bölümler",
+          "guidance": "Tezin ana icerigi. Tematik bolumlere ayirin: kuramsal cerceve, metodoloji, bulgular ve tartisma. Her bolum yeni bir sayfada baslar. Metin boyunca ABNT atif stilini kullanin."
         },
         "conclusao": {
-          "title": "Sonuç"
+          "title": "Sonuç",
+          "guidance": "Arastirma sorularini yanitlar, katkiları ozetler, sinirliliklari belirtir ve gelecek calismalari onerir. Daha once tartisilmamis yeni bilgi eklemeyin."
         },
         "referencias": {
-          "title": "Referanslar"
+          "title": "Referanslar",
+          "guidance": "ABNT NBR 6023:2018 formati, alfabetik sira. Metinde atif yapilan tum kaynaklar burada yer almalidir."
         }
       },
       "name": "UNICAMP - Tez (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Kapak"
+          "title": "Kapak",
+          "guidance": "USP kapak sayfasinda kurum adi ve logosu, fakulte veya enstitu, tezin tam basligi, yazar adi, sehir ve yil bulunmalidir. ABNT NBR 14724:2011 standardini ve USP/FFLCH resmi sablonunu izleyin."
         },
         "folha_rosto": {
-          "title": "Başlık Sayfası"
+          "title": "Başlık Sayfası",
+          "guidance": "Baslik sayfasi (Folha de Rosto) sunlari icerir: yazar adi, tezin tam basligi, calismanin niteligini ve amacini belirten not, danisman profesorun adi, sehir ve yil. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Özet"
+          "title": "Özet",
+          "guidance": "Portekizce ozet (Resumo), en fazla 500 kelime (ABNT NBR 6028). Kendi basina anlasilir olmalidir: alinti ve tanimlanmamis kisaltma kullanmayin. Sonda 3-5 anahtar kelime (Palavras-chave) ekleyin."
         },
         "abstract": {
-          "title": "Özet"
+          "title": "Özet",
+          "guidance": "Resumo'nun Ingilizce cevirisi. USP tarafindan yuksek lisans ve doktora tezleri icin gereklidir. Resumo ile ayni yapi ve uzunlugu koruyun. Sonda 3-5 anahtar kelime ekleyin."
         },
         "sumario": {
-          "title": "İçindekiler"
+          "title": "İçindekiler",
+          "guidance": "Otomatik olarak olusturulur. ABNT NBR 6027 formatini izlemelidir. Kapak haric tum on metin ogelerini, bolumleri, kaynaklari ve ekleri kesin sayfa numaralariyla listeler."
         },
         "introducao": {
-          "title": "Giriş"
+          "title": "Giriş",
+          "guidance": "Arastirma problemini, gerekceyi, arastirma sorularini, hedefleri ve tez yapisini sunar. ABNT atiflari: (YAZAR, yil)."
         },
         "capitulos": {
-          "title": "Bölümler"
+          "title": "Bölümler",
+          "guidance": "Tezin ana icerigi. Tematik bolumlere ayirin: kuramsal cerceve, metodoloji, bulgular ve tartisma. Her bolum yeni bir sayfada baslar. Metin boyunca ABNT atif stilini kullanin."
         },
         "conclusao": {
-          "title": "Sonuç"
+          "title": "Sonuç",
+          "guidance": "Arastirma sorularini yanitlar, katkiları ozetler, sinirliliklari belirtir ve gelecek calismalari onerir. Daha once tartisilmamis yeni bilgi eklemeyin."
         },
         "referencias": {
-          "title": "Referanslar"
+          "title": "Referanslar",
+          "guidance": "ABNT NBR 6023:2018 formati, alfabetik sira. Metinde atif yapilan tum kaynaklar burada yer almalidir."
         }
       },
       "name": "USP - Tez (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Kaynakça APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Sağlık Bilimleri (IMRaD)",
+      "description": "Klinik ve biyomedikal araştırmalar için IMRaD yapısı. Vancouver tarzı kaynakça. Tıp, hemşirelik ve sağlık bilimleri tezleri için idealdir."
+    },
+    "apa.basic": {
+      "name": "APA Temel",
+      "description": "Akademik çalışmalar için katı APA 7 stiliyle basitleştirilmiş profil. Raporlar, denemeler ve kısa makaleler için idealdir."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Beşeri Bilimler",
+      "description": "Chicago Notlar-Kaynakça stili (17. baskı) / Turabian 9. baskı ile beşeri bilimler, sosyal bilimler ve sanatta tez ve dissertasyonlar. Atıflar numaralı dipnotlarda yer alır. Sonunda alfabetik kaynakça. Felsefe, tarih, edebiyat, sosyal bilimler ve hukukta yaygın olarak kullanılır."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Fizik ve Matematik",
+      "description": "IPN Yüksek Fizik ve Matematik Okulu'ndan lisans ve lisansüstü tezler. Yüksek matematiksel yoğunluklu çalışmalar için optimize edilmiştir: teoremler, ispatlar, denklemler. Alana göre APA veya sayısal atıf stili."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Lisansüstü Mühendislik ve Bilim",
+      "description": "IPN Lisansüstü Çalışmalar ve Araştırma Bölümü'nden tezler. Mühendislik için IEEE veya bilim için APA kaynakçasıyla IPN formatı. Legal kağıt, IPN'ye özgü kenar boşlukları."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biyoteknoloji",
+      "description": "IPN Disiplinlerarası Mesleki Biyoteknoloji Birimi'nden tezler. Biyokimya, mikrobiyoloji, biyoproses mühendisliği, biyoinformatik ve çevre biyoteknolojisine yönelik. Alana göre APA veya Vancouver kaynakçası."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — İleri Teknolojiler",
+      "description": "IPN Disiplinlerarası Mesleki İleri Teknolojiler Birimi'nden tezler. Mekatronik, akıllı sistemler, otomasyon ve gelişmekte olan teknolojilere yönelik. IEEE kaynakçası."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Lisansüstü",
+      "description": "UNAM'dan yüksek lisans ve doktora tezleri. Lisansüstü Çalışmalar Koordinasyonu (CEP-UNAM) kılavuzlarına dayanmaktadır. APA 7, XeLaTeX, legal kağıt formatı."
     }
   },
   "institutions": {

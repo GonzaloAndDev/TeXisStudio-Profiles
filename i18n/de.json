@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Abdeckung"
+          "title": "Abdeckung",
+          "guidance": "Die UNICAMP-Titelseite muss enthalten: Name und Logo der Institution, Fakultaet oder Institut, vollstaendiger Titel der Arbeit, Name der Autorin oder des Autors, Ort und Jahr. Befolgen Sie ABNT NBR 14724:2011 und die offizielle UNICAMP-Vorlage."
         },
         "folha_rosto": {
-          "title": "Titelseite"
+          "title": "Titelseite",
+          "guidance": "Das Titelblatt (Folha de Rosto) enthaelt: Name der Autorin oder des Autors, vollstaendigen Titel der Arbeit, einen Hinweis auf Art und Ziel der Arbeit, den Namen der betreuenden Professorin oder des betreuenden Professors sowie Ort und Abgabejahr. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Zusammenfassung"
+          "title": "Zusammenfassung",
+          "guidance": "Zusammenfassung auf Portugiesisch (Resumo), bis zu 500 Woerter (ABNT NBR 6028). Sie muss eigenstaendig sein: keine Zitate, keine undefinierten Abkuerzungen. Fuegen Sie am Ende 3 bis 5 Schlagwoerter (Palavras-chave) hinzu."
         },
         "abstract": {
-          "title": "Zusammenfassung"
+          "title": "Zusammenfassung",
+          "guidance": "Englische Uebersetzung des Resumo. Von UNICAMP fuer Dissertationen und Doktorarbeiten vorgeschrieben. Gleiche Struktur und Laenge wie das Resumo beibehalten. Am Ende 3 bis 5 Keywords angeben."
         },
         "sumario": {
-          "title": "Inhaltsverzeichnis"
+          "title": "Inhaltsverzeichnis",
+          "guidance": "Automatisch generiert. Muss dem Format ABNT NBR 6027 folgen. Listet alle praetextuellen Elemente (ausser dem Umschlag), Kapitel, Literaturverzeichnis und Anhaenge mit genauen Seitenzahlen auf."
         },
         "introducao": {
-          "title": "Einführung"
+          "title": "Einführung",
+          "guidance": "Stellt Forschungsproblem, Begruendung, Forschungsfragen, Ziele und Aufbau der Dissertation dar. ABNT-Zitate: (AUTOR, Jahr)."
         },
         "capitulos": {
-          "title": "Kapitel"
+          "title": "Kapitel",
+          "guidance": "Kerninhalt der Dissertation. In thematische Kapitel gliedern: theoretischer Rahmen, Methodik, Ergebnisse und Diskussion. Jedes Kapitel beginnt auf einer neuen Seite. Durchgehend ABNT-Zitierstil verwenden."
         },
         "conclusao": {
-          "title": "Schlussfolgerung"
+          "title": "Schlussfolgerung",
+          "guidance": "Beantwortet die Forschungsfragen, fasst Beitraege zusammen, nennt Einschraenkungen und schlaegt kuenftige Arbeiten vor. Keine neuen Informationen einfuehren, die zuvor nicht diskutiert wurden."
         },
         "referencias": {
-          "title": "Referenzen"
+          "title": "Referenzen",
+          "guidance": "Format ABNT NBR 6023:2018, alphabetische Reihenfolge. Alle im Text zitierten Quellen muessen hier erscheinen."
         }
       },
       "name": "UNICAMP – Dissertation (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Abdeckung"
+          "title": "Abdeckung",
+          "guidance": "Die USP-Titelseite muss enthalten: Name und Logo der Institution, Fakultaet oder Institut, vollstaendiger Titel der Arbeit, Name der Autorin oder des Autors, Ort und Jahr. Befolgen Sie ABNT NBR 14724:2011 und die offizielle USP/FFLCH-Vorlage."
         },
         "folha_rosto": {
-          "title": "Titelseite"
+          "title": "Titelseite",
+          "guidance": "Das Titelblatt (Folha de Rosto) enthaelt: Name der Autorin oder des Autors, vollstaendigen Titel der Arbeit, einen Hinweis auf Art und Ziel der Arbeit, den Namen der Betreuungsperson sowie Ort und Jahr. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Zusammenfassung"
+          "title": "Zusammenfassung",
+          "guidance": "Zusammenfassung auf Portugiesisch (Resumo), bis zu 500 Woerter (ABNT NBR 6028). Sie muss eigenstaendig sein: keine Zitate, keine undefinierten Abkuerzungen. Fuegen Sie am Ende 3 bis 5 Schlagwoerter (Palavras-chave) hinzu."
         },
         "abstract": {
-          "title": "Zusammenfassung"
+          "title": "Zusammenfassung",
+          "guidance": "Englische Uebersetzung des Resumo. Von der USP fuer Dissertationen und Doktorarbeiten vorgeschrieben. Gleiche Struktur und Laenge wie das Resumo beibehalten. Am Ende 3 bis 5 Keywords angeben."
         },
         "sumario": {
-          "title": "Inhaltsverzeichnis"
+          "title": "Inhaltsverzeichnis",
+          "guidance": "Automatisch generiert. Muss dem Format ABNT NBR 6027 folgen. Listet alle praetextuellen Elemente (ausser dem Umschlag), Kapitel, Literaturverzeichnis und Anhaenge mit genauen Seitenzahlen auf."
         },
         "introducao": {
-          "title": "Einführung"
+          "title": "Einführung",
+          "guidance": "Stellt Forschungsproblem, Begruendung, Forschungsfragen, Ziele und Aufbau der Dissertation dar. ABNT-Zitate: (AUTOR, Jahr)."
         },
         "capitulos": {
-          "title": "Kapitel"
+          "title": "Kapitel",
+          "guidance": "Kerninhalt der Dissertation. In thematische Kapitel gliedern: theoretischer Rahmen, Methodik, Ergebnisse und Diskussion. Jedes Kapitel beginnt auf einer neuen Seite. Durchgehend ABNT-Zitierstil verwenden."
         },
         "conclusao": {
-          "title": "Schlussfolgerung"
+          "title": "Schlussfolgerung",
+          "guidance": "Beantwortet die Forschungsfragen, fasst Beitraege zusammen, nennt Einschraenkungen und schlaegt kuenftige Arbeiten vor. Keine neuen Informationen einfuehren, die zuvor nicht diskutiert wurden."
         },
         "referencias": {
-          "title": "Referenzen"
+          "title": "Referenzen",
+          "guidance": "Format ABNT NBR 6023:2018, alphabetische Reihenfolge. Alle im Text zitierten Quellen muessen hier erscheinen."
         }
       },
       "name": "USP – Dissertation (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliographie APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Gesundheitswissenschaften (IMRaD)",
+      "description": "IMRaD-Struktur für klinische und biomedizinische Forschung. Literaturverzeichnis im Vancouver-Stil. Ideal für Abschlussarbeiten in Medizin, Pflege und Gesundheitswissenschaften."
+    },
+    "apa.basic": {
+      "name": "APA Grundlagen",
+      "description": "Vereinfachtes Profil für akademische Arbeiten im strikten APA-7-Stil. Ideal für Berichte, Essays und kurze Artikel."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Geisteswissenschaften",
+      "description": "Abschlussarbeiten in Geistes-, Sozialwissenschaften und Künsten nach Chicago Notes-Bibliographie (17. Aufl.) / Turabian 9. Aufl. Zitate erscheinen in nummerierten Fußnoten. Alphabetisch geordnetes Literaturverzeichnis am Ende. Verbreitet in Philosophie, Geschichte, Literatur, Sozialwissenschaften und Jura."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Physik und Mathematik",
+      "description": "Bachelor- und Masterarbeiten der IPN-Hochschule für Physik und Mathematik. Optimiert für mathematisch dichte Arbeiten: Sätze, Beweise, Gleichungen. APA- oder numerischer Zitierstil je nach Fachbereich."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Postgraduiertenstudium in Ingenieurwissenschaften und Naturwissenschaften",
+      "description": "Abschlussarbeiten der Abteilung für Postgraduiertenstudien und Forschung des IPN. IPN-Format mit IEEE-Bibliographie für Ingenieurwesen oder APA für Naturwissenschaften. Legal-Papier, IPN-spezifische Ränder."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotechnologie",
+      "description": "Abschlussarbeiten der Interdisziplinären Beruflichen Einheit für Biotechnologie des IPN. Ausgerichtet auf Biochemie, Mikrobiologie, Bioprozesstechnik, Bioinformatik und Umweltbiotechnologie. APA- oder Vancouver-Bibliographie je nach Bereich."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Fortgeschrittene Technologien",
+      "description": "Abschlussarbeiten der Interdisziplinären Beruflichen Einheit für Fortgeschrittene Technologien des IPN. Ausgerichtet auf Mechatronik, intelligente Systeme, Automatisierung und Zukunftstechnologien. IEEE-Bibliographie."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Postgraduiertenstudium",
+      "description": "Postgraduierte Abschlussarbeiten der UNAM. Basierend auf den Richtlinien der Koordination für Postgraduiertenstudien (CEP-UNAM). APA 7, XeLaTeX, Legal-Papierformat."
     }
   },
   "institutions": {

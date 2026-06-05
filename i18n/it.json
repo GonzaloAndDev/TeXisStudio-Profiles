@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Copertina"
+          "title": "Copertina",
+          "guidance": "La copertina UNICAMP deve includere: nome e logo dell'istituzione, facolta o istituto, titolo completo della tesi, nome dell'autore, citta e anno. Segui la norma ABNT NBR 14724:2011 e il modello ufficiale UNICAMP."
         },
         "folha_rosto": {
-          "title": "Pagina del titolo"
+          "title": "Pagina del titolo",
+          "guidance": "Il frontespizio (Folha de Rosto) include: nome dell'autore, titolo completo della tesi, una nota che indica natura e obiettivo del lavoro, nome del docente relatore, citta e anno di consegna. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Astratto"
+          "title": "Astratto",
+          "guidance": "Riassunto in portoghese (Resumo), fino a 500 parole (ABNT NBR 6028). Deve essere autonomo: niente citazioni ne abbreviazioni non definite. Inserisci 3-5 parole chiave (Palavras-chave) alla fine."
         },
         "abstract": {
-          "title": "Astratto"
+          "title": "Astratto",
+          "guidance": "Traduzione inglese del Resumo. Richiesta da UNICAMP per dissertazioni e tesi di dottorato. Mantieni la stessa struttura e lunghezza del Resumo. Inserisci 3-5 parole chiave alla fine."
         },
         "sumario": {
-          "title": "Sommario"
+          "title": "Sommario",
+          "guidance": "Generato automaticamente. Deve seguire il formato ABNT NBR 6027. Elenca tutti gli elementi pretestuali (tranne la copertina), capitoli, riferimenti e allegati con numeri di pagina esatti."
         },
         "introducao": {
-          "title": "Introduzione"
+          "title": "Introduzione",
+          "guidance": "Presenta il problema di ricerca, la giustificazione, le domande di ricerca, gli obiettivi e la struttura della dissertazione. Citazioni ABNT: (AUTORE, anno)."
         },
         "capitulos": {
-          "title": "Capitoli"
+          "title": "Capitoli",
+          "guidance": "Contenuto centrale della dissertazione. Dividilo in capitoli tematici: quadro teorico, metodologia, risultati e discussione. Ogni capitolo inizia su una nuova pagina. Usa sempre lo stile di citazione ABNT."
         },
         "conclusao": {
-          "title": "Conclusione"
+          "title": "Conclusione",
+          "guidance": "Risponde alle domande di ricerca, riassume i contributi, indica i limiti e propone lavori futuri. Non introdurre nuove informazioni non discusse in precedenza."
         },
         "referencias": {
-          "title": "Riferimenti"
+          "title": "Riferimenti",
+          "guidance": "Formato ABNT NBR 6023:2018, in ordine alfabetico. Tutte le fonti citate nel testo devono apparire qui."
         }
       },
       "name": "UNICAMP - Tesi (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Copertina"
+          "title": "Copertina",
+          "guidance": "La copertina USP deve includere: nome e logo dell'istituzione, facolta o istituto, titolo completo della tesi, nome dell'autore, citta e anno. Segui ABNT NBR 14724:2011 e il modello ufficiale USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Pagina del titolo"
+          "title": "Pagina del titolo",
+          "guidance": "Il frontespizio (Folha de Rosto) include: nome dell'autore, titolo completo della tesi, una nota su natura e obiettivo del lavoro, nome del docente relatore, citta e anno. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Astratto"
+          "title": "Astratto",
+          "guidance": "Riassunto in portoghese (Resumo), fino a 500 parole (ABNT NBR 6028). Deve essere autonomo: niente citazioni ne abbreviazioni non definite. Inserisci 3-5 parole chiave (Palavras-chave) alla fine."
         },
         "abstract": {
-          "title": "Astratto"
+          "title": "Astratto",
+          "guidance": "Traduzione inglese del Resumo. Richiesta da USP per dissertazioni e tesi di dottorato. Mantieni la stessa struttura e lunghezza del Resumo. Inserisci 3-5 parole chiave alla fine."
         },
         "sumario": {
-          "title": "Sommario"
+          "title": "Sommario",
+          "guidance": "Generato automaticamente. Deve seguire il formato ABNT NBR 6027. Elenca tutti gli elementi pretestuali (tranne la copertina), capitoli, riferimenti e allegati con numeri di pagina esatti."
         },
         "introducao": {
-          "title": "Introduzione"
+          "title": "Introduzione",
+          "guidance": "Presenta il problema di ricerca, la giustificazione, le domande di ricerca, gli obiettivi e la struttura della dissertazione. Citazioni ABNT: (AUTORE, anno)."
         },
         "capitulos": {
-          "title": "Capitoli"
+          "title": "Capitoli",
+          "guidance": "Contenuto centrale della dissertazione. Dividilo in capitoli tematici: quadro teorico, metodologia, risultati e discussione. Ogni capitolo inizia su una nuova pagina. Usa sempre lo stile di citazione ABNT."
         },
         "conclusao": {
-          "title": "Conclusione"
+          "title": "Conclusione",
+          "guidance": "Risponde alle domande di ricerca, riassume i contributi, indica i limiti e propone lavori futuri. Non introdurre nuove informazioni non discusse in precedenza."
         },
         "referencias": {
-          "title": "Riferimenti"
+          "title": "Riferimenti",
+          "guidance": "Formato ABNT NBR 6023:2018, in ordine alfabetico. Tutte le fonti citate nel testo devono apparire qui."
         }
       },
       "name": "USP - Tesi (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografia APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Scienze della Salute (IMRaD)",
+      "description": "Struttura IMRaD per la ricerca clinica e biomedica. Bibliografia in stile Vancouver. Ideale per tesi in medicina, infermieristica e scienze della salute."
+    },
+    "apa.basic": {
+      "name": "APA di base",
+      "description": "Profilo semplificato per lavori accademici con stile APA 7 rigoroso. Ideale per relazioni, saggi e articoli brevi."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Umanistica",
+      "description": "Tesi e dissertazioni in scienze umane, sociali e arti con lo stile Chicago Note-Bibliografia (17ª ed.) / Turabian 9ª ed. Le citazioni appaiono in note a piè di pagina numerate. Bibliografia ordinata alfabeticamente alla fine. Molto usato in filosofia, storia, letteratura, scienze sociali e diritto."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Fisica e Matematica",
+      "description": "Tesi di laurea e dottorato della Scuola Superiore di Fisica e Matematica dell'IPN. Ottimizzato per lavori ad alta densità matematica: teoremi, dimostrazioni, equazioni. Stile APA o numerico secondo l'area."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Laurea Magistrale in Ingegneria e Scienze",
+      "description": "Tesi della Sezione di Studi di Dottorato e Ricerca dell'IPN. Formato IPN con bibliografia IEEE per ingegneria o APA per scienze. Carta legale, margini specifici IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotecnologia",
+      "description": "Tesi dell'Unità Professionale Interdisciplinare di Biotecnologia dell'IPN. Orientato verso biochimica, microbiologia, ingegneria dei bioprocessi, bioinformatica e biotecnologia ambientale. Bibliografia APA o Vancouver secondo l'area."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Tecnologie Avanzate",
+      "description": "Tesi dell'Unità Professionale Interdisciplinare di Tecnologie Avanzate dell'IPN. Orientato verso meccatronica, sistemi intelligenti, automazione e tecnologie emergenti. Bibliografia IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Laurea Magistrale e Dottorato",
+      "description": "Tesi di magistrale e dottorato della UNAM. Basato sulle linee guida del Coordinamento degli Studi di Dottorato (CEP-UNAM). APA 7, XeLaTeX, formato carta legale."
     }
   },
   "institutions": {

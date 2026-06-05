@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Obálka"
+          "title": "Obálka",
+          "guidance": "Titulni strana UNICAMP musi obsahovat: nazev a logo instituce, fakultu nebo ustav, uplny nazev prace, jmeno autora, mesto a rok. Ridte se normou ABNT NBR 14724:2011 a oficialni sablonou UNICAMP."
         },
         "folha_rosto": {
-          "title": "Titulní stránka"
+          "title": "Titulní stránka",
+          "guidance": "Vnitrni titulni strana (Folha de Rosto) obsahuje: jmeno autora, uplny nazev prace, poznamku o povaze a cili prace, jmeno skolitele a misto a rok odevzdani. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Abstrakce"
+          "title": "Abstrakce",
+          "guidance": "Abstrakt v portugalstine (Resumo), nejvyse 500 slov (ABNT NBR 6028). Musi byt samostatny: bez citaci a nedefinovanych zkratek. Na konec pridejte 3-5 klicovych slov (Palavras-chave)."
         },
         "abstract": {
-          "title": "Abstrakce"
+          "title": "Abstrakce",
+          "guidance": "Anglicky preklad Resumo. UNICAMP jej vyzaduje pro disertacni a doktorske prace. Zachovejte stejnou strukturu a delku jako Resumo. Na konec pridejte 3-5 klicovych slov."
         },
         "sumario": {
-          "title": "Obsah"
+          "title": "Obsah",
+          "guidance": "Generuje se automaticky. Musi odpovidat formatu ABNT NBR 6027. Uvadi vsechny predtextove prvky (krome obalky), kapitoly, reference a prilohy s presnymi cisly stran."
         },
         "introducao": {
-          "title": "Úvod"
+          "title": "Úvod",
+          "guidance": "Predstavuje vyzkumny problem, zduvodneni, vyzkumne otazky, cile a strukturu disertace. Citace ABNT: (AUTOR, rok)."
         },
         "capitulos": {
-          "title": "Kapitoly"
+          "title": "Kapitoly",
+          "guidance": "Hlavni obsah disertace. Rozdelte jej do tematickych kapitol: teoreticky ramec, metodologie, vysledky a diskuse. Kazda kapitola zacina na nove strane. V celem textu pouzivejte citacni styl ABNT."
         },
         "conclusao": {
-          "title": "Závěr"
+          "title": "Závěr",
+          "guidance": "Odpovida na vyzkumne otazky, shrnuje prinosy, uvadi omezeni a navrhuje budouci praci. Nepridavejte nove informace, ktere nebyly drive diskutovany."
         },
         "referencias": {
-          "title": "Odkazy"
+          "title": "Odkazy",
+          "guidance": "Format ABNT NBR 6023:2018, abecedni poradi. Vsechny zdroje citovane v textu zde musi byt uvedeny."
         }
       },
       "name": "UNICAMP – Disertační práce (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Obálka"
+          "title": "Obálka",
+          "guidance": "Titulni strana USP musi obsahovat: nazev a logo instituce, fakultu nebo ustav, uplny nazev prace, jmeno autora, mesto a rok. Ridte se ABNT NBR 14724:2011 a oficialni sablonou USP/FFLCH."
         },
         "folha_rosto": {
-          "title": "Titulní stránka"
+          "title": "Titulní stránka",
+          "guidance": "Vnitrni titulni strana (Folha de Rosto) obsahuje: jmeno autora, uplny nazev prace, poznamku o povaze a cili prace, jmeno skolitele a misto a rok. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Abstrakce"
+          "title": "Abstrakce",
+          "guidance": "Abstrakt v portugalstine (Resumo), nejvyse 500 slov (ABNT NBR 6028). Musi byt samostatny: bez citaci a nedefinovanych zkratek. Na konec pridejte 3-5 klicovych slov (Palavras-chave)."
         },
         "abstract": {
-          "title": "Abstrakce"
+          "title": "Abstrakce",
+          "guidance": "Anglicky preklad Resumo. USP jej vyzaduje pro disertacni a doktorske prace. Zachovejte stejnou strukturu a delku jako Resumo. Na konec pridejte 3-5 klicovych slov."
         },
         "sumario": {
-          "title": "Obsah"
+          "title": "Obsah",
+          "guidance": "Generuje se automaticky. Musi odpovidat formatu ABNT NBR 6027. Uvadi vsechny predtextove prvky (krome obalky), kapitoly, reference a prilohy s presnymi cisly stran."
         },
         "introducao": {
-          "title": "Úvod"
+          "title": "Úvod",
+          "guidance": "Predstavuje vyzkumny problem, zduvodneni, vyzkumne otazky, cile a strukturu disertace. Citace ABNT: (AUTOR, rok)."
         },
         "capitulos": {
-          "title": "Kapitoly"
+          "title": "Kapitoly",
+          "guidance": "Hlavni obsah disertace. Rozdelte jej do tematickych kapitol: teoreticky ramec, metodologie, vysledky a diskuse. Kazda kapitola zacina na nove strane. V celem textu pouzivejte citacni styl ABNT."
         },
         "conclusao": {
-          "title": "Závěr"
+          "title": "Závěr",
+          "guidance": "Odpovida na vyzkumne otazky, shrnuje prinosy, uvadi omezeni a navrhuje budouci praci. Nepridavejte nove informace, ktere nebyly drive diskutovany."
         },
         "referencias": {
-          "title": "Odkazy"
+          "title": "Odkazy",
+          "guidance": "Format ABNT NBR 6023:2018, abecedni poradi. Vsechny zdroje citovane v textu zde musi byt uvedeny."
         }
       },
       "name": "USP – Disertační práce (ABNT)",
@@ -2951,6 +2969,38 @@
         }
       },
       "meta": "Bibliografie APA 7 · XeLaTeX"
+    },
+    "vancouver.health": {
+      "name": "Zdravotní vědy (IMRaD)",
+      "description": "Struktura IMRaD pro klinický a biomedicínský výzkum. Bibliografie ve stylu Vancouver. Ideální pro práce v medicíně, ošetřovatelství a zdravotních vědách."
+    },
+    "apa.basic": {
+      "name": "APA základní",
+      "description": "Zjednodušený profil pro akademické práce s přísným stylem APA 7. Ideální pro zprávy, eseje a krátké články."
+    },
+    "chicago.humanities": {
+      "name": "Chicago / Turabian — Humanitní vědy",
+      "description": "Závěrečné práce v humanitních, sociálních vědách a umění ve stylu Chicago Poznámky-Bibliografie (17. vyd.) / Turabian 9. vyd. Citace se zobrazují v číslovaných poznámkách pod čarou. Abecedně seřazená bibliografie na konci. Hojně využíváno ve filozofii, historii, literatuře, sociálních vědách a právu."
+    },
+    "mx.ipn.esfm": {
+      "name": "IPN ESFM — Fyzika a matematika",
+      "description": "Bakalářské a magisterské práce Vyšší školy fyziky a matematiky IPN. Optimalizováno pro práce s vysokou matematickou hustotou: věty, důkazy, rovnice. Styl APA nebo číselný podle oblasti."
+    },
+    "mx.ipn.sepi": {
+      "name": "IPN SEPI — Postgraduální studium v oblasti inženýrství a přírodních věd",
+      "description": "Závěrečné práce Sekce postgraduálního studia a výzkumu IPN. Formát IPN s bibliografií IEEE pro inženýrství nebo APA pro přírodní vědy. Legal papír, okraje dle IPN."
+    },
+    "mx.ipn.upibi": {
+      "name": "IPN UPIBI — Biotechnologie",
+      "description": "Závěrečné práce Interdisciplinární odborné jednotky pro biotechnologii IPN. Zaměřeno na biochemii, mikrobiologii, bioprocesinženýrství, bioinformatiku a environmentální biotechnologii. Bibliografie APA nebo Vancouver podle oblasti."
+    },
+    "mx.ipn.upitta": {
+      "name": "IPN UPITTA — Pokročilé technologie",
+      "description": "Závěrečné práce Interdisciplinární odborné jednotky pro pokročilé technologie IPN. Zaměřeno na mechatroniku, inteligentní systémy, automatizaci a rozvíjející se technologie. Bibliografie IEEE."
+    },
+    "mx.unam.posgrado": {
+      "name": "UNAM — Postgraduální studium",
+      "description": "Magisterské a doktorské práce UNAM. Vychází z pokynů Koordinace postgraduálního studia (CEP-UNAM). APA 7, XeLaTeX, formát papíru legal."
     }
   },
   "institutions": {

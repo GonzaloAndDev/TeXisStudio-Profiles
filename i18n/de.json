@@ -2788,7 +2788,6 @@
     },
     "company.internship": {
       "name": "Praktikums-/Aufenthaltsbericht",
-      "description": "Format für Berichte über berufliche Aufenthalte und geschäftliche Aufenthalte. Enthält eine Unternehmensbeschreibung, Aktivitäten und Ergebnisse. Bibliographie APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Das Deckblatt wird automatisch mit institutionellen Daten generiert.\nDazu gehören: Name des Studierenden, Unternehmen, Praktikumszeitraum, akademische Einrichtung und Werdegang.\nSie müssen hier keinen Inhalt schreiben – legen Sie die Daten in den Projektmetadaten fest."
@@ -2825,11 +2824,10 @@
           "guidance": "Enthält unterstützendes Material, das im Hauptteil sehr umfangreich wäre:\n• Zulassungsbescheid des Unternehmens.\n• Abschluss-/Bewertungsschreiben des Business-Tutors.\n• Wöchentliche Protokolle (falls von Ihrer Institution verlangt).\n• Relevanter Quellcode.\n• Benutzer- oder technische Handbücher entwickelt.\n• Fotografische Beweise des Arbeitsplatzes.\nNummerieren Sie jeden Anhang (Anhang A, B…) und verweisen Sie im Text darauf."
         }
       },
-      "meta": "Bibliographie APA 7 · XeLaTeX"
+      "description": "Format für Berichte über berufliche Aufenthalte und geschäftliche Aufenthalte. Enthält eine Unternehmensbeschreibung, Aktivitäten und Ergebnisse. APA-Bibliographie 7."
     },
     "engineering.basic": {
       "name": "Engineering/Technischer Bericht",
-      "description": "Technischer Bericht mit Abschnitten zu Ansatz, Design, Implementierung und Tests. IEEE-Bibliographie. Ideal für Ingenieursarbeiten und Berufsaufenthalte.",
       "sections": {
         "title_page": {
           "guidance": "Das Deckblatt wird automatisch mit den Projektdaten generiert.\nSie müssen hier keinen Inhalt schreiben."
@@ -2851,34 +2849,33 @@
         },
         "design": {
           "title": "Design und Architektur",
-          "guidance": "Präsentieren Sie den Lösungsvorschlag, bevor Sie ihn umsetzen:\n• Systemarchitektur (Komponentendiagramm, Schichten, Module).\n• Designentscheidungen und Begründung ausgewählter Technologien.\n• Flussdiagramm oder Hauptalgorithmus.\n• Datenmodell ggf. (ER-, BD-Schema).\n• Benutzeroberfläche (ggf. Wireframes oder Mockups).\nDas Design sollte unabhängig von der Implementierung sein – ein Dritter sollte es von diesem Abschnitt aus implementieren können."
+          "guidance": "Präsentieren Sie den Lösungsvorschlag, bevor Sie ihn umsetzen:\n• Systemarchitektur (Komponentendiagramm, Schichten, Module).\n• Designentscheidungen und Begründung ausgewählter Technologien.\n• Flussdiagramm oder Hauptalgorithmus.\n• Ggf. Datenmodell (ER, DB-Schema).\n• Benutzeroberfläche (ggf. Wireframes oder Mockups).\nDas Design sollte unabhängig von der Implementierung sein – ein Dritter sollte es von diesem Abschnitt aus implementieren können."
         },
         "implementation": {
           "title": "Implementierung",
-          "guidance": "Beschreiben Sie, wie die Lösung erstellt wurde:\n• Entwicklungsumgebung: Sprachen, Frameworks, Plattformen, Versionen.\n• Beschreibung der implementierten Module bzw. Komponenten.\n• Relevante Codefragmente (nur die anschaulichsten, nicht der gesamte Code).\n• Implementierungsherausforderungen und angenommene Lösungen.\n• ggf. Infrastrukturkonfiguration (Server, Container, BD).\nDer vollständige Code befindet sich in den Anhängen – hier nur der repräsentativste."
+          "guidance": "Beschreiben Sie, wie die Lösung erstellt wurde:\n• Entwicklungsumgebung: Sprachen, Frameworks, Plattformen, Versionen.\n• Beschreibung der implementierten Module bzw. Komponenten.\n• Relevante Codefragmente (nur die anschaulichsten, nicht der gesamte Code).\n• Implementierungsherausforderungen und angenommene Lösungen.\n• ggf. Infrastrukturkonfiguration (Server, Container, DB).\nDer vollständige Code befindet sich in den Anhängen – hier nur die repräsentativsten."
         },
         "testing": {
           "title": "Testen und Validieren",
-          "guidance": "Demonstrieren Sie, dass die Lösung funktioniert und die Anforderungen erfüllt:\n• Testplan: Typen (einheitlich, Integration, System, Akzeptanz).\n• Testfälle: Eingabe, Aktion, erwartetes Ergebnis, erhaltenes Ergebnis.\n• Gegebenenfalls Leistungsmetriken (Antwortzeit, Speichernutzung, Präzision).\n• Vergleich mit Baseline- oder verwandten Arbeiten.\n• Analyse der Ergebnisse: Was hat funktioniert? NEIN? Weil?\nPräsentieren Sie die Ergebnisse nach Möglichkeit in Tabellen oder Diagrammen."
+          "guidance": "Demonstrieren Sie, dass die Lösung funktioniert und die Anforderungen erfüllt:\n• Testplan: Typen (einheitlich, Integration, System, Akzeptanz).\n• Testfälle: Eingabe, Aktion, erwartetes Ergebnis, erhaltenes Ergebnis.\n• Gegebenenfalls Leistungsmetriken (Antwortzeit, Speichernutzung, Präzision).\n• Vergleich mit Baseline- oder verwandten Arbeiten.\n• Analyse der Ergebnisse: Was hat funktioniert? NEIN? Weil?\nPräsentieren Sie die Ergebnisse nach Möglichkeit in Tabellen oder Grafiken."
         },
         "conclusions": {
           "title": "Schlussfolgerungen und zukünftige Arbeit",
-          "guidance": "Schließen Sie die Arbeit mit technischer Sorgfalt ab:\n• Überprüfung der erreichten Ziele im Vergleich zu den gesteckten Zielen.\n• Originalbeiträge der Arbeit.\n• Identifizierte technische Einschränkungen.\n• Zukünftige Arbeiten: konkrete Verbesserungen, mögliche Erweiterungen, offene Probleme.\nIn IEEE ist es üblich, mögliche Veröffentlichungen oder industrielle Anwendungen zu erwähnen."
+          "guidance": "Schließen Sie die Arbeit mit technischer Sorgfalt ab:\n• Überprüfung der erreichten Ziele im Vergleich zu den gesteckten Zielen.\n• Originalbeiträge der Arbeit.\n• Identifizierte technische Einschränkungen.\n• Zukünftige Arbeiten: konkrete Verbesserungen, mögliche Erweiterungen, offene Probleme.\nIm IEEE ist es üblich, mögliche Veröffentlichungen oder industrielle Anwendungen zu erwähnen."
         },
         "references": {
           "title": "Referenzen",
-          "guidance": "In IEEE sind die Referenzen numerisch und erscheinen in der Reihenfolge der ersten Erwähnung.\nDie Liste wird beim Kompilieren automatisch aus Ihrer .bib generiert.\nFür IEEE-Artikel und Konferenzen: Verwenden Sie den DOI-Importer, um den richtigen Eintrag zu erhalten.\nStellen Sie sicher, dass Sie in jeder Referenz den DOI angeben – der IEEE erfordert ihn."
+          "guidance": "In IEEE sind die Referenzen numerisch und erscheinen in der Reihenfolge ihrer ersten Erwähnung.\nDie Liste wird beim Kompilieren automatisch aus Ihrer .bib generiert.\nFür IEEE-Artikel und Konferenzen: Verwenden Sie den DOI-Importer, um den richtigen Eintrag zu erhalten.\nStellen Sie sicher, dass Sie in jeder Referenz den DOI angeben – IEEE verlangt ihn."
         },
         "appendices": {
           "title": "Anhänge",
-          "guidance": "Ergänzendes technisches Material:\n• Vollständiger Quellcode (Hauptmodule).\n• Installations- und Konfigurationsskripte.\n• Benutzer- oder technische Handbücher.\n• Detaillierte Diagramme (vollständiges ERD, Sequenzdiagramme usw.).\n• Testdaten oder Datensätze.\nNummer: Anhang A, B… und beziehen Sie sich auf diese aus dem Haupttext."
+          "guidance": "Ergänzendes technisches Material:\n• Vollständiger Quellcode (Hauptmodule).\n• Installations- und Konfigurationsskripte.\n• Benutzer- oder technische Handbücher.\n• Detaillierte Diagramme (vollständige ERD, Sequenzdiagramme usw.).\n• Testdaten oder Datensätze.\nNummer: Anhang A, B… und beziehen Sie sich auf diese aus dem Haupttext."
         }
       },
-      "meta": "Bibliographie IEEE · XeLaTeX"
+      "description": "Technischer Bericht mit Abschnitten zu Ansatz, Design, Implementierung und Tests. IEEE-Bibliographie. Ideal für Ingenieursarbeiten und Berufsaufenthalte."
     },
     "generic.phd": {
       "name": "Abschlussarbeit",
-      "description": "Profil für Master und Promotion: Literaturrecherche, Stand der Technik, Ansatz, Experimente, Glossar und Akronyme. XeLaTeX, biber, APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Das Deckblatt wird automatisch mit den Projektdaten generiert.\nFür Postgraduiertenstudien konfigurieren Sie in den Metadaten: vollständiger Name, Direktor, Co-Direktor (falls zutreffend) und Synodalausschuss.\nSie müssen hier keinen Inhalt schreiben."
@@ -2897,11 +2894,11 @@
         },
         "acronyms": {
           "title": "Liste der Abkürzungen und Akronyme",
-          "guidance": "Listen Sie alle in der Arbeit verwendeten Akronyme und Abkürzungen mit ihrer vollständigen Bedeutung auf.\nFormat: SIGLA – Vollständige Bedeutung (z. B. CNN – Convolutional Neural Network).\nAlphabetisch sortieren. Es definiert auch, wann jedes Akronym zum ersten Mal im Text erscheint."
+          "guidance": "Listen Sie alle in der Arbeit verwendeten Akronyme und Abkürzungen mit ihrer vollständigen Bedeutung auf.\nFormat: AKRONYM – Vollständige Bedeutung (z. B. CNN – Convolutional Neural Network).\nAlphabetisch sortieren. Es definiert auch, wann jedes Akronym zum ersten Mal im Text erscheint."
         },
         "abstract_es": {
           "title": "Zusammenfassung",
-          "guidance": "Die Abschlusszusammenfassung antwortet in 250–350 Wörtern:\n• Motivation: Warum ist dieses Problem wichtig?\n• Problem: Welche Frage oder Hypothese befassen Sie sich?\n• Methode: Hauptansatz und Technik.\n• Beitrag: Ergebnisse und origineller Beitrag zum Stand der Technik.\n• Auswirkungen: theoretische oder praktische Implikationen.\nKeine Termine. Keine Gleichungen. 5–8 Schlüsselwörter am Ende."
+          "guidance": "Die Zusammenfassung der Absolventen antwortet in 250–350 Wörtern:\n• Motivation: Warum ist dieses Problem wichtig?\n• Problem: Welche Frage oder Hypothese befassen Sie sich?\n• Methode: Hauptansatz und Technik.\n• Beitrag: Ergebnisse und origineller Beitrag zum Stand der Technik.\n• Auswirkungen: theoretische oder praktische Implikationen.\nKeine Zitate. Keine Gleichungen. 5–8 Schlüsselwörter am Ende."
         },
         "abstract_en": {
           "title": "Zusammenfassung",
@@ -2913,7 +2910,7 @@
         },
         "acknowledgements": {
           "title": "Danke",
-          "guidance": "Bedanken Sie sich offiziell bei denen, die zur Arbeit beigetragen haben:\n• Leiter und Co-Direktor der Abschlussarbeit.\n• Synodalausschuss / Gutachter.\n• Geldgeber: Stipendien, Projekte, Institutionen (zwingend für Projekte mit externer Unterstützung).\n• Technische Mitarbeiter, Labore, Unternehmen.\n• Familiäre und persönliche Unterstützung (am Ende, kurz).\nErweiterung: eine halbe Seite."
+          "guidance": "Bedanken Sie sich offiziell bei denen, die zur Arbeit beigetragen haben:\n• Leiter und Co-Direktor der Abschlussarbeit.\n• Synodalausschuss / Gutachter.\n• Geldgeber: Stipendien, Projekte, Institutionen (zwingend für Projekte mit externer Unterstützung).\n• Technische Mitarbeiter, Labore, Unternehmen.\n• Familiäre und persönliche Unterstützung (am Ende, kurz).\nLänge: eine halbe Seite."
         },
         "introduction": {
           "title": "Einführung",
@@ -2921,7 +2918,7 @@
         },
         "literature_review": {
           "title": "Rezension der Literatur und des Stands der Technik",
-          "guidance": "Dies ist der Abschnitt, der Ihre Beherrschung des Fachgebiets demonstriert. Sie müssen:\n• Relevante Werke der letzten 5–10 Jahre systematisch abdecken (Klassiker können älter sein).\n• Organisieren Sie nach Thema, Schwerpunkt oder Chronologie – nicht als Liste mit Zusammenfassungen.\n• Vergleichen Sie die Vorschläge kritisch: Stärken, Schwächen, Grenzen.\n• Identifizieren Sie die Lücke, die Ihre Abschlussarbeit füllt („Keine frühere Arbeit hat sich mit X befasst“).\n• Wenn möglich, schließen Sie mit einer Vergleichstabelle verwandter Werke ab.\nFür die Promotion: Diese Rezension muss umfassend sein und alle Aspekte des Problems abdecken.\nStrategie: Suche Scopus, WoS, ACM DL, IEEE Xplore. Verwenden Sie für jedes Element den DOI-Importer."
+          "guidance": "Dies ist der Abschnitt, der Ihre Beherrschung des Fachgebiets demonstriert. Sie müssen:\n• Relevante Werke der letzten 5–10 Jahre systematisch abdecken (Klassiker können älter sein).\n• Organisieren Sie nach Thema, Schwerpunkt oder Chronologie – nicht als Liste mit Zusammenfassungen.\n• Vergleichen Sie die Vorschläge kritisch: Stärken, Schwächen, Grenzen.\n• Identifizieren Sie die Lücke, die Ihre Abschlussarbeit füllt („Keine frühere Arbeit hat sich mit X befasst“).\n• Wenn möglich, schließen Sie mit einer Vergleichstabelle verwandter Werke ab.\nFür die Promotion: Diese Rezension muss umfassend sein und alle Aspekte des Problems abdecken.\nStrategie: Suche Scopus, WoS, ACM DL, IEEE Xplore. Verwenden Sie für jeden Artikel den DOI-Importer."
         },
         "theoretical_framework": {
           "title": "Theoretischer Rahmen",
@@ -2933,10 +2930,10 @@
         },
         "methodology": {
           "title": "Methodik",
-          "guidance": "Beschreiben Sie den methodischen Ansatz mit der Genauigkeit, die für das Postgraduiertenniveau erforderlich ist:\n• Forschungsparadigma: positivistisch, konstruktivistisch, gemischt.\n• Art der Forschung: experimentell, quasi-experimentell, Fallstudie, Simulation, Modellierung.\n• Spezifisches Forschungsdesign.\n• Datenquellen: Herkunft, Merkmale, Erhebungs- oder Generierungsprozess.\n• Pipeline oder vollständiger Prozess von den Daten bis zu den Ergebnissen.\n• Spezifische Tools, Sprachen, Bibliotheken und Versionen.\nGenug Details für eine vollständige Reproduzierbarkeit."
+          "guidance": "Beschreibt den methodischen Ansatz mit der für das Postgraduiertenniveau erforderlichen Genauigkeit:\n• Forschungsparadigma: positivistisch, konstruktivistisch, gemischt.\n• Art der Forschung: experimentell, quasi-experimentell, Fallstudie, Simulation, Modellierung.\n• Spezifisches Forschungsdesign.\n• Datenquellen: Herkunft, Merkmale, Erhebungs- oder Generierungsprozess.\n• Pipeline oder vollständiger Prozess von den Daten bis zu den Ergebnissen.\n• Spezifische Tools, Sprachen, Bibliotheken und Versionen.\nGenügend Details für eine vollständige Reproduzierbarkeit."
         },
         "experimentation": {
-          "title": "Experimente und Entwicklung",
+          "title": "Experiment und Entwicklung",
           "guidance": "Dokumentieren Sie den Entwicklungs- oder Experimentierprozess im Detail:\n• Versuchsaufbau: Hardware, Hyperparameter, Testbedingungen.\n• Durchgeführte Experimente und ihr Zweck (Ablationsstudie, Variantenvergleich).\n• Relevante Zwischenbeobachtungen (nicht nur das Endergebnis).\n• Während des Prozesses getroffene Entscheidungen und deren Begründung.\nAktivieren Sie diesen Abschnitt, wenn Ihre Arbeit eine erhebliche experimentelle Komponente hat\ntrennbar von der allgemeinen Methodik."
         },
         "results": {
@@ -2945,7 +2942,7 @@
         },
         "discussion": {
           "title": "Diskussion",
-          "guidance": "Die Diskussion einer Doktorarbeit muss den Nachweis wissenschaftlicher Reife erbringen:\n• Interpretieren Sie jedes Ergebnis in Bezug auf Ihre Hypothese.\n• Vergleichen Sie mit hochmodernen Werken: Übertreffen Sie, erreichen Sie Ihr Niveau oder bleiben Sie zurück?\n• Erklärt Diskrepanzen zu theoretischen Grundlagen.\n• Diskutieren Sie theoretische Implikationen: Was bedeutet das für das Fachgebiet?\n• Diskutieren Sie praktische Implikationen: Welche Anwendungen werden abgeleitet?\n• Ehrliche Einschränkungen: Verstecken Sie keine Schwächen, das Komitee wird sie trotzdem sehen.\n• Ggf. Gefährdungen der Gültigkeit (intern, extern, Konstruktvalidität)."
+          "guidance": "Die Diskussion einer Doktorarbeit muss den Nachweis wissenschaftlicher Reife erbringen:\n• Interpretieren Sie jedes Ergebnis in Bezug auf Ihre Hypothese.\n• Vergleichen Sie mit hochmodernen Werken: Übertreffen Sie, erreichen Sie Ihr Niveau oder bleiben Sie zurück?\n• Erklärt Diskrepanzen zu theoretischen Grundlagen.\n• Diskutieren Sie theoretische Implikationen: Was bedeutet das für das Fachgebiet?\n• Diskutieren Sie praktische Implikationen: Welche Anwendungen werden abgeleitet?\n• Ehrliche Einschränkungen: Verstecken Sie keine Schwächen, das Komitee wird sie trotzdem sehen.\n• Gegebenenfalls Gefährdungen der Gültigkeit (intern, extern, Konstruktvalidität)."
         },
         "conclusions": {
           "title": "Schlussfolgerungen und zukünftige Arbeit",
@@ -2957,7 +2954,7 @@
         },
         "publications": {
           "title": "Abgeleitete Veröffentlichungen",
-          "guidance": "Listen Sie die veröffentlichten oder eingereichten Arbeiten auf, die aus dieser Dissertation hervorgegangen sind:\n• Artikel in indexierten Zeitschriften (Q1, Q2, Scopus, WoS).\n• Vorträge auf nationalen und internationalen Konferenzen.\n• Buchkapitel, Patente, technische Berichte.\nJeweils: vollständige Referenz + Status (veröffentlicht / akzeptiert / eingereicht / in Vorbereitung).\nFrühere Veröffentlichungen sind ein Qualitätsmerkmal und können die Verteidigung erleichtern."
+          "guidance": "Listen Sie die veröffentlichten oder eingereichten Arbeiten auf, die auf dieser Arbeit basieren:\n• Artikel in indexierten Zeitschriften (Q1, Q2, Scopus, WoS).\n• Vorträge auf nationalen und internationalen Konferenzen.\n• Buchkapitel, Patente, technische Berichte.\nJeweils: vollständige Referenz + Status (veröffentlicht / akzeptiert / eingereicht / in Vorbereitung).\nFrühere Veröffentlichungen sind ein Qualitätsmerkmal und können die Verteidigung erleichtern."
         },
         "glossary": {
           "title": "Glossar",
@@ -2968,39 +2965,471 @@
           "guidance": "Ergänzendes technisches Material, das nicht zum Hauptfluss gehört:\n• Lange oder sekundäre mathematische Beweise.\n• Quellcode (Hauptmodule, Experimentskripte).\n• Vollständige Datentabellen oder zusätzliche Ergebnisse.\n• Datenerfassungsinstrumente.\n• Ethische Genehmigungsschreiben, Vertraulichkeitsvereinbarungen.\nNummer: Anhang A, B… mit beschreibenden Titeln."
         }
       },
-      "meta": "Bibliographie APA 7 · XeLaTeX"
+      "description": "Profil für Master und Promotion: Literaturrecherche, Stand der Technik, Ansatz, Experimente, Glossar und Akronyme. XeLaTeX, biber, APA 7."
     },
     "vancouver.health": {
       "name": "Gesundheitswissenschaften (IMRaD)",
-      "description": "IMRaD-Struktur für klinische und biomedizinische Forschung. Literaturverzeichnis im Vancouver-Stil. Ideal für Abschlussarbeiten in Medizin, Pflege und Gesundheitswissenschaften."
+      "sections": {
+        "title_page": {
+          "guidance": "Das Deckblatt wird automatisch mit den Projektdaten generiert.\nSie müssen hier keinen Inhalt schreiben."
+        },
+        "table_of_contents": {
+          "guidance": "Der Index wird automatisch generiert.\nSie müssen hier nichts schreiben."
+        },
+        "abstract_es": {
+          "title": "Zusammenfassung",
+          "guidance": "Die IMRaD-Zusammenfassung ist mit den gleichen Untertiteln wie der Artikel im Miniaturformat aufgebaut:\n• Ziel: ein Satz mit dem Zweck der Studie.\n• Material und Methoden: Design, Population, Intervention und Hauptmessungen.\n• Ergebnisse: Relevantere Ergebnisse mit numerischen Daten.\n• Schlussfolgerungen: klinische Interpretation und Umfang.\nLimit: 250 Wörter für die Abschlussarbeit (variiert je nach Institution). Keine Zitate. Keine undefinierten Akronyme.\nAm Ende: 3–6 MeSH-Schlüsselwörter (Medical Subject Headings)."
+        },
+        "abstract_en": {
+          "title": "Zusammenfassung",
+          "guidance": "Getreue Übersetzung der Zusammenfassung ins Englische mit den gleichen Untertiteln: Ziel, Methoden, Ergebnisse, Schlussfolgerungen.\nSchlüsselwörter: MeSH-Begriffe auf Englisch.\nErforderlich für die Indexierung in PubMed/MEDLINE und Präsentation auf internationalen Konferenzen."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "In IMRaD antwortet die Einleitung: Was ist bekannt? was ist nicht bekannt? Was soll studiert werden?\nEmpfohlener Aufbau (Trichter):\n1. Ausmaß des Gesundheitsproblems (Epidemiologie, Krankheitslast).\n2. Was bekannt ist: selektive Durchsicht der Literatur mit Zitaten aus Vancouver ([1], [2]…).\n3. Wissenslücke oder Kontroverse, die das Studium motiviert.\n4. Forschungsfrage bzw. Ziel der Studie (klar dargelegt).\n5. Gegebenenfalls Hypothesen.\nPräsentieren Sie hier keine Ergebnisse. Typische Länge: 2–4 Seiten."
+        },
+        "materials_methods": {
+          "title": "Material und Methoden",
+          "guidance": "Beschreiben Sie die Studie so detailliert, dass sie wiederholt werden kann. Beinhaltet:\n• Studiendesign: experimentell, Kohorte, Fallkontrolle, Querschnitt, systematische Überprüfung usw.\n• Ort und Zeitraum des Studiums.\n• Bevölkerung: Einschluss- und Ausschlusskriterien.\n• Stichprobe: Größe, Stichprobentechnik, statistische Begründung.\n• Intervention (falls zutreffend): genaue Beschreibung, Dosis, Dauer.\n• Variablen und Messinstrumente.\n• Statistische Analyse: verwendete Tests, Software, Signifikanzniveau.\n• Ethische Überlegungen: Zustimmung der Ethikkommission, Einverständniserklärung.\nVermeiden Sie es, methodische Entscheidungen zu rechtfertigen – beschreiben Sie sie einfach."
+        },
+        "results": {
+          "title": "Ergebnisse",
+          "guidance": "Stellen Sie die Ergebnisse objektiv und ohne Interpretation dar:\n• Beginnen Sie mit den Merkmalen der Stichprobe (Tabelle 1: Basismerkmale).\n• Präsentiert die Ergebnisse in der Reihenfolge der Ziele oder Hypothesen.\n• Verwenden Sie Tabellen und Abbildungen für numerische Daten – jeweils referenziert im Text.\n• Berichte: n, %, Mittelwerte ± SD, Mediane (IQR), RR, OR, 95 %-KI, p-Wert.\n• Wiederholen Sie im Text nicht das, was die Tabelle bereits zeigt – kommentieren Sie nur das, was am relevantesten ist.\n• Für qualitative Studien: Kategorien mit Textzitaten der Teilnehmer (anonym)."
+        },
+        "discussion": {
+          "title": "Diskussion",
+          "guidance": "Es ist der analytischste Abschnitt und der am schwierigsten zu schreibende. Sie müssen:\n• Kehren Sie zum Ziel der Studie zurück und fassen Sie die wichtigsten Erkenntnisse zusammen.\n• Vergleichen Sie Ihre Ergebnisse mit früheren Studien (ähnlich, unterschiedlich und widersprüchlich).\n• Diskrepanzen erklären: Unterschiede in Design, Bevölkerung, Kontext.\n• Klinische Implikationen aufzeigen: Was ändert sich in der Praxis?\n• Erkennen Sie die Grenzen der Studie an (verharmlosen Sie sie nicht – das stärkt die Glaubwürdigkeit).\n• Schlagen Sie konkrete zukünftige Forschungsarbeiten vor.\nPräsentieren Sie hier keine neuen Ergebnisse."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen",
+          "guidance": "In vielen biomedizinischen Artikeln sind die Schlussfolgerungen in der Diskussion enthalten.\nWenn Ihre Institution sie separat benötigt:\n• Ein oder zwei Sätze pro beantwortetem Ziel.\n• Beantwortet direkt die Forschungsfrage.\n• Vermeiden Sie Verallgemeinerungen, die über das hinausgehen, was die Daten zulassen.\n• Erwähnt den Beitrag zum Wissen oder zur klinischen Praxis."
+        },
+        "references": {
+          "title": "Referenzen",
+          "guidance": "Vancouver-Stil: Numerische Referenzen in der Reihenfolge ihres Erscheinens im Text ([1], [2]…).\nDie Liste wird beim Kompilieren automatisch aus Ihrer .bib generiert.\nPriorisiert Quellen, die in MEDLINE/PubMed, Scopus und Web of Science indiziert sind.\nVerwenden Sie den DOI-Importer, um Artikel mit einem Klick hinzuzufügen – Crossref hat die meisten PubMed-Artikel.\nReferenzgrenze: variiert je nach Institution (üblich: 30–50 für Abschlussarbeiten)."
+        },
+        "appendices": {
+          "title": "Anhänge",
+          "guidance": "Enthält unterstützende Dokumente, die nicht in den Text passen:\n• Erhebungsinstrument (Fragebogen, Datenerfassungsbogen).\n• Genehmigungsschreiben der Ethikkommission.\n• Einverständniserklärung.\n• Roh- oder Zusatzdatentabellen.\n• Detailliertes Interventionsprotokoll.\nNummer: Anhang A, B… und beziehen Sie sich auf diese aus dem Text."
+        }
+      },
+      "description": "IMRaD-Struktur für klinische und biomedizinische Forschung. Bibliographie im Vancouver-Stil. Ideal für Abschlussarbeiten in den Bereichen Medizin, Pflege und Gesundheitswissenschaften."
     },
     "apa.basic": {
-      "name": "APA Grundlagen",
-      "description": "Vereinfachtes Profil für akademische Arbeiten im strikten APA-7-Stil. Ideal für Berichte, Essays und kurze Artikel."
+      "name": "Basis-APA",
+      "sections": {
+        "title_page": {
+          "guidance": "Das APA 7-Deckblatt wird automatisch mit den Projektdaten generiert.\nEnthält: Titel, Autor(en), Institution, Fach, Name und Datum des Lehrers.\nSie müssen hier keinen Inhalt schreiben."
+        },
+        "abstract_es": {
+          "title": "Zusammenfassung",
+          "guidance": "Die APA 7-Zusammenfassung befindet sich auf einer separaten Seite mit der Überschrift „Zusammenfassung“ (zentriert, fett).\n150–250 Wörter, die antworten: Was wird untersucht? Wie? Was wurde gefunden? Was bedeutet es?\nFügen Sie am Ende 4–6 Schlüsselwörter hinzu: in Kursivschrift.\nZitieren Sie in der Zusammenfassung keine Referenzen."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "In APA 7 trägt die Einleitung nicht die Überschrift „Einleitung“ – das Profil behandelt sie automatisch.\nSie müssen Folgendes vorlegen:\n• Das Thema und seine Relevanz.\n• Was bisher bekannt ist (kurze bibliografische Zusammenfassung).\n• Der Zweck oder das Ziel der Arbeit.\n• Die Frage oder Hypothese trifft zu.\nVerwenden Sie APA-Zitate im Text: (Nachname, Jahr) oder Nachname (Jahr), je nach Ablauf."
+        },
+        "development": {
+          "title": "Entwicklung",
+          "guidance": "Hauptteil der Arbeit. Organisieren Sie Ihre Inhalte nach Komplexität mit Überschriften der Ebenen 2 und 3.\nFür Aufsätze: Hauptargument, unterstützende Argumente mit bibliografischen Belegen, Gegenargumente.\nFür Berichte: konzeptioneller Rahmen, Analyse, Erkenntnisse.\nQuellen paraphrasieren – vermeiden Sie lange wörtliche Zitate (verwenden Sie sie nur, wenn es auf die genauen Wörter ankommt).\nZitieren Sie alles, was nicht Ihre eigene Schöpfung ist."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Fassen Sie die Hauptpunkte der Arbeit zusammen:\n• Beantwortet die in der Einleitung gestellte Frage oder den Zweck.\n• Weisen Sie auf die Implikationen der Ergebnisse hin.\n• Grenzen erkennen.\n• Schlägt Linien zukünftiger Arbeit oder Forschung vor.\nFügen Sie hier keine neuen Zitate ein. Länge: 1–2 Seiten."
+        },
+        "references": {
+          "title": "Referenzen",
+          "guidance": "In APA 7 heißt es „Referenzen“ (nicht „Bibliographie“).\nDie Liste wird beim Kompilieren automatisch aus Ihrer .bib generiert.\nAPA 7-Regeln: alphabetisch geordnet, hängender Einzug, URL oder DOI am Ende jedes Eintrags.\nVerwenden Sie den DOI-Importer (Strg+[ > DOI-Panel), um Referenzen mit einem Klick hinzuzufügen."
+        }
+      },
+      "description": "Vereinfachtes Profil für wissenschaftliche Arbeiten mit strengem APA 7-Stil. Ideal für Berichte, Aufsätze und Kurzartikel."
     },
     "chicago.humanities": {
-      "name": "Chicago / Turabian — Geisteswissenschaften",
-      "description": "Abschlussarbeiten in Geistes-, Sozialwissenschaften und Künsten nach Chicago Notes-Bibliographie (17. Aufl.) / Turabian 9. Aufl. Zitate erscheinen in nummerierten Fußnoten. Alphabetisch geordnetes Literaturverzeichnis am Ende. Verbreitet in Philosophie, Geschichte, Literatur, Sozialwissenschaften und Jura."
+      "name": "Chicago / Turabian – Geisteswissenschaften",
+      "sections": {
+        "title_page": {
+          "guidance": "Das Turabian-Cover enthält: Titel (zentriert, ein Drittel von oben), Name des Autors, Programm und Universität, Stadt und Jahr. Keine Seitenzahl.\nDas Profil generiert das Deckblatt mit den Projektdaten."
+        },
+        "abstract": {
+          "title": "Zusammenfassung",
+          "guidance": "Turabian empfiehlt für Doktorarbeiten eine Zusammenfassung von 150–350 Wörtern.\nBeinhaltet: Thema, Ansatz, Hauptargument, Methodik und Schlussfolgerung.\nSchreiben Sie es in der Gegenwarts- oder Vergangenheitsform – wählen Sie eine und bleiben Sie konsistent."
+        },
+        "table_of_contents": {
+          "guidance": "Der Index wird automatisch generiert. In Chicago sind Kapitel- und Abschnittsebenen enthalten, nicht jedoch Unterabschnitte ab Ebene 3."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "In den Geisteswissenschaften präsentiert die Einleitung das zentrale Argument (These-Statement), den Korpus oder die Hauptquellen, die Methodik und die Begründung.\nChicago ermöglicht einen diskursiveren Stil als andere Disziplinen – Sie können die erste Person verwenden und die Argumentation von Anfang an nuanciert entwickeln.\nZitate erfolgen in nummerierten Fußnoten, nicht in Klammern. Das System fügt sie automatisch ein."
+        },
+        "chapter_1": {
+          "title": "Kapitel 1",
+          "guidance": "In den Geisteswissenschaften entwickeln die Kapitel die Argumentation schrittweise weiter.\nJedes Kapitel muss sein eigenes Argument haben, das zum zentralen Argument der Arbeit beiträgt.\nVerwenden Sie Fußnoten für direkte Zitate, Verweise und ausführliche Kommentare, die den Textfluss unterbrechen würden.\nKurze Fußnoten können Zitate sein; Die langen können zusätzliche Diskussionen sein."
+        },
+        "chapter_2": {
+          "title": "Kapitel 2",
+          "guidance": "Zweites Kapitel. Entwickeln Sie den nächsten Schritt der Argumentation.\nIn der Geschichte oder Literatur kann dieses Kapitel einen Korpus von Texten, einen historischen Zeitraum oder eine Reihe von Primärquellen analysieren.\nZitieren Sie Primär- und Sekundärquellen mit Fußnoten. Bei wiederkehrenden Primärquellen verwenden Sie Abkürzungen in einer Fußnote nach dem ersten vollständigen Zitat."
+        },
+        "chapter_3": {
+          "title": "Kapitel 3",
+          "guidance": "Drittes Kapitel. Es bringt das Argument auf den Punkt seiner größten Entwicklung.\nSie können je nach Struktur Ihrer Abschlussarbeit Kapitel hinzufügen oder entfernen – die meisten geisteswissenschaftlichen Dissertationen bestehen aus 3–5 Kapiteln."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Die Schlussfolgerungen greifen das zentrale Argument auf und bereichern es mit dem, was in den Kapiteln gelernt wurde.\nVermeiden Sie es, bereits Gesagtes zu wiederholen. Es öffnet sich für breitere Implikationen, offene Debatten und mögliche zukünftige Forschungen.\nIn den Geisteswissenschaften ist es gültig – und manchmal notwendig –, mit Nuancen oder offenen Fragen abzuschließen."
+        },
+        "bibliography": {
+          "title": "Bibliographie",
+          "guidance": "In Chicago Notes-Bibliography heißt die endgültige Liste „Bibliography“ (nicht „References“).\nEs ist alphabetisch nach dem Nachnamen des Autors geordnet.\nDie Bibliographie wird beim Kompilieren automatisch aus Ihrer .bib generiert.\nFügen Sie alle zitierten Quellen in Fußnoten ein – und Sie können konsultierte, aber nicht zitierte Quellen einbeziehen, wenn sie Kontext hinzufügen."
+        },
+        "appendices": {
+          "title": "Anhänge",
+          "guidance": "In den Geisteswissenschaften umfassen Anhänge in der Regel: Transkriptionen von Primärquellen, vollständige Interviews, zusätzliches Bildmaterial, Chronologien oder Glossare von Fachbegriffen."
+        }
+      },
+      "description": "Dissertationen und Dissertationen in den Geistes-, Sozial- und Kunstwissenschaften mit Stil Chicago Notes-Bibliography (17. Aufl.) / Turabian 9. Aufl. Zitate erfolgen in nummerierten Fußnoten, nicht in Klammern. Bibliographie am Ende alphabetisch geordnet. Weit verbreitet in Philosophie, Geschichte, Literatur, Sozialwissenschaften und Recht."
     },
     "mx.ipn.esfm": {
-      "name": "IPN ESFM — Physik und Mathematik",
-      "description": "Bachelor- und Masterarbeiten der IPN-Hochschule für Physik und Mathematik. Optimiert für mathematisch dichte Arbeiten: Sätze, Beweise, Gleichungen. APA- oder numerischer Zitierstil je nach Fachbereich."
+      "name": "IPN ESFM – Physik und Mathematik",
+      "sections": {
+        "portada": {
+          "guidance": "Der ESFM-Umschlag umfasst: IPN-Schild, „Higher School of Physics and Mathematics“, Titel der Arbeit, Art der Arbeit (Thesis zur Erlangung des Titels/Abschlusses von...), Name des Studenten, Direktor(en), Ort und Jahr.\nDas Profil wird mit den Projektdaten generiert."
+        },
+        "resumen": {
+          "title": "Zusammenfassung",
+          "guidance": "Zusammenfassung von 150–250 Wörtern. In der Physik und Mathematik muss es präzise sein:\n• Das zentrale Problem oder die zentrale Frage, ausgedrückt ohne unnötigen Jargon.\n• Der Hauptansatz oder die Hauptmethode.\n• Das wichtigste Ergebnis (ggf. mit der Messung bzw. Dimension).\n• Die Implikation oder Anwendung des Ergebnisses.\nVermeiden Sie Gleichungen in der Zusammenfassung. Definieren Sie die Akronyme, die Sie verwenden."
+        },
+        "abstract": {
+          "title": "Zusammenfassung",
+          "guidance": "Englische Übersetzung der Zusammenfassung. Empfohlen, wenn Sie planen, auf internationalen Konferenzen zu veröffentlichen oder zu präsentieren."
+        },
+        "tabla_contenidos": {
+          "guidance": "Der Index wird automatisch generiert. In mathematischen Werken ist es üblich, vor der Einleitung auch eine Liste von Notationen und Symbolen einzufügen."
+        },
+        "introduccion": {
+          "title": "Einführung",
+          "guidance": "Die Einführung in Physik/Mathematik stellt die Arbeit in den Kontext der Disziplin:\n• Motivation: Warum ist das Problem interessant oder relevant?\n• Hintergrund: unmittelbar verwandte frühere Arbeiten.\n• Präzise Darstellung des Problems bzw. der Forschungsfrage.\n• Hauptergebnisse (kündigt an, ohne zu demonstrieren – das geht in den Körper).\n• Dokumentenstruktur.\nSie können von hier aus die mathematische Notation verwenden, diese jedoch zugänglich halten."
+        },
+        "preliminares": {
+          "title": "Vorbereitungen",
+          "guidance": "Abschnitt, in dem Sie die mathematische Sprache definieren, die Sie im Rest der Arbeit verwenden werden.\nEnthält: grundlegende Definitionen, Notation und bekannte Ergebnisse, die Sie zitieren müssen.\nZeigen Sie keine bekannten Ergebnisse an, es sei denn, sie sind zur Festlegung der genauen Notation erforderlich.\nVerwenden Sie die Theorem-, Definitions- und Lemma-Blöcke des Herausgebers, um Ihren Inhalt zu strukturieren.\nStrukturbeispiel: „Definition 2.1 (Hilbert Space)…“, „Lemma 2.3…“, „Theorem 2.5 (Spektral)…“"
+        },
+        "desarrollo": {
+          "title": "Entwicklung",
+          "guidance": "Der Hauptteil der Arbeit. In der reinen Mathematik: die Entwicklung der Theorie mit vollständigen Beweisen.\nIn der Physik: die Entwicklung des Modells, der Theorie oder des Experiments.\nStrukturieren Sie jedes Kapitel mit Sätzen, Lemmata, Theoremen und Beweisen.\nJede Demo muss explizit mit □ oder „xnxx“ abgeschlossen werden (der Editor fügt dies automatisch ein).\nAuf nummerierte Gleichungen sollte aus dem Text verwiesen werden: Verwenden Sie \\eqref{} oder \\cref{}."
+        },
+        "resultados": {
+          "title": "Ergebnisse und Anwendungen",
+          "guidance": "Wenn Ihre Arbeit numerische, rechnerische oder experimentelle Anwendungen hat, reichen Sie diese hier ein.\nFür Computerphysik: Beinhaltet Simulationsparameter, Konvergenz und Vergleich mit analytischen oder experimentellen Ergebnissen.\nFür experimentelle Physik: Präsentiert Daten mit Unsicherheiten, statistische Analysen und Grafiken."
+        },
+        "conclusiones": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Fasst die erzielten Ergebnisse und deren Relevanz zusammen.\nIn der Mathematik: Welche Vermutungen wurden gelöst, welche Fragen wirft die Arbeit auf.\nIn der Physik: Welche Phänomene wurden erklärt, welche Vorhersagen macht das Modell.\nGeben Sie deutlich an, was in Ihrer Arbeit originell ist und was bekannt ist\nWeisen Sie auf offene Probleme oder natürliche Erweiterungen der Arbeit hin."
+        },
+        "referencias": {
+          "title": "Referenzen",
+          "guidance": "Referenzliste in APA 7 (automatisch generiert).\nFür Artikel aus Physik-/Mathematikzeitschriften verwenden Sie den DOI-Importer – Crossref hat die meisten Artikel aus Physical Review, Journal of Mathematical Physics usw.\nFür klassische Lehrbücher (Rudin, Spivak, Peskin & Schroeder usw.): Fügen Sie den Eintrag manuell zur .bib hinzu, wenn sie nicht in Crossref enthalten sind."
+        },
+        "apendices": {
+          "title": "Anhänge",
+          "guidance": "Ergänzendes technisches Material: lange Demonstrationen, die den Fluss des Hauptarguments unterbrechen würden, detaillierte Berechnungen, Simulationscode, Tabellen mit experimentellen Daten."
+        }
+      },
+      "description": "Bachelor- und Postgraduiertenarbeit der Hochschule für Physik und Mathematik des IPN. Entwickelt für Arbeiten mit hoher mathematischer Dichte: Theoreme, Lemmata, Folgerungen, Beweise, physikalische Notation und komplexe Gleichungen. APA-Bibliographie für allgemeine Werke oder numerischer Stil für Veröffentlichungen zur Physik."
     },
     "mx.ipn.sepi": {
-      "name": "IPN SEPI — Postgraduiertenstudium in Ingenieurwissenschaften und Naturwissenschaften",
-      "description": "Abschlussarbeiten der Abteilung für Postgraduiertenstudien und Forschung des IPN. IPN-Format mit IEEE-Bibliographie für Ingenieurwesen oder APA für Naturwissenschaften. Legal-Papier, IPN-spezifische Ränder."
+      "name": "IPN SEPI – Postgraduierter in Ingenieurwissenschaften und Naturwissenschaften",
+      "sections": {
+        "portada": {
+          "guidance": "Der IPN-SEPI-Schutz umfasst: IPN-Schild, Name der akademischen Einheit (ESIME/ESCOM/UPIITA...), Titel der Arbeit, Art der Abschlussarbeit (zur Erlangung des Master-/Doktortitels...), Name des Studenten, Leiter der Abschlussarbeit, Ort und Jahr.\nDas Profil generiert das Deckblatt mit den Projektdaten."
+        },
+        "resumen": {
+          "title": "Zusammenfassung",
+          "guidance": "Technische Zusammenfassung auf Spanisch mit 200–300 Wörtern. Das SEPI verlangt es auf Spanisch.\nEs muss Folgendes enthalten: Ziel, Methodik, Hauptergebnisse und Schlussfolgerung.\nAm Ende: 5–8 technische Schlüsselwörter."
+        },
+        "abstract": {
+          "title": "Zusammenfassung",
+          "guidance": "Englische Übersetzung der Zusammenfassung. Das SEPI-IPN verlangt dies in allen Postgraduiertenprogrammen.\nSchlüsselwörter: wie auf Spanisch, auf Englisch."
+        },
+        "tabla_contenidos": {
+          "guidance": "Der Index wird automatisch generiert. Das IPN verlangt außerdem ein Abbildungsverzeichnis, ein Tabellenverzeichnis und ggf. ein Algorithmen- oder Codelisting."
+        },
+        "introduccion": {
+          "title": "Einführung",
+          "guidance": "Die IPN-SEPI-Einführung muss Folgendes enthalten:\n1. Technologischer oder wissenschaftlicher Kontext des Problems.\n2. Motivation und Begründung.\n3. Hypothese oder Forschungsfrage.\n4. Allgemeines Ziel und spezifische Ziele.\n5. Geltungsbereich und Einschränkungen.\n6. Organisation des Dokuments.\nZitate in IEEE sind numerisch: [1], [2], [3]…"
+        },
+        "estado_arte": {
+          "title": "Stand der Technik",
+          "guidance": "Kritische Auseinandersetzung mit dem Stand der Technik. Im SEPI-IPN ist es obligatorisch und muss:\n• Identifizieren Sie die relevantesten Werke (letzte 5–10 Jahre; IEEE/ACM/Elsevier-Konferenzen und -Zeitschriften).\n• Ansätze vergleichen: Vergleichstabellen zu Methoden, Ergebnissen und Einschränkungen.\n• Identifizieren Sie die Lücke oder Einschränkung, die Ihre Arbeit löst.\n• Begründen Sie, warum Ihr Vorschlag anders oder besser ist.\nZitat mit Nummer in Klammern: „Pérez et al. [5] vorgeschlagen…“"
+        },
+        "metodologia": {
+          "title": "Methodik oder Entwicklung",
+          "guidance": "Im Ingenieurwesen beschreibt die Methodik die vorgeschlagene Lösung:\n• Systemarchitektur oder -design.\n• Gegebenenfalls mathematisches oder formales Modell.\n• Algorithmen entwickelt (verwenden Sie den Algorithmusblock).\n• Implementierung: Sprachen, Frameworks, Hardware.\n• Allgemeines Flussdiagramm des Systems.\nDer Detaillierungsgrad muss eine Replikation der Arbeit ermöglichen."
+        },
+        "resultados": {
+          "title": "Ergebnisse und Analyse",
+          "guidance": "Versuchs- oder Simulationsergebnisse präsentieren und analysieren:\n• Versuchsaufbau: Geräte, Parameter, Bedingungen.\n• Bewertungsmetriken: Präzision, Zeit, Verbrauch, Leistung usw.\n• Vergleich mit dem Stand der Technik (Vergleichstabelle).\n• Gegebenenfalls statistische Analyse (Mittelwert, Abweichung, Konfidenzintervall).\nIn IEEE muss jede Abbildung und Tabelle eine Nummer und eine prägnante Beschreibung haben."
+        },
+        "conclusiones": {
+          "title": "Schlussfolgerungen und zukünftige Arbeit",
+          "guidance": "Schließen Sie die Arbeit mit technischer Sorgfalt ab:\n• Ziele erreicht vs. erreicht.\n• Originalbeiträge der Arbeit.\n• Identifizierte technische Einschränkungen.\n• Zukünftige Arbeiten: konkrete Verbesserungen, mögliche Erweiterungen, offene Probleme.\nDas IPN-SEPI legt besonderen Wert auf die Erwähnung möglicher Veröffentlichungen oder industrieller Anwendungen."
+        },
+        "referencias": {
+          "title": "Referenzen",
+          "guidance": "In IEEE sind die Referenzen numerisch in der Reihenfolge ihres Auftretens.\nDie Liste wird automatisch aus Ihrer .bib generiert.\nFür IEEE- und ACM-Artikel: Verwenden Sie den DOI-Importer.\nDas IPN erfordert die Angabe des DOI, sofern verfügbar."
+        },
+        "anexos": {
+          "title": "Anhänge",
+          "guidance": "Vollständiger Quellcode, Skripte, Hardware-/Softwarekonfigurationen, Datenblätter, Benutzerhandbücher, rohe Experimentdaten.\nNummer: Anhang A, Anhang B… und verweisen Sie jeweils auf den Text."
+        }
+      },
+      "description": "Dissertation der Postgraduate Studies and Research Section (SEPI) des National Polytechnic Institute. Gilt für CINVESTAV-, ESIME-, ESCOM-, UPIITA- und SEPI-Anteile. IEEE-Bibliographie für Ingenieurwesen und Technologie; IPN-Format mit Rändern, Typografie und Struktur, die speziell für die Postgraduierten- und Forschungsdirektion gelten."
     },
     "mx.ipn.upibi": {
-      "name": "IPN UPIBI — Biotechnologie",
-      "description": "Abschlussarbeiten der Interdisziplinären Beruflichen Einheit für Biotechnologie des IPN. Ausgerichtet auf Biochemie, Mikrobiologie, Bioprozesstechnik, Bioinformatik und Umweltbiotechnologie. APA- oder Vancouver-Bibliographie je nach Bereich."
+      "name": "IPN UPIBI – Biotechnologie",
+      "sections": {
+        "portada": {
+          "guidance": "Der UPIBI-Schutz umfasst: IPN-Schild, „Interdisciplinary Professional Unit of Biotechnology“, Karriere oder Programm, Titel der Arbeit, Art der Abschlussarbeit, Name des Studenten, Direktor(en), Ort und Jahr."
+        },
+        "resumen": {
+          "title": "Zusammenfassung",
+          "guidance": "Wissenschaftliche Zusammenfassung von 200–300 Wörtern auf Spanisch. In der Biotechnologie muss die Zusammenfassung Folgendes enthalten:\n• Ziel der Studie.\n• Hauptsächlich verwendete Materialien/Organismen/Stämme/Proben.\n• Kernmethodik (Art des Experiments, wichtige Analysetechnik).\n• Wichtigstes Ergebnis (möglichst mit quantitativen Daten).\n• Fazit oder Anwendung.\nAm Ende: 5–8 Schlüsselwörter auf Spanisch."
+        },
+        "abstract": {
+          "title": "Zusammenfassung",
+          "guidance": "Englische Übersetzung der Zusammenfassung. Das UPIBI verlangt es für alle Studien- und Postgraduiertenarbeiten.\nSchlüsselwörter auf Englisch: die gleichen wie auf Spanisch."
+        },
+        "tabla_contenidos": {
+          "guidance": "Automatisch generierter Index. Bei Arbeiten mit vielen Abbildungen (Gele, Chromatogramme, Wachstumskurven) enthält es ein Abbildungsverzeichnis und ein Tabellenverzeichnis."
+        },
+        "introduccion": {
+          "title": "Einführung",
+          "guidance": "Die Einführung in die Biotechnologie kontextualisiert das Problem aus Biologie und Technik:\n• Bedeutung des untersuchten Mikroorganismus, Prozesses, der untersuchten Verbindung oder des untersuchten Problems.\n• Stand der Technik: relevante frühere Arbeiten (verwenden Sie APA: Autor, Jahr).\n• Begründung: Warum ist diese Studie relevant?\n• Arbeitshypothese (wenn das Design experimentell ist).\n• Allgemeines Ziel und spezifische Ziele.\nSeien Sie von Anfang an genau auf Taxa, Stämme, Bedingungen und Verbindungen."
+        },
+        "marco_teorico": {
+          "title": "Theoretischer Rahmen",
+          "guidance": "Basiert die Arbeit auf wissenschaftlicher Literatur:\n• Biologie/Biochemie des untersuchten Systems (Mikroorganismus, Enzym, Stoffwechselweg usw.).\n• Prinzipien des Hauptprozesses oder der Haupttechnik (Fermentation, HPLC, PCR usw.).\n• Gegebenenfalls kinetische oder mathematische Modelle (Michaelis-Menten, Monod usw.).\n• Standards oder Vorschriften, falls relevant (NOM, FDA, WHO)."
+        },
+        "materiales_metodos": {
+          "title": "Materialien und Methoden",
+          "guidance": "In der Biotechnologie ist der Abschnitt über Materialien und Methoden von entscheidender Bedeutung für die Reproduzierbarkeit. Beinhaltet:\n• Biologische Materialien: Organismen, Stämme (mit Katalognummer oder Zugangsnummer), Zelllinien, Proben (mit Herkunft und Konservierungsbedingungen).\n• Reagenzien: Name, Qualität, Lieferant.\n• Ausstattung: Modell, Marke, Betriebsbedingungen.\n• Analysemethoden: genaue Bedingungen (Temperatur, pH-Wert, Zeit, Konzentrationen).\n• Versuchsdesign: unabhängige, abhängige und Kontrollvariablen; Repliken.\n• Statistische Analyse: Software, Tests und Signifikanzniveau (α = 0,05).\nDer Detaillierungsgrad sollte es einem anderen Labor ermöglichen, das Experiment genau zu wiederholen."
+        },
+        "resultados": {
+          "title": "Ergebnisse",
+          "guidance": "Stellen Sie die Daten objektiv und ohne Interpretation dar:\n• Abbildungen: Chromatogramme, Wachstumskurven, Gele, Mikroskopien – jeweils mit Nummer, beschreibendem Titel (unten) und vollständigen Einheiten auf den Achsen.\n• Tabellen: tabellarische Daten mit Mittelwert ± Standardabweichung, Einheiten in der Kopfzeile.\n• Statistik: gibt an, ob die Unterschiede signifikant sind (p < 0,05, ANOVA, Tukey usw.).\n• Gegebenenfalls statistische Buchstaben in Tabellen und Abbildungen (a, b, ab für homogene Gruppen).\nVerweisen Sie im Text explizit auf jede Abbildung oder Tabelle, bevor sie erscheint."
+        },
+        "discusion": {
+          "title": "Diskussion",
+          "guidance": "Interpretieren Sie die Ergebnisse im Kontext der Literatur:\n• Bestätigen oder widerlegen die Ergebnisse die Hypothese?\n• Vergleichen Sie mit früheren Studien: Stimmen sie überein? Unterscheiden sie sich? Warum können sie sich unterscheiden (Sorte, Bedingungen, Methode)?\n• Erklärt biologische oder biochemische Mechanismen, die die Ergebnisse rechtfertigen.\n• Diskutiert methodische Einschränkungen und deren Auswirkungen auf die Ergebnisse.\n• Implikationen: Was bedeutet das für Industrie, Medizin oder Umwelt?"
+        },
+        "conclusiones": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Fassen Sie die wichtigsten Dinge direkt und messbar zusammen:\n• Jede Schlussfolgerung entspricht einem bestimmten Ziel.\n• Vermeiden Sie es, die Zusammenfassung der Ergebnisse zu wiederholen – sie schließt ab, berichtet nicht.\n• Zeigt den Beitrag zum Wissen oder zur Branche an.\n• Empfehlungen für zukünftige Forschung."
+        },
+        "referencias": {
+          "title": "Referenzen",
+          "guidance": "Referenzliste in APA 7 (automatisch generiert).\nFür wissenschaftliche Artikel: Verwenden Sie den DOI-Importer – PubMed, ScienceDirect und Web of Science verfügen über DOIs für die meisten Biotechnologie-Artikel.\nFür Artikel ohne DOI: Geben Sie die URL der Zeitschrift oder Datenbank an."
+        },
+        "anexos": {
+          "title": "Anhänge",
+          "guidance": "Rohdaten aus Experimenten, vollständige Gele (ungekürzt), Nukleotid- oder Aminosäuresequenzen, GenBank-Zugangsnummern, Zertifikate der Reagenzienanalyse, vollständige Protokolle, die nicht in M&M enthalten sind."
+        }
+      },
+      "description": "Dissertation der Interdisziplinären Facheinheit Biotechnologie des IPN. Es umfasst Biochemie, Mikrobiologie, Bioverfahrenstechnik, Bioinformatik, Umwelt- und Pharmabiotechnologie. Experimenteller und quantitativer Charakter mit hoher Genauigkeit bei der Datenpräsentation. APA 7-Bibliographie für die meisten Bereiche; Vancouver wurde in Bereichen aufgenommen, die näher an den Gesundheitswissenschaften liegen."
     },
     "mx.ipn.upitta": {
-      "name": "IPN UPITTA — Fortgeschrittene Technologien",
-      "description": "Abschlussarbeiten der Interdisziplinären Beruflichen Einheit für Fortgeschrittene Technologien des IPN. Ausgerichtet auf Mechatronik, intelligente Systeme, Automatisierung und Zukunftstechnologien. IEEE-Bibliographie."
+      "name": "IPN UPITTA – Fortschrittliche Technologien",
+      "sections": {
+        "portada": {
+          "guidance": "Das UPITTA-Cover beinhaltet: IPN-Schild, „Interdisciplinary Professional Unit of Advanced Technologies“, Titel der Arbeit, Art der Abschlussarbeit, Name des Studenten, Direktoren, Ort und Jahr."
+        },
+        "resumen": {
+          "title": "Zusammenfassung",
+          "guidance": "Technische Zusammenfassung auf Spanisch mit 200–250 Wörtern. Der interdisziplinäre Charakter von UPITTA bedeutet, dass die Zusammenfassung für Leser aus verschiedenen Bereichen (Ingenieurwesen, Informatik, angewandte Mathematik) verständlich sein muss.\nBeinhaltet: technisches Problem, vorgeschlagene Lösung, Schlüsseltechnologien und wichtigstes messbares Ergebnis."
+        },
+        "abstract": {
+          "title": "Zusammenfassung",
+          "guidance": "Englische Übersetzung. Von UPITTA für alle Studien- und Aufbaustudiengänge gefordert.\nSchlüsselwörter auf Englisch: 5–8 relevante Fachbegriffe."
+        },
+        "tabla_contenidos": {
+          "guidance": "Automatisch generierter Index. Enthält ein Abbildungsverzeichnis und ein Tabellenverzeichnis, wenn von jedem Typ mehr als 5 Exemplare vorhanden sind."
+        },
+        "introduccion": {
+          "title": "Einführung",
+          "guidance": "Kontextualisieren Sie das Problem aus der interdisziplinären Perspektive von UPITTA:\n• Der Technologiebereich und seine Relevanz (Mechatronik, KI, Automatisierung usw.).\n• Das spezifische Problem und seine Auswirkungen (industriell, sozial, wissenschaftlich).\n• Wichtigste verwandte Werke (Zitat mit IEEE-Nummer: [1], [2]).\n• Allgemeines Ziel und spezifische Ziele.\n• Konkreter Beitrag: Was schlagen Sie vor, das nicht existiert oder nicht gut funktioniert?\n• Dokumentenorganisation."
+        },
+        "estado_arte": {
+          "title": "Stand der Technik und theoretischer Rahmen",
+          "guidance": "Kombination aus dem Stand der Technik und dem theoretischen Rahmen, geeignet für interdisziplinäres Arbeiten:\n• Überprüfen Sie die relevantesten früheren Arbeiten in jedem Bereich, den Ihr Projekt berührt.\n• Präsentieren Sie die Theorien oder mathematischen Modelle, auf denen Ihre Lösung basiert.\n• Vergleichstabellen bestehender Lösungen mit Ihren.\n• Identifizieren Sie klar die Nische oder Verbesserung, die Ihre Arbeit mit sich bringt.\nBei UPITTA ist der interdisziplinäre Ansatz eine Stärke – er zeigt, wie man verschiedene Bereiche integriert."
+        },
+        "diseno": {
+          "title": "Systemdesign",
+          "guidance": "Präsentieren Sie die vollständige Architektur oder das Design des Systems, bevor Sie es implementieren:\n• Allgemeine Architektur: Block- oder Komponentendiagramm.\n• Mathematisches oder dynamisches Modell (für Steuerungssysteme, Robotik usw.).\n• Auswahl und Begründung von Technologien (Sensoren, Aktoren, Plattformen, Algorithmen).\n• Flussdiagramme oder Zustandsautomaten, falls zutreffend.\n• Designbeschränkungen: Leistung, Größe, Kosten, Reaktionszeit.\nDas Design muss unabhängig von der Implementierung sein."
+        },
+        "implementacion": {
+          "title": "Implementierung und Ergebnisse",
+          "guidance": "Beschreiben Sie die Implementierung und präsentieren Sie die experimentellen Ergebnisse:\n• Entwicklungsumgebung: Hardware, Software, Versionen.\n• Implementierung durch Module oder Subsysteme.\n• Integrationstests: Funktioniert das gesamte System so, wie es das Design vorhersagt?\n• Quantitative Ergebnisse: Metriken (Genauigkeit, Reaktionszeit, Verbrauch, RMS-Fehler usw.).\n• Vergleich mit dem Stand der Technik oder mit der Baseline.\nBei UPITTA werden Tests unter realen oder quasi-realen Bedingungen großgeschrieben."
+        },
+        "conclusiones": {
+          "title": "Schlussfolgerungen und zukünftige Arbeit",
+          "guidance": "Schließen Sie die Arbeit mit technischer und interdisziplinärer Sorgfalt ab:\n• Ziele erreicht vs. erreicht (mit quantitativen Nachweisen).\n• Originalbeiträge (technische, methodische oder disziplinäre Integration).\n• Einschränkungen des Systems oder der Studie.\n• Zukünftige Arbeiten: Verbesserungen, Erweiterungen, mögliche Industrie- oder Forschungsanwendungen.\nErwähnen Sie, ob die Arbeit zu Veröffentlichungen oder Patenten geführt hat oder führen wird."
+        },
+        "referencias": {
+          "title": "Referenzen",
+          "guidance": "Numerische IEEE-Referenzen in der Reihenfolge ihres Auftretens (automatisch generiert).\nVerwenden Sie den DOI-Importer für Artikel von IEEE Xplore, ACM DL usw.\nGeben Sie in jeder Referenz den DOI an – dies ist eine IEEE-Anforderung."
+        },
+        "anexos": {
+          "title": "Anhänge",
+          "guidance": "Vollständiger Quellcode, Komponentendatenblätter, mechanische oder elektrische Zeichnungen, Kalibrierungsverfahren, Benutzerhandbücher, rohe Experimentdaten."
+        }
+      },
+      "description": "Dissertation der Interdisziplinären Facheinheit Advanced Technologies des IPN. Orientiert an Mechatronik, intelligenten Systemen, Automatisierung, Robotik und neuen Technologien. Interdisziplinärer Charakter: Integriert Ingenieurwissenschaften, Informatik und Grundlagenwissenschaften. IEEE Numerical Bibliography."
     },
     "mx.unam.posgrado": {
-      "name": "UNAM — Postgraduiertenstudium",
-      "description": "Postgraduierte Abschlussarbeiten der UNAM. Basierend auf den Richtlinien der Koordination für Postgraduiertenstudien (CEP-UNAM). APA 7, XeLaTeX, Legal-Papierformat."
+      "name": "UNAM – Postgraduierte",
+      "sections": {
+        "portada": {
+          "guidance": "Der UNAM-Schutz umfasst: UNAM-Schild, Name der Fakultät oder des Instituts, Titel der Arbeit, Art der Abschlussarbeit (zur Erlangung des Master-/Doktortitels in...), Name des Studenten, Leiter der Abschlussarbeit, Tutorialausschuss, Ort und Jahr.\nDas Profil generiert das Cover automatisch mit den Daten, die Sie beim Erstellen des Projekts konfiguriert haben."
+        },
+        "dedicatoria": {
+          "title": "Engagement",
+          "guidance": "Kurzer Text (1–5 Zeilen), der wichtigen Personen gewidmet ist. Es ist persönlich und optional.\nBei UNAM hat es keine Seitenzahl und wird auf einer separaten Seite gedruckt."
+        },
+        "agradecimientos": {
+          "title": "Danke",
+          "guidance": "Erwähnen Sie den Direktor, das Tutorialkomitee, CONACYT/CONAHCyT (falls es ein Stipendium gab), das Labor oder die Forschungsgruppe und die Schlüsselpersonen der Arbeit.\nGeben Sie gegebenenfalls die Projekt- oder Stipendiennummer an (z. B. „CONAHCyT-Stipendien-Nr. XXXXXX“)."
+        },
+        "resumen": {
+          "title": "Zusammenfassung",
+          "guidance": "Zusammenfassung auf Spanisch mit 200–300 Wörtern. Die CEP-UNAM verlangt es auf Spanisch.\nBeinhaltet: Ziel, Methodik, Hauptergebnisse und Schlussfolgerung.\nAm Ende: 4–6 durch Semikolon getrennte Schlüsselwörter."
+        },
+        "abstract": {
+          "title": "Zusammenfassung",
+          "guidance": "Übersetzung der Zusammenfassung ins Englische. Viele UNAM-Doktorandenprogramme erfordern dies.\nIdentisches Format wie die Zusammenfassung auf Spanisch.\nSchlüsselwörter: wie auf Spanisch, auf Englisch."
+        },
+        "tabla_contenidos": {
+          "guidance": "Der Index wird automatisch generiert. Enthält Kapitel, Abschnitte und Unterabschnitte.\nUNAM verlangt grundsätzlich auch ein Abbildungsverzeichnis und bei mehr als 5 ein Tabellenverzeichnis."
+        },
+        "introduccion": {
+          "title": "Einführung",
+          "guidance": "Die UNAM-Einleitung muss Folgendes enthalten:\n1. Hintergrund und Kontext des Problems.\n2. Problemstellung und Begründung.\n3. Hypothese oder Forschungsfrage.\n4. Allgemeines Ziel und spezifische Ziele.\n5. Geltungsbereich und Einschränkungen.\n6. Aufbau der Arbeit (Inhalt der einzelnen Kapitel).\nEmpfohlene Länge: 4–8 Seiten."
+        },
+        "marco_teorico": {
+          "title": "Theoretischer Rahmen",
+          "guidance": "Review und synthetisieren Sie relevante Literatur. An der UNAM muss der theoretische Rahmen:\n• Zitieren Sie primäre und aktuelle Quellen (letzte 10 Jahre; Klassiker, wenn sie von grundlegender Bedeutung sind).\n• Organisieren Sie Ideen logisch und nicht als Liste mit Zusammenfassungen.\n• Verwenden Sie APA 7 für alle Zitate – das System generiert sie automatisch.\n• Identifizieren Sie den Stand der Technik und die Lücke, die Ihre Forschung füllt."
+        },
+        "metodologia": {
+          "title": "Methodik",
+          "guidance": "Beschreiben Sie die Methodik so detailliert, dass sie nachgeahmt werden kann. Beinhaltet:\n• Art der Forschung und des Designs.\n• Population, Stichprobe und Auswahlkriterien.\n• Instrumente und Verfahren.\n• Datenanalyse (Software, Statistiken oder qualitative Kategorien).\n• Ethische Überlegungen und ggf. Einwilligungen."
+        },
+        "resultados": {
+          "title": "Ergebnisse",
+          "guidance": "Präsentieren Sie die Ergebnisse objektiv. Verwenden Sie Tabellen und Abbildungen mit Quellenangaben im Text.\nBei UNAM muss jede Abbildung und Tabelle Folgendes haben: Nummer, beschreibenden Titel (oben für Tabellen, unten für Abbildungen) und ggf. Quelle.\nInterpretieren Sie die Ergebnisse hier nicht – das geht in die Diskussion."
+        },
+        "discusion": {
+          "title": "Diskussion",
+          "guidance": "Interpretieren Sie die Ergebnisse im Kontext Ihrer Forschungsfrage und der Literatur.\nVergleichen Sie mit früheren Studien, weisen Sie auf Zufälle und Abweichungen hin.\nBespricht theoretische und praktische Implikationen.\nGrenzen ehrlich erkennen."
+        },
+        "conclusiones": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Reagieren Sie direkt auf Ihre Ziele und Hypothesen. Die CEP-UNAM hofft:\n• Synthese der wichtigsten Erkenntnisse.\n• Originalbeiträge auf diesem Gebiet.\n• Empfehlungen für zukünftige Forschung.\n• Auswirkungen auf die Praxis oder Politik (falls zutreffend).\nUmfang: 3–5 Seiten. Geben Sie keine neuen Informationen ein."
+        },
+        "referencias": {
+          "title": "Referenzen",
+          "guidance": "Die Referenzliste wird automatisch im APA 7-Format generiert.\nUNAM erfordert in den meisten Graduiertenprogrammen APA 7.\nStellen Sie sicher, dass jede zitierte Quelle in der .bib enthalten ist und umgekehrt.\nVerwenden Sie den DOI-Importer, um vollständige und normalisierte Einträge zu erhalten."
+        },
+        "anexos": {
+          "title": "Anhänge",
+          "guidance": "Ergänzendes Material, das die Arbeit unterstützt, ohne den Hauptfluss zu unterbrechen:\nErhebungsinstrumente, Rohdatentabellen, Quellcode, Einverständniserklärungen.\nNummer: Anhang A, Anhang B… Verweisen Sie jeweils auf den Haupttext."
+        }
+      },
+      "description": "Postgraduiertenarbeiten und Dissertationen der Nationalen Autonomen Universität von Mexiko. Basierend auf den Richtlinien der Koordinierung der Postgraduiertenstudien (CEP-UNAM): Papier im Letter- oder Legal-Format, 2,5 cm Ränder, 1,5 Zeilenabstand, APA 7, Umschlag mit offiziellem Wappen."
+    },
+    "generic.tesina": {
+      "name": "Allgemeine Dissertation",
+      "sections": {
+        "title_page": {
+          "guidance": "Das Deckblatt wird automatisch mit den beim Erstellen des Projekts konfigurierten institutionellen Daten generiert.\nSie müssen hier keinen Inhalt schreiben."
+        },
+        "table_of_contents": {
+          "guidance": "Der Index wird automatisch aus Ihren aktivierten Abschnitten generiert.\nSie müssen hier nichts schreiben."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "Die Einleitung stellt das Thema vor und motiviert zur Arbeit. Für eine Abschlussarbeit beinhaltet es:\n1. Kurzer Kontext des Themas (von allgemein nach spezifisch).\n2. Problem oder Frage, die in der Arbeit behandelt wird.\n3. Allgemeines Ziel.\n4. Begründung: Warum ist es relevant, es zu studieren?\n5. Kurze Beschreibung, wie das Dokument aufgebaut ist.\nTypische Länge: 1–3 Seiten."
+        },
+        "development": {
+          "title": "Entwicklung",
+          "guidance": "Entwicklung ist der zentrale Teil der Arbeit. Teilen Sie es in logische Unterabschnitte auf:\n• Konzeptioneller Rahmen: Definiert Schlüsselkonzepte mit bibliografischer Unterstützung.\n• Analyse oder Entwicklung des Themas: Argument, Vorschlag oder zentrale Studie.\n• Gegebenenfalls Ergebnisse oder Feststellungen.\nJede Idee muss durch Quellen gestützt werden. Verwenden Sie für die Referenzierung die Blöcke „Bibliographische Zitate“.\nTypische Länge: 10–30 Seiten."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Schließen Sie die Arbeit ab, indem Sie direkt auf das in der Einleitung genannte Ziel eingehen:\n• Wurde das Ziel erreicht? Was wurde gefunden?\n• Reflexion über die Relevanz der Arbeit.\n• Einschränkungen gefunden.\n• Empfehlungen oder Linien zukünftiger Arbeit.\nTypische Länge: 1–2 Seiten. Geben Sie hier keine neuen Informationen ein."
+        },
+        "references": {
+          "guidance": "Die Referenzliste wird beim Kompilieren automatisch aus Ihrer .bib-Datei generiert.\nVerwenden Sie den DOI-Importer (Strg+[ > DOI-Panel), um Quellen einfach hinzuzufügen.\nDer APA 7-Stil wird automatisch angewendet."
+        }
+      },
+      "description": "Vereinfachte Version für den Bachelor: Einleitung, Entwicklung und Schlussfolgerungen. Buchklasse, XeLaTeX, biber, APA 7."
+    },
+    "generic.thesis": {
+      "name": "Allgemeine These",
+      "sections": {
+        "title_page": {
+          "guidance": "Das Deckblatt wird automatisch vom Profil mit den institutionellen Daten generiert, die Sie beim Erstellen des Projekts konfiguriert haben (Name des Studenten, Institution, Berufsbezeichnung, Leiter der Abschlussarbeit, Jahr).\nSie müssen hier keinen Inhalt schreiben."
+        },
+        "table_of_contents": {
+          "guidance": "Das Inhaltsverzeichnis wird automatisch aus den in Ihrem Projekt aktivierten Abschnitten generiert.\nSie müssen nichts schreiben – achten Sie nur darauf, dass Ihre Kapitel Titel haben."
+        },
+        "abstract_es": {
+          "title": "Zusammenfassung",
+          "guidance": "Das Abstract präsentiert Ihre These in 150–250 Wörtern. Sie müssen kurz antworten:\n• Was ist das Problem oder die Forschungsfrage?\n• Welche Methodik haben Sie verwendet?\n• Was sind die wichtigsten Ergebnisse?\n• Was ist die Schlussfolgerung oder der Beitrag?\nZitieren Sie in der Zusammenfassung keine Referenzen. Schreiben Sie es in der Vergangenheitsform. Fügen Sie am Ende 4–6 Schlüsselwörter hinzu."
+        },
+        "abstract_en": {
+          "title": "Zusammenfassung",
+          "guidance": "Getreue Übersetzung der Zusammenfassung ins Englische im gleichen Format (150–250 Wörter).\nViele Graduierteninstitutionen verlangen es für die internationale Indexierung.\nSchlüsselwörter: dieselben Schlüsselwörter wie die Zusammenfassung, auf Englisch."
+        },
+        "dedication": {
+          "title": "Engagement",
+          "guidance": "Kurzer Text (1–5 Zeilen), der den für den Autor wichtigen Personen gewidmet ist.\nEs ist persönlich und optional. Einige Beispiele: „An meine Eltern für ihre bedingungslose Unterstützung.“\nIn den meisten Stilen hat es keinen expliziten Titel – das Profil kümmert sich darum."
+        },
+        "acknowledgements": {
+          "title": "Danke",
+          "guidance": "Erwähnen Sie diejenigen, die zu Ihrer Forschung beigetragen haben: Direktor, Leser, Kollegen, Institutionen, Geldgeber.\nSeien Sie konkret: Erwähnen Sie die Rolle jeder Person oder Organisation.\nEmpfohlene Länge: eine halbe bis eine Seite."
+        },
+        "introduction": {
+          "title": "Einführung",
+          "guidance": "Die Einleitung kontextualisiert Ihre Arbeit und motiviert den Leser, weiterzulesen. Muss enthalten:\n1. Allgemeiner Kontext des Themas (von allgemein bis spezifisch).\n2. Problemstellung: Welche Lücke oder welcher Bedarf besteht?\n3. Forschungsfrage oder Hypothese.\n4. Allgemeines Ziel und spezifische Ziele.\n5. Begründung: Warum ist es relevant, dies zu untersuchen?\n6. Umfang und Grenzen der Studie.\n7. Kurze Beschreibung des Aufbaus der Arbeit.\nTypische Länge: 3–6 Seiten."
+        },
+        "theoretical_framework": {
+          "title": "Theoretischer Rahmen",
+          "guidance": "Der theoretische Rahmen unterstützt Ihre Recherche mit vorhandener Literatur. Sie müssen:\n• Überprüfen Sie wichtige Konzepte und Theorien zu Ihrem Thema.\n• Zitieren Sie primäre und aktuelle Quellen (Artikel aus den letzten 5–10 Jahren; Klassiker, wenn sie von grundlegender Bedeutung sind).\n• Organisieren Sie Ideen logisch und nicht als Liste mit Zusammenfassungen.\n• Identifizieren Sie den Stand der Technik: Was ist bekannt und was fehlt?\n• Positionieren Sie Ihre Arbeit innerhalb der Literatur: Was tragen Sie bei?\nVerwenden Sie für jede Referenz den Block „Bibliografische Zitate“. Vermeiden Sie übermäßige Zitate – paraphrasieren und analysieren Sie."
+        },
+        "methodology": {
+          "title": "Methodik",
+          "guidance": "Beschreiben Sie, wie Sie Ihre Forschung so detailliert durchgeführt haben, dass sie reproduziert werden kann. Beinhaltet:\n• Art der Forschung (quantitativ, qualitativ, gemischt; explorativ, deskriptiv, erklärend).\n• Design: experimentell, quasi-experimentell, Fallstudie, Umfrage usw.\n• Population und Stichprobe: Auswahlkriterien, Größe, Stichprobentechnik.\n• Erhebungsinstrumente: Fragebögen, Interviews, Beobachtungen, Experimente.\n• Vorgehensweise: Schritte werden chronologisch befolgt.\n• Datenanalyse: Software, Statistiken, qualitative Analysekategorien.\n• Gegebenenfalls ethische Überlegungen."
+        },
+        "results": {
+          "title": "Ergebnisse",
+          "guidance": "Stellen Sie die Ergebnisse Ihrer Forschung objektiv dar, ohne sie noch zu interpretieren. Anleitungen:\n• Ordnen Sie die Ergebnisse in der Reihenfolge Ihrer Ziele oder Forschungsfragen.\n• Verwenden Sie Tabellen und Abbildungen für numerische oder vergleichende Daten – verweisen Sie im Text jeweils darauf.\n• Wiederholen Sie im Text nicht, was eine Tabelle bereits zeigt; Kommentieren Sie die relevantesten.\n• Seien Sie bei Zahlen präzise: Berücksichtigen Sie Einheiten, Prozentsätze und statistische Werte (p, r, χ² usw.).\n• Für qualitative Forschung: Präsentiert Kategorien mit anschaulichen Textzitaten."
+        },
+        "discussion": {
+          "title": "Diskussion",
+          "guidance": "Hier interpretieren Sie Ihre Ergebnisse und beziehen sie auf die Literatur. Es ist der analytischste Abschnitt. Sie müssen:\n• Erklären Sie, was Ihre Ergebnisse im Kontext Ihrer Forschungsfrage bedeuten.\n• Vergleichen Sie mit früheren Studien: Stimmen sie überein? Unterscheiden sie sich? Weil?\n• Weisen Sie auf unerwartete Ergebnisse hin und bieten Sie mögliche Erklärungen an.\n• Besprechen Sie die theoretischen und praktischen Implikationen Ihrer Erkenntnisse.\n• Erkennen Sie die Grenzen der Studie ehrlich an.\nPräsentieren Sie hier keine neuen Ergebnisse – interpretieren Sie nur die bereits gemeldeten."
+        },
+        "conclusions": {
+          "title": "Schlussfolgerungen",
+          "guidance": "Schlussfolgerungen schließen Ihre Argumentation ab und gehen direkt auf Ihre Ziele ein. Beinhaltet:\n• Antwort auf die Forschungsfrage / Hypothesenüberprüfung.\n• Zusammenfassung der wichtigsten Erkenntnisse (ohne Wiederholung von Ergebnisdetails).\n• Originalbeiträge der Arbeit.\n• Empfehlungen für die berufliche Praxis oder zukünftige Forschung.\n• Abschließende Reflexion über die Relevanz der Arbeit.\nEmpfohlener Umfang: 2–4 Seiten. Geben Sie keine neuen Informationen ein."
+        },
+        "references": {
+          "title": "Referenzen",
+          "guidance": "Die Referenzliste wird beim Kompilieren automatisch aus Ihrer .bib-Datei generiert.\nStellen Sie sicher, dass jede im Text zitierte Quelle in der .bib enthalten ist und umgekehrt.\nUm Referenzen hinzuzufügen: Verwenden Sie die Schaltfläche „DOI importieren“ oder bearbeiten Sie die Datei „references.bib“ direkt.\nDer Zitierstil (APA 7 in diesem Profil) wird von LaTeX automatisch angewendet."
+        },
+        "appendices": {
+          "title": "Anhänge",
+          "guidance": "Die Anhänge enthalten unterstützendes Material, das nicht in den Hauptteil passt, das der Leser jedoch möglicherweise überprüfen muss:\n• Erhebungsinstrumente (vollständige Fragebögen, Interviewleitfäden).\n• Rohdatentabellen.\n• Quellcode oder Skripte.\n• Karten, Pläne, Rechtsdokumente.\n• Autorisierungsschreiben oder Einverständniserklärungen.\nJeder Anhang muss nummeriert sein (Anhang A, Anhang B...) und im Haupttext referenziert werden."
+        }
+      },
+      "description": "Basisprofil für Abschlussarbeiten und formale wissenschaftliche Arbeiten für Bachelor-, Fach-, Master-, Doktor- und Postdoktorandenabschlüsse. Buchklasse, XeLaTeX, Biber, APA 7."
     }
   },
   "institutions": {

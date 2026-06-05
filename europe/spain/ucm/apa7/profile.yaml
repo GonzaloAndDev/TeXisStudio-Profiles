@@ -1,35 +1,26 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: es_ucm_apa7
-name: "UCM Madrid - Tesis Doctoral (APA 7)"
+name: es_ucm_apa7
 status: reviewed
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
-# ── Verificación contra guías oficiales ──────────────────────────
-# Revisado el 2026-05-25 contra el Reglamento de Doctorado de la UCM
-# y las directrices de la Escuela de Doctorado (EDCM).
 verification:
-  reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — reviewed against UCM Doctoral Regulation and EDCM guidelines"
+  reviewed_at: '2026-05-25'
+  reviewed_by: TeXisStudio Community
+  verified_at: '2026-05-25'
+  verified_by: TeXisStudio Community — reviewed against UCM Doctoral Regulation and EDCM guidelines
   source_urls:
-    - "https://www.ucm.es/posgrado-doctorado"
-    - "https://www.ucm.es/escueladoctorado/reglamento-doctorado"
+  - https://www.ucm.es/posgrado-doctorado
+  - https://www.ucm.es/escueladoctorado/reglamento-doctorado
   review_interval_days: 365
-
-# ── Formato de página ─────────────────────────────────────────────
-# UCM: A4, márgenes estándar España (izq 3.5cm, resto 2.5cm).
-# Interlineado: 1.5. Fuente: Times New Roman o similar 12pt.
 document_class:
   name: book
   options:
-    - 12pt
-    - a4paper
-    - oneside
-
+  - 12pt
+  - a4paper
+  - oneside
 page_layout:
   paper: a4paper
   margins:
@@ -38,176 +29,76 @@ page_layout:
     left: 35mm
     right: 25mm
   line_spacing: 1.5
-
 max_abstract_words: 350
-
 packages: []
-
 sections:
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      The official UCM title page must include:
-      • Logo of the Universidad Complutense de Madrid.
-      • Name of the Faculty or Department.
-      • Full title of the doctoral thesis.
-      • "DOCTORAL THESIS" (in uppercase).
-      • "submitted by [Author’s name]."
-      • "supervised by [Dr./Dra. Director’s name]."
-      • "to obtain the degree of Doctor by the Universidad Complutense de Madrid."
-      • Madrid, [Year].
-      The Doctoral School (EDCM) may have a standardized format —
-      download the template from the EDCM portal.
-
-  - id: declaracion
-    element_id: declaration
-    placement: front_matter
-    required: true
-    title: "Authorship and Originality Statement"
-    guidance: |
-      UCM requires an Authorship and Originality Statement in accordance
-      with Article 9 of the UCM Doctoral Regulation.
-      Standard text: "Mr./Ms. [name], with ID/NIE [number], declare that
-      this doctoral thesis is my own work, original and unpublished,
-      that it has not been submitted to any other institution, and that
-      the results are truthful."
-      The thesis supervisor’s signature may also be required.
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      Abstract in Spanish, 200–350 words.
-      Problem, objectives, methodology, results and conclusions.
-      Keywords (4–6).
-
-  - id: abstract_ingles
-    element_id: abstract_en
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      UCM requires an English abstract for doctoral theses.
-      Maximum 350 words. Same structure as the Spanish Abstract.
-      Keywords (4–6). Required for deposit in TESEO and the
-      UCM Library database.
-
-  - id: agradecimientos
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-    guidance: |
-      Acknowledge the thesis supervisor, committee, grants (FPI, FPU,
-      UCM predoctoral contract) and Ministry (PID, PIE) or
-      Community of Madrid (PRICIT) research projects with the project reference.
-
-  - id: indice
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: "Generated automatically. Required by the EDCM."
-
-  - id: indice_figuras
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-    guidance: "Enable if you have 5 or more figures."
-
-  - id: indice_tablas
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-    guidance: "Enable if you have 5 or more tables."
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    label: "capitulo:introduccion"
-    guidance: |
-      Contextualization, problem statement, rationale,
-      research questions, objectives, hypotheses and structure.
-      APA 7: (Author, year) in the text.
-      UCM requires the introduction to demonstrate mastery of the field.
-
-  - id: marco_teorico
-    element_id: literature_review
-    placement: body
-    required: true
-    title: "Theoretical Framework and Literature Review"
-    label: "capitulo:marcoteorico"
-    guidance: |
-      Critical review of the literature and theoretical foundations.
-      Organize by theoretical currents or debates — not chronologically.
-      Identify the gap that justifies the thesis.
-
-  - id: metodologia
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    label: "capitulo:metodologia"
-    guidance: |
-      Research design, sample, instruments, procedure, analysis and ethics.
-      If the research involves human subjects: approval from the
-      Research Ethics Committee (CEISH-UCM or equivalent).
-
-  - id: resultados
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    label: "capitulo:resultados"
-    guidance: "Objective findings. APA 7 tables and figures. No interpretation."
-
-  - id: discusion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-    label: "capitulo:discusion"
-    guidance: "Interpretation, comparison with literature, implications and limitations."
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    label: "capitulo:conclusiones"
-    guidance: |
-      Answer research questions, summarize contributions, note
-      limitations and propose future research.
-      UCM may require separate “Conclusions” and “Discussion” chapters —
-      verify with your supervisor and your program’s regulations.
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: |
-      APA 7th edition, alphabetical list, hanging indent.
-      Generated automatically. Include DOI when available.
-      The EDCM may require references in a final chapter with continuous
-      numbering — verify your program’s requirements.
-
-  - id: apendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Appendices"
-    guidance: |
-      Instruments, additional data, ethics statements,
-      publications derived from the thesis (if submitted as a compendium).
-      Compendium-format theses (frequent modality at UCM)
-      require including published articles in appendices or chapters.
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: declaracion
+  element_id: declaration
+  placement: front_matter
+  required: true
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: abstract_ingles
+  element_id: abstract_en
+  placement: front_matter
+  required: true
+- id: agradecimientos
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: indice
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: indice_figuras
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: indice_tablas
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+  label: capitulo:introduccion
+- id: marco_teorico
+  element_id: literature_review
+  placement: body
+  required: true
+  label: capitulo:marcoteorico
+- id: metodologia
+  element_id: methodology
+  placement: body
+  required: true
+  label: capitulo:metodologia
+- id: resultados
+  element_id: results
+  placement: body
+  required: true
+  label: capitulo:resultados
+- id: discusion
+  element_id: discussion
+  placement: body
+  required: false
+  label: capitulo:discusion
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+  label: capitulo:conclusiones
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: apendices
+  element_id: appendix
+  placement: back_matter
+  required: false

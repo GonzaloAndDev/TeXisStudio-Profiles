@@ -1,40 +1,26 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: generic_thesis
-name: "Tesis Genérica"
+name: generic_thesis
 status: reviewed
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
-# ── Perfil genérico ───────────────────────────────────────────────
-# Perfil base para tesis de licenciatura, maestría o doctorado cuando
-# no existe un perfil específico para tu institución.
-# Basado en convenciones académicas estándar y APA 7ª edición.
-# Si tu institución tiene normativa específica, verifica los lineamientos
-# de tu coordinación o programa de posgrado.
 verification:
-  reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas generales"
+  reviewed_at: '2026-05-25'
+  reviewed_by: TeXisStudio Community
+  verified_at: '2026-05-25'
+  verified_by: TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas generales
   source_urls:
-    - "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
-    - "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+  - https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf
+  - https://apastyle.apa.org/style-grammar-guidelines/paper-format
   review_interval_days: 365
-
-# ── Formato de página ─────────────────────────────────────────────
-# Convención general para tesis en español: A4, márgenes estándar.
-# APA 7 para publicaciones: 2.54 cm todos los márgenes (doble espacio).
-# Tesis en México y América Latina: izquierdo 3 cm, resto 2-2.5 cm.
-# Interlineado: 1.5 (estándar en LATAM); doble espacio en EE.UU./Europa.
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 page_layout:
   paper: letterpaper
   margins:
@@ -43,279 +29,80 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
-
-# ── Límites de palabras ───────────────────────────────────────────
-# APA 7 recomienda resúmenes de 150–250 palabras para artículos;
-# para tesis: 200–350 palabras. Ajusta según los lineamientos de tu programa.
 max_abstract_words: 350
-
 packages: []
-
 sections:
-  # ── Preliminares ──────────────────────────────────────────────────
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      The title page is the first impression of your thesis. Includes:
-      • Logo and name of your institution (university / faculty / department).
-      • Full thesis title (informative and specific, no abbreviations).
-      • Document type: "THESIS" or "DISSERTATION" and the degree sought
-        (e.g., "to obtain the degree of Bachelor’s in / Master’s in /
-        Doctor’s in [field name]").
-      • Author’s full name.
-      • Name of the thesis supervisor or director.
-      • City, month and year of submission.
-      Check with your coordinator or program — many institutions have
-      an official title page format you must follow exactly.
-
-  - id: declaracion
-    element_id: declaration
-    placement: front_matter
-    required: true
-    title: "Authenticity Declaration"
-    guidance: |
-      The Authenticity Declaration certifies that the work is yours and that
-      sources are correctly cited. Standard text (adapt if your institution
-      has a specific format):
-      "I declare under oath that this work is original and has been prepared
-      by the undersigned. All sources consulted have been duly cited and
-      referenced according to applicable standards."
-      Some universities require this declaration to be signed, notarized,
-      or in a specific format — verify with your program.
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      The Spanish abstract is the first academic element other researchers will read.
-      Recommended: 150–350 words.
-      APA 7 (for theses and student papers) recommends including:
-        1. The research problem (1–2 sentences).
-        2. Participants or data used (if applicable).
-        3. The methodology or approach used.
-        4. The main findings or conclusions.
-        5. Implications or contributions of the study.
-      End with 4–6 Keywords separated by semicolons.
-      Must be self-contained: no citations, no figures, no undefined acronyms.
-
-  - id: abstract_ingles
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract"
-    guidance: |
-      Abstract in English. Optional but recommended for international visibility.
-      Maximum 350 words. Same structure as the Spanish Abstract.
-      End with: Keywords: (4–6 terms in English).
-      Mandatory if your program requires publication in international databases
-      (Scopus, Web of Science, ProQuest Dissertations & Theses).
-
-  - id: agradecimientos
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-    guidance: |
-      Optional but conventional section. Acknowledge those who contributed
-      to your research: thesis supervisor, committee or jury, colleagues,
-      librarians, study participants, and those who supported you
-      personally throughout the process.
-      If your research was funded with a scholarship or external resource
-      (CONAHCYT, CONACYT, DGAPA, etc.), it is mandatory to mention it with
-      the project or scholarship number.
-      Typical length: half to one page.
-
-  - id: dedicatoria
-    element_id: dedication
-    placement: front_matter
-    required: false
-    title: "Dedication"
-    guidance: |
-      Optional. One to three lines. No printed heading.
-
-  - id: indice
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: |
-      Generated automatically. Includes all front matter (except the title page),
-      body chapters, appendices and references.
-      Verify that page numbers are exact before printing.
-
-  - id: indice_figuras
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-    guidance: |
-      Enable this section if your thesis has 5 or more figures, graphs or images.
-      APA 7: number figures continuously (Figure 1, Figure 2…)
-      and reference them in the text before they appear.
-
-  - id: indice_tablas
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-    guidance: |
-      Enable if you have 5 or more tables. APA 7: number tables continuously
-      (Table 1, Table 2…) and reference them in the text.
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    label: "capitulo:introduccion"
-    guidance: |
-      The introduction frames your research and convinces the reader of its importance.
-      Recommended structure:
-      1. General contextualization of the research topic.
-      2. Problem statement: what knowledge gap, contradiction
-         or practical need does your thesis address?
-      3. Rationale: why does it matter to resolve it? (theoretical, social,
-         economic, clinical, technological relevance, etc.)
-      4. Research question(s): stated precisely and narrowly.
-      5. General objective and specific objectives (concrete and measurable).
-      6. Hypothesis or working assumption (if your design requires it).
-      7. Scope and delimitations of the study.
-      8. Thesis structure: a brief paragraph per chapter.
-      Typical length for undergraduate: 10–20 pages.
-      For graduate: 15–30 pages.
-
-  - id: marco_teorico
-    element_id: literature_review
-    placement: body
-    required: true
-    title: "Theoretical Framework and Literature Review"
-    label: "capitulo:marcoteorico"
-    guidance: |
-      The theoretical framework is the conceptual foundation of your research. Includes:
-      • Definition and discussion of the fundamental concepts and theories
-        that underpin your work.
-      • Critical review of the literature: what is known about the topic?
-        What are the main approaches? Where are the debates?
-      • Identification of the gap or contradiction that justifies your study.
-      • Theoretical positioning: what perspective do you adopt and why?
-      APA 7: cite with (Author, year) or Author (year) for narrative citations.
-      For direct quotations include page number: (Author, year, p. xx).
-      Organize by topics or currents, not as a list of authors.
-      Typical length: 20–50 pages.
-
-  - id: metodologia
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    label: "capitulo:metodologia"
-    guidance: |
-      The methodology describes in sufficient detail how you conducted your research.
-      Includes:
-      • Approach: quantitative, qualitative or mixed. Justify the choice.
-      • Research design: experimental, quasi-experimental, correlational,
-        descriptive, phenomenological, case study, etc.
-      • Population and sample (or analysis corpus): selection criteria and size.
-      • Data collection instruments or techniques: describe each one,
-        cite the instrument if published, and indicate if it was adapted or created.
-      • Data collection procedure: when, where and how data were obtained.
-      • Data analysis: software used and analysis techniques.
-      • Ethical considerations: informed consent, confidentiality,
-        Ethics Committee approval if human subjects were involved.
-      • Methodological limitations.
-      Typical length: 10–25 pages.
-
-  - id: resultados
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    label: "capitulo:resultados"
-    guidance: |
-      Present findings objectively, without interpretation or conclusions.
-      Organize results according to your research questions or objectives.
-      For quantitative data:
-      • Report descriptive statistics first (means, standard deviations, percentages).
-      • Then inferential tests (t, F, χ², correlations, regressions) with
-        their statistics, p-values and effect sizes.
-      • Include APA 7 tables and figures with footnotes.
-      For qualitative data:
-      • Present emerging categories or themes with representative verbatim quotes.
-      • Ensure participant confidentiality.
-      APA 7: “Table 1 shows…”, “Figure 2 illustrates…”.
-      Every table and figure must be mentioned in the text before it appears.
-
-  - id: discusion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-    label: "capitulo:discusion"
-    guidance: |
-      The discussion interprets results and connects them to the theoretical
-      framework and reviewed literature.
-      Recommended structure:
-      • First sentence: restate the research question and answer it directly
-        based on your results.
-      • Compare with prior studies: do your findings agree with, contradict or
-        nuance existing literature? Why?
-      • Explain unexpected results.
-      • Theoretical and practical implications of the findings.
-      • Study limitations.
-      • Specific future research suggestions.
-      In many undergraduate theses this chapter is merged with Results
-      or Conclusions. Activate as an independent chapter if needed.
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    label: "capitulo:conclusiones"
-    guidance: |
-      Conclusions directly answer your research question(s) and objectives.
-      • Answer each research question or verify each hypothesis.
-      • Summarize the original contributions of your work to the field.
-      • Practical implications or possible applications.
-      • Study limitations (be honest — the committee will find them regardless).
-      • Future research directions: concrete and bounded.
-      Do not repeat results — the committee has already read that chapter.
-      Typical length: 5–15 pages.
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: |
-      APA 7th edition: alphabetical list by first author’s last name,
-      hanging indent. Generated automatically from your .bib file.
-      Key APA 7 points:
-      • Italics for book, journal and thesis titles.
-      • No italics for articles and chapters.
-      • DOI in URL format: https://doi.org/xxxxx (no trailing period).
-      • For online sources: URL and access date.
-      • Thesis: Last, N. (Year). Title [Bachelor’s/Master’s/doctoral thesis,
-        University Name]. Repository or database.
-      Include only sources cited in the body text.
-
-  - id: apendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Appendices"
-    guidance: |
-      Supplementary materials too extensive for the main body
-      or that would disrupt the narrative flow:
-      • Complete instruments (questionnaires, scales, interview guides).
-      • Raw data or additional statistical tables.
-      • Interview or focus group transcripts.
-      • Ethics approval letters and informed consent forms.
-      • Stimulus materials or intervention protocols.
-      Label: Appendix A, B… with descriptive title.
-      Reference from the text: "(see Appendix A)".
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: declaracion
+  element_id: declaration
+  placement: front_matter
+  required: true
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: abstract_ingles
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: agradecimientos
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: dedicatoria
+  element_id: dedication
+  placement: front_matter
+  required: false
+- id: indice
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: indice_figuras
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: indice_tablas
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+  label: capitulo:introduccion
+- id: marco_teorico
+  element_id: literature_review
+  placement: body
+  required: true
+  label: capitulo:marcoteorico
+- id: metodologia
+  element_id: methodology
+  placement: body
+  required: true
+  label: capitulo:metodologia
+- id: resultados
+  element_id: results
+  placement: body
+  required: true
+  label: capitulo:resultados
+- id: discusion
+  element_id: discussion
+  placement: body
+  required: false
+  label: capitulo:discusion
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+  label: capitulo:conclusiones
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: apendices
+  element_id: appendix
+  placement: back_matter
+  required: false

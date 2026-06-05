@@ -1,12 +1,15 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: kr_snu_apa7
-name: "Seoul National University - Thesis (APA 7)"
+name: kr_snu_apa7
 status: experimental
 latex_engine: xelatex
-compiler: "latexmk"
+compiler: latexmk
 document_class:
   name: book
-  options: [12pt, a4paper, oneside]
+  options:
+  - 12pt
+  - a4paper
+  - oneside
 bibliography_backend: biber
 bibliography_style: apa
 page_layout:
@@ -19,63 +22,51 @@ page_layout:
   line_spacing: 1.5
 packages: []
 sections:
-  - id: title_page
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-  - id: abstract
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: Abstract
-  - id: acknowledgements
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: Acknowledgements
-  - id: table_of_contents
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-  - id: introduction
-    element_id: chapter
-    placement: body
-    required: true
-    title: Introduction
-  - id: literature_review
-    element_id: chapter
-    placement: body
-    required: true
-    title: "Literature Review"
-  - id: methodology
-    element_id: chapter
-    placement: body
-    required: true
-    title: Methodology
-  - id: results
-    element_id: chapter
-    placement: body
-    required: true
-    title: Results
-  - id: discussion
-    element_id: chapter
-    placement: body
-    required: true
-    title: Discussion
-  - id: conclusion
-    element_id: chapter
-    placement: body
-    required: true
-    title: Conclusion
-  - id: references
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: References
-  - id: appendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: Appendices
+- id: title_page
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: abstract
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: acknowledgements
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: table_of_contents
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: introduction
+  element_id: chapter
+  placement: body
+  required: true
+- id: literature_review
+  element_id: chapter
+  placement: body
+  required: true
+- id: methodology
+  element_id: chapter
+  placement: body
+  required: true
+- id: results
+  element_id: chapter
+  placement: body
+  required: true
+- id: discussion
+  element_id: chapter
+  placement: body
+  required: true
+- id: conclusion
+  element_id: chapter
+  placement: body
+  required: true
+- id: references
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: appendices
+  element_id: appendix
+  placement: back_matter
+  required: false

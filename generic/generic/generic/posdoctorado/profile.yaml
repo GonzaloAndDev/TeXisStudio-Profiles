@@ -1,27 +1,24 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: generic_posdoctorado
-name: "Informe Posdoctoral Genérico"
+name: generic_posdoctorado
 status: reviewed
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
 verification:
-  reviewed_at: "2026-05-28"
-  reviewed_by: "TeXisStudio Community"
+  reviewed_at: '2026-05-28'
+  reviewed_by: TeXisStudio Community
   source_urls:
-    - "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
-    - "https://apastyle.apa.org/style-grammar-guidelines/paper-format"
+  - https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf
+  - https://apastyle.apa.org/style-grammar-guidelines/paper-format
   review_interval_days: 365
-
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 page_layout:
   paper: letterpaper
   margins:
@@ -30,116 +27,54 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
-
 max_abstract_words: 350
-
 packages: []
-
 sections:
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      Include the host institution, postdoctoral project or fellowship,
-      report or monograph title, principal investigator, mentor
-      or supervisor, venue and date.
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      Synthesizes the postdoctoral agenda, objectives, methodological approach,
-      contributions, results and future projections.
-      Suggested length: 200–350 words.
-
-  - id: abstract_ingles
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract (English)"
-    guidance: |
-      Recommended when the postdoctoral report will circulate internationally
-      or will be reported to an external funding call.
-
-  - id: indice
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: |
-      Generated automatically. Review final pagination consistency.
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    guidance: |
-      Presents the research field, the project agenda and the
-      positioning of the work within the postdoctoral line of research.
-
-  - id: estado_arte
-    element_id: literature_review
-    placement: body
-    required: true
-    title: "State of the Art"
-    guidance: |
-      Develops a critical review of the current state of the field,
-      identifies gaps and justifies the contribution of the postdoctoral work.
-
-  - id: metodologia
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    guidance: |
-      Explains design, corpus or data, procedures, protocols, tools,
-      reproducibility and ethical considerations as applicable.
-
-  - id: resultados
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    guidance: |
-      Presents results, academic outputs, prototypes, articles,
-      datasets or verifiable advances obtained during the fellowship.
-
-  - id: discusion
-    element_id: discussion
-    placement: body
-    required: true
-    title: "Discussion"
-    guidance: |
-      Interprets the scope of the results, their novelty, limitations,
-      and relationship to the state of the art.
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    guidance: |
-      Summarizes the contributions of the postdoctoral work and its scientific,
-      methodological or applied impact.
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: |
-      Final list of cited references, in APA 7 format.
-
-  - id: anexos
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Annexes"
-    guidance: |
-      Supporting evidence: instruments, extended tables, protocols,
-      outputs, technical documentation or supplementary material.
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: abstract_ingles
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: indice
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+- id: estado_arte
+  element_id: literature_review
+  placement: body
+  required: true
+- id: metodologia
+  element_id: methodology
+  placement: body
+  required: true
+- id: resultados
+  element_id: results
+  placement: body
+  required: true
+- id: discusion
+  element_id: discussion
+  placement: body
+  required: true
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: anexos
+  element_id: appendix
+  placement: back_matter
+  required: false

@@ -2788,10 +2788,9 @@
     },
     "company.internship": {
       "name": "Relatório de Estágio/Residência",
-      "description": "Formato para relatórios de residências profissionais e estadias de negócios. Inclui descrição da empresa, atividades e resultados. Bibliografia APA 7.",
       "sections": {
         "title_page": {
-          "guidance": "A folha de rosto é gerada automaticamente com dados institucionais.\nIncluirá: nome do aluno, empresa, período de estágio, instituição acadêmica e carreira.\nVocê não precisa escrever conteúdo aqui. Defina os dados nos metadados do projeto."
+          "guidance": "A folha de rosto é gerada automaticamente com dados institucionais.\nIncluirá: nome do aluno, empresa, período de estágio, instituição acadêmica e carreira.\nVocê não precisa escrever conteúdo aqui: defina os dados nos metadados do projeto."
         },
         "table_of_contents": {
           "guidance": "O índice é gerado automaticamente.\nVocê não precisa escrever nada aqui."
@@ -2802,7 +2801,7 @@
         },
         "company_description": {
           "title": "Descrição da empresa",
-          "guidance": "Apresente a organização onde realizou o estágio:\n• Nome completo, razão social e ramo de negócio.\n• Breve história e missão/visão.\n• Organograma geral (pode inserir uma figura).\n• Área ou departamento onde trabalhou e sua função dentro da empresa.\n• Infraestrutura tecnológica relevante para suas atividades.\nNão copie o site da empresa literalmente – parafraseie e cite a fonte."
+          "guidance": "Apresente a organização onde realizou o estágio:\n• Nome completo, razão social e ramo de negócio.\n• Breve história e missão/visão.\n• Organograma geral (pode inserir uma figura).\n• Área ou departamento onde trabalhou e sua função dentro da empresa.\n• Infraestrutura tecnológica relevante para suas atividades.\nNão copie o site da empresa literalmente. Parafraseie e cite a fonte."
         },
         "activities": {
           "title": "Atividades desenvolvidas",
@@ -2825,11 +2824,10 @@
           "guidance": "Inclui material de apoio que seria muito extenso no corpo principal:\n• Carta de aceitação da empresa.\n• Carta de conclusão/avaliação do tutor de negócios.\n• Registros semanais (se exigido pela sua instituição).\n• Código fonte relevante.\n• Manuais de usuário ou técnicos desenvolvidos.\n• Evidência fotográfica do local de trabalho.\nNumere cada anexo (Anexo A, B…) e faça referência a eles no texto."
         }
       },
-      "meta": "Bibliografia APA 7 · XeLaTeX"
+      "description": "Formato para relatórios de residências profissionais e estadias de negócios. Inclui descrição da empresa, atividades e resultados. Bibliografia APA 7."
     },
     "engineering.basic": {
       "name": "Relatório de engenharia/técnico",
-      "description": "Relatório técnico com seções sobre abordagem, design, implementação e testes. Bibliografia IEEE. Ideal para teses de engenharia e residência profissional.",
       "sections": {
         "title_page": {
           "guidance": "A folha de rosto é gerada automaticamente com os dados do projeto.\nVocê não precisa escrever conteúdo aqui."
@@ -2843,7 +2841,7 @@
         },
         "introduction": {
           "title": "Introdução",
-          "guidance": "Contextualize o problema técnico e motive o trabalho:\n• Contexto: área tecnológica, indústria ou aplicação.\n• Motivação: por que é importante resolver este problema?\n• Trabalhos relacionados: breve revisão das soluções existentes e suas limitações.\n• Contribuição objetiva e específica do trabalho.\n• Organização de documentos.\nEm IEEE, as citações são numéricas: [1], [2], [3]."
+          "guidance": "Contextualize o problema técnico e motive o trabalho:\n• Contexto: área tecnológica, indústria ou aplicação.\n• Motivação: por que é importante resolver este problema?\n• Trabalhos relacionados: breve revisão das soluções existentes e suas limitações.\n• Contribuição objetiva e específica do trabalho.\n• Organização de documentos.\nNo IEEE, as citações são numéricas: [1], [2], [3]."
         },
         "problem_statement": {
           "title": "Declaração do problema",
@@ -2851,7 +2849,7 @@
         },
         "design": {
           "title": "Design e arquitetura",
-          "guidance": "Apresente a solução proposta antes de implementá-la:\n• Arquitetura do sistema (diagrama de componentes, camadas, módulos).\n• Decisões de design e justificativa das tecnologias escolhidas.\n• Fluxograma ou algoritmo principal.\n• Modelo de dados, se aplicável (esquema ER, BD).\n• Interface de usuário (wireframes ou mockups, se aplicável).\nO design deve ser independente da implementação – um terceiro deve ser capaz de implementá-lo a partir desta seção."
+          "guidance": "Apresente a solução proposta antes de implementá-la:\n• Arquitetura do sistema (diagrama de componentes, camadas, módulos).\n• Decisões de design e justificativa das tecnologias escolhidas.\n• Fluxograma ou algoritmo principal.\n• Modelo de dados, se aplicável (ER, esquema de banco de dados).\n• Interface de usuário (wireframes ou mockups, se aplicável).\nO design deve ser independente da implementação – um terceiro deve ser capaz de implementá-lo a partir desta seção."
         },
         "implementation": {
           "title": "Implementação",
@@ -2863,22 +2861,21 @@
         },
         "conclusions": {
           "title": "Conclusões e trabalhos futuros",
-          "guidance": "Feche a obra com rigor técnico:\n• Revisão dos objetivos alcançados versus os levantados.\n• Contribuições originais do trabalho.\n• Limitações técnicas identificadas.\n• Trabalho futuro: melhorias concretas, possíveis extensões, problemas em aberto.\nEm IEEE é comum mencionar possíveis publicações ou aplicações industriais."
+          "guidance": "Feche a obra com rigor técnico:\n• Revisão dos objetivos alcançados versus os levantados.\n• Contribuições originais do trabalho.\n• Limitações técnicas identificadas.\n• Trabalho futuro: melhorias concretas, possíveis extensões, problemas em aberto.\nNo IEEE é comum mencionar possíveis publicações ou aplicações industriais."
         },
         "references": {
           "title": "Referências",
-          "guidance": "Em IEEE as referências são numéricas e aparecem por ordem de primeira menção.\nA lista é gerada automaticamente a partir do seu .bib quando você compila.\nPara artigos e conferências IEEE: Use o importador DOI para obter a entrada correta.\nCertifique-se de incluir o DOI em cada referência — o IEEE exige isso."
+          "guidance": "No IEEE as referências são numéricas e aparecem em ordem de primeira menção.\nA lista é gerada automaticamente a partir do seu .bib quando você compila.\nPara artigos e conferências IEEE: use o importador DOI para obter a entrada correta.\nCertifique-se de incluir o DOI em cada referência – o IEEE exige isso."
         },
         "appendices": {
           "title": "Anexos",
           "guidance": "Material técnico complementar:\n• Código fonte completo (módulos principais).\n• Scripts de instalação e configuração.\n• Manuais de usuário ou técnicos.\n• Diagramas detalhados (ERD completo, diagramas de sequência, etc.).\n• Teste dados ou conjuntos de dados.\nNúmero: Apêndice A, B… e consulte-os no texto principal."
         }
       },
-      "meta": "Bibliografia IEEE · XeLaTeX"
+      "description": "Relatório técnico com seções sobre abordagem, design, implementação e testes. Bibliografia IEEE. Ideal para teses de engenharia e residência profissional."
     },
     "generic.phd": {
       "name": "Tese de pós-graduação",
-      "description": "Perfil para mestrado e doutorado: revisão de literatura, estado da arte, abordagem, experimentação, glossário e siglas. XeLaTeX, biber, APA 7.",
       "sections": {
         "title_page": {
           "guidance": "A folha de rosto é gerada automaticamente com os dados do projeto.\nPara pós-graduação configurar nos metadados: nome completo, diretor, codiretor (se for o caso) e comissão sinodal.\nVocê não precisa escrever conteúdo aqui."
@@ -2893,15 +2890,15 @@
           "guidance": "A lista de tabelas é gerada automaticamente a partir de todas as tabelas com título.\nAtive esta seção se você tiver 5 ou mais tabelas."
         },
         "list_of_algorithms": {
-          "guidance": "Lista gerada automaticamente de algoritmos para teses computacionais ou de engenharia.\nAtive apenas se apresentar 3 ou mais pseudocódigos ou algoritmos numerados."
+          "guidance": "Lista de algoritmos gerada automaticamente para teses computacionais ou de engenharia.\nAtive apenas se apresentar 3 ou mais pseudocódigos ou algoritmos numerados."
         },
         "acronyms": {
           "title": "Lista de abreviações e siglas",
-          "guidance": "Liste todas as siglas e abreviaturas utilizadas na tese com seu significado completo.\nFormato: SIGLA — Significado completo (por exemplo, CNN — Rede Neural Convolucional).\nClassifique em ordem alfabética. Também define a primeira vez que cada sigla aparece no texto."
+          "guidance": "Liste todas as siglas e abreviaturas utilizadas na tese com seu significado completo.\nFormato: ACRÔNIMO — Significado completo (por exemplo, CNN — Rede Neural Convolucional).\nClassifique em ordem alfabética. Também define a primeira vez que cada sigla aparece no texto."
         },
         "abstract_es": {
           "title": "Resumo",
-          "guidance": "O resumo da pós-graduação responde em 250–350 palavras:\n• Motivação: por que este problema é importante?\n• Problema: Que questão ou hipótese você está abordando?\n• Método: abordagem principal e técnica.\n• Contribuição: resultados e contribuição original para o estado da arte.\n• Impacto: implicações teóricas ou práticas.\nSem compromissos. Sem equações. 5–8 palavras-chave no final."
+          "guidance": "O resumo da pós-graduação responde em 250–350 palavras:\n• Motivação: por que este problema é importante?\n• Problema: Que questão ou hipótese você está abordando?\n• Método: abordagem principal e técnica.\n• Contribuição: resultados e contribuição original para o estado da arte.\n• Impacto: implicações teóricas ou práticas.\nSem citações. Sem equações. 5–8 palavras-chave no final."
         },
         "abstract_en": {
           "title": "Resumo",
@@ -2913,15 +2910,15 @@
         },
         "acknowledgements": {
           "title": "Obrigado",
-          "guidance": "Agradeça formalmente a quem contribuiu com o trabalho:\n• Diretor e codiretor de tese.\n• Comissão sinodal/revisores.\n• Financiadores: bolsas, projetos, instituições (obrigatório para projetos com apoio externo).\n• Colaboradores técnicos, laboratórios, empresas.\n• Apoio familiar e pessoal (no final, brevemente).\nExtensão: meia página."
+          "guidance": "Agradeça formalmente a quem contribuiu com o trabalho:\n• Diretor e codiretor de tese.\n• Comissão sinodal/revisores.\n• Financiadores: bolsas, projetos, instituições (obrigatório para projetos com apoio externo).\n• Colaboradores técnicos, laboratórios, empresas.\n• Apoio familiar e pessoal (no final, brevemente).\nComprimento: meia página."
         },
         "introduction": {
           "title": "Introdução",
-          "guidance": "A introdução de uma tese de pós-graduação é mais exigente do que a de um bacharelado. Você deve:\n1. Contextualizar o problema no estado da arte atual.\n2. Identifique a lacuna de conhecimento específica que sua tese aborda.\n3. Estabeleça claramente a hipótese ou questão de pesquisa.\n4. Liste os objetivos (gerais e específicos).\n5. Descreva a contribuição original (o que há de novo no seu trabalho?).\n6. Justificar o âmbito e delimitações.\n7. Descreva a organização dos capítulos.\nUma comissão de doutorado avaliará se a contribuição é original e independente. Seja preciso.\nComprimento típico: 5–10 páginas."
+          "guidance": "A introdução de uma tese de pós-graduação é mais exigente do que a de um bacharelado. Você deve:\n1. Contextualizar o problema no estado da arte atual.\n2. Identifique a lacuna de conhecimento específica que sua tese aborda.\n3. Estabeleça claramente a hipótese ou questão de pesquisa.\n4. Liste os objetivos (gerais e específicos).\n5. Descreva a contribuição original (o que há de novo no seu trabalho?).\n6. Justificar o âmbito e delimitações.\n7. Descreva a organização dos capítulos.\nUma comissão de doutorado avaliará se a contribuição é original e independente. Seja preciso.\nComprimento típico: 5 a 10 páginas."
         },
         "literature_review": {
           "title": "Revisão da Literatura e Estado da Arte",
-          "guidance": "Esta é a seção que demonstra seu domínio na área. Você deve:\n• Cobrir sistematicamente obras relevantes dos últimos 5 a 10 anos (os clássicos podem ser mais antigos).\n• Organize por tema, foco ou cronologia — não como uma lista de resumos.\n• Comparar criticamente as propostas: pontos fortes, pontos fracos, limitações.\n• Identifique a lacuna que sua tese preenche (“nenhum trabalho anterior abordou X”).\n• Terminar com uma tabela comparativa de trabalhos relacionados, se possível.\nPara doutorado: esta revisão deve ser exaustiva e abranger todos os aspectos do problema.\nEstratégia: Pesquisa Scopus, WoS, ACM DL, IEEE Xplore. Use o importador DOI para cada item."
+          "guidance": "Esta é a seção que demonstra seu domínio na área. Você deve:\n• Cobrir sistematicamente obras relevantes dos últimos 5 a 10 anos (os clássicos podem ser mais antigos).\n• Organize por tema, foco ou cronologia — não como uma lista de resumos.\n• Comparar criticamente as propostas: pontos fortes, pontos fracos, limitações.\n• Identifique a lacuna que sua tese preenche (“nenhum trabalho anterior abordou X”).\n• Terminar com uma tabela comparativa de trabalhos relacionados, se possível.\nPara doutorado: esta revisão deve ser exaustiva e abranger todos os aspectos do problema.\nEstratégia: Pesquisa Scopus, WoS, ACM DL, IEEE Xplore. Use o importador DOI para cada artigo."
         },
         "theoretical_framework": {
           "title": "Referencial Teórico",
@@ -2929,11 +2926,11 @@
         },
         "problem_statement": {
           "title": "Declaração do problema e hipóteses",
-          "guidance": "Defina formalmente o problema que sua tese resolve:\n• Formulação precisa: em ciências exatas, utilizar notação matemática se for o caso.\n• Hipóteses ou conjecturas de investigação (para doutoramento: hipóteses verificáveis ​​e falsificáveis).\n• Pressupostos e restrições do modelo.\n• Por que o problema é difícil: complexidade computacional, falta de dados, ambiguidade teórica.\n• Critérios de avaliação: como você medirá o sucesso da sua proposta?\nEsta seção deve poder ser lida independentemente como uma especificação do problema."
+          "guidance": "Defina formalmente o problema que sua tese resolve:\n• Formulação precisa: em ciências exatas, utilizar notação matemática se for o caso.\n• Hipóteses ou conjecturas de investigação (para doutoramento: hipóteses verificáveis ​​e falsificáveis).\n• Pressupostos e restrições do modelo.\n• Por que o problema é difícil: complexidade computacional, falta de dados, ambiguidade teórica.\n• Critérios de avaliação: como você medirá o sucesso da sua proposta?\nEsta seção deve poder ser lida independentemente como uma especificação de problema."
         },
         "methodology": {
           "title": "Metodologia",
-          "guidance": "Descrever a abordagem metodológica com o rigor exigido pelo nível de pós-graduação:\n• Paradigma de investigação: positivista, construtivista, misto.\n• Tipo de pesquisa: experimental, quase experimental, estudo de caso, simulação, modelagem.\n• Desenho específico de investigação.\n• Fontes de dados: origem, características, processo de coleta ou geração.\n• Pipeline ou processo completo desde os dados até os resultados.\n• Ferramentas, linguagens, bibliotecas e versões específicas.\nDetalhes suficientes para replicabilidade completa."
+          "guidance": "Descreve a abordagem metodológica com o rigor exigido pelo nível de pós-graduação:\n• Paradigma de investigação: positivista, construtivista, misto.\n• Tipo de pesquisa: experimental, quase experimental, estudo de caso, simulação, modelagem.\n• Desenho específico de investigação.\n• Fontes de dados: origem, características, processo de coleta ou geração.\n• Pipeline ou processo completo desde os dados até os resultados.\n• Ferramentas, linguagens, bibliotecas e versões específicas.\nDetalhes suficientes para replicabilidade completa."
         },
         "experimentation": {
           "title": "Experimentação e Desenvolvimento",
@@ -2956,7 +2953,7 @@
           "guidance": "A lista de referências é gerada automaticamente a partir do seu .bib ao compilar com APA 7.\nPara estudos de pós-graduação, são esperadas mais de 80 a 200 referências de alta qualidade (artigos indexados, livros técnicos).\nUse o importador DOI para adicionar artigos do Crossref com um clique.\nEvite referências a blogs, Wikipédia ou sites não revisados por pares como fontes primárias."
         },
         "publications": {
-          "title": "Publicações derivadas",
+          "title": "Publicações Derivadas",
           "guidance": "Liste os trabalhos publicados ou submetidos derivados desta tese:\n• Artigos em revistas indexadas (Q1, Q2, Scopus, WoS).\n• Apresentações em conferências nacionais e internacionais.\n• Capítulos de livros, patentes, relatórios técnicos.\nPara cada: referência completa + status (publicado/aceito/enviado/em preparação).\nPublicações anteriores são um sinal de qualidade e podem aliviar a defesa."
         },
         "glossary": {
@@ -2968,39 +2965,471 @@
           "guidance": "Material técnico complementar que não pertence ao fluxo principal:\n• Provas matemáticas longas ou secundárias.\n• Código fonte (módulos principais, scripts de experimentos).\n• Tabelas de dados completas ou resultados adicionais.\n• Instrumentos de recolha de dados.\n• Cartas de aprovação ética, acordos de confidencialidade.\nNúmero: Apêndice A, B… com títulos descritivos."
         }
       },
-      "meta": "Bibliografia APA 7 · XeLaTeX"
+      "description": "Perfil para mestrado e doutorado: revisão de literatura, estado da arte, abordagem, experimentação, glossário e siglas. XeLaTeX, biber, APA 7."
     },
     "vancouver.health": {
       "name": "Ciências da Saúde (IMRaD)",
-      "description": "Estrutura IMRaD para pesquisa clínica e biomédica. Bibliografia estilo Vancouver. Ideal para teses em medicina, enfermagem e ciências da saúde."
+      "sections": {
+        "title_page": {
+          "guidance": "A folha de rosto é gerada automaticamente com os dados do projeto.\nVocê não precisa escrever conteúdo aqui."
+        },
+        "table_of_contents": {
+          "guidance": "O índice é gerado automaticamente.\nVocê não precisa escrever nada aqui."
+        },
+        "abstract_es": {
+          "title": "Resumo",
+          "guidance": "O resumo do IMRaD está estruturado com os mesmos subtítulos do artigo, em miniatura:\n• Objetivo: uma frase com o objetivo do estudo.\n• Materiais e métodos: desenho, população, intervenção e principais medidas.\n• Resultados: resultados mais relevantes com dados numéricos.\n• Conclusões: interpretação clínica e alcance.\nLimite: 250 palavras para tese (varia de acordo com a instituição). Sem citações. Sem siglas indefinidas.\nNo final: 3–6 palavras-chave MeSH (Medical Subject Headings)."
+        },
+        "abstract_en": {
+          "title": "Resumo",
+          "guidance": "Tradução fiel do resumo para o inglês com os mesmos subtítulos: Objetivo, Métodos, Resultados, Conclusões.\nPalavras-chave: Termos MeSH em inglês.\nObrigatório para indexação no PubMed/MEDLINE e apresentação em conferências internacionais."
+        },
+        "introduction": {
+          "title": "Introdução",
+          "guidance": "No IMRaD, a Introdução responde: o que se sabe? o que não é conhecido? o que será estudado?\nEstrutura recomendada (funil):\n1. Magnitude do problema de saúde (epidemiologia, carga de doença).\n2. O que se sabe: revisão seletiva da literatura com citações de Vancouver ([1], [2]…).\n3. Lacuna de conhecimento ou polêmica que motiva o estudo.\n4. Questão de pesquisa ou objetivo do estudo (claramente indicado).\n5. Hipóteses, se aplicável.\nNão apresente resultados aqui. Comprimento típico: 2–4 páginas."
+        },
+        "materials_methods": {
+          "title": "Material e métodos",
+          "guidance": "Descreva o estudo com detalhes suficientes para que possa ser replicado. Inclui:\n• Desenho do estudo: experimental, de coorte, caso-controle, transversal, revisão sistemática, etc.\n• Local e período do estudo.\n• População: critérios de inclusão e exclusão.\n• Amostra: tamanho, técnica de amostragem, justificativa estatística.\n• Intervenção (se aplicável): descrição exata, dose, duração.\n• Variáveis ​​e instrumentos de medição.\n• Análise estatística: testes utilizados, software, nível de significância.\n• Considerações éticas: aprovação do comitê de ética, consentimento informado.\nEvite justificar decisões metodológicas – apenas descreva-as."
+        },
+        "results": {
+          "title": "Resultados",
+          "guidance": "Apresente as descobertas de forma objetiva e sem interpretação:\n• Comece pelas características da amostra (Tabela 1: características iniciais).\n• Apresenta os resultados na ordem dos objetivos ou hipóteses.\n• Use tabelas e figuras para dados numéricos — cada uma delas referenciada no texto.\n• Relatórios: n, %, médias ± DP, medianas (IQR), RR, OR, IC 95%, valor de p.\n• Não repita no texto o que a tabela já mostra — comente apenas o que for mais relevante.\n• Para estudos qualitativos: categorias com citações textuais dos participantes (anônimos)."
+        },
+        "discussion": {
+          "title": "Discussão",
+          "guidance": "É a seção mais analítica e a mais difícil de escrever. Você deve:\n• Regressar ao objectivo do estudo e resumir a conclusão principal.\n• Compare os seus resultados com estudos anteriores (semelhantes, diferentes e contraditórios).\n• Explique as discrepâncias: diferenças no desenho, população, contexto.\n• Apontar implicações clínicas: o que muda na prática?\n• Reconheça as limitações do estudo (não as minimize — isso reforça a credibilidade).\n• Sugerir pesquisas futuras específicas.\nNão apresente novos resultados aqui."
+        },
+        "conclusions": {
+          "title": "Conclusões",
+          "guidance": "Em muitos artigos biomédicos as conclusões estão incluídas na Discussão.\nSe a sua instituição os exigir separadamente:\n• Uma ou duas frases por objetivo respondidas.\n• Responde diretamente à questão da pesquisa.\n• Evite generalizar além do que os dados permitem.\n• Menciona a contribuição para o conhecimento ou para a prática clínica."
+        },
+        "references": {
+          "title": "Referências",
+          "guidance": "Estilo Vancouver: referências numéricas por ordem de aparecimento no texto ([1], [2]…).\nA lista é gerada automaticamente a partir do seu .bib quando você compila.\nPrioriza fontes indexadas em MEDLINE/PubMed, Scopus, Web of Science.\nUse o importador DOI para adicionar artigos com um clique – Crossref tem mais PubMed.\nLimite de referência: varia de acordo com a instituição (comum: 30–50 para teses)."
+        },
+        "appendices": {
+          "title": "Anexos",
+          "guidance": "Inclui documentos comprobatórios que não cabem no texto:\n• Instrumento de coleta (questionário, ficha de captura de dados).\n• Carta de aprovação do comitê de ética.\n• Consentimento informado.\n• Tabelas de dados brutos ou suplementares.\n• Protocolo de intervenção detalhado.\nNumeração: Anexo A, B… e referência a eles no texto."
+        }
+      },
+      "description": "Estrutura IMRaD para pesquisa clínica e biomédica. Bibliografia estilo Vancouver. Ideal para teses de medicina, enfermagem e ciências da saúde."
     },
     "apa.basic": {
       "name": "APA Básico",
-      "description": "Perfil simplificado para trabalhos acadêmicos com estilo APA 7 estrito. Ideal para relatórios, ensaios e artigos curtos."
+      "sections": {
+        "title_page": {
+          "guidance": "A folha de rosto do APA 7 é gerada automaticamente com os dados do projeto.\nInclui: título, autor(es), instituição, disciplina, nome do professor e data.\nVocê não precisa escrever conteúdo aqui."
+        },
+        "abstract_es": {
+          "title": "Resumo",
+          "guidance": "O resumo da APA 7 vai para uma página separada com o título \"Resumo\" (centralizado, negrito).\n150–250 palavras que respondem: o que é estudado?, como?, o que foi encontrado?, o que significa?\nNo final inclua 4–6 palavras-chave: em itálico.\nNão cite referências no resumo."
+        },
+        "introduction": {
+          "title": "Introdução",
+          "guidance": "No APA 7, a introdução não traz o título \"Introdução\" — o perfil trata disso automaticamente.\nVocê deve apresentar:\n• O tema e sua relevância.\n• O que se sabe até agora (breve síntese bibliográfica).\n• A finalidade ou objetivo do trabalho.\n• A questão ou hipótese se aplica.\nUse citações APA no texto: (Sobrenome, Ano) ou Sobrenome (Ano), dependendo do fluxo."
+        },
+        "development": {
+          "title": "Desenvolvimento",
+          "guidance": "Corpo principal da obra. Organize com títulos de nível 2 e 3 com base na complexidade.\nPara ensaios: argumento principal, argumentos de apoio com evidências bibliográficas, contra-argumentos.\nPara relatórios: quadro conceitual, análise, resultados.\nParafraseie fontes - evite citações longas e literais (use-as apenas quando as palavras exatas forem importantes).\nCite tudo que não seja de sua autoria."
+        },
+        "conclusions": {
+          "title": "Conclusões",
+          "guidance": "Sintetize os principais pontos do trabalho:\n• Responde à pergunta ou propósito colocado na introdução.\n• Apontar as implicações das conclusões.\n• Reconheça as limitações.\n• Sugere linhas de trabalho ou pesquisa futura.\nNão inclua novas cotações aqui. Comprimento: 1–2 páginas."
+        },
+        "references": {
+          "title": "Referências",
+          "guidance": "Na APA 7 é chamado de \"Referências\" (não \"Bibliografia\").\nA lista é gerada automaticamente a partir do seu .bib quando você compila.\nRegras APA 7: organizadas em ordem alfabética, recuo deslocado, URL ou DOI no final de cada entrada.\nUse o importador DOI (Ctrl+[ > painel DOI) para adicionar referências com um clique."
+        }
+      },
+      "description": "Perfil simplificado para trabalhos acadêmicos com estrito estilo APA 7. Ideal para relatórios, ensaios e artigos curtos."
     },
     "chicago.humanities": {
       "name": "Chicago / Turabian — Humanidades",
-      "description": "Teses e dissertações em humanidades, ciências sociais e artes com estilo Chicago Notas-Bibliografia (17ª ed.) / Turabian 9ª ed. As citações aparecem em notas de rodapé numeradas. Bibliografia ordenada alfabeticamente ao final. Muito utilizado em filosofia, história, literatura, ciências sociais e direito."
+      "sections": {
+        "title_page": {
+          "guidance": "A capa do Turabian inclui: título (centralizado, um terço do topo), nome do autor, programa e universidade, cidade e ano. Sem número de página.\nO perfil gera a capa com os dados do projeto."
+        },
+        "abstract": {
+          "title": "Resumo",
+          "guidance": "Turabian recomenda um resumo de 150 a 350 palavras para dissertações de doutorado.\nInclui: tema, abordagem, argumento principal, metodologia e conclusão.\nEscreva no presente ou no passado. Escolha um e seja consistente."
+        },
+        "table_of_contents": {
+          "guidance": "O índice é gerado automaticamente. Em Chicago, os níveis de capítulo e seção são incluídos, mas não as subseções do nível 3 em diante."
+        },
+        "introduction": {
+          "title": "Introdução",
+          "guidance": "Nas ciências humanas a introdução apresenta o argumento central (declaração da tese), o corpus ou fontes principais, a metodologia e a justificativa.\nChicago permite um estilo mais discursivo do que outras disciplinas — você pode usar a primeira pessoa e desenvolver o argumento com nuances desde o início.\nAs citações estão em notas de rodapé numeradas e não entre parênteses. O sistema os insere automaticamente."
+        },
+        "chapter_1": {
+          "title": "Capítulo 1",
+          "guidance": "Nas humanidades os capítulos desenvolvem o argumento progressivamente.\nCada capítulo deve ter seu próprio argumento que contribua para o argumento central da tese.\nUse notas de rodapé para citações diretas, referências e comentários extensos que interromperiam o fluxo do texto.\nNotas de rodapé curtas podem ser citações; os longos podem ser discussões adicionais."
+        },
+        "chapter_2": {
+          "title": "Capítulo 2",
+          "guidance": "Segundo capítulo. Desenvolva a próxima etapa do argumento.\nNa história ou na literatura, este capítulo pode analisar um corpus de textos, um período histórico ou um conjunto de fontes primárias.\nCite fontes primárias e secundárias com notas de rodapé. Para fontes primárias recorrentes, use abreviações em notas de rodapé após a primeira citação completa."
+        },
+        "chapter_3": {
+          "title": "Capítulo 3",
+          "guidance": "Terceiro capítulo. Isso leva o argumento ao seu ponto de maior desenvolvimento.\nVocê pode adicionar ou remover capítulos dependendo da estrutura da sua tese. A maioria das dissertações de humanidades tem de 3 a 5 capítulos."
+        },
+        "conclusions": {
+          "title": "Conclusões",
+          "guidance": "As conclusões retomam o argumento central e o enriquecem com o que foi aprendido nos capítulos.\nEvite repetir o que já foi dito. Abre para implicações mais amplas, debates abertos e possíveis pesquisas futuras.\nNas humanidades é válido — e às vezes necessário — concluir com nuances ou questões abertas."
+        },
+        "bibliography": {
+          "title": "Bibliografia",
+          "guidance": "Na Chicago Notes-Bibliography a lista final é chamada de \"Bibliografia\" (não \"Referências\").\nEstá organizado em ordem alfabética pelo sobrenome do autor.\nA bibliografia é gerada automaticamente a partir do seu .bib quando você compila.\nInclua todas as fontes citadas em notas de rodapé e você poderá incluir fontes consultadas, mas não citadas, se elas adicionarem contexto."
+        },
+        "appendices": {
+          "title": "Apêndices",
+          "guidance": "Nas ciências humanas, os apêndices geralmente incluem: transcrições de fontes primárias, entrevistas completas, material visual adicional, cronologias ou glossários de termos especializados."
+        }
+      },
+      "description": "Teses e dissertações em humanidades, ciências sociais e artes com estilo Chicago Notes-Bibliography (17ª ed.) / Turabian 9ª ed. As citações estão em notas de rodapé numeradas e não entre parênteses. Bibliografia no final organizada em ordem alfabética. Amplamente utilizado em filosofia, história, literatura, ciências sociais e direito."
     },
     "mx.ipn.esfm": {
       "name": "IPN ESFM — Física e Matemática",
-      "description": "Teses de graduação e pós-graduação da Escola Superior de Física e Matemática do IPN. Otimizado para trabalhos com alta densidade matemática: teoremas, demonstrações, equações. Estilo APA ou numérico conforme a área."
+      "sections": {
+        "portada": {
+          "guidance": "A cobertura da ESFM inclui: escudo do IPN, “Escola Superior de Física e Matemática”, título do trabalho, tipo de trabalho (Tese para obtenção do título/grau de...), nome do aluno, diretor(es), local e ano.\nO perfil é gerado com os dados do projeto."
+        },
+        "resumen": {
+          "title": "Resumo",
+          "guidance": "Resumo de 150–250 palavras. Em física e matemática deve ser preciso:\n• O problema ou questão central, expresso sem jargões desnecessários.\n• A abordagem ou método principal.\n• O resultado mais importante (com a medida ou dimensão, se aplicável).\n• A implicação ou aplicação do resultado.\nEvite equações no resumo. Defina as siglas que você usa."
+        },
+        "abstract": {
+          "title": "Resumo",
+          "guidance": "Tradução do resumo para o inglês. Recomendado se você planeja publicar ou apresentar em conferências internacionais."
+        },
+        "tabla_contenidos": {
+          "guidance": "O índice é gerado automaticamente. Em trabalhos matemáticos é comum incluir também uma lista de notações e símbolos antes da introdução."
+        },
+        "introduccion": {
+          "title": "Introdução",
+          "guidance": "A introdução em física/matemática situa o trabalho no contexto da disciplina:\n• Motivação: por que o problema é interessante ou relevante?\n• Antecedentes: trabalhos anteriores diretamente relacionados.\n• Declaração precisa do problema ou questão de pesquisa.\n• Principais resultados (anuncia sem demonstrar — isso vai no corpo).\n• Estrutura do documento.\nVocê pode usar notação matemática aqui, mas mantenha-a acessível."
+        },
+        "preliminares": {
+          "title": "Preliminares",
+          "guidance": "Seção onde você define a linguagem matemática que utilizará no restante do trabalho.\nInclui: definições fundamentais, notação e resultados conhecidos que você precisará citar.\nNão demonstre resultados conhecidos, a menos que sejam necessários para estabelecer a notação exata.\nUse os blocos de Teorema, Definição e Lema do editor para estruturar seu conteúdo.\nExemplo de estrutura: \"Definição 2.1 (Espaço de Hilbert)...\", \"Lema 2.3...\", \"Teorema 2.5 (Espectral)...\""
+        },
+        "desarrollo": {
+          "title": "Desenvolvimento",
+          "guidance": "O corpo principal da obra. Na matemática pura: o desenvolvimento da teoria com provas completas.\nNa física: o desenvolvimento do modelo, teoria ou experimento.\nEstruture cada capítulo com proposições, lemas, teoremas e provas.\nCada demonstração deve fechar explicitamente com □ ou \"∎\" (o editor insere isso automaticamente).\nAs equações numeradas devem ser referenciadas no texto: use \\eqref{} ou \\cref{}."
+        },
+        "resultados": {
+          "title": "Resultados e inscrições",
+          "guidance": "Se o seu trabalho tem aplicações numéricas, computacionais ou experimentais, envie-os aqui.\nPara física computacional: inclui parâmetros de simulação, convergência e comparação com resultados analíticos ou experimentais.\nPara física experimental: apresenta dados com incertezas, análises estatísticas e gráficos."
+        },
+        "conclusiones": {
+          "title": "Conclusões",
+          "guidance": "Resume os resultados obtidos e sua relevância.\nEm matemática: quais conjecturas foram resolvidas, quais questões o trabalho abre.\nNa física: quais fenômenos foram explicados, quais previsões o modelo faz.\nIndique claramente o que é original em seu trabalho versus o que é conhecido\nAponte problemas em aberto ou extensões naturais do trabalho."
+        },
+        "referencias": {
+          "title": "Referências",
+          "guidance": "Lista de referências em APA 7 (gerada automaticamente).\nPara artigos de revistas de física/matemática use o importador DOI — Crossref tem o maior número de artigos de Physical Review, Journal of Mathematical Physics, etc.\nPara livros clássicos (Rudin, Spivak, Peskin & Schroeder, etc.): adicione a entrada manualmente ao .bib se não estiver no Crossref."
+        },
+        "apendices": {
+          "title": "Apêndices",
+          "guidance": "Material técnico complementar: longas demonstrações que interromperiam o fluxo do argumento principal, cálculos detalhados, código de simulação, tabelas de dados experimentais."
+        }
+      },
+      "description": "Tese de graduação e pós-graduação da Escola Superior de Física e Matemática do IPN. Projetado para trabalhos com alta densidade matemática: teoremas, lemas, corolários, provas, notação física e equações complexas. Bibliografia APA para trabalhos gerais ou estilo numérico para publicações de física."
     },
     "mx.ipn.sepi": {
-      "name": "IPN SEPI — Pós-graduação em Engenharia e Ciências",
-      "description": "Teses da Seção de Estudos de Pós-graduação e Pesquisa do IPN. Formato IPN com bibliografia IEEE para engenharia ou APA para ciências. Papel ofício, margens específicas IPN."
+      "name": "IPN SEPI — Pós-Graduação em Engenharia e Ciências",
+      "sections": {
+        "portada": {
+          "guidance": "A cobertura do IPN-SEPI inclui: escudo IPN, nome da unidade letiva (ESIME/ESCOM/UPIITA...), título do trabalho, tipo de tese (para obtenção do grau de Mestre/Doutor em...), nome do aluno, orientador da tese, local e ano.\nO perfil gera a capa com os dados do projeto."
+        },
+        "resumen": {
+          "title": "Resumo",
+          "guidance": "Resumo técnico em espanhol de 200 a 300 palavras. A SEPI exige isso em espanhol.\nDeve conter: objetivo, metodologia, principais resultados e conclusão.\nNo final: 5 a 8 palavras-chave técnicas."
+        },
+        "abstract": {
+          "title": "Resumo",
+          "guidance": "Tradução do resumo para o inglês. A SEPI-IPN exige isso em todos os programas de pós-graduação.\nPalavras-chave: iguais às do espanhol, do inglês."
+        },
+        "tabla_contenidos": {
+          "guidance": "O índice é gerado automaticamente. A IPN também exige uma lista de figuras, uma lista de tabelas e, se aplicável, uma lista de algoritmos ou listagens de códigos."
+        },
+        "introduccion": {
+          "title": "Introdução",
+          "guidance": "A introdução do IPN-SEPI deve incluir:\n1. Contexto tecnológico ou científico do problema.\n2. Motivação e justificação.\n3. Hipótese ou questão de investigação.\n4. Objectivo geral e objectivos específicos.\n5. Âmbito e limitações.\n6. Organização do documento.\nAs citações no IEEE são numéricas: [1], [2], [3]…"
+        },
+        "estado_arte": {
+          "title": "Estado da Arte",
+          "guidance": "Revisão crítica do estado da arte. Na SEPI-IPN é obrigatório e deve:\n• Identificar os trabalhos mais relevantes (últimos 5–10 anos; conferências e revistas IEEE/ACM/Elsevier).\n• Comparar abordagens: tabelas comparativas de métodos, resultados e limitações.\n• Identifique a lacuna ou limitação que seu trabalho resolve.\n• Justifique porque a sua proposta é diferente ou superior.\nCitação com número entre colchetes: \"Pérez et al. [5] propuseram...\""
+        },
+        "metodologia": {
+          "title": "Metodologia ou Desenvolvimento",
+          "guidance": "Na engenharia a metodologia descreve a solução proposta:\n• Arquitetura ou design do sistema.\n• Modelo matemático ou formal, se aplicável.\n• Algoritmos desenvolvidos (utilizar o bloco Algoritmo).\n• Implementação: linguagens, frameworks, hardware.\n• Fluxograma geral do sistema.\nO nível de detalhe deve permitir que o trabalho seja replicado."
+        },
+        "resultados": {
+          "title": "Resultados e análises",
+          "guidance": "Apresentar e analisar resultados experimentais ou de simulação:\n• Montagem experimental: equipamentos, parâmetros, condições.\n• Métricas de avaliação: precisão, tempo, consumo, desempenho, etc.\n• Comparação com o estado da arte (tabela comparativa).\n• Análise estatística se aplicável (média, desvio, intervalo de confiança).\nNo IEEE cada figura e tabela deve ter um número e uma descrição concisa."
+        },
+        "conclusiones": {
+          "title": "Conclusões e trabalhos futuros",
+          "guidance": "Feche a obra com rigor técnico:\n• Objectivos alcançados vs. alcançados.\n• Contribuições originais do trabalho.\n• Limitações técnicas identificadas.\n• Trabalho futuro: melhorias concretas, possíveis extensões, problemas em aberto.\nO IPN-SEPI valoriza especialmente a menção a possíveis publicações ou aplicações industriais."
+        },
+        "referencias": {
+          "title": "Referências",
+          "guidance": "No IEEE as referências são numéricas em ordem de aparecimento.\nA lista é gerada automaticamente a partir do seu .bib.\nPara artigos IEEE e ACM: utilize o importador DOI.\nO IPN exige a inclusão do DOI quando disponível."
+        },
+        "anexos": {
+          "title": "Anexos",
+          "guidance": "Código-fonte completo, scripts, configurações de hardware/software, planilhas de dados, manuais do usuário, dados brutos de experimentos.\nNumeração: Anexo A, Anexo B… e referência a cada um no texto."
+        }
+      },
+      "description": "Tese da Secção de Estudos e Investigação de Pós-Graduação (SEPI) do Instituto Politécnico Nacional. Aplicável às unidades CINVESTAV, ESIME, ESCOM, UPIITA e SEPI. Bibliografia IEEE para Engenharia e Tecnologia; Formato IPN com margens, tipografia e estrutura própria da Diretoria de Pós-Graduação e Pesquisa."
     },
     "mx.ipn.upibi": {
       "name": "IPN UPIBI — Biotecnologia",
-      "description": "Teses da Unidade Profissional Interdisciplinar de Biotecnologia do IPN. Voltado para bioquímica, microbiologia, engenharia de bioprocessos, bioinformática e biotecnologia ambiental. Bibliografia APA ou Vancouver conforme a área."
+      "sections": {
+        "portada": {
+          "guidance": "A cobertura da UPIBI inclui: escudo IPN, “Unidade Profissional Interdisciplinar de Biotecnologia”, carreira ou programa, título do trabalho, tipo de tese, nome do aluno, diretor(es), local e ano."
+        },
+        "resumen": {
+          "title": "Resumo",
+          "guidance": "Resumo científico de 200–300 palavras em espanhol. Na biotecnologia, o resumo deve incluir:\n• Objetivo do estudo.\n• Principais materiais/organismos/cepas/amostras utilizadas.\n• Metodologia central (tipo de experimento, técnica analítica chave).\n• Resultado mais importante (com dados quantitativos, se possível).\n• Conclusão ou aplicação.\nNo final: 5–8 palavras-chave em espanhol."
+        },
+        "abstract": {
+          "title": "Resumo",
+          "guidance": "Tradução do resumo para o inglês. A UPIBI exige isso para todos os trabalhos de graduação e pós-graduação.\nPalavras-chave em inglês: iguais às do espanhol."
+        },
+        "tabla_contenidos": {
+          "guidance": "Índice gerado automaticamente. Em trabalhos com muitas figuras (géis, cromatogramas, curvas de crescimento), inclui uma lista de figuras e uma lista de tabelas."
+        },
+        "introduccion": {
+          "title": "Introdução",
+          "guidance": "A introdução à biotecnologia contextualiza o problema da biologia e da engenharia:\n• Importância do microrganismo, processo, composto ou problema estudado.\n• Estado da arte: trabalhos anteriores relevantes (use APA: Autor, ano).\n• Justificativa: por que este estudo é relevante?\n• Hipótese de trabalho (se o desenho for experimental).\n• Objectivo geral e objectivos específicos.\nSeja específico sobre táxons, cepas, condições e compostos desde o início."
+        },
+        "marco_teorico": {
+          "title": "Referencial Teórico",
+          "guidance": "Baseia o trabalho na literatura científica:\n• Biologia/bioquímica do sistema estudado (microrganismo, enzima, via metabólica, etc.).\n• Princípios do processo ou técnica principal (fermentação, HPLC, PCR, etc.).\n• Modelos cinéticos ou matemáticos se aplicável (Michaelis-Menten, Monod, etc.).\n• Padrões ou regulamentos, se relevante (NOM, FDA, OMS)."
+        },
+        "materiales_metodos": {
+          "title": "Materiais e Métodos",
+          "guidance": "Na biotecnologia, a seção de materiais e métodos é crítica para a reprodutibilidade. Inclui:\n• Materiais biológicos: organismos, cepas (com número de catálogo ou número de acesso), linhagens celulares, amostras (com origem e condições de conservação).\n• Reagentes: nome, classe, fornecedor.\n• Equipamentos: modelo, marca, condições de funcionamento.\n• Métodos analíticos: condições exatas (temperatura, pH, tempo, concentrações).\n• Desenho experimental: variáveis ​​independentes, dependentes e de controle; réplicas.\n• Análise estatística: software, testes e nível de significância (α = 0,05).\nO nível de detalhe deve permitir que outro laboratório repita o experimento com exatidão."
+        },
+        "resultados": {
+          "title": "Resultados",
+          "guidance": "Apresente os dados de forma objetiva, sem interpretação:\n• Figuras: cromatogramas, curvas de crescimento, géis, microscopias — cada uma com número, título descritivo (abaixo) e unidades completas nos eixos.\n• Tabelas: dados tabulados com média ± desvio padrão, unidades no cabeçalho.\n• Estatística: indica se as diferenças são significativas (p < 0,05, ANOVA, Tukey, etc.).\n• Letras estatísticas em tabelas e figuras, se aplicável (a, b, ab para grupos homogêneos).\nConsulte cada figura ou tabela explicitamente no texto antes que ela apareça."
+        },
+        "discusion": {
+          "title": "Discussão",
+          "guidance": "Interprete os resultados no contexto da literatura:\n• Os resultados confirmam ou refutam a hipótese?\n• Compare com estudos anteriores: coincidem? eles diferem? Por que eles podem diferir (estirpe, condições, método)?\n• Explica os mecanismos biológicos ou bioquímicos que justificam os resultados.\n• Discute limitações metodológicas e seu impacto nos resultados.\n• Implicações: o que isso significa para a indústria, a medicina ou o meio ambiente?"
+        },
+        "conclusiones": {
+          "title": "Conclusões",
+          "guidance": "Resuma as coisas mais importantes em termos diretos e mensuráveis:\n• Cada conclusão corresponde a um objetivo específico.\n• Evite repetir o resumo dos resultados — conclui, não reporta.\n• Indica a contribuição para o conhecimento ou para a indústria.\n• Recomendações para pesquisas futuras."
+        },
+        "referencias": {
+          "title": "Referências",
+          "guidance": "Lista de referências em APA 7 (gerada automaticamente).\nPara artigos científicos: use o importador DOI — PubMed, ScienceDirect e Web of Science possuem DOIs para a maioria dos artigos de biotecnologia.\nPara artigos sem DOI: incluir a URL da revista ou base de dados."
+        },
+        "anexos": {
+          "title": "Anexos",
+          "guidance": "Dados brutos de experimentos, géis completos (não aparados), sequências de nucleotídeos ou aminoácidos, números de acesso ao GenBank, certificados de análise de reagentes, protocolos completos não incluídos em M&M."
+        }
+      },
+      "description": "Tese da Unidade Profissional Interdisciplinar de Biotecnologia do IPN. Abrange bioquímica, microbiologia, engenharia de bioprocessos, bioinformática, biotecnologia ambiental e farmacêutica. Caráter experimental e quantitativo com elevado rigor na apresentação dos dados. Bibliografia APA 7 para a maioria das áreas; Vancouver é aceita em áreas mais próximas das ciências da saúde."
     },
     "mx.ipn.upitta": {
       "name": "IPN UPITTA — Tecnologias Avançadas",
-      "description": "Teses da Unidade Profissional Interdisciplinar de Tecnologias Avançadas do IPN. Voltado para mecatrônica, sistemas inteligentes, automação e tecnologias emergentes. Bibliografia IEEE."
+      "sections": {
+        "portada": {
+          "guidance": "A cobertura UPITTA inclui: escudo IPN, “Unidade Profissional Interdisciplinar de Tecnologias Avançadas”, título do trabalho, tipo de tese, nome do aluno, diretores, local e ano."
+        },
+        "resumen": {
+          "title": "Resumo",
+          "guidance": "Resumo técnico em espanhol de 200 a 250 palavras. A natureza interdisciplinar do UPITTA significa que o resumo deve ser compreensível para leitores de diferentes áreas (engenharia, computação, matemática aplicada).\nInclui: problema técnico, solução proposta, tecnologias-chave e principal resultado mensurável."
+        },
+        "abstract": {
+          "title": "Resumo",
+          "guidance": "Tradução para o inglês. Exigido pela UPITTA para todos os trabalhos de graduação e pós-graduação.\nPalavras-chave em inglês: 5 a 8 termos técnicos relevantes."
+        },
+        "tabla_contenidos": {
+          "guidance": "Índice gerado automaticamente. Inclui lista de figuras e lista de tabelas se houver mais de 5 de cada tipo."
+        },
+        "introduccion": {
+          "title": "Introdução",
+          "guidance": "Contextualizar o problema na perspectiva interdisciplinar da UPITTA:\n• A área tecnológica e sua relevância (mecatrônica, IA, automação, etc.).\n• O problema específico e o seu impacto (industrial, social, científico).\n• Trabalhos relacionados mais importantes (citação com número IEEE: [1], [2]).\n• Objectivo geral e objectivos específicos.\n• Contribuição concreta: o que você propõe que não existe ou não funciona bem?\n• Organização de documentos."
+        },
+        "estado_arte": {
+          "title": "Estado da Arte e Referencial Teórico",
+          "guidance": "Combinação do estado da arte e do referencial teórico, adequado ao trabalho interdisciplinar:\n• Revise os trabalhos anteriores mais relevantes em cada área que seu projeto aborda.\n• Apresente as teorias ou modelos matemáticos em que se baseia a sua solução.\n• Tabelas comparativas de soluções existentes versus as suas.\n• Identifique claramente o nicho ou melhoria que seu trabalho traz.\nNa UPITTA a abordagem interdisciplinar é um ponto forte — mostra como você integra diferentes áreas."
+        },
+        "diseno": {
+          "title": "Projeto do sistema",
+          "guidance": "Apresente a arquitetura ou design completo do sistema antes de implementá-lo:\n• Arquitetura geral: diagrama de blocos ou componentes.\n• Modelo matemático ou dinâmico (para sistemas de controle, robótica, etc.).\n• Seleção e justificativa de tecnologias (sensores, atuadores, plataformas, algoritmos).\n• Fluxogramas ou máquinas de estado, se aplicável.\n• Restrições de projeto: potência, tamanho, custo, tempo de resposta.\nO design deve ser independente da implementação."
+        },
+        "implementacion": {
+          "title": "Implementação e resultados",
+          "guidance": "Descreva a implementação e apresente os resultados experimentais:\n• Ambiente de desenvolvimento: hardware, software, versões.\n• Implementação por módulos ou subsistemas.\n• Teste de integração: todo o sistema funciona conforme previsto pelo projeto?\n• Resultados quantitativos: métricas (precisão, tempo de resposta, consumo, erro RMS, etc.).\n• Comparação com o estado da arte ou com a linha de base.\nNa UPITTA valorizam-se os testes em condições reais ou quase reais."
+        },
+        "conclusiones": {
+          "title": "Conclusões e trabalhos futuros",
+          "guidance": "Encerrar o trabalho com rigor técnico e interdisciplinar:\n• Objectivos alcançados vs. alcançados (com evidência quantitativa).\n• Contribuições originais (integração técnica, metodológica ou disciplinar).\n• Limitações do sistema ou do estudo.\n• Trabalhos futuros: melhorias, ampliações, possíveis aplicações industriais ou de pesquisa.\nMencione se o trabalho gerou ou pode gerar publicações ou patentes."
+        },
+        "referencias": {
+          "title": "Referências",
+          "guidance": "Referências numéricas IEEE em ordem de aparecimento (geradas automaticamente).\nUse o importador DOI para artigos do IEEE Xplore, ACM DL, etc.\nInclua o DOI em cada referência — é um requisito do IEEE."
+        },
+        "anexos": {
+          "title": "Anexos",
+          "guidance": "Código-fonte completo, planilhas de dados de componentes, desenhos mecânicos ou elétricos, procedimentos de calibração, manuais do usuário, dados brutos de experimentos."
+        }
+      },
+      "description": "Tese da Unidade Profissional Interdisciplinar de Tecnologias Avançadas do IPN. Orientado para mecatrônica, sistemas inteligentes, automação, robótica e tecnologias emergentes. Caráter interdisciplinar: integra engenharia, computação e ciências básicas. Bibliografia Numérica IEEE."
     },
     "mx.unam.posgrado": {
-      "name": "UNAM — Pós-graduação",
-      "description": "Teses e dissertações de pós-graduação da UNAM. Baseado nas diretrizes da Coordenação de Estudos de Pós-graduação (CEP-UNAM). APA 7, XeLaTeX, formato ofício."
+      "name": "UNAM — Pós-Graduação",
+      "sections": {
+        "portada": {
+          "guidance": "A cobertura da UNAM inclui: escudo UNAM, nome da faculdade ou instituto, título do trabalho, tipo de tese (para obtenção do grau de Mestre/Doutorado em...), nome do aluno, diretor da tese, comissão tutorial, local e ano.\nO perfil gera a capa automaticamente com os dados que você configurou na criação do projeto."
+        },
+        "dedicatoria": {
+          "title": "Dedicação",
+          "guidance": "Texto curto (1–5 linhas) dedicado a pessoas importantes. É pessoal e opcional.\nNa UNAM não possui número de página e é impresso em página separada."
+        },
+        "agradecimientos": {
+          "title": "Obrigado",
+          "guidance": "Mencionar o diretor, comissão tutorial, CONACYT/CONAHCyT (se houve bolsa), laboratório ou grupo de pesquisa e pessoas-chave no trabalho.\nInclua o número do projeto ou da bolsa, se aplicável (por exemplo, \"Bolsa CONAHCyT nº XXXXXX\")."
+        },
+        "resumen": {
+          "title": "Resumo",
+          "guidance": "Resumo em espanhol de 200 a 300 palavras. O CEP-UNAM exige isso em espanhol.\nInclui: objetivo, metodologia, principais resultados e conclusão.\nNo final: 4 a 6 palavras-chave separadas por ponto e vírgula."
+        },
+        "abstract": {
+          "title": "Resumo",
+          "guidance": "Tradução do resumo para o inglês. Muitos programas de doutorado da UNAM exigem isso.\nFormato idêntico ao resumo em espanhol.\nPalavras-chave: iguais às do espanhol, do inglês."
+        },
+        "tabla_contenidos": {
+          "guidance": "O índice é gerado automaticamente. Inclui capítulos, seções e subseções.\nA UNAM geralmente também exige uma lista de figuras e uma lista de tabelas se houver mais de 5."
+        },
+        "introduccion": {
+          "title": "Introdução",
+          "guidance": "A introdução da UNAM deve incluir:\n1. Antecedentes e contexto do problema.\n2. Declaração e justificativa do problema.\n3. Hipótese ou questão de investigação.\n4. Objectivo geral e objectivos específicos.\n5. Âmbito e limitações.\n6. Estrutura da tese (conteúdo de cada capítulo).\nComprimento recomendado: 4–8 páginas."
+        },
+        "marco_teorico": {
+          "title": "Referencial Teórico",
+          "guidance": "Revisar e sintetizar a literatura relevante. Na UNAM o referencial teórico deve:\n• Citar fontes primárias e atuais (últimos 10 anos; clássicos se forem fundamentais).\n• Organize as ideias de forma lógica e não como uma lista de resumos.\n• Use APA 7 para todas as citações — o sistema as gera automaticamente.\n• Identifique o estado da arte e a lacuna que sua pesquisa preenche."
+        },
+        "metodologia": {
+          "title": "Metodologia",
+          "guidance": "Descreva a metodologia com detalhes suficientes para ser replicada. Inclui:\n• Tipo de pesquisa e design.\n• População, amostra e critérios de seleção.\n• Instrumentos e procedimentos.\n• Análise de dados (software, estatísticas ou categorias qualitativas).\n• Considerações éticas e consentimentos, se aplicável."
+        },
+        "resultados": {
+          "title": "Resultados",
+          "guidance": "Apresente as descobertas de forma objetiva. Utilize tabelas e figuras com referências no texto.\nNa UNAM cada figura e tabela deve ter: número, título descritivo (acima para tabelas, abaixo para figuras) e fonte se for o caso.\nNão interprete os resultados aqui — isso vai para a discussão."
+        },
+        "discusion": {
+          "title": "Discussão",
+          "guidance": "Interprete os resultados no contexto da sua questão de pesquisa e da literatura.\nCompare com estudos anteriores, aponte coincidências e divergências.\nDiscute implicações teóricas e práticas.\nReconheça as limitações honestamente."
+        },
+        "conclusiones": {
+          "title": "Conclusões",
+          "guidance": "Responda diretamente aos seus objetivos e hipóteses. O CEP-UNAM espera:\n• Síntese das principais conclusões.\n• Contribuições originais para a área.\n• Recomendações para pesquisas futuras.\n• Implicações para a prática ou política (se aplicável).\nComprimento: 3–5 páginas. Não insira novas informações."
+        },
+        "referencias": {
+          "title": "Referências",
+          "guidance": "A lista de referências é gerada automaticamente no formato APA 7.\nA UNAM exige APA 7 na maioria dos programas de pós-graduação.\nCertifique-se de que cada fonte citada esteja no .bib e vice-versa.\nUse o importador DOI para obter entradas completas e normalizadas."
+        },
+        "anexos": {
+          "title": "Anexos",
+          "guidance": "Material complementar que dá suporte ao trabalho sem interromper o fluxo principal:\ninstrumentos de coleta, tabelas de dados brutos, código-fonte, cartas de consentimento.\nNúmero: Anexo A, Anexo B… Faça referência a cada um deles no texto principal."
+        }
+      },
+      "description": "Teses e dissertações de pós-graduação da Universidade Nacional Autônoma do México. Com base nas orientações da Coordenação de Pós-Graduação (CEP-UNAM): papel tamanho carta ou ofício, margens 2,5 cm, espaçamento entre linhas 1,5, APA 7, capa com brasão oficial."
+    },
+    "generic.tesina": {
+      "name": "Dissertação genérica",
+      "sections": {
+        "title_page": {
+          "guidance": "A folha de rosto é gerada automaticamente com os dados institucionais configurados na criação do projeto.\nVocê não precisa escrever conteúdo aqui."
+        },
+        "table_of_contents": {
+          "guidance": "O índice é gerado automaticamente a partir das seções habilitadas.\nVocê não precisa escrever nada aqui."
+        },
+        "introduction": {
+          "title": "Introdução",
+          "guidance": "A introdução apresenta o tema e motiva o trabalho. Para uma tese inclui:\n1. Breve contexto do tema (do geral ao específico).\n2. Problema ou questão que a obra aborda.\n3. Objectivo geral.\n4. Justificativa: por que é relevante estudá-lo?\n5. Breve descrição de como o documento está organizado.\nComprimento típico: 1–3 páginas."
+        },
+        "development": {
+          "title": "Desenvolvimento",
+          "guidance": "O desenvolvimento é o corpo central do trabalho. Divida-o em subseções lógicas:\n• Estrutura conceitual: define conceitos-chave com suporte bibliográfico.\n• Análise ou desenvolvimento do tema: argumento, proposta ou estudo central.\n• Resultados ou conclusões, se aplicável.\nCada ideia deve ser apoiada por fontes. Use blocos de “citação bibliográfica” para referência.\nComprimento típico: 10–30 páginas."
+        },
+        "conclusions": {
+          "title": "Conclusões",
+          "guidance": "Encerre o trabalho respondendo diretamente ao objetivo declarado na introdução:\n• O objetivo foi alcançado? O que foi encontrado?\n• Reflexão sobre a relevância do trabalho.\n• Limitações encontradas.\n• Recomendações ou linhas de trabalho futuro.\nComprimento típico: 1–2 páginas. Não insira novas informações aqui."
+        },
+        "references": {
+          "guidance": "A lista de referências é gerada automaticamente a partir do seu arquivo .bib durante a compilação.\nUse o importador DOI (Ctrl+[ > painel DOI) para adicionar fontes facilmente.\nO estilo APA 7 é aplicado automaticamente."
+        }
+      },
+      "description": "Versão simplificada para bacharelado: introdução, desenvolvimento e conclusões. Aula de livros, XeLaTeX, biber, APA 7."
+    },
+    "generic.thesis": {
+      "name": "Tese genérica",
+      "sections": {
+        "title_page": {
+          "guidance": "A folha de rosto é gerada automaticamente pelo perfil com os dados institucionais que você configurou na criação do projeto (nome do aluno, instituição, cargo, diretor da tese, ano).\nVocê não precisa escrever conteúdo aqui."
+        },
+        "table_of_contents": {
+          "guidance": "O índice é gerado automaticamente a partir das seções habilitadas em seu projeto.\nVocê não precisa escrever nada. Apenas certifique-se de que seus capítulos tenham títulos."
+        },
+        "abstract_es": {
+          "title": "Resumo",
+          "guidance": "O resumo apresenta sua tese em 150–250 palavras. Você deve responder brevemente:\n• Qual é o problema ou questão de investigação?\n• Que metodologia você usou?\n• Quais são os principais resultados?\n• Qual é a conclusão ou contribuição?\nNão cite referências no resumo. Escreva no pretérito. Inclua de quatro a seis palavras-chave no final."
+        },
+        "abstract_en": {
+          "title": "Resumo",
+          "guidance": "Tradução fiel do resumo para o inglês, no mesmo formato (150–250 palavras).\nMuitas instituições de pós-graduação exigem isso para indexação internacional.\nPalavras-chave: mesmas palavras-chave do resumo, em inglês."
+        },
+        "dedication": {
+          "title": "Dedicação",
+          "guidance": "Texto curto (1–5 linhas) dedicado a pessoas importantes para o autor.\nÉ pessoal e opcional. Alguns exemplos: “Aos meus pais, pelo apoio incondicional”.\nEle não possui um título explícito na maioria dos estilos — o perfil cuida disso."
+        },
+        "acknowledgements": {
+          "title": "Obrigado",
+          "guidance": "Mencione aqueles que contribuíram para sua pesquisa: diretor, leitores, colegas, instituições, financiadores.\nSeja específico: mencione o papel de cada pessoa ou organização.\nComprimento recomendado: meia a uma página."
+        },
+        "introduction": {
+          "title": "Introdução",
+          "guidance": "A introdução contextualiza seu trabalho e motiva o leitor a continuar lendo. Deve incluir:\n1. Contexto geral do tema (do amplo ao específico).\n2. Declaração do problema: que lacuna ou necessidade existe?\n3. Questão ou hipótese de pesquisa.\n4. Objectivo geral e objectivos específicos.\n5. Justificativa: por que é relevante estudar isso?\n6. Escopo e limitações do estudo.\n7. Breve descrição da estrutura da tese.\nComprimento típico: 3–6 páginas."
+        },
+        "theoretical_framework": {
+          "title": "Referencial Teórico",
+          "guidance": "O referencial teórico apoia sua pesquisa com a literatura existente. Você deve:\n• Revise os principais conceitos e teorias relacionadas ao seu tópico.\n• Cite fontes primárias e atuais (últimos 5 a 10 anos para artigos; clássicos se forem fundamentais).\n• Organize as ideias de forma lógica e não como uma lista de resumos.\n• Identificar o estado da arte: o que se sabe e o que falta?\n• Posicione seu trabalho dentro da literatura: com que você contribui?\nUtilize o bloco “Citação bibliográfica” para cada referência. Evite citações excessivas – parafraseie e analise."
+        },
+        "methodology": {
+          "title": "Metodologia",
+          "guidance": "Descreva como você conduziu sua pesquisa com detalhes suficientes para que ela possa ser replicada. Inclui:\n• Tipo de pesquisa (quantitativa, qualitativa, mista; exploratória, descritiva, explicativa).\n• Desenho: experimental, quase-experimental, estudo de caso, levantamento, etc.\n• População e amostra: critérios de seleção, tamanho, técnica de amostragem.\n• Instrumentos de coleta: questionários, entrevistas, observação, experimentos.\n• Procedimento: etapas seguidas cronologicamente.\n• Análise de dados: software, estatística, categorias de análise qualitativa.\n• Considerações éticas, se aplicável."
+        },
+        "results": {
+          "title": "Resultados",
+          "guidance": "Apresente os resultados da sua pesquisa de forma objetiva, sem ainda interpretá-los. Guias:\n• Organize os resultados seguindo a ordem dos seus objetivos ou questões de pesquisa.\n• Use tabelas e figuras para dados numéricos ou comparativos — faça referência a cada um deles no texto.\n• Não repita em texto o que uma tabela já mostra; Comente o mais relevante.\n• Seja preciso com os números: inclua unidades, porcentagens, valores estatísticos (p, r, χ², etc.).\n• Para pesquisas qualitativas: apresenta categorias com citações textuais ilustrativas."
+        },
+        "discussion": {
+          "title": "Discussão",
+          "guidance": "Aqui você interpreta seus resultados e os relaciona com a literatura. É a seção mais analítica. Você deve:\n• Explique o que os seus resultados significam no contexto da sua questão de investigação.\n• Compare com estudos anteriores: coincidem? eles diferem? porque?\n• Aponte resultados inesperados e ofereça possíveis explicações.\n• Discuta as implicações teóricas e práticas das suas descobertas.\n• Reconheça honestamente as limitações do estudo.\nNão apresente aqui novos resultados — apenas interprete aqueles já relatados."
+        },
+        "conclusions": {
+          "title": "Conclusões",
+          "guidance": "As conclusões encerram seu argumento e respondem diretamente aos seus objetivos. Inclui:\n• Resposta à questão de investigação/verificação de hipóteses.\n• Síntese dos resultados mais importantes (sem repetir detalhes dos resultados).\n• Contribuições originais do trabalho.\n• Recomendações para prática profissional ou investigação futura.\n• Reflexão final sobre a relevância do trabalho.\nComprimento recomendado: 2–4 páginas. Não insira novas informações."
+        },
+        "references": {
+          "title": "Referências",
+          "guidance": "A lista de referências é gerada automaticamente a partir do seu arquivo .bib durante a compilação.\nCertifique-se de que todas as fontes citadas no texto estejam no .bib e vice-versa.\nPara adicionar referências: use o botão importar DOI ou edite o arquivo reference.bib diretamente.\nO estilo de citação (APA 7 neste perfil) é aplicado automaticamente pelo LaTeX."
+        },
+        "appendices": {
+          "title": "Anexos",
+          "guidance": "Os anexos contêm material de apoio que não cabe no corpo principal, mas que o leitor pode precisar verificar:\n• Instrumentos de coleta (questionários completos, roteiros de entrevistas).\n• Tabelas de dados brutos.\n• Código fonte ou scripts.\n• Mapas, planos, documentos legais.\n• Cartas de autorização ou consentimento informado.\nCada anexo deve ser numerado (Anexo A, Anexo B...) e referenciado no texto principal."
+        }
+      },
+      "description": "Perfil base para teses e trabalhos acadêmicos formais de bacharelado, especialidade, mestrado, doutorado e pós-doutorado. Aula de livro, XeLaTeX, biber, APA 7."
     }
   },
   "institutions": {

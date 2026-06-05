@@ -1,41 +1,28 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_unam_apa7
-name: "UNAM - Tesis/Disertación (APA 7)"
+name: mx_unam_apa7
 status: verified
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
-# ── Verificación contra guías oficiales ──────────────────────────
-# Revisado el 2026-05-25 contra lineamientos de la Coordinación de
-# Estudios de Posgrado (CEP-UNAM) y guías de titulación DGAE.
-# Revisar anualmente — la CEP actualiza sus lineamientos cada ciclo.
 verification:
-  reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-28"
-  verified_by: "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)"
-  ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"
+  reviewed_at: '2026-05-25'
+  reviewed_by: TeXisStudio Community
+  verified_at: '2026-05-28'
+  verified_by: TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)
+  ci_evidence: https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667
   source_urls:
-    - "https://www.posgrado.unam.mx/doctorado/"
-    - "https://www.dgae.unam.mx/tramites/titulacion/"
-    - "https://www.unam.mx/acerca-de-la-unam/normatividad/"
+  - https://www.posgrado.unam.mx/doctorado/
+  - https://www.dgae.unam.mx/tramites/titulacion/
+  - https://www.unam.mx/acerca-de-la-unam/normatividad/
   review_interval_days: 365
-
-# ── Formato de página ─────────────────────────────────────────────
-# Fuente: Coordinación de Estudios de Posgrado — UNAM.
-# Márgenes: izquierdo 3 cm (encuadernación), derecho 2 cm, sup/inf 2.5 cm.
-# Interlineado: 1.5 (estándar CEP); algunas facultades aceptan doble espacio.
-# Fuente: Times New Roman 12pt (estándar institucional).
-# Papel: A4 (posgrado UNAM); algunas licenciaturas usan carta.
 document_class:
   name: book
   options:
-    - 12pt
-    - a4paper
-    - oneside
-
+  - 12pt
+  - a4paper
+  - oneside
 page_layout:
   paper: a4paper
   margins:
@@ -44,322 +31,89 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
-
-# ── Límites de palabras ───────────────────────────────────────────
-# La UNAM-CEP no establece un límite universal de palabras.
-# Tesis doctorales típicas: 150–300 páginas (~60,000–120,000 palabras).
-# Resumen: recomendado 200–300 palabras; máximo 350 para ProQuest.
 max_abstract_words: 350
-
 packages: []
-
 sections:
-  # ── Preliminares ──────────────────────────────────────────────────
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      Generated automatically from project metadata.
-      The official UNAM title page must include:
-      • UNAM logo and name (university shield).
-      • Name of the Faculty, Institute or National School.
-      • Full name of the graduate or undergraduate program.
-      • Thesis title (in title case, centered).
-      • "THESIS" or "DISSERTATION" as appropriate, followed by the degree
-        (e.g., "submitted to obtain the degree of Doctor in [field] by:").
-      • Author’s full name (no abbreviations).
-      • Name of the thesis supervisor.
-      • Mexico City, month and year (e.g., "Mexico City, June 2026").
-      Consult the title page template for your program — the format varies
-      between faculties and graduate programs.
-
-  - id: declaracion
-    element_id: declaration
-    placement: front_matter
-    required: true
-    title: "Authenticity Declaration"
-    guidance: |
-      The Authenticity Declaration certifies that the work is original
-      and sources are correctly cited. Standard content:
-      "I declare that this thesis is original and my own work.
-      All sources consulted have been duly cited and referenced
-      in accordance with APA 7th edition standards."
-      Some faculties and programs additionally require:
-      • A Letter of Responsibility signed by the thesis supervisor.
-      • A specific form issued by the Graduate Studies Division.
-      Verify the requirements with your program — the form may be required
-      at the Coordination office before the final print.
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      Abstract in Spanish. Recommended: 200–350 words.
-      Must be self-contained: no citations, no undefined abbreviations, no equations.
-      Recommended structure per APA 7th edition:
-        1. Research problem statement.
-        2. General objective(s) of the study.
-        3. Methodological approach and research design.
-        4. Main findings or results.
-        5. Conclusions and contributions to the field.
-      End with 4 to 6 Keywords separated by semicolons.
-      The abstract will appear in the UNAM Library System catalog
-      (UNAM Biblioweb) — write it as a standalone piece.
-
-  - id: abstract_ingles
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract"
-    guidance: |
-      Abstract in English. Recommended for graduate theses for international
-      visibility and required for ProQuest Dissertations & Theses.
-      Maximum 350 words (ProQuest limit for doctoral dissertations).
-      Self-contained: no citations, no undefined abbreviations.
-      Same structure as the Spanish Abstract, in English.
-      End with: Keywords (4–6 English keywords).
-
-  - id: agradecimientos
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-    guidance: |
-      Optional but conventional in Mexican university theses.
-      Acknowledge: thesis supervisor and committee, fellow lab or research
-      group members, institutions that provided access to data or archives,
-      and personal support.
-      If the research received external funding (CONACYT/CONAHCYT,
-      DGAPA-PAPIIT, PAPIME, international scholarships), it is mandatory to
-      mention it with the project or scholarship number.
-      Example: "This research was funded by CONAHCYT through the
-      national doctoral scholarship No. [xxxxx]."
-      Typical length: half to one page.
-
-  - id: dedicatoria
-    element_id: dedication
-    placement: front_matter
-    required: false
-    title: "Dedication"
-    guidance: |
-      Optional. Brief — typically 1 to 3 lines.
-      No printed heading; the profile manages the formatting.
-
-  - id: indice_general
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: |
-      Generated automatically from document headings.
-      UNAM requires a complete table of contents with exact page numbers.
-      Includes: all front matter (except the title page), body chapters,
-      appendices and references.
-      Recommended depth: up to level 2 (chapters and main sections).
-
-  - id: indice_figuras
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-    guidance: |
-      Required if the thesis contains figures, graphs, maps or illustrations.
-      Generated automatically from figure captions.
-      Enable this section if you have 5 or more figures.
-      In APA 7, figures are designated “Figure X” in the text.
-
-  - id: indice_tablas
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-    guidance: |
-      Required if the thesis contains tables. Generated automatically.
-      Enable this section if you have 5 or more tables.
-      In APA 7, tables are designated “Table X” in the text.
-
-  - id: lista_abreviaturas
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Abbreviations and Acronyms"
-    guidance: |
-      Optional, but recommended if the thesis uses more than 10 abbreviations or acronyms.
-      List in alphabetical order: abbreviation on the left, full term on the right.
-      In the body text, define each abbreviation the first time it appears
-      by writing the full term followed by the abbreviation in parentheses.
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    label: "capitulo:introduccion"
-    guidance: |
-      The introduction establishes the context, the problem and the contribution.
-      Structure recommended by UNAM-CEP for graduate theses:
-      1. Contextualization: overview of the field of study.
-      2. Problem statement: what gap or contradiction exists in current knowledge?
-      3. Rationale: why is it relevant to address it? (theoretical, practical
-         or social importance).
-      4. Research question(s): stated precisely.
-      5. General objective and specific objectives: concrete and measurable.
-      6. Hypothesis or working assumption (if applicable to the research design).
-      7. Scope: spatial, temporal and thematic boundaries of the study.
-      8. Thesis structure: a brief paragraph per chapter.
-      APA 7 citations: (Author, year) in the text or Author (year) in narrative form.
-      Typical length: 15–25 pages.
-
-  - id: marco_teorico
-    element_id: literature_review
-    placement: body
-    required: true
-    title: "Theoretical Framework and Literature Review"
-    label: "capitulo:marcoteorico"
-    guidance: |
-      The theoretical framework presents the conceptual foundations and state of the art.
-      CEP-UNAM guidelines:
-      • Organize by theoretical currents, approaches or debates — not as a
-        sequential summary of authors.
-      • Define the key concepts you will use throughout the thesis.
-      • Review the most relevant literature (last 10 years, plus foundational works).
-      • Identify contradictions, gaps and unresolved debates that
-        justify your research.
-      • Conclude by explicitly positioning your work within the field.
-      APA 7 citations: every claim about existing literature requires a citation.
-      For secondary citations, use: "as cited in Author (year)".
-      Typical length: 30–60 pages.
-
-  - id: marco_conceptual
-    element_id: theoretical_framework
-    placement: body
-    required: false
-    title: "Conceptual Framework"
-    label: "capitulo:marcoconceptual"
-    guidance: |
-      Optional. Activate as an independent chapter if your thesis requires
-      developing a novel analytical framework or if the theoretical contribution
-      is central to the research.
-      Includes: operational definition of variables or analytical categories,
-      conceptual relationships, and the author’s own model or analytical scheme.
-      In many social science and humanities theses, the conceptual framework
-      is integrated within the Theoretical Framework chapter.
-
-  - id: metodologia
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    label: "capitulo:metodologia"
-    guidance: |
-      The methodology must allow the study to be replicated. Includes:
-      • Approach and paradigm: quantitative, qualitative or mixed. Justify
-        the choice based on the problem and research questions.
-      • Research design: experimental, quasi-experimental, correlational,
-        descriptive, phenomenological, hermeneutic, etc.
-      • Units of analysis, population and sample (or corpus): selection
-        criteria, size, sampling procedure.
-      • Data collection instruments and techniques: surveys, interviews,
-        observation, documentary analysis, content analysis, etc.
-        Include information about instrument validation.
-      • Data analysis procedure: software used (SPSS, R, Atlas.TI, NVivo),
-        statistical or analytical techniques.
-      • Ethical considerations: Ethics Committee approval if human subjects
-        were involved; informed consent.
-      • Methodological limitations.
-      APA 7: standardized assessment instruments require a full citation.
-
-  - id: resultados
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    label: "capitulo:resultados"
-    guidance: |
-      Present findings objectively, without interpretation.
-      • Organize by research question or specific objective.
-      • For quantitative studies: report descriptive statistics,
-        hypothesis test results (statistic, p-value, effect size),
-        confidence intervals. Tables and figures with footnotes per APA 7.
-      • For qualitative studies: present emerging categories or themes
-        with representative verbatim quotes; ensure participant anonymization
-        as committed to in the informed consent.
-      • Every table and figure must be referenced in the text before it appears.
-      • APA 7: “Table X shows…”, “Figure X illustrates…”
-      Length: varies; in quantitative theses often 30–60 pages.
-
-  - id: discusion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-    label: "capitulo:discusion"
-    guidance: |
-      Interpret results in relation to the theoretical framework and literature.
-      APA 7 recommends opening with a statement of support or non-support for the hypothesis.
-      A solid discussion:
-      • Takes each result and connects it to theory and prior evidence
-        (confirming, contradicting or nuancing it).
-      • Explains unexpected or contradictory results.
-      • Discusses theoretical and practical implications.
-      • Honestly acknowledges the study’s limitations.
-      • Suggests specific future research directions, derived from
-        limitations and unresolved findings.
-      In many UNAM theses this chapter is merged with Results or Conclusions.
-      Activate as an independent chapter if the analysis warrants it.
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    label: "capitulo:conclusiones"
-    guidance: |
-      Conclusions synthesize the central argument and contributions:
-      • Directly answer each research question or objective.
-      • Summarize original contributions: what does the field now know that
-        it did not know before this research?
-      • Practical, public policy or management implications (if applicable).
-      • Specific and honest limitations of the work.
-      • Concrete and bounded future research directions.
-      Avoid repeating results — the committee has read the previous chapter.
-      In UNAM doctoral theses the committee will evaluate an oral defense;
-      conclusions are the text that best prepares that conversation.
-      Typical length: 10–20 pages.
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: |
-      APA 7th edition: alphabetical list by first author’s last name,
-      hanging indent, generated automatically from your .bib file.
-      APA 7 verification points:
-      • Book and journal titles in italics.
-      • Article and chapter titles without quotation marks (unlike APA 6).
-      • DOI in URL format: https://doi.org/xxxxx (no trailing period).
-      • For online sources: include URL and access date if content may change.
-      • For unpublished theses: Last, N. (Year). Thesis title
-        [Doctoral dissertation, Universidad Nacional Autónoma de México].
-      Expected volume for doctoral theses: 100–300 references.
-
-  - id: apendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Appendices"
-    guidance: |
-      Supplementary materials that would interrupt the main narrative:
-      • Research instruments (questionnaires, interview guides,
-        observation rubrics).
-      • Raw data, extended statistical tables or additional results.
-      • Ethics Committee approval letter and consent forms.
-      • Interview transcripts (representative excerpts).
-      • Authorization letters from collaborating institutions.
-      Label: Appendix A, B… with descriptive title.
-      Reference from the text: "(see Appendix A)".
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: declaracion
+  element_id: declaration
+  placement: front_matter
+  required: true
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: abstract_ingles
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: agradecimientos
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: dedicatoria
+  element_id: dedication
+  placement: front_matter
+  required: false
+- id: indice_general
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: indice_figuras
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: indice_tablas
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: lista_abreviaturas
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+  label: capitulo:introduccion
+- id: marco_teorico
+  element_id: literature_review
+  placement: body
+  required: true
+  label: capitulo:marcoteorico
+- id: marco_conceptual
+  element_id: theoretical_framework
+  placement: body
+  required: false
+  label: capitulo:marcoconceptual
+- id: metodologia
+  element_id: methodology
+  placement: body
+  required: true
+  label: capitulo:metodologia
+- id: resultados
+  element_id: results
+  placement: body
+  required: true
+  label: capitulo:resultados
+- id: discusion
+  element_id: discussion
+  placement: body
+  required: false
+  label: capitulo:discusion
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+  label: capitulo:conclusiones
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: apendices
+  element_id: appendix
+  placement: back_matter
+  required: false

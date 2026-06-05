@@ -1,51 +1,37 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_uam_cua_dci
-name: "UAM Cuajimalpa — DCI"
-description: >
-  Perfil para tesis y trabajos de investigación de la División de Ciencias
-  de la Información (DCI) de la UAM Unidad Cuajimalpa. Cubre licenciaturas en
-  Computación, Tecnologías de la Información, Ciencias de la Computación y
-  Diseño de la Comunicación Gráfica. El campus Cuajimalpa enfatiza proyectos
-  de vinculación entre tecnología, diseño y sociedad.
+name: mx_uam_cua_dci
 status: reviewed
-author: "TeXisStudio Community"
-version: "1.0.0"
-license: "CC BY 4.0"
+author: TeXisStudio Community
+version: 1.0.0
+license: CC BY 4.0
 tags:
-  - uam
-  - mexico
-  - computacion
-  - tecnologias-informacion
-  - informatica
-  - cuajimalpa
-  - dci
-  - licenciatura
-  - posgrado
-
+- uam
+- mexico
+- computacion
+- tecnologias-informacion
+- informatica
+- cuajimalpa
+- dci
+- licenciatura
+- posgrado
 verification:
-  reviewed_at: "2026-05-27"
-  reviewed_by: "TeXisStudio Community — revisado contra lineamientos DCI UAM-Cuajimalpa"
+  reviewed_at: '2026-05-27'
+  reviewed_by: TeXisStudio Community — revisado contra lineamientos DCI UAM-Cuajimalpa
   source_urls:
-    - "https://dci.cua.uam.mx/"
-    - "https://cua.uam.mx/lineamientos-tesis/"
+  - https://dci.cua.uam.mx/
+  - https://cua.uam.mx/lineamientos-tesis/
   review_interval_days: 365
-
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
-# APA 7: estilo estándar en DCI UAM-Cuajimalpa para computación y tecnología.
 bibliography_style: apa
-
-# ── Formato de página ─────────────────────────────────────────────
-# DCI UAM-Cuajimalpa: márgenes UAM estándar.
-# Interlineado 1.5: indicado para trabajo de tesis en DCI.
 page_layout:
   paper: letterpaper
   margins:
@@ -54,137 +40,75 @@ page_layout:
     left: 30mm
     right: 25mm
   line_spacing: 1.5
-
 max_words: 70000
 max_abstract_words: 350
-
 packages:
-  - siunitx       # unidades físicas y de cómputo: \SI{1}{\giga\byte}
-  - pgfplots      # gráficas de rendimiento y análisis
-  - cancel        # cancelaciones algebraicas
-  - xfrac         # fracciones inline
-
-
+- siunitx
+- pgfplots
+- cancel
+- xfrac
 sections:
-  - id: title_page
-    element_id: title_page
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      Official UAM-DCI title page: UAM logo, university name, campus,
-      division, research area, work title, student name and ID,
-      term and year, and thesis director’s name.
-
-  - id: dedication
-    element_id: dedication
-    placement: front_matter
-    required: false
-    title: "Dedication"
-
-  - id: acknowledgements
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-
-  - id: abstract_es
-    element_id: abstract_es
-    placement: front_matter
-    required: true
-    title: "Abstract (Spanish)"
-    guidance: |
-      Maximum 350 words. Must include: problem context, main objective,
-      technical methodology used, key results or contributions
-      and conclusions.
-
-  - id: abstract_en
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract (English)"
-    guidance: "English translation of the abstract. Mandatory for graduate programs."
-
-  - id: table_of_contents
-    element_id: table_of_contents
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-
-  - id: list_of_figures
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-
-  - id: list_of_tables
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-
-  - id: introduction
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    guidance: |
-      Technological or information-system context, problem statement,
-      general objective, specific objectives, scope and
-      organization of the document.
-
-  - id: theoretical_framework
-    element_id: theoretical_framework
-    placement: body
-    required: true
-    title: "Theoretical Framework and State of the Art"
-    guidance: |
-      Review of fundamental concepts and related work. In DCI, a review
-      of recent technical literature (ACM, IEEE conferences, Scopus or WoS articles)
-      and identification of the knowledge gap is valued.
-
-  - id: methodology
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    guidance: |
-      Development or research methodology: SCRUM, RUP, Design Science,
-      controlled experimentation, etc. Include system architecture diagram
-      if applicable, use cases, and evaluation criteria.
-
-  - id: results
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    guidance: |
-      Description of the developed system, conducted experiments,
-      evaluation metrics and comparison with related work.
-
-  - id: discussion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-
-  - id: conclusions
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions and Future Work"
-    guidance: "Technical conclusions, work limitations and future development directions."
-
-  - id: references
-    element_id: references
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: "APA 7 format. Include DOI when available."
-
-  - id: appendix
-    element_id: appendix
-    placement: appendix
-    required: false
-    title: "Appendices"
-    guidance: "Relevant source code, additional diagrams, experimental data, etc."
+- id: title_page
+  element_id: title_page
+  placement: front_matter
+  required: true
+- id: dedication
+  element_id: dedication
+  placement: front_matter
+  required: false
+- id: acknowledgements
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: abstract_es
+  element_id: abstract_es
+  placement: front_matter
+  required: true
+- id: abstract_en
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: table_of_contents
+  element_id: table_of_contents
+  placement: front_matter
+  required: true
+- id: list_of_figures
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: list_of_tables
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduction
+  element_id: introduction
+  placement: body
+  required: true
+- id: theoretical_framework
+  element_id: theoretical_framework
+  placement: body
+  required: true
+- id: methodology
+  element_id: methodology
+  placement: body
+  required: true
+- id: results
+  element_id: results
+  placement: body
+  required: true
+- id: discussion
+  element_id: discussion
+  placement: body
+  required: false
+- id: conclusions
+  element_id: conclusions
+  placement: body
+  required: true
+- id: references
+  element_id: references
+  placement: back_matter
+  required: true
+- id: appendix
+  element_id: appendix
+  placement: appendix
+  required: false

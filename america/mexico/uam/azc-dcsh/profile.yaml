@@ -1,52 +1,39 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_uam_azc_dcsh
-name: "UAM Azcapotzalco — DCSH"
-description: >
-  Perfil para tesis y reportes de investigación de la División de Ciencias
-  Sociales y Humanidades (DCSH) de la UAM Unidad Azcapotzalco. Cubre las
-  licenciaturas en Administración, Economía, Sociología y Humanidades.
+name: mx_uam_azc_dcsh
 status: reviewed
-author: "TeXisStudio Community"
-version: "1.0.0"
-license: "CC BY 4.0"
+author: TeXisStudio Community
+version: 1.0.0
+license: CC BY 4.0
 tags:
-  - uam
-  - mexico
-  - ciencias-sociales
-  - humanidades
-  - administracion
-  - economia
-  - sociologia
-  - azcapotzalco
-  - dcsh
-  - licenciatura
-  - posgrado
-
+- uam
+- mexico
+- ciencias-sociales
+- humanidades
+- administracion
+- economia
+- sociologia
+- azcapotzalco
+- dcsh
+- licenciatura
+- posgrado
 verification:
-  reviewed_at: "2026-05-27"
-  reviewed_by: "TeXisStudio Community — revisado contra lineamientos DCSH UAM-Azc"
+  reviewed_at: '2026-05-27'
+  reviewed_by: TeXisStudio Community — revisado contra lineamientos DCSH UAM-Azc
   source_urls:
-    - "https://dcsh.azc.uam.mx/"
-    - "https://dcsh.azc.uam.mx/formatos/lineamientos_trabajo_terminal.pdf"
+  - https://dcsh.azc.uam.mx/
+  - https://dcsh.azc.uam.mx/formatos/lineamientos_trabajo_terminal.pdf
   review_interval_days: 365
-
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
-# Chicago Author-Date es el estilo predominante en ciencias sociales UAM
 bibliography_style: chicago-authordate
-
-# ── Formato de página ─────────────────────────────────────────────
-# DCSH UAM-Azcapotzalco: márgenes estándar UAM (2.5 cm) con
-# margen izquierdo de 3 cm para encuadernado.
-# Interlineado doble según lineamientos DCSH para trabajos terminales.
 page_layout:
   paper: letterpaper
   margins:
@@ -55,131 +42,70 @@ page_layout:
     left: 30mm
     right: 25mm
   line_spacing: 2.0
-
 max_words: 60000
 max_abstract_words: 300
-
 sections:
-  - id: title_page
-    element_id: title_page
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      Official UAM-DCSH title page: UAM logo, university name, campus,
-      division, department, title of the research work or thesis,
-      student name and ID, term and year, advisor’s or director’s name
-      and co-advisor (if applicable).
-
-  - id: dedication
-    element_id: dedication
-    placement: front_matter
-    required: false
-    title: "Dedication"
-
-  - id: acknowledgements
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-
-  - id: abstract_es
-    element_id: abstract_es
-    placement: front_matter
-    required: true
-    title: "Abstract (Spanish)"
-    guidance: |
-      Maximum 300 words. Must include: problem statement,
-      general objective, methodology, main findings and conclusions.
-      Avoid bibliographic citations in the abstract.
-
-  - id: abstract_en
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract (English)"
-    guidance: "English abstract. Recommended for graduate programs."
-
-  - id: table_of_contents
-    element_id: table_of_contents
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-
-  - id: list_of_figures
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-
-  - id: list_of_tables
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-
-  - id: introduction
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    guidance: |
-      General context, rationale, problem statement,
-      research question, hypothesis or objectives, and structure
-      of the work.
-
-  - id: theoretical_framework
-    element_id: theoretical_framework
-    placement: body
-    required: true
-    title: "Theoretical-Conceptual Framework"
-    guidance: |
-      Critical review of the literature. In social sciences, an explicit
-      positioning of the author with respect to theoretical approaches is expected.
-      Use Chicago Author-Date style for citations.
-
-  - id: methodology
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    guidance: |
-      Methodological strategy: qualitative, quantitative or mixed.
-      Units of analysis, data collection techniques, selection criteria,
-      and ethical considerations if applicable.
-
-  - id: results
-    element_id: results
-    placement: body
-    required: true
-    title: "Results and Analysis"
-    guidance: "Presentation and critical analysis of findings."
-
-  - id: discussion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-
-  - id: conclusions
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    guidance: |
-      Synthesis of findings, answer to the research question,
-      limitations, contributions to the field and future research directions.
-
-  - id: references
-    element_id: references
-    placement: back_matter
-    required: true
-    title: "Bibliography"
-    guidance: "Chicago Author-Date format. Include all sources cited in the text."
-
-  - id: appendix
-    element_id: appendix
-    placement: appendix
-    required: false
-    title: "Appendices"
-    guidance: "Data collection instruments, transcriptions, supplementary tables, etc."
+- id: title_page
+  element_id: title_page
+  placement: front_matter
+  required: true
+- id: dedication
+  element_id: dedication
+  placement: front_matter
+  required: false
+- id: acknowledgements
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: abstract_es
+  element_id: abstract_es
+  placement: front_matter
+  required: true
+- id: abstract_en
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: table_of_contents
+  element_id: table_of_contents
+  placement: front_matter
+  required: true
+- id: list_of_figures
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: list_of_tables
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduction
+  element_id: introduction
+  placement: body
+  required: true
+- id: theoretical_framework
+  element_id: theoretical_framework
+  placement: body
+  required: true
+- id: methodology
+  element_id: methodology
+  placement: body
+  required: true
+- id: results
+  element_id: results
+  placement: body
+  required: true
+- id: discussion
+  element_id: discussion
+  placement: body
+  required: false
+- id: conclusions
+  element_id: conclusions
+  placement: body
+  required: true
+- id: references
+  element_id: references
+  placement: back_matter
+  required: true
+- id: appendix
+  element_id: appendix
+  placement: appendix
+  required: false

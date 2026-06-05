@@ -1,53 +1,40 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_uam_izt_dcsh
-name: "UAM Iztapalapa — CSH"
-description: >
-  Perfil para tesis y trabajos de investigación de la División de Ciencias
-  Sociales y Humanidades (CSH) de la UAM Unidad Iztapalapa. Cubre
-  licenciaturas en Sociología, Historia, Lingüística, Comunicación Social,
-  Economía y Psicología Social.
+name: mx_uam_izt_dcsh
 status: reviewed
-author: "TeXisStudio Community"
-version: "1.0.0"
-license: "CC BY 4.0"
+author: TeXisStudio Community
+version: 1.0.0
+license: CC BY 4.0
 tags:
-  - uam
-  - mexico
-  - ciencias-sociales
-  - humanidades
-  - sociologia
-  - historia
-  - lingüistica
-  - psicologia
-  - iztapalapa
-  - csh
-  - licenciatura
-  - posgrado
-
+- uam
+- mexico
+- ciencias-sociales
+- humanidades
+- sociologia
+- historia
+- lingüistica
+- psicologia
+- iztapalapa
+- csh
+- licenciatura
+- posgrado
 verification:
-  reviewed_at: "2026-05-27"
-  reviewed_by: "TeXisStudio Community — revisado contra lineamientos CSH UAM-Iztapalapa"
+  reviewed_at: '2026-05-27'
+  reviewed_by: TeXisStudio Community — revisado contra lineamientos CSH UAM-Iztapalapa
   source_urls:
-    - "https://csh.izt.uam.mx/"
-    - "https://csh.izt.uam.mx/formatos/"
+  - https://csh.izt.uam.mx/
+  - https://csh.izt.uam.mx/formatos/
   review_interval_days: 365
-
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
-# Chicago Author-Date: usado en humanidades y ciencias sociales
 bibliography_style: chicago-authordate
-
-# ── Formato de página ─────────────────────────────────────────────
-# CSH UAM-Iztapalapa: márgenes estándar UAM.
-# Interlineado doble (lineamientos CSH para tesis de licenciatura y posgrado).
 page_layout:
   paper: letterpaper
   margins:
@@ -56,121 +43,70 @@ page_layout:
     left: 30mm
     right: 25mm
   line_spacing: 2.0
-
 max_words: 70000
 max_abstract_words: 300
-
 sections:
-  - id: title_page
-    element_id: title_page
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      Official UAM-CSH title page: UAM logo, university name, campus,
-      division and department, thesis or terminal work title,
-      student name and ID, term and year, advisor’s name.
-
-  - id: dedication
-    element_id: dedication
-    placement: front_matter
-    required: false
-    title: "Dedication"
-
-  - id: acknowledgements
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-
-  - id: abstract_es
-    element_id: abstract_es
-    placement: front_matter
-    required: true
-    title: "Abstract (Spanish)"
-    guidance: "Maximum 300 words. Includes objective, methodology and main findings."
-
-  - id: abstract_en
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract (English)"
-
-  - id: table_of_contents
-    element_id: table_of_contents
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-
-  - id: list_of_figures
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-
-  - id: list_of_tables
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-    guidance: "In CSH, ‘cuadros’ (tables) is preferred over ‘tablas’."
-
-  - id: introduction
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    guidance: |
-      Presentation of the research problem, relevance, research question,
-      hypothesis (if applicable) and organization of the work.
-      In humanities it may be more extensive (10–15 pages).
-
-  - id: theoretical_framework
-    element_id: theoretical_framework
-    placement: body
-    required: true
-    title: "Theoretical Framework"
-    guidance: |
-      Theoretical debate and author’s positioning. In CSH-Iztapalapa,
-      depth in the discussion of theoretical approaches and explicit
-      articulation with the research problem is valued.
-
-  - id: methodology
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    guidance: |
-      Research paradigm, design, techniques (interviews, surveys,
-      discourse analysis, ethnography, etc.) and justification of their choice.
-
-  - id: results
-    element_id: results
-    placement: body
-    required: true
-    title: "Analysis and Results"
-
-  - id: discussion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-
-  - id: conclusions
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-
-  - id: references
-    element_id: references
-    placement: back_matter
-    required: true
-    title: "Reference Sources"
-    guidance: "Chicago Author-Date format. Include primary and secondary sources."
-
-  - id: appendix
-    element_id: appendix
-    placement: appendix
-    required: false
-    title: "Appendices"
+- id: title_page
+  element_id: title_page
+  placement: front_matter
+  required: true
+- id: dedication
+  element_id: dedication
+  placement: front_matter
+  required: false
+- id: acknowledgements
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: abstract_es
+  element_id: abstract_es
+  placement: front_matter
+  required: true
+- id: abstract_en
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: table_of_contents
+  element_id: table_of_contents
+  placement: front_matter
+  required: true
+- id: list_of_figures
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: list_of_tables
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduction
+  element_id: introduction
+  placement: body
+  required: true
+- id: theoretical_framework
+  element_id: theoretical_framework
+  placement: body
+  required: true
+- id: methodology
+  element_id: methodology
+  placement: body
+  required: true
+- id: results
+  element_id: results
+  placement: body
+  required: true
+- id: discussion
+  element_id: discussion
+  placement: body
+  required: false
+- id: conclusions
+  element_id: conclusions
+  placement: body
+  required: true
+- id: references
+  element_id: references
+  placement: back_matter
+  required: true
+- id: appendix
+  element_id: appendix
+  placement: appendix
+  required: false

@@ -2788,7 +2788,6 @@
     },
     "company.internship": {
       "name": "Staj / İkamet Raporu",
-      "description": "Mesleki ikamet ve iş amaçlı konaklamalara ilişkin raporların biçimi. Şirket tanımını, faaliyetlerini ve sonuçlarını içerir. Kaynakça APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Kapak sayfası kurumsal verilerle otomatik olarak oluşturulur.\nŞunları içerecektir: öğrencinin adı, şirketi, staj dönemi, akademik kurum ve kariyer.\nBuraya içerik yazmanıza gerek yok; verileri proje meta verilerinde ayarlayın."
@@ -2798,11 +2797,11 @@
         },
         "introduction": {
           "title": "Giriş",
-          "guidance": "Raporu bağlamsallaştırın ve uygulamaların amacını okuyucuya sunun:\n• Uygulayıcının kariyeri ve mesleki profili.\n• Stajın yapıldığı şirket ve bölgenin adı.\n• Dönem ve toplam süre.\n• Uzmanlığın genel amacı: Hangi sorun veya organizasyonel ihtiyaç ele alındı?\n• Rapor yapısının kısa açıklaması.\nUzunluk: 1–2 sayfa."
+          "guidance": "Raporu bağlamsallaştırın ve okuyucuya uygulamaların amacını sunun:\n• Uygulayıcının kariyeri ve mesleki profili.\n• Stajın yapıldığı şirket ve bölgenin adı.\n• Dönem ve toplam süre.\n• Uzmanlığın genel amacı: Hangi sorun veya organizasyonel ihtiyaç ele alındı?\n• Rapor yapısının kısa açıklaması.\nUzunluk: 1–2 sayfa."
         },
         "company_description": {
           "title": "Şirket Açıklaması",
-          "guidance": "Staj yaptığınız organizasyonu tanıtın:\n• Tam ad, şirket adı ve iş kolu.\n• Kısa tarihçe ve misyon/vizyon.\n• Genel organizasyon şeması (bir şekil ekleyebilirsiniz).\n• Çalıştığınız alan veya bölüm ve şirket içindeki işlevi.\n• Faaliyetlerinizle ilgili teknolojik altyapı.\nŞirketin web sitesini aynen kopyalamayın; başka kelimelerle ifade edin ve kaynak gösterin."
+          "guidance": "Staj yaptığınız organizasyonu tanıtın:\n• Tam ad, şirket adı ve iş kolu.\n• Kısa tarihçe ve misyon/vizyon.\n• Genel organizasyon şeması (bir şekil ekleyebilirsiniz).\n• Çalıştığınız alan veya bölüm ve şirket içindeki işlevi.\n• Faaliyetlerinizle ilgili teknolojik altyapı.\nŞirketin web sitesini aynen kopyalamayın; başka kelimelerle ifade edin ve kaynağı belirtin."
         },
         "activities": {
           "title": "Geliştirilen etkinlikler",
@@ -2818,18 +2817,17 @@
         },
         "references": {
           "title": "Referanslar",
-          "guidance": "Uygulamalar sırasında başvurulan kaynakları listeleyin: teknik kılavuzlar, standartlar, makaleler, web siteleri.\nListe .bib dosyanızdan otomatik olarak oluşturulur.\nAPA stili 7. Akademik referansları kolayca eklemek için DOI içe aktarıcısını kullanın."
+          "guidance": "Uygulamalar sırasında başvurulan kaynakları listeleyin: teknik kılavuzlar, standartlar, makaleler, web siteleri.\nListe .bib dosyanızdan otomatik olarak oluşturulur.\nAPA Stili 7. Akademik referansları kolayca eklemek için DOI içe aktarıcısını kullanın."
         },
         "appendices": {
           "title": "Ekler",
           "guidance": "Ana gövdede çok kapsamlı olabilecek destek malzemesini içerir:\n• Firmadan kabul mektubu.\n• İşletme eğitmeninden alınan tamamlama/değerlendirme mektubu.\n• Haftalık günlükler (kurumunuz gerektiriyorsa).\n• İlgili kaynak kodu.\n• Kullanıcı veya teknik kılavuzlar geliştirildi.\n• İşyerinin fotoğrafik kanıtı.\nHer eki (Ek A, B…) numaralandırın ve bunlara metinden atıfta bulunun."
         }
       },
-      "meta": "Kaynakça APA 7 · XeLaTeX"
+      "description": "Mesleki ikamet ve iş amaçlı konaklamalara ilişkin raporların biçimi. Şirket tanımını, faaliyetlerini ve sonuçlarını içerir. APA Kaynakça 7."
     },
     "engineering.basic": {
       "name": "Mühendislik / Teknik rapor",
-      "description": "Yaklaşım, tasarım, uygulama ve test etme bölümlerini içeren teknik rapor. IEEE Kaynakça. Mühendislik tezi ve uzmanlık eğitimi için idealdir.",
       "sections": {
         "title_page": {
           "guidance": "Kapak sayfası proje verileriyle otomatik olarak oluşturulur.\nBuraya içerik yazmanıza gerek yok."
@@ -2851,15 +2849,15 @@
         },
         "design": {
           "title": "Tasarım ve mimari",
-          "guidance": "Önerilen çözümü uygulamadan önce sunun:\n• Sistem mimarisi (bileşen diyagramı, katmanlar, modüller).\n• Tasarım kararları ve seçilen teknolojilerin gerekçelendirilmesi.\n• Akış şeması veya ana algoritma.\n• Varsa veri modeli (ER, BD şeması).\n• Kullanıcı arayüzü (varsa tel çerçeveler veya maketler).\nTasarım, uygulamadan bağımsız olmalıdır; üçüncü bir taraf bu bölümden tasarımı uygulayabilmelidir."
+          "guidance": "Önerilen çözümü uygulamadan önce sunun:\n• Sistem mimarisi (bileşen diyagramı, katmanlar, modüller).\n• Tasarım kararları ve seçilen teknolojilerin gerekçelendirilmesi.\n• Akış şeması veya ana algoritma.\n• Varsa veri modeli (ER, DB şeması).\n• Kullanıcı arayüzü (varsa tel çerçeveler veya maketler).\nTasarım, uygulamadan bağımsız olmalıdır; üçüncü bir taraf bu bölümden tasarımı uygulayabilmelidir."
         },
         "implementation": {
           "title": "Uygulama",
-          "guidance": "Çözümün nasıl oluşturulduğunu açıklayın:\n• Geliştirme ortamı: diller, çerçeveler, platformlar, sürümler.\n• Uygulanan modüllerin veya bileşenlerin açıklaması.\n• İlgili kod parçaları (kodun tamamı değil, yalnızca en açıklayıcı olanlar).\n• Uygulama zorlukları ve benimsenen çözümler.\n• Varsa altyapı yapılandırması (sunucular, konteynerler, BD).\nKodun tamamı Eklerde yer almaktadır; burada yalnızca en temsili olanı yer almaktadır."
+          "guidance": "Çözümün nasıl oluşturulduğunu açıklayın:\n• Geliştirme ortamı: diller, çerçeveler, platformlar, sürümler.\n• Uygulanan modüllerin veya bileşenlerin açıklaması.\n• İlgili kod parçaları (kodun tamamı değil, yalnızca en açıklayıcı olanlar).\n• Uygulama zorlukları ve benimsenen çözümler.\n• Varsa altyapı yapılandırması (sunucular, konteynerler, veritabanı).\nKodun tamamı Ekler'de yer almaktadır; burada yalnızca en temsili olanı yer almaktadır."
         },
         "testing": {
           "title": "Test etme ve doğrulama",
-          "guidance": "Çözümün çalıştığını ve gereksinimleri karşıladığını gösterin:\n• Test planı: türleri (üniter, entegrasyon, sistem, kabul).\n• Test senaryoları: girdi, eylem, beklenen sonuç, elde edilen sonuç.\n• Varsa performans ölçümleri (tepki süresi, bellek kullanımı, hassasiyet).\n• Mevcut durum veya ilgili çalışmalarla karşılaştırma.\n• Sonuçların analizi: ne işe yaradı? HAYIR? Çünkü?\nMümkün olduğunda sonuçları tablo veya grafikler halinde sunun."
+          "guidance": "Çözümün işe yaradığını ve gereksinimleri karşıladığını gösterin:\n• Test planı: türleri (üniter, entegrasyon, sistem, kabul).\n• Test senaryoları: girdi, eylem, beklenen sonuç, elde edilen sonuç.\n• Varsa performans ölçümleri (tepki süresi, bellek kullanımı, hassasiyet).\n• Mevcut durum veya ilgili çalışmalarla karşılaştırma.\n• Sonuçların analizi: ne işe yaradı? HAYIR? Çünkü?\nMümkün olduğunda sonuçları tablo veya grafikler halinde sunun."
         },
         "conclusions": {
           "title": "Sonuçlar ve gelecekteki çalışmalar",
@@ -2867,18 +2865,17 @@
         },
         "references": {
           "title": "Referanslar",
-          "guidance": "IEEE'de referanslar sayısaldır ve ilk bahsedilme sırasına göre görünür.\nListe, derlediğinizde .bib dosyanızdan otomatik olarak oluşturulur.\nIEEE makaleleri ve konferansları için: Doğru girişi almak için DOI içe aktarıcısını kullanın.\nHer referansa DOI'yi eklediğinizden emin olun; IEEE bunu gerektirir."
+          "guidance": "IEEE'de referanslar sayısaldır ve ilk bahsedilme sırasına göre görünür.\nListe, derlediğinizde .bib dosyanızdan otomatik olarak oluşturulur.\nIEEE makaleleri ve konferansları için: doğru girişi almak için DOI içe aktarıcısını kullanın.\nHer referansa DOI'yi eklediğinizden emin olun; IEEE bunu gerektirir."
         },
         "appendices": {
           "title": "Ekler",
-          "guidance": "Tamamlayıcı teknik materyal:\n• Kaynak kodunu tamamlayın (ana modüller).\n• Kurulum ve konfigürasyon komut dosyaları.\n• Kullanıcı veya teknik kılavuzlar.\n• Ayrıntılı diyagramlar (tam ERD, dizi diyagramları, vb.).\n• Verileri veya veri kümelerini test edin.\nNumara: Ek A, B… ve bunlara ana metinden bakın."
+          "guidance": "Tamamlayıcı teknik materyal:\n• Kaynak kodunu tamamlayın (ana modüller).\n• Kurulum ve konfigürasyon komut dosyaları.\n• Kullanıcı veya teknik kılavuzlar.\n• Ayrıntılı diyagramlar (tam ERD, sıra diyagramları, vb.).\n• Verileri veya veri kümelerini test edin.\nNumara: Ek A, B… ve bunlara ana metinden bakın."
         }
       },
-      "meta": "Kaynakça IEEE · XeLaTeX"
+      "description": "Yaklaşım, tasarım, uygulama ve test etme bölümlerini içeren teknik rapor. IEEE Bibliyografyası. Mühendislik tezi ve uzmanlık eğitimi için idealdir."
     },
     "generic.phd": {
       "name": "Lisansüstü tezi",
-      "description": "Yüksek lisans ve doktora profili: literatür taraması, son teknoloji, yaklaşım, deneyler, sözlük ve kısaltmalar. XeLaTeX, biber, APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Kapak sayfası proje verileriyle otomatik olarak oluşturulur.\nLisansüstü çalışmalar için meta verileri yapılandırın: tam ad, direktör, yardımcı direktör (varsa) ve sinodal komite.\nBuraya içerik yazmanıza gerek yok."
@@ -2897,7 +2894,7 @@
         },
         "acronyms": {
           "title": "Kısaltmalar ve Kısa Adların Listesi",
-          "guidance": "Tezde kullanılan tüm kısaltmaları ve kısaltmaları tam anlamlarıyla listeleyin.\nFormat: SIGLA — Tam anlamı (örn. CNN — Evrişimli Sinir Ağı).\nAlfabetik olarak sıralayın. Ayrıca her kısaltmanın metinde ilk kez geçtiği zamanı da tanımlar."
+          "guidance": "Tezde kullanılan tüm kısaltmaları ve kısaltmaları tam anlamlarıyla listeleyin.\nBiçim: KISALTMA — Tam anlamı (örneğin, CNN — Evrişimli Sinir Ağı).\nAlfabetik olarak sıralayın. Ayrıca her kısaltmanın metinde ilk kez geçtiği zamanı da tanımlar."
         },
         "abstract_es": {
           "title": "Özet",
@@ -2913,15 +2910,15 @@
         },
         "acknowledgements": {
           "title": "Teşekkürler",
-          "guidance": "Çalışmaya katkıda bulunanlara resmi olarak teşekkür ederiz:\n• Tez yöneticisi ve yardımcı direktörü.\n• Sinodal komite / gözden geçirenler.\n• Fon verenler: burslar, projeler, kurumlar (dış destekli projeler için zorunludur).\n• Teknik işbirlikçiler, laboratuvarlar, şirketler.\n• Aile ve kişisel destek (sonunda kısaca).\nUzantı: yarım sayfa."
+          "guidance": "Çalışmaya katkıda bulunanlara resmi olarak teşekkür ederiz:\n• Tez yöneticisi ve yardımcı direktörü.\n• Sinodal komite / gözden geçirenler.\n• Fon verenler: burslar, projeler, kurumlar (dış destekli projeler için zorunludur).\n• Teknik işbirlikçiler, laboratuvarlar, şirketler.\n• Aile ve kişisel destek (sonunda kısaca).\nUzunluk: yarım sayfa."
         },
         "introduction": {
           "title": "Giriş",
           "guidance": "Lisansüstü teze giriş, lisans derecesine göre daha zahmetlidir. Şunları yapmalısınız:\n1. Sorunu mevcut teknolojiye göre bağlamlandırın.\n2. Tezinizin hitap ettiği spesifik bilgi açığını tanımlayın.\n3. Hipotezi veya araştırma sorusunu açıkça belirtin.\n4. Hedefleri listeleyin (genel ve özel).\n5. Orijinal katkıyı tanımlayın (çalışmanızda yenilikler neler?).\n6. Kapsamı ve sınırlamaları gerekçelendirin.\n7. Bölümlerin organizasyonunu açıklayın.\nBir doktora komitesi katkının orijinal ve bağımsız olup olmadığını değerlendirecektir. Kesin olun.\nTipik uzunluk: 5-10 sayfa."
         },
         "literature_review": {
-          "title": "Literatür İncelemesi ve Teknolojinin Durumu",
-          "guidance": "Bu, alana olan hakimiyetinizi gösteren bölümdür. Şunları yapmalısınız:\n• Son 5-10 yılın ilgili çalışmalarını sistematik olarak ele alın (klasikler daha eski olabilir).\n• Özet listesi olarak değil, temaya, odak noktasına veya kronolojiye göre düzenleyin.\n• Teklifleri eleştirel bir şekilde karşılaştırın: güçlü yönler, zayıf yönler, sınırlamalar.\n• Tezinizin doldurduğu boşluğu belirleyin (\"daha önce hiçbir çalışma X'i ele almamıştır\").\n• Mümkünse ilgili çalışmaların karşılaştırmalı bir tablosuyla bitirin.\nDoktora için: Bu inceleme kapsamlı olmalı ve sorunun tüm yönlerini kapsamalıdır.\nStrateji: Scopus, WoS, ACM DL, IEEE Xplore'da arama yapın. Her öğe için DOI içe aktarıcısını kullanın."
+          "title": "Literatür İncelemesi ve Son Teknoloji Durumu",
+          "guidance": "Bu, alana olan hakimiyetinizi gösteren bölümdür. Şunları yapmalısınız:\n• Son 5-10 yılın ilgili çalışmalarını sistematik olarak ele alın (klasikler daha eski olabilir).\n• Özet listesi olarak değil, temaya, odak noktasına veya kronolojiye göre düzenleyin.\n• Teklifleri eleştirel bir şekilde karşılaştırın: güçlü yönler, zayıf yönler, sınırlamalar.\n• Tezinizin doldurduğu boşluğu belirleyin (\"daha önce hiçbir çalışma X'i ele almamıştır\").\n• Mümkünse ilgili çalışmaların karşılaştırmalı bir tablosuyla bitirin.\nDoktora için: Bu inceleme kapsamlı olmalı ve sorunun tüm yönlerini kapsamalıdır.\nStrateji: Scopus, WoS, ACM DL, IEEE Xplore'da arama yapın. Her makale için DOI içe aktarıcısını kullanın."
         },
         "theoretical_framework": {
           "title": "Teorik Çerçeve",
@@ -2929,11 +2926,11 @@
         },
         "problem_statement": {
           "title": "Problem Açıklaması ve Hipotezler",
-          "guidance": "Tezinizin çözdüğü sorunu resmi olarak tanımlayın:\n• Kesin formülasyon: kesin bilimlerde mümkünse matematiksel gösterimi kullanın.\n• Hipotezler veya araştırma varsayımları (doktora için: doğrulanabilir ve yanlışlanabilir hipotezler).\n• Modelin varsayımları ve kısıtlamaları.\n• Sorun neden zor: hesaplama karmaşıklığı, veri eksikliği, teorik belirsizlik.\n• Değerlendirme kriterleri: Teklifinizin başarısını nasıl ölçeceksiniz?\nBu bölüm, bir sorun spesifikasyonu olarak bağımsız olarak okunabilmelidir."
+          "guidance": "Tezinizin çözeceği sorunu resmi olarak tanımlayın:\n• Kesin formülasyon: kesin bilimlerde mümkünse matematiksel gösterimi kullanın.\n• Hipotezler veya araştırma varsayımları (doktora için: doğrulanabilir ve yanlışlanabilir hipotezler).\n• Modelin varsayımları ve kısıtlamaları.\n• Sorun neden zor: hesaplama karmaşıklığı, veri eksikliği, teorik belirsizlik.\n• Değerlendirme kriterleri: Teklifinizin başarısını nasıl ölçeceksiniz?\nBu bölüm, bir sorun spesifikasyonu olarak bağımsız olarak okunabilmelidir."
         },
         "methodology": {
           "title": "Metodoloji",
-          "guidance": "Metodolojik yaklaşımı lisansüstü düzeyin gerektirdiği titizlikle tanımlayın:\n• Araştırma paradigması: pozitivist, yapılandırmacı, karma.\n• Araştırma türü: deneysel, yarı deneysel, vaka çalışması, simülasyon, modelleme.\n• Özel araştırma tasarımı.\n• Veri kaynakları: köken, özellikler, toplama veya oluşturma süreci.\n• Verilerden sonuçlara kadar süreci boru hattına geçirin veya tamamlayın.\n• Belirli araçlar, diller, kitaplıklar ve sürümler.\nTam tekrarlanabilirlik için yeterli ayrıntı."
+          "guidance": "Metodolojik yaklaşımı lisansüstü düzeyin gerektirdiği titizlikle açıklar:\n• Araştırma paradigması: pozitivist, yapılandırmacı, karma.\n• Araştırma türü: deneysel, yarı deneysel, vaka çalışması, simülasyon, modelleme.\n• Özel araştırma tasarımı.\n• Veri kaynakları: köken, özellikler, toplama veya oluşturma süreci.\n• Verilerden sonuçlara kadar süreci boru hattına geçirin veya tamamlayın.\n• Belirli araçlar, diller, kitaplıklar ve sürümler.\nTam tekrarlanabilirlik için yeterli ayrıntı."
         },
         "experimentation": {
           "title": "Deneme ve Geliştirme",
@@ -2953,7 +2950,7 @@
         },
         "references": {
           "title": "Referanslar",
-          "guidance": "Referans listesi, APA 7 ile derlenirken .bib dosyanızdan otomatik olarak oluşturulur.\nLisansüstü çalışmalar için 80-200'den fazla yüksek kaliteli referans (indeksli makaleler, teknik kitaplar) beklenmektedir.\nTek tıklamayla Crossref'ten makaleler eklemek için DOI içe aktarıcıyı kullanın.\nBloglara, Vikipedi'ye veya hakemli olmayan sitelere birincil kaynak olarak atıfta bulunmaktan kaçının."
+          "guidance": "Referans listesi, APA 7 ile derlenirken .bib dosyanızdan otomatik olarak oluşturulur.\nLisansüstü çalışmalar için 80-200'den fazla yüksek kaliteli referans (indeksli makaleler, teknik kitaplar) beklenmektedir.\nTek tıklamayla Crossref'ten makaleler eklemek için DOI içe aktarıcısını kullanın.\nBloglara, Vikipedi'ye veya hakemli olmayan sitelere birincil kaynak olarak atıfta bulunmaktan kaçının."
         },
         "publications": {
           "title": "Türetilmiş Yayınlar",
@@ -2961,46 +2958,478 @@
         },
         "glossary": {
           "title": "Sözlük",
-          "guidance": "Alan dalınızda uzman olmayan bir okuyucunun bilmesi gereken özel terimleri tanımlayın.\nBiçim: Terim — Kısa tanım.\nTeorik Çerçevede önceden tanımlanmış olan terimleri dahil etmeyin; sözlük yinelenen terimler içindir ancak merkezi terimler için değildir."
+          "guidance": "Alt uzmanlığınızda uzman olmayan bir okuyucunun bilmesi gereken özel terimleri tanımlayın.\nBiçim: Terim — Kısa tanım.\nTeorik Çerçevede önceden tanımlanmış olan terimleri dahil etmeyin; sözlük yinelenen terimler içindir ancak merkezi terimler için değildir."
         },
         "appendices": {
           "title": "Ekler",
           "guidance": "Ana akışa ait olmayan ek teknik materyal:\n• Uzun veya ikincil matematiksel kanıtlar.\n• Kaynak kodu (ana modüller, deney komut dosyaları).\n• Veri tablolarını veya ek sonuçları tamamlayın.\n• Veri toplama araçları.\n• Etik onay mektupları, gizlilik anlaşmaları.\nSayı: Açıklayıcı başlıklarla birlikte Ek A, B…."
         }
       },
-      "meta": "Kaynakça APA 7 · XeLaTeX"
+      "description": "Yüksek lisans ve doktora profili: literatür taraması, son teknoloji, yaklaşım, deneyler, sözlük ve kısaltmalar. XeLaTeX, biber, APA 7."
     },
     "vancouver.health": {
       "name": "Sağlık Bilimleri (IMRaD)",
-      "description": "Klinik ve biyomedikal araştırmalar için IMRaD yapısı. Vancouver tarzı kaynakça. Tıp, hemşirelik ve sağlık bilimleri tezleri için idealdir."
+      "sections": {
+        "title_page": {
+          "guidance": "Kapak sayfası proje verileriyle otomatik olarak oluşturulur.\nBuraya içerik yazmanıza gerek yok."
+        },
+        "table_of_contents": {
+          "guidance": "Dizin otomatik olarak oluşturulur.\nBuraya hiçbir şey yazmanıza gerek yok."
+        },
+        "abstract_es": {
+          "title": "Özet",
+          "guidance": "IMRYD özeti makaleyle aynı alt başlıklarla minyatür olarak yapılandırılmıştır:\n• Amaç: çalışmanın amacını belirten bir cümle.\n• Materyal ve yöntemler: tasarım, popülasyon, müdahale ve ana ölçümler.\n• Sonuçlar: sayısal verilerle daha alakalı bulgular.\n• Sonuçlar: klinik yorum ve kapsam.\nLimit: Tez için 250 kelime (kuruma göre değişir). Randevu yok. Tanımlanmamış kısaltma yok.\nSonunda: 3–6 MeSH (Tıbbi Konu Başlıkları) Anahtar Kelimeleri."
+        },
+        "abstract_en": {
+          "title": "Özet",
+          "guidance": "Özetin aynı alt başlıklarla İngilizce'ye aslına uygun çevirisi: Amaç, Yöntemler, Sonuçlar, Sonuçlar.\nAnahtar Kelimeler: İngilizce MeSH terimleri.\nPubMed/MEDLINE'da indekslenmek ve uluslararası konferanslarda sunum yapmak için gereklidir."
+        },
+        "introduction": {
+          "title": "Giriş",
+          "guidance": "IMRYD'de Giriş bölümü şu yanıtı verir: Ne biliniyor? bilinmeyen ne? ne incelenecek?\nÖnerilen yapı (huni):\n1. Sağlık sorununun büyüklüğü (epidemiyoloji, hastalık yükü).\n2. Bilinen şey: Vancouver alıntılarıyla literatürün seçici olarak gözden geçirilmesi ([1], [2]…).\n3. Çalışmayı motive eden bilgi eksikliği veya tartışma.\n4. Araştırma sorusu veya çalışmanın amacı (açıkça belirtilmiş).\n5. Varsa hipotezler.\nSonuçları burada sunmayın. Tipik uzunluk: 2–4 sayfa."
+        },
+        "materials_methods": {
+          "title": "Materyal ve yöntemler",
+          "guidance": "Çalışmayı tekrarlanabilmesi için yeterli ayrıntıyla açıklayın. Şunları içerir:\n• Çalışma tasarımı: deneysel, kohort, vaka kontrol, kesitsel, sistematik inceleme vb.\n• Çalışmanın yeri ve süresi.\n• Nüfus: dahil etme ve hariç tutma kriterleri.\n• Örneklem: büyüklük, örnekleme tekniği, istatistiksel gerekçe.\n• Müdahale (varsa): tam açıklama, doz, süre.\n• Değişkenler ve ölçüm araçları.\n• İstatistiksel analiz: kullanılan testler, yazılım, anlamlılık düzeyi.\n• Etik hususlar: etik kurul onayı, bilgilendirilmiş onam.\nMetodolojik kararları gerekçelendirmekten kaçının; yalnızca bunları açıklayın."
+        },
+        "results": {
+          "title": "Sonuçlar",
+          "guidance": "Bulguları objektif ve yorum yapmadan sunun:\n• Numunenin özellikleriyle başlayın (Tablo 1: temel özellikler).\n• Sonuçları hedeflere veya hipotezlere göre sunar.\n• Sayısal veriler için tablo ve şekilleri kullanın; her birine metinde atıfta bulunulmuştur.\n• Raporlar: n, %, ortalama ± SD, medyanlar (IQR), RR, OR, %95 GA, p değeri.\n• Tabloda halihazırda gösterilenleri metinde tekrarlamayın; yalnızca en alakalı olana ilişkin yorum yapın.\n• Nitel araştırmalar için: katılımcılardan (anonim) metinsel alıntılar içeren kategoriler."
+        },
+        "discussion": {
+          "title": "Tartışma",
+          "guidance": "En analitik ve yazılması en zor bölümdür. Şunları yapmalısınız:\n• Çalışmanın amacına dönün ve ana bulguyu özetleyin.\n• Sonuçlarınızı daha önceki çalışmalarla (benzer, farklı ve çelişkili) karşılaştırın.\n• Farklılıkları açıklayın: tasarım, popülasyon ve bağlamdaki farklılıklar.\n• Klinik çıkarımlara dikkat çekin: pratikte ne gibi değişiklikler var?\n• Araştırmanın sınırlamalarını kabul edin (bunları küçümsemeyin; bu, güvenilirliği güçlendirir).\n• Gelecekteki spesifik araştırmaları önerin.\nYeni sonuçları burada sunmayın."
+        },
+        "conclusions": {
+          "title": "Sonuçlar",
+          "guidance": "Birçok biyomedikal makalede sonuçlar Tartışma bölümünde yer almaktadır.\nKurumunuz bunları ayrıca gerektiriyorsa:\n• Hedef başına bir veya iki cümle yanıtlanmıştır.\n• Araştırma sorusunu doğrudan yanıtlar.\n• Verilerin izin verdiğinin ötesinde genelleme yapmaktan kaçının.\n• Bilgiye veya klinik uygulamaya olan katkıdan bahseder."
+        },
+        "references": {
+          "title": "Referanslar",
+          "guidance": "Vancouver stili: metinde görünme sırasına göre sayısal referanslar ([1], [2]…).\nListe, derlediğinizde .bib dosyanızdan otomatik olarak oluşturulur.\nMEDLINE/PubMed, Scopus, Web of Science'ta indekslenen kaynaklara öncelik verir.\nTek tıklamayla makale eklemek için DOI içe aktarıcısını kullanın; Crossref en fazla PubMed'e sahiptir.\nReferans sınırı: kuruma göre değişir (ortak: tezler için 30-50)."
+        },
+        "appendices": {
+          "title": "Ekler",
+          "guidance": "Metne sığmayan destekleyici belgeler içerir:\n• Toplama aracı (anket, veri toplama sayfası).\n• Etik kuruldan onay mektubu.\n• Bilgilendirilmiş onam.\n• Ham veya tamamlayıcı veri tabloları.\n• Ayrıntılı müdahale protokolü.\nNumara: Ek A, B… ve metinden bunlara atıfta bulunun."
+        }
+      },
+      "description": "Klinik ve biyomedikal araştırmalar için IMRaD yapısı. Vancouver tarzı bibliyografya. Tıp, hemşirelik ve sağlık bilimleri tezleri için idealdir."
     },
     "apa.basic": {
-      "name": "APA Temel",
-      "description": "Akademik çalışmalar için katı APA 7 stiliyle basitleştirilmiş profil. Raporlar, denemeler ve kısa makaleler için idealdir."
+      "name": "Temel APA",
+      "sections": {
+        "title_page": {
+          "guidance": "APA 7 kapak sayfası proje verileriyle otomatik olarak oluşturulur.\nİçeriği: başlık, yazar(lar), kurum, konu, öğretmenin adı ve tarihi.\nBuraya içerik yazmanıza gerek yok."
+        },
+        "abstract_es": {
+          "title": "Özet",
+          "guidance": "APA 7 özeti, \"Özet\" başlığıyla (ortalanmış, kalın) ayrı bir sayfada yer almaktadır.\n150-250 kelime cevap verir: Ne araştırıldı?, nasıl?, ne bulundu?, ne anlama geliyor?\nSonunda 4-6 Anahtar Kelime bulunur: italik olarak.\nÖzette referanslardan bahsetmeyin."
+        },
+        "introduction": {
+          "title": "Giriş",
+          "guidance": "APA 7'de giriş, \"Giriş\" başlığını taşımaz; profil bunu otomatik olarak yönetir.\nŞunları sunmalısınız:\n• Konu ve alaka düzeyi.\n• Şu ana kadar bilinenler (kısa bibliyografik sentez).\n• İşin amacı veya hedefi.\n• Soru veya hipotez geçerlidir.\nMetinde APA alıntılarını kullanın: akışa bağlı olarak (Soyadı, Yıl) veya Soyadı (Yıl)."
+        },
+        "development": {
+          "title": "Geliştirme",
+          "guidance": "Çalışmanın ana kısmı. Karmaşıklığa göre 2. ve 3. düzey başlıklarla düzenleyin.\nMakaleler için: ana argüman, bibliyografik kanıtlarla destekleyici argümanlar, karşı argümanlar.\nRaporlar için: kavramsal çerçeve, analiz, bulgular.\nKaynakları başka kelimelerle ifade edin — uzun kelimesi kelimesine alıntılardan kaçının (bunları yalnızca tam kelimeler önemli olduğunda kullanın).\nKendi eseriniz olmayan her şeyden alıntı yapın."
+        },
+        "conclusions": {
+          "title": "Sonuçlar",
+          "guidance": "Çalışmanın ana noktalarını sentezleyin:\n• Girişte ortaya atılan soruyu veya amacı yanıtlar.\n• Bulguların sonuçlarını belirtin.\n• Sınırlamaların farkına varın.\n• Gelecekteki çalışma veya araştırmaların yollarını önerir.\nBuraya yeni alıntılar eklemeyin. Uzunluk: 1–2 sayfa."
+        },
+        "references": {
+          "title": "Referanslar",
+          "guidance": "APA 7'de buna \"Referanslar\" denir (\"Bibliyografi\" değil).\nListe, derlediğinizde .bib dosyanızdan otomatik olarak oluşturulur.\nAPA 7 kuralları: alfabetik olarak düzenlenmiştir, her girişin sonunda girinti, URL veya DOI asılıdır.\nTek tıklamayla referanslar eklemek için DOI içe aktarıcısını (Ctrl+[ > DOI paneli) kullanın."
+        }
+      },
+      "description": "Katı APA 7 stiliyle akademik çalışmalar için basitleştirilmiş profil. Raporlar, denemeler ve kısa makaleler için idealdir."
     },
     "chicago.humanities": {
       "name": "Chicago / Turabian — Beşeri Bilimler",
-      "description": "Chicago Notlar-Kaynakça stili (17. baskı) / Turabian 9. baskı ile beşeri bilimler, sosyal bilimler ve sanatta tez ve dissertasyonlar. Atıflar numaralı dipnotlarda yer alır. Sonunda alfabetik kaynakça. Felsefe, tarih, edebiyat, sosyal bilimler ve hukukta yaygın olarak kullanılır."
+      "sections": {
+        "title_page": {
+          "guidance": "Turabian kapağı şunları içerir: başlık (ortalanmış, üstten üçte biri), yazarın adı, programı ve üniversitesi, şehri ve yılı. Sayfa numarası yok.\nProfil, proje verilerini içeren kapak sayfasını oluşturur."
+        },
+        "abstract": {
+          "title": "Özet",
+          "guidance": "Turabian, doktora tezleri için 150-350 kelimelik bir özet önermektedir.\nİçeriği: tema, yaklaşım, ana argüman, metodoloji ve sonuç.\nŞimdiki zamanda veya geçmiş zamanda yazın; birini seçin ve tutarlı olun."
+        },
+        "table_of_contents": {
+          "guidance": "Dizin otomatik olarak oluşturulur. Chicago'da bölüm ve bölüm seviyeleri dahil edilir ancak 3. seviyeden itibaren alt bölümler dahil edilmez."
+        },
+        "introduction": {
+          "title": "Giriş",
+          "guidance": "Beşeri bilimlerde giriş, merkezi argümanı (tez cümlesi), derlemi veya ana kaynakları, metodolojiyi ve gerekçeyi sunar.\nChicago diğer disiplinlere göre daha söylemsel bir tarza izin verir; birinci tekil şahıs kullanabilir ve argümanı baştan itibaren nüanslarla geliştirebilirsiniz.\nAlıntılar parantez içinde değil, numaralı dipnotlarda verilmiştir. Sistem bunları otomatik olarak ekler."
+        },
+        "chapter_1": {
+          "title": "Bölüm 1",
+          "guidance": "Beşeri bilimlerde bölümler argümanı aşamalı olarak geliştirir.\nHer bölümün tezin ana argümanına katkıda bulunan kendi argümanı olmalıdır.\nMetnin akışını kesintiye uğratacak doğrudan alıntılar, referanslar ve kapsamlı yorumlar için dipnotları kullanın.\nKısa dipnotlar alıntı olabilir; uzun olanlar ek tartışmalara yol açabilir."
+        },
+        "chapter_2": {
+          "title": "Bölüm 2",
+          "guidance": "İkinci bölüm. Tartışmanın bir sonraki adımını geliştirin.\nTarihte veya edebiyatta, bu bölüm bir metin külliyatını, tarihsel dönemi veya bir dizi birincil kaynağı analiz edebilir.\nBirincil ve ikincil kaynaklardan dipnotlarla alıntı yapın. Tekrarlanan birincil kaynaklar için, ilk tam alıntıdan sonra dipnotta kısaltmalar kullanın."
+        },
+        "chapter_3": {
+          "title": "Bölüm 3",
+          "guidance": "Üçüncü bölüm. Tartışmayı en büyük gelişme noktasına getiriyor.\nTezinizin yapısına bağlı olarak bölümler ekleyebilir veya kaldırabilirsiniz; beşeri bilimler tezlerinin çoğunda 3-5 bölüm bulunur."
+        },
+        "conclusions": {
+          "title": "Sonuçlar",
+          "guidance": "Sonuçlar ana argümanı ele alıyor ve onu bölümlerde öğrenilenlerle zenginleştiriyor.\nDaha önce söylenenleri tekrarlamaktan kaçının. Daha geniş çıkarımlara, açık tartışmalara ve gelecekteki olası araştırmalara açılır.\nBeşeri bilimlerde nüanslarla veya açık sorularla sonuçlandırmak doğrudur ve bazen de gereklidir."
+        },
+        "bibliography": {
+          "title": "Kaynakça",
+          "guidance": "Chicago Notes-Bibliography'de son listeye \"Bibliyografi\" adı verilir (\"Referanslar\" değil).\nYazarın soyadına göre alfabetik olarak düzenlenmiştir.\nKaynakça, derlediğinizde .bib dosyanızdan otomatik olarak oluşturulur.\nAlıntı yapılan tüm kaynakları dipnotlara ekleyin. Ayrıca, bağlam eklemeleri durumunda başvurulan ancak alıntı yapılmayan kaynakları da dahil edebilirsiniz."
+        },
+        "appendices": {
+          "title": "Ekler",
+          "guidance": "Beşeri bilimlerde ekler genellikle şunları içerir: birincil kaynakların transkripsiyonları, tam röportajlar, ek görsel materyal, kronolojiler veya özel terimlerin sözlükleri."
+        }
+      },
+      "description": "Beşeri bilimler, sosyal bilimler ve sanat alanlarında Chicago Notes-Bibliography tarzındaki tezler ve tezler (17. baskı) / Turabian 9. baskı. Alıntılar parantez içinde değil, numaralı dipnotlarda verilmiştir. Bibliyografya sonda alfabetik olarak düzenlenmiştir. Felsefe, tarih, edebiyat, sosyal bilimler ve hukukta yaygın olarak kullanılmaktadır."
     },
     "mx.ipn.esfm": {
       "name": "IPN ESFM — Fizik ve Matematik",
-      "description": "IPN Yüksek Fizik ve Matematik Okulu'ndan lisans ve lisansüstü tezler. Yüksek matematiksel yoğunluklu çalışmalar için optimize edilmiştir: teoremler, ispatlar, denklemler. Alana göre APA veya sayısal atıf stili."
+      "sections": {
+        "portada": {
+          "guidance": "ESFM kapağı şunları içerir: IPN kalkanı, \"Fizik ve Matematik Yüksek Okulu\", eserin başlığı, eserin türü (ünvanı/derecesi alınacak tez...), öğrencinin adı, yönetici(ler), yeri ve yılı.\nProfil, proje verileriyle oluşturulur."
+        },
+        "resumen": {
+          "title": "Özet",
+          "guidance": "150–250 kelimenin özeti. Fizik ve matematikte kesin olması gerekir:\n• Gereksiz jargon olmadan ifade edilen temel sorun veya soru.\n• Ana yaklaşım veya yöntem.\n• En önemli sonuç (varsa ölçüm veya boyutla birlikte).\n• Sonucun anlamı veya uygulaması.\nÖzette denklemlerden kaçının. Kullandığınız kısaltmaları tanımlayın."
+        },
+        "abstract": {
+          "title": "Özet",
+          "guidance": "Özetin İngilizce çevirisi. Uluslararası konferanslarda yayınlamayı veya sunum yapmayı planlıyorsanız önerilir."
+        },
+        "tabla_contenidos": {
+          "guidance": "Dizin otomatik olarak oluşturulur. Matematiksel çalışmalarda girişten önce notasyonların ve simgelerin bir listesinin de eklenmesi yaygındır."
+        },
+        "introduccion": {
+          "title": "Giriş",
+          "guidance": "Fizik/matematiğe giriş, çalışmayı disiplin bağlamına yerleştirir:\n• Motivasyon: Sorun neden ilginç veya konuyla alakalı?\n• Arka plan: doğrudan ilgili önceki çalışmalar.\n• Sorunun veya araştırma sorusunun kesin ifadesi.\n• Ana sonuçlar (göstermeden duyurulur — bu, metnin içinde yer alır).\n• Belge yapısı.\nBuradan matematiksel gösterimi kullanabilirsiniz ancak erişilebilir olmasını sağlayın."
+        },
+        "preliminares": {
+          "title": "Ön hazırlıklar",
+          "guidance": "Çalışmanın geri kalanında kullanacağınız matematik dilini tanımladığınız bölüm.\nİçeriği: Alıntı yapmanız gereken temel tanımlar, gösterimler ve bilinen sonuçlar.\nKesin gösterimi oluşturmak için gerekli olmadıkça bilinen sonuçları göstermeyin.\nİçeriğinizi yapılandırmak için editörün Teorem, Tanım ve Lemma bloklarını kullanın.\nYapı örneği: \"Tanım 2.1 (Hilbert Uzayı)...\", \"Lemma 2.3...\", \"Teorem 2.5 (Spektral)...\""
+        },
+        "desarrollo": {
+          "title": "Geliştirme",
+          "guidance": "Çalışmanın ana kısmı. Saf matematikte: Tam delillerle teorinin gelişimi.\nFizikte: modelin, teorinin veya deneyin geliştirilmesi.\nHer bölümü önermeler, lemmalar, teoremler ve kanıtlarla yapılandırın.\nHer demo açıkça □ veya \"∎\" ile kapatılmalıdır (düzenleyici bunu otomatik olarak ekler).\nNumaralandırılmış denklemlere metinden başvurulmalıdır: \\eqref{} veya \\cref{} kullanın."
+        },
+        "resultados": {
+          "title": "Sonuçlar ve Uygulamalar",
+          "guidance": "Çalışmanızın sayısal, hesaplamalı veya deneysel uygulamaları varsa, bunları buraya gönderin.\nHesaplamalı fizik için: simülasyon parametrelerini, yakınsamayı ve analitik veya deneysel sonuçlarla karşılaştırmayı içerir.\nDeneysel fizik için: verileri belirsizliklerle, istatistiksel analizlerle ve grafiklerle sunar."
+        },
+        "conclusiones": {
+          "title": "Sonuçlar",
+          "guidance": "Elde edilen sonuçları ve bunların alaka düzeyini özetler.\nMatematikte: Hangi varsayımlar çözüldü, çalışma hangi soruları açtı?\nFizikte: Hangi olgular açıklandı, model hangi tahminlerde bulundu?\nÇalışmanızda neyin orijinal olduğunu, neyin bilinen olduğunu açıkça belirtin\nÇalışmanın açık sorunlarına veya doğal uzantılarına dikkat çekin."
+        },
+        "referencias": {
+          "title": "Referanslar",
+          "guidance": "APA 7'deki referansların listesi (otomatik olarak oluşturulur).\nFizik/matematik dergilerindeki makaleler için DOI içe aktarıcısını kullanın — Crossref, Physical Review, Journal of Mathematical Physics vb. kaynaklardan en fazla makaleye sahiptir.\nKlasik ders kitapları için (Rudin, Spivak, Peskin ve Schroeder, vb.): Crossref'te değilse girişi manuel olarak .bib'e ekleyin."
+        },
+        "apendices": {
+          "title": "Ekler",
+          "guidance": "Ek teknik materyal: ana argümanın akışını kesintiye uğratacak uzun gösterimler, ayrıntılı hesaplamalar, simülasyon kodu, deneysel veri tabloları."
+        }
+      },
+      "description": "IPN Fizik ve Matematik Yüksek Okulu'ndan lisans ve yüksek lisans tezi. Yüksek matematiksel yoğunluğa sahip işler için tasarlanmıştır: teoremler, lemmalar, sonuçlar, kanıtlar, fiziksel gösterimler ve karmaşık denklemler. Genel çalışmalar için APA bibliyografyası veya fizik yayınları için sayısal stil."
     },
     "mx.ipn.sepi": {
-      "name": "IPN SEPI — Lisansüstü Mühendislik ve Bilim",
-      "description": "IPN Lisansüstü Çalışmalar ve Araştırma Bölümü'nden tezler. Mühendislik için IEEE veya bilim için APA kaynakçasıyla IPN formatı. Legal kağıt, IPN'ye özgü kenar boşlukları."
+      "name": "IPN SEPI — Mühendislik ve Bilimler Yüksek Lisansı",
+      "sections": {
+        "portada": {
+          "guidance": "IPN-SEPI kapağı şunları içerir: IPN kalkanı, akademik birimin adı (ESIME/ESCOM/UPIITA...), çalışmanın başlığı, tez türü (Yüksek Lisans/Doktor derecesini almak için...), öğrencinin adı, tez yöneticileri, yer ve yıl.\nProfil, proje verilerini içeren kapak sayfasını oluşturur."
+        },
+        "resumen": {
+          "title": "Özet",
+          "guidance": "200-300 kelimelik İspanyolca teknik özet. SEPI bunun İspanyolca olmasını gerektirir.\nŞunları içermelidir: amaç, metodoloji, ana sonuçlar ve sonuç.\nSonuçta: 5-8 teknik anahtar kelime."
+        },
+        "abstract": {
+          "title": "Özet",
+          "guidance": "Özetin İngilizce çevirisi. SEPI-IPN tüm lisansüstü programlarda bunu gerektirir.\nAnahtar kelimeler: İspanyolca ve İngilizce ile aynı."
+        },
+        "tabla_contenidos": {
+          "guidance": "Dizin otomatik olarak oluşturulur. IPN ayrıca bir şekil listesi, bir tablo listesi ve varsa bir algoritma veya kod listesi listesi gerektirir."
+        },
+        "introduccion": {
+          "title": "Giriş",
+          "guidance": "IPN-SEPI tanıtımı şunları içermelidir:\n1. Sorunun teknolojik veya bilimsel bağlamı.\n2. Motivasyon ve gerekçelendirme.\n3. Hipotez veya araştırma sorusu.\n4. Genel amaç ve özel hedefler.\n5. Kapsam ve sınırlamalar.\n6. Belgenin organizasyonu.\nIEEE'deki alıntılar sayısaldır: [1], [2], [3]…"
+        },
+        "estado_arte": {
+          "title": "Son Teknoloji",
+          "guidance": "En son teknolojinin eleştirel incelemesi. SEPI-IPN'de zorunludur ve şunları yapmalıdır:\n• En alakalı çalışmaları belirleyin (son 5-10 yıl; IEEE/ACM/Elsevier konferansları ve dergileri).\n• Yaklaşımları karşılaştırın: karşılaştırmalı yöntem tabloları, sonuçlar ve sınırlamalar.\n• Çalışmanızın çözdüğü boşluğu veya sınırlamayı belirleyin.\n• Teklifinizin neden farklı veya üstün olduğunu gerekçelendirin.\nParantez içindeki numaralarla alıntı: \"Pérez ve diğerleri [5] önerildi...\""
+        },
+        "metodologia": {
+          "title": "Metodoloji veya Geliştirme",
+          "guidance": "Mühendislikte metodoloji önerilen çözümü açıklar:\n• Sistem mimarisi veya tasarımı.\n• Varsa matematiksel veya resmi model.\n• Algoritmalar geliştirildi (Algoritma bloğunu kullanın).\n• Uygulama: diller, çerçeveler, donanım.\n• Sistemin genel akış şeması.\nAyrıntı düzeyi çalışmanın kopyalanmasına olanak tanımalıdır."
+        },
+        "resultados": {
+          "title": "Sonuçlar ve Analiz",
+          "guidance": "Deneysel veya simülasyon sonuçlarını sunun ve analiz edin:\n• Deney düzeneği: ekipman, parametreler, koşullar.\n• Değerlendirme metrikleri: hassasiyet, zaman, tüketim, performans vb.\n• En son teknolojiyle karşılaştırma (karşılaştırma tablosu).\n• Varsa istatistiksel analiz (ortalama, sapma, güven aralığı).\nIEEE'de her şekil ve tablonun bir numarası ve kısa bir açıklaması olmalıdır."
+        },
+        "conclusiones": {
+          "title": "Sonuçlar ve Gelecekteki Çalışmalar",
+          "guidance": "İşi teknik titizlikle kapatın:\n• Ulaşılan hedeflere karşı yükseltilen hedefler.\n• Çalışmanın orijinal katkıları.\n• Belirlenen teknik sınırlamalar.\n• Gelecekteki çalışmalar: somut iyileştirmeler, olası genişletmeler, açık sorunlar.\nIPN-SEPI özellikle olası yayınlardan veya endüstriyel uygulamalardan bahsetmeye değer veriyor."
+        },
+        "referencias": {
+          "title": "Referanslar",
+          "guidance": "IEEE'de referanslar görünüm sırasına göre sayısaldır.\nListe .bib dosyanızdan otomatik olarak oluşturulur.\nIEEE ve ACM makaleleri için: DOI içe aktarıcısını kullanın.\nIPN, mevcut olduğunda DOI'nin eklenmesini gerektirir."
+        },
+        "anexos": {
+          "title": "Ekler",
+          "guidance": "Tam kaynak kodu, komut dosyaları, donanım/yazılım yapılandırmaları, veri sayfaları, kullanım kılavuzları, ham deney verileri.\nNumara: Ek A, Ek B… ve her birine metinden atıfta bulunun."
+        }
+      },
+      "description": "Ulusal Politeknik Enstitüsü Lisansüstü Çalışmalar ve Araştırma Bölümü (SEPI) Tezi. CINVESTAV, ESIME, ESCOM, UPIITA ve SEPI üniteleri için geçerlidir. Mühendislik ve Teknoloji için IEEE Bibliyografyası; Lisansüstü ve Araştırma Müdürlüğü'ne özel kenar boşlukları, tipografi ve yapıya sahip IPN formatı."
     },
     "mx.ipn.upibi": {
       "name": "IPN UPIBI — Biyoteknoloji",
-      "description": "IPN Disiplinlerarası Mesleki Biyoteknoloji Birimi'nden tezler. Biyokimya, mikrobiyoloji, biyoproses mühendisliği, biyoinformatik ve çevre biyoteknolojisine yönelik. Alana göre APA veya Vancouver kaynakçası."
+      "sections": {
+        "portada": {
+          "guidance": "UPIBI kapağı şunları içerir: IPN kalkanı, \"Disiplinlerarası Biyoteknoloji Profesyonel Birimi\", kariyer veya program, çalışmanın başlığı, tez türü, öğrencinin adı, yönetici(ler), yer ve yıl."
+        },
+        "resumen": {
+          "title": "Özet",
+          "guidance": "İspanyolca 200-300 kelimeden oluşan bilimsel özet. Biyoteknolojide özet şunları içermelidir:\n• Çalışmanın amacı.\n• Kullanılan ana materyaller/organizmalar/suşlar/numuneler.\n• Temel metodoloji (deney türü, temel analitik teknik).\n• En önemli sonuç (mümkünse niceliksel verilerle).\n• Sonuç veya uygulama.\nSonunda: İspanyolca 5-8 anahtar kelime."
+        },
+        "abstract": {
+          "title": "Özet",
+          "guidance": "Özetin İngilizce çevirisi. UPIBI tüm derece ve lisansüstü çalışmalar için bunu gerektirir.\nİngilizce anahtar kelimeler: İspanyolcadakiyle aynı."
+        },
+        "tabla_contenidos": {
+          "guidance": "Otomatik olarak oluşturulan dizin. Çok sayıda figürün (jeller, kromatogramlar, büyüme eğrileri) olduğu çalışmalarda, şekillerin bir listesini ve tabloların bir listesini içerir."
+        },
+        "introduccion": {
+          "title": "Giriş",
+          "guidance": "Biyoteknolojiye giriş, biyoloji ve mühendislikten kaynaklanan sorunu bağlamsallaştırır:\n• Çalışılan mikroorganizmanın, prosesin, bileşiğin veya problemin önemi.\n• Son teknoloji: ilgili önceki çalışmalar (APA kullanın: Yazar, yıl).\n• Gerekçe: Bu çalışma neden konuyla ilgilidir?\n• Çalışma hipotezi (eğer tasarım deneysel ise).\n• Genel amaç ve özel hedefler.\nBaşlangıçtan itibaren taksonlar, türler, koşullar ve bileşikler konusunda spesifik olun."
+        },
+        "marco_teorico": {
+          "title": "Teorik Çerçeve",
+          "guidance": "Çalışmayı bilimsel literatüre dayandırıyor:\n• Çalışılan sistemin biyolojisi/biyokimyası (mikroorganizma, enzim, metabolik yol, vb.).\n• Ana proses veya tekniğin prensipleri (fermantasyon, HPLC, PCR, vb.).\n• Varsa kinetik veya matematiksel modeller (Michaelis-Menten, Monod, vb.).\n• İlgiliyse standartlar veya düzenlemeler (NOM, FDA, WHO)."
+        },
+        "materiales_metodos": {
+          "title": "Malzemeler ve Yöntemler",
+          "guidance": "Biyoteknolojide materyaller ve yöntemler bölümü tekrarlanabilirlik açısından kritik öneme sahiptir. Şunları içerir:\n• Biyolojik materyaller: organizmalar, suşlar (katalog numarası veya erişim numarasıyla birlikte), hücre dizileri, numuneler (kökeni ve koruma koşullarıyla birlikte).\n• Reaktifler: isim, sınıf, tedarikçi.\n• Ekipman: model, marka, çalışma koşulları.\n• Analitik yöntemler: kesin koşullar (sıcaklık, pH, zaman, konsantrasyonlar).\n• Deney tasarımı: bağımsız, bağımlı ve kontrol değişkenleri; kopyalar.\n• İstatistiksel analiz: yazılım, testler ve anlamlılık düzeyi (α = 0,05).\nAyrıntı düzeyi, başka bir laboratuvarın deneyi tam olarak tekrarlamasına olanak tanımalıdır."
+        },
+        "resultados": {
+          "title": "Sonuçlar",
+          "guidance": "Verileri yorum yapmadan objektif olarak sunun:\n• Şekiller: kromatogramlar, büyüme eğrileri, jeller, mikroskopiler — her birinin numarası, açıklayıcı başlığı (aşağıda) ve eksenlerde tam birimleri bulunur.\n• Tablolar: ortalama ± standart sapma ile tablo halinde veriler, başlıktaki birimler.\n• İstatistikler: farkların anlamlı olup olmadığını gösterir (p < 0,05, ANOVA, Tukey, vb.).\n• Varsa tablo ve şekillerdeki istatistiksel harfler (homojen gruplar için a, b, ab).\nMetinde görünmeden önce her şekil veya tabloya açıkça bakın."
+        },
+        "discusion": {
+          "title": "Tartışma",
+          "guidance": "Sonuçları literatür bağlamında yorumlayın:\n• Sonuçlar hipotezi doğruluyor mu yoksa çürütüyor mu?\n• Önceki çalışmalarla karşılaştırın: eşleşiyor mu? farklılar mı? Neden farklı olabilirler (gerilim, koşullar, yöntem)?\n• Sonuçları doğrulayan biyolojik veya biyokimyasal mekanizmaları açıklar.\n• Metodolojik sınırlamaları ve bunların sonuçlar üzerindeki etkisini tartışır.\n• Sonuçları: Endüstri, tıp veya çevre açısından ne anlama geliyor?"
+        },
+        "conclusiones": {
+          "title": "Sonuçlar",
+          "guidance": "En önemli şeyleri doğrudan ve ölçülebilir terimlerle özetleyin:\n• Her sonuç belirli bir hedefe karşılık gelir.\n• Sonuç özetini tekrarlamaktan kaçının — sonuç verir, rapor etmez.\n• Bilgiye veya sektöre katkıyı belirtir.\n• Gelecekteki araştırmalar için öneriler."
+        },
+        "referencias": {
+          "title": "Referanslar",
+          "guidance": "APA 7'deki referansların listesi (otomatik olarak oluşturulur).\nBilimsel makaleler için: DOI içe aktarıcısını kullanın — PubMed, ScienceDirect ve Web of Science çoğu biyoteknoloji makalesi için DOI'lere sahiptir.\nDOI'si olmayan makaleler için: derginin veya veritabanının URL'sini ekleyin."
+        },
+        "anexos": {
+          "title": "Ekler",
+          "guidance": "Deneylerden elde edilen ham veriler, tam jeller (kırpılmamış), nükleotid veya amino asit dizileri, GenBank erişim numaraları, reaktif analizi sertifikaları, M&M'ye dahil olmayan eksiksiz protokoller."
+        }
+      },
+      "description": "IPN Biyoteknolojinin Disiplinlerarası Profesyonel Biriminin Tezi. Biyokimya, mikrobiyoloji, biyoproses mühendisliği, biyoinformatik, çevre ve farmasötik biyoteknolojiyi kapsar. Veri sunumunda yüksek titizlikle deneysel ve niceliksel yapı. Çoğu alan için APA 7 bibliyografyası; Vancouver sağlık bilimlerine daha yakın alanlarda kabul edildi."
     },
     "mx.ipn.upitta": {
       "name": "IPN UPITTA — İleri Teknolojiler",
-      "description": "IPN Disiplinlerarası Mesleki İleri Teknolojiler Birimi'nden tezler. Mekatronik, akıllı sistemler, otomasyon ve gelişmekte olan teknolojilere yönelik. IEEE kaynakçası."
+      "sections": {
+        "portada": {
+          "guidance": "UPITTA kapağı şunları içerir: IPN kalkanı, \"İleri Teknolojiler Disiplinlerarası Profesyonel Birimi\", çalışmanın başlığı, tez türü, öğrencinin adı, yöneticileri, yeri ve yılı."
+        },
+        "resumen": {
+          "title": "Özet",
+          "guidance": "İspanyolca 200-250 kelimelik teknik özet. UPITTA'nın disiplinler arası doğası, özetin farklı alanlardan (mühendislik, bilgisayar, uygulamalı matematik) okuyucular için anlaşılır olması gerektiği anlamına gelir.\nİçeriği: teknik sorun, önerilen çözüm, temel teknolojiler ve ölçülebilir ana sonuç."
+        },
+        "abstract": {
+          "title": "Özet",
+          "guidance": "İngilizce çeviri. UPITTA tarafından tüm derece ve lisansüstü çalışmalar için zorunludur.\nİngilizce anahtar kelimeler: 5-8 alakalı teknik terim."
+        },
+        "tabla_contenidos": {
+          "guidance": "Otomatik olarak oluşturulan dizin. Her türden 5'ten fazla varsa şekil listesini ve tablo listesini içerir."
+        },
+        "introduccion": {
+          "title": "Giriş",
+          "guidance": "Sorunu UPITTA'nın disiplinlerarası perspektifinden bağlamsallaştırın:\n• Teknolojik alan ve ilgisi (mekatronik, yapay zeka, otomasyon vb.).\n• Spesifik sorun ve etkisi (endüstriyel, sosyal, bilimsel).\n• İlgili en önemli çalışmalar (IEEE numarasıyla alıntı: [1], [2]).\n• Genel amaç ve özel hedefler.\n• Somut katkı: Mevcut olmayan veya iyi çalışmayan ne önerirsiniz?\n• Belge organizasyonu."
+        },
+        "estado_arte": {
+          "title": "Son Teknoloji ve Teorik Çerçeve",
+          "guidance": "En son teknoloji ile teorik çerçevenin disiplinler arası çalışmaya uygun birleşimi:\n• Projenizin dokunduğu her alandaki en ilgili önceki çalışmaları inceleyin.\n• Çözümünüzün dayandığı teorileri veya matematiksel modelleri sunun.\n• Mevcut çözümlerin ve sizinkilerin karşılaştırmalı tabloları.\n• Çalışmanızın getirdiği niş veya gelişmeyi açıkça tanımlayın.\nUPITTA'da disiplinlerarası yaklaşım güçlü bir unsurdur; farklı alanları nasıl entegre ettiğinizi gösterir."
+        },
+        "diseno": {
+          "title": "Sistem Tasarımı",
+          "guidance": "Uygulamaya geçmeden önce sistemin mimarisini veya tasarımını tamamlayın:\n• Genel mimari: blok veya bileşen diyagramı.\n• Matematiksel veya dinamik model (kontrol sistemleri, robotik vb. için).\n• Teknolojilerin seçimi ve gerekçelendirilmesi (sensörler, aktüatörler, platformlar, algoritmalar).\n• Varsa akış şemaları veya durum makineleri.\n• Tasarım kısıtlamaları: güç, boyut, maliyet, tepki süresi.\nTasarım, uygulamadan bağımsız olmalıdır."
+        },
+        "implementacion": {
+          "title": "Uygulama ve Sonuçlar",
+          "guidance": "Uygulamayı açıklayın ve deneysel sonuçları sunun:\n• Geliştirme ortamı: donanım, yazılım, sürümler.\n• Modüller veya alt sistemler aracılığıyla uygulama.\n• Entegrasyon testi: Sistemin tamamı tasarımın öngördüğü şekilde çalışıyor mu?\n• Nicel sonuçlar: ölçümler (doğruluk, yanıt süresi, tüketim, RMS hatası vb.).\n• En son teknolojiyle veya mevcut durumla karşılaştırma.\nUPITTA'da gerçek veya yarı gerçek koşullardaki testler değerlidir."
+        },
+        "conclusiones": {
+          "title": "Sonuçlar ve Gelecekteki Çalışmalar",
+          "guidance": "Çalışmayı teknik ve disiplinler arası titizlikle tamamlayın:\n• Ulaşılan ve belirlenen hedefler (niceliksel kanıtlarla).\n• Orijinal katkılar (teknik, metodolojik veya disiplinsel entegrasyon).\n• Sistemin veya çalışmanın sınırlamaları.\n• Gelecekteki çalışmalar: iyileştirmeler, genişletmeler, olası endüstriyel veya araştırma uygulamaları.\nÇalışmanın yayınlara veya patentlere yol açıp açmadığını veya yol açabileceğini belirtin."
+        },
+        "referencias": {
+          "title": "Referanslar",
+          "guidance": "Görünüm sırasına göre IEEE sayısal referansları (otomatik olarak oluşturulur).\nIEEE Xplore, ACM DL vb.'den makaleler için DOI içe aktarıcısını kullanın.\nHer referansa DOI'yi ekleyin; bu bir IEEE gerekliliğidir."
+        },
+        "anexos": {
+          "title": "Ekler",
+          "guidance": "Tam kaynak kodu, bileşen veri sayfaları, mekanik veya elektrik çizimleri, kalibrasyon prosedürleri, kullanım kılavuzları, ham deney verileri."
+        }
+      },
+      "description": "IPN'nin İleri Teknolojiler Disiplinlerarası Mesleki Biriminin Tezi. Mekatronik, akıllı sistemler, otomasyon, robotik ve gelişen teknolojilere yöneliktir. Disiplinlerarası yapı: mühendislik, bilgisayar ve temel bilimleri bütünleştirir. IEEE Sayısal Kaynakça."
     },
     "mx.unam.posgrado": {
       "name": "UNAM — Lisansüstü",
-      "description": "UNAM'dan yüksek lisans ve doktora tezleri. Lisansüstü Çalışmalar Koordinasyonu (CEP-UNAM) kılavuzlarına dayanmaktadır. APA 7, XeLaTeX, legal kağıt formatı."
+      "sections": {
+        "portada": {
+          "guidance": "UNAM kapağı şunları içerir: UNAM kalkanı, fakülte veya enstitünün adı, çalışmanın başlığı, tezin türü (... alanında Yüksek Lisans/Doktora derecesi almak için), öğrencinin adı, tez yöneticisi, eğitim komitesi, yer ve yıl.\nProfil, projeyi oluştururken yapılandırdığınız verilerle kapağı otomatik olarak oluşturur."
+        },
+        "dedicatoria": {
+          "title": "Adanmışlık",
+          "guidance": "Önemli kişilere ayrılmış kısa metin (1-5 satır). Kişiseldir ve isteğe bağlıdır.\nUNAM'de sayfa numarası yoktur ve ayrı bir sayfada basılmıştır."
+        },
+        "agradecimientos": {
+          "title": "Teşekkürler",
+          "guidance": "Yöneticiden, eğitim komitesinden, CONACYT/CONAHCyT'den (burs varsa), laboratuvardan veya araştırma grubundan ve çalışmadaki kilit kişilerden bahsedin.\nVarsa proje veya burs numarasını ekleyin (ör. \"CONAHCyT Bursu No. XXXXXX\")."
+        },
+        "resumen": {
+          "title": "Özet",
+          "guidance": "200-300 kelimelik İspanyolca özet. CEP-UNAM bunun İspanyolca olmasını gerektirir.\nİçeriği: amaç, metodoloji, ana sonuçlar ve sonuç.\nSonunda: noktalı virgülle ayrılmış 4-6 anahtar kelime."
+        },
+        "abstract": {
+          "title": "Özet",
+          "guidance": "Özetin İngilizce'ye çevirisi. Birçok UNAM doktora programı bunu gerektirir.\nİspanyolca özet ile aynı format.\nAnahtar kelimeler: İspanyolca ve İngilizce ile aynı."
+        },
+        "tabla_contenidos": {
+          "guidance": "Dizin otomatik olarak oluşturulur. Bölümleri, bölümleri ve alt bölümleri içerir.\nUNAM genellikle bir şekil listesi ve 5'ten fazla tablo varsa bir tablo listesi de gerektirir."
+        },
+        "introduccion": {
+          "title": "Giriş",
+          "guidance": "UNAM tanıtımı şunları içermelidir:\n1. Sorunun arka planı ve bağlamı.\n2. Sorunun beyanı ve gerekçesi.\n3. Hipotez veya araştırma sorusu.\n4. Genel amaç ve özel hedefler.\n5. Kapsam ve sınırlamalar.\n6. Tezin yapısı (her bölümün içeriği).\nÖnerilen uzunluk: 4–8 sayfa."
+        },
+        "marco_teorico": {
+          "title": "Teorik Çerçeve",
+          "guidance": "İlgili literatürü inceleyin ve sentezleyin. UNAM'da teorik çerçeve şunları sağlamalıdır:\n• Birincil ve güncel kaynaklardan alıntı yapın (son 10 yıl; temel ise klasikler).\n• Fikirleri bir özet listesi olarak değil, mantıksal olarak düzenleyin.\n• Tüm alıntılar için APA 7'yi kullanın; sistem bunları otomatik olarak oluşturur.\n• En son teknolojiyi ve araştırmanızın doldurduğu boşluğu tanımlayın."
+        },
+        "metodologia": {
+          "title": "Metodoloji",
+          "guidance": "Metodolojiyi tekrarlanacak kadar ayrıntılı olarak açıklayın. Şunları içerir:\n• Araştırma ve tasarım türü.\n• Nüfus, örneklem ve seçim kriterleri.\n• Araçlar ve prosedürler.\n• Veri analizi (yazılım, istatistik veya niteliksel kategoriler).\n• Varsa etik hususlar ve izinler."
+        },
+        "resultados": {
+          "title": "Sonuçlar",
+          "guidance": "Bulguları objektif bir şekilde sunun. Metinde referanslarla birlikte tablo ve şekiller kullanın.\nUNAM'da her şekil ve tablo şunları içermelidir: numara, açıklayıcı başlık (tablolar için yukarıda, şekiller için aşağıda) ve varsa kaynak.\nSonuçları burada yorumlamayın; bu Tartışma'da yer almaktadır."
+        },
+        "discusion": {
+          "title": "Tartışma",
+          "guidance": "Sonuçları araştırma sorunuz ve literatür bağlamında yorumlayın.\nÖnceki çalışmalarla karşılaştırın, tesadüflere ve farklılıklara dikkat çekin.\nTeorik ve pratik çıkarımları tartışır.\nSınırlamaları dürüstçe kabul edin."
+        },
+        "conclusiones": {
+          "title": "Sonuçlar",
+          "guidance": "Hedeflerinize ve hipotezlerinize doğrudan yanıt verin. CEP-UNAM şunları umuyor:\n• Ana bulguların sentezi.\n• Alana özgün katkılar.\n• Gelecekteki araştırmalar için öneriler.\n• Uygulama veya politikaya yönelik çıkarımlar (varsa).\nUzunluk: 3–5 sayfa. Yeni bilgi girmeyin."
+        },
+        "referencias": {
+          "title": "Referanslar",
+          "guidance": "Referans listesi otomatik olarak APA 7 formatında oluşturulur.\nUNAM, çoğu lisansüstü programda APA 7'yi gerektirir.\nAlıntı yapılan her kaynağın .bib'de olduğundan emin olun (veya tam tersi).\nEksiksiz ve normalleştirilmiş girişler almak için DOI içe aktarıcısını kullanın."
+        },
+        "anexos": {
+          "title": "Ekler",
+          "guidance": "Ana akışı kesintiye uğratmadan işi destekleyen yardımcı malzeme:\ntoplama araçları, ham veri tabloları, kaynak kodu, onay mektupları.\nNumara: Ek A, Ek B… Her birine ana metinden atıfta bulunun."
+        }
+      },
+      "description": "Meksika Ulusal Özerk Üniversitesi'nden lisansüstü tezler ve tezler. Lisansüstü Eğitim Koordinasyonu (CEP-UNAM) yönergelerine dayanmaktadır: letter veya legal boyutlu kağıt, 2,5 cm kenar boşlukları, 1,5 satır aralığı, APA 7, resmi armalı kapak."
+    },
+    "generic.tesina": {
+      "name": "Genel tez",
+      "sections": {
+        "title_page": {
+          "guidance": "Kapak sayfası, proje oluşturulurken yapılandırılan kurumsal verilerle otomatik olarak oluşturulur.\nBuraya içerik yazmanıza gerek yok."
+        },
+        "table_of_contents": {
+          "guidance": "Dizin, etkin bölümlerinizden otomatik olarak oluşturulur.\nBuraya hiçbir şey yazmanıza gerek yok."
+        },
+        "introduction": {
+          "title": "Giriş",
+          "guidance": "Giriş konuyu sunar ve çalışmayı motive eder. Bir tez için şunları içerir:\n1. Konunun kısa bağlamı (genelden özele).\n2. Çalışmanın ele aldığı sorun veya soru.\n3. Genel amaç.\n4. Gerekçe: Bunu incelemek neden önemlidir?\n5. Belgenin nasıl düzenlendiğine ilişkin kısa açıklama.\nTipik uzunluk: 1–3 sayfa."
+        },
+        "development": {
+          "title": "Geliştirme",
+          "guidance": "Geliştirme işin merkezi kısmıdır. Mantıksal alt bölümlere ayırın:\n• Kavramsal çerçeve: anahtar kavramları bibliyografik destekle tanımlar.\n• Konunun analizi veya geliştirilmesi: argüman, öneri veya merkezi çalışma.\n• Varsa sonuçlar veya bulgular.\nHer fikrin kaynaklarla desteklenmesi gerekir. Referans vermek için \"Bibliyografik alıntı\" bloklarını kullanın.\nTipik uzunluk: 10–30 sayfa."
+        },
+        "conclusions": {
+          "title": "Sonuçlar",
+          "guidance": "Girişte belirtilen hedefe doğrudan yanıt vererek çalışmayı kapatın:\n• Hedefe ulaşıldı mı? Ne bulundu?\n• İşin alaka düzeyi üzerine düşünme.\n• Sınırlamalar bulundu.\n• Öneriler veya gelecekteki çalışmalara ilişkin satırlar.\nTipik uzunluk: 1–2 sayfa. Buraya yeni bilgi girmeyin."
+        },
+        "references": {
+          "guidance": "Referans listesi, derlediğinizde .bib dosyanızdan otomatik olarak oluşturulur.\nKaynakları kolayca eklemek için DOI içe aktarıcısını (Ctrl+[ > DOI paneli) kullanın.\nAPA 7 stili otomatik olarak uygulanır."
+        }
+      },
+      "description": "Lisans derecesi için basitleştirilmiş versiyon: giriş, geliştirme ve sonuçlar. Kitap sınıfı, XeLaTeX, biber, APA 7."
+    },
+    "generic.thesis": {
+      "name": "Genel tez",
+      "sections": {
+        "title_page": {
+          "guidance": "Kapak sayfası, projeyi oluştururken yapılandırdığınız kurumsal verileri (öğrenci adı, kurum, iş unvanı, tez yöneticisi, yıl) içeren profil tarafından otomatik olarak oluşturulur.\nBuraya içerik yazmanıza gerek yok."
+        },
+        "table_of_contents": {
+          "guidance": "İçindekiler tablosu, projenizde etkinleştirilen bölümlerden otomatik olarak oluşturulur.\nHiçbir şey yazmanıza gerek yok; yalnızca bölümlerinizin başlıkları olduğundan emin olun."
+        },
+        "abstract_es": {
+          "title": "Özet",
+          "guidance": "Özet, tezinizi 150-250 kelimeyle sunar. Kısaca cevap vermelisiniz:\n• Sorun veya araştırma sorusu nedir?\n• Hangi metodolojiyi kullandınız?\n• Ana sonuçlar nelerdir?\n• Sonuç veya katkı nedir?\nÖzette referanslara yer vermeyin. Geçmiş zamanda yazın. Sonuna 4-6 anahtar kelime ekleyin."
+        },
+        "abstract_en": {
+          "title": "Özet",
+          "guidance": "Özetin aynı formatta (150-250 kelime) İngilizce'ye aslına uygun çevirisi.\nBirçok lisansüstü kurum uluslararası indeksleme için buna ihtiyaç duyar.\nAnahtar kelimeler: Özetle aynı anahtar kelimeler, İngilizce."
+        },
+        "dedication": {
+          "title": "Adanmışlık",
+          "guidance": "Yazar için önemli olan kişilere ayrılmış kısa metin (1-5 satır).\nKişiseldir ve isteğe bağlıdır. Bazı örnekler: \"Koşulsuz destekleri için aileme.\"\nÇoğu stilde açık bir başlık yoktur; profil bunu yönetir."
+        },
+        "acknowledgements": {
+          "title": "Teşekkürler",
+          "guidance": "Araştırmanıza katkıda bulunanlardan bahsedin: yönetmen, okuyucular, meslektaşlar, kurumlar, fon sağlayıcılar.\nSpesifik olun: Her kişinin veya kuruluşun rolünden bahsedin.\nÖnerilen uzunluk: yarım ila bir sayfa."
+        },
+        "introduction": {
+          "title": "Giriş",
+          "guidance": "Giriş, çalışmanızı bağlamsallaştırır ve okuyucuyu okumaya devam etmesi için motive eder. Şunları içermelidir:\n1. Konunun genel bağlamı (genişten özele).\n2. Sorun bildirimi: Hangi boşluk veya ihtiyaç var?\n3. Araştırma sorusu veya hipotezi.\n4. Genel amaç ve özel hedefler.\n5. Gerekçe: Bunu incelemek neden önemlidir?\n6. Araştırmanın kapsamı ve sınırlılıkları.\n7. Tezin yapısının kısa açıklaması.\nTipik uzunluk: 3-6 sayfa."
+        },
+        "theoretical_framework": {
+          "title": "Teorik Çerçeve",
+          "guidance": "Teorik çerçeve, araştırmanızı mevcut literatürle destekler. Şunları yapmalısınız:\n• Konunuzla ilgili temel kavramları ve teorileri gözden geçirin.\n• Birincil ve güncel kaynaklardan alıntı yapın (makaleler için son 5-10 yıl; temel ise klasikler).\n• Fikirleri bir özet listesi olarak değil, mantıksal olarak düzenleyin.\n• En son teknolojiyi tanımlayın: ne biliniyor, ne eksik?\n• Çalışmanızı literatürde konumlandırın: ne katkıda bulunuyorsunuz?\nHer referans için \"Bibliyografik alıntı\" bloğunu kullanın. Aşırı alıntılardan kaçının; başka kelimelerle ifade edin ve analiz edin."
+        },
+        "methodology": {
+          "title": "Metodoloji",
+          "guidance": "Araştırmanızı nasıl yürüttüğünüzü, tekrarlanabilmesi için yeterince ayrıntılı olarak açıklayın. Şunları içerir:\n• Araştırma türü (nicel, nitel, karma; keşfedici, tanımlayıcı, açıklayıcı).\n• Tasarım: deneysel, yarı deneysel, vaka çalışması, anket vb.\n• Nüfus ve örneklem: seçim kriterleri, büyüklük, örnekleme tekniği.\n• Toplama araçları: anketler, röportajlar, gözlem, deneyler.\n• Prosedür: kronolojik olarak takip edilen adımlar.\n• Veri analizi: yazılım, istatistik, niteliksel analiz kategorileri.\n• Varsa etik hususlar."
+        },
+        "results": {
+          "title": "Sonuçlar",
+          "guidance": "Araştırmanızın bulgularını henüz yorumlamadan objektif olarak sunun. Kılavuzlar:\n• Sonuçları hedeflerinizin veya araştırma sorularınızın sırasına göre düzenleyin.\n• Sayısal veya karşılaştırmalı veriler için tablo ve şekilleri kullanın; metinde her birine referans verin.\n• Tablonun zaten gösterdiği şeyleri metinde tekrarlamayın; En alakalı olanı yorumlayın.\n• Rakamlarda kesin olun: birimleri, yüzdeleri, istatistiksel değerleri (p, r, χ², vb.) dahil edin.\n• Niteliksel araştırmalar için: açıklayıcı metinsel alıntılarla birlikte kategoriler sunar."
+        },
+        "discussion": {
+          "title": "Tartışma",
+          "guidance": "Burada sonuçlarınızı yorumluyor ve bunları literatürle ilişkilendiriyorsunuz. En analitik bölümdür. Şunları yapmalısınız:\n• Araştırma sorunuz bağlamında sonuçlarınızın ne anlama geldiğini açıklayın.\n• Önceki çalışmalarla karşılaştırın: eşleşiyor mu? farklılar mı? Çünkü?\n• Beklenmeyen sonuçlara dikkat çekin ve olası açıklamalar sunun.\n• Bulgularınızın teorik ve pratik sonuçlarını tartışın.\n• Dürüstçe çalışmanın sınırlamalarını kabul edin.\nBurada yeni sonuçlar sunmayın; yalnızca önceden rapor edilmiş olanları yorumlayın."
+        },
+        "conclusions": {
+          "title": "Sonuçlar",
+          "guidance": "Sonuçlar argümanınızı kapatır ve doğrudan hedeflerinize yanıt verir. Şunları içerir:\n• Araştırma sorusunun cevabı / hipotezin doğrulanması.\n• En önemli bulguların sentezi (sonuçların ayrıntıları tekrarlanmadan).\n• Çalışmanın orijinal katkıları.\n• Mesleki uygulama veya gelecekteki araştırmalar için öneriler.\n• Çalışmanın uygunluğuna ilişkin son değerlendirme.\nÖnerilen uzunluk: 2–4 sayfa. Yeni bilgi girmeyin."
+        },
+        "references": {
+          "title": "Referanslar",
+          "guidance": "Referans listesi, derlediğinizde .bib dosyanızdan otomatik olarak oluşturulur.\nMetinde alıntı yapılan her kaynağın .bib dosyasında olduğundan emin olun (ve tam tersi).\nReferans eklemek için: DOI'yi içe aktar düğmesini kullanın veya references.bib dosyasını doğrudan düzenleyin.\nAlıntı stili (bu profilde APA 7) LaTeX tarafından otomatik olarak uygulanır."
+        },
+        "appendices": {
+          "title": "Ekler",
+          "guidance": "Ekler, ana gövdeye sığmayan ancak okuyucunun doğrulaması gerekebilecek destekleyici materyaller içerir:\n• Toplama araçları (tam anketler, görüşme kılavuzları).\n• Ham veri tabloları.\n• Kaynak kodu veya komut dosyaları.\n• Haritalar, planlar, yasal belgeler.\n• Yetki mektupları veya bilgilendirilmiş onam.\nHer ek numaralandırılmalı (Ek A, Ek B...) ve ana metinden alıntı yapılmalıdır."
+        }
+      },
+      "description": "Lisans, uzmanlık, yüksek lisans, doktora ve doktora sonrası derecelere yönelik tezler ve resmi akademik çalışmalara ilişkin temel profil. Kitap sınıfı, XeLaTeX, biber, APA 7."
     }
   },
   "institutions": {

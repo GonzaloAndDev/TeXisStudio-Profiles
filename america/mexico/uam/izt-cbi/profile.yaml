@@ -1,53 +1,41 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_uam_izt_cbi
-name: "UAM Iztapalapa — CBI"
-description: >
-  Perfil para tesis e Idóneas Comunicaciones de Resultados (ICR) de la
-  División de Ciencias Básicas e Ingeniería (CBI) de la UAM Unidad
-  Iztapalapa. Cubre Física, Química, Matemáticas e Ingeniería Eléctrica.
+name: mx_uam_izt_cbi
 status: reviewed
-author: "TeXisStudio Community"
-version: "1.0.0"
-license: "CC BY 4.0"
+author: TeXisStudio Community
+version: 1.0.0
+license: CC BY 4.0
 tags:
-  - uam
-  - mexico
-  - ciencias
-  - fisica
-  - quimica
-  - matematicas
-  - ingenieria
-  - iztapalapa
-  - cbi
-  - licenciatura
-  - posgrado
-  - icr
-
+- uam
+- mexico
+- ciencias
+- fisica
+- quimica
+- matematicas
+- ingenieria
+- iztapalapa
+- cbi
+- licenciatura
+- posgrado
+- icr
 verification:
-  reviewed_at: "2026-05-27"
-  reviewed_by: "TeXisStudio Community — revisado contra lineamientos CBI UAM-Izt"
+  reviewed_at: '2026-05-27'
+  reviewed_by: TeXisStudio Community — revisado contra lineamientos CBI UAM-Izt
   source_urls:
-    - "https://cbi.izt.uam.mx/"
-    - "https://cbi.izt.uam.mx/consejo_divisional/documentos/lineamientos/alumnos/posgrado/01_lp_lineamientos_particulares_del_sistema_de_posgrado_divisional.pdf"
-    - "https://divcsh.izt.uam.mx/posgrado/psicologia_social/wp-content/uploads/2025/01/Lista-de-verificacion-previa-al-envio-de-la-ICR_Tesis-Doctoral.pdf"
+  - https://cbi.izt.uam.mx/
+  - https://cbi.izt.uam.mx/consejo_divisional/documentos/lineamientos/alumnos/posgrado/01_lp_lineamientos_particulares_del_sistema_de_posgrado_divisional.pdf
+  - https://divcsh.izt.uam.mx/posgrado/psicologia_social/wp-content/uploads/2025/01/Lista-de-verificacion-previa-al-envio-de-la-ICR_Tesis-Doctoral.pdf
   review_interval_days: 365
-
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
-# ── Formato de página ─────────────────────────────────────────────
-# Fuente: Lineamientos CBI UAM-Iztapalapa.
-# Papel: carta (letterpaper). Márgenes estándar académicos.
-# Interlineado: 1.5 (requerido en posgrado, recomendado en licenciatura).
 page_layout:
   paper: letterpaper
   margins:
@@ -56,182 +44,83 @@ page_layout:
     left: 30mm
     right: 25mm
   line_spacing: 1.5
-
 max_words: 80000
 max_abstract_words: 300
-
 packages:
-  - siunitx       # unidades físicas: \SI{9.8}{\metre\per\second\squared}, \si{\mega\watt}
-  - pgfplots      # gráficos: \begin{axis}...\end{axis}
-  - circuitikz    # circuitos eléctricos: \begin{circuitikz}
-  - physics       # notación física: \dv{}{}, \pdv{}{}, \abs{}, \norm{}
-                  # Nota: physics redefine \div (divergencia ∇·) y \Re/\Im con \mathrm.
-                  # Si necesitas el ÷ original usa {\div} antes de cargar physics.
-  - cancel        # cancelaciones algebraicas: \cancel{x}, \bcancel{y}
-
+- siunitx
+- pgfplots
+- circuitikz
+- physics
+- cancel
 title_page_template:
-  template: |
-    \thispagestyle{empty}
-    \begin{titlepage}
-      \centering
-      \vspace*{0.5cm}
-      {\scshape\large {{ institution_name | latex_escape }}\par}
-      \vspace{0.2cm}
-      {\normalsize {{ faculty | latex_escape }}\par}
-      {% if department is defined and department %}
-      \vspace{0.15cm}
-      {\small {{ department | latex_escape }}\par}
-      {% endif %}
-      \vspace{1.5cm}
-      \begin{minipage}{0.9\textwidth}
-        \centering
-        {\Large\bfseries {{ title | latex_escape }}\par}
-      \end{minipage}
-      \vspace{1.5cm}
-      {\normalsize {{ doc_kind_label }}\par}
-      \vspace{0.3cm}
-      {\small que para obtener el título de:\par}
-      \vspace{0.3cm}
-      {\normalsize\bfseries {{ degree_label }}\par}
-      \vspace{1.5cm}
-      {\small Presenta:\par}
-      \vspace{0.3cm}
-      {\normalsize\bfseries {{ author | latex_escape }}\par}
-      \vspace{1.5cm}
-      {% if advisors %}
-      {\small {{ advisor_label }}\par}
-      \vspace{0.3cm}
-      {% for a in advisors %}
-      {\normalsize {{ a | latex_escape }}\par}
-      {% endfor %}
-      \vspace{0.8cm}
-      {% endif %}
-      {% if committee %}
-      {\small Jurado:\par}
-      \vspace{0.3cm}
-      {% for m in committee %}
-      {\small {{ m.name | latex_escape }}{% if m.role is defined and m.role %} \hfill {\itshape {{ m.role | latex_escape }}}{% endif %}\par}
-      {% endfor %}
-      \vspace{0.8cm}
-      {% endif %}
-      \vfill
-      {\small {{ city | latex_escape }},~{{ year }}\par}
-    \end{titlepage}
-
+  template: "\\thispagestyle{empty}\n\\begin{titlepage}\n  \\centering\n  \\vspace*{0.5cm}\n  {\\scshape\\large {{ institution_name | latex_escape }}\\par}\n  \\vspace{0.2cm}\n  {\\normalsize {{ faculty | latex_escape }}\\par}\n  {% if department is defined and department %}\n  \\vspace{0.15cm}\n  {\\small {{ department | latex_escape }}\\par}\n  {% endif %}\n  \\vspace{1.5cm}\n  \\begin{minipage}{0.9\\textwidth}\n    \\centering\n    {\\Large\\bfseries {{ title | latex_escape }}\\par}\n  \\end{minipage}\n  \\vspace{1.5cm}\n  {\\normalsize {{ doc_kind_label }}\\par}\n  \\vspace{0.3cm}\n  {\\small que para obtener el título de:\\par}\n  \\vspace{0.3cm}\n  {\\normalsize\\bfseries {{ degree_label }}\\par}\n  \\vspace{1.5cm}\n  {\\small Presenta:\\par}\n  \\vspace{0.3cm}\n  {\\normalsize\\bfseries {{ author | latex_escape }}\\par}\n  \\vspace{1.5cm}\n  {% if advisors %}\n  {\\small {{ advisor_label }}\\par}\n  \\vspace{0.3cm}\n  {% for a in advisors %}\n  {\\normalsize {{ a | latex_escape }}\\\
+    par}\n  {% endfor %}\n  \\vspace{0.8cm}\n  {% endif %}\n  {% if committee %}\n  {\\small Jurado:\\par}\n  \\vspace{0.3cm}\n  {% for m in committee %}\n  {\\small {{ m.name | latex_escape }}{% if m.role is defined and m.role %} \\hfill {\\itshape {{ m.role | latex_escape }}}{% endif %}\\par}\n  {% endfor %}\n  \\vspace{0.8cm}\n  {% endif %}\n  \\vfill\n  {\\small {{ city | latex_escape }},~{{ year }}\\par}\n\\end{titlepage}\n"
 sections:
-  - id: title_page
-    element_id: title_page
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      The title page must include: UAM logo, university and campus name,
-      division, department and research area, work title,
-      student’s name, degree sought, advisor(s)’ name(s),
-      term-year of presentation.
-
-  - id: dedication
-    element_id: dedication
-    placement: front_matter
-    required: false
-    title: "Dedication"
-
-  - id: acknowledgements
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-
-  - id: abstract_es
-    element_id: abstract_es
-    placement: front_matter
-    required: true
-    title: "Abstract (Spanish)"
-    guidance: "Maximum 300 words. Describes the problem, methods used and main results."
-
-  - id: abstract_en
-    element_id: abstract_en
-    placement: front_matter
-    required: true
-    title: "Abstract (English)"
-    guidance: "English abstract mandatory for graduate programs (ICR, Master’s, Doctoral)."
-
-  - id: table_of_contents
-    element_id: table_of_contents
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-
-  - id: list_of_figures
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-
-  - id: list_of_tables
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-
-  - id: introduction
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    guidance: "Background, problem statement, hypothesis and objectives."
-
-  - id: theoretical_framework
-    element_id: theoretical_framework
-    placement: body
-    required: true
-    title: "Theoretical Framework and State of the Art"
-    guidance: "Bibliographic review and theoretical foundations."
-
-  - id: methodology
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology and Experimental Development"
-    guidance: "Materials, methods and experimental or computational procedures."
-
-  - id: results
-    element_id: results
-    placement: body
-    required: true
-    title: "Results and Discussion"
-    guidance: "Presents results with figures, tables and statistical analysis when applicable."
-
-  - id: discussion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-    guidance: "Interprets results in relation to the hypothesis and literature. Compares with previous work."
-
-  - id: conclusions
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions and Perspectives"
-    guidance: "Conclusions regarding the stated hypothesis and proposals for future work."
-
-  - id: glossary
-    element_id: glossary
-    placement: back_matter
-    required: false
-    title: "Glossary"
-    guidance: "Definitions of technical terms and acronyms used in the document."
-
-  - id: references
-    element_id: references
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: "APA 7 format for social sciences; IEEE or Vancouver for exact sciences."
-
-  - id: appendix
-    element_id: appendix
-    placement: appendix
-    required: false
-    title: "Appendices"
+- id: title_page
+  element_id: title_page
+  placement: front_matter
+  required: true
+- id: dedication
+  element_id: dedication
+  placement: front_matter
+  required: false
+- id: acknowledgements
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: abstract_es
+  element_id: abstract_es
+  placement: front_matter
+  required: true
+- id: abstract_en
+  element_id: abstract_en
+  placement: front_matter
+  required: true
+- id: table_of_contents
+  element_id: table_of_contents
+  placement: front_matter
+  required: true
+- id: list_of_figures
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: list_of_tables
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduction
+  element_id: introduction
+  placement: body
+  required: true
+- id: theoretical_framework
+  element_id: theoretical_framework
+  placement: body
+  required: true
+- id: methodology
+  element_id: methodology
+  placement: body
+  required: true
+- id: results
+  element_id: results
+  placement: body
+  required: true
+- id: discussion
+  element_id: discussion
+  placement: body
+  required: false
+- id: conclusions
+  element_id: conclusions
+  placement: body
+  required: true
+- id: glossary
+  element_id: glossary
+  placement: back_matter
+  required: false
+- id: references
+  element_id: references
+  placement: back_matter
+  required: true
+- id: appendix
+  element_id: appendix
+  placement: appendix
+  required: false

@@ -1,37 +1,25 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: generic_tesina
-name: "Tesina Genérica"
+name: generic_tesina
 status: reviewed
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
-# ── Perfil genérico para tesina ───────────────────────────────────
-# La tesina es un trabajo académico menor que la tesis: más breve, enfocado
-# en un tema específico, sin la exigencia de contribución original al
-# conocimiento que tiene una tesis doctoral.
-# Se usa como modalidad de titulación en licenciatura y en algunos posgrados.
-# Basado en convenciones APA 7ª edición para trabajos académicos de estudiantes.
 verification:
-  reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas"
+  reviewed_at: '2026-05-25'
+  reviewed_by: TeXisStudio Community
+  verified_at: '2026-05-25'
+  verified_by: TeXisStudio Community — basado en APA Manual 7ª edición y convenciones académicas
   source_urls:
-    - "https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf"
+  - https://apastyle.apa.org/instructional-aids/student-paper-setup-guide.pdf
   review_interval_days: 365
-
-# ── Formato de página ─────────────────────────────────────────────
-# Convención para tesina en México y América Latina.
-# Carta (más común) o A4 según institución.
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 page_layout:
   paper: letterpaper
   margins:
@@ -40,140 +28,45 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
-
-# ── Límites de palabras ───────────────────────────────────────────
-# Tesinas de licenciatura: típicamente 30–80 páginas (10,000–25,000 palabras).
-# Resumen: 150–300 palabras.
 max_abstract_words: 300
-
 packages: []
-
 sections:
-  # ── Preliminares ──────────────────────────────────────────────────
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      The title page must include:
-      • Logo and name of the institution, faculty or school.
-      • Full title of the tesina (clear and specific).
-      • "TESINA" and the degree or certificate sought
-        (e.g., "to obtain the title of Bachelor in [field]").
-      • Author’s full name.
-      • Advisor’s or director’s name.
-      • City, month and year.
-      Consult the official title page format of your program.
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      Brief abstract of the tesina. 150–300 words.
-      Includes: the topic, the objective, the method used, the main
-      findings and the central conclusion or contribution.
-      End with 4–6 Keywords.
-      No citations, no figures, no undefined acronyms.
-
-  - id: agradecimientos
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-    guidance: |
-      Optional. Thank your advisor, those who provided access to data
-      or information, and personal support received.
-      Typical length: one paragraph or half a page.
-
-  - id: indice
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: |
-      Generated automatically. Includes all chapters and sections
-      with their page numbers.
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    label: "capitulo:introduccion"
-    guidance: |
-      The introduction situates the topic and justifies the work.
-      Includes:
-      1. Topic presentation: what is the tesina about?
-      2. Relevance: why is this topic important?
-      3. Central question or purpose of the work.
-      4. Objective(s) of the study.
-      5. Brief description of the tesina’s structure.
-      Typical length: 3–8 pages.
-
-  - id: desarrollo
-    element_id: literature_review
-    placement: body
-    required: true
-    title: "Development"
-    label: "capitulo:desarrollo"
-    guidance: |
-      The development is the main body of the tesina. You can structure it
-      in the following ways depending on the type of work:
-      Theoretical tesina / academic essay:
-        • Review and critical analysis of the relevant literature.
-        • Development of the central argument or position with bibliographic support.
-        • Discussion of different perspectives or approaches.
-      Empirical research tesina (small scale):
-        • Brief theoretical framework.
-        • Methodology: design, sample, instruments, procedure.
-        • Results and analysis.
-        • Discussion of findings.
-      Design or project tesina:
-        • Diagnosis or problem justification.
-        • Intervention or design proposal.
-        • Evaluation or validation.
-      Divide this chapter into sections with clear subheadings.
-      APA 7: cite with (Author, year) or Author (year).
-      Typical length: 25–60 pages.
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    label: "capitulo:conclusiones"
-    guidance: |
-      Conclusions synthesize what you learned or demonstrated.
-      • Answer the central question or purpose of the tesina.
-      • Summarize the main points of the development.
-      • Note implications or applications.
-      • Acknowledge the work’s limitations.
-      • Suggest possible future lines of work or further study.
-      Typical length: 3–8 pages.
-      Avoid introducing new information not discussed previously.
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: |
-      APA 7th edition: alphabetical list, hanging indent.
-      Include only sources cited in the text.
-      Generated automatically from your .bib file.
-      Include DOI when available.
-
-  - id: apendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Appendices"
-    guidance: |
-      Optional. Additional supporting materials:
-      • Data collection instruments (if used).
-      • Extended data tables.
-      • Additional analysis materials.
-      Label: Appendix A, B… Reference from the text.
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: agradecimientos
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: indice
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+  label: capitulo:introduccion
+- id: desarrollo
+  element_id: literature_review
+  placement: body
+  required: true
+  label: capitulo:desarrollo
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+  label: capitulo:conclusiones
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: apendices
+  element_id: appendix
+  placement: back_matter
+  required: false

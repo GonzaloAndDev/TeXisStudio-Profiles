@@ -1,35 +1,26 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_ipn_apa7
-name: "IPN - Tesis (APA 7)"
+name: mx_ipn_apa7
 status: reviewed
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
-# ── Verificación contra guías oficiales ──────────────────────────
-# Revisado el 2026-05-25 contra lineamientos de la Secretaría de Investigación
-# y Posgrado (SIP) y la COFAA del Instituto Politécnico Nacional.
 verification:
-  reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — reviewed against IPN-SIP and COFAA guidelines"
+  reviewed_at: '2026-05-25'
+  reviewed_by: TeXisStudio Community
+  verified_at: '2026-05-25'
+  verified_by: TeXisStudio Community — reviewed against IPN-SIP and COFAA guidelines
   source_urls:
-    - "https://www.sip.ipn.mx/posgrado/titulacion"
-    - "https://www.ipn.mx/posgrado/"
+  - https://www.sip.ipn.mx/posgrado/titulacion
+  - https://www.ipn.mx/posgrado/
   review_interval_days: 365
-
-# ── Formato de página ─────────────────────────────────────────────
-# IPN: papel carta, márgenes estándar LATAM (izq 3 cm, resto 2-2.5 cm).
-# Interlineado: 1.5. Fuente: Times New Roman 12pt.
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 page_layout:
   paper: letterpaper
   margins:
@@ -38,162 +29,76 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
-
 max_abstract_words: 350
-
 packages: []
-
 sections:
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      The official IPN title page must include:
-      • Logo of the IPN and of the Center or School (CINVESTAV, ESIME, UPIITA, etc.).
-      • Full name of the Center or School.
-      • Full thesis title.
-      • "THESIS submitted to obtain the degree of [Master/Doctor] in Sciences
-        with specialty in [area], PRESENTED BY:"
-      • Author’s name.
-      • Thesis advisor’s name and affiliation.
-      • Mexico City / [City], [Month] [Year].
-      Each IPN academic unit may have a specific title page format —
-      verify with the Academic Secretariat of your Center.
-
-  - id: declaracion
-    element_id: declaration
-    placement: front_matter
-    required: true
-    title: "Authenticity Declaration"
-    guidance: |
-      The IPN requires an originality declaration. The SIP may additionally require
-      a No-Debt Certificate and certification by the Tutorial Committee.
-      Verify the specific documents required by your center or school.
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      Abstract in Spanish, 200–350 words.
-      Problem, methodology, results and contribution. Keywords (4–6).
-
-  - id: abstract_ingles
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract"
-    guidance: |
-      Abstract in English. Recommended for theses with international publication.
-      Maximum 350 words. Keywords (4–6).
-
-  - id: agradecimientos
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-    guidance: |
-      Acknowledge the thesis advisor, tutorial committee, SIP/IPN grants,
-      CONACYT/CONAHCYT (with scholarship number), COFAA, and research projects
-      of the Center (SIP project key).
-
-  - id: indice
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: "Generated automatically. Includes all chapters, appendices and references."
-
-  - id: indice_figuras
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-    guidance: "Enable if you have 5 or more figures."
-
-  - id: indice_tablas
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-    guidance: "Enable if you have 5 or more tables."
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    label: "capitulo:introduccion"
-    guidance: |
-      Contextualization of the problem, problem statement, rationale,
-      research questions, objectives, hypotheses and structure.
-      The IPN has a polytechnic profile — if your research has a technological
-      application, describe its engineering or industrial relevance.
-
-  - id: marco_teorico
-    element_id: literature_review
-    placement: body
-    required: true
-    title: "Theoretical Framework and State of the Art"
-    label: "capitulo:marcoteorico"
-    guidance: |
-      Theoretical foundations and critical review of the state of the art.
-      Organize by topics or technical approaches.
-      Identify the gap that justifies your research.
-      APA 7: (Author, year) in the text.
-
-  - id: metodologia
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    label: "capitulo:metodologia"
-    guidance: |
-      Research design, tools and equipment used,
-      experimental or analytical procedure, validation, and
-      ethical considerations if applicable.
-
-  - id: resultados
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    label: "capitulo:resultados"
-    guidance: |
-      Objective findings organized by specific objective.
-      APA 7 tables and figures. No interpretation in this chapter.
-
-  - id: discusion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-    label: "capitulo:discusion"
-    guidance: "Interpretation of results, comparison with literature and limitations."
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    label: "capitulo:conclusiones"
-    guidance: |
-      Address objectives, summarize original contributions,
-      note limitations and propose future work.
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: "APA 7th edition, alphabetical list, hanging indent, DOI when available."
-
-  - id: apendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Appendices"
-    guidance: "Additional data, source code, technical drawings or diagrams."
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: declaracion
+  element_id: declaration
+  placement: front_matter
+  required: true
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: abstract_ingles
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: agradecimientos
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: indice
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: indice_figuras
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: indice_tablas
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+  label: capitulo:introduccion
+- id: marco_teorico
+  element_id: literature_review
+  placement: body
+  required: true
+  label: capitulo:marcoteorico
+- id: metodologia
+  element_id: methodology
+  placement: body
+  required: true
+  label: capitulo:metodologia
+- id: resultados
+  element_id: results
+  placement: body
+  required: true
+  label: capitulo:resultados
+- id: discusion
+  element_id: discussion
+  placement: body
+  required: false
+  label: capitulo:discusion
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+  label: capitulo:conclusiones
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: apendices
+  element_id: appendix
+  placement: back_matter
+  required: false

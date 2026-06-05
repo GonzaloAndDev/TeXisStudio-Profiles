@@ -2788,7 +2788,6 @@
     },
     "company.internship": {
       "name": "Báo cáo thực tập/cư trú",
-      "description": "Định dạng báo cáo về cư trú chuyên nghiệp và lưu trú công tác. Bao gồm mô tả công ty, hoạt động và kết quả. Thư mục APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Trang bìa được tạo tự động với dữ liệu của tổ chức.\nNó sẽ bao gồm: tên của sinh viên, công ty, thời gian thực tập, cơ sở giáo dục và nghề nghiệp.\nBạn không cần phải viết nội dung ở đây — hãy đặt dữ liệu trong siêu dữ liệu của dự án."
@@ -2825,11 +2824,10 @@
           "guidance": "Bao gồm tài liệu hỗ trợ rất phong phú trong nội dung chính:\n• Thư chấp nhận của công ty.\n• Thư hoàn thành/đánh giá của gia sư kinh doanh.\n• Nhật ký hàng tuần (nếu tổ chức của bạn yêu cầu).\n• Mã nguồn liên quan.\n• Hướng dẫn sử dụng hoặc kỹ thuật được phát triển.\n• Bằng chứng hình ảnh về nơi làm việc.\nĐánh số từng phụ lục (Phụ lục A, B…) và tham khảo từ văn bản."
         }
       },
-      "meta": "Thư mục APA 7 · XeLaTeX"
+      "description": "Định dạng báo cáo về cư trú chuyên nghiệp và lưu trú công tác. Bao gồm mô tả công ty, hoạt động và kết quả. Thư mục APA 7."
     },
     "engineering.basic": {
       "name": "Báo cáo kỹ thuật/kỹ thuật",
-      "description": "Báo cáo kỹ thuật có các phần về cách tiếp cận, thiết kế, triển khai và thử nghiệm. Thư mục IEEE. Lý tưởng cho luận án kỹ thuật và thực tập chuyên nghiệp.",
       "sections": {
         "title_page": {
           "guidance": "Trang bìa được tạo tự động cùng với dữ liệu dự án.\nBạn không cần phải viết nội dung ở đây."
@@ -2847,15 +2845,15 @@
         },
         "problem_statement": {
           "title": "Tuyên bố vấn đề",
-          "guidance": "Xác định vấn đề kỹ thuật một cách chính xác về mặt hình thức:\n• Mô tả chi tiết vấn đề: triệu chứng, bối cảnh, hạn chế.\n• Yêu cầu chức năng và phi chức năng.\n• Tiêu chí thành công: Làm sao bạn biết bạn đã giải quyết được vấn đề?\n• Phạm vi và giới hạn của dự án.\n• Khung lý thuyết cần thiết tối thiểu: các khái niệm, mô hình hoặc lý thuyết làm nền tảng cho giải pháp.\nSử dụng sơ đồ, bảng yêu cầu và trường hợp sử dụng nếu có."
+          "guidance": "Xác định vấn đề kỹ thuật một cách chính xác về mặt hình thức:\n• Mô tả chi tiết vấn đề: triệu chứng, bối cảnh, hạn chế.\n• Yêu cầu chức năng và phi chức năng.\n• Tiêu chí thành công: Làm sao bạn biết bạn đã giải quyết được vấn đề?\n• Phạm vi và giới hạn của dự án.\n• Khung lý thuyết cần thiết tối thiểu: các khái niệm, mô hình hoặc lý thuyết làm cơ sở cho giải pháp.\nSử dụng sơ đồ, bảng yêu cầu và trường hợp sử dụng nếu có."
         },
         "design": {
           "title": "Thiết kế và kiến trúc",
-          "guidance": "Trình bày giải pháp đề xuất trước khi thực hiện:\n• Kiến trúc hệ thống (sơ đồ thành phần, lớp, mô-đun).\n• Quyết định thiết kế và biện minh cho các công nghệ được lựa chọn.\n• Lưu đồ hoặc thuật toán chính.\n• Mô hình dữ liệu nếu có (lược đồ ER, BD).\n• Giao diện người dùng (wireframe hoặc mô hình nếu có).\nThiết kế phải độc lập với việc triển khai — bên thứ ba có thể triển khai nó từ phần này."
+          "guidance": "Trình bày giải pháp đề xuất trước khi thực hiện:\n• Kiến trúc hệ thống (sơ đồ thành phần, lớp, mô-đun).\n• Quyết định thiết kế và biện minh cho các công nghệ được lựa chọn.\n• Lưu đồ hoặc thuật toán chính.\n• Mô hình dữ liệu nếu có (lược đồ ER, DB).\n• Giao diện người dùng (wireframe hoặc mô hình nếu có).\nThiết kế phải độc lập với việc triển khai — bên thứ ba có thể triển khai nó từ phần này."
         },
         "implementation": {
           "title": "Triển khai",
-          "guidance": "Mô tả cách xây dựng giải pháp:\n• Môi trường phát triển: ngôn ngữ, framework, nền tảng, phiên bản.\n• Mô tả các mô-đun hoặc thành phần được triển khai.\n• Các đoạn mã có liên quan (chỉ những đoạn có tính minh họa nhất, không phải toàn bộ mã).\n• Những thách thức thực hiện và giải pháp đã được áp dụng.\n• Cấu hình cơ sở hạ tầng nếu có (máy chủ, vùng chứa, BD).\nMã hoàn chỉnh nằm trong các Phụ lục — ở đây chỉ có mã tiêu biểu nhất."
+          "guidance": "Mô tả cách xây dựng giải pháp:\n• Môi trường phát triển: ngôn ngữ, framework, nền tảng, phiên bản.\n• Mô tả các mô-đun hoặc thành phần được triển khai.\n• Các đoạn mã có liên quan (chỉ những đoạn có tính minh họa nhất, không phải toàn bộ mã).\n• Những thách thức thực hiện và giải pháp đã được áp dụng.\n• Cấu hình cơ sở hạ tầng nếu có (máy chủ, bộ chứa, cơ sở dữ liệu).\nMã hoàn chỉnh nằm trong Phụ lục — ở đây chỉ có mã tiêu biểu nhất."
         },
         "testing": {
           "title": "Thử nghiệm và xác nhận",
@@ -2867,18 +2865,17 @@
         },
         "references": {
           "title": "Tài liệu tham khảo",
-          "guidance": "Trong IEEE, các tham chiếu là số và xuất hiện theo thứ tự được đề cập đầu tiên.\nDanh sách được tạo tự động từ .bib của bạn khi bạn biên dịch.\nĐối với các bài viết và hội nghị về IEEE: Sử dụng trình nhập DOI để nhận mục nhập chính xác.\nHãy nhớ đưa DOI vào mỗi tài liệu tham khảo — IEEE yêu cầu điều đó."
+          "guidance": "Trong IEEE, các tham chiếu là số và xuất hiện theo thứ tự được đề cập đầu tiên.\nDanh sách được tạo tự động từ .bib của bạn khi bạn biên dịch.\nĐối với các bài viết và hội nghị của IEEE: sử dụng trình nhập DOI để có được mục nhập chính xác.\nHãy nhớ đưa DOI vào mỗi tài liệu tham khảo — IEEE yêu cầu điều đó."
         },
         "appendices": {
           "title": "Phụ lục",
           "guidance": "Tài liệu kỹ thuật bổ sung:\n• Mã nguồn hoàn chỉnh (mô-đun chính).\n• Các kịch bản cài đặt và cấu hình.\n• Hướng dẫn sử dụng hoặc kỹ thuật.\n• Sơ đồ chi tiết (ERD đầy đủ, sơ đồ tuần tự, v.v.).\n• Kiểm tra dữ liệu hoặc bộ dữ liệu.\nSố: Phụ lục A, B… và tham khảo từ văn bản chính."
         }
       },
-      "meta": "Thư mục IEEE · XeLaTeX"
+      "description": "Báo cáo kỹ thuật có các phần về cách tiếp cận, thiết kế, triển khai và thử nghiệm. Thư mục IEEE. Lý tưởng cho luận án kỹ thuật và nội trú chuyên nghiệp."
     },
     "generic.phd": {
       "name": "Luận văn tốt nghiệp",
-      "description": "Hồ sơ thạc sĩ và tiến sĩ: tổng quan tài liệu, hiện đại, phương pháp tiếp cận, thử nghiệm, bảng chú giải thuật ngữ và từ viết tắt. XeLaTeX, biber, APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Trang bìa được tạo tự động cùng với dữ liệu dự án.\nĐối với các nghiên cứu sau đại học, hãy định cấu hình siêu dữ liệu: tên đầy đủ, giám đốc, đồng giám đốc (nếu có) và ủy ban thượng hội đồng.\nBạn không cần phải viết nội dung ở đây."
@@ -2887,7 +2884,7 @@
           "guidance": "Mục lục được tạo tự động.\nBạn không cần phải viết gì ở đây."
         },
         "list_of_figures": {
-          "guidance": "Danh sách các hình được tạo tự động từ tất cả các hình có tiêu đề trong luận án của bạn.\nKích hoạt phần này nếu bạn có 5 hình trở lên."
+          "guidance": "Danh sách các hình được tạo tự động từ tất cả các hình có tiêu đề trong luận văn của bạn.\nKích hoạt phần này nếu bạn có 5 hình trở lên."
         },
         "list_of_tables": {
           "guidance": "Danh sách các bảng được tạo tự động từ tất cả các bảng có tiêu đề.\nKích hoạt phần này nếu bạn có 5 bảng trở lên."
@@ -2897,11 +2894,11 @@
         },
         "acronyms": {
           "title": "Danh sách các từ viết tắt và từ viết tắt",
-          "guidance": "Liệt kê đầy đủ nghĩa các từ viết tắt sử dụng trong luận án.\nĐịnh dạng: SIGLA — Ý nghĩa đầy đủ (ví dụ: CNN — Mạng thần kinh chuyển đổi).\nSắp xếp theo thứ tự abc. Nó cũng xác định lần đầu tiên mỗi từ viết tắt xuất hiện trong văn bản."
+          "guidance": "Liệt kê đầy đủ nghĩa các từ viết tắt sử dụng trong luận án.\nĐịnh dạng: VIẾT TẮT — Ý nghĩa đầy đủ (ví dụ: CNN — Mạng thần kinh chuyển đổi).\nSắp xếp theo thứ tự abc. Nó cũng xác định lần đầu tiên mỗi từ viết tắt xuất hiện trong văn bản."
         },
         "abstract_es": {
           "title": "Tóm tắt",
-          "guidance": "Câu trả lời tóm tắt tốt nghiệp trong 250–350 từ:\n• Động lực: tại sao vấn đề này lại quan trọng?\n• Vấn đề: Bạn đang giải quyết câu hỏi hoặc giả thuyết nào?\n• Phương pháp: phương pháp và kỹ thuật chính.\n• Đóng góp: kết quả và đóng góp ban đầu cho công nghệ hiện đại.\n• Tác động: ý nghĩa lý luận và thực tiễn.\nKhông có cuộc hẹn. Không có phương trình. 5–8 Từ khóa ở cuối."
+          "guidance": "Bài tóm tắt tốt nghiệp dài 250–350 từ:\n• Động lực: tại sao vấn đề này lại quan trọng?\n• Vấn đề: Bạn đang giải quyết câu hỏi hoặc giả thuyết nào?\n• Phương pháp: phương pháp và kỹ thuật chính.\n• Đóng góp: kết quả và đóng góp ban đầu cho công nghệ hiện đại.\n• Tác động: ý nghĩa lý luận và thực tiễn.\nKhông có cuộc hẹn. Không có phương trình. 5–8 Từ khóa ở cuối."
         },
         "abstract_en": {
           "title": "Tóm tắt",
@@ -2913,19 +2910,19 @@
         },
         "acknowledgements": {
           "title": "Cảm ơn",
-          "guidance": "Chính thức cảm ơn những người đã đóng góp cho tác phẩm:\n• Chủ nhiệm và đồng chủ trì luận án.\n• Ủy ban Thượng Hội đồng/người duyệt xét.\n• Nhà tài trợ: học bổng, dự án, tổ chức (bắt buộc đối với các dự án có hỗ trợ từ bên ngoài).\n• Cộng tác viên kỹ thuật, phòng thí nghiệm, công ty.\n• Hỗ trợ của gia đình và cá nhân (ở phần cuối, vắn tắt).\nPhần mở rộng: nửa trang."
+          "guidance": "Chính thức cảm ơn những người đã đóng góp cho tác phẩm:\n• Chủ nhiệm và đồng chủ trì luận án.\n• Ủy ban Thượng Hội đồng/người duyệt xét.\n• Nhà tài trợ: học bổng, dự án, tổ chức (bắt buộc đối với các dự án có hỗ trợ từ bên ngoài).\n• Cộng tác viên kỹ thuật, phòng thí nghiệm, công ty.\n• Hỗ trợ của gia đình và cá nhân (ở phần cuối, vắn tắt).\nĐộ dài: nửa trang."
         },
         "introduction": {
           "title": "Giới thiệu",
           "guidance": "Việc làm luận văn sau đại học có yêu cầu khắt khe hơn so với việc làm bằng cử nhân. Bạn phải:\n1. Bối cảnh hóa vấn đề trong tình trạng hiện tại.\n2. Xác định lỗ hổng kiến ​​thức cụ thể mà luận án của bạn giải quyết.\n3. Nêu rõ giả thuyết hoặc câu hỏi nghiên cứu.\n4. Liệt kê các mục tiêu (chung và cụ thể).\n5. Mô tả đóng góp ban đầu (có gì mới trong công việc của bạn?).\n6. Giải thích phạm vi và ranh giới.\n7. Mô tả cách tổ chức các chương.\nMột ủy ban tiến sĩ sẽ đánh giá xem đóng góp đó có nguyên gốc và độc lập hay không. Hãy chính xác.\nĐộ dài thông thường: 5–10 trang."
         },
         "literature_review": {
-          "title": "Đánh giá văn học và hiện đại",
-          "guidance": "Đây là phần thể hiện sự thông thạo của bạn trong lĩnh vực này. Bạn phải:\n• Đề cập một cách có hệ thống các tác phẩm có liên quan từ 5–10 năm qua (các tác phẩm kinh điển có thể cũ hơn).\n• Sắp xếp theo chủ đề, trọng tâm hoặc trình tự thời gian — không phải dưới dạng danh sách tóm tắt.\n• So sánh có phê phán các đề xuất: điểm mạnh, điểm yếu, hạn chế.\n• Xác định khoảng trống mà luận án của bạn sẽ lấp đầy (\"chưa có công trình nào trước đây đề cập đến X\").\n• Kết thúc bằng bảng so sánh các tác phẩm liên quan nếu có thể.\nĐối với tiến sĩ: đánh giá này phải toàn diện và bao quát tất cả các khía cạnh của vấn đề.\nChiến lược: Tìm kiếm Scopus, WoS, ACM DL, IEEE Xplore. Sử dụng trình nhập DOI cho từng mặt hàng."
+          "title": "Đánh giá về văn học và hiện đại",
+          "guidance": "Đây là phần thể hiện sự thông thạo của bạn trong lĩnh vực này. Bạn phải:\n• Đề cập một cách có hệ thống các tác phẩm có liên quan từ 5–10 năm qua (các tác phẩm kinh điển có thể cũ hơn).\n• Sắp xếp theo chủ đề, trọng tâm hoặc trình tự thời gian — không phải dưới dạng danh sách tóm tắt.\n• So sánh có phê phán các đề xuất: điểm mạnh, điểm yếu, hạn chế.\n• Xác định khoảng trống mà luận án của bạn sẽ lấp đầy (\"chưa có công trình nào trước đây đề cập đến X\").\n• Kết thúc bằng bảng so sánh các tác phẩm liên quan nếu có thể.\nĐối với tiến sĩ: đánh giá này phải toàn diện và bao quát tất cả các khía cạnh của vấn đề.\nChiến lược: Search Scopus, WoS, ACM DL, IEEE Xplore. Sử dụng trình nhập DOI cho từng bài viết."
         },
         "theoretical_framework": {
           "title": "Khung lý thuyết",
-          "guidance": "Phát triển nền tảng lý thuyết và toán học cần thiết để hiểu đề xuất của bạn.\nKhông giống như phần đánh giá tài liệu, ở đây bạn đi sâu vào các khái niệm chính:\n• Định nghĩa hình thức và ký hiệu toán học.\n• Các mô hình lý thuyết làm cơ sở cho công việc của bạn.\n• Các định lý hoặc tính chất liên quan (có trích dẫn hoặc chứng minh nếu là bản gốc).\nKích hoạt phần này nếu luận án của bạn yêu cầu nhiều hơn 5–6 trang cơ sở lý thuyết."
+          "guidance": "Phát triển nền tảng lý thuyết và toán học cần thiết để hiểu đề xuất của bạn.\nKhông giống như phần đánh giá tài liệu, ở đây bạn đi sâu vào các khái niệm chính:\n• Định nghĩa hình thức và ký hiệu toán học.\n• Các mô hình lý thuyết làm cơ sở cho công việc của bạn.\n• Các định lý hoặc tính chất liên quan (có trích dẫn hoặc bằng chứng nếu là bản gốc).\nKích hoạt phần này nếu luận án của bạn yêu cầu nhiều hơn 5–6 trang cơ sở lý thuyết."
         },
         "problem_statement": {
           "title": "Tuyên bố vấn đề và giả thuyết",
@@ -2933,7 +2930,7 @@
         },
         "methodology": {
           "title": "Phương pháp",
-          "guidance": "Mô tả cách tiếp cận phương pháp luận một cách chặt chẽ theo yêu cầu của trình độ sau đại học:\n• Mô hình nghiên cứu: thực chứng, kiến tạo, hỗn hợp.\n• Loại hình nghiên cứu: thực nghiệm, bán thực nghiệm, nghiên cứu trường hợp, mô phỏng, mô hình hóa.\n• Thiết kế nghiên cứu cụ thể.\n• Nguồn dữ liệu: nguồn gốc, đặc điểm, quá trình thu thập hoặc tạo lập.\n• Quy trình hoặc quy trình hoàn chỉnh từ dữ liệu đến kết quả.\n• Các công cụ, ngôn ngữ, thư viện và phiên bản cụ thể.\nĐủ chi tiết để có thể nhân rộng hoàn toàn."
+          "guidance": "Mô tả cách tiếp cận phương pháp luận với mức độ nghiêm ngặt được yêu cầu bởi trình độ sau đại học:\n• Mô hình nghiên cứu: thực chứng, kiến tạo, hỗn hợp.\n• Loại hình nghiên cứu: thực nghiệm, bán thực nghiệm, nghiên cứu trường hợp, mô phỏng, mô hình hóa.\n• Thiết kế nghiên cứu cụ thể.\n• Nguồn dữ liệu: nguồn gốc, đặc điểm, quá trình thu thập hoặc tạo lập.\n• Quy trình hoặc quy trình hoàn chỉnh từ dữ liệu đến kết quả.\n• Các công cụ, ngôn ngữ, thư viện và phiên bản cụ thể.\nĐủ chi tiết để có thể nhân rộng hoàn toàn."
         },
         "experimentation": {
           "title": "Thử nghiệm và phát triển",
@@ -2953,54 +2950,486 @@
         },
         "references": {
           "title": "Tài liệu tham khảo",
-          "guidance": "Danh sách tham chiếu được tạo tự động từ .bib của bạn khi biên dịch bằng APA 7.\nĐối với các nghiên cứu sau đại học, dự kiến có hơn 80–200 tài liệu tham khảo chất lượng cao (các bài báo được lập chỉ mục, sách kỹ thuật).\nSử dụng trình nhập DOI để thêm các bài viết từ Crossref chỉ bằng một cú nhấp chuột.\nTránh tham khảo các blog, Wikipedia hoặc các trang web chưa được bình duyệt làm nguồn chính."
+          "guidance": "Danh sách tham chiếu được tạo tự động từ .bib của bạn khi biên dịch bằng APA 7.\nĐối với các nghiên cứu sau đại học, dự kiến có hơn 80–200 tài liệu tham khảo chất lượng cao (các bài báo được lập chỉ mục, sách kỹ thuật).\nSử dụng trình nhập DOI để thêm các bài viết từ Crossref chỉ bằng một cú nhấp chuột.\nTránh tham khảo các blog, Wikipedia hoặc các trang web không được đồng nghiệp đánh giá làm nguồn chính."
         },
         "publications": {
           "title": "Ấn phẩm phái sinh",
-          "guidance": "Liệt kê các công trình đã xuất bản hoặc đệ trình xuất phát từ luận án này:\n• Bài viết trên các tạp chí có chỉ mục (Q1, Q2, Scopus, WoS).\n• Thuyết trình tại các hội nghị trong nước và quốc tế.\n• Chương sách, bằng sáng chế, báo cáo kỹ thuật.\nĐối với mỗi: tài liệu tham khảo đầy đủ + trạng thái (đã xuất bản / được chấp nhận / đã gửi / đang chuẩn bị).\nCác ấn phẩm trước đây là dấu hiệu của chất lượng và có thể làm nhẹ bớt sự biện hộ."
+          "guidance": "Liệt kê các công trình đã công bố hoặc đệ trình xuất phát từ luận án này:\n• Bài viết trên các tạp chí có chỉ mục (Q1, Q2, Scopus, WoS).\n• Thuyết trình tại các hội nghị trong nước và quốc tế.\n• Chương sách, bằng sáng chế, báo cáo kỹ thuật.\nĐối với mỗi: tài liệu tham khảo đầy đủ + trạng thái (đã xuất bản / được chấp nhận / đã gửi / đang chuẩn bị).\nCác ấn phẩm trước đây là dấu hiệu của chất lượng và có thể làm nhẹ bớt sự bào chữa."
         },
         "glossary": {
           "title": "Bảng thuật ngữ",
-          "guidance": "Xác định các thuật ngữ chuyên ngành mà người đọc không phải là chuyên gia trong lĩnh vực chuyên môn của bạn sẽ cần biết.\nĐịnh dạng: Thuật ngữ - Định nghĩa ngắn gọn.\nKhông bao gồm các thuật ngữ đã được xác định trong Khung lý thuyết — bảng thuật ngữ chỉ dành cho các thuật ngữ định kỳ chứ không phải các thuật ngữ trọng tâm."
+          "guidance": "Xác định các thuật ngữ chuyên ngành mà người đọc không phải là chuyên gia trong chuyên ngành của bạn sẽ cần biết.\nĐịnh dạng: Thuật ngữ - Định nghĩa ngắn gọn.\nKhông bao gồm các thuật ngữ đã được xác định trong Khung lý thuyết — bảng thuật ngữ chỉ dành cho các thuật ngữ định kỳ chứ không phải các thuật ngữ trọng tâm."
         },
         "appendices": {
           "title": "Phụ lục",
           "guidance": "Tài liệu kỹ thuật bổ sung không thuộc luồng chính:\n• Chứng minh toán học dài hoặc thứ cấp.\n• Mã nguồn (mô-đun chính, kịch bản thử nghiệm).\n• Hoàn thiện bảng số liệu hoặc kết quả bổ sung.\n• Công cụ thu thập dữ liệu.\n• Thư chấp thuận đạo đức, thỏa thuận bảo mật.\nSố: Phụ lục A, B… kèm tiêu đề mô tả."
         }
       },
-      "meta": "Thư mục APA 7 · XeLaTeX"
+      "description": "Hồ sơ thạc sĩ và tiến sĩ: tổng quan tài liệu, hiện đại, phương pháp tiếp cận, thử nghiệm, bảng chú giải thuật ngữ và từ viết tắt. XeLaTeX, biber, APA 7."
     },
     "vancouver.health": {
-      "name": "Khoa học Sức khỏe (IMRaD)",
-      "description": "Cấu trúc IMRaD cho nghiên cứu lâm sàng và y sinh. Tài liệu tham khảo theo phong cách Vancouver. Lý tưởng cho luận văn y khoa, điều dưỡng và khoa học sức khỏe."
+      "name": "Khoa học sức khỏe (IMRYD)",
+      "sections": {
+        "title_page": {
+          "guidance": "Trang bìa được tạo tự động cùng với dữ liệu dự án.\nBạn không cần phải viết nội dung ở đây."
+        },
+        "table_of_contents": {
+          "guidance": "Chỉ mục được tạo tự động.\nBạn không cần phải viết gì ở đây."
+        },
+        "abstract_es": {
+          "title": "Tóm tắt",
+          "guidance": "Bản tóm tắt IMRYD có cấu trúc với phụ đề giống như bài viết, ở dạng thu nhỏ:\n• Mục tiêu: câu nói với mục đích nghiên cứu.\n• Vật liệu và phương pháp: thiết kế, dân số, can thiệp và đo lường chính.\n• Kết quả: những phát hiện phù hợp hơn với dữ liệu số.\n• Kết luận: diễn giải lâm sàng và phạm vi.\nGiới hạn: 250 từ cho luận án (thay đổi tùy theo tổ chức). Không có cuộc hẹn. Không có từ viết tắt không xác định.\nCuối cùng: 3–6 Từ khóa MeSH (Tiêu đề chủ đề y tế)."
+        },
+        "abstract_en": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch trung thực của bản tóm tắt sang tiếng Anh với cùng phụ đề: Mục tiêu, Phương pháp, Kết quả, Kết luận.\nTừ khóa: Thuật ngữ MeSH trong tiếng Anh.\nCần thiết để lập chỉ mục trong PubMed/MEDLINE và trình bày tại các hội nghị quốc tế."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Trong IMRYD, phần Giới thiệu trả lời: cái gì đã biết? những gì chưa được biết? những gì sẽ được nghiên cứu?\nCấu trúc được đề xuất (kênh):\n1. Mức độ nghiêm trọng của vấn đề sức khỏe (dịch tễ học, gánh nặng bệnh tật).\n2. Những gì đã biết: xem xét có chọn lọc các tài liệu có trích dẫn ở Vancouver ([1], [2]…).\n3. Khoảng trống kiến ​​thức hoặc tranh cãi thúc đẩy nghiên cứu.\n4. Câu hỏi nghiên cứu hoặc mục tiêu nghiên cứu (nêu rõ).\n5. Giả thuyết nếu có.\nKhông trình bày kết quả ở đây. Độ dài thông thường: 2–4 trang."
+        },
+        "materials_methods": {
+          "title": "Vật liệu và phương pháp",
+          "guidance": "Mô tả nghiên cứu đủ chi tiết để có thể nhân rộng. Bao gồm:\n• Thiết kế nghiên cứu: thực nghiệm, đoàn hệ, bệnh chứng, cắt ngang, tổng quan hệ thống, v.v.\n• Địa điểm và thời gian nghiên cứu.\n• Dân số: tiêu chí bao gồm và loại trừ.\n• Mẫu: cỡ mẫu, kỹ thuật lấy mẫu, căn cứ thống kê.\n• Can thiệp (nếu có): mô tả chính xác, liều lượng, thời gian.\n• Các biến số và dụng cụ đo lường.\n• Phân tích thống kê: các bài kiểm tra được sử dụng, phần mềm, mức ý nghĩa.\n• Cân nhắc về mặt đạo đức: sự chấp thuận của ủy ban đạo đức, sự đồng ý có hiểu biết.\nTránh biện minh cho các quyết định mang tính phương pháp — chỉ cần mô tả chúng."
+        },
+        "results": {
+          "title": "Kết quả",
+          "guidance": "Trình bày kết quả một cách khách quan và không diễn giải:\n• Bắt đầu với các đặc điểm của mẫu (Bảng 1: các đặc điểm cơ bản).\n• Trình bày kết quả theo thứ tự mục tiêu hoặc giả thuyết.\n• Sử dụng bảng và số liệu cho dữ liệu số — mỗi dữ liệu được tham chiếu trong văn bản.\n• Báo cáo: n, %, nghĩa là ± SD, trung vị (IQR), RR, OR, 95% CI, giá trị p.\n• Không lặp lại nội dung những gì bảng đã hiển thị — chỉ nhận xét những gì phù hợp nhất.\n• Đối với nghiên cứu định tính: các danh mục có trích dẫn bằng văn bản của người tham gia (ẩn danh)."
+        },
+        "discussion": {
+          "title": "Thảo luận",
+          "guidance": "Đây là phần phân tích nhất và khó viết nhất. Bạn phải:\n• Quay lại mục tiêu nghiên cứu và tóm tắt kết quả chính.\n• So sánh kết quả của bạn với các nghiên cứu trước đây (tương tự, khác biệt và trái ngược nhau).\n• Giải thích những khác biệt: khác biệt về thiết kế, dân số, bối cảnh.\n• Chỉ ra ý nghĩa lâm sàng: thực tế có những thay đổi gì?\n• Thừa nhận những hạn chế của nghiên cứu (không giảm thiểu chúng - nó củng cố độ tin cậy).\n• Đề xuất nghiên cứu cụ thể trong tương lai.\nKhông trình bày kết quả mới ở đây."
+        },
+        "conclusions": {
+          "title": "Kết luận",
+          "guidance": "Trong nhiều bài báo y sinh, kết luận được đưa vào phần Thảo luận.\nNếu tổ chức của bạn yêu cầu chúng một cách riêng biệt:\n• Trả lời một hoặc hai câu cho mỗi mục tiêu.\n• Trả lời trực tiếp câu hỏi nghiên cứu.\n• Tránh khái quát hóa ngoài phạm vi dữ liệu cho phép.\n• Đề cập đến sự đóng góp về kiến ​​thức hoặc thực hành lâm sàng."
+        },
+        "references": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Phong cách Vancouver: tham chiếu số theo thứ tự xuất hiện trong văn bản ([1], [2]…).\nDanh sách được tạo tự động từ .bib của bạn khi bạn biên dịch.\nƯu tiên các nguồn được lập chỉ mục trong MEDLINE/PubMed, Scopus, Web of Science.\nSử dụng trình nhập DOI để thêm bài viết chỉ bằng một cú nhấp chuột — Crossref có nhiều PubMed nhất.\nGiới hạn tham chiếu: thay đổi tùy theo trường (phổ biến: 30–50 cho luận văn)."
+        },
+        "appendices": {
+          "title": "Phụ lục",
+          "guidance": "Bao gồm các tài liệu hỗ trợ không phù hợp với nội dung văn bản:\n• Công cụ thu thập (bảng câu hỏi, bảng thu thập dữ liệu).\n• Thư chấp thuận của hội đồng đạo đức.\n• Sự đồng ý có hiểu biết.\n• Bảng dữ liệu thô hoặc dữ liệu bổ sung.\n• Phác đồ can thiệp chi tiết.\nSố: Phụ lục A, B… và tham khảo trong văn bản."
+        }
+      },
+      "description": "Cấu trúc IMRYD dành cho nghiên cứu lâm sàng và y sinh. Thư mục phong cách Vancouver. Lý tưởng cho các luận văn về y học, điều dưỡng và khoa học sức khỏe."
     },
     "apa.basic": {
-      "name": "APA Cơ bản",
-      "description": "Hồ sơ đơn giản hóa cho công việc học thuật theo chuẩn APA 7 nghiêm ngặt. Lý tưởng cho báo cáo, bài luận và bài viết ngắn."
+      "name": "APA cơ bản",
+      "sections": {
+        "title_page": {
+          "guidance": "Trang bìa APA 7 được tạo tự động cùng với dữ liệu dự án.\nBao gồm: tên sách, tác giả, cơ quan, chủ đề, tên giáo viên và ngày tháng.\nBạn không cần phải viết nội dung ở đây."
+        },
+        "abstract_es": {
+          "title": "Tóm tắt",
+          "guidance": "Bản tóm tắt APA 7 nằm trên một trang riêng với tiêu đề \"Tóm tắt\" (giữa, in đậm).\n150–250 từ trả lời: nghiên cứu cái gì?, làm thế nào?, tìm thấy cái gì?, nó có nghĩa là gì?\nCuối cùng gồm 4–6 Từ khóa: in nghiêng.\nKhông trích dẫn tài liệu tham khảo trong phần tóm tắt."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Trong APA 7, phần giới thiệu không mang tiêu đề \"Giới thiệu\" — hồ sơ sẽ tự động xử lý phần giới thiệu đó.\nBạn phải trình bày:\n• Chủ đề và sự liên quan của nó.\n• Những gì đã biết cho đến nay (tổng hợp thư mục ngắn gọn).\n• Mục đích hoặc mục tiêu của công việc.\n• Câu hỏi hoặc giả thuyết có áp dụng được.\nSử dụng trích dẫn APA trong văn bản: (Họ, Năm) hoặc Họ (Năm) tùy theo luồng."
+        },
+        "development": {
+          "title": "Phát triển",
+          "guidance": "Nội dung chính của tác phẩm. Sắp xếp với các tiêu đề cấp 2 và 3 dựa trên độ phức tạp.\nĐối với tiểu luận: luận cứ chính, luận cứ hỗ trợ bằng dẫn chứng thư mục, luận cứ phản biện.\nĐối với các báo cáo: khung khái niệm, phân tích, phát hiện.\nCác nguồn diễn giải - tránh các trích dẫn nguyên văn dài (chỉ sử dụng chúng khi các từ chính xác quan trọng).\nTrích dẫn mọi thứ không phải do bạn sáng tạo."
+        },
+        "conclusions": {
+          "title": "Kết luận",
+          "guidance": "Tổng hợp những điểm chính của tác phẩm:\n• Trả lời câu hỏi hoặc mục đích đặt ra trong phần giới thiệu.\n• Chỉ ra ý nghĩa của những phát hiện này.\n• Nhận biết những hạn chế.\n• Đề xuất các hướng làm việc hoặc nghiên cứu trong tương lai.\nKhông bao gồm các trích dẫn mới ở đây. Độ dài: 1–2 trang."
+        },
+        "references": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Trong APA 7 nó được gọi là \"Tài liệu tham khảo\" (không phải \"Thư mục\").\nDanh sách được tạo tự động từ .bib của bạn khi bạn biên dịch.\nQuy tắc APA 7: sắp xếp theo thứ tự bảng chữ cái, thụt lề, URL hoặc DOI ở cuối mỗi mục.\nSử dụng trình nhập DOI (Ctrl+[ > bảng DOI) để thêm tham chiếu chỉ bằng một cú nhấp chuột."
+        }
+      },
+      "description": "Hồ sơ đơn giản dành cho các công việc học thuật theo phong cách APA 7 nghiêm ngặt. Lý tưởng cho các báo cáo, bài tiểu luận và bài viết ngắn."
     },
     "chicago.humanities": {
       "name": "Chicago / Turabian — Nhân văn",
-      "description": "Luận văn và luận án trong nhân văn, khoa học xã hội và nghệ thuật theo phong cách Chicago Ghi chú-Thư mục (lần 17) / Turabian lần 9. Trích dẫn xuất hiện trong chú thích cuối trang được đánh số. Thư mục được sắp xếp theo thứ tự bảng chữ cái ở cuối. Phổ biến trong triết học, lịch sử, văn học, khoa học xã hội và luật."
+      "sections": {
+        "title_page": {
+          "guidance": "Bìa Turabian bao gồm: tiêu đề (ở giữa, 1/3 từ trên xuống), tên tác giả, chương trình và trường đại học, thành phố và năm. Không có số trang.\nHồ sơ tạo trang bìa chứa dữ liệu dự án."
+        },
+        "abstract": {
+          "title": "Tóm tắt",
+          "guidance": "Turabian đề xuất một bản tóm tắt dài 150–350 từ cho luận án tiến sĩ.\nBao gồm: chủ đề, cách tiếp cận, lập luận chính, phương pháp luận và kết luận.\nViết nó ở thì hiện tại hoặc quá khứ — hãy chọn một và nhất quán."
+        },
+        "table_of_contents": {
+          "guidance": "Chỉ mục được tạo tự động. Ở Chicago, cấp độ chương và phần được bao gồm nhưng không bao gồm các tiểu mục từ cấp 3 trở đi."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Trong nhân văn, phần giới thiệu trình bày lập luận trung tâm (tuyên bố luận điểm), kho tài liệu hoặc các nguồn chính, phương pháp luận và sự biện minh.\nChicago cho phép áp dụng phong cách diễn ngôn hơn các bộ môn khác - bạn có thể sử dụng ngôi thứ nhất và phát triển lập luận với nhiều sắc thái ngay từ đầu.\nCác trích dẫn được đánh số ở cuối trang, không để trong ngoặc đơn. Hệ thống sẽ tự động chèn chúng."
+        },
+        "chapter_1": {
+          "title": "Chương 1",
+          "guidance": "Trong nhân văn, các chương phát triển luận cứ theo trình tự dần dần.\nMỗi chương phải có luận cứ riêng góp phần làm nên luận điểm trung tâm của luận án.\nSử dụng chú thích cuối trang cho các trích dẫn trực tiếp, tài liệu tham khảo và các nhận xét mở rộng có thể làm gián đoạn dòng văn bản.\nChú thích cuối trang ngắn có thể là dấu ngoặc kép; những câu dài có thể thảo luận thêm."
+        },
+        "chapter_2": {
+          "title": "Chương 2",
+          "guidance": "Chương thứ hai. Phát triển bước tiếp theo của lập luận.\nTrong lịch sử hoặc văn học, chương này có thể phân tích một tập văn bản, giai đoạn lịch sử hoặc tập hợp các nguồn chính.\nTrích dẫn các nguồn chính và phụ kèm theo chú thích cuối trang. Đối với các nguồn chính định kỳ, hãy sử dụng chữ viết tắt trong chú thích cuối trang sau trích dẫn đầy đủ đầu tiên."
+        },
+        "chapter_3": {
+          "title": "Chương 3",
+          "guidance": "Chương thứ ba. Nó đưa lập luận đến điểm phát triển lớn nhất của nó.\nBạn có thể thêm hoặc bớt các chương tùy thuộc vào cấu trúc luận án của mình — hầu hết các luận văn về nhân văn đều có 3–5 chương."
+        },
+        "conclusions": {
+          "title": "Kết luận",
+          "guidance": "Các kết luận tiếp nhận lập luận trọng tâm và làm phong phú thêm luận điểm đó bằng những gì đã học được trong các chương.\nTránh lặp lại những gì đã được nói. Nó mở ra những ý nghĩa rộng hơn, những cuộc tranh luận mở và những nghiên cứu khả thi trong tương lai.\nTrong ngành nhân văn, việc kết luận bằng những sắc thái hoặc câu hỏi mở là hợp lý — và đôi khi cần thiết."
+        },
+        "bibliography": {
+          "title": "Thư mục",
+          "guidance": "Trong Chicago Notes-Bibliography danh sách cuối cùng được gọi là \"Thư mục\" (không phải \"Tài liệu tham khảo\").\nNó được sắp xếp theo thứ tự abc theo họ của tác giả.\nThư mục được tạo tự động từ .bib của bạn khi bạn biên dịch.\nBao gồm tất cả các nguồn được trích dẫn trong chú thích cuối trang — và bạn có thể bao gồm các nguồn được tham khảo nhưng không được trích dẫn nếu chúng thêm ngữ cảnh."
+        },
+        "appendices": {
+          "title": "Phụ lục",
+          "guidance": "Trong lĩnh vực nhân văn, các phụ lục thường bao gồm: bản ghi lại các nguồn chính, các cuộc phỏng vấn hoàn chỉnh, tài liệu trực quan bổ sung, niên đại hoặc bảng chú giải các thuật ngữ chuyên ngành."
+        }
+      },
+      "description": "Luận văn, luận án về nhân văn, khoa học xã hội và nghệ thuật theo phong cách Chicago Notes-Thư mục (tái bản lần thứ 17) / Turabian tái bản lần thứ 9. Các trích dẫn được đánh số ở cuối trang, không để trong ngoặc đơn. Thư mục ở cuối được sắp xếp theo thứ tự bảng chữ cái. Được sử dụng rộng rãi trong triết học, lịch sử, văn học, khoa học xã hội và luật."
     },
     "mx.ipn.esfm": {
       "name": "IPN ESFM — Vật lý và Toán học",
-      "description": "Luận văn đại học và sau đại học từ Trường Cao đẳng Vật lý và Toán học IPN. Tối ưu hóa cho công việc có mật độ toán học cao: định lý, chứng minh, phương trình. Phong cách trích dẫn APA hoặc số tùy theo lĩnh vực."
+      "sections": {
+        "portada": {
+          "guidance": "Bìa ESFM bao gồm: lá chắn IPN, \"Trường Cao đẳng Vật lý và Toán học\", tên công trình, loại công trình (Luận văn để lấy danh hiệu/bằng cấp...), tên sinh viên, (các) giám đốc, địa điểm và năm.\nHồ sơ được tạo bằng dữ liệu dự án."
+        },
+        "resumen": {
+          "title": "Tóm tắt",
+          "guidance": "Tóm tắt 150–250 từ. Trong vật lý và toán học nó phải chính xác:\n• Vấn đề hoặc câu hỏi trọng tâm, được diễn đạt không dùng biệt ngữ không cần thiết.\n• Cách tiếp cận hoặc phương pháp chính.\n• Kết quả quan trọng nhất (với phép đo hoặc kích thước nếu có).\n• Ý nghĩa hoặc ứng dụng của kết quả.\nTránh các phương trình trong bản tóm tắt. Xác định các từ viết tắt bạn sử dụng."
+        },
+        "abstract": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch tiếng Anh của bản tóm tắt. Được khuyên dùng nếu bạn dự định xuất bản hoặc trình bày tại các hội nghị quốc tế."
+        },
+        "tabla_contenidos": {
+          "guidance": "Chỉ mục được tạo tự động. Trong các tác phẩm toán học, thông thường người ta cũng đưa vào danh sách các ký hiệu và ký hiệu trước phần giới thiệu."
+        },
+        "introduccion": {
+          "title": "Giới thiệu",
+          "guidance": "Phần giới thiệu về vật lý/toán học đặt tác phẩm vào bối cảnh của bộ môn:\n• Động cơ: tại sao vấn đề lại thú vị hoặc có liên quan?\n• Bối cảnh: liên quan trực tiếp đến công việc trước đây.\n• Tuyên bố chính xác về vấn đề hoặc câu hỏi nghiên cứu.\n• Kết quả chính (công bố mà không chứng minh - mà đi vào cơ thể).\n• Cấu trúc tài liệu.\nBạn có thể sử dụng ký hiệu toán học từ đây nhưng vẫn có thể truy cập được."
+        },
+        "preliminares": {
+          "title": "Sơ bộ",
+          "guidance": "Phần bạn xác định ngôn ngữ toán học mà bạn sẽ sử dụng trong phần còn lại của công việc.\nBao gồm: các định nghĩa cơ bản, ký hiệu và các kết quả đã biết mà bạn sẽ cần trích dẫn.\nKhông chứng minh các kết quả đã biết trừ khi chúng cần thiết để thiết lập ký hiệu chính xác.\nSử dụng các khối Định lý, Định nghĩa và Bổ đề của trình soạn thảo để cấu trúc nội dung của bạn.\nVí dụ về cấu trúc: \"Định nghĩa 2.1 (Không gian Hilbert)...\", \"Bổ đề 2.3...\", \"Định lý 2.5 (Quang phổ)...\""
+        },
+        "desarrollo": {
+          "title": "Phát triển",
+          "guidance": "Nội dung chính của tác phẩm. Trong toán học thuần túy: sự phát triển của lý thuyết với những bằng chứng đầy đủ.\nTrong vật lý: sự phát triển của mô hình, lý thuyết hoặc thí nghiệm.\nCấu trúc mỗi chương với các mệnh đề, bổ đề, định lý và chứng minh.\nMỗi bản demo phải đóng rõ ràng bằng □ hoặc \"∎\" (trình chỉnh sửa sẽ tự động chèn phần này).\nCác phương trình được đánh số nên được tham chiếu từ văn bản: sử dụng \\eqref{} hoặc \\cref{}."
+        },
+        "resultados": {
+          "title": "Kết quả và ứng dụng",
+          "guidance": "Nếu tác phẩm của bạn có ứng dụng số, tính toán hoặc thử nghiệm, hãy gửi chúng tại đây.\nĐối với vật lý tính toán: bao gồm các thông số mô phỏng, độ hội tụ và so sánh với kết quả phân tích hoặc thực nghiệm.\nĐối với vật lý thực nghiệm: trình bày dữ liệu có độ không đảm bảo, phân tích thống kê và đồ thị."
+        },
+        "conclusiones": {
+          "title": "Kết luận",
+          "guidance": "Tóm tắt các kết quả thu được và mức độ liên quan của chúng.\nTrong toán học: những phỏng đoán nào đã được giải quyết, công trình mở ra những câu hỏi gì.\nTrong vật lý: những hiện tượng nào đã được giải thích, những dự đoán nào mà mô hình đưa ra.\nChỉ ra rõ ràng những gì là nguyên bản trong tác phẩm của bạn so với những gì đã biết\nChỉ ra những vấn đề còn tồn tại hoặc những mở rộng tự nhiên của tác phẩm."
+        },
+        "referencias": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Danh sách tài liệu tham khảo trong APA 7 (được tạo tự động).\nĐối với các bài viết từ các tạp chí vật lý/toán học, hãy sử dụng trình nhập DOI - Crossref có nhiều bài viết nhất từ Tạp chí Vật lý, Tạp chí Vật lý Toán học, v.v.\nĐối với sách giáo khoa cổ điển (Rudin, Spivak, Peskin & Schroeder, v.v.): thêm mục nhập thủ công vào .bib nếu chúng không có trong Crossref."
+        },
+        "apendices": {
+          "title": "Phụ lục",
+          "guidance": "Tài liệu kỹ thuật bổ sung: trình diễn dài dòng có thể làm gián đoạn luồng lập luận chính, tính toán chi tiết, mã mô phỏng, bảng dữ liệu thực nghiệm."
+        }
+      },
+      "description": "Luận văn đại học và sau đại học của Trường Cao đẳng Vật lý và Toán học của IPN. Được thiết kế cho các công việc có mật độ toán học cao: định lý, bổ đề, hệ quả, chứng minh, ký hiệu vật lý và phương trình phức tạp. Thư mục APA dành cho các công trình tổng quát hoặc kiểu số cho các ấn phẩm vật lý."
     },
     "mx.ipn.sepi": {
-      "name": "IPN SEPI — Cao học Kỹ thuật và Khoa học",
-      "description": "Luận văn từ Bộ phận Nghiên cứu Sau đại học IPN. Định dạng IPN với tài liệu tham khảo IEEE cho kỹ thuật hoặc APA cho khoa học. Giấy legal, lề đặc thù IPN."
+      "name": "IPN SEPI — Sau đại học về Kỹ thuật và Khoa học",
+      "sections": {
+        "portada": {
+          "guidance": "Vỏ IPN-SEPI bao gồm: Lá chắn IPN, tên đơn vị học thuật (ESIME/ESCOM/UPIITA...), tên công trình, loại luận án (để lấy bằng Thạc sĩ/Tiến sĩ...), tên sinh viên, người hướng dẫn luận án, địa điểm và năm.\nHồ sơ tạo trang bìa với dữ liệu dự án."
+        },
+        "resumen": {
+          "title": "Tóm tắt",
+          "guidance": "Tóm tắt kỹ thuật bằng tiếng Tây Ban Nha dài 200–300 từ. SEPI yêu cầu nó bằng tiếng Tây Ban Nha.\nNó phải bao gồm: mục tiêu, phương pháp, kết quả chính và kết luận.\nCuối cùng: 5–8 từ khóa kỹ thuật."
+        },
+        "abstract": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch tiếng Anh của bản tóm tắt. SEPI-IPN yêu cầu nó trong tất cả các chương trình sau đại học.\nTừ khóa: giống như tiếng Tây Ban Nha, tiếng Anh."
+        },
+        "tabla_contenidos": {
+          "guidance": "Chỉ mục được tạo tự động. IPN cũng yêu cầu danh sách các số liệu, danh sách các bảng và nếu có, danh sách các thuật toán hoặc danh sách mã."
+        },
+        "introduccion": {
+          "title": "Giới thiệu",
+          "guidance": "Phần giới thiệu IPN-SEPI phải bao gồm:\n1. Bối cảnh công nghệ hoặc khoa học của vấn đề.\n2. Động cơ và sự biện minh.\n3. Giả thuyết hoặc câu hỏi nghiên cứu.\n4. Mục tiêu chung và mục tiêu cụ thể.\n5. Phạm vi và giới hạn.\n6. Tổ chức văn bản.\nCác trích dẫn trong IEEE là số: [1], [2], [3]…"
+        },
+        "estado_arte": {
+          "title": "Hiện đại",
+          "guidance": "Đánh giá quan trọng về tình trạng hiện tại. Trong SEPI-IPN, điều này là bắt buộc và phải:\n• Xác định các công trình phù hợp nhất (5–10 năm qua; các hội nghị và tạp chí của IEEE/ACM/Elsevier).\n• So sánh các phương pháp: bảng so sánh các phương pháp, kết quả và hạn chế.\n• Xác định khoảng trống hoặc hạn chế mà công việc của bạn giải quyết được.\n• Giải thích tại sao đề xuất của bạn lại khác biệt hoặc ưu việt hơn.\nTrích dẫn có số trong ngoặc: \"Pérez và cộng sự [5] đã đề xuất...\""
+        },
+        "metodologia": {
+          "title": "Phương pháp hoặc sự phát triển",
+          "guidance": "Trong kỹ thuật, phương pháp mô tả giải pháp được đề xuất:\n• Kiến trúc hoặc thiết kế hệ thống.\n• Mô hình toán học hoặc hình thức nếu có.\n• Phát triển các thuật toán (sử dụng khối Algorithm).\n• Triển khai: ngôn ngữ, framework, phần cứng.\n• Sơ đồ luồng chung của hệ thống.\nMức độ chi tiết phải cho phép công việc được nhân rộng."
+        },
+        "resultados": {
+          "title": "Kết quả và phân tích",
+          "guidance": "Trình bày và phân tích kết quả thử nghiệm hoặc mô phỏng:\n• Bố trí thí nghiệm: thiết bị, thông số, điều kiện.\n• Các chỉ số đánh giá: độ chính xác, thời gian, mức tiêu thụ, hiệu suất, v.v.\n• So sánh với hiện trạng (bảng so sánh).\n• Phân tích thống kê nếu có (giá trị trung bình, độ lệch, khoảng tin cậy).\nTrong IEEE, mỗi hình và bảng phải có số và mô tả ngắn gọn."
+        },
+        "conclusiones": {
+          "title": "Kết luận và công việc trong tương lai",
+          "guidance": "Kết thúc công việc một cách chặt chẽ về mặt kỹ thuật:\n• Mục tiêu đạt được so với mục tiêu đạt được.\n• Đóng góp ban đầu của tác phẩm.\n• Đã xác định được những hạn chế về mặt kỹ thuật.\n• Công việc trong tương lai: những cải tiến cụ thể, khả năng mở rộng, các vấn đề còn tồn tại.\nIPN-SEPI đặc biệt coi trọng việc đề cập đến các ấn phẩm hoặc ứng dụng công nghiệp có thể có."
+        },
+        "referencias": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Trong IEEE, các tham chiếu được đánh số theo thứ tự xuất hiện.\nDanh sách được tạo tự động từ .bib của bạn.\nĐối với các bài viết của IEEE và ACM: sử dụng trình nhập DOI.\nIPN yêu cầu bao gồm DOI khi có sẵn."
+        },
+        "anexos": {
+          "title": "Phụ lục",
+          "guidance": "Toàn bộ mã nguồn, tập lệnh, cấu hình phần cứng/phần mềm, bảng dữ liệu, hướng dẫn sử dụng, dữ liệu thử nghiệm thô.\nSố: Phụ lục A, Phụ lục B… và tham chiếu từng phụ lục trong văn bản."
+        }
+      },
+      "description": "Luận văn của Phòng Nghiên cứu và Sau đại học (SEPI) của Viện Bách khoa Quốc gia. Áp dụng cho các đơn vị CINVESTAV, ESIME, ESCOM, UPIITA và SEPI. Thư mục IEEE về Kỹ thuật và Công nghệ; Định dạng IPN có lề, kiểu chữ và cấu trúc dành riêng cho Ban Giám đốc Nghiên cứu và Sau đại học."
     },
     "mx.ipn.upibi": {
       "name": "IPN UPIBI — Công nghệ sinh học",
-      "description": "Luận văn từ Đơn vị Chuyên nghiệp Liên ngành Công nghệ sinh học IPN. Tập trung vào sinh hóa, vi sinh vật học, kỹ thuật sinh học, tin sinh học và công nghệ sinh học môi trường. Tài liệu tham khảo APA hoặc Vancouver tùy theo lĩnh vực."
+      "sections": {
+        "portada": {
+          "guidance": "Trang bìa UPIBI bao gồm: lá chắn IPN, \"Đơn vị chuyên môn liên ngành về công nghệ sinh học\", nghề nghiệp hoặc chương trình, tên tác phẩm, loại luận án, tên sinh viên, (các) giám đốc, địa điểm và năm."
+        },
+        "resumen": {
+          "title": "Tóm tắt",
+          "guidance": "Tóm tắt khoa học 200–300 từ bằng tiếng Tây Ban Nha. Trong công nghệ sinh học, bản tóm tắt phải bao gồm:\n• Mục tiêu của nghiên cứu.\n• Nguyên liệu/sinh vật/chủng/mẫu chính được sử dụng.\n• Phương pháp cốt lõi (loại thí nghiệm, kỹ thuật phân tích chính).\n• Kết quả quan trọng nhất (có dữ liệu định lượng nếu có thể).\n• Kết luận hoặc ứng dụng.\nCuối cùng: 5–8 từ khóa bằng tiếng Tây Ban Nha."
+        },
+        "abstract": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch tiếng Anh của bản tóm tắt. UPIBI yêu cầu nó cho tất cả các công việc cấp bằng và sau đại học.\nTừ khóa bằng tiếng Anh: giống như tiếng Tây Ban Nha."
+        },
+        "tabla_contenidos": {
+          "guidance": "Chỉ mục được tạo tự động. Trong các tác phẩm có nhiều hình ảnh (gel, sắc ký đồ, đường cong tăng trưởng), nó bao gồm danh sách các hình và danh sách bảng."
+        },
+        "introduccion": {
+          "title": "Giới thiệu",
+          "guidance": "Việc giới thiệu công nghệ sinh học bối cảnh hóa vấn đề từ sinh học và kỹ thuật:\n• Tầm quan trọng của vi sinh vật, quy trình, hợp chất hoặc vấn đề được nghiên cứu.\n• Công nghệ mới nhất: các tác phẩm trước đây có liên quan (sử dụng APA: Tác giả, năm).\n• Cơ sở lý luận: tại sao nghiên cứu này lại phù hợp?\n• Giả thuyết hoạt động (nếu thiết kế mang tính thử nghiệm).\n• Mục tiêu chung và mục tiêu cụ thể.\nHãy cụ thể về phân loại, chủng, điều kiện và hợp chất ngay từ đầu."
+        },
+        "marco_teorico": {
+          "title": "Khung lý thuyết",
+          "guidance": "Dựa trên tài liệu khoa học:\n• Sinh học/hóa sinh của hệ thống được nghiên cứu (vi sinh vật, enzyme, con đường trao đổi chất, v.v.).\n• Nguyên tắc của quy trình hoặc kỹ thuật chính (lên men, HPLC, PCR, v.v.).\n• Các mô hình động học hoặc toán học nếu có (Michaelis-Menten, Monod, v.v.).\n• Tiêu chuẩn hoặc quy định nếu có liên quan (NOM, FDA, WHO)."
+        },
+        "materiales_metodos": {
+          "title": "Vật liệu và phương pháp",
+          "guidance": "Trong công nghệ sinh học, phần vật liệu và phương pháp rất quan trọng đối với khả năng tái sản xuất. Bao gồm:\n• Vật liệu sinh học: sinh vật, chủng (có số catalog hoặc số gia nhập), dòng tế bào, mẫu vật (có nguồn gốc và điều kiện bảo quản).\n• Thuốc thử: tên, chủng loại, nhà cung cấp.\n• Thiết bị: model, nhãn hiệu, điều kiện hoạt động.\n• Phương pháp phân tích: điều kiện chính xác (nhiệt độ, pH, thời gian, nồng độ).\n• Thiết kế thực nghiệm: các biến độc lập, phụ thuộc và kiểm soát; bản sao.\n• Phân tích thống kê: phần mềm, kiểm định và mức ý nghĩa (α = 0,05).\nMức độ chi tiết sẽ cho phép phòng thí nghiệm khác lặp lại thí nghiệm một cách chính xác."
+        },
+        "resultados": {
+          "title": "Kết quả",
+          "guidance": "Trình bày dữ liệu một cách khách quan, không diễn giải:\n• Hình ảnh: sắc ký đồ, đường cong tăng trưởng, gel, kính hiển vi - mỗi hình ảnh đều có số, tiêu đề mô tả (bên dưới) và đơn vị hoàn chỉnh trên các trục.\n• Bảng: dữ liệu được lập bảng với giá trị trung bình ± độ lệch chuẩn, đơn vị trong tiêu đề.\n• Thống kê: cho biết sự khác biệt có ý nghĩa hay không (p < 0,05, ANOVA, Tukey, v.v.).\n• Các chữ cái thống kê trong bảng và hình nếu có (a, b, ab đối với các nhóm đồng nhất).\nHãy tham khảo rõ ràng từng hình hoặc bảng trong văn bản trước khi nó xuất hiện."
+        },
+        "discusion": {
+          "title": "Thảo luận",
+          "guidance": "Giải thích kết quả trong bối cảnh tài liệu:\n• Kết quả có xác nhận hay bác bỏ giả thuyết này không?\n• So sánh với các nghiên cứu trước: có trùng khớp không? chúng có khác nhau không? Tại sao chúng có thể khác nhau (chủng, điều kiện, phương pháp)?\n• Giải thích các cơ chế sinh học hoặc sinh hóa chứng minh kết quả.\n• Thảo luận về những hạn chế về phương pháp và tác động của chúng đến kết quả.\n• Ý nghĩa: nó có ý nghĩa gì đối với công nghiệp, y học hay môi trường?"
+        },
+        "conclusiones": {
+          "title": "Kết luận",
+          "guidance": "Tóm tắt những điều quan trọng nhất bằng thuật ngữ trực tiếp và có thể đo lường được:\n• Mỗi kết luận tương ứng với một mục tiêu cụ thể.\n• Tránh lặp lại phần tóm tắt kết quả — nó kết luận, không báo cáo.\n• Cho biết sự đóng góp cho kiến ​​thức hoặc ngành.\n• Khuyến nghị cho nghiên cứu trong tương lai."
+        },
+        "referencias": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Danh sách tài liệu tham khảo trong APA 7 (được tạo tự động).\nĐối với các bài báo khoa học: sử dụng trình nhập DOI — PubMed, ScienceDirect và Web of Science có DOI cho hầu hết các bài báo về công nghệ sinh học.\nĐối với bài viết không có DOI: thêm URL của tạp chí hoặc cơ sở dữ liệu."
+        },
+        "anexos": {
+          "title": "Phụ lục",
+          "guidance": "Dữ liệu thô từ các thí nghiệm, gel hoàn chỉnh (chưa được cắt xén), trình tự nucleotide hoặc axit amin, số gia nhập GenBank, chứng chỉ phân tích thuốc thử, các quy trình hoàn chỉnh không có trong M&M."
+        }
+      },
+      "description": "Luận văn của Đơn vị chuyên môn liên ngành về Công nghệ sinh học của IPN. Nó bao gồm hóa sinh, vi sinh, kỹ thuật xử lý sinh học, tin sinh học, công nghệ sinh học môi trường và dược phẩm. Tính chất thực nghiệm và định lượng với độ chính xác cao trong việc trình bày dữ liệu. Thư mục APA 7 cho hầu hết các lĩnh vực; Vancouver được chấp nhận ở những lĩnh vực gần gũi hơn với khoa học sức khỏe."
     },
     "mx.ipn.upitta": {
-      "name": "IPN UPITTA — Công nghệ Tiên tiến",
-      "description": "Luận văn từ Đơn vị Chuyên nghiệp Liên ngành Công nghệ Tiên tiến IPN. Tập trung vào cơ điện tử, hệ thống thông minh, tự động hóa và công nghệ mới nổi. Tài liệu tham khảo IEEE."
+      "name": "IPN UPITTA — Công nghệ tiên tiến",
+      "sections": {
+        "portada": {
+          "guidance": "Bìa UPITTA bao gồm: Lá chắn IPN, \"Đơn vị chuyên môn liên ngành của công nghệ tiên tiến\", tên tác phẩm, loại luận án, tên sinh viên, giám đốc, địa điểm và năm."
+        },
+        "resumen": {
+          "title": "Tóm tắt",
+          "guidance": "Tóm tắt kỹ thuật bằng tiếng Tây Ban Nha dài 200–250 từ. Bản chất liên ngành của UPITTA có nghĩa là bản tóm tắt phải dễ hiểu đối với người đọc từ các lĩnh vực khác nhau (kỹ thuật, máy tính, toán ứng dụng).\nBao gồm: vấn đề kỹ thuật, giải pháp đề xuất, công nghệ chủ chốt và kết quả chính có thể đo lường được."
+        },
+        "abstract": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch tiếng Anh. Được UPITTA yêu cầu đối với tất cả các công việc cấp bằng và sau đại học.\nTừ khóa tiếng Anh: 5–8 thuật ngữ kỹ thuật liên quan."
+        },
+        "tabla_contenidos": {
+          "guidance": "Chỉ mục được tạo tự động. Bao gồm danh sách hình và danh sách bảng nếu có nhiều hơn 5 loại mỗi loại."
+        },
+        "introduccion": {
+          "title": "Giới thiệu",
+          "guidance": "Lối cảnh hóa vấn đề từ góc độ liên ngành của UPITTA:\n• Lĩnh vực công nghệ và sự liên quan của nó (cơ điện tử, AI, tự động hóa, v.v.).\n• Vấn đề cụ thể và tác động của nó (công nghiệp, xã hội, khoa học).\n• Các công trình liên quan quan trọng nhất (trích dẫn theo số IEEE: [1], [2]).\n• Mục tiêu chung và mục tiêu cụ thể.\n• Đóng góp cụ thể: bạn đề xuất điều gì chưa tồn tại hoặc chưa thực hiện tốt?\n• Tổ chức tài liệu."
+        },
+        "estado_arte": {
+          "title": "Khung lý thuyết và hiện đại",
+          "guidance": "Sự kết hợp giữa công nghệ tiên tiến và khung lý thuyết, thích hợp cho công việc liên ngành:\n• Xem lại các công việc trước đây phù hợp nhất trong từng lĩnh vực mà dự án của bạn đề cập tới.\n• Trình bày các lý thuyết hoặc mô hình toán học làm nền tảng cho giải pháp của bạn.\n• Bảng so sánh các giải pháp hiện có với giải pháp của bạn.\n• Xác định rõ ràng lĩnh vực thích hợp hoặc cải tiến mà công việc của bạn mang lại.\nTại UPITTA, cách tiếp cận liên ngành là một thế mạnh — nó cho thấy cách bạn tích hợp các lĩnh vực khác nhau."
+        },
+        "diseno": {
+          "title": "Thiết kế hệ thống",
+          "guidance": "Trình bày kiến trúc hoặc thiết kế hoàn chỉnh của hệ thống trước khi triển khai:\n• Kiến trúc chung: sơ đồ khối hoặc thành phần.\n• Mô hình toán học hoặc động lực học (dành cho hệ thống điều khiển, robot, v.v.).\n• Lựa chọn và chứng minh công nghệ (cảm biến, cơ cấu chấp hành, nền tảng, thuật toán).\n• Lưu đồ hoặc máy trạng thái nếu có.\n• Hạn chế về thiết kế: công suất, kích thước, chi phí, thời gian đáp ứng.\nThiết kế phải độc lập với việc thực hiện."
+        },
+        "implementacion": {
+          "title": "Thực hiện và kết quả",
+          "guidance": "Mô tả cách thực hiện và trình bày kết quả thực nghiệm:\n• Môi trường phát triển: phần cứng, phần mềm, phiên bản.\n• Triển khai theo mô-đun hoặc hệ thống con.\n• Kiểm thử tích hợp: Toàn bộ hệ thống có hoạt động như thiết kế dự đoán không?\n• Kết quả định lượng: số liệu (độ chính xác, thời gian phản hồi, mức tiêu thụ, lỗi RMS, v.v.).\n• So sánh với hiện trạng hoặc với đường cơ sở.\nTại UPITTA, các bài kiểm tra trong điều kiện thực tế hoặc gần như thực tế đều có giá trị."
+        },
+        "conclusiones": {
+          "title": "Kết luận và công việc trong tương lai",
+          "guidance": "Kết thúc công việc một cách chặt chẽ về mặt kỹ thuật và liên ngành:\n• Mục tiêu đạt được so với mục tiêu đề ra (có bằng chứng định lượng).\n• Những đóng góp ban đầu (tích hợp kỹ thuật, phương pháp luận hoặc chuyên ngành).\n• Hạn chế của hệ thống hoặc nghiên cứu.\n• Công việc trong tương lai: cải tiến, mở rộng, ứng dụng công nghiệp hoặc nghiên cứu có thể.\nĐề cập đến việc công việc đó có dẫn đến hoặc có thể dẫn đến các ấn phẩm hoặc bằng sáng chế hay không."
+        },
+        "referencias": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Tham chiếu số IEEE theo thứ tự xuất hiện (được tạo tự động).\nSử dụng trình nhập DOI cho các bài viết từ IEEE Xplore, ACM DL, v.v.\nBao gồm DOI trong mỗi tham chiếu — đó là yêu cầu của IEEE."
+        },
+        "anexos": {
+          "title": "Phụ lục",
+          "guidance": "Mã nguồn hoàn chỉnh, bảng dữ liệu thành phần, bản vẽ cơ hoặc điện, quy trình hiệu chuẩn, hướng dẫn sử dụng, dữ liệu thử nghiệm thô."
+        }
+      },
+      "description": "Luận văn của Đơn vị chuyên môn liên ngành về công nghệ tiên tiến của IPN. Định hướng về cơ điện tử, hệ thống thông minh, tự động hóa, robot và các công nghệ mới nổi. Tính chất liên ngành: tích hợp kỹ thuật, máy tính và khoa học cơ bản. Thư mục số IEEE."
     },
     "mx.unam.posgrado": {
       "name": "UNAM — Sau đại học",
-      "description": "Luận văn thạc sĩ và tiến sĩ từ UNAM. Dựa trên hướng dẫn của Ban Điều phối Nghiên cứu Sau đại học (CEP-UNAM). APA 7, XeLaTeX, định dạng giấy legal."
+      "sections": {
+        "portada": {
+          "guidance": "Bìa UNAM bao gồm: tấm khiên UNAM, tên khoa hoặc viện, tên công trình, loại luận văn (để lấy bằng Thạc sĩ/Tiến sĩ về...), tên sinh viên, người hướng dẫn luận văn, hội đồng hướng dẫn, địa điểm và năm.\nHồ sơ tự động tạo bìa với dữ liệu bạn đã định cấu hình khi tạo dự án."
+        },
+        "dedicatoria": {
+          "title": "Cống hiến",
+          "guidance": "Văn bản ngắn (1–5 dòng) dành tặng những người quan trọng. Đó là cá nhân và tùy chọn.\nTại UNAM nó không có đánh số trang và được in trên một trang riêng."
+        },
+        "agradecimientos": {
+          "title": "Cảm ơn",
+          "guidance": "Đề cập đến giám đốc, ủy ban hướng dẫn, CONACYT/CONAHCyT (nếu có học bổng), phòng thí nghiệm hoặc nhóm nghiên cứu và những người chủ chốt trong công việc.\nBao gồm số dự án hoặc học bổng nếu có (ví dụ: \"Học bổng CONAHCyT số XXXXXX\")."
+        },
+        "resumen": {
+          "title": "Tóm tắt",
+          "guidance": "Tóm tắt bằng tiếng Tây Ban Nha khoảng 200–300 từ. CEP-UNAM yêu cầu nó bằng tiếng Tây Ban Nha.\nBao gồm: mục tiêu, phương pháp, kết quả chính và kết luận.\nCuối cùng: 4–6 từ khóa được phân tách bằng dấu chấm phẩy."
+        },
+        "abstract": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch tóm tắt sang tiếng Anh. Nhiều chương trình tiến sĩ của UNAM yêu cầu nó.\nĐịnh dạng giống hệt với bản tóm tắt bằng tiếng Tây Ban Nha.\nTừ khóa: giống như tiếng Tây Ban Nha, tiếng Anh."
+        },
+        "tabla_contenidos": {
+          "guidance": "Chỉ mục được tạo tự động. Bao gồm các chương, mục và tiểu mục.\nUNAM nói chung cũng yêu cầu danh sách các số liệu và danh sách các bảng nếu có nhiều hơn 5."
+        },
+        "introduccion": {
+          "title": "Giới thiệu",
+          "guidance": "Phần giới thiệu UNAM phải bao gồm:\n1. Bối cảnh và bối cảnh của vấn đề.\n2. Tuyên bố vấn đề và giải thích.\n3. Giả thuyết hoặc câu hỏi nghiên cứu.\n4. Mục tiêu chung và mục tiêu cụ thể.\n5. Phạm vi và giới hạn.\n6. Cấu trúc của luận án (mỗi chương gồm có nội dung gì).\nĐộ dài đề xuất: 4–8 trang."
+        },
+        "marco_teorico": {
+          "title": "Khung lý thuyết",
+          "guidance": "Rà soát, tổng hợp các tài liệu liên quan. Tại UNAM, khung lý thuyết phải:\n• Trích dẫn các nguồn chính và hiện tại (10 năm qua; kinh điển nếu chúng là cơ bản).\n• Sắp xếp các ý tưởng một cách hợp lý chứ không phải theo dạng danh sách tóm tắt.\n• Sử dụng APA 7 cho tất cả các trích dẫn — hệ thống tự động tạo ra chúng.\n• Xác định công nghệ tiên tiến nhất và khoảng trống mà nghiên cứu của bạn lấp đầy."
+        },
+        "metodologia": {
+          "title": "Phương pháp",
+          "guidance": "Mô tả phương pháp luận đủ chi tiết để nhân rộng. Bao gồm:\n• Loại hình nghiên cứu và thiết kế.\n• Dân số, mẫu và tiêu chí lựa chọn.\n• Dụng cụ và thủ tục.\n• Phân tích dữ liệu (phần mềm, số liệu thống kê hoặc danh mục định tính).\n• Cân nhắc về mặt đạo đức và sự đồng ý nếu có."
+        },
+        "resultados": {
+          "title": "Kết quả",
+          "guidance": "Trình bày kết quả một cách khách quan. Sử dụng bảng biểu và hình ảnh có tham chiếu trong văn bản.\nTại UNAM, mỗi hình và bảng phải có: số hiệu, tiêu đề mô tả (ở trên đối với bảng, bên dưới đối với hình) và nguồn nếu có.\nĐừng diễn giải kết quả ở đây — điều đó sẽ được đưa vào phần Thảo luận."
+        },
+        "discusion": {
+          "title": "Thảo luận",
+          "guidance": "Giải thích kết quả trong bối cảnh câu hỏi nghiên cứu của bạn và tài liệu.\nSo sánh với các nghiên cứu trước, chỉ ra sự trùng hợp và khác biệt.\nThảo luận ý nghĩa lý luận và thực tiễn.\nThành thật thừa nhận những hạn chế."
+        },
+        "conclusiones": {
+          "title": "Kết luận",
+          "guidance": "Trả lời trực tiếp các mục tiêu và giả thuyết của bạn. CEP-UNAM hy vọng:\n• Tổng hợp các phát hiện chính.\n• Đóng góp ban đầu cho lĩnh vực này.\n• Khuyến nghị cho nghiên cứu trong tương lai.\n• Ý nghĩa đối với thực tiễn hoặc chính sách (nếu có).\nĐộ dài: 3–5 trang. Không nhập thông tin mới."
+        },
+        "referencias": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Danh sách tham khảo được tạo tự động ở định dạng APA 7.\nUNAM yêu cầu APA 7 trong hầu hết các chương trình sau đại học.\nĐảm bảo mỗi nguồn được trích dẫn đều nằm trong .bib và ngược lại.\nSử dụng trình nhập DOI để nhận các mục nhập hoàn chỉnh và chuẩn hóa."
+        },
+        "anexos": {
+          "title": "Phụ lục",
+          "guidance": "Tài liệu bổ sung hỗ trợ công việc mà không làm gián đoạn dòng chảy chính:\ncông cụ thu thập, bảng dữ liệu thô, mã nguồn, thư đồng ý.\nSố: Phụ lục A, Phụ lục B… Tham khảo từng phụ lục trong văn bản chính."
+        }
+      },
+      "description": "Luận văn và luận văn sau đại học của Đại học Tự trị Quốc gia Mexico. Dựa trên hướng dẫn của Cơ quan Điều phối Nghiên cứu Sau đại học (CEP-UNAM): giấy Letter hoặc Legal, lề 2,5 cm, giãn dòng 1,5 dòng, APA 7, bìa có hình quốc huy chính thức."
+    },
+    "generic.tesina": {
+      "name": "Luận văn tổng quát",
+      "sections": {
+        "title_page": {
+          "guidance": "Trang bìa được tạo tự động với dữ liệu tổ chức được định cấu hình khi tạo dự án.\nBạn không cần phải viết nội dung ở đây."
+        },
+        "table_of_contents": {
+          "guidance": "Chỉ mục được tạo tự động từ các phần đã bật của bạn.\nBạn không cần phải viết gì ở đây."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Phần giới thiệu trình bày chủ đề và tạo động lực làm việc. Đối với một luận án, nó bao gồm:\n1. Tóm tắt bối cảnh của chủ đề (từ khái quát đến cụ thể).\n2. Vấn đề hoặc câu hỏi mà tác phẩm giải quyết.\n3. Mục tiêu chung.\n4. Giải thích: tại sao việc nghiên cứu nó lại phù hợp?\n5. Mô tả ngắn gọn cách tổ chức tài liệu.\nĐộ dài thông thường: 1–3 trang."
+        },
+        "development": {
+          "title": "Phát triển",
+          "guidance": "Phát triển là trọng tâm của công việc. Chia nó thành các phần phụ hợp lý:\n• Khung khái niệm: xác định các khái niệm chính với sự hỗ trợ về thư mục.\n• Phân tích hoặc phát triển chủ đề: lập luận, đề xuất hoặc nghiên cứu trọng tâm.\n• Kết quả hoặc phát hiện nếu có.\nMỗi ý tưởng phải được hỗ trợ bởi các nguồn. Sử dụng khối \"Trích dẫn thư mục\" để tham khảo.\nĐộ dài thông thường: 10–30 trang."
+        },
+        "conclusions": {
+          "title": "Kết luận",
+          "guidance": "Kết thúc công việc bằng cách phản hồi trực tiếp mục tiêu nêu trong phần giới thiệu:\n• Mục tiêu có đạt được không? Những gì đã được tìm thấy?\n• Suy nghĩ về sự phù hợp của công việc.\n• Đã tìm thấy những hạn chế.\n• Khuyến nghị hoặc dòng công việc trong tương lai.\nĐộ dài điển hình: 1–2 trang. Không nhập thông tin mới vào đây."
+        },
+        "references": {
+          "guidance": "Danh sách tham chiếu được tạo tự động từ tệp .bib của bạn khi bạn biên dịch.\nSử dụng trình nhập DOI (Ctrl+[ > bảng DOI) để dễ dàng thêm nguồn.\nKiểu APA 7 được áp dụng tự động."
+        }
+      },
+      "description": "Bản đơn giản dành cho bằng cử nhân: giới thiệu, phát triển và kết luận. Lớp sách, XeLaTeX, biber, APA 7."
+    },
+    "generic.thesis": {
+      "name": "Luận văn chung",
+      "sections": {
+        "title_page": {
+          "guidance": "Trang bìa được hồ sơ tự động tạo ra với dữ liệu của cơ sở mà bạn đã cấu hình khi tạo dự án (tên sinh viên, cơ sở đào tạo, chức danh, người hướng dẫn luận án, năm).\nBạn không cần phải viết nội dung ở đây."
+        },
+        "table_of_contents": {
+          "guidance": "Mục lục được tạo tự động từ các phần được kích hoạt trong dự án của bạn.\nBạn không cần phải viết gì cả — chỉ cần đảm bảo các chương của bạn có tiêu đề."
+        },
+        "abstract_es": {
+          "title": "Tóm tắt",
+          "guidance": "Bản tóm tắt trình bày luận điểm của bạn trong 150–250 từ. Bạn phải trả lời ngắn gọn:\n• Vấn đề hoặc câu hỏi nghiên cứu là gì?\n• Bạn đã sử dụng phương pháp nào?\n• Kết quả chính là gì?\n• Kết luận hoặc đóng góp là gì?\nKhông trích dẫn tài liệu tham khảo trong phần tóm tắt. Viết nó ở thì quá khứ. Bao gồm 4–6 từ khóa ở cuối."
+        },
+        "abstract_en": {
+          "title": "Tóm tắt",
+          "guidance": "Bản dịch trung thực của bản tóm tắt sang tiếng Anh, ở cùng định dạng (150–250 từ).\nNhiều tổ chức sau đại học yêu cầu nó để lập chỉ mục quốc tế.\nTừ khóa: giống từ khóa tóm tắt, bằng tiếng Anh."
+        },
+        "dedication": {
+          "title": "Cống hiến",
+          "guidance": "Văn bản ngắn (1–5 dòng) dành riêng cho những người quan trọng đối với tác giả.\nĐó là cá nhân và tùy chọn. Một số ví dụ: \"Gửi tới bố mẹ tôi, vì sự hỗ trợ vô điều kiện của họ.\"\nNó không có tiêu đề rõ ràng trong hầu hết các kiểu — hồ sơ sẽ xử lý nó."
+        },
+        "acknowledgements": {
+          "title": "Cảm ơn",
+          "guidance": "Đề cập đến những người đã đóng góp cho nghiên cứu của bạn: giám đốc, độc giả, đồng nghiệp, tổ chức, nhà tài trợ.\nHãy cụ thể: đề cập đến vai trò của từng cá nhân, tổ chức.\nĐộ dài đề xuất: nửa trang đến một trang."
+        },
+        "introduction": {
+          "title": "Giới thiệu",
+          "guidance": "Phần giới thiệu sẽ bối cảnh hóa tác phẩm của bạn và thúc đẩy người đọc tiếp tục đọc. Phải bao gồm:\n1. Bối cảnh chung của chủ đề (từ rộng đến cụ thể).\n2. Tuyên bố vấn đề: tồn tại khoảng trống hoặc nhu cầu nào?\n3. Câu hỏi hoặc giả thuyết nghiên cứu.\n4. Mục tiêu chung và mục tiêu cụ thể.\n5. Cơ sở lý luận: tại sao việc nghiên cứu vấn đề này lại phù hợp?\n6. Phạm vi và giới hạn của nghiên cứu.\n7. Mô tả tóm tắt cấu trúc của luận án.\nĐộ dài thông thường: 3–6 trang."
+        },
+        "theoretical_framework": {
+          "title": "Khung lý thuyết",
+          "guidance": "Khung lý thuyết hỗ trợ nghiên cứu của bạn với các tài liệu hiện có. Bạn phải:\n• Xem lại các khái niệm và lý thuyết chính liên quan đến chủ đề của bạn.\n• Trích dẫn các nguồn chính và hiện tại (từ 5–10 năm qua đối với các bài viết; các tác phẩm kinh điển nếu chúng là cơ bản).\n• Sắp xếp các ý tưởng một cách hợp lý chứ không phải theo dạng danh sách tóm tắt.\n• Xác định trạng thái hiện đại: điều gì đã biết và điều gì còn thiếu?\n• Định vị tác phẩm của bạn trong văn học: bạn đóng góp gì?\nSử dụng khối \"Trích dẫn thư mục\" cho mỗi tài liệu tham khảo. Tránh trích dẫn quá nhiều — diễn giải và phân tích."
+        },
+        "methodology": {
+          "title": "Phương pháp",
+          "guidance": "Mô tả cách bạn tiến hành nghiên cứu của mình đủ chi tiết để có thể nhân rộng. Bao gồm:\n• Loại nghiên cứu (định lượng, định tính, hỗn hợp; thăm dò, mô tả, giải thích).\n• Thiết kế: thực nghiệm, bán thực nghiệm, nghiên cứu trường hợp, khảo sát, v.v.\n• Dân số và mẫu: tiêu chí lựa chọn, cỡ mẫu, kỹ thuật lấy mẫu.\n• Công cụ thu thập: bảng câu hỏi, phỏng vấn, quan sát, thí nghiệm.\n• Quy trình: các bước được thực hiện theo trình tự thời gian.\n• Phân tích dữ liệu: phần mềm, thống kê, phân tích định tính.\n• Cân nhắc về mặt đạo đức nếu có."
+        },
+        "results": {
+          "title": "Kết quả",
+          "guidance": "Trình bày kết quả nghiên cứu của bạn một cách khách quan mà không cần diễn giải chúng. Hướng dẫn:\n• Sắp xếp các kết quả theo thứ tự mục tiêu hoặc câu hỏi nghiên cứu của bạn.\n• Sử dụng bảng và số liệu cho dữ liệu số hoặc so sánh — tham khảo từng dữ liệu trong văn bản.\n• Không lặp lại trong văn bản những gì bảng đã hiển thị; Bình luận phù hợp nhất.\n• Chính xác về số liệu: bao gồm đơn vị, tỷ lệ phần trăm, giá trị thống kê (p, r, χ², v.v.).\n• Đối với nghiên cứu định tính: trình bày các danh mục kèm theo trích dẫn văn bản minh họa."
+        },
+        "discussion": {
+          "title": "Thảo luận",
+          "guidance": "Ở đây bạn diễn giải kết quả của mình và liên hệ chúng với tài liệu. Đây là phần phân tích nhất. Bạn phải:\n• Giải thích ý nghĩa của kết quả trong bối cảnh câu hỏi nghiên cứu của bạn.\n• So sánh với các nghiên cứu trước: có trùng khớp không? chúng có khác nhau không? bởi vì?\n• Chỉ ra những kết quả bất ngờ và đưa ra những lời giải thích hợp lý.\n• Thảo luận ý nghĩa lý thuyết và thực tiễn của những phát hiện của bạn.\n• Nhận thức một cách trung thực những hạn chế của nghiên cứu.\nKhông trình bày kết quả mới ở đây — chỉ diễn giải những kết quả đã được báo cáo."
+        },
+        "conclusions": {
+          "title": "Kết luận",
+          "guidance": "Kết luận khép lại lập luận của bạn và phản hồi trực tiếp mục tiêu của bạn. Bao gồm:\n• Trả lời câu hỏi nghiên cứu/xác minh giả thuyết.\n• Tổng hợp những phát hiện quan trọng nhất (không lặp lại chi tiết kết quả).\n• Đóng góp ban đầu của tác phẩm.\n• Khuyến nghị cho việc thực hành chuyên môn hoặc nghiên cứu trong tương lai.\n• Suy nghĩ cuối cùng về mức độ phù hợp của công việc.\nĐộ dài đề xuất: 2–4 trang. Không nhập thông tin mới."
+        },
+        "references": {
+          "title": "Tài liệu tham khảo",
+          "guidance": "Danh sách tham chiếu được tạo tự động từ tệp .bib của bạn khi bạn biên dịch.\nĐảm bảo mọi nguồn được trích dẫn trong văn bản đều ở dạng .bib và ngược lại.\nĐể thêm tài liệu tham khảo: sử dụng nút nhập DOI hoặc chỉnh sửa trực tiếp tệp tham chiếu.bib.\nKiểu trích dẫn (APA 7 trong hồ sơ này) được LaTeX áp dụng tự động."
+        },
+        "appendices": {
+          "title": "Phụ lục",
+          "guidance": "Các phụ lục chứa tài liệu hỗ trợ không nằm trong phần nội dung chính nhưng người đọc có thể cần phải xác minh:\n• Công cụ thu thập (bộ câu hỏi hoàn chỉnh, hướng dẫn phỏng vấn).\n• Bảng dữ liệu thô.\n• Mã nguồn hoặc tập lệnh.\n• Bản đồ, quy hoạch, văn bản pháp luật.\n• Thư ủy quyền hoặc sự đồng ý.\nMỗi phụ lục phải được đánh số (Phụ lục A, Phụ lục B...) và được tham chiếu từ phần văn bản chính."
+        }
+      },
+      "description": "Hồ sơ cơ sở cho các luận văn và công trình học thuật chính thức dành cho bậc cử nhân, chuyên ngành, thạc sĩ, tiến sĩ và sau tiến sĩ. Lớp sách, XeLaTeX, biber, APA 7."
     }
   },
   "institutions": {

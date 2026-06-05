@@ -2788,10 +2788,9 @@
     },
     "company.internship": {
       "name": "Rapport om praktik/uppehållstillstånd",
-      "description": "Format för rapporter om yrkesboende och affärsvistelser. Inkluderar företagsbeskrivning, aktiviteter och resultat. Bibliografi APA 7.",
       "sections": {
         "title_page": {
-          "guidance": "Försättssidan genereras automatiskt med institutionsdata.\nDet kommer att innehålla: namn på studenten, företag, praktikperiod, akademisk institution och karriär.\nDu behöver inte skriva innehåll här – ställ in data i projektets metadata."
+          "guidance": "Försättsbladet genereras automatiskt med institutionsdata.\nDet kommer att innehålla: namn på studenten, företag, praktikperiod, akademisk institution och karriär.\nDu behöver inte skriva innehåll här – ställ in data i projektets metadata."
         },
         "table_of_contents": {
           "guidance": "Indexet genereras automatiskt.\nDu behöver inte skriva något här."
@@ -2802,15 +2801,15 @@
         },
         "company_description": {
           "title": "Företagsbeskrivning",
-          "guidance": "Presentera organisationen där du gjorde praktiken:\n• Fullständigt namn, företagsnamn och affärsområde.\n• Kort historik och uppdrag/vision.\n• Allmänt organisationsschema (du kan infoga en figur).\n• Område eller avdelning där du arbetat och dess funktion inom företaget.\n• Teknisk infrastruktur som är relevant för dina aktiviteter.\nKopiera inte företagets webbplats ordagrant – omformulera och citera källan."
+          "guidance": "Presentera organisationen där du gjorde praktiken:\n• Fullständigt namn, företagsnamn och affärsområde.\n• Kort historik och uppdrag/vision.\n• Allmänt organisationsschema (du kan infoga en figur).\n• Område eller avdelning där du arbetat och dess funktion inom företaget.\n• Teknisk infrastruktur som är relevant för dina aktiviteter.\nKopiera inte företagets webbplats ordagrant – parafrasera och citera källan."
         },
         "activities": {
           "title": "Utvecklade aktiviteter",
-          "guidance": "Beskriv kronologiskt eller projektvis de aktiviteter du utförde:\n• För varje aktivitet: mål, beskrivning av processen, verktyg eller teknik som används.\n• Inkludera skärmdumpar, diagram eller tabeller när de stödjer förklaringen.\n• Nämn de utmaningar som du stött på och hur du löste dem.\n• Du kan organisera efter veckor, sprintar, projektfaser eller arbetsområden.\nDetta är det längsta avsnittet i rapporten – var specifik och teknisk."
+          "guidance": "Beskriv kronologiskt eller projektvis de aktiviteter du utförde:\n• För varje aktivitet: mål, beskrivning av processen, verktyg eller teknik som används.\n• Inkludera skärmdumpar, diagram eller tabeller när de stödjer förklaringen.\n• Nämn de utmaningar som du stött på och hur du löste dem.\n• Du kan organisera efter veckor, sprintar, projektfaser eller arbetsområden.\nDet här är det längsta avsnittet i rapporten – var specifik och teknisk."
         },
         "results": {
           "title": "Resultat och bidrag",
-          "guidance": "Presentera de specifika produkterna och bidragen från din bostad:\n• Genomförda leveranser (system, rapporter, manualer, processförbättringar).\n• Mätvärden eller bevis på påverkan där det är möjligt (tidsbesparing, minskade fel etc.).\n• Utvecklad professionell kompetens.\n• Jämförelse mellan de föreslagna målen och vad som uppnåddes.\nVar objektiv: om något inte var slutfört, förklara varför."
+          "guidance": "Presentera de specifika produkterna och bidragen från din bostad:\n• Genomförda leveranser (system, rapporter, manualer, processförbättringar).\n• Mätvärden eller bevis på påverkan där det är möjligt (tidsbesparing, minskade fel etc.).\n• Utvecklad professionell kompetens.\n• Jämförelse mellan de föreslagna målen och vad som uppnåddes.\nVar objektiv: om något inte blev avslutat, förklara varför."
         },
         "conclusions": {
           "title": "Slutsatser",
@@ -2818,18 +2817,17 @@
         },
         "references": {
           "title": "Referenser",
-          "guidance": "Lista de källor som konsulterats under övningarna: tekniska manualer, standarder, artiklar, webbplatser.\nListan genereras automatiskt från din .bib.\nAPA-stil 7. Använd DOI-importören för att enkelt lägga till akademiska referenser."
+          "guidance": "Lista de källor som konsulterats under övningarna: tekniska manualer, standarder, artiklar, webbplatser.\nListan genereras automatiskt från din .bib.\nAPA Style 7. Använd DOI-importören för att enkelt lägga till akademiska referenser."
         },
         "appendices": {
           "title": "Bilagor",
           "guidance": "Innehåller stödmaterial som skulle vara mycket omfattande i huvuddelen:\n• Acceptansbrev från företaget.\n• Kompletteringsbrev/utvärdering från verksamhetshandledaren.\n• Veckologgar (om det krävs av din institution).\n• Relevant källkod.\n• Användar- eller tekniska manualer utvecklade.\n• Fotografiska bevis på arbetsplatsen.\nNumrera varje bilaga (bilaga A, B...) och hänvisa till dem från texten."
         }
       },
-      "meta": "Bibliografi APA 7 · XeLaTeX"
+      "description": "Format för rapporter om yrkesboende och affärsvistelser. Inkluderar företagsbeskrivning, aktiviteter och resultat. APA Bibliography 7."
     },
     "engineering.basic": {
       "name": "Teknisk/teknisk rapport",
-      "description": "Teknisk rapport med avsnitt om tillvägagångssätt, design, implementering och testning. IEEE Bibliografi. Idealisk för ingenjörsuppsats och yrkesuppehållstillstånd.",
       "sections": {
         "title_page": {
           "guidance": "Försättssidan genereras automatiskt med projektdata.\nDu behöver inte skriva innehåll här."
@@ -2851,11 +2849,11 @@
         },
         "design": {
           "title": "Design och arkitektur",
-          "guidance": "Presentera den föreslagna lösningen innan du implementerar den:\n• Systemarkitektur (komponentdiagram, lager, moduler).\n• Designbeslut och motivering av valda teknologier.\n• Flödesschema eller huvudalgoritm.\n• Datamodell om tillämpligt (ER, BD schema).\n• Användargränssnitt (wireframes eller mockups om tillämpligt).\nDesignen bör vara oberoende av implementeringen – en tredje part bör kunna implementera den från det här avsnittet."
+          "guidance": "Presentera den föreslagna lösningen innan du implementerar den:\n• Systemarkitektur (komponentdiagram, lager, moduler).\n• Designbeslut och motivering av valda teknologier.\n• Flödesschema eller huvudalgoritm.\n• Data model if applicable (ER, DB schema).\n• Användargränssnitt (wireframes eller mockups om tillämpligt).\nDesignen bör vara oberoende av implementeringen – en tredje part bör kunna implementera den från det här avsnittet."
         },
         "implementation": {
           "title": "Implementering",
-          "guidance": "Beskriv hur lösningen byggdes:\n• Utvecklingsmiljö: språk, ramverk, plattformar, versioner.\n• Beskrivning av de implementerade modulerna eller komponenterna.\n• Relevanta kodfragment (endast de mest illustrativa, inte hela koden).\n• Implementeringsutmaningar och antagna lösningar.\n• Infrastrukturkonfiguration om tillämpligt (servrar, behållare, BD).\nDen fullständiga koden finns i bilagorna – här endast den mest representativa."
+          "guidance": "Beskriv hur lösningen byggdes:\n• Utvecklingsmiljö: språk, ramverk, plattformar, versioner.\n• Beskrivning av de implementerade modulerna eller komponenterna.\n• Relevanta kodfragment (endast de mest illustrativa, inte hela koden).\n• Implementeringsutmaningar och antagna lösningar.\n• Infrastrukturkonfiguration om tillämpligt (servrar, behållare, DB).\nDen fullständiga koden finns i bilagorna — här endast den mest representativa."
         },
         "testing": {
           "title": "Testning och validering",
@@ -2867,18 +2865,17 @@
         },
         "references": {
           "title": "Referenser",
-          "guidance": "I IEEE är referenserna numeriska och visas i första omnämnandeordning.\nListan genereras automatiskt från din .bib när du kompilerar.\nFör IEEE-artiklar och konferenser: Använd DOI-importören för att få rätt post.\nSe till att inkludera DOI i varje referens — IEEE kräver det."
+          "guidance": "I IEEE är referenserna numeriska och visas i första omnämnandeordning.\nListan genereras automatiskt från din .bib när du kompilerar.\nFör IEEE-artiklar och konferenser: använd DOI-importören för att få rätt post.\nSe till att inkludera DOI i varje referens – IEEE kräver det."
         },
         "appendices": {
           "title": "Bilagor",
-          "guidance": "Kompletterande tekniskt material:\n• Komplett källkod (huvudmoduler).\n• Installations- och konfigurationsskript.\n• Användar- eller tekniska manualer.\n• Detaljerade diagram (fullständiga ERD, sekvensdiagram, etc.).\n• Testa data eller datauppsättningar.\nNummer: Bilaga A, B... och hänvisa till dem från huvudtexten."
+          "guidance": "Kompletterande tekniskt material:\n• Komplett källkod (huvudmoduler).\n• Installations- och konfigurationsskript.\n• Användar- eller tekniska manualer.\n• Detaljerade diagram (fullständig ERD, sekvensdiagram, etc.).\n• Testa data eller datauppsättningar.\nNummer: Bilaga A, B... och hänvisa till dem från huvudtexten."
         }
       },
-      "meta": "Bibliografi IEEE · XeLaTeX"
+      "description": "Teknisk rapport med avsnitt om tillvägagångssätt, design, implementering och testning. IEEE Bibliografi. Idealisk för ingenjörsuppsats och yrkesuppehållstillstånd."
     },
     "generic.phd": {
       "name": "Examensarbete",
-      "description": "Profil för magister- och doktorsexamen: litteraturöversikt, toppmoderna, tillvägagångssätt, experiment, ordlista och akronymer. XeLaTeX, biber, APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Försättssidan genereras automatiskt med projektdata.\nFör forskarstudier, konfigurera i metadata: fullständigt namn, direktör, meddirektör (om tillämpligt) och synodalsnämnd.\nDu behöver inte skriva innehåll här."
@@ -2893,19 +2890,19 @@
           "guidance": "Listan med tabeller genereras automatiskt från alla tabeller med titel.\nAktivera den här sektionen om du har 5 eller fler bord."
         },
         "list_of_algorithms": {
-          "guidance": "Automatiskt genererad lista med algoritmer för beräknings- eller tekniska avhandlingar.\nAktivera endast om du presenterar 3 eller fler pseudokoder eller numrerade algoritmer."
+          "guidance": "Automatiskt genererad lista med algoritmer för beräknings- eller tekniska teser.\nAktivera endast om du presenterar 3 eller fler pseudokoder eller numrerade algoritmer."
         },
         "acronyms": {
           "title": "Lista över förkortningar och akronymer",
-          "guidance": "Lista alla akronymer och förkortningar som används i avhandlingen med deras fulla betydelse.\nFormat: SIGLA — Full betydelse (t.ex. CNN — Convolutional Neural Network).\nSortera alfabetiskt. Den definierar också första gången varje akronym förekommer i texten."
+          "guidance": "Lista alla akronymer och förkortningar som används i avhandlingen med deras fulla betydelse.\nFormat: ACRONYM — Full meaning (e.g. CNN — Convolutional Neural Network).\nSortera alfabetiskt. Den definierar också första gången varje akronym förekommer i texten."
         },
         "abstract_es": {
           "title": "Sammanfattning",
-          "guidance": "Textens sammanfattning svarar med 250–350 ord:\n• Motivation: varför är detta problem viktigt?\n• Problem: Vilken fråga eller hypotes tar du upp?\n• Metod: huvudansats och teknik.\n• Bidrag: resultat och ursprungliga bidrag till den senaste tekniken.\n• Effekt: teoretiska eller praktiska konsekvenser.\nInga möten. Inga ekvationer. 5–8 sökord i slutet."
+          "guidance": "Sammanfattningen av examen svarar med 250–350 ord:\n• Motivation: varför är detta problem viktigt?\n• Problem: Vilken fråga eller hypotes tar du upp?\n• Metod: huvudansats och teknik.\n• Bidrag: resultat och ursprungliga bidrag till den senaste tekniken.\n• Effekt: teoretiska eller praktiska konsekvenser.\nInga möten. Inga ekvationer. 5–8 sökord i slutet."
         },
         "abstract_en": {
           "title": "Abstrakt",
-          "guidance": "Exakt översättning av sammanfattningen till engelska. Inte en maskinöversättning – kontrollera det.\nNyckelord: på engelska, helst termer från tesaurus för din disciplin.\nObligatorisk för forskarstudier — det är versionen som finns i internationella repositories."
+          "guidance": "Exakt översättning av sammanfattningen till engelska. Inte en maskinöversättning – kontrollera det.\nNyckelord: på engelska, helst termer från synonymordboken för din disciplin.\nObligatorisk för forskarstudier — det är versionen som finns i internationella arkiv."
         },
         "dedication": {
           "title": "Dedikation",
@@ -2913,7 +2910,7 @@
         },
         "acknowledgements": {
           "title": "Tack",
-          "guidance": "Tackar formellt de som bidragit till arbetet:\n• Examensledare och medrektor.\n• Synodalsnämnd / granskare.\n• Finansiärer: stipendier, projekt, institutioner (obligatoriskt för projekt med externt stöd).\n• Tekniska samarbetspartners, laboratorier, företag.\n• Familj och personligt stöd (i slutet, kortfattat).\nTillägg: en halv sida."
+          "guidance": "Tackar formellt de som bidragit till arbetet:\n• Examensledare och medrektor.\n• Synodalsnämnd / granskare.\n• Finansiärer: stipendier, projekt, institutioner (obligatoriskt för projekt med externt stöd).\n• Tekniska samarbetspartners, laboratorier, företag.\n• Familj och personligt stöd (i slutet, kortfattat).\nLängd: en halv sida."
         },
         "introduction": {
           "title": "Introduktion",
@@ -2921,7 +2918,7 @@
         },
         "literature_review": {
           "title": "Recension av litteratur och toppmoderna",
-          "guidance": "Detta är avsnittet som visar att du behärskar området. Du måste:\n• Systematiskt täcka in relevanta verk från de senaste 5–10 åren (klassiker kan vara äldre).\n• Organisera efter tema, fokus eller kronologi – inte som en lista med sammanfattningar.\n• Kritiskt jämföra förslagen: styrkor, svagheter, begränsningar.\n• Identifiera luckan som din avhandling fyller (\"inga tidigare arbeten har tagit upp X\").\n• Avsluta med en jämförande tabell över relaterade verk om möjligt.\nFör doktorsexamen: denna recension måste vara uttömmande och täcka alla aspekter av problemet.\nStrategi: Sök Scopus, WoS, ACM DL, IEEE Xplore. Använd DOI-importören för varje artikel."
+          "guidance": "Detta är avsnittet som visar att du behärskar området. Du måste:\n• Systematiskt täcka in relevanta verk från de senaste 5–10 åren (klassiker kan vara äldre).\n• Organisera efter tema, fokus eller kronologi – inte som en lista med sammanfattningar.\n• Kritiskt jämföra förslagen: styrkor, svagheter, begränsningar.\n• Identifiera luckan som din avhandling fyller (\"inga tidigare arbeten har tagit upp X\").\n• Avsluta med en jämförande tabell över relaterade verk om möjligt.\nFör doktorsexamen: denna recension måste vara uttömmande och täcka alla aspekter av problemet.\nStrategy: Search Scopus, WoS, ACM DL, IEEE Xplore. Använd DOI-importören för varje artikel."
         },
         "theoretical_framework": {
           "title": "Teoretisk ram",
@@ -2933,7 +2930,7 @@
         },
         "methodology": {
           "title": "Metodik",
-          "guidance": "Beskriv det metodologiska tillvägagångssättet med den rigoritet som krävs av forskarnivån:\n• Forskningsparadigm: positivistisk, konstruktivistisk, blandad.\n• Typ av forskning: experimentell, kvasi-experimentell, fallstudie, simulering, modellering.\n• Specifik forskningsdesign.\n• Datakällor: ursprung, egenskaper, insamlings- eller genereringsprocess.\n• Pipeline eller komplett process från data till resultat.\n• Specifika verktyg, språk, bibliotek och versioner.\nTillräckligt med detaljer för fullständig replikerbarhet."
+          "guidance": "Beskriver det metodologiska tillvägagångssättet med den rigoritet som krävs av forskarnivån:\n• Forskningsparadigm: positivistisk, konstruktivistisk, blandad.\n• Typ av forskning: experimentell, kvasi-experimentell, fallstudie, simulering, modellering.\n• Specifik forskningsdesign.\n• Datakällor: ursprung, egenskaper, insamlings- eller genereringsprocess.\n• Pipeline eller komplett process från data till resultat.\n• Specifika verktyg, språk, bibliotek och versioner.\nTillräckligt med detaljer för fullständig replikerbarhet."
         },
         "experimentation": {
           "title": "Experiment och utveckling",
@@ -2968,39 +2965,471 @@
           "guidance": "Kompletterande tekniskt material som inte hör till huvudflödet:\n• Långa eller sekundära matematiska bevis.\n• Källkod (huvudmoduler, experimentskript).\n• Komplettera datatabeller eller ytterligare resultat.\n• Instrument för datainsamling.\n• Etiska godkännandebrev, sekretessavtal.\nNummer: Bilaga A, B... med beskrivande rubriker."
         }
       },
-      "meta": "Bibliografi APA 7 · XeLaTeX"
+      "description": "Profil för magister- och doktorsexamen: litteraturöversikt, toppmoderna, tillvägagångssätt, experiment, ordlista och akronymer. XeLaTeX, biber, APA 7."
     },
     "vancouver.health": {
       "name": "Hälsovetenskap (IMRaD)",
-      "description": "IMRaD-struktur för klinisk och biomedicinsk forskning. Vancouver-stil bibliografi. Idealisk för avhandlingar inom medicin, omvårdnad och hälsovetenskap."
+      "sections": {
+        "title_page": {
+          "guidance": "Försättssidan genereras automatiskt med projektdata.\nDu behöver inte skriva innehåll här."
+        },
+        "table_of_contents": {
+          "guidance": "Indexet genereras automatiskt.\nDu behöver inte skriva något här."
+        },
+        "abstract_es": {
+          "title": "Sammanfattning",
+          "guidance": "IMRaD-sammanfattningen är strukturerad med samma undertexter som artikeln, i miniatyr:\n• Mål: en mening med syftet med studien.\n• Material och metoder: design, population, intervention och huvudmått.\n• Resultat: mer relevanta resultat med numeriska data.\n• Slutsatser: klinisk tolkning och omfattning.\nBegränsning: 250 ord för avhandling (varierar beroende på institution). Inga möten. Inga odefinierade akronymer.\nI slutet: 3–6 MeSH (Medical Subject Headings) nyckelord."
+        },
+        "abstract_en": {
+          "title": "Abstrakt",
+          "guidance": "Trogen översättning av sammanfattningen till engelska med samma undertexter: Mål, Metoder, Resultat, Slutsatser.\nNyckelord: MeSH-termer på engelska.\nKrävs för indexering i PubMed/MEDLINE och presentation vid internationella konferenser."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "I IMRaD svarar introduktionen: vad är känt? vad är inte känt? vad ska studeras?\nRekommenderad struktur (tratt):\n1. Hälsoproblemets omfattning (epidemiologi, sjukdomsbörda).\n2. Vad är känt: selektiv granskning av litteraturen med Vancouver-citat ([1], [2]...).\n3. Kunskapslucka eller kontrovers som motiverar studien.\n4. Forskningsfråga eller syfte med studien (tydligt uttryckt).\n5. Hypoteser om tillämpligt.\nVisa inte resultat här. Typisk längd: 2–4 sidor."
+        },
+        "materials_methods": {
+          "title": "Material och metoder",
+          "guidance": "Beskriv studien tillräckligt detaljerat så att den kan replikeras. Inkluderar:\n• Studiedesign: experimentell, kohort, fall-kontroll, tvärsnitt, systematisk granskning, etc.\n• Plats och tid för studien.\n• Population: kriterier för inkludering och uteslutning.\n• Urval: storlek, urvalsteknik, statistisk motivering.\n• Intervention (om tillämpligt): exakt beskrivning, dos, varaktighet.\n• Variabler och mätinstrument.\n• Statistisk analys: tester som används, programvara, signifikansnivå.\n• Etiska överväganden: godkännande av etikkommittén, informerat samtycke.\nUndvik att motivera metodiska beslut – beskriv dem bara."
+        },
+        "results": {
+          "title": "Resultat",
+          "guidance": "Presentera resultaten objektivt och utan tolkning:\n• Börja med provets egenskaper (tabell 1: baslinjeegenskaper).\n• Presenterar resultaten i ordning av målen eller hypoteserna.\n• Använd tabeller och figurer för numeriska data — var och en hänvisas till i texten.\n• Rapporter: n, %, medelvärde ± SD, medianer (IQR), RR, OR, 95 % CI, p-värde.\n• Upprepa inte i texten vad tabellen redan visar – kommentera bara det som är mest relevant.\n• För kvalitativa studier: kategorier med textcitat från deltagare (anonyma)."
+        },
+        "discussion": {
+          "title": "Diskussion",
+          "guidance": "Det är det mest analytiska avsnittet och det svåraste att skriva. Du måste:\n• Återgå till syftet med studien och sammanfatta det huvudsakliga resultatet.\n• Jämför dina resultat med tidigare studier (liknande, annorlunda och motsägelsefulla).\n• Förklara avvikelser: skillnader i design, population, sammanhang.\n• Peka på kliniska implikationer: vilka förändras i praktiken?\n• Erkänn studiens begränsningar (minimera inte dem – det stärker trovärdigheten).\n• Föreslå specifik framtida forskning.\nVisa inga nya resultat här."
+        },
+        "conclusions": {
+          "title": "Slutsatser",
+          "guidance": "I många biomedicinska artiklar ingår slutsatserna i diskussionen.\nOm din institution kräver dem separat:\n• En eller två meningar per besvarade mål.\n• Svarar direkt på forskningsfrågan.\n• Undvik att generalisera utöver vad data tillåter.\n• Nämner bidraget till kunskap eller klinisk praxis."
+        },
+        "references": {
+          "title": "Referenser",
+          "guidance": "Vancouver-stil: numeriska referenser i ordning efter utseende i texten ([1], [2]...).\nListan genereras automatiskt från din .bib när du kompilerar.\nPrioriterar källor indexerade i MEDLINE/PubMed, Scopus, Web of Science.\nAnvänd DOI-importören för att lägga till artiklar med ett klick — Crossref har mest PubMed.\nReferensgräns: varierar beroende på institution (vanligt: 30–50 för avhandlingar)."
+        },
+        "appendices": {
+          "title": "Bilagor",
+          "guidance": "Innehåller stödjande dokument som inte får plats i texten:\n• Insamlingsinstrument (enkät, datafångstblad).\n• Godkännandebrev från etikkommittén.\n• Informerat samtycke.\n• Rådatatabeller eller kompletterande datatabeller.\n• Detaljerat interventionsprotokoll.\nNummer: Bilaga A, B... och hänvisa till dem från texten."
+        }
+      },
+      "description": "IMRaD-struktur för klinisk och biomedicinsk forskning. Vancouver stil bibliografi. Idealisk för avhandlingar inom medicin, omvårdnad och hälsovetenskap."
     },
     "apa.basic": {
-      "name": "APA Grundläggande",
-      "description": "Förenklad profil för akademiskt arbete med strikt APA 7-stil. Idealisk för rapporter, uppsatser och korta artiklar."
+      "name": "Grundläggande APA",
+      "sections": {
+        "title_page": {
+          "guidance": "APA 7-försättsbladet genereras automatiskt med projektdata.\nInkluderar: titel, författare(r), institution, ämne, lärarens namn och datum.\nDu behöver inte skriva innehåll här."
+        },
+        "abstract_es": {
+          "title": "Sammanfattning",
+          "guidance": "APA 7-sammanfattningen finns på en separat sida med rubriken \"Sammanfattning\" (centrerad, fetstil).\n150–250 ord som svarar: vad studeras?, hur?, vad hittades?, vad betyder det?\nI slutet inkluderar 4–6 nyckelord: i kursiv stil.\nCitera inte referenser i sammanfattningen."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "I APA 7 bär inledningen inte rubriken \"Introduktion\" – profilen hanterar det automatiskt.\nDu måste presentera:\n• Ämnet och dess relevans.\n• Vad är känt hittills (kort bibliografisk syntes).\n• Syftet med eller syftet med arbetet.\n• Frågan eller hypotesen gäller.\nAnvänd APA-citat i text: (efternamn, år) eller efternamn (år) beroende på flödet."
+        },
+        "development": {
+          "title": "Utveckling",
+          "guidance": "Arbetets huvuddel. Organisera med nivå 2 och 3 rubriker baserat på komplexitet.\nFör uppsatser: huvudargument, stödjande argument med bibliografiska bevis, motargument.\nFör rapporter: konceptuell ram, analys, resultat.\nParafrasera källor - undvik långa ordagranta citat (använd dem bara när de exakta orden spelar roll).\nCitera allt som inte är din egen skapelse."
+        },
+        "conclusions": {
+          "title": "Slutsatser",
+          "guidance": "Syntetisera huvudpunkterna i arbetet:\n• Svarar på frågan eller syftet som ställdes i inledningen.\n• Peka på konsekvenserna av resultaten.\n• Inse begränsningar.\n• Föreslår framtida arbeten eller forskning.\nTa inte med nya citat här. Längd: 1–2 sidor."
+        },
+        "references": {
+          "title": "Referenser",
+          "guidance": "I APA 7 kallas det \"Referenser\" (inte \"Bibliografi\").\nListan genereras automatiskt från din .bib när du kompilerar.\nAPA 7-regler: ordnade alfabetiskt, hängande indrag, URL eller DOI i slutet av varje post.\nAnvänd DOI-importören (Ctrl+[ > DOI-panelen) för att lägga till referenser med ett klick."
+        }
+      },
+      "description": "Förenklad profil för akademiska arbeten med strikt APA 7-stil. Idealisk för rapporter, uppsatser och korta artiklar."
     },
     "chicago.humanities": {
-      "name": "Chicago / Turabian — Humaniora",
-      "description": "Avhandlingar i humaniora, samhällsvetenskap och konst med Chicago Notes-Bibliografi stil (17:e uppl.) / Turabian 9:e uppl. Citat visas i numrerade fotnoter. Alfabetiskt ordnad bibliografi i slutet. Vanligt i filosofi, historia, litteratur, samhällsvetenskap och juridik."
+      "name": "Chicago / Turabian – Humaniora",
+      "sections": {
+        "title_page": {
+          "guidance": "Turabiska omslaget innehåller: titel (centrerad, en tredjedel från toppen), författarens namn, program och universitet, stad och år. Inget sidnummer.\nProfilen genererar försättsbladet med projektdata."
+        },
+        "abstract": {
+          "title": "Abstrakt",
+          "guidance": "Turabian rekommenderar ett sammandrag på 150–350 ord för doktorsavhandlingar.\nInnehåller: tema, förhållningssätt, huvudargument, metodik och slutsats.\nSkriv det i nutid eller dåtid – välj en och var konsekvent."
+        },
+        "table_of_contents": {
+          "guidance": "Indexet genereras automatiskt. I Chicago ingår kapitel- och sektionsnivåer, men inte underavdelningar från nivå 3 och framåt."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "Inom humaniora presenterar inledningen det centrala argumentet (avhandlingsförklaringen), korpusen eller huvudkällorna, metodiken och motiveringen.\nChicago tillåter en mer diskursiv stil än andra discipliner — du kan använda första person och utveckla argumentationen med nyanser från början.\nCitat står inom numrerade fotnoter, inte inom parentes. Systemet infogar dem automatiskt."
+        },
+        "chapter_1": {
+          "title": "Kapitel 1",
+          "guidance": "Inom humaniora utvecklar kapitlen argumentet successivt.\nVarje kapitel ska ha sin egen argumentation som bidrar till avhandlingens centrala argument.\nAnvänd fotnoter för direkta citat, referenser och omfattande kommentarer som skulle störa textflödet.\nKorta fotnoter kan vara citat; de långa kan vara ytterligare diskussioner."
+        },
+        "chapter_2": {
+          "title": "Kapitel 2",
+          "guidance": "Andra kapitlet. Utveckla nästa steg i argumentationen.\nI historia eller litteratur kan detta kapitel analysera en korpus av texter, historisk period eller uppsättning primära källor.\nCitera primära och sekundära källor med fotnoter. För återkommande primärkällor, använd förkortningar i en fotnot efter den första fullständiga hänvisningen."
+        },
+        "chapter_3": {
+          "title": "Kapitel 3",
+          "guidance": "Tredje kapitlet. Det för argumentet till sin punkt av största utveckling.\nDu kan lägga till eller ta bort kapitel beroende på strukturen på din avhandling – de flesta humanistiska avhandlingar har 3–5 kapitel."
+        },
+        "conclusions": {
+          "title": "Slutsatser",
+          "guidance": "Slutsatserna tar upp det centrala argumentet och berikar det med det som lärdes i kapitlen.\nUndvik att upprepa det som redan har sagts. Det öppnar mot bredare implikationer, öppna debatter och möjlig framtida forskning.\nInom humaniora är det giltigt – och ibland nödvändigt – att avsluta med nyanser eller öppna frågor."
+        },
+        "bibliography": {
+          "title": "Bibliografi",
+          "guidance": "I Chicago Notes-Bibliography kallas den slutliga listan \"Bibliography\" (inte \"Referenser\").\nDen är ordnad alfabetiskt efter författarens efternamn.\nBibliografin genereras automatiskt från din .bib när du kompilerar.\nInkludera alla citerade källor i fotnoter – och du kan inkludera källor som konsulterats men inte citerats om de lägger till sammanhang."
+        },
+        "appendices": {
+          "title": "Bilagor",
+          "guidance": "Inom humaniora inkluderar bilagor vanligtvis: transkriptioner av primära källor, fullständiga intervjuer, ytterligare visuellt material, kronologier eller ordlistor med specialiserade termer."
+        }
+      },
+      "description": "Teser och avhandlingar inom humaniora, samhällsvetenskap och konst med stil Chicago Notes-Bibliography (17:e upplagan) / Turabian 9:e upplagan. Citat står inom numrerade fotnoter, inte inom parentes. Bibliografi i slutet ordnad alfabetiskt. Används i stor utsträckning inom filosofi, historia, litteratur, samhällsvetenskap och juridik."
     },
     "mx.ipn.esfm": {
-      "name": "IPN ESFM — Fysik och Matematik",
-      "description": "Kandidat- och masteruppsatser från IPN:s Högre skola för fysik och matematik. Optimerad för matematiskt täta arbeten: satser, bevis, ekvationer. APA eller numerisk citeringsstil beroende på område."
+      "name": "IPN ESFM — Fysik och matematik",
+      "sections": {
+        "portada": {
+          "guidance": "ESFM-omslaget inkluderar: IPN-sköld, \"Högre skola för fysik och matematik\", titel på arbetet, typ av arbete (uppsats för att erhålla titeln/examen...), namn på studenten, föreståndare, plats och år.\nProfilen genereras med projektdata."
+        },
+        "resumen": {
+          "title": "Sammanfattning",
+          "guidance": "Sammanfattning av 150–250 ord. I fysik och matematik måste det vara exakt:\n• Det centrala problemet eller frågan, uttryckt utan onödig jargong.\n• Den huvudsakliga metoden eller metoden.\n• Det viktigaste resultatet (med mått eller dimension om tillämpligt).\n• Innebörden eller tillämpningen av resultatet.\nUndvik ekvationer i sammanfattningen. Definiera de akronymer du använder."
+        },
+        "abstract": {
+          "title": "Abstrakt",
+          "guidance": "Engelsk översättning av sammanfattningen. Rekommenderas om du planerar att publicera eller presentera på internationella konferenser."
+        },
+        "tabla_contenidos": {
+          "guidance": "Indexet genereras automatiskt. I matematiska arbeten är det vanligt att även ta med en lista med notationer och symboler före inledningen."
+        },
+        "introduccion": {
+          "title": "Introduktion",
+          "guidance": "Introduktionen i fysik/matematik placerar arbetet i sammanhanget för disciplinen:\n• Motivation: varför är problemet intressant eller relevant?\n• Bakgrund: direkt relaterat tidigare arbete.\n• Exakt beskrivning av problemet eller forskningsfrågan.\n• Huvudresultat (meddelar utan att demonstrera — som går i kroppen).\n• Dokumentstruktur.\nDu kan använda matematisk notation härifrån, men håll den tillgänglig."
+        },
+        "preliminares": {
+          "title": "Förberedelser",
+          "guidance": "Avsnitt där du definierar det matematiska språket som du ska använda i resten av arbetet.\nInkluderar: grundläggande definitioner, notation och kända resultat som du måste citera.\nVisa inte kända resultat om de inte är nödvändiga för att fastställa den exakta notationen.\nAnvänd redaktörens sats-, definitions- och lemmablock för att strukturera ditt innehåll.\nStrukturexempel: \"Definition 2.1 (Hilbert Space)...\", \"Lemma 2.3...\", \"Theorem 2.5 (Spectral)...\""
+        },
+        "desarrollo": {
+          "title": "Utveckling",
+          "guidance": "Huvuddelen av verket. I ren matematik: teoriutveckling med fullständiga bevis.\nI fysik: utvecklingen av modellen, teorin eller experimentet.\nStrukturera varje kapitel med påståenden, lemman, satser och bevis.\nVarje demo måste uttryckligen stängas med □ eller \"∎\" (redigeraren infogar detta automatiskt).\nNumrerade ekvationer bör refereras från texten: använd \\eqref{} eller \\cref{}."
+        },
+        "resultados": {
+          "title": "Resultat och applikationer",
+          "guidance": "Om ditt arbete har numeriska, beräkningsmässiga eller experimentella tillämpningar, skicka in dem här.\nFör beräkningsfysik: inkluderar simuleringsparametrar, konvergens och jämförelse med analytiska eller experimentella resultat.\nFör experimentell fysik: presenterar data med osäkerheter, statistisk analys och grafer."
+        },
+        "conclusiones": {
+          "title": "Slutsatser",
+          "guidance": "Summerar de erhållna resultaten och deras relevans.\nI matematik: vilka gissningar löstes, vilka frågor väcker arbetet.\nInom fysiken: vilka fenomen förklarades, vilka förutsägelser modellen gör.\nAnge tydligt vad som är original i ditt arbete kontra vad som är känt\nPeka på öppna problem eller naturliga förlängningar av arbetet."
+        },
+        "referencias": {
+          "title": "Referenser",
+          "guidance": "Referenslista i APA 7 (genereras automatiskt).\nFör artiklar från fysik/matematiktidskrifter använd DOI-importören — Crossref har flest artiklar från Physical Review, Journal of Mathematical Physics, etc.\nFör klassiska läroböcker (Rudin, Spivak, Peskin & Schroeder, etc.): lägg till posten manuellt i .bib om de inte finns i Crossref."
+        },
+        "apendices": {
+          "title": "Bilagor",
+          "guidance": "Kompletterande tekniskt material: långa demonstrationer som skulle avbryta flödet av huvudargumentet, detaljerade beräkningar, simuleringskod, tabeller med experimentella data."
+        }
+      },
+      "description": "Under- och forskarexamen från Higher School of Physics and Mathematics vid IPN. Designad för verk med hög matematisk densitet: satser, lemman, följder, bevis, fysisk notation och komplexa ekvationer. APA-bibliografi för allmänna verk, eller numerisk stil för fysikpublikationer."
     },
     "mx.ipn.sepi": {
-      "name": "IPN SEPI — Forskarutbildning i teknik och naturvetenskap",
-      "description": "Avhandlingar från IPN:s sektion för forskarutbildning och forskning. IPN-format med IEEE-bibliografi för teknik eller APA för naturvetenskap. Legal paper, IPN-specifika marginaler."
+      "name": "IPN SEPI — Forskarutbildning i teknik och vetenskap",
+      "sections": {
+        "portada": {
+          "guidance": "IPN-SEPI-omslaget inkluderar: IPN-sköld, namn på den akademiska enheten (ESIME/ESCOM/UPIITA...), titel på arbetet, typ av examensarbete (för att erhålla examen Master/Doctor i...), namn på studenten, examensledare, plats och år.\nProfilen genererar försättsbladet med projektdata."
+        },
+        "resumen": {
+          "title": "Sammanfattning",
+          "guidance": "Teknisk sammanfattning på spanska på 200–300 ord. SEPI kräver det på spanska.\nDen ska innehålla: mål, metodik, huvudresultat och slutsats.\nTill slut: 5–8 tekniska sökord."
+        },
+        "abstract": {
+          "title": "Abstrakt",
+          "guidance": "Engelsk översättning av sammanfattningen. SEPI-IPN kräver det i alla forskarutbildningar.\nNyckelord: samma som på spanska, på engelska."
+        },
+        "tabla_contenidos": {
+          "guidance": "Indexet genereras automatiskt. IPN kräver också en lista med siffror, en lista med tabeller och, om tillämpligt, en lista med algoritmer eller kodlistor."
+        },
+        "introduccion": {
+          "title": "Introduktion",
+          "guidance": "IPN-SEPI-introduktionen måste innehålla:\n1. Problemets tekniska eller vetenskapliga sammanhang.\n2. Motivation och motivering.\n3. Hypotes eller forskningsfråga.\n4. Allmänt mål och specifika mål.\n5. Omfattning och begränsningar.\n6. Organisation av dokumentet.\nHänvisningar i IEEE är numeriska: [1], [2], [3]..."
+        },
+        "estado_arte": {
+          "title": "State of the Art",
+          "guidance": "Kritisk granskning av den senaste tekniken. I SEPI-IPN är det obligatoriskt och måste:\n• Identifiera de mest relevanta verken (senaste 5–10 åren; IEEE/ACM/Elsevier-konferenser och tidskrifter).\n• Jämför tillvägagångssätt: jämförande tabeller över metoder, resultat och begränsningar.\n• Identifiera luckan eller begränsningen som ditt arbete löser.\n• Motivera varför ditt förslag är annorlunda eller bättre.\nCitering med nummer inom parentes: \"Pérez et al. [5] föreslog...\""
+        },
+        "metodologia": {
+          "title": "Metodik eller utveckling",
+          "guidance": "Inom teknik beskriver metodiken den föreslagna lösningen:\n• Systemarkitektur eller design.\n• Matematisk eller formell modell om tillämpligt.\n• Algoritmer utvecklade (använd algoritmblocket).\n• Implementering: språk, ramverk, hårdvara.\n• Allmänt flödesschema över systemet.\nDetaljnivån måste tillåta att arbetet kan replikeras."
+        },
+        "resultados": {
+          "title": "Resultat och analys",
+          "guidance": "Presentera och analysera experimentella eller simuleringsresultat:\n• Experimentell uppställning: utrustning, parametrar, förhållanden.\n• Utvärderingsmått: precision, tid, förbrukning, prestanda, etc.\n• Jämförelse med den senaste tekniken (jämförande tabell).\n• Statistisk analys om tillämpligt (medelvärde, avvikelse, konfidensintervall).\nI IEEE måste varje figur och tabell ha ett nummer och en kortfattad beskrivning."
+        },
+        "conclusiones": {
+          "title": "Slutsatser och framtida arbete",
+          "guidance": "Stäng arbetet med teknisk noggrannhet:\n• Mål uppnådda kontra höjda.\n• Ursprungliga bidrag av verket.\n• Identifierade tekniska begränsningar.\n• Framtida arbete: konkreta förbättringar, möjliga utbyggnader, öppna problem.\nIPN-SEPI värdesätter särskilt omnämnandet av möjliga publikationer eller industriella tillämpningar."
+        },
+        "referencias": {
+          "title": "Referenser",
+          "guidance": "I IEEE är referenserna numeriska i ordningsföljd.\nListan genereras automatiskt från din .bib.\nFör IEEE- och ACM-artiklar: använd DOI-importören.\nIPN kräver att DOI ingår när det är tillgängligt."
+        },
+        "anexos": {
+          "title": "Bilagor",
+          "guidance": "Fullständig källkod, skript, hårdvaru-/mjukvarukonfigurationer, datablad, användarmanualer, rå experimentdata.\nNummer: bilaga A, bilaga B... och hänvisa till var och en från texten."
+        }
+      },
+      "description": "Examensarbete från Postgraduate Studies and Research Section (SEPI) vid National Polytechnic Institute. Gäller CINVESTAV, ESIME, ESCOM, UPIITA och SEPI enheter. IEEE Bibliography for Engineering and Technology; IPN-format med marginaler, typografi och struktur som är specifik för forskar- och forskningsdirektoratet."
     },
     "mx.ipn.upibi": {
-      "name": "IPN UPIBI — Bioteknologi",
-      "description": "Avhandlingar från IPN:s Interdisciplinära Yrkesmässiga Enhet för Bioteknologi. Inriktad på biokemi, mikrobiologi, bioprocessteknik, bioinformatik och miljöbioteknik. APA eller Vancouver-bibliografi beroende på område."
+      "name": "IPN UPIBI — Bioteknik",
+      "sections": {
+        "portada": {
+          "guidance": "UPIBI-omslaget inkluderar: IPN-sköld, \"Interdisciplinary Professional Unit of Biotechnology\", karriär eller program, titel på arbetet, typ av avhandling, namn på studenten, regissör(er), plats och år."
+        },
+        "resumen": {
+          "title": "Sammanfattning",
+          "guidance": "Vetenskaplig sammanfattning av 200–300 ord på spanska. Inom bioteknik måste sammanfattningen innehålla:\n• Syfte med studien.\n• Huvudsakliga material/organismer/stammar/prover som används.\n• Kärnmetodik (typ av experiment, nyckelanalysteknik).\n• Viktigaste resultat (med kvantitativa data om möjligt).\n• Slutsats eller tillämpning.\nI slutet: 5–8 sökord på spanska."
+        },
+        "abstract": {
+          "title": "Abstrakt",
+          "guidance": "Engelsk översättning av sammanfattningen. UPIBI kräver det för allt examensarbete och forskarutbildning.\nNyckelord på engelska: samma som på spanska."
+        },
+        "tabla_contenidos": {
+          "guidance": "Automatiskt genererat index. I arbeten med många figurer (geler, kromatogram, tillväxtkurvor) innehåller den en lista med figurer och en lista med tabeller."
+        },
+        "introduccion": {
+          "title": "Introduktion",
+          "guidance": "Introduktionen till bioteknik kontextualiserar problemet från biologi och teknik:\n• Betydelsen av den studerade mikroorganismen, processen, föreningen eller problemet.\n• State of the art: relevanta tidigare verk (använd APA: Author, year).\n• Bakgrund: varför är denna studie relevant?\n• Arbetshypotes (om designen är experimentell).\n• Allmänt mål och specifika mål.\nVar specifik på taxa, stammar, förhållanden och föreningar från början."
+        },
+        "marco_teorico": {
+          "title": "Teoretisk ram",
+          "guidance": "Baserar arbetet på vetenskaplig litteratur:\n• Biologi/biokemi för det studerade systemet (mikroorganism, enzym, metabolisk väg, etc.).\n• Principer för huvudprocessen eller tekniken (fermentering, HPLC, PCR, etc.).\n• Kinetiska eller matematiska modeller om tillämpligt (Michaelis-Menten, Monod, etc.).\n• Standarder eller föreskrifter om relevant (NOM, FDA, WHO)."
+        },
+        "materiales_metodos": {
+          "title": "Material och metoder",
+          "guidance": "Inom bioteknik är avsnittet om material och metoder avgörande för reproducerbarhet. Inkluderar:\n• Biologiska material: organismer, stammar (med katalognummer eller accessionsnummer), cellinjer, prover (med ursprung och bevarandeförhållanden).\n• Reagenser: namn, kvalitet, leverantör.\n• Utrustning: modell, märke, driftsförhållanden.\n• Analytiska metoder: exakta förhållanden (temperatur, pH, tid, koncentrationer).\n• Experimentell design: oberoende, beroende och kontrollvariabler; repliker.\n• Statistisk analys: programvara, tester och signifikansnivå (α = 0,05).\nDetaljnivån bör tillåta ett annat laboratorium att upprepa experimentet exakt."
+        },
+        "resultados": {
+          "title": "Resultat",
+          "guidance": "Presentera data objektivt, utan tolkning:\n• Figurer: kromatogram, tillväxtkurvor, geler, mikroskopier — var och en med nummer, beskrivande titel (nedan) och kompletta enheter på axlarna.\n• Tabeller: data i tabellform med medelvärde ± standardavvikelse, enheter i rubriken.\n• Statistik: indikerar om skillnaderna är signifikanta (p < 0,05, ANOVA, Tukey, etc.).\n• Statistiska bokstäver i tabeller och figurer om tillämpligt (a, b, ab för homogena grupper).\nHänvisa till varje figur eller tabell uttryckligen i texten innan den visas."
+        },
+        "discusion": {
+          "title": "Diskussion",
+          "guidance": "Tolka resultaten i sammanhanget av litteraturen:\n• Bekräftar eller motbevisar resultaten hypotesen?\n• Jämför med tidigare studier: stämmer de överens? skiljer de sig åt? Varför kan de skilja sig åt (stamning, villkor, metod)?\n• Förklarar biologiska eller biokemiska mekanismer som motiverar resultaten.\n• Diskuterar metodologiska begränsningar och deras inverkan på resultaten.\n• Konsekvenser: vad betyder det för industri, medicin eller miljö?"
+        },
+        "conclusiones": {
+          "title": "Slutsatser",
+          "guidance": "Sammanfatta de viktigaste sakerna i direkta och mätbara termer:\n• Varje slutsats motsvarar ett specifikt mål.\n• Undvik att upprepa sammanfattningen av resultat – den avslutar, rapporterar inte.\n• Indikerar bidraget till kunskap eller branschen.\n• Rekommendationer för framtida forskning."
+        },
+        "referencias": {
+          "title": "Referenser",
+          "guidance": "Referenslista i APA 7 (genereras automatiskt).\nFör vetenskapliga artiklar: använd DOI-importören – PubMed, ScienceDirect och Web of Science har DOI för de flesta bioteknikartiklar.\nFör artiklar utan DOI: inkludera webbadressen till tidskriften eller databasen."
+        },
+        "anexos": {
+          "title": "Bilagor",
+          "guidance": "Rådata från experiment, kompletta geler (otrimmade), nukleotid- eller aminosyrasekvenser, GenBank-accessionsnummer, certifikat för reagensanalys, kompletta protokoll som inte ingår i M&M."
+        }
+      },
+      "description": "Examensarbete från IPN:s interdisciplinära professionella enhet för bioteknik. Det täcker biokemi, mikrobiologi, bioprocessteknik, bioinformatik, miljö- och farmaceutisk bioteknik. Experimentell och kvantitativ karaktär med hög noggrannhet i datapresentation. APA 7 bibliografi för de flesta områden; Vancouver accepterat i områden som ligger närmare hälsovetenskap."
     },
     "mx.ipn.upitta": {
-      "name": "IPN UPITTA — Avancerade Teknologier",
-      "description": "Avhandlingar från IPN:s Interdisciplinära Yrkesmässiga Enhet för Avancerade Teknologier. Inriktad på mekatronik, intelligenta system, automatisering och framväxande teknologier. IEEE-bibliografi."
+      "name": "IPN UPITTA — Avancerad teknik",
+      "sections": {
+        "portada": {
+          "guidance": "UPITTA-omslaget inkluderar: IPN-sköld, \"Interdisciplinary Professional Unit of Advanced Technologies\", titel på arbetet, typ av avhandling, namn på studenten, ledare, plats och år."
+        },
+        "resumen": {
+          "title": "Sammanfattning",
+          "guidance": "Teknisk sammanfattning på spanska på 200–250 ord. UPITTAs tvärvetenskapliga karaktär innebär att sammanfattningen måste vara begriplig för läsare från olika områden (teknik, datorer, tillämpad matematik).\nInkluderar: tekniskt problem, föreslagen lösning, nyckelteknologier och det huvudsakliga mätbara resultatet."
+        },
+        "abstract": {
+          "title": "Abstrakt",
+          "guidance": "Engelsk översättning. Krävs av UPITTA för alla examens- och forskarutbildningsarbeten.\nNyckelord på engelska: 5–8 relevanta tekniska termer."
+        },
+        "tabla_contenidos": {
+          "guidance": "Automatiskt genererat index. Inkluderar en lista med figurer och en lista med tabeller om det finns fler än 5 av varje typ."
+        },
+        "introduccion": {
+          "title": "Introduktion",
+          "guidance": "Kontextualisera problemet ur det tvärvetenskapliga perspektivet av UPITTA:\n• Det tekniska området och dess relevans (mekatronik, AI, automation etc.).\n• Det specifika problemet och dess konsekvenser (industriell, social, vetenskaplig).\n• Viktigaste relaterade verk (hänvisning med IEEE-nummer: [1], [2]).\n• Allmänt mål och specifika mål.\n• Konkret bidrag: vad föreslår du som inte finns eller inte fungerar bra?\n• Dokumentorganisation."
+        },
+        "estado_arte": {
+          "title": "State of the Art och teoretiska ramar",
+          "guidance": "Kombination av den senaste tekniken och den teoretiska ramen, lämplig för tvärvetenskapligt arbete:\n• Gå igenom de mest relevanta tidigare verken inom varje område som ditt projekt berör.\n• Presentera de teorier eller matematiska modeller som din lösning bygger på.\n• Jämförande tabeller över befintliga lösningar jämfört med din.\n• Identifiera tydligt vilken nisch eller förbättring som ditt arbete medför.\nPå UPITTA är det tvärvetenskapliga förhållningssättet en styrka – det visar hur du integrerar olika områden."
+        },
+        "diseno": {
+          "title": "Systemdesign",
+          "guidance": "Presentera hela arkitekturen eller designen av systemet innan du implementerar det:\n• Allmän arkitektur: block- eller komponentdiagram.\n• Matematisk eller dynamisk modell (för styrsystem, robotteknik etc.).\n• Val och motivering av teknologier (sensorer, ställdon, plattformar, algoritmer).\n• Flödesscheman eller tillståndsmaskiner om tillämpligt.\n• Designbegränsningar: effekt, storlek, kostnad, svarstid.\nDesignen måste vara oberoende av implementeringen."
+        },
+        "implementacion": {
+          "title": "Implementering och resultat",
+          "guidance": "Beskriv implementeringen och presentera experimentresultaten:\n• Utvecklingsmiljö: hårdvara, mjukvara, versioner.\n• Implementering av moduler eller delsystem.\n• Integrationstestning: Fungerar hela systemet som designen förutsäger?\n• Kvantitativa resultat: mätvärden (noggrannhet, svarstid, förbrukning, RMS-fel, etc.).\n• Jämförelse med den senaste tekniken eller med baslinjen.\nPå UPITTA värderas tester i verkliga eller nästan verkliga förhållanden."
+        },
+        "conclusiones": {
+          "title": "Slutsatser och framtida arbete",
+          "guidance": "Avsluta arbetet med teknisk och tvärvetenskaplig noggrannhet:\n• Mål uppfyllda kontra höjda (med kvantitativa bevis).\n• Ursprungliga bidrag (teknisk, metodologisk eller disciplinär integration).\n• Systemets eller studiens begränsningar.\n• Framtida arbete: förbättringar, utbyggnader, möjliga industriella eller forskningsapplikationer.\nNämn om arbetet ledde eller kan leda till publikationer eller patent."
+        },
+        "referencias": {
+          "title": "Referenser",
+          "guidance": "IEEE numeriska referenser i ordning efter utseende (genereras automatiskt).\nAnvänd DOI-importören för artiklar från IEEE Xplore, ACM DL, etc.\nInkludera DOI i varje referens – det är ett IEEE-krav."
+        },
+        "anexos": {
+          "title": "Bilagor",
+          "guidance": "Fullständig källkod, komponentdatablad, mekaniska eller elektriska ritningar, kalibreringsprocedurer, användarmanualer, rå experimentdata."
+        }
+      },
+      "description": "Uppsats från IPN:s Interdisciplinary Professional Unit of Advanced Technologies. Inriktad på mekatronik, intelligenta system, automation, robotik och framväxande teknologier. Tvärvetenskaplig natur: integrerar ingenjörsvetenskap, databehandling och grundläggande vetenskaper. IEEE Numerisk bibliografi."
     },
     "mx.unam.posgrado": {
-      "name": "UNAM — Forskarutbildning",
-      "description": "Masteruppsatser och doktorsavhandlingar från UNAM. Baserat på riktlinjerna från Koordineringen för forskarutbildning (CEP-UNAM). APA 7, XeLaTeX, legal pappersformat."
+      "name": "UNAM – forskarutbildning",
+      "sections": {
+        "portada": {
+          "guidance": "UNAM-omslaget inkluderar: UNAM-sköld, namn på fakulteten eller institutet, titeln på arbetet, typ av avhandling (för att erhålla magister-/doktorsexamen i...), namn på studenten, avhandlingsledare, handledningskommitté, plats och år.\nProfilen genererar omslaget automatiskt med de data du konfigurerade när du skapade projektet."
+        },
+        "dedicatoria": {
+          "title": "Dedikation",
+          "guidance": "Kort text (1–5 rader) tillägnad viktiga personer. Det är personligt och valfritt.\nPå UNAM har den inget sidnummer och skrivs ut på en separat sida."
+        },
+        "agradecimientos": {
+          "title": "Tack",
+          "guidance": "Nämn direktören, handledningskommittén, CONACYT/CONAHCyT (om det fanns ett stipendium), laboratoriet eller forskargruppen och nyckelpersoner i arbetet.\nInkludera projekt- eller stipendienummer om tillämpligt (t.ex. \"CONAHcyT Scholarship No. XXXXXX\")."
+        },
+        "resumen": {
+          "title": "Sammanfattning",
+          "guidance": "Sammanfattning på spanska på 200–300 ord. CEP-UNAM kräver det på spanska.\nInkluderar: mål, metodik, huvudresultat och slutsats.\nI slutet: 4–6 sökord separerade med semikolon."
+        },
+        "abstract": {
+          "title": "Abstrakt",
+          "guidance": "Översättning av sammanfattningen till engelska. Många UNAM doktorandprogram kräver det.\nSamma format som sammanfattningen på spanska.\nNyckelord: samma som på spanska, på engelska."
+        },
+        "tabla_contenidos": {
+          "guidance": "Indexet genereras automatiskt. Innehåller kapitel, avsnitt och underavsnitt.\nUNAM kräver i allmänhet också en lista med figurer och en lista med tabeller om det finns fler än 5."
+        },
+        "introduccion": {
+          "title": "Introduktion",
+          "guidance": "UNAM-introduktionen måste innehålla:\n1. Bakgrund och sammanhang för problemet.\n2. Problembeskrivning och motivering.\n3. Hypotes eller forskningsfråga.\n4. Allmänt mål och specifika mål.\n5. Omfattning och begränsningar.\n6. Uppsatsens uppbyggnad (vad varje kapitel innehåller).\nRekommenderad längd: 4–8 sidor."
+        },
+        "marco_teorico": {
+          "title": "Teoretisk ram",
+          "guidance": "Granska och syntetisera relevant litteratur. Vid UNAM måste det teoretiska ramverket:\n• Citera primära och aktuella källor (senaste 10 åren; klassiker om de är grundläggande).\n• Organisera idéer logiskt, inte som en lista med sammanfattningar.\n• Använd APA 7 för alla hänvisningar — systemet genererar dem automatiskt.\n• Identifiera den senaste tekniken och luckan som din forskning fyller."
+        },
+        "metodologia": {
+          "title": "Metodik",
+          "guidance": "Beskriv metodiken tillräckligt detaljerat för att kunna replikeras. Inkluderar:\n• Typ av forskning och design.\n• Population, urval och urvalskriterier.\n• Instrument och procedurer.\n• Dataanalys (mjukvara, statistik eller kvalitativa kategorier).\n• Etiska överväganden och samtycken om tillämpligt."
+        },
+        "resultados": {
+          "title": "Resultat",
+          "guidance": "Presentera resultaten objektivt. Använd tabeller och figurer med referenser i texten.\nPå UNAM måste varje figur och tabell ha: nummer, beskrivande titel (ovan för tabeller, nedan för figurer) och källa om tillämpligt.\nTolka inte resultaten här – det går i diskussionen."
+        },
+        "discusion": {
+          "title": "Diskussion",
+          "guidance": "Tolka resultaten i samband med din forskningsfråga och litteraturen.\nJämför med tidigare studier, peka på tillfälligheter och avvikelser.\nDiskuterar teoretiska och praktiska implikationer.\nInse begränsningar ärligt."
+        },
+        "conclusiones": {
+          "title": "Slutsatser",
+          "guidance": "Svara direkt på dina mål och hypoteser. CEP-UNAM hoppas:\n• Syntes av huvudfynd.\n• Ursprungliga bidrag till området.\n• Rekommendationer för framtida forskning.\n• Konsekvenser för praxis eller policy (om tillämpligt).\nLängd: 3–5 sidor. Ange inte ny information."
+        },
+        "referencias": {
+          "title": "Referenser",
+          "guidance": "Referenslistan genereras automatiskt i APA 7-format.\nUNAM kräver APA 7 i de flesta forskarutbildningar.\nSe till att varje källa som citeras finns i .bib, och vice versa.\nAnvänd DOI-importören för att få fullständiga och normaliserade poster."
+        },
+        "anexos": {
+          "title": "Bilagor",
+          "guidance": "Tilläggsmaterial som stödjer arbetet utan att störa huvudflödet:\ninsamlingsinstrument, rådatatabeller, källkod, samtyckesbrev.\nNummer: Bilaga A, Bilaga B... Referera till var och en från huvudtexten."
+        }
+      },
+      "description": "Forskaravhandlingar och avhandlingar från National Autonomous University of Mexico. Baserat på riktlinjerna för Coordination of Postgraduate Studies (CEP-UNAM): papper i bokstavsstorlek eller legal storlek, 2,5 cm marginaler, 1,5 radavstånd, APA 7, omslag med officiellt vapen."
+    },
+    "generic.tesina": {
+      "name": "Allmän avhandling",
+      "sections": {
+        "title_page": {
+          "guidance": "Försättssidan genereras automatiskt med de institutionella data som konfigurerats när projektet skapades.\nDu behöver inte skriva innehåll här."
+        },
+        "table_of_contents": {
+          "guidance": "Indexet genereras automatiskt från dina aktiverade avsnitt.\nDu behöver inte skriva något här."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "Inledningen presenterar ämnet och motiverar arbetet. För ett examensarbete innehåller det:\n1. Kort sammanhang för ämnet (från allmänt till specifikt).\n2. Problem eller fråga som verket tar upp.\n3. Allmänt mål.\n4. Motivering: varför är det relevant att studera det?\n5. Kort beskrivning av hur dokumentet är organiserat.\nTypisk längd: 1–3 sidor."
+        },
+        "development": {
+          "title": "Utveckling",
+          "guidance": "Utveckling är den centrala delen av arbetet. Dela upp det i logiska underavsnitt:\n• Konceptuell ram: definierar nyckelbegrepp med bibliografiskt stöd.\n• Analys eller utveckling av ämnet: argument, förslag eller central studie.\n• Resultat eller fynd om tillämpligt.\nVarje idé måste stödjas av källor. Använd \"Bibliographical citation\"-block för referenser.\nTypisk längd: 10–30 sidor."
+        },
+        "conclusions": {
+          "title": "Slutsatser",
+          "guidance": "Avsluta arbetet genom att direkt svara på målet som anges i inledningen:\n• Uppnåddes målet? Vad hittades?\n• Reflektion över verkets relevans.\n• Begränsningar hittades.\n• Rekommendationer eller linjer för framtida arbete.\nTypisk längd: 1–2 sidor. Ange inte ny information här."
+        },
+        "references": {
+          "guidance": "Referenslistan genereras automatiskt från din .bib-fil när du kompilerar.\nAnvänd DOI-importören (Ctrl+[ > DOI-panelen) för att enkelt lägga till källor.\nAPA 7-stil tillämpas automatiskt."
+        }
+      },
+      "description": "Förenklad version för kandidatexamen: introduktion, utveckling och slutsatser. Bokklass, XeLaTeX, biber, APA 7."
+    },
+    "generic.thesis": {
+      "name": "Allmän avhandling",
+      "sections": {
+        "title_page": {
+          "guidance": "Försättssidan genereras automatiskt av profilen med de institutionella data som du konfigurerade när du skapade projektet (studentens namn, institution, befattning, examensledare, år).\nDu behöver inte skriva innehåll här."
+        },
+        "table_of_contents": {
+          "guidance": "Innehållsförteckningen genereras automatiskt från de avsnitt som är aktiverade i ditt projekt.\nDu behöver inte skriva något – se bara till att dina kapitel har titlar."
+        },
+        "abstract_es": {
+          "title": "Sammanfattning",
+          "guidance": "I sammandraget presenteras din avhandling på 150–250 ord. Du måste svara kort:\n• Vad är problemet eller forskningsfrågan?\n• Vilken metod använde du?\n• Vilka är de viktigaste resultaten?\n• Vad är slutsatsen eller bidraget?\nAnge inte referenser i sammanfattningen. Skriv det i preteritum. Inkludera 4–6 sökord i slutet."
+        },
+        "abstract_en": {
+          "title": "Abstrakt",
+          "guidance": "Trogen översättning av sammanfattningen till engelska, i samma format (150–250 ord).\nMånga forskarinstitutioner kräver det för internationell indexering.\nNyckelord: samma sökord som sammanfattningen, på engelska."
+        },
+        "dedication": {
+          "title": "Dedikation",
+          "guidance": "Kort text (1–5 rader) tillägnad personer som är viktiga för författaren.\nDet är personligt och valfritt. Några exempel: \"Till mina föräldrar, för deras ovillkorliga stöd.\"\nDen har inte en explicit titel i de flesta stilar – profilen hanterar det."
+        },
+        "acknowledgements": {
+          "title": "Tack",
+          "guidance": "Nämn de som bidragit till din forskning: chef, läsare, kollegor, institutioner, finansiärer.\nVar specifik: nämn varje persons eller organisations roll.\nRekommenderad längd: halv till en sida."
+        },
+        "introduction": {
+          "title": "Introduktion",
+          "guidance": "Inledningen kontextualiserar ditt arbete och motiverar läsaren att fortsätta läsa. Måste innehålla:\n1. Allmän kontext för ämnet (från bred till specifik).\n2. Problemformulering: vilken lucka eller behov finns?\n3. Forskningsfråga eller hypotes.\n4. Allmänt mål och specifika mål.\n5. Motiv: varför är det relevant att studera detta?\n6. Studiens omfattning och begränsningar.\n7. Kort beskrivning av uppsatsens struktur.\nTypisk längd: 3–6 sidor."
+        },
+        "theoretical_framework": {
+          "title": "Teoretisk ram",
+          "guidance": "Det teoretiska ramverket stödjer din forskning med befintlig litteratur. Du måste:\n• Gå igenom nyckelbegrepp och teorier relaterade till ditt ämne.\n• Ange primära och aktuella källor (senaste 5–10 åren för artiklar; klassiker om de är grundläggande).\n• Organisera idéer logiskt, inte som en lista med sammanfattningar.\n• Identifiera teknikens ståndpunkt: vad är känt och vad saknas?\n• Placera ditt arbete inom litteraturen: vad bidrar du med?\nAnvänd blocket \"Bibliografisk hänvisning\" för varje referens. Undvik överdrivna citattecken – parafrasera och analysera."
+        },
+        "methodology": {
+          "title": "Metodik",
+          "guidance": "Beskriv hur du utförde din forskning tillräckligt detaljerat så att den kan replikeras. Inkluderar:\n• Typ av forskning (kvantitativ, kvalitativ, blandad; utforskande, beskrivande, förklarande).\n• Design: experimentell, kvasi-experimentell, fallstudie, undersökning etc.\n• Population och urval: urvalskriterier, storlek, urvalsteknik.\n• Insamlingsinstrument: frågeformulär, intervjuer, observation, experiment.\n• Procedur: steg som följs kronologiskt.\n• Dataanalys: programvara, statistik, kvalitativa analyskategorier.\n• Etiska överväganden om tillämpligt."
+        },
+        "results": {
+          "title": "Resultat",
+          "guidance": "Presentera resultaten av din forskning objektivt, utan att ännu tolka dem. Guider:\n• Organisera resultaten enligt ordningen för dina mål eller forskningsfrågor.\n• Använd tabeller och figurer för numeriska eller jämförande data – referera till var och en i texten.\n• Upprepa inte i text vad en tabell redan visar; Kommentera det mest relevanta.\n• Var exakt med siffror: inkludera enheter, procentsatser, statistiska värden (p, r, χ², etc.).\n• För kvalitativ forskning: presenterar kategorier med illustrativa textcitat."
+        },
+        "discussion": {
+          "title": "Diskussion",
+          "guidance": "Här tolkar du dina resultat och relaterar dem till litteraturen. Det är det mest analytiska avsnittet. Du måste:\n• Förklara vad dina resultat betyder i samband med din forskningsfråga.\n• Jämför med tidigare studier: stämmer de överens? skiljer de sig åt? därför att?\n• Peka på oväntade resultat och ge möjliga förklaringar.\n• Diskutera teoretiska och praktiska implikationer av dina resultat.\n• Inse begränsningarna i studien ärligt.\nPresentera inte nya resultat här – tolka bara de som redan har rapporterats."
+        },
+        "conclusions": {
+          "title": "Slutsatser",
+          "guidance": "Slutsatser avslutar ditt argument och svarar direkt på dina mål. Inkluderar:\n• Svar på forskningsfrågan/hypotesverifiering.\n• Syntes av de viktigaste resultaten (utan att upprepa detaljer om resultaten).\n• Ursprungliga bidrag av verket.\n• Rekommendationer för yrkesutövning eller framtida forskning.\n• Slutreflektion kring arbetets relevans.\nRekommenderad längd: 2–4 sidor. Ange inte ny information."
+        },
+        "references": {
+          "title": "Referenser",
+          "guidance": "Referenslistan genereras automatiskt från din .bib-fil när du kompilerar.\nSe till att varje källa som citeras i texten finns i .bib, och vice versa.\nFör att lägga till referenser: använd knappen importera DOI eller redigera filen references.bib direkt.\nCiteringsstilen (APA 7 i den här profilen) tillämpas automatiskt av LaTeX."
+        },
+        "appendices": {
+          "title": "Bilagor",
+          "guidance": "Bilagorna innehåller stödmaterial som inte får plats i huvuddelen men som läsaren kan behöva verifiera:\n• Insamlingsinstrument (fullständiga frågeformulär, intervjuguider).\n• Rådatatabeller.\n• Källkod eller skript.\n• Kartor, planer, juridiska dokument.\n• Fullmaktsbrev eller informerat samtycke.\nVarje bilaga måste numreras (bilaga A, bilaga B...) och hänvisas till från huvudtexten."
+        }
+      },
+      "description": "Basprofil för avhandlingar och formella akademiska arbeten för kandidat-, specialitets-, master-, doktors- och postdoktoral examina. Bokklass, XeLaTeX, biber, APA 7."
     }
   },
   "institutions": {

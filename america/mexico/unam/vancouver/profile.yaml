@@ -1,39 +1,28 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_unam_vancouver
-name: "UNAM - Ciencias de la Salud (Vancouver)"
+name: mx_unam_vancouver
 status: verified
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: vancouver
-
-# ── Verificación contra guías oficiales ──────────────────────────
-# Revisado el 2026-05-25 contra lineamientos de la Facultad de Medicina
-# UNAM y recomendaciones ICMJE para publicaciones biomédicas.
-# Revisar anualmente — ICMJE actualiza sus recomendaciones periódicamente.
 verification:
-  reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-28"
-  verified_by: "TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)"
-  ci_evidence: "https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667"
+  reviewed_at: '2026-05-25'
+  reviewed_by: TeXisStudio Community
+  verified_at: '2026-05-28'
+  verified_by: TeXisStudio CI — automated LaTeX compilation + postflight (xelatex + biber)
+  ci_evidence: https://github.com/GonzaloAndDev/TeXisStudio-Profiles/actions/runs/26552369667
   source_urls:
-    - "https://www.facmed.unam.mx/espec/titulacion.html"
-    - "https://www.icmje.org/recommendations/"
-    - "https://www.nlm.nih.gov/bsd/uniform_requirements.html"
+  - https://www.facmed.unam.mx/espec/titulacion.html
+  - https://www.icmje.org/recommendations/
+  - https://www.nlm.nih.gov/bsd/uniform_requirements.html
   review_interval_days: 365
-
-# ── Formato de página ─────────────────────────────────────────────
-# Fuente: Lineamientos Facultad de Medicina UNAM (programa de posgrado).
-# Márgenes: izquierdo 3 cm, derecho 2 cm, superior/inferior 2.5 cm.
-# Interlineado: 1.5. Fuente: Times New Roman 12pt.
 document_class:
   name: book
   options:
-    - 12pt
-    - a4paper
-    - oneside
-
+  - 12pt
+  - a4paper
+  - oneside
 page_layout:
   paper: a4paper
   margins:
@@ -42,275 +31,76 @@ page_layout:
     left: 30mm
     right: 20mm
   line_spacing: 1.5
-
-# ── Límites de palabras ───────────────────────────────────────────
-# La UNAM no establece un límite universal de palabras.
-# Resumen: 250–300 palabras (recomendado ICMJE); máximo 350 para ProQuest.
-# Tesis clínicas: típicamente 60–150 páginas.
 max_abstract_words: 350
-
 packages: []
-
 sections:
-  # ── Preliminares ──────────────────────────────────────────────────
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      Official UNAM title page. Must include:
-      • UNAM and Faculty or Institute logo and name.
-      • Full name of the specialization or graduate program.
-      • Thesis title (centered, in title case).
-      • "THESIS submitted to obtain the title/degree of [Specialist in / Doctor in]
-        [specialty/area], PRESENTED BY:"
-      • Author’s full name.
-      • Thesis supervisor’s name and institutional affiliation.
-      • Mexico City, month and year.
-      Medical specializations (UNAM-IMSS, UNAM-ISSSTE, Hospital General, etc.)
-      have specific title page formats — consult your program coordinator.
-
-  - id: declaracion
-    element_id: declaration
-    placement: front_matter
-    required: false
-    title: "Originality Statement"
-    guidance: |
-      Some specializations and doctoral health sciences programs at UNAM
-      require an Originality Letter or a sworn statement that the thesis is original work.
-      Verify the requirement with the Graduate Studies Division of your Faculty.
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      Structured abstract in Spanish. ICMJE recommends 250 words maximum
-      for research articles; for degree theses: 200–350 words.
-      Recommended structured format:
-        • Background/Introduction: one or two sentences contextualizing the problem.
-        • Objective: general objective of the study (one sentence).
-        • Methods: study design, population, intervention/exposure,
-          outcome variables, statistical analysis.
-        • Results: main findings with key numerical data
-          (n, percentages, key p-values or 95% CI).
-        • Conclusions: main clinical or scientific implication.
-      End with: 3–6 Keywords (preferably from the MeSH/DeCS in Spanish).
-
-  - id: abstract_ingles
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract"
-    guidance: |
-      Structured abstract in English. Recommended for international visibility
-      and required for PubMed/Medline if the thesis is adapted for publication.
-      Maximum 350 words. Same structure as the Spanish Abstract:
-      Background, Objective, Methods, Results, Conclusions.
-      Keywords: 3–6 terms from the Medical Subject Headings (MeSH).
-
-  - id: agradecimientos
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-    guidance: |
-      Optional. Acknowledge: thesis supervisor and advisor(s), head of the
-      service or department where the research was conducted,
-      study patients or participants (anonymously),
-      funding sources (CONAHCYT, DGAPA-PAPIIT, hospital funds).
-      Include the protocol number if the study was registered with a CLIS
-      (Local Health Research Committee) of IMSS, ISSSTE, etc.
-
-  - id: indice
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: |
-      General table of contents with page numbers. Generated automatically.
-      Health sciences theses in Mexico typically also list
-      the list of tables and list of figures.
-
-  - id: indice_tablas
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-    guidance: |
-      Required if there are 5 or more tables. Generated automatically.
-      Vancouver designates tables as “Table X” — be consistent throughout.
-
-  - id: indice_figuras
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-    guidance: |
-      Required if there are 5 or more figures, images or graphs.
-      Generated automatically. Vancouver: “Figure X” in the text.
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction and Background"
-    label: "capitulo:introduccion"
-    guidance: |
-      In health sciences, the Introduction and Background are typically
-      a single chapter or adjacent sections. Includes:
-      1. Epidemiological context: prevalence, incidence, disease burden,
-         relevance in the Mexican and global context.
-      2. Pathophysiology or conceptual framework of the disease/clinical problem.
-      3. State of the art: critical review of the most relevant literature
-         (last 5–10 years + foundational works).
-         Vancouver: numerical citations in order of appearance [1], [2].
-      4. Problem statement: what knowledge gap or unresolved clinical problem
-         justifies this thesis?
-      5. Rationale: clinical, epidemiological or scientific relevance.
-      6. Hypothesis (if applicable to the design).
-      7. General objective and specific objectives.
-      Vancouver: the first citation of a source takes its number; if cited again,
-      use the same original number.
-      Typical length: 15–30 pages.
-
-  - id: planteamiento
-    element_id: theoretical_framework
-    placement: body
-    required: false
-    title: "Theoretical Framework"
-    label: "capitulo:marcoteorico"
-    guidance: |
-      Optional. For basic science or biomedical theses with a relevant theoretical
-      component (biochemistry, pharmacology, genetics, biostatistics).
-      Develops the theoretical foundations of the biological model, molecular
-      mechanism, or analytical methodology underpinning the thesis.
-      In many clinical theses this content is integrated into the Introduction.
-
-  - id: materiales_metodos
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Materials and Methods"
-    label: "capitulo:metodos"
-    guidance: |
-      Critical section for reproducibility. ICMJE structure:
-      • Study design: observational (cohort, case-control, cross-sectional),
-        experimental (RCT, pre-post, time series), or qualitative.
-        Justify the choice.
-      • Setting and period: hospital, clinic, laboratory; start and
-        end dates of data collection.
-      • Population: inclusion and exclusion criteria, operational definition
-        of cases.
-      • Sample: sample size calculated with an explicit formula, confidence
-        level, power and parameters used. Sampling type.
-      • Variables: operational definition, type (continuous/discrete
-        quantitative, nominal/ordinal qualitative) and units of measurement.
-      • Intervention or exposure (if applicable): precise and reproducible description.
-      • Instruments and techniques: validated or standardized with their references.
-      • Statistical analysis: software (SPSS, Stata, R, MedCalc, GraphPad),
-        statistical tests with justification (parametric/non-parametric),
-        significance level (generally α = 0.05).
-      • Ethical considerations: Ethics and Research Committee (CEI) registration
-        number, COFEPRIS registration if applicable,
-        ClinicalTrials.gov registration (if RCT), informed consent.
-      Typical length: 10–20 pages.
-
-  - id: resultados
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    label: "capitulo:resultados"
-    guidance: |
-      Present findings objectively and in order, without interpretation.
-      • Begin with sociodemographic characteristics of the population
-        (Table 1 with baseline characteristics).
-      • Report results in the order of the specific objectives.
-      • Quantitative: report mean ± SD or median (IQR) according to distribution;
-        comparisons with statistic, p-value and effect size; 95% CI.
-        Use tables for extensive numerical data and figures for trends.
-      • Qualitative: present thematic categories with representative verbatims.
-      • All tables and figures must be numbered sequentially and
-        referenced in the text before they appear.
-      • Vancouver: each table has a brief title above; each figure has
-        a detailed legend below.
-      Typical length: 15–40 pages.
-
-  - id: discusion
-    element_id: discussion
-    placement: body
-    required: true
-    title: "Discussion"
-    label: "capitulo:discusion"
-    guidance: |
-      The discussion interprets results in the context of the literature.
-      ICMJE recommended structure for biomedical discussions:
-      1. Summary of the main finding (first sentence of the discussion).
-      2. Comparison with similar studies: do they confirm, contradict or nuance
-         your results? What explains discrepancies?
-      3. Proposed mechanisms: how do you biologically or clinically explain
-         the observed findings?
-      4. Clinical implications: what changes in medical practice?
-         (Be conservative — avoid claims not supported by evidence.)
-      5. Study limitations: selection bias, information bias, residual confounding,
-         sample size, generalizability.
-         Be specific and honest — reviewers and committees always look for them.
-      6. Strengths of the study.
-      7. Future research: questions that remain unanswered.
-      Typical length: 15–30 pages.
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    label: "capitulo:conclusiones"
-    guidance: |
-      Conclusions directly answer the specific objectives.
-      Each conclusion must:
-      • Derive directly from the results (no unsupported inferences).
-      • Be written in declarative affirmative or negative language.
-      • Include the level of certainty if applicable (e.g., results suggest,
-        it was demonstrated, no significant difference was found).
-      Avoid concluding beyond what the data allow.
-      Briefly add practical or public health recommendations
-      if the evidence justifies it.
-      Typical length: 1–5 pages (health science conclusions tend to be
-      more concise than in social sciences).
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: |
-      Vancouver style (ICMJE): numbered in order of first appearance in the text.
-      Generated automatically from your .bib file by biber/biblatex-vancouver.
-      Standard entry format:
-      • Article: Last N, Last N. Article title.
-        Abbreviated J Name. year;vol(num):pp–pp. DOI or PMID.
-      • Book: Last N. Title. City: Publisher; year. p. pp.
-      • Chapter: Last N. Chapter title. In: Editor A, editor.
-        Book title. City: Publisher; year. p. pp–pp.
-      Journal abbreviations: use the Index Medicus / PubMed list.
-      DOI mandatory when available; if not, URL + access date.
-      ICMJE recommended maximum for articles: 30–40 refs.
-      Theses: no strict limit; typically 60–150 references.
-
-  - id: apendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Appendices"
-    guidance: |
-      Supplementary materials:
-      • Ethics and Research Committee opinion.
-      • Informed consent form (final approved version).
-      • Data collection instruments: questionnaires, scales, capture forms.
-      • ClinicalTrials.gov registration or equivalent (if applicable).
-      • Extended data tables or sensitivity analysis results.
-      • Authorization from the institution where the study was conducted.
-      Label: Appendix A, B… with descriptive title.
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: declaracion
+  element_id: declaration
+  placement: front_matter
+  required: false
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: abstract_ingles
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: agradecimientos
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: indice
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: indice_tablas
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: indice_figuras
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+  label: capitulo:introduccion
+- id: planteamiento
+  element_id: theoretical_framework
+  placement: body
+  required: false
+  label: capitulo:marcoteorico
+- id: materiales_metodos
+  element_id: methodology
+  placement: body
+  required: true
+  label: capitulo:metodos
+- id: resultados
+  element_id: results
+  placement: body
+  required: true
+  label: capitulo:resultados
+- id: discusion
+  element_id: discussion
+  placement: body
+  required: true
+  label: capitulo:discusion
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+  label: capitulo:conclusiones
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: apendices
+  element_id: appendix
+  placement: back_matter
+  required: false

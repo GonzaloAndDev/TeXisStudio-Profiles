@@ -1,53 +1,40 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_uam_xoc_dcbs
-name: "UAM Xochimilco — DCBS"
-description: >
-  Perfil para tesis y trabajos de investigación de la División de Ciencias
-  Biológicas y de la Salud (DCBS) de la UAM Unidad Xochimilco. Cubre las
-  licenciaturas en Medicina, Odontología, Enfermería, Biología, Nutrición,
-  Veterinaria y Agronomía, así como posgrados en ciencias de la salud.
+name: mx_uam_xoc_dcbs
 status: reviewed
-author: "TeXisStudio Community"
-version: "1.0.0"
-license: "CC BY 4.0"
+author: TeXisStudio Community
+version: 1.0.0
+license: CC BY 4.0
 tags:
-  - uam
-  - mexico
-  - biologia
-  - salud
-  - medicina
-  - odontologia
-  - nutricion
-  - veterinaria
-  - xochimilco
-  - dcbs
-  - licenciatura
-  - posgrado
-
+- uam
+- mexico
+- biologia
+- salud
+- medicina
+- odontologia
+- nutricion
+- veterinaria
+- xochimilco
+- dcbs
+- licenciatura
+- posgrado
 verification:
-  reviewed_at: "2026-05-27"
-  reviewed_by: "TeXisStudio Community — revisado contra lineamientos DCBS UAM-Xochimilco"
+  reviewed_at: '2026-05-27'
+  reviewed_by: TeXisStudio Community — revisado contra lineamientos DCBS UAM-Xochimilco
   source_urls:
-    - "https://dcbs.xoc.uam.mx/"
-    - "https://dcbs.xoc.uam.mx/posgrados/lineamientos/"
+  - https://dcbs.xoc.uam.mx/
+  - https://dcbs.xoc.uam.mx/posgrados/lineamientos/
   review_interval_days: 365
-
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
-# Vancouver: estándar internacional en ciencias de la salud y biomedicina.
 bibliography_style: vancouver
-
-# ── Formato de página ─────────────────────────────────────────────
-# DCBS UAM-Xochimilco: márgenes UAM estándar.
-# Interlineado 1.5: recomendado para trabajos de salud y biología.
 page_layout:
   paper: letterpaper
   margins:
@@ -56,134 +43,70 @@ page_layout:
     left: 30mm
     right: 25mm
   line_spacing: 1.5
-
 max_words: 60000
 max_abstract_words: 250
-
 sections:
-  - id: title_page
-    element_id: title_page
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      Official UAM-DCBS title page: UAM logo, university name, campus,
-      division and department, research work title, student name and ID,
-      term and year, and thesis director’s name.
-
-  - id: dedication
-    element_id: dedication
-    placement: front_matter
-    required: false
-    title: "Dedication"
-
-  - id: acknowledgements
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-
-  - id: abstract_es
-    element_id: abstract_es
-    placement: front_matter
-    required: true
-    title: "Abstract (Spanish)"
-    guidance: |
-      Maximum 250 words. Abbreviated IMRaD structure: background,
-      objective, methods, results and main conclusion.
-      Do not include bibliographic citations or undefined abbreviations.
-
-  - id: abstract_en
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract (English)"
-    guidance: "Exact English translation of the abstract. Mandatory for graduate programs."
-
-  - id: table_of_contents
-    element_id: table_of_contents
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-
-  - id: list_of_figures
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-
-  - id: list_of_tables
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-
-  - id: introduction
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    guidance: |
-      Background to the problem, clinical or biological relevance,
-      rationale, research question and hypothesis (if applicable).
-
-  - id: theoretical_framework
-    element_id: theoretical_framework
-    placement: body
-    required: true
-    title: "Theoretical Framework"
-    guidance: |
-      Review of the state of the art. In health sciences, a review of recent
-      literature (preferably last 5 years) with emphasis on controlled studies
-      and systematic reviews is expected.
-
-  - id: methodology
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    guidance: |
-      Study type (observational, experimental, clinical, etc.),
-      population and sample, inclusion/exclusion criteria, variables,
-      procedures, instruments and statistical analysis.
-      Include ethics committee approval if applicable.
-
-  - id: results
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    guidance: |
-      Objective presentation of findings without interpretation.
-      Use tables and figures when clearer than text.
-      Report frequency, central tendency and dispersion measures.
-
-  - id: discussion
-    element_id: discussion
-    placement: body
-    required: true
-    title: "Discussion"
-    guidance: |
-      Interpretation of results in the context of the literature.
-      Discuss study limitations. Do not repeat the results.
-
-  - id: conclusions
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    guidance: "Brief conclusions, directly derived from the results."
-
-  - id: references
-    element_id: references
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: "Vancouver format (numbered, in order of appearance). Maximum 60 references for undergraduate, no limit for graduate."
-
-  - id: appendix
-    element_id: appendix
-    placement: appendix
-    required: false
-    title: "Appendices"
-    guidance: "Measurement instruments, informed consent forms, committee approvals, etc."
+- id: title_page
+  element_id: title_page
+  placement: front_matter
+  required: true
+- id: dedication
+  element_id: dedication
+  placement: front_matter
+  required: false
+- id: acknowledgements
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: abstract_es
+  element_id: abstract_es
+  placement: front_matter
+  required: true
+- id: abstract_en
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: table_of_contents
+  element_id: table_of_contents
+  placement: front_matter
+  required: true
+- id: list_of_figures
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: list_of_tables
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduction
+  element_id: introduction
+  placement: body
+  required: true
+- id: theoretical_framework
+  element_id: theoretical_framework
+  placement: body
+  required: true
+- id: methodology
+  element_id: methodology
+  placement: body
+  required: true
+- id: results
+  element_id: results
+  placement: body
+  required: true
+- id: discussion
+  element_id: discussion
+  placement: body
+  required: true
+- id: conclusions
+  element_id: conclusions
+  placement: body
+  required: true
+- id: references
+  element_id: references
+  placement: back_matter
+  required: true
+- id: appendix
+  element_id: appendix
+  placement: appendix
+  required: false

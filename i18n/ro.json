@@ -2788,7 +2788,6 @@
     },
     "company.internship": {
       "name": "Raport de stagiu / rezidență",
-      "description": "Format pentru rapoartele privind rezidența profesională și sejururile de afaceri. Include descrierea companiei, activitățile și rezultatele. Bibliografie APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Coperta este generată automat cu date instituționale.\nAcesta va include: numele studentului, firma, perioada de stagiu, instituția academică și cariera.\nNu trebuie să scrieți conținut aici — setați datele în metadatele proiectului."
@@ -2806,7 +2805,7 @@
         },
         "activities": {
           "title": "Activități dezvoltate",
-          "guidance": "Descrieți cronologic sau pe proiect activitățile pe care le-ați desfășurat:\n• Pentru fiecare activitate: obiectiv, descrierea procesului, instrumentelor sau tehnologiilor utilizate.\n• Includeți capturi de ecran, diagrame sau tabele atunci când susțin explicația.\n• Menționați provocările întâlnite și cum le-ați rezolvat.\n• Vă puteți organiza pe săptămâni, sprinturi, faze de proiect sau zone de lucru.\nAceasta este cea mai lungă secțiune a raportului — fiți specific și tehnic."
+          "guidance": "Descrieți cronologic sau pe proiecte activitățile pe care le-ați desfășurat:\n• Pentru fiecare activitate: obiectiv, descrierea procesului, instrumentelor sau tehnologiilor utilizate.\n• Includeți capturi de ecran, diagrame sau tabele atunci când susțin explicația.\n• Menționați provocările întâlnite și cum le-ați rezolvat.\n• Vă puteți organiza pe săptămâni, sprinturi, faze de proiect sau zone de lucru.\nAceasta este cea mai lungă secțiune a raportului — fiți specific și tehnic."
         },
         "results": {
           "title": "Rezultate și contribuții",
@@ -2814,22 +2813,21 @@
         },
         "conclusions": {
           "title": "Concluzii",
-          "guidance": "Închideți raportul cu o reflecție profesională:\n• Au fost îndeplinite obiectivele rezidențiale?\n• Ce învățare profesională ați obținut?\n• Cum a completat experiența pregătirea dumneavoastră academică?\n• Recomandări pentru viitorii practicieni sau pentru companie.\nLungime: 1–2 pagini."
+          "guidance": "Închideți raportul cu o reflecție profesională:\n• Au fost îndeplinite obiectivele rezidențiale?\n• Ce învățătură profesională ați obținut?\n• Cum a completat experiența pregătirea dumneavoastră academică?\n• Recomandări pentru viitorii practicieni sau pentru companie.\nLungime: 1–2 pagini."
         },
         "references": {
           "title": "Referințe",
-          "guidance": "Enumerați sursele consultate în timpul practicilor: manuale tehnice, standarde, articole, site-uri web.\nLista este generată automat din .bib.\nStilul APA 7. Utilizați importatorul DOI pentru a adăuga cu ușurință referințe academice."
+          "guidance": "Enumerați sursele consultate în timpul practicilor: manuale tehnice, standarde, articole, site-uri web.\nLista este generată automat din .bib.\nStil APA 7. Utilizați importatorul DOI pentru a adăuga cu ușurință referințe academice."
         },
         "appendices": {
           "title": "Anexe",
-          "guidance": "Include material suport care ar fi foarte extins în corpul principal:\n• Scrisoare de acceptare din partea companiei.\n• Scrisoare de finalizare/evaluare din partea tutorelui de afaceri.\n• Jurnalele săptămânale (dacă este solicitat de instituția dumneavoastră).\n• Cod sursă relevant.\n• Elaborare manuale de utilizare sau tehnice.\n• Dovezi fotografice ale locului de muncă.\nNumerotați fiecare anexă (Anexa A, B…) și faceți referire la ele din text."
+          "guidance": "Include material suport care ar fi foarte extins în corpul principal:\n• Scrisoare de acceptare din partea companiei.\n• Scrisoare de finalizare/evaluare din partea tutorelui de afaceri.\n• Jurnalele săptămânale (dacă este solicitat de instituția dumneavoastră).\n• Cod sursă relevant.\n• Manuale de utilizare sau tehnice elaborate.\n• Dovezi fotografice ale locului de muncă.\nNumerotați fiecare anexă (Anexa A, B…) și faceți referire la ele din text."
         }
       },
-      "meta": "Bibliografie APA 7 · XeLaTeX"
+      "description": "Format pentru rapoarte privind rezidența profesională și sejururile de afaceri. Include descrierea companiei, activitățile și rezultatele. Bibliografie APA 7."
     },
     "engineering.basic": {
       "name": "Raport de inginerie/tehnică",
-      "description": "Raport tehnic cu secțiuni despre abordare, proiectare, implementare și testare. IEEE Bibliografie. Ideal pentru teză de inginerie și rezidențiat profesional.",
       "sections": {
         "title_page": {
           "guidance": "Coperta este generată automat cu datele proiectului.\nNu trebuie să scrieți conținut aici."
@@ -2851,11 +2849,11 @@
         },
         "design": {
           "title": "Design și arhitectură",
-          "guidance": "Prezentați soluția propusă înainte de a o implementa:\n• Arhitectura sistemului (diagrama componentelor, straturi, module).\n• Deciziile de proiectare și justificarea tehnologiilor alese.\n• Diagramă sau algoritm principal.\n• Model de date, dacă este cazul (schema ER, BD).\n• Interfață cu utilizatorul (wireframes sau machete, dacă este cazul).\nDesignul ar trebui să fie independent de implementare — o terță parte ar trebui să o poată implementa din această secțiune."
+          "guidance": "Prezentați soluția propusă înainte de a o implementa:\n• Arhitectura sistemului (diagrama componentelor, straturi, module).\n• Deciziile de proiectare și justificarea tehnologiilor alese.\n• Diagramă sau algoritm principal.\n• Model de date, dacă este cazul (ER, schemă DB).\n• Interfață cu utilizatorul (wireframes sau machete, dacă este cazul).\nDesignul ar trebui să fie independent de implementare — o terță parte ar trebui să o poată implementa din această secțiune."
         },
         "implementation": {
           "title": "Implementare",
-          "guidance": "Descrieți cum a fost creată soluția:\n• Mediu de dezvoltare: limbaje, cadre, platforme, versiuni.\n• Descrierea modulelor sau componentelor implementate.\n• Fragmente de cod relevante (doar cele mai ilustrative, nu întregul cod).\n• Provocări de implementare și soluții adoptate.\n• Configurarea infrastructurii dacă este cazul (servere, containere, BD).\nCodul complet este în anexe — aici doar cel mai reprezentativ."
+          "guidance": "Descrieți cum a fost creată soluția:\n• Mediu de dezvoltare: limbaje, cadre, platforme, versiuni.\n• Descrierea modulelor sau componentelor implementate.\n• Fragmente de cod relevante (doar cele mai ilustrative, nu întregul cod).\n• Provocări de implementare și soluții adoptate.\n• Configurarea infrastructurii, dacă este cazul (servere, containere, DB).\nCodul complet se află în anexe — aici doar cel mai reprezentativ."
         },
         "testing": {
           "title": "Testare și validare",
@@ -2863,22 +2861,21 @@
         },
         "conclusions": {
           "title": "Concluzii și lucrări viitoare",
-          "guidance": "Închideți lucrarea cu rigoare tehnică:\n• Trecerea în revistă a obiectivelor atinse vs. cele ridicate.\n• Contribuții originale ale lucrării.\n• Limitări tehnice identificate.\n• Lucrări viitoare: îmbunătățiri concrete, posibile extinderi, probleme deschise.\nÎn IEEE se menționează posibile publicații sau aplicații industriale."
+          "guidance": "Închideți lucrarea cu rigoare tehnică:\n• Trecerea în revistă a obiectivelor atinse vs. cele ridicate.\n• Contribuții originale ale lucrării.\n• Limitări tehnice identificate.\n• Lucrări viitoare: îmbunătățiri concrete, posibile extinderi, probleme deschise.\nÎn IEEE este obișnuit să se menționeze posibile publicații sau aplicații industriale."
         },
         "references": {
           "title": "Referințe",
-          "guidance": "În IEEE referințele sunt numerice și apar în ordinea primei mențiuni.\nLista este generată automat din .bib atunci când compilați.\nPentru articole și conferințe IEEE: utilizați importatorul DOI pentru a obține intrarea corectă.\nAsigurați-vă că includeți DOI în fiecare referință — IEEE necesită acest lucru."
+          "guidance": "În IEEE referințele sunt numerice și apar în ordinea primei mențiuni.\nLista este generată automat din .bib atunci când compilați.\nPentru articole și conferințe IEEE: utilizați importatorul DOI pentru a obține intrarea corectă.\nAsigurați-vă că includeți DOI în fiecare referință — IEEE o cere."
         },
         "appendices": {
           "title": "Anexe",
-          "guidance": "Material tehnic complementar:\n• Cod sursă complet (module principale).\n• Scripturi de instalare și configurare.\n• Manuale de utilizare sau tehnice.\n• Diagrame detaliate (ERD complet, diagrame de secvență etc.).\n• Date de testare sau seturi de date.\nNumăr: Anexele A, B... și consultați-le din textul principal."
+          "guidance": "Material tehnic complementar:\n• Cod sursă complet (module principale).\n• Scripturi de instalare și configurare.\n• Manuale de utilizare sau tehnice.\n• Diagrame detaliate (ERD complet, diagrame secvențe etc.).\n• Date de testare sau seturi de date.\nNumăr: Anexele A, B... și consultați-le din textul principal."
         }
       },
-      "meta": "Bibliografie IEEE · XeLaTeX"
+      "description": "Raport tehnic cu secțiuni despre abordare, proiectare, implementare și testare. Bibliografie IEEE. Ideal pentru teză de inginerie și rezidențiat profesional."
     },
     "generic.phd": {
       "name": "Teză de licență",
-      "description": "Profil pentru master și doctorat: recenzie literaturii, stadiul tehnicii, abordare, experimentare, glosar și acronime. XeLaTeX, biber, APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Coperta este generată automat cu datele proiectului.\nPentru studiile postuniversitare, configurați în metadate: nume complet, director, co-director (dacă este cazul) și comitetul sinodal.\nNu trebuie să scrieți conținut aici."
@@ -2897,7 +2894,7 @@
         },
         "acronyms": {
           "title": "Lista de abrevieri și acronime",
-          "guidance": "Enumerați toate acronimele și abrevierile utilizate în teză cu semnificația lor completă.\nFormat: SIGLA — Înțeles complet (de exemplu, CNN — Rețea neuronală convoluțională).\nSortați alfabetic. De asemenea, definește prima dată când fiecare acronim apare în text."
+          "guidance": "Enumerați toate acronimele și abrevierile utilizate în teză cu semnificația lor completă.\nFormat: ACRONIM — Înțeles complet (de exemplu, CNN — Rețea neuronală convoluțională).\nSortați alfabetic. De asemenea, definește prima dată când fiecare acronim apare în text."
         },
         "abstract_es": {
           "title": "Rezumat",
@@ -2905,7 +2902,7 @@
         },
         "abstract_en": {
           "title": "Rezumat",
-          "guidance": "Traducerea corectă a rezumatului în engleză. Nu este o traducere automată - verificați-o.\nCuvinte cheie: în limba engleză, de preferință termeni din tezaurul disciplinei dumneavoastră.\nObligatoriu pentru studiile postuniversitare — este versiunea care apare în arhivele internaționale."
+          "guidance": "Traducerea corectă a rezumatului în engleză. Nu este o traducere automată - verificați-o.\nCuvinte cheie: în limba engleză, de preferință termeni din tezaurul disciplinei dumneavoastră.\nObligatoriu pentru studiile postuniversitare — este versiunea care apare în depozitele internaționale."
         },
         "dedication": {
           "title": "Dedicație",
@@ -2913,7 +2910,7 @@
         },
         "acknowledgements": {
           "title": "Mulțumesc",
-          "guidance": "Mulțumim oficial celor care au contribuit la lucrare:\n• Director de teză și co-director.\n• Comitetul sinodal/revizori.\n• Finanțatori: burse, proiecte, instituții (obligatoriu pentru proiecte cu sprijin extern).\n• Colaboratori tehnici, laboratoare, firme.\n• Sprijin familial și personal (la final, pe scurt).\nExtensie: jumătate de pagină."
+          "guidance": "Mulțumim oficial celor care au contribuit la lucrare:\n• Director de teză și co-director.\n• Comitetul sinodal/revizori.\n• Finanțatori: burse, proiecte, instituții (obligatoriu pentru proiecte cu sprijin extern).\n• Colaboratori tehnici, laboratoare, firme.\n• Sprijin familial și personal (la final, pe scurt).\nLungime: jumătate de pagină."
         },
         "introduction": {
           "title": "Introducere",
@@ -2921,10 +2918,10 @@
         },
         "literature_review": {
           "title": "Recenzia literaturii și stadiul tehnicii",
-          "guidance": "Aceasta este secțiunea care demonstrează stăpânirea ta în domeniu. Trebuie să:\n• Acoperi sistematic lucrări relevante din ultimii 5-10 ani (clasicii pot fi mai vechi).\n• Organizați după temă, focalizare sau cronologie — nu ca o listă de rezumate.\n• Comparați în mod critic propunerile: puncte forte, puncte slabe, limitări.\n• Identificați golul pe care teza dumneavoastră îl umple („nicio lucrare anterioară nu a abordat X”).\n• Încheiați cu un tabel comparativ al lucrărilor conexe, dacă este posibil.\nPentru doctorat: această recenzie trebuie să fie exhaustivă și să acopere toate aspectele problemei.\nStrategie: Caută Scopus, WoS, ACM DL, IEEE Xplore. Utilizați importatorul DOI pentru fiecare articol."
+          "guidance": "Aceasta este secțiunea care demonstrează stăpânirea dvs. în domeniu. Trebuie să:\n• Acoperi sistematic lucrări relevante din ultimii 5-10 ani (clasicii pot fi mai vechi).\n• Organizați după temă, focalizare sau cronologie — nu ca o listă de rezumate.\n• Comparați în mod critic propunerile: puncte forte, puncte slabe, limitări.\n• Identificați golul pe care teza dumneavoastră îl umple („nicio lucrare anterioară nu a abordat X”).\n• Încheiați cu un tabel comparativ al lucrărilor conexe, dacă este posibil.\nPentru doctorat: această recenzie trebuie să fie exhaustivă și să acopere toate aspectele problemei.\nStrategie: Căutare Scopus, WoS, ACM DL, IEEE Xplore. Utilizați importatorul DOI pentru fiecare articol."
         },
         "theoretical_framework": {
-          "title": "Cadru teoretic",
+          "title": "Cadrul teoretic",
           "guidance": "Dezvoltați bazele teoretice și matematice necesare pentru a înțelege propunerea dvs.\nSpre deosebire de revizuirea literaturii de specialitate, aici vă aprofundați în conceptele cheie:\n• Definiții formale și notație matematică.\n• Modele teoretice pe care se bazează munca dumneavoastră.\n• Teoreme sau proprietăți relevante (cu citări sau dovezi dacă sunt originale).\nActivați această secțiune dacă teza dvs. necesită mai mult de 5–6 pagini de bază teoretică."
         },
         "problem_statement": {
@@ -2933,7 +2930,7 @@
         },
         "methodology": {
           "title": "Metodologie",
-          "guidance": "Descrieți abordarea metodologică cu rigoarea cerută de nivelul postuniversitar:\n• Paradigma cercetării: pozitivistă, constructivistă, mixtă.\n• Tip de cercetare: experimentală, cvasi-experimentală, studiu de caz, simulare, modelare.\n• Design specific de cercetare.\n• Surse de date: origine, caracteristici, proces de colectare sau generare.\n• Conductă sau proces complet de la date la rezultate.\n• Instrumente, limbi, biblioteci și versiuni specifice.\nSuficiente detalii pentru o reproducere completă."
+          "guidance": "Descrie abordarea metodologică cu rigoarea cerută de nivelul postuniversitar:\n• Paradigma cercetării: pozitivistă, constructivistă, mixtă.\n• Tip de cercetare: experimentală, cvasi-experimentală, studiu de caz, simulare, modelare.\n• Design specific de cercetare.\n• Surse de date: origine, caracteristici, proces de colectare sau generare.\n• Conductă sau proces complet de la date la rezultate.\n• Instrumente, limbi, biblioteci și versiuni specifice.\nSuficiente detalii pentru replicabilitatea completă."
         },
         "experimentation": {
           "title": "Experimentare și dezvoltare",
@@ -2941,7 +2938,7 @@
         },
         "results": {
           "title": "Rezultate",
-          "guidance": "Prezentați rezultatele cu rigoarea statistică cerută de cursul postuniversitar:\n• Organizați după obiectiv sau ipoteză.\n• Pentru rezultate cantitative: medie, abatere standard, intervale de încredere, semnificație statistică.\n• Tabele comparative cu referință, variante proprii și stadiul tehnicii.\n• Cifre cu bare de eroare atunci când este cazul.\n• Pentru rezultate calitative: saturație teoretică, triangulare, ghilimele reprezentative.\nNu interpretați aici, doar prezentați datele."
+          "guidance": "Prezentați rezultatele cu rigoarea statistică cerută de cursul postuniversitar:\n• Organizați după obiectiv sau ipoteză.\n• Pentru rezultate cantitative: medie, abatere standard, intervale de încredere, semnificație statistică.\n• Tabele comparative cu referință, variante proprii și stadiul tehnicii.\n• Cifre cu bare de eroare atunci când este cazul.\n• Pentru rezultate calitative: saturație teoretică, triangulare, ghilimele reprezentative.\nNu interpreta aici - doar prezentați datele."
         },
         "discussion": {
           "title": "Discuție",
@@ -2968,39 +2965,471 @@
           "guidance": "Material tehnic suplimentar care nu aparține fluxului principal:\n• Demonstrații matematice lungi sau secundare.\n• Cod sursă (module principale, scripturi de experiment).\n• Completați tabele de date sau rezultate suplimentare.\n• Instrumente de colectare a datelor.\n• Scrisori de aprobare etică, acorduri de confidențialitate.\nNumăr: apendicele A, B… cu titluri descriptive."
         }
       },
-      "meta": "Bibliografie APA 7 · XeLaTeX"
+      "description": "Profil pentru master și doctorat: recenzie literaturii, stadiul tehnicii, abordare, experimentare, glosar și acronime. XeLaTeX, biber, APA 7."
     },
     "vancouver.health": {
       "name": "Științe ale sănătății (IMRaD)",
-      "description": "Structură IMRaD pentru cercetarea clinică și biomedicală. Bibliografie în stil Vancouver. Ideal pentru teze în medicină, asistență medicală și științele sănătății."
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta este generată automat cu datele proiectului.\nNu trebuie să scrieți conținut aici."
+        },
+        "table_of_contents": {
+          "guidance": "Indexul este generat automat.\nNu trebuie să scrieți nimic aici."
+        },
+        "abstract_es": {
+          "title": "Rezumat",
+          "guidance": "Rezumatul IMRaD este structurat cu aceleași subtitrări ca și articolul, în miniatură:\n• Obiectiv: o propoziție cu scopul studiului.\n• Material și metode: proiectare, populație, intervenție și măsurători principale.\n• Rezultate: constatări mai relevante cu date numerice.\n• Concluzii: interpretarea clinică și domeniul de aplicare.\nLimită: 250 de cuvinte pentru teză (diferă în funcție de instituție). Fără programări. Fără acronime nedefinite.\nLa sfârșit: 3–6 cuvinte cheie MeSH (Medical Subject Headings)."
+        },
+        "abstract_en": {
+          "title": "Rezumat",
+          "guidance": "Traducerea fidelă a rezumatului în engleză cu aceleași subtitrări: Obiectiv, Metode, Rezultate, Concluzii.\nCuvinte cheie: termeni MeSH în engleză.\nNecesar pentru indexare în PubMed/MEDLINE și prezentare la conferințe internaționale."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "În IMRaD, introducerea răspunde: ce se știe? ce nu se stie? ce se va studia?\nStructura recomandată (palnie):\n1. Amploarea problemei de sănătate (epidemiologie, povara bolii).\n2. Ce se știe: revizuirea selectivă a literaturii cu citate din Vancouver ([1], [2]…).\n3. Lacuna de cunoștințe sau controversă care motivează studiul.\n4. Întrebarea de cercetare sau obiectivul studiului (exprimat clar).\n5. Ipoteze, dacă este cazul.\nNu prezentați rezultatele aici. Lungime tipică: 2–4 pagini."
+        },
+        "materials_methods": {
+          "title": "Materiale și metode",
+          "guidance": "Descrieți studiul suficient de detaliat pentru a putea fi replicat. Include:\n• Proiectarea studiului: experimental, de cohortă, caz-control, transversală, revizuire sistematică etc.\n• Locul și perioada studiului.\n• Populație: criterii de includere și excludere.\n• Eşantion: mărime, tehnică de eşantionare, justificare statistică.\n• Intervenție (dacă este cazul): descriere exactă, doză, durată.\n• Variabile și instrumente de măsură.\n• Analiză statistică: teste utilizate, software, nivel de semnificație.\n• Considerații etice: aprobarea comitetului de etică, consimțământul informat.\nEvitați să justificați deciziile metodologice - doar descrieți-le."
+        },
+        "results": {
+          "title": "Rezultate",
+          "guidance": "Prezentați rezultatele în mod obiectiv și fără interpretare:\n• Începeți cu caracteristicile eșantionului (Tabelul 1: caracteristicile de bază).\n• Prezintă rezultatele în ordinea obiectivelor sau ipotezelor.\n• Folosiți tabele și cifre pentru date numerice - fiecare menționat în text.\n• Rapoarte: n, %, medii ± SD, mediane (IQR), RR, OR, 95% CI, valoare p.\n• Nu repetați în text ceea ce arată deja tabelul – comentați doar ceea ce este cel mai relevant.\n• Pentru studii calitative: categorii cu citate textuale de la participanți (anonim)."
+        },
+        "discussion": {
+          "title": "Discuție",
+          "guidance": "Este secțiunea cea mai analitică și cea mai dificil de scris. Trebuie să:\n• Reveniți la obiectivul studiului și rezumați concluzia principală.\n• Comparați rezultatele cu studiile anterioare (similare, diferite și contradictorii).\n• Explicați discrepanțele: diferențe de design, populație, context.\n• Subliniați implicațiile clinice: ce schimbări în practică?\n• Recunoașteți limitările studiului (nu le minimizați - întărește credibilitatea).\n• Sugerați cercetări viitoare specifice.\nNu prezentați rezultate noi aici."
+        },
+        "conclusions": {
+          "title": "Concluzii",
+          "guidance": "În multe articole biomedicale, concluziile sunt incluse în Discuție.\nDacă instituția dvs. le solicită separat:\n• S-a răspuns una sau două propoziții pentru fiecare obiectiv.\n• Răspunde direct la întrebarea de cercetare.\n• Evitați generalizarea dincolo de ceea ce permit datele.\n• Menționează contribuția la cunoaștere sau la practica clinică."
+        },
+        "references": {
+          "title": "Referințe",
+          "guidance": "Stilul Vancouver: referințe numerice în ordinea apariției în text ([1], [2]…).\nLista este generată automat din .bib atunci când compilați.\nPrioritizează sursele indexate în MEDLINE/PubMed, Scopus, Web of Science.\nUtilizați importatorul DOI pentru a adăuga articole cu un singur clic - Crossref are cel mai mult PubMed.\nLimită de referință: variază în funcție de instituție (obișnuit: 30–50 pentru teze)."
+        },
+        "appendices": {
+          "title": "Anexe",
+          "guidance": "Include documente justificative care nu se încadrează în text:\n• Instrument de colectare (chestionar, fișă de captare a datelor).\n• Scrisoare de aprobare din partea comitetului de etică.\n• Consimțământ informat.\n• Tabele cu date brute sau suplimentare.\n• Protocol de intervenție detaliat.\nNumăr: Anexa A, B… și faceți referire la acestea din text."
+        }
+      },
+      "description": "Structură IMRaD pentru cercetare clinică și biomedicală. Bibliografie în stil Vancouver. Ideal pentru teze de medicină, asistență medicală și științe ale sănătății."
     },
     "apa.basic": {
       "name": "APA de bază",
-      "description": "Profil simplificat pentru lucrări academice cu stilul APA 7 strict. Ideal pentru rapoarte, eseuri și articole scurte."
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta APA 7 este generată automat cu datele proiectului.\nInclude: titlul, autorul(i), instituția, subiectul, numele profesorului și data.\nNu trebuie să scrieți conținut aici."
+        },
+        "abstract_es": {
+          "title": "Rezumat",
+          "guidance": "Rezumatul APA 7 apare pe o pagină separată cu titlul „Rezumat” (centrat, aldine).\n150–250 de cuvinte care răspund: ce se studiază?, cum?, ce s-a găsit?, ce înseamnă?\nLa sfârșit includeți 4–6 Cuvinte cheie: cu caractere cursive.\nNu citați referințe în rezumat."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "În APA 7, introducerea nu poartă titlul „Introducere” — profilul o gestionează automat.\nTrebuie să prezentați:\n• Tema și relevanța acesteia.\n• Ce se știe până acum (scurtă sinteză bibliografică).\n• Scopul sau obiectivul lucrării.\n• Întrebarea sau ipoteza se aplică.\nFolosiți citate APA în text: (Nume, An) sau Nume (An), în funcție de flux."
+        },
+        "development": {
+          "title": "Dezvoltare",
+          "guidance": "Corpul principal al lucrării. Organizați-vă cu titluri de nivel 2 și 3 în funcție de complexitate.\nPentru eseuri: argument principal, argumente de susținere cu dovezi bibliografice, contraargumente.\nPentru rapoarte: cadru conceptual, analiză, constatări.\nSursele de parafrazare — evitați ghilimelele lungi (folosește-le numai atunci când cuvintele exacte contează).\nCitează tot ceea ce nu este creația ta."
+        },
+        "conclusions": {
+          "title": "Concluzii",
+          "guidance": "Sintetizează punctele principale ale lucrării:\n• Răspunde la întrebarea sau scopul propus în introducere.\n• Subliniați implicațiile constatărilor.\n• Recunoașteți limitările.\n• Sugerează linii de lucru sau cercetare viitoare.\nNu includeți citate noi aici. Lungime: 1–2 pagini."
+        },
+        "references": {
+          "title": "Referințe",
+          "guidance": "În APA 7 se numește „Referințe” (nu „Bibliografie”).\nLista este generată automat din .bib atunci când compilați.\nReguli APA 7: aranjate alfabetic, liniuță suspendată, URL sau DOI la sfârșitul fiecărei intrări.\nUtilizați importatorul DOI (Ctrl+[ > panoul DOI) pentru a adăuga referințe cu un singur clic."
+        }
+      },
+      "description": "Profil simplificat pentru lucrări academice cu stil strict APA 7. Ideal pentru rapoarte, eseuri și articole scurte."
     },
     "chicago.humanities": {
-      "name": "Chicago / Turabian — Umanistică",
-      "description": "Teze și disertații în științe umaniste, sociale și arte cu stilul Chicago Note-Bibliografie (ed. 17) / Turabian ed. 9. Citatele apar în note de subsol numerotate. Bibliografie alfabetică la final. Foarte utilizat în filosofie, istorie, literatură, științe sociale și drept."
+      "name": "Chicago / Turabian — Științe umaniste",
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta Turabian include: titlul (centrat, o treime de sus), numele autorului, programul și universitatea, orașul și anul. Fără număr de pagină.\nProfilul generează pagina de copertă cu datele proiectului."
+        },
+        "abstract": {
+          "title": "Rezumat",
+          "guidance": "Turabian recomandă un rezumat de 150–350 de cuvinte pentru tezele de doctorat.\nInclude: temă, abordare, argument principal, metodologie și concluzie.\nScrieți-l la timpul prezent sau trecut — alegeți unul și fiți consecvenți."
+        },
+        "table_of_contents": {
+          "guidance": "Indexul este generat automat. În Chicago, nivelurile de capitol și secțiune sunt incluse, dar nu și subsecțiuni de la nivelul 3 încolo."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "În științe umaniste, introducerea prezintă argumentul central (enunțul tezei), corpus sau sursele principale, metodologia și justificarea.\nChicago permite un stil mai discursiv decât alte discipline — poți folosi persoana întâi și poți dezvolta argumentul cu nuanțe de la început.\nCitările sunt în notele de subsol numerotate, nu în paranteze. Sistemul le introduce automat."
+        },
+        "chapter_1": {
+          "title": "Capitolul 1",
+          "guidance": "În științe umaniste, capitolele dezvoltă argumentul progresiv.\nFiecare capitol trebuie să aibă propriul argument care să contribuie la argumentul central al tezei.\nUtilizați notele de subsol pentru citate directe, referințe și comentarii extinse care ar întrerupe fluxul textului.\nNotele scurte de subsol pot fi ghilimele; cele lungi pot fi discuții suplimentare."
+        },
+        "chapter_2": {
+          "title": "Capitolul 2",
+          "guidance": "Al doilea capitol. Dezvoltați următorul pas al argumentului.\nÎn istorie sau literatură, acest capitol poate analiza un corpus de texte, o perioadă istorică sau un set de surse primare.\nCitați sursele primare și secundare cu note de subsol. Pentru sursele primare recurente, utilizați abrevieri într-o notă de subsol după prima citare completă."
+        },
+        "chapter_3": {
+          "title": "Capitolul 3",
+          "guidance": "Al treilea capitol. Aduce argumentul la punctul său de cea mai mare dezvoltare.\nPuteți adăuga sau elimina capitole în funcție de structura tezei dvs. — majoritatea dizertațiilor umaniste au 3-5 capitole."
+        },
+        "conclusions": {
+          "title": "Concluzii",
+          "guidance": "Concluziile preiau argumentul central și îl îmbogățesc cu ceea ce s-a învățat în capitole.\nEvitați să repetați ceea ce s-a spus deja. Se deschide spre implicații mai largi, dezbateri deschise și posibile cercetări viitoare.\nÎn științe umaniste este valid – și uneori necesar – să se încheie cu nuanțe sau întrebări deschise."
+        },
+        "bibliography": {
+          "title": "Bibliografie",
+          "guidance": "În Chicago Notes-Bibliography lista finală se numește „Bibliografie” (nu „Referințe”).\nEste ordonat alfabetic după numele de familie al autorului.\nBibliografia este generată automat din .bib atunci când compilați.\nIncludeți toate sursele citate în notele de subsol — și puteți include sursele consultate, dar necitate dacă adaugă context."
+        },
+        "appendices": {
+          "title": "Anexe",
+          "guidance": "În științe umaniste, anexele includ de obicei: transcripții ale surselor primare, interviuri complete, material vizual suplimentar, cronologii sau glosare de termeni de specialitate."
+        }
+      },
+      "description": "Teze și disertații în științe umaniste, științe sociale și arte cu stil Chicago Notes-Bibliography (ed. a XVII-a) / Turabian a 9-a ed. Citările sunt în notele de subsol numerotate, nu în paranteze. Bibliografie la final aranjată alfabetic. Folosit pe scară largă în filosofie, istorie, literatură, științe sociale și drept."
     },
     "mx.ipn.esfm": {
-      "name": "IPN ESFM — Fizică și Matematică",
-      "description": "Teze de licență și masterat ale Școlii Superioare de Fizică și Matematică IPN. Optimizat pentru lucrări cu densitate matematică ridicată: teoreme, demonstrații, ecuații. Stil APA sau numeric în funcție de domeniu."
+      "name": "IPN ESFM — Fizică și matematică",
+      "sections": {
+        "portada": {
+          "guidance": "Coperta ESFM include: scut IPN, „Școala Superioară de Fizică și Matematică”, titlul lucrării, tipul lucrării (Teza pentru obținerea titlului/gradul de...), numele elevului, director(i), locul și anul.\nProfilul este generat cu datele proiectului."
+        },
+        "resumen": {
+          "title": "Rezumat",
+          "guidance": "Rezumat de 150–250 de cuvinte. În fizică și matematică trebuie să fie precis:\n• Problema sau întrebarea centrală, exprimată fără jargon inutil.\n• Abordarea sau metoda principală.\n• Cel mai important rezultat (cu măsurarea sau dimensiunea, dacă este cazul).\n• Implicația sau aplicarea rezultatului.\nEvitați ecuațiile din rezumat. Definiți acronimele pe care le utilizați."
+        },
+        "abstract": {
+          "title": "Rezumat",
+          "guidance": "Traducerea rezumatului în engleză. Recomandat dacă intenționați să publicați sau să prezentați la conferințe internaționale."
+        },
+        "tabla_contenidos": {
+          "guidance": "Indexul este generat automat. În lucrările de matematică este obișnuit să se includă și o listă de notații și simboluri înainte de introducere."
+        },
+        "introduccion": {
+          "title": "Introducere",
+          "guidance": "Introducerea în fizică/matematică plasează lucrarea în contextul disciplinei:\n• Motivația: de ce este problema interesantă sau relevantă?\n• Context: lucrări anterioare direct legate.\n• Enunțarea precisă a problemei sau a întrebării de cercetare.\n• Rezultatele principale (se anunță fără a demonstra — care merge în corp).\n• Structura documentului.\nPuteți utiliza notația matematică de aici, dar păstrați-o accesibilă."
+        },
+        "preliminares": {
+          "title": "Preliminari",
+          "guidance": "Secțiunea în care definiți limbajul matematic pe care îl veți folosi în restul lucrării.\nInclude: definiții fundamentale, notație și rezultate cunoscute pe care va trebui să le citați.\nNu demonstrați rezultatele cunoscute decât dacă acestea sunt necesare pentru a stabili notația exactă.\nUtilizați blocurile teorema, definiția și lema ale editorului pentru a vă structura conținutul.\nExemplu de structură: „Definiția 2.1 (Spațiul Hilbert)...”, „Lema 2.3...”, „Teorema 2.5 (Spectral)...”"
+        },
+        "desarrollo": {
+          "title": "Dezvoltare",
+          "guidance": "Corpul principal al lucrării. În matematică pură: dezvoltarea teoriei cu dovezi complete.\nÎn fizică: dezvoltarea modelului, teoriei sau experimentului.\nStructurați fiecare capitol cu ​​propoziții, leme, teoreme și demonstrații.\nFiecare demonstrație trebuie să se închidă în mod explicit cu □ sau „∎” (editorul o introduce automat).\nEcuațiile numerotate ar trebui să fie referite din text: utilizați \\eqref{} sau \\cref{}."
+        },
+        "resultados": {
+          "title": "Rezultate și aplicații",
+          "guidance": "Dacă lucrarea dvs. are aplicații numerice, computaționale sau experimentale, trimiteți-le aici.\nPentru fizica computațională: include parametrii de simulare, convergența și compararea cu rezultatele analitice sau experimentale.\nPentru fizica experimentală: prezintă date cu incertitudini, analize statistice și grafice."
+        },
+        "conclusiones": {
+          "title": "Concluzii",
+          "guidance": "Rezumă rezultatele obținute și relevanța acestora.\nLa matematică: ce presupuneri au fost rezolvate, ce întrebări deschide lucrarea.\nÎn fizică: ce fenomene au fost explicate, ce predicții face modelul.\nIndicați clar ce este original în lucrarea dvs. față de ceea ce este cunoscut\nSubliniază problemele deschise sau extensiile naturale ale lucrării."
+        },
+        "referencias": {
+          "title": "Referințe",
+          "guidance": "Lista de referințe în APA 7 (generată automat).\nPentru articole din reviste de fizică/matematică utilizați importatorul DOI — Crossref are cele mai multe articole din Physical Review, Journal of Mathematical Physics etc.\nPentru manualele clasice (Rudin, Spivak, Peskin & Schroeder etc.): adăugați intrarea manual în .bib dacă nu sunt în Crossref."
+        },
+        "apendices": {
+          "title": "Anexe",
+          "guidance": "Material tehnic suplimentar: demonstrații lungi care ar întrerupe fluxul argumentului principal, calcule detaliate, cod de simulare, tabele cu date experimentale."
+        }
+      },
+      "description": "Teză de licență și postuniversitare de la Școala Superioară de Fizică și Matematică a IPN. Proiectat pentru lucrări cu densitate matematică mare: teoreme, leme, corolare, dovezi, notații fizice și ecuații complexe. Bibliografie APA pentru lucrări generale sau stil numeric pentru publicațiile de fizică."
     },
     "mx.ipn.sepi": {
-      "name": "IPN SEPI — Studii postuniversitare în Inginerie și Științe",
-      "description": "Teze ale Secției de Studii Postuniversitare și Cercetare IPN. Format IPN cu bibliografie IEEE pentru inginerie sau APA pentru științe. Hârtie legal, margini specifice IPN."
+      "name": "IPN SEPI — Postuniversitar în Inginerie și Științe",
+      "sections": {
+        "portada": {
+          "guidance": "Coperta IPN-SEPI cuprinde: scut IPN, denumirea unității academice (ESIME/ESCOM/UPIITA...), titlul lucrării, tipul tezei (pentru obținerea gradului de Master/Doctor în...), numele studentului, directorii de teză, locul și anul.\nProfilul generează pagina de copertă cu datele proiectului."
+        },
+        "resumen": {
+          "title": "Rezumat",
+          "guidance": "Rezumat tehnic în spaniolă de 200–300 de cuvinte. SEPI o cere în spaniolă.\nTrebuie să conțină: obiectiv, metodologie, rezultate principale și concluzie.\nÎn cele din urmă: 5–8 cuvinte cheie tehnice."
+        },
+        "abstract": {
+          "title": "Rezumat",
+          "guidance": "Traducerea în engleză a rezumatului. SEPI-IPN îl solicită în toate programele postuniversitare.\nCuvinte cheie: la fel ca în spaniolă, în engleză."
+        },
+        "tabla_contenidos": {
+          "guidance": "Indexul este generat automat. IPN necesită, de asemenea, o listă de cifre, o listă de tabele și, dacă este cazul, o listă de algoritmi sau liste de coduri."
+        },
+        "introduccion": {
+          "title": "Introducere",
+          "guidance": "Introducerea IPN-SEPI trebuie să includă:\n1. Contextul tehnologic sau științific al problemei.\n2. Motivarea și justificarea.\n3. Ipoteza sau întrebare de cercetare.\n4. Obiective generale și obiective specifice.\n5. Domeniu de aplicare și limitări.\n6. Organizarea documentului.\nCitările din IEEE sunt numerice: [1], [2], [3]…"
+        },
+        "estado_arte": {
+          "title": "Stadiul tehnicii",
+          "guidance": "Examinare critică a stadiului tehnicii. În SEPI-IPN este obligatoriu și trebuie:\n• Identificați cele mai relevante lucrări (ultimii 5–10 ani; conferințe și reviste IEEE/ACM/Elsevier).\n• Compararea abordărilor: tabele comparative de metode, rezultate și limitări.\n• Identificați decalajul sau limitarea pe care o rezolvă munca dvs.\n• Justificați de ce propunerea dvs. este diferită sau superioară.\nCitare cu număr între paranteze: „Pérez et al. [5] propus...”"
+        },
+        "metodologia": {
+          "title": "Metodologie sau dezvoltare",
+          "guidance": "În inginerie, metodologia descrie soluția propusă:\n• Arhitectura sau designul sistemului.\n• Model matematic sau formal, dacă este cazul.\n• Algoritmi dezvoltați (utilizați blocul Algoritm).\n• Implementare: limbaje, cadre, hardware.\n• Diagrama generală de flux a sistemului.\nNivelul de detaliu trebuie să permită replicarea lucrării."
+        },
+        "resultados": {
+          "title": "Rezultate și analiză",
+          "guidance": "Prezentați și analizați rezultatele experimentale sau de simulare:\n• Configurare experimentală: echipamente, parametri, condiții.\n• Măsuri de evaluare: precizie, timp, consum, performanță etc.\n• Comparație cu stadiul tehnicii (tabel comparativ).\n• Analiză statistică dacă este cazul (medie, abatere, interval de încredere).\nÎn IEEE, fiecare figură și tabel trebuie să aibă un număr și o descriere concisă."
+        },
+        "conclusiones": {
+          "title": "Concluzii și lucrări viitoare",
+          "guidance": "Închideți lucrarea cu rigoare tehnică:\n• Obiective atinse vs.\n• Contribuții originale ale lucrării.\n• Limitări tehnice identificate.\n• Lucrări viitoare: îmbunătățiri concrete, posibile extinderi, probleme deschise.\nIPN-SEPI apreciază în mod deosebit menționarea posibilelor publicații sau aplicații industriale."
+        },
+        "referencias": {
+          "title": "Referințe",
+          "guidance": "În IEEE referințele sunt numerice în ordinea apariției.\nLista este generată automat din .bib.\nPentru articolele IEEE și ACM: utilizați importatorul DOI.\nIPN necesită includerea DOI atunci când este disponibil."
+        },
+        "anexos": {
+          "title": "Anexe",
+          "guidance": "Codul sursă complet, scripturi, configurații hardware/software, foi de date, manuale de utilizare, date brute ale experimentului.\nNumăr: Anexa A, Anexa B… și trimiteți fiecare dintre ele din text."
+        }
+      },
+      "description": "Teza Secției Studii Postuniversitare și Cercetare (SEPI) a Institutului Național Politehnic. Se aplică unităților CINVESTAV, ESIME, ESCOM, UPIITA și SEPI. Bibliografie IEEE pentru Inginerie și Tehnologie; Format IPN cu margini, tipografie și structură specifice Direcției Postuniversitare și Cercetare."
     },
     "mx.ipn.upibi": {
       "name": "IPN UPIBI — Biotehnologie",
-      "description": "Teze ale Unității Profesionale Interdisciplinare de Biotehnologie IPN. Orientat spre biochimie, microbiologie, inginerie bioprocese, bioinformatică și biotehnologie de mediu. Bibliografie APA sau Vancouver conform domeniului."
+      "sections": {
+        "portada": {
+          "guidance": "Coperta UPIBI include: scut IPN, „Unitate Profesională Interdisciplinară de Biotehnologie”, cariera sau programul, titlul lucrării, tipul tezei, numele studentului, director(i), locul și anul."
+        },
+        "resumen": {
+          "title": "Rezumat",
+          "guidance": "Rezumat științific de 200–300 de cuvinte în spaniolă. În biotehnologie, rezumatul trebuie să includă:\n• Obiectivul studiului.\n• Principalele materiale/organisme/tulpini/probe utilizate.\n• Metodologia de bază (tip de experiment, tehnică analitică cheie).\n• Cel mai important rezultat (cu date cantitative dacă este posibil).\n• Concluzie sau aplicare.\nLa sfârșit: 5–8 cuvinte cheie în spaniolă."
+        },
+        "abstract": {
+          "title": "Rezumat",
+          "guidance": "Traducerea în engleză a rezumatului. UPIBI îl solicită pentru toate lucrările de licență și postuniversitare.\nCuvinte cheie în engleză: la fel ca în spaniolă."
+        },
+        "tabla_contenidos": {
+          "guidance": "Index generat automat. În lucrările cu multe figuri (geluri, cromatograme, curbe de creștere), acesta include o listă de figuri și o listă de tabele."
+        },
+        "introduccion": {
+          "title": "Introducere",
+          "guidance": "Introducerea în biotehnologie contextualizează problema din biologie și inginerie:\n• Importanța microorganismului, procesului, compusului sau problemei studiate.\n• Stadiul tehnicii: lucrări anterioare relevante (utilizați APA: Autor, an).\n• Motivație: de ce este relevant acest studiu?\n• Ipoteza de lucru (dacă proiectarea este experimentală).\n• Obiective generale și obiective specifice.\nFiți specific cu privire la taxoni, tulpini, condiții și compuși încă de la început."
+        },
+        "marco_teorico": {
+          "title": "Cadrul teoretic",
+          "guidance": "Se bazează lucrările pe literatura științifică:\n• Biologia/biochimia sistemului studiat (microorganism, enzimă, cale metabolică etc.).\n• Principiile procesului sau tehnicii principale (fermentare, HPLC, PCR etc.).\n• Modele cinetice sau matematice dacă este cazul (Michaelis-Menten, Monod etc.).\n• Standarde sau reglementări, dacă sunt relevante (NOM, FDA, OMS)."
+        },
+        "materiales_metodos": {
+          "title": "Materiale și metode",
+          "guidance": "În biotehnologie, secțiunea materiale și metode este esențială pentru reproductibilitate. Include:\n• Materiale biologice: organisme, tulpini (cu număr de catalog sau număr de acces), linii celulare, probe (cu origine și condiții de conservare).\n• Reactivi: nume, calitate, furnizor.\n• Echipamente: model, marca, conditii de functionare.\n• Metode analitice: conditii exacte (temperatura, pH, timp, concentratii).\n• Proiectare experimentală: variabile independente, dependente și de control; replici.\n• Analiză statistică: software, teste și nivel de semnificație (α = 0,05).\nNivelul de detaliu ar trebui să permită unui alt laborator să repete exact experimentul."
+        },
+        "resultados": {
+          "title": "Rezultate",
+          "guidance": "Prezentați datele în mod obiectiv, fără interpretare:\n• Figuri: cromatograme, curbe de creștere, geluri, microscopii - fiecare cu număr, titlu descriptiv (mai jos) și unități complete pe axe.\n• Tabele: date tabulate cu media ± abaterea standard, unități în antet.\n• Statistici: indică dacă diferențele sunt semnificative (p < 0,05, ANOVA, Tukey etc.).\n• Litere statistice în tabele și cifre, dacă este cazul (a, b, ab pentru grupuri omogene).\nConsultați în mod explicit fiecare figură sau tabel din text înainte de a apărea."
+        },
+        "discusion": {
+          "title": "Discuție",
+          "guidance": "Interpretează rezultatele în contextul literaturii de specialitate:\n• Rezultatele confirmă sau infirmă ipoteza?\n• Comparați cu studiile anterioare: se potrivesc? diferă ele? De ce ar putea diferi (tulpina, condițiile, metoda)?\n• Explică mecanismele biologice sau biochimice care justifică rezultatele.\n• Discută limitările metodologice și impactul acestora asupra rezultatelor.\n• Implicații: ce înseamnă pentru industrie, medicină sau mediu?"
+        },
+        "conclusiones": {
+          "title": "Concluzii",
+          "guidance": "Rezumați cele mai importante lucruri în termeni direcți și măsurabili:\n• Fiecare concluzie corespunde unui obiectiv specific.\n• Evitați repetarea rezumatului rezultatelor — concluzionează, nu raportează.\n• Indică contribuția la cunoaștere sau la industrie.\n• Recomandări pentru cercetări viitoare."
+        },
+        "referencias": {
+          "title": "Referințe",
+          "guidance": "Lista de referințe în APA 7 (generată automat).\nPentru articole științifice: utilizați importatorul DOI - PubMed, ScienceDirect și Web of Science au DOI pentru majoritatea articolelor de biotehnologie.\nPentru articolele fără DOI: includeți adresa URL a revistei sau a bazei de date."
+        },
+        "anexos": {
+          "title": "Anexe",
+          "guidance": "Date brute din experimente, geluri complete (nedecupate), secvențe de nucleotide sau aminoacizi, numere de acces GenBank, certificate de analiză a reactivilor, protocoale complete neincluse în M&M."
+        }
+      },
+      "description": "Teza Unității Profesionale Interdisciplinare de Biotehnologie a IPN. Acesta acoperă biochimie, microbiologie, inginerie bioproceselor, bioinformatică, biotehnologie de mediu și farmaceutică. Natură experimentală și cantitativă cu mare rigoare în prezentarea datelor. Bibliografie APA 7 pentru majoritatea domeniilor; Vancouver acceptat în domenii mai apropiate de științele sănătății."
     },
     "mx.ipn.upitta": {
-      "name": "IPN UPITTA — Tehnologii Avansate",
-      "description": "Teze ale Unității Profesionale Interdisciplinare de Tehnologii Avansate IPN. Orientat spre mecatronică, sisteme inteligente, automatizare și tehnologii emergente. Bibliografie IEEE."
+      "name": "IPN UPITTA — Tehnologii avansate",
+      "sections": {
+        "portada": {
+          "guidance": "Coperta UPITTA include: scut IPN, „Unitatea Profesională Interdisciplinară de Tehnologii Avansate”, titlul lucrării, tipul tezei, numele studentului, directorii, locul și anul."
+        },
+        "resumen": {
+          "title": "Rezumat",
+          "guidance": "Rezumat tehnic în spaniolă de 200-250 de cuvinte. Natura interdisciplinară a UPITTA înseamnă că rezumatul trebuie să fie ușor de înțeles pentru cititorii din diferite domenii (inginerie, calcul, matematică aplicată).\nInclude: problema tehnică, soluția propusă, tehnologiile cheie și principalul rezultat măsurabil."
+        },
+        "abstract": {
+          "title": "Rezumat",
+          "guidance": "Traducere în engleză. Solicitat de UPITTA pentru toate lucrările de licență și postuniversitare.\nCuvinte cheie în limba engleză: 5–8 termeni tehnici relevanți."
+        },
+        "tabla_contenidos": {
+          "guidance": "Index generat automat. Include o listă de figuri și o listă de tabele dacă există mai mult de 5 de fiecare tip."
+        },
+        "introduccion": {
+          "title": "Introducere",
+          "guidance": "Contextualizați problema din perspectiva interdisciplinară a UPITTA:\n• Zona tehnologică și relevanța acesteia (mecatronică, AI, automatizare etc.).\n• Problema specifică și impactul acesteia (industrial, social, științific).\n• Cele mai importante lucrări conexe (citare cu număr IEEE: [1], [2]).\n• Obiective generale și obiective specifice.\n• Contribuție concretă: ce propuneți care nu există sau nu funcționează bine?\n• Organizarea documentelor."
+        },
+        "estado_arte": {
+          "title": "Stadiul tehnicii și cadrul teoretic",
+          "guidance": "Combinarea stadiului tehnicii și a cadrului teoretic, adecvată pentru munca interdisciplinară:\n• Revizuiți cele mai relevante lucrări anterioare din fiecare domeniu pe care îl atinge proiectul dumneavoastră.\n• Prezentați teoriile sau modelele matematice pe care se bazează soluția dvs.\n• Tabele comparative dintre soluțiile existente și ale dumneavoastră.\n• Identificați clar nișa sau îmbunătățirea pe care o aduce munca dvs.\nLa UPITTA, abordarea interdisciplinară este un punct forte — arată cum integrezi diferite domenii."
+        },
+        "diseno": {
+          "title": "Designul sistemului",
+          "guidance": "Prezentați arhitectura sau designul complet al sistemului înainte de a-l implementa:\n• Arhitectură generală: diagramă bloc sau componente.\n• Model matematic sau dinamic (pentru sisteme de control, robotică etc.).\n• Selectarea și justificarea tehnologiilor (senzori, actuatoare, platforme, algoritmi).\n• Diagrame sau mașini de stare, dacă este cazul.\n• Constrângeri de proiectare: putere, dimensiune, cost, timp de răspuns.\nDesignul trebuie să fie independent de implementare."
+        },
+        "implementacion": {
+          "title": "Implementare și rezultate",
+          "guidance": "Descrieți implementarea și prezentați rezultatele experimentale:\n• Mediu de dezvoltare: hardware, software, versiuni.\n• Implementare prin module sau subsisteme.\n• Testarea integrării: Funcționează întregul sistem așa cum prevede proiectul?\n• Rezultate cantitative: metrici (acuratețe, timp de răspuns, consum, eroare RMS etc.).\n• Comparație cu stadiul tehnicii sau cu linia de bază.\nLa UPITTA sunt evaluate testele în condiții reale sau cvasi-reale."
+        },
+        "conclusiones": {
+          "title": "Concluzii și lucrări viitoare",
+          "guidance": "Închideți lucrarea cu rigoare tehnică și interdisciplinară:\n• Obiective îndeplinite vs. ridicate (cu dovezi cantitative).\n• Contribuții originale (integrare tehnică, metodologică sau disciplinară).\n• Limitări ale sistemului sau ale studiului.\n• Lucrări viitoare: îmbunătățiri, extinderi, posibile aplicații industriale sau de cercetare.\nMenționați dacă lucrarea a condus sau poate duce la publicații sau brevete."
+        },
+        "referencias": {
+          "title": "Referințe",
+          "guidance": "Referințe numerice IEEE în ordinea apariției (generate automat).\nUtilizați importatorul DOI pentru articole din IEEE Xplore, ACM DL etc.\nIncludeți DOI în fiecare referință — este o cerință IEEE."
+        },
+        "anexos": {
+          "title": "Anexe",
+          "guidance": "Cod sursă complet, fișe de date ale componentelor, desene mecanice sau electrice, proceduri de calibrare, manuale de utilizare, date brute ale experimentului."
+        }
+      },
+      "description": "Teza Unității Profesionale Interdisciplinare de Tehnologii Avansate a IPN. Orientat către mecatronică, sisteme inteligente, automatizare, robotică și tehnologii emergente. Natură interdisciplinară: integrează inginerie, calcul și științe de bază. Bibliografie numerică IEEE."
     },
     "mx.unam.posgrado": {
-      "name": "UNAM — Studii postuniversitare",
-      "description": "Teze de masterat și doctorat UNAM. Bazat pe ghidurile Coordonării Studiilor Postuniversitare (CEP-UNAM). APA 7, XeLaTeX, format hârtie legal."
+      "name": "UNAM — Postuniversitar",
+      "sections": {
+        "portada": {
+          "guidance": "Coperta UNAM include: scutul UNAM, denumirea facultății sau institutului, titlul lucrării, tipul tezei (pentru obținerea diplomei de Master/Doctorat în...), numele studentului, directorul de teză, comisia de tutori, locul și anul.\nProfilul generează automat coperta cu datele pe care le-ați configurat la crearea proiectului."
+        },
+        "dedicatoria": {
+          "title": "Dedicație",
+          "guidance": "Text scurt (1–5 rânduri) dedicat persoanelor importante. Este personal și opțional.\nLa UNAM nu are un număr de pagină și este tipărit pe o pagină separată."
+        },
+        "agradecimientos": {
+          "title": "Mulțumesc",
+          "guidance": "Menționați directorul, comitetul de instruire, CONACYT/CONAHCyT (dacă a existat o bursă), laboratorul sau grupul de cercetare și oamenii cheie în activitate.\nIncludeți numărul proiectului sau al bursei, dacă este cazul (de exemplu, „Bursa CONAHCyT nr. XXXXXX”)."
+        },
+        "resumen": {
+          "title": "Rezumat",
+          "guidance": "Rezumat în spaniolă de 200–300 de cuvinte. CEP-UNAM solicită acest lucru în spaniolă.\nInclude: obiectiv, metodologie, rezultate principale și concluzie.\nLa sfârșit: 4–6 cuvinte cheie separate prin punct și virgulă."
+        },
+        "abstract": {
+          "title": "Rezumat",
+          "guidance": "Traducerea rezumatului în engleză. Multe programe de doctorat UNAM o cer.\nFormat identic cu rezumatul în spaniolă.\nCuvinte cheie: la fel ca în spaniolă, în engleză."
+        },
+        "tabla_contenidos": {
+          "guidance": "Indexul este generat automat. Include capitole, secțiuni și subsecțiuni.\nUNAM solicită, în general, și o listă de cifre și o listă de tabele dacă sunt mai mult de 5."
+        },
+        "introduccion": {
+          "title": "Introducere",
+          "guidance": "Introducerea UNAM trebuie să includă:\n1. Contextul și contextul problemei.\n2. Enunțarea și justificarea problemei.\n3. Ipoteza sau întrebare de cercetare.\n4. Obiective generale și obiective specifice.\n5. Domeniu de aplicare și limitări.\n6. Structura tezei (ce conține fiecare capitol).\nLungime recomandată: 4–8 pagini."
+        },
+        "marco_teorico": {
+          "title": "Cadrul teoretic",
+          "guidance": "Examinați și sintetizați literatura relevantă. La UNAM cadrul teoretic trebuie:\n• Citați surse primare și actuale (ultimii 10 ani; clasice dacă sunt fundamentale).\n• Organizați ideile în mod logic, nu ca o listă de rezumate.\n• Utilizați APA 7 pentru toate citările — sistemul le generează automat.\n• Identificați stadiul tehnicii și golul pe care cercetarea dvs. le umple."
+        },
+        "metodologia": {
+          "title": "Metodologie",
+          "guidance": "Descrieți metodologia suficient de detaliat pentru a fi replicată. Include:\n• Tip de cercetare și proiectare.\n• Populație, eșantion și criterii de selecție.\n• Instrumente și proceduri.\n• Analiza datelor (software, statistici sau categorii calitative).\n• Considerații etice și consimțământ, dacă este cazul."
+        },
+        "resultados": {
+          "title": "Rezultate",
+          "guidance": "Prezentați rezultatele în mod obiectiv. Utilizați tabele și figurile cu referințe în text.\nLa UNAM fiecare figură și tabel trebuie să aibă: număr, titlu descriptiv (sus pentru tabele, mai jos pentru figuri) și sursa dacă este cazul.\nNu interpretați rezultatele aici - asta se află în Discuție."
+        },
+        "discusion": {
+          "title": "Discuție",
+          "guidance": "Interpretați rezultatele în contextul întrebării dvs. de cercetare și al literaturii de specialitate.\nComparați cu studiile anterioare, subliniați coincidențele și divergențele.\nDiscută implicațiile teoretice și practice.\nRecunoașteți cu onestitate limitările."
+        },
+        "conclusiones": {
+          "title": "Concluzii",
+          "guidance": "Răspundeți direct la obiectivele și ipotezele dvs. CEP-UNAM speră:\n• Sinteza principalelor constatări.\n• Contribuții originale în domeniu.\n• Recomandări pentru cercetări viitoare.\n• Implicații pentru practică sau politică (dacă este cazul).\nLungime: 3-5 pagini. Nu introduceți informații noi."
+        },
+        "referencias": {
+          "title": "Referințe",
+          "guidance": "Lista de referințe este generată automat în format APA 7.\nUNAM necesită APA 7 în majoritatea programelor postuniversitare.\nAsigurați-vă că fiecare sursă citată este în .bib și invers.\nUtilizați importatorul DOI pentru a obține intrări complete și normalizate."
+        },
+        "anexos": {
+          "title": "Anexe",
+          "guidance": "Material suplimentar care susține munca fără a întrerupe fluxul principal:\ninstrumente de colectare, tabele de date brute, cod sursă, scrisori de consimțământ.\nNumăr: Anexa A, Anexa B… Faceți referire la fiecare din textul principal."
+        }
+      },
+      "description": "Teze și dizertații postuniversitare de la Universitatea Națională Autonomă din Mexic. Pe baza liniilor directoare ale Coordonării Studiilor Postuniversitare (CEP-UNAM): hârtie de dimensiune scrisă sau legală, marje de 2,5 cm, distanță între rânduri 1,5, APA 7, coperta cu stemă oficială."
+    },
+    "generic.tesina": {
+      "name": "Disertație generică",
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta este generată automat cu datele instituționale configurate la crearea proiectului.\nNu trebuie să scrieți conținut aici."
+        },
+        "table_of_contents": {
+          "guidance": "Indexul este generat automat din secțiunile dvs. activate.\nNu trebuie să scrieți nimic aici."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "Introducerea prezintă subiectul și motivează munca. Pentru o teză include:\n1. Scurt context al subiectului (de la general la specific).\n2. Problema sau întrebarea căreia o abordează lucrarea.\n3. Obiectiv general.\n4. Justificare: de ce este relevant să-l studiezi?\n5. Scurtă descriere a modului în care este organizat documentul.\nLungime tipică: 1–3 pagini."
+        },
+        "development": {
+          "title": "Dezvoltare",
+          "guidance": "Dezvoltarea este corpul central al lucrării. Împărțiți-l în subsecțiuni logice:\n• Cadrul conceptual: definește concepte cheie cu suport bibliografic.\n• Analiza sau dezvoltarea temei: argumentare, propunere sau studiu central.\n• Rezultate sau constatări, dacă este cazul.\nFiecare idee trebuie susținută de surse. Folosiți blocurile „Citate bibliografică” pentru referințe.\nLungime tipică: 10–30 de pagini."
+        },
+        "conclusions": {
+          "title": "Concluzii",
+          "guidance": "Închideți lucrarea răspunzând direct la obiectivul menționat în introducere:\n• Obiectivul a fost atins? Ce s-a găsit?\n• Reflecție asupra relevanței lucrării.\n• Limitări găsite.\n• Recomandări sau linii de lucru viitoare.\nLungime tipică: 1–2 pagini. Nu introduceți informații noi aici."
+        },
+        "references": {
+          "guidance": "Lista de referințe este generată automat din fișierul dvs. .bib când compilați.\nUtilizați importatorul DOI (Ctrl+[ > panoul DOI) pentru a adăuga cu ușurință surse.\nStilul APA 7 este aplicat automat."
+        }
+      },
+      "description": "Versiune simplificată pentru diplomă de licență: introducere, dezvoltare și concluzii. Curs de carte, XeLaTeX, biber, APA 7."
+    },
+    "generic.thesis": {
+      "name": "Teză generică",
+      "sections": {
+        "title_page": {
+          "guidance": "Coperta este generată automat de profilul cu datele instituționale pe care le-ați configurat la crearea proiectului (numele studentului, instituția, titlul postului, directorul de teză, anul).\nNu trebuie să scrieți conținut aici."
+        },
+        "table_of_contents": {
+          "guidance": "Cuprinsul este generat automat din secțiunile activate în proiectul dvs.\nNu trebuie să scrieți nimic - asigurați-vă doar că capitolele dvs. au titluri."
+        },
+        "abstract_es": {
+          "title": "Rezumat",
+          "guidance": "Rezumatul vă prezintă teza în 150-250 de cuvinte. Trebuie sa raspunzi pe scurt:\n• Care este problema sau întrebarea de cercetare?\n• Ce metodologie ați folosit?\n• Care sunt principalele rezultate?\n• Care este concluzia sau contribuția?\nNu citați referințe în rezumat. Scrie-l la timpul trecut. Includeți 4–6 cuvinte cheie la sfârșit."
+        },
+        "abstract_en": {
+          "title": "Rezumat",
+          "guidance": "Traducerea fidelă a rezumatului în engleză, în același format (150–250 de cuvinte).\nMulte instituții de absolvire îl solicită pentru indexarea internațională.\nCuvinte cheie: aceleași cuvinte cheie ca și rezumatul, în limba engleză."
+        },
+        "dedication": {
+          "title": "Dedicație",
+          "guidance": "Text scurt (1–5 rânduri) dedicat persoanelor importante pentru autor.\nEste personal și opțional. Câteva exemple: „Părinților mei, pentru sprijinul lor necondiționat”.\nNu are un titlu explicit în majoritatea stilurilor — profilul îl gestionează."
+        },
+        "acknowledgements": {
+          "title": "Mulțumesc",
+          "guidance": "Menționați-i pe cei care au contribuit la cercetarea dvs.: director, cititori, colegi, instituții, finanțatori.\nFiți specific: menționați rolul fiecărei persoane sau organizații.\nLungime recomandată: jumătate până la o pagină."
+        },
+        "introduction": {
+          "title": "Introducere",
+          "guidance": "Introducerea vă contextualizează munca și motivează cititorul să continue să citească. Trebuie să includă:\n1. Contextul general al temei (de la larg la specific).\n2. Declarația problemei: ce decalaj sau nevoie există?\n3. Întrebare sau ipoteză de cercetare.\n4. Obiective generale și obiective specifice.\n5. Motivație: de ce este relevant să studiem acest lucru?\n6. Domeniul de aplicare și limitările studiului.\n7. Scurtă descriere a structurii tezei.\nLungime tipică: 3–6 pagini."
+        },
+        "theoretical_framework": {
+          "title": "Cadrul teoretic",
+          "guidance": "Cadrul teoretic vă sprijină cercetarea cu literatura existentă. Trebuie să:\n• Examinați conceptele și teoriile cheie legate de subiectul dvs.\n• Citați surse primare și actuale (ultimii 5–10 ani pentru articole; clasice dacă sunt fundamentale).\n• Organizați ideile în mod logic, nu ca o listă de rezumate.\n• Identificați stadiul tehnicii: ce se știe și ce lipsește?\n• Poziționați-vă opera în literatură: cu ce contribuiți?\nFolosiți blocul „Citate bibliografică” pentru fiecare referință. Evitați ghilimele excesive — parafrazați și analizați."
+        },
+        "methodology": {
+          "title": "Metodologie",
+          "guidance": "Descrieți cum v-ați desfășurat cercetarea suficient de detaliat pentru a putea fi replicată. Include:\n• Tipul cercetării (cantitativ, calitativ, mixt; exploratoriu, descriptiv, explicativ).\n• Design: experimental, cvasi-experimental, studiu de caz, anchetă etc.\n• Populație și eșantion: criterii de selecție, mărime, tehnică de eșantionare.\n• Instrumente de colectare: chestionare, interviuri, observare, experimente.\n• Procedura: pași urmați cronologic.\n• Analiza datelor: software, statistici, categorii de analize calitative.\n• Considerații etice, dacă este cazul."
+        },
+        "results": {
+          "title": "Rezultate",
+          "guidance": "Prezentați rezultatele cercetării dvs. în mod obiectiv, fără a le interpreta încă. Ghiduri:\n• Organizați rezultatele în ordinea obiectivelor sau întrebărilor dvs. de cercetare.\n• Folosiți tabele și cifre pentru date numerice sau comparative - faceți referire la fiecare în text.\n• Nu repeta în text ceea ce arată deja un tabel; Comentează cel mai relevant.\n• Fiți precis cu cifre: includeți unități, procente, valori statistice (p, r, χ², etc.).\n• Pentru cercetare calitativă: prezintă categorii cu citate textuale ilustrative."
+        },
+        "discussion": {
+          "title": "Discuție",
+          "guidance": "Aici vă interpretați rezultatele și le raportați la literatura de specialitate. Este cea mai analitică secțiune. Trebuie să:\n• Explicați ce înseamnă rezultatele dvs. în contextul întrebării dvs. de cercetare.\n• Comparați cu studiile anterioare: se potrivesc? diferă ele? deoarece?\n• Subliniați rezultatele neașteptate și oferiți posibile explicații.\n• Discutați implicațiile teoretice și practice ale constatărilor dvs.\n• Recunoașteți cu onestitate limitările studiului.\nNu prezentați rezultate noi aici - interpretați doar cele raportate deja."
+        },
+        "conclusions": {
+          "title": "Concluzii",
+          "guidance": "Concluziile vă închid argumentul și răspund direct la obiectivele dvs. Include:\n• Răspuns la întrebarea de cercetare/verificarea ipotezei.\n• Sinteza celor mai importante constatări (fără a repeta detaliile rezultatelor).\n• Contribuții originale ale lucrării.\n• Recomandări pentru practica profesională sau cercetări viitoare.\n• Reflecție finală asupra relevanței lucrării.\nLungime recomandată: 2-4 pagini. Nu introduceți informații noi."
+        },
+        "references": {
+          "title": "Referințe",
+          "guidance": "Lista de referințe este generată automat din fișierul dvs. .bib când compilați.\nAsigurați-vă că fiecare sursă citată în text este în .bib și invers.\nPentru a adăuga referințe: utilizați butonul de import DOI sau editați direct fișierul references.bib.\nStilul de citare (APA 7 în acest profil) este aplicat automat de LaTeX."
+        },
+        "appendices": {
+          "title": "Anexe",
+          "guidance": "Anexele conțin materiale suport care nu se încadrează în corpul principal, dar pe care cititorul ar putea avea nevoie să le verifice:\n• Instrumente de colectare (chestionare complete, ghiduri de interviu).\n• Tabele cu date brute.\n• Cod sursă sau scripturi.\n• Hărți, planuri, documente legale.\n• Scrisori de autorizare sau consimțământ informat.\nFiecare anexă trebuie să fie numerotată (Anexa A, Anexa B...) și trebuie făcută trimitere din textul principal."
+        }
+      },
+      "description": "Profil de bază pentru teze și lucrări academice formale pentru diplome de licență, specialitate, master, doctorat și postdoctorat. Curs de carte, XeLaTeX, biber, APA 7."
     }
   },
   "institutions": {

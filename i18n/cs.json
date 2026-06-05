@@ -2788,7 +2788,6 @@
     },
     "company.internship": {
       "name": "Zpráva o stáži / pobytu",
-      "description": "Formát pro zprávy o profesionálních pobytech a pracovních pobytech. Zahrnuje popis společnosti, aktivity a výsledky. Bibliografie APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Titulní stránka je automaticky generována s institucionálními údaji.\nBude obsahovat: jméno studenta, společnost, dobu stáže, akademickou instituci a kariéru.\nNemusíte sem psát obsah – nastavte data v metadatech projektu."
@@ -2802,7 +2801,7 @@
         },
         "company_description": {
           "title": "Popis společnosti",
-          "guidance": "Představte organizaci, kde jste stáž absolvovali:\n• Celé jméno, název společnosti a obchodní linie.\n• Stručná historie a poslání/vize.\n• Obecné organizační schéma (můžete vložit obrázek).\n• Oblast nebo oddělení, kde jste pracovali, a jeho funkce v rámci společnosti.\n• Technologická infrastruktura relevantní pro vaše aktivity.\nNekopírujte doslovně webové stránky společnosti – parafrázujte a citujte zdroj."
+          "guidance": "Představte organizaci, kde jste absolvovali stáž:\n• Celé jméno, název společnosti a obchodní linie.\n• Stručná historie a poslání/vize.\n• Obecné organizační schéma (můžete vložit obrázek).\n• Oblast nebo oddělení, kde jste pracovali, a jeho funkce v rámci společnosti.\n• Technologická infrastruktura relevantní pro vaše aktivity.\nNekopírujte doslovně webové stránky společnosti – parafrázujte a citujte zdroj."
         },
         "activities": {
           "title": "Rozvinuté aktivity",
@@ -2818,18 +2817,17 @@
         },
         "references": {
           "title": "Odkazy",
-          "guidance": "Uveďte zdroje, se kterými jste se během cvičení konzultovali: technické manuály, normy, články, webové stránky.\nSeznam je automaticky generován z vašeho .bib.\nStyl APA 7. Pomocí importéru DOI snadno přidejte akademické reference."
+          "guidance": "Uveďte zdroje konzultované během cvičení: technické manuály, normy, články, webové stránky.\nSeznam je automaticky generován z vašeho .bib.\nStyl APA 7. Pomocí importéru DOI snadno přidejte akademické reference."
         },
         "appendices": {
           "title": "Přílohy",
           "guidance": "Zahrnuje podpůrný materiál, který by byl v hlavní části velmi rozsáhlý:\n• Dopis o přijetí od společnosti.\n• Dopis o dokončení/hodnocení od obchodního tutora.\n• Týdenní záznamy (pokud to vaše instituce vyžaduje).\n• Příslušný zdrojový kód.\n• Vytvořeny uživatelské nebo technické příručky.\n• Fotografická evidence pracoviště.\nKaždou přílohu očíslujte (Příloha A, B…) a odkazujte na ně z textu."
         }
       },
-      "meta": "Bibliografie APA 7 · XeLaTeX"
+      "description": "Formát pro zprávy o profesionálních pobytech a pracovních pobytech. Zahrnuje popis společnosti, aktivity a výsledky. Bibliografie APA 7."
     },
     "engineering.basic": {
       "name": "Technická / technická zpráva",
-      "description": "Technická zpráva s oddíly o přístupu, návrhu, implementaci a testování. Bibliografie IEEE. Ideální pro inženýrské práce a profesní pobyt.",
       "sections": {
         "title_page": {
           "guidance": "Titulní stránka je automaticky generována s daty projektu.\nNemusíte sem psát obsah."
@@ -2843,7 +2841,7 @@
         },
         "introduction": {
           "title": "Úvod",
-          "guidance": "Kontextualizujte technický problém a motivujte k práci:\n• Kontext: technologická oblast, průmysl nebo aplikace.\n• Motivace: proč je důležité tento problém řešit?\n• Související práce: velmi stručný přehled existujících řešení a jejich omezení.\n• Objektivní a konkrétní přínos díla.\n• Organizace dokumentů.\nV IEEE jsou citace číselné: [1], [2], [3]."
+          "guidance": "Kontextualizujte technický problém a motivujte k práci:\n• Kontext: technologická oblast, průmysl nebo aplikace.\n• Motivace: proč je důležité tento problém řešit?\n• Související práce: velmi stručný přehled existujících řešení a jejich omezení.\n• Objektivní a konkrétní přínos práce.\n• Organizace dokumentů.\nV IEEE jsou citace číselné: [1], [2], [3]."
         },
         "problem_statement": {
           "title": "Prohlášení o problému",
@@ -2851,15 +2849,15 @@
         },
         "design": {
           "title": "Design a architektura",
-          "guidance": "Před implementací předložte navrhované řešení:\n• Architektura systému (schéma komponent, vrstvy, moduly).\n• Návrhová rozhodnutí a zdůvodnění zvolených technologií.\n• Vývojový diagram nebo hlavní algoritmus.\n• Datový model, pokud je použit (schéma ER, BD).\n• Uživatelské rozhraní (drátové modely nebo makety, pokud jsou použitelné).\nNávrh by měl být nezávislý na implementaci – třetí strana by jej měla být schopna implementovat z této sekce."
+          "guidance": "Před implementací předložte navrhované řešení:\n• Architektura systému (schéma komponent, vrstvy, moduly).\n• Návrhová rozhodnutí a zdůvodnění zvolených technologií.\n• Vývojový diagram nebo hlavní algoritmus.\n• Datový model, pokud je to možné (ER, DB schéma).\n• Uživatelské rozhraní (drátové modely nebo makety, pokud jsou použitelné).\nNávrh by měl být nezávislý na implementaci – třetí strana by jej měla být schopna implementovat z této sekce."
         },
         "implementation": {
           "title": "Implementace",
-          "guidance": "Popište, jak bylo řešení sestaveno:\n• Vývojové prostředí: jazyky, frameworky, platformy, verze.\n• Popis implementovaných modulů nebo komponent.\n• Relevantní fragmenty kódu (pouze ty nejnázornější, nikoli celý kód).\n• Implementační výzvy a přijatá řešení.\n• Konfigurace infrastruktury, pokud je to možné (servery, kontejnery, BD).\nÚplný kód je v přílohách – zde pouze ten nejreprezentativnější."
+          "guidance": "Popište, jak bylo řešení sestaveno:\n• Vývojové prostředí: jazyky, frameworky, platformy, verze.\n• Popis implementovaných modulů nebo komponent.\n• Relevantní fragmenty kódu (pouze ty nejnázornější, nikoli celý kód).\n• Implementační výzvy a přijatá řešení.\n• Konfigurace infrastruktury, pokud je to možné (servery, kontejnery, DB).\nÚplný kód je uveden v přílohách – zde pouze nejreprezentativnější."
         },
         "testing": {
           "title": "Testování a ověřování",
-          "guidance": "Ukažte, že řešení funguje a splňuje požadavky:\n• Plán testování: typy (jednotný, integrační, systémový, akceptační).\n• Testovací případy: vstup, akce, očekávaný výsledek, získaný výsledek.\n• Metriky výkonu, pokud jsou použitelné (doba odezvy, využití paměti, přesnost).\n• Srovnání s výchozím stavem nebo související prací.\n• Analýza výsledků: co fungovalo? žádný? protože?\nPrezentujte výsledky v tabulkách nebo grafech, je-li to možné."
+          "guidance": "Ukažte, že řešení funguje a splňuje požadavky:\n• Plán testování: typy (jednotný, integrační, systémový, akceptační).\n• Testovací případy: vstup, akce, očekávaný výsledek, získaný výsledek.\n• Metriky výkonu, pokud jsou použitelné (doba odezvy, využití paměti, přesnost).\n• Srovnání s výchozím stavem nebo související prací.\n• Analýza výsledků: co fungovalo? žádný? protože?\nPokud je to možné, prezentujte výsledky v tabulkách nebo grafech."
         },
         "conclusions": {
           "title": "Závěry a budoucí práce",
@@ -2867,18 +2865,17 @@
         },
         "references": {
           "title": "Odkazy",
-          "guidance": "V IEEE jsou odkazy číselné a objevují se v pořadí první zmínky.\nSeznam je automaticky generován z vašeho .bib při kompilaci.\nPro články a konference IEEE: Pro získání správné položky použijte importér DOI.\nNezapomeňte do každé reference uvést DOI – IEEE to vyžaduje."
+          "guidance": "V IEEE jsou odkazy číselné a objevují se v pořadí první zmínky.\nSeznam je automaticky generován z vašeho .bib při kompilaci.\nPro články a konference IEEE: pro získání správného záznamu použijte importér DOI.\nNezapomeňte do každé reference uvést DOI – vyžaduje to IEEE."
         },
         "appendices": {
           "title": "Přílohy",
           "guidance": "Doplňkový technický materiál:\n• Kompletní zdrojový kód (hlavní moduly).\n• Instalační a konfigurační skripty.\n• Uživatelské nebo technické příručky.\n• Podrobné diagramy (úplné ERD, sekvenční diagramy atd.).\n• Testovací data nebo datové sady.\nČíslo: Příloha A, B… a odkazujeme na ně z hlavního textu."
         }
       },
-      "meta": "Bibliografie IEEE · XeLaTeX"
+      "description": "Technická zpráva s oddíly o přístupu, návrhu, implementaci a testování. Bibliografie IEEE. Ideální pro inženýrské práce a profesní pobyt."
     },
     "generic.phd": {
       "name": "Absolventská práce",
-      "description": "Profil pro magisterské a doktorské studium: přehled literatury, stav techniky, přístup, experimentování, glosář a zkratky. XeLaTeX, biber, APA 7.",
       "sections": {
         "title_page": {
           "guidance": "Titulní stránka je automaticky generována s daty projektu.\nPro postgraduální studium nakonfigurujte v metadatech: celé jméno, ředitel, spoluředitel (pokud existuje) a synodní výbor.\nNemusíte sem psát obsah."
@@ -2897,7 +2894,7 @@
         },
         "acronyms": {
           "title": "Seznam zkratek a akronymů",
-          "guidance": "Uveďte všechny zkratky a zkratky použité v práci s jejich plným významem.\nFormát: SIGLA — Plný význam (např. CNN — Konvoluční neuronová síť).\nSeřadit podle abecedy. Také definuje první výskyt každé zkratky v textu."
+          "guidance": "Uveďte všechny zkratky a zkratky použité v práci s jejich plným významem.\nFormát: AKRONYM – plný význam (např. CNN – konvoluční neuronová síť).\nSeřadit podle abecedy. Také definuje první výskyt každé zkratky v textu."
         },
         "abstract_es": {
           "title": "Shrnutí",
@@ -2913,7 +2910,7 @@
         },
         "acknowledgements": {
           "title": "Děkuji",
-          "guidance": "Formálně poděkujte těm, kteří přispěli k práci:\n• Vedoucí diplomové práce a spoluředitel.\n• Synodní komise / recenzenti.\n• Poskytovatelé: stipendia, projekty, instituce (povinné pro projekty s externí podporou).\n• Techničtí spolupracovníci, laboratoře, firmy.\n• Rodinná a osobní podpora (na závěr stručně).\nRozšíření: půl stránky."
+          "guidance": "Formálně poděkujte těm, kteří přispěli k práci:\n• Vedoucí diplomové práce a spoluředitel.\n• Synodní komise / recenzenti.\n• Poskytovatelé: stipendia, projekty, instituce (povinné pro projekty s externí podporou).\n• Techničtí spolupracovníci, laboratoře, firmy.\n• Rodinná a osobní podpora (na závěr stručně).\nDélka: půl stránky."
         },
         "introduction": {
           "title": "Úvod",
@@ -2921,7 +2918,7 @@
         },
         "literature_review": {
           "title": "Přehled literatury a současného stavu",
-          "guidance": "Toto je sekce, která ukazuje vaše mistrovství v oboru. Musíte:\n• Systematicky pokrýt relevantní díla za posledních 5–10 let (klasika může být starší).\n• Uspořádejte podle tématu, zaměření nebo chronologie – nikoli jako seznam souhrnů.\n• Kriticky porovnejte návrhy: silné a slabé stránky, omezení.\n• Identifikujte mezeru, kterou vaše práce zaplňuje („žádná předchozí práce se nezabývala X“).\n• Pokud je to možné, zakončete srovnávací tabulkou souvisejících prací.\nPro doktorát: tento přehled musí být vyčerpávající a musí pokrývat všechny aspekty problému.\nStrategie: Search Scopus, WoS, ACM DL, IEEE Xplore. Pro každou položku použijte importér DOI."
+          "guidance": "Toto je část, která ukazuje vaše mistrovství v oboru. Musíte:\n• Systematicky pokrýt relevantní díla za posledních 5–10 let (klasika může být starší).\n• Uspořádejte podle tématu, zaměření nebo chronologie – nikoli jako seznam souhrnů.\n• Kriticky porovnejte návrhy: silné a slabé stránky, omezení.\n• Identifikujte mezeru, kterou vaše práce zaplňuje („žádná předchozí práce se nezabývala X“).\n• Pokud je to možné, zakončete srovnávací tabulkou souvisejících prací.\nPro doktorát: tento přehled musí být vyčerpávající a musí pokrývat všechny aspekty problému.\nStrategie: Search Scopus, WoS, ACM DL, IEEE Xplore. Pro každý článek použijte importér DOI."
         },
         "theoretical_framework": {
           "title": "Teoretický rámec",
@@ -2933,7 +2930,7 @@
         },
         "methodology": {
           "title": "Metodika",
-          "guidance": "Popište metodický přístup s přísností vyžadovanou postgraduální úrovní:\n• Výzkumné paradigma: pozitivistické, konstruktivistické, smíšené.\n• Typ výzkumu: experimentální, kvaziexperimentální, případová studie, simulace, modelování.\n• Návrh specifického výzkumu.\n• Zdroje dat: původ, charakteristiky, proces sběru nebo generování.\n• Průběh nebo kompletní proces od dat k výsledkům.\n• Specifické nástroje, jazyky, knihovny a verze.\nDostatek podrobností pro úplnou replikovatelnost."
+          "guidance": "Popisuje metodický přístup s přísností vyžadovanou postgraduální úrovní:\n• Výzkumné paradigma: pozitivistické, konstruktivistické, smíšené.\n• Typ výzkumu: experimentální, kvaziexperimentální, případová studie, simulace, modelování.\n• Návrh specifického výzkumu.\n• Zdroje dat: původ, charakteristiky, proces sběru nebo generování.\n• Průběh nebo kompletní proces od dat k výsledkům.\n• Specifické nástroje, jazyky, knihovny a verze.\nDostatek podrobností pro úplnou replikovatelnost."
         },
         "experimentation": {
           "title": "Experimentace a vývoj",
@@ -2941,7 +2938,7 @@
         },
         "results": {
           "title": "Výsledky",
-          "guidance": "Předložte výsledky se statistickou přísností, kterou vyžaduje postgraduální kurz:\n• Uspořádejte podle cíle nebo hypotézy.\n• Pro kvantitativní výsledky: průměr, směrodatná odchylka, intervaly spolehlivosti, statistická významnost.\n• Srovnávací tabulky se základní linií, vlastními variantami a stavem techniky.\n• Údaje s chybovými úsečkami, pokud jsou použitelné.\n• Pro kvalitativní výsledky: teoretická saturace, triangulace, reprezentativní uvozovky.\nNeinterpretujte zde – pouze předložte data."
+          "guidance": "Předložte výsledky se statistickou přísností vyžadovanou postgraduálním kurzem:\n• Uspořádejte podle cíle nebo hypotézy.\n• Pro kvantitativní výsledky: průměr, směrodatná odchylka, intervaly spolehlivosti, statistická významnost.\n• Srovnávací tabulky se základní linií, vlastními variantami a stavem techniky.\n• Údaje s chybovými úsečkami, pokud jsou použitelné.\n• Pro kvalitativní výsledky: teoretická saturace, triangulace, reprezentativní uvozovky.\nNeinterpretujte zde – pouze předložte data."
         },
         "discussion": {
           "title": "Diskuse",
@@ -2953,7 +2950,7 @@
         },
         "references": {
           "title": "Odkazy",
-          "guidance": "Seznam referencí je automaticky generován z vašeho .bib při kompilaci pomocí APA 7.\nU postgraduálního studia se očekává 80–200+ kvalitních referencí (indexované články, odborné knihy).\nPomocí importéru DOI přidejte články z Crossref jedním kliknutím.\nVyhněte se odkazům na blogy, Wikipedii nebo weby, které nejsou recenzovány jako primární zdroje."
+          "guidance": "Seznam referencí je automaticky generován z vašeho .bib při kompilaci s APA 7.\nU postgraduálního studia se očekává 80–200+ kvalitních referencí (indexované články, odborné knihy).\nPoužijte importér DOI k přidání článků z Crossref jedním kliknutím.\nVyhněte se odkazům na blogy, Wikipedii nebo weby, které nejsou recenzovány jako primární zdroje."
         },
         "publications": {
           "title": "Odvozené publikace",
@@ -2968,39 +2965,471 @@
           "guidance": "Doplňkový technický materiál, který nepatří do hlavního toku:\n• Dlouhé nebo sekundární matematické důkazy.\n• Zdrojový kód (hlavní moduly, experimentální skripty).\n• Kompletní datové tabulky nebo další výsledky.\n• Nástroje sběru dat.\n• Etické schvalovací dopisy, dohody o důvěrnosti.\nČíslo: Příloha A, B… s popisnými názvy."
         }
       },
-      "meta": "Bibliografie APA 7 · XeLaTeX"
+      "description": "Profil pro magisterské a doktorské studium: přehled literatury, stav techniky, přístup, experimentování, glosář a zkratky. XeLaTeX, biber, APA 7."
     },
     "vancouver.health": {
       "name": "Zdravotní vědy (IMRaD)",
-      "description": "Struktura IMRaD pro klinický a biomedicínský výzkum. Bibliografie ve stylu Vancouver. Ideální pro práce v medicíně, ošetřovatelství a zdravotních vědách."
+      "sections": {
+        "title_page": {
+          "guidance": "Titulní stránka je automaticky generována s daty projektu.\nNemusíte sem psát obsah."
+        },
+        "table_of_contents": {
+          "guidance": "Index se generuje automaticky.\nSem nemusíte nic psát."
+        },
+        "abstract_es": {
+          "title": "Shrnutí",
+          "guidance": "Shrnutí IMRaD je strukturováno se stejnými titulky jako článek, v miniatuře:\n• Cíl: věta s účelem studie.\n• Materiál a metody: návrh, populace, zásah a hlavní měření.\n• Výsledky: relevantnější zjištění s číselnými údaji.\n• Závěry: klinická interpretace a rozsah.\nLimit: 250 slov na diplomovou práci (liší se podle instituce). Žádné schůzky. Žádné nedefinované zkratky.\nNa konci: 3–6 klíčových slov MeSH (Heslování lékařských předmětů)."
+        },
+        "abstract_en": {
+          "title": "Abstrakce",
+          "guidance": "Věrný překlad shrnutí do angličtiny se stejnými titulky: Cíl, Metody, Výsledky, Závěry.\nKlíčová slova: MeSH termíny v angličtině.\nVyžadováno pro indexování v PubMed/MEDLINE a prezentaci na mezinárodních konferencích."
+        },
+        "introduction": {
+          "title": "Úvod",
+          "guidance": "V IMRaD Úvod odpovídá: co je známo? co není známo? co se bude studovat?\nDoporučená struktura (trychtýř):\n1. Rozsah zdravotního problému (epidemiologie, nemocnost).\n2. Co je známo: selektivní přehled literatury s citacemi z Vancouveru ([1], [2]…).\n3. Mezera ve znalostech nebo kontroverze, která motivuje studium.\n4. Výzkumná otázka nebo cíl studie (jasně řečeno).\n5. Případné hypotézy.\nVýsledky zde neuvádějte. Typická délka: 2–4 strany."
+        },
+        "materials_methods": {
+          "title": "Materiál a metody",
+          "guidance": "Popište studii dostatečně podrobně, aby ji bylo možné replikovat. Zahrnuje:\n• Design studie: experimentální, kohortní, případová kontrola, průřezová, systematická revize atd.\n• Místo a období studia.\n• Populace: kritéria pro zařazení a vyloučení.\n• Vzorek: velikost, technika výběru, statistické zdůvodnění.\n• Intervence (pokud existuje): přesný popis, dávka, trvání.\n• Proměnné a měřicí přístroje.\n• Statistická analýza: použité testy, software, hladina významnosti.\n• Etická hlediska: souhlas etické komise, informovaný souhlas.\nVyhněte se zdůvodňování metodologických rozhodnutí – pouze je popište."
+        },
+        "results": {
+          "title": "Výsledky",
+          "guidance": "Představte zjištění objektivně a bez interpretace:\n• Začněte charakteristikami vzorku (Tabulka 1: základní charakteristiky).\n• Prezentuje výsledky v pořadí cílů nebo hypotéz.\n• Pro numerická data používejte tabulky a obrázky — na každý odkaz v textu.\n• Zprávy: n, %, znamená ± SD, mediány (IQR), RR, OR, 95% CI, p hodnota.\n• Neopakujte v textu to, co již ukazuje tabulka – komentujte pouze to, co je nejrelevantnější.\n• Pro kvalitativní studie: kategorie s textovými citacemi účastníků (anonymní)."
+        },
+        "discussion": {
+          "title": "Diskuse",
+          "guidance": "Je to nejvíce analytická sekce a nejobtížnější na psaní. Musíte:\n• Vraťte se k cíli studie a shrňte hlavní zjištění.\n• Porovnejte své výsledky s předchozími studiemi (podobnými, odlišnými a protichůdnými).\n• Vysvětlete nesrovnalosti: rozdíly v designu, populaci, kontextu.\n• Poukázat na klinické důsledky: jaké změny v praxi?\n• Uznejte omezení studie (neminimalizujte je – posiluje to důvěryhodnost).\n• Navrhněte konkrétní budoucí výzkum.\nNeprezentovat zde nové výsledky."
+        },
+        "conclusions": {
+          "title": "Závěry",
+          "guidance": "V mnoha biomedicínských článcích jsou závěry zahrnuty do diskuse.\nPokud je vaše instituce vyžaduje samostatně:\n• Jedna nebo dvě věty na zodpovězený cíl.\n• Přímo odpovídá na výzkumnou otázku.\n• Vyhněte se zobecňování nad rámec toho, co data umožňují.\n• Zmiňuje přínos ke znalostem nebo klinické praxi."
+        },
+        "references": {
+          "title": "Odkazy",
+          "guidance": "Vancouver style: číselné odkazy v pořadí, v jakém se objevují v textu ([1], [2]…).\nSeznam je automaticky generován z vašeho .bib při kompilaci.\nUpřednostňuje zdroje indexované v MEDLINE/PubMed, Scopus, Web of Science.\nPoužijte importér DOI k přidání článků jedním kliknutím — Crossref má nejvíce PubMed.\nReferenční limit: liší se podle instituce (běžné: 30–50 pro práce)."
+        },
+        "appendices": {
+          "title": "Přílohy",
+          "guidance": "Zahrnuje podpůrné dokumenty, které se nevejdou do textu:\n• Sběrný nástroj (dotazník, záznamový list).\n• Schvalovací dopis od etické komise.\n• Informovaný souhlas.\n• Tabulky nezpracovaných nebo doplňkových dat.\n• Podrobný protokol zásahu.\nČíslo: Příloha A, B… a odkazujeme na ně z textu."
+        }
+      },
+      "description": "Struktura IMRaD pro klinický a biomedicínský výzkum. Bibliografie ve stylu Vancouveru. Ideální pro lékařské, ošetřovatelské a zdravotnické práce."
     },
     "apa.basic": {
-      "name": "APA základní",
+      "name": "Základní APA",
+      "sections": {
+        "title_page": {
+          "guidance": "Titulní stránka APA 7 je automaticky generována s daty projektu.\nZahrnuje: titul, autor(y), instituce, předmět, jméno a datum učitele.\nNemusíte sem psát obsah."
+        },
+        "abstract_es": {
+          "title": "Shrnutí",
+          "guidance": "Shrnutí APA 7 se nachází na samostatné stránce s nadpisem „Shrnutí“ (uprostřed, tučně).\n150–250 slov, která odpovídají: co je studováno?, jak?, co bylo nalezeno?, co to znamená?\nNa konci zařaďte 4–6 klíčových slov: kurzívou.\nV souhrnu neuvádějte odkazy."
+        },
+        "introduction": {
+          "title": "Úvod",
+          "guidance": "V APA 7 úvod nenese nadpis „Úvod“ – profil jej zpracovává automaticky.\nMusíte předložit:\n• Téma a jeho relevance.\n• Co je dosud známo (stručná bibliografická syntéza).\n• Účel nebo cíl práce.\n• Otázka nebo hypotéza platí.\nV textu použijte citace APA: (Příjmení, Rok) nebo Příjmení (Rok) v závislosti na toku."
+        },
+        "development": {
+          "title": "Vývoj",
+          "guidance": "Hlavní část práce. Uspořádejte pomocí nadpisů úrovně 2 a 3 podle složitosti.\nPro eseje: hlavní argument, podpůrné argumenty s bibliografickými důkazy, protiargumenty.\nPro zprávy: koncepční rámec, analýza, zjištění.\nZdroje parafrází — vyhněte se dlouhým doslovným uvozovkám (použijte je pouze tehdy, když na přesných slovech záleží).\nCitujte vše, co není vaším vlastním výtvorem."
+        },
+        "conclusions": {
+          "title": "Závěry",
+          "guidance": "Shrňte hlavní body práce:\n• Odpoví na otázku nebo účel položený v úvodu.\n• Poukázat na důsledky zjištění.\n• Rozpoznat omezení.\n• Navrhuje směry budoucí práce nebo výzkumu.\nNevkládejte sem nové citace. Délka: 1–2 strany."
+        },
+        "references": {
+          "title": "Odkazy",
+          "guidance": "V APA 7 se nazývá „Reference“ (nikoli „Bibliografie“).\nSeznam je automaticky generován z vašeho .bib při kompilaci.\nPravidla APA 7: řazeno abecedně, předsazené odsazení, URL nebo DOI na konci každého záznamu.\nPomocí importéru DOI (Ctrl+[ > panel DOI) přidejte reference jedním kliknutím."
+        }
+      },
       "description": "Zjednodušený profil pro akademické práce s přísným stylem APA 7. Ideální pro zprávy, eseje a krátké články."
     },
     "chicago.humanities": {
       "name": "Chicago / Turabian — Humanitní vědy",
-      "description": "Závěrečné práce v humanitních, sociálních vědách a umění ve stylu Chicago Poznámky-Bibliografie (17. vyd.) / Turabian 9. vyd. Citace se zobrazují v číslovaných poznámkách pod čarou. Abecedně seřazená bibliografie na konci. Hojně využíváno ve filozofii, historii, literatuře, sociálních vědách a právu."
+      "sections": {
+        "title_page": {
+          "guidance": "Obálka Turabian obsahuje: název (uprostřed, jedna třetina shora), jméno autora, program a univerzitu, město a rok. Žádné číslo stránky.\nProfil vygeneruje titulní stránku s daty projektu."
+        },
+        "abstract": {
+          "title": "Abstrakce",
+          "guidance": "Turabian doporučuje abstrakt o délce 150–350 slov pro doktorské disertační práce.\nZahrnuje: téma, přístup, hlavní argument, metodologii a závěr.\nNapište to v přítomném nebo minulém čase – vyberte si jeden a buďte konzistentní."
+        },
+        "table_of_contents": {
+          "guidance": "Index se generuje automaticky. V Chicagu jsou zahrnuty úrovně kapitol a sekcí, ale nikoli podsekce od úrovně 3 výše."
+        },
+        "introduction": {
+          "title": "Úvod",
+          "guidance": "V humanitních vědách je v úvodu uveden hlavní argument (teze), korpus nebo hlavní zdroje, metodologie a zdůvodnění.\nChicago umožňuje diskurzivnější styl než jiné disciplíny – můžete použít první osobu a rozvinout argument s nuancemi od začátku.\nCitace jsou v číslovaných poznámkách pod čarou, nikoli v závorkách. Systém je vloží automaticky."
+        },
+        "chapter_1": {
+          "title": "Kapitola 1",
+          "guidance": "V humanitních oborech kapitoly rozvíjejí argument postupně.\nKaždá kapitola musí mít svůj vlastní argument, který přispívá k ústřednímu argumentu práce.\nPoužívejte poznámky pod čarou pro přímé citace, odkazy a rozsáhlé komentáře, které by přerušily tok textu.\nKrátké poznámky pod čarou mohou být uvozovky; dlouhé mohou být další diskuse."
+        },
+        "chapter_2": {
+          "title": "Kapitola 2",
+          "guidance": "Druhá kapitola. Rozviňte další krok argumentu.\nV historii nebo literatuře může tato kapitola analyzovat korpus textů, historické období nebo soubor primárních pramenů.\nCitujte primární a sekundární zdroje s poznámkami pod čarou. Pro opakující se primární zdroje použijte zkratky v poznámce pod čarou za první úplnou citací."
+        },
+        "chapter_3": {
+          "title": "Kapitola 3",
+          "guidance": "Třetí kapitola. Přivádí argument do bodu největšího rozvoje.\nKapitoly můžete přidávat nebo odebírat v závislosti na struktuře vaší diplomové práce – většina humanitních disertačních prací má 3–5 kapitol."
+        },
+        "conclusions": {
+          "title": "Závěry",
+          "guidance": "Závěry přebírají ústřední argument a obohacují jej tím, co jsme se naučili v kapitolách.\nVyvarujte se opakování toho, co již bylo řečeno. Otevírá se směrem k širším důsledkům, otevřeným debatám a možnému budoucímu výzkumu.\nV humanitních oborech platí – a někdy je to nutné – uzavírat nuance nebo otevřené otázky."
+        },
+        "bibliography": {
+          "title": "Bibliografie",
+          "guidance": "V Chicago Notes-Bibliography se konečný seznam nazývá \"Bibliografie\" (nikoli \"Reference\").\nJe řazen abecedně podle příjmení autora.\nBibliografie je automaticky generována z vašeho .bib při kompilaci.\nZahrňte všechny citované zdroje do poznámek pod čarou – a můžete zahrnout zdroje konzultované, ale necitované, pokud přidávají kontext."
+        },
+        "appendices": {
+          "title": "Přílohy",
+          "guidance": "V humanitních oborech přílohy obvykle obsahují: přepisy primárních zdrojů, kompletní rozhovory, další obrazový materiál, chronologie nebo glosáře odborných termínů."
+        }
+      },
+      "description": "Disertační a disertační práce v humanitních, společenských vědách a umění ve stylu Chicago Notes-Bibliography (17. vydání) / Turabian 9. vydání. Citace jsou v číslovaných poznámkách pod čarou, nikoli v závorkách. Bibliografie na konci řazena abecedně. Široce se používá ve filozofii, historii, literatuře, společenských vědách a právu."
     },
     "mx.ipn.esfm": {
       "name": "IPN ESFM — Fyzika a matematika",
-      "description": "Bakalářské a magisterské práce Vyšší školy fyziky a matematiky IPN. Optimalizováno pro práce s vysokou matematickou hustotou: věty, důkazy, rovnice. Styl APA nebo číselný podle oblasti."
+      "sections": {
+        "portada": {
+          "guidance": "Obálka ESFM obsahuje: štít IPN, \"Vysoká škola fyziky a matematiky\", název práce, typ práce (Diplomová práce k získání titulu/titul...), jméno studenta, ředitel(é), místo a ročník.\nProfil je generován s daty projektu."
+        },
+        "resumen": {
+          "title": "Shrnutí",
+          "guidance": "Souhrn 150–250 slov. Ve fyzice a matematice musí být přesné:\n• Ústřední problém nebo otázka, vyjádřená bez zbytečného žargonu.\n• Hlavní přístup nebo metoda.\n• Nejdůležitější výsledek (s případným měřením nebo rozměrem).\n• Implikace nebo aplikace výsledku.\nVyhněte se rovnicím v souhrnu. Definujte zkratky, které používáte."
+        },
+        "abstract": {
+          "title": "Abstrakce",
+          "guidance": "Anglický překlad shrnutí. Doporučeno, pokud plánujete publikovat nebo prezentovat na mezinárodních konferencích."
+        },
+        "tabla_contenidos": {
+          "guidance": "Index se generuje automaticky. V matematických pracích je běžné zahrnout také seznam notací a symbolů před úvodem."
+        },
+        "introduccion": {
+          "title": "Úvod",
+          "guidance": "Úvod do fyziky/matematiky zařazuje práci do kontextu disciplíny:\n• Motivace: proč je problém zajímavý nebo relevantní?\n• Pozadí: přímo související předchozí práce.\n• Přesné vyjádření problému nebo výzkumné otázky.\n• Hlavní výsledky (oznámí bez předvedení – to jde do těla).\n• Struktura dokumentu.\nZde můžete používat matematický zápis, ale ponechte jej přístupný."
+        },
+        "preliminares": {
+          "title": "Přípravná utkání",
+          "guidance": "Oddíl, kde definujete matematický jazyk, který budete používat ve zbytku práce.\nZahrnuje: základní definice, notaci a známé výsledky, které budete muset citovat.\nNeprokazujte známé výsledky, pokud nejsou nezbytné pro stanovení přesné notace.\nKe strukturování obsahu použijte bloky Věta, Definice a Lemma editoru.\nPříklad struktury: \"Definice 2.1 (Hilbertův prostor)...\", \"Lemma 2.3...\", \"Věta 2.5 (spektrální)...\""
+        },
+        "desarrollo": {
+          "title": "Vývoj",
+          "guidance": "Hlavní část práce. V čisté matematice: vývoj teorie s úplnými důkazy.\nVe fyzice: vývoj modelu, teorie nebo experimentu.\nStrukturujte každou kapitolu pomocí výroků, lemmat, vět a důkazů.\nKaždé demo musí být explicitně ukončeno □ nebo \"∎\" (editor toto vkládá automaticky).\nNa číslované rovnice je třeba odkazovat z textu: použijte \\eqref{} nebo \\cref{}."
+        },
+        "resultados": {
+          "title": "Výsledky a aplikace",
+          "guidance": "Pokud má vaše práce numerické, výpočetní nebo experimentální aplikace, odešlete je zde.\nPro výpočetní fyziku: zahrnuje parametry simulace, konvergenci a srovnání s analytickými nebo experimentálními výsledky.\nPro experimentální fyziku: uvádí data s nejistotami, statistickou analýzu a grafy."
+        },
+        "conclusiones": {
+          "title": "Závěry",
+          "guidance": "Shrnuje získané výsledky a jejich relevanci.\nV matematice: jaké dohady byly vyřešeny, jaké otázky práce otevírá.\nVe fyzice: jaké jevy byly vysvětleny, jaké předpovědi model dělá.\nJasně označte, co je ve vaší práci originální vs. to, co je známé\nPoukažte na otevřené problémy nebo přirozené rozšíření práce."
+        },
+        "referencias": {
+          "title": "Odkazy",
+          "guidance": "Seznam referencí v APA 7 (automaticky generovaný).\nPro články z fyziky/matematických časopisů použijte importér DOI — Crossref má nejvíce článků z Physical Review, Journal of Mathematical Physics atd.\nU klasických učebnic (Rudin, Spivak, Peskin & Schroeder atd.): přidejte záznam ručně do .bib, pokud nejsou v Crossref."
+        },
+        "apendices": {
+          "title": "Přílohy",
+          "guidance": "Doplňkový technický materiál: dlouhé ukázky, které by přerušily tok hlavního argumentu, podrobné výpočty, simulační kód, tabulky experimentálních dat."
+        }
+      },
+      "description": "Pregraduální a postgraduální práce z Vyšší fyzikálně-matematické školy IPN. Navrženo pro práce s vysokou matematickou hustotou: věty, lemmata, důsledky, důkazy, fyzikální zápis a složité rovnice. Bibliografie APA pro obecné práce nebo číselný styl pro publikace o fyzice."
     },
     "mx.ipn.sepi": {
-      "name": "IPN SEPI — Postgraduální studium v oblasti inženýrství a přírodních věd",
-      "description": "Závěrečné práce Sekce postgraduálního studia a výzkumu IPN. Formát IPN s bibliografií IEEE pro inženýrství nebo APA pro přírodní vědy. Legal papír, okraje dle IPN."
+      "name": "IPN SEPI – postgraduální studium inženýrství a věd",
+      "sections": {
+        "portada": {
+          "guidance": "Obálka IPN-SEPI obsahuje: štít IPN, název akademické jednotky (ESIME/ESCOM/UPIITA...), název práce, typ práce (pro získání titulu magistr/doktor v...), jméno studenta, vedoucí práce, místo a rok.\nProfil vygeneruje titulní stránku s daty projektu."
+        },
+        "resumen": {
+          "title": "Shrnutí",
+          "guidance": "Technické shrnutí ve španělštině o 200–300 slovech. SEPI to vyžaduje ve španělštině.\nMusí obsahovat: cíl, metodiku, hlavní výsledky a závěr.\nNa závěr: 5–8 technických klíčových slov."
+        },
+        "abstract": {
+          "title": "Abstrakce",
+          "guidance": "Anglický překlad shrnutí. SEPI-IPN jej vyžaduje ve všech postgraduálních programech.\nKlíčová slova: stejná jako ve španělštině, v angličtině."
+        },
+        "tabla_contenidos": {
+          "guidance": "Index se generuje automaticky. IPN také vyžaduje seznam obrázků, seznam tabulek a případně seznam algoritmů nebo kódů."
+        },
+        "introduccion": {
+          "title": "Úvod",
+          "guidance": "Úvod IPN-SEPI musí obsahovat:\n1. Technologický nebo vědecký kontext problému.\n2. Motivace a zdůvodnění.\n3. Hypotéza nebo výzkumná otázka.\n4. Obecný cíl a specifické cíle.\n5. Rozsah a omezení.\n6. Organizace dokumentu.\nCitace v IEEE jsou číselné: [1], [2], [3]…"
+        },
+        "estado_arte": {
+          "title": "Nejmodernější",
+          "guidance": "Kritický přehled současného stavu techniky. V SEPI-IPN je povinné a musí:\n• Identifikujte nejdůležitější práce (posledních 5–10 let; konference a časopisy IEEE/ACM/Elsevier).\n• Porovnávací přístupy: srovnávací tabulky metod, výsledků a omezení.\n• Identifikujte mezeru nebo omezení, které vaše práce řeší.\n• Zdůvodněte, proč je váš návrh jiný nebo lepší.\nCitace s číslem v závorce: \"Pérez et al. [5] navrhl...\""
+        },
+        "metodologia": {
+          "title": "Metodika nebo vývoj",
+          "guidance": "V konstrukci metodologie popisuje navrhované řešení:\n• Architektura nebo design systému.\n• Případně matematický nebo formální model.\n• Vyvinuté algoritmy (použijte blok Algorithm).\n• Implementace: jazyky, frameworky, hardware.\n• Obecný vývojový diagram systému.\nÚroveň podrobností musí umožnit replikaci díla."
+        },
+        "resultados": {
+          "title": "Výsledky a analýza",
+          "guidance": "Prezentace a analýza výsledků experimentů nebo simulací:\n• Experimentální uspořádání: zařízení, parametry, podmínky.\n• Metriky hodnocení: přesnost, čas, spotřeba, výkon atd.\n• Srovnání se stavem techniky (srovnávací tabulka).\n• Případná statistická analýza (průměr, odchylka, interval spolehlivosti).\nV IEEE musí mít každý obrázek a tabulka číslo a stručný popis."
+        },
+        "conclusiones": {
+          "title": "Závěry a budoucí práce",
+          "guidance": "Uzavřete práci s technickou přesností:\n• Dosažené cíle vs.\n• Původní příspěvky práce.\n• Zjištěná technická omezení.\n• Budoucí práce: konkrétní zlepšení, možná rozšíření, otevřené problémy.\nIPN-SEPI oceňuje zejména zmínku o možných publikacích nebo průmyslových aplikacích."
+        },
+        "referencias": {
+          "title": "Odkazy",
+          "guidance": "V IEEE jsou odkazy číselné v pořadí vzhledu.\nSeznam je automaticky generován z vašeho .bib.\nPro články IEEE a ACM: použijte importér DOI.\nIPN vyžaduje zahrnutí DOI, je-li k dispozici."
+        },
+        "anexos": {
+          "title": "Přílohy",
+          "guidance": "Úplný zdrojový kód, skripty, konfigurace hardwaru/softwaru, datové listy, uživatelské příručky, nezpracovaná data experimentů.\nČíslo: Příloha A, Příloha B… a odkaz na každou z nich v textu."
+        }
+      },
+      "description": "Teze sekce postgraduálního studia a výzkumu (SEPI) Národního polytechnického institutu. Platí pro jednotky CINVESTAV, ESIME, ESCOM, UPIITA a SEPI. IEEE bibliografie pro inženýrství a technologii; Formát IPN s okraji, typografií a strukturou specifickou pro postgraduální a výzkumné ředitelství."
     },
     "mx.ipn.upibi": {
-      "name": "IPN UPIBI — Biotechnologie",
-      "description": "Závěrečné práce Interdisciplinární odborné jednotky pro biotechnologii IPN. Zaměřeno na biochemii, mikrobiologii, bioprocesinženýrství, bioinformatiku a environmentální biotechnologii. Bibliografie APA nebo Vancouver podle oblasti."
+      "name": "IPN UPIBI – Biotechnologie",
+      "sections": {
+        "portada": {
+          "guidance": "Obálka UPIBI zahrnuje: štít IPN, \"Interdisciplinární odbornou jednotku biotechnologie\", kariéru nebo program, název práce, typ práce, jméno studenta, ředitele, místo a rok."
+        },
+        "resumen": {
+          "title": "Shrnutí",
+          "guidance": "Vědecké shrnutí 200–300 slov ve španělštině. V biotechnologii musí souhrn obsahovat:\n• Cíl studie.\n• Hlavní použité materiály/organismy/kmeny/vzorky.\n• Základní metodologie (typ experimentu, klíčová analytická technika).\n• Nejdůležitější výsledek (pokud možno s kvantitativními údaji).\n• Závěr nebo aplikace.\nNa konci: 5–8 klíčových slov ve španělštině."
+        },
+        "abstract": {
+          "title": "Abstrakce",
+          "guidance": "Anglický překlad shrnutí. UPIBI to vyžaduje pro všechny diplomové a postgraduální práce.\nKlíčová slova v angličtině: stejná jako ve španělštině."
+        },
+        "tabla_contenidos": {
+          "guidance": "Automaticky generovaný index. V práci s mnoha obrázky (gely, chromatogramy, růstové křivky) obsahuje seznam obrázků a seznam tabulek."
+        },
+        "introduccion": {
+          "title": "Úvod",
+          "guidance": "Úvod do biotechnologie uvádí do kontextu problém z biologie a inženýrství:\n• Význam studovaného mikroorganismu, procesu, sloučeniny nebo problému.\n• Stav techniky: relevantní předchozí práce (použijte APA: Autor, rok).\n• Odůvodnění: proč je tato studie relevantní?\n• Pracovní hypotéza (pokud je návrh experimentální).\n• Obecný cíl a specifické cíle.\nBuďte od začátku konkrétní ohledně taxonů, kmenů, podmínek a sloučenin."
+        },
+        "marco_teorico": {
+          "title": "Teoretický rámec",
+          "guidance": "Zakládá práci na vědecké literatuře:\n• Biologie/biochemie studovaného systému (mikroorganismus, enzym, metabolická dráha atd.).\n• Principy hlavního procesu nebo techniky (fermentace, HPLC, PCR atd.).\n• Kinetické nebo matematické modely, pokud jsou použitelné (Michaelis-Menten, Monod atd.).\n• Standardy nebo předpisy, pokud jsou relevantní (NOM, FDA, WHO)."
+        },
+        "materiales_metodos": {
+          "title": "Materiály a metody",
+          "guidance": "V biotechnologii je sekce materiálů a metod kritická pro reprodukovatelnost. Zahrnuje:\n• Biologické materiály: organismy, kmeny (s katalogovým číslem nebo přístupovým číslem), buněčné linie, vzorky (s podmínkami původu a konzervace).\n• Reagencie: název, druh, dodavatel.\n• Vybavení: model, značka, provozní podmínky.\n• Analytické metody: přesné podmínky (teplota, pH, čas, koncentrace).\n• Experimentální design: nezávislé, závislé a řídící proměnné; repliky.\n• Statistická analýza: software, testy a hladina významnosti (α = 0,05).\nÚroveň podrobností by měla jiné laboratoři umožnit experiment přesně zopakovat."
+        },
+        "resultados": {
+          "title": "Výsledky",
+          "guidance": "Představte data objektivně, bez interpretace:\n• Obrázky: chromatogramy, růstové křivky, gely, mikroskopie – každý s číslem, popisným názvem (níže) a úplnými jednotkami na osách.\n• Tabulky: tabulková data s průměrem ± standardní odchylka, jednotky v záhlaví.\n• Statistika: udává, zda jsou rozdíly významné (p < 0,05, ANOVA, Tukey, atd.).\n• Případná statistická písmena v tabulkách a obrázcích (a, b, ab pro homogenní skupiny).\nPřed zobrazením každého obrázku nebo tabulky v textu explicitně odkazujte."
+        },
+        "discusion": {
+          "title": "Diskuse",
+          "guidance": "Interpretujte výsledky v kontextu literatury:\n• Potvrzují výsledky nebo vyvracejí hypotézu?\n• Porovnejte s předchozími studiemi: shodují se? liší se? Proč se mohou lišit (kmen, podmínky, metoda)?\n• Vysvětluje biologické nebo biochemické mechanismy, které odůvodňují výsledky.\n• Probírá metodologická omezení a jejich dopad na výsledky.\n• Důsledky: co to znamená pro průmysl, medicínu nebo životní prostředí?"
+        },
+        "conclusiones": {
+          "title": "Závěry",
+          "guidance": "Shrňte nejdůležitější věci v přímých a měřitelných termínech:\n• Každý závěr odpovídá konkrétnímu cíli.\n• Vyhněte se opakování souhrnu výsledků — uzavírá, nehlásí.\n• Označuje příspěvek ke znalostem nebo průmyslu.\n• Doporučení pro budoucí výzkum."
+        },
+        "referencias": {
+          "title": "Odkazy",
+          "guidance": "Seznam referencí v APA 7 (automaticky generovaný).\nPro vědecké články: použijte dovozce DOI – PubMed, ScienceDirect a Web of Science mají DOI pro většinu biotechnologických článků.\nU článků bez DOI: uveďte adresu URL časopisu nebo databáze."
+        },
+        "anexos": {
+          "title": "Přílohy",
+          "guidance": "Nezpracovaná data z experimentů, kompletní gely (neoříznuté), nukleotidové nebo aminokyselinové sekvence, přírůstková čísla GenBank, certifikáty analýzy činidel, kompletní protokoly, které nejsou součástí M&M."
+        }
+      },
+      "description": "Teze Interdisciplinární odborné jednotky biotechnologie IPN. Zahrnuje biochemii, mikrobiologii, bioprocesní inženýrství, bioinformatiku, environmentální a farmaceutickou biotechnologii. Experimentální a kvantitativní charakter s vysokou přesností prezentace dat. APA 7 bibliografie pro většinu oblastí; Vancouver přijat v oblastech bližších zdravotnickým vědám."
     },
     "mx.ipn.upitta": {
-      "name": "IPN UPITTA — Pokročilé technologie",
-      "description": "Závěrečné práce Interdisciplinární odborné jednotky pro pokročilé technologie IPN. Zaměřeno na mechatroniku, inteligentní systémy, automatizaci a rozvíjející se technologie. Bibliografie IEEE."
+      "name": "IPN UPITTA – pokročilé technologie",
+      "sections": {
+        "portada": {
+          "guidance": "Obálka UPITTA obsahuje: štít IPN, \"Interdisciplinary Professional Unit of Advanced Technologies\", název práce, typ práce, jméno studenta, ředitele, místo a rok."
+        },
+        "resumen": {
+          "title": "Shrnutí",
+          "guidance": "Technické shrnutí ve španělštině o 200–250 slovech. Interdisciplinární charakter UPITTA znamená, že shrnutí musí být srozumitelné pro čtenáře z různých oblastí (inženýrství, výpočetní technika, aplikovaná matematika).\nZahrnuje: technický problém, navrhované řešení, klíčové technologie a hlavní měřitelný výsledek."
+        },
+        "abstract": {
+          "title": "Abstrakce",
+          "guidance": "Anglický překlad. Vyžaduje UPITTA pro všechny diplomové a postgraduální práce.\nKlíčová slova v angličtině: 5–8 relevantních technických výrazů."
+        },
+        "tabla_contenidos": {
+          "guidance": "Automaticky generovaný index. Obsahuje seznam obrázků a seznam tabulek, pokud jich je více než 5 od každého typu."
+        },
+        "introduccion": {
+          "title": "Úvod",
+          "guidance": "Kontextualizujte problém z interdisciplinární perspektivy UPITTA:\n• Technologická oblast a její význam (mechatronika, AI, automatizace atd.).\n• Konkrétní problém a jeho dopad (průmyslový, společenský, vědecký).\n• Nejdůležitější související práce (citace s číslem IEEE: [1], [2]).\n• Obecný cíl a specifické cíle.\n• Konkrétní příspěvek: co navrhujete, co neexistuje nebo nefunguje dobře?\n• Organizace dokumentů."
+        },
+        "estado_arte": {
+          "title": "Nejmodernější a teoretický rámec",
+          "guidance": "Kombinace současného stavu techniky a teoretického rámce vhodná pro interdisciplinární práci:\n• Projděte si nejdůležitější předchozí práce v každé oblasti, které se váš projekt dotýká.\n• Prezentujte teorie nebo matematické modely, na kterých je vaše řešení založeno.\n• Srovnávací tabulky stávajících řešení vs.\n• Jasně identifikujte výklenek nebo zlepšení, které vaše práce přináší.\nVe společnosti UPITTA je interdisciplinární přístup silnou stránkou – ukazuje, jak integrujete různé oblasti."
+        },
+        "diseno": {
+          "title": "Návrh systému",
+          "guidance": "Před implementací systému předložte kompletní architekturu nebo návrh:\n• Obecná architektura: blokové nebo komponentní schéma.\n• Matematický nebo dynamický model (pro řídicí systémy, robotiku atd.).\n• Výběr a zdůvodnění technologií (senzory, akční členy, platformy, algoritmy).\n• Vývojové diagramy nebo stavové automaty, pokud jsou použitelné.\n• Konstrukční omezení: výkon, velikost, cena, doba odezvy.\nNávrh musí být nezávislý na implementaci."
+        },
+        "implementacion": {
+          "title": "Implementace a výsledky",
+          "guidance": "Popište implementaci a prezentujte výsledky experimentu:\n• Vývojové prostředí: hardware, software, verze.\n• Implementace pomocí modulů nebo subsystémů.\n• Testování integrace: Funguje celý systém tak, jak návrh předpokládá?\n• Kvantitativní výsledky: metriky (přesnost, doba odezvy, spotřeba, chyba RMS atd.).\n• Porovnání se současným stavem techniky nebo se základní linií.\nNa UPITTA jsou oceňovány testy v reálných nebo kvazireálných podmínkách."
+        },
+        "conclusiones": {
+          "title": "Závěry a budoucí práce",
+          "guidance": "Uzavřete práci s technickou a mezioborovou přísností:\n• Cíle splněny vs. dosažené (s kvantitativními důkazy).\n• Původní příspěvky (technická, metodologická nebo disciplinární integrace).\n• Omezení systému nebo studie.\n• Budoucí práce: vylepšení, rozšíření, možné průmyslové nebo výzkumné aplikace.\nUveďte, zda práce vedla nebo může vést k publikacím nebo patentům."
+        },
+        "referencias": {
+          "title": "Odkazy",
+          "guidance": "Číselné odkazy IEEE v pořadí vzhledu (automaticky generované).\nPoužijte importér DOI pro články z IEEE Xplore, ACM DL atd.\nDo každé reference zahrňte DOI – je to požadavek IEEE."
+        },
+        "anexos": {
+          "title": "Přílohy",
+          "guidance": "Úplný zdrojový kód, datové listy součástí, mechanické nebo elektrické výkresy, kalibrační postupy, uživatelské příručky, nezpracovaná experimentální data."
+        }
+      },
+      "description": "Teze Interdisciplinární odborné jednotky pokročilých technologií IPN. Orientuje se na mechatroniku, inteligentní systémy, automatizaci, robotiku a nově vznikající technologie. Interdisciplinární povaha: integruje inženýrství, výpočetní techniku ​​a základní vědy. Numerická bibliografie IEEE."
     },
     "mx.unam.posgrado": {
-      "name": "UNAM — Postgraduální studium",
-      "description": "Magisterské a doktorské práce UNAM. Vychází z pokynů Koordinace postgraduálního studia (CEP-UNAM). APA 7, XeLaTeX, formát papíru legal."
+      "name": "UNAM – postgraduální",
+      "sections": {
+        "portada": {
+          "guidance": "Obálka UNAM obsahuje: štít UNAM, název fakulty nebo institutu, název práce, typ práce (pro získání magisterského/doktorského titulu v...), jméno studenta, vedoucí práce, školicí komise, místo a rok.\nProfil automaticky vygeneruje obal s údaji, které jste nakonfigurovali při vytváření projektu."
+        },
+        "dedicatoria": {
+          "title": "Věnování",
+          "guidance": "Krátký text (1–5 řádků) věnovaný důležitým lidem. Je to osobní a volitelné.\nU UNAM nemá číslo stránky a je vytištěna na samostatné stránce."
+        },
+        "agradecimientos": {
+          "title": "Děkuji",
+          "guidance": "Uveďte ředitele, výukovou komisi, CONACYT/CONAHCyT (pokud existovalo stipendium), laboratoř nebo výzkumnou skupinu a klíčové osoby v práci.\nV případě potřeby uveďte číslo projektu nebo stipendia (např. „CONAHCyT stipendium č. XXXXXX“)."
+        },
+        "resumen": {
+          "title": "Shrnutí",
+          "guidance": "Shrnutí ve španělštině o 200–300 slovech. CEP-UNAM to vyžaduje ve španělštině.\nZahrnuje: cíl, metodiku, hlavní výsledky a závěr.\nNa konci: 4–6 klíčových slov oddělených středníkem."
+        },
+        "abstract": {
+          "title": "Abstrakce",
+          "guidance": "Překlad shrnutí do angličtiny. Mnoho doktorských programů UNAM to vyžaduje.\nStejný formát jako shrnutí ve španělštině.\nKlíčová slova: stejná jako ve španělštině, v angličtině."
+        },
+        "tabla_contenidos": {
+          "guidance": "Index se generuje automaticky. Zahrnuje kapitoly, sekce a podsekce.\nUNAM obecně také vyžaduje seznam obrázků a seznam tabulek, pokud jich je více než 5."
+        },
+        "introduccion": {
+          "title": "Úvod",
+          "guidance": "Úvod UNAM musí obsahovat:\n1. Pozadí a kontext problému.\n2. Problémové vyjádření a zdůvodnění.\n3. Hypotéza nebo výzkumná otázka.\n4. Obecný cíl a specifické cíle.\n5. Rozsah a omezení.\n6. Struktura práce (co obsahuje každá kapitola).\nDoporučená délka: 4–8 stran."
+        },
+        "marco_teorico": {
+          "title": "Teoretický rámec",
+          "guidance": "Prohlédněte si a syntetizujte relevantní literaturu. Teoretický rámec UNAM musí:\n• Uveďte primární a současné zdroje (posledních 10 let; klasické, pokud jsou zásadní).\n• Uspořádejte myšlenky logicky, ne jako seznam shrnutí.\n• Použít APA 7 pro všechny citace — systém je generuje automaticky.\n• Identifikujte stav techniky a mezeru, kterou váš výzkum vyplňuje."
+        },
+        "metodologia": {
+          "title": "Metodika",
+          "guidance": "Popište metodiku dostatečně podrobně, aby ji bylo možné replikovat. Zahrnuje:\n• Typ výzkumu a designu.\n• Populace, výběrová a výběrová kritéria.\n• Nástroje a postupy.\n• Analýza dat (software, statistika nebo kvalitativní kategorie).\n• Etické ohledy a souhlasy, pokud jsou použitelné."
+        },
+        "resultados": {
+          "title": "Výsledky",
+          "guidance": "Představte výsledky objektivně. V textu používejte tabulky a obrázky s odkazy.\nNa UNAM musí mít každý obrázek a tabulka: číslo, popisný název (výše pro tabulky, níže pro obrázky) a zdroj, pokud je to relevantní.\nNeinterpretujte zde výsledky – to je uvedeno v diskusi."
+        },
+        "discusion": {
+          "title": "Diskuse",
+          "guidance": "Interpretujte výsledky v kontextu vaší výzkumné otázky a literatury.\nPorovnejte s předchozími studiemi, poukažte na náhody a divergence.\nDiskutuje o teoretických a praktických důsledcích.\nPoctivě si uvědomujte omezení."
+        },
+        "conclusiones": {
+          "title": "Závěry",
+          "guidance": "Odpovídejte přímo na své cíle a hypotézy. CEP-UNAM doufá:\n• Syntéza hlavních zjištění.\n• Originální příspěvky do oboru.\n• Doporučení pro budoucí výzkum.\n• Důsledky pro praxi nebo politiku (pokud jsou použitelné).\nDélka: 3–5 stran. Nezadávejte nové informace."
+        },
+        "referencias": {
+          "title": "Odkazy",
+          "guidance": "Seznam referencí je automaticky generován ve formátu APA 7.\nUNAM vyžaduje APA 7 ve většině postgraduálních programů.\nUjistěte se, že každý citovaný zdroj je v .bib a naopak.\nPoužijte importér DOI k získání úplných a normalizovaných záznamů."
+        },
+        "anexos": {
+          "title": "Přílohy",
+          "guidance": "Doplňkový materiál, který podporuje práci bez přerušení hlavního toku:\nnástroje sběru, tabulky nezpracovaných dat, zdrojový kód, dopisy se souhlasem.\nČíslo: Příloha A, Příloha B… Odkaz na každou z nich v hlavním textu."
+        }
+      },
+      "description": "Postgraduální práce a dizertační práce z Národní autonomní univerzity v Mexiku. Na základě pokynů Koordinace postgraduálního studia (CEP-UNAM): papír velikosti letter nebo legal, okraje 2,5 cm, řádkování 1,5, APA 7, přebal s oficiálním erbem."
+    },
+    "generic.tesina": {
+      "name": "Obecná disertační práce",
+      "sections": {
+        "title_page": {
+          "guidance": "Titulní stránka je automaticky generována s institucionálními daty nakonfigurovanými při vytváření projektu.\nNemusíte sem psát obsah."
+        },
+        "table_of_contents": {
+          "guidance": "Index se automaticky generuje z vašich povolených sekcí.\nSem nemusíte nic psát."
+        },
+        "introduction": {
+          "title": "Úvod",
+          "guidance": "Úvod představuje téma a motivuje k práci. Pro diplomovou práci to zahrnuje:\n1. Stručný kontext tématu (od obecného ke konkrétnímu).\n2. Problém nebo otázka, kterou práce řeší.\n3. Obecný cíl.\n4. Odůvodnění: proč je důležité ji studovat?\n5. Stručný popis toho, jak je dokument uspořádán.\nTypická délka: 1–3 stránky."
+        },
+        "development": {
+          "title": "Vývoj",
+          "guidance": "Vývoj je ústřední částí práce. Rozdělte to na logické podsekce:\n• Koncepční rámec: definuje klíčové pojmy s bibliografickou podporou.\n• Analýza nebo vývoj tématu: argument, návrh nebo centrální studie.\n• Výsledky nebo zjištění, pokud jsou použitelné.\nKaždý nápad musí být podpořen zdroji. K odkazování používejte bloky \"Bibliografické citace\".\nTypická délka: 10–30 stran."
+        },
+        "conclusions": {
+          "title": "Závěry",
+          "guidance": "Uzavřete práci přímou reakcí na cíl uvedený v úvodu:\n• Bylo cíle dosaženo? co bylo zjištěno?\n• Úvaha o relevanci práce.\n• Byla nalezena omezení.\n• Doporučení nebo směry budoucí práce.\nTypická délka: 1–2 strany. Nezadávejte sem nové informace."
+        },
+        "references": {
+          "guidance": "Seznam odkazů je automaticky generován z vašeho souboru .bib při kompilaci.\nKe snadnému přidávání zdrojů použijte importér DOI (Ctrl+[ > panel DOI).\nStyl APA 7 se použije automaticky."
+        }
+      },
+      "description": "Zjednodušená verze pro bakalářské studium: úvod, vývoj a závěry. Třída knihy, XeLaTeX, biber, APA 7."
+    },
+    "generic.thesis": {
+      "name": "Obecná práce",
+      "sections": {
+        "title_page": {
+          "guidance": "Titulní stránku automaticky generuje profil s institucionálními údaji, které jste nakonfigurovali při vytváření projektu (jméno studenta, instituce, pracovní pozice, vedoucí práce, rok).\nNemusíte sem psát obsah."
+        },
+        "table_of_contents": {
+          "guidance": "Obsah je automaticky generován ze sekcí povolených ve vašem projektu.\nNemusíte nic psát – jen se ujistěte, že vaše kapitoly mají názvy."
+        },
+        "abstract_es": {
+          "title": "Shrnutí",
+          "guidance": "Abstrakt prezentuje vaši práci ve 150–250 slovech. Musíte odpovědět stručně:\n• Jaký je problém nebo výzkumná otázka?\n• Jakou metodologii jste použili?\n• Jaké jsou hlavní výsledky?\n• Jaký je závěr nebo příspěvek?\nV souhrnu neuvádějte odkazy. Napište to v minulém čase. Na konci uveďte 4–6 klíčových slov."
+        },
+        "abstract_en": {
+          "title": "Abstrakce",
+          "guidance": "Věrný překlad shrnutí do angličtiny, ve stejném formátu (150–250 slov).\nMnoho postgraduálních institucí jej vyžaduje pro mezinárodní indexování.\nKlíčová slova: stejná klíčová slova jako souhrn, v angličtině."
+        },
+        "dedication": {
+          "title": "Věnování",
+          "guidance": "Krátký text (1–5 řádků) věnovaný lidem důležitým pro autora.\nJe to osobní a volitelné. Několik příkladů: \"Mým rodičům za jejich bezpodmínečnou podporu.\"\nVe většině stylů nemá explicitní název – zpracuje to profil."
+        },
+        "acknowledgements": {
+          "title": "Děkuji",
+          "guidance": "Uveďte ty, kteří přispěli k vašemu výzkumu: ředitel, čtenáři, kolegové, instituce, dárci.\nBuďte konkrétní: uveďte roli každé osoby nebo organizace.\nDoporučená délka: půl až jedna stránka."
+        },
+        "introduction": {
+          "title": "Úvod",
+          "guidance": "Úvod uvádí vaši práci do kontextu a motivuje čtenáře, aby pokračoval ve čtení. Musí obsahovat:\n1. Obecný kontext tématu (od širokého po konkrétní).\n2. Problém: jaká mezera nebo potřeba existuje?\n3. Výzkumná otázka nebo hypotéza.\n4. Obecný cíl a specifické cíle.\n5. Odůvodnění: proč je důležité toto studovat?\n6. Rozsah a omezení studie.\n7. Stručný popis struktury práce.\nTypická délka: 3–6 stran."
+        },
+        "theoretical_framework": {
+          "title": "Teoretický rámec",
+          "guidance": "Teoretický rámec podporuje váš výzkum existující literaturou. Musíte:\n• Projděte si klíčové pojmy a teorie související s vaším tématem.\n• Uveďte primární a aktuální zdroje (u článků za posledních 5–10 let; klasické, pokud jsou zásadní).\n• Uspořádejte myšlenky logicky, ne jako seznam shrnutí.\n• Identifikujte stav techniky: co je známo a co chybí?\n• Umístěte svou práci do literatury: čím přispíváte?\nPro každou referenci použijte blok \"Bibliografická citace\". Vyhněte se přílišným uvozovkám – parafrázujte a analyzujte."
+        },
+        "methodology": {
+          "title": "Metodika",
+          "guidance": "Popište, jak jste provedli svůj výzkum, dostatečně podrobně, aby jej bylo možné replikovat. Zahrnuje:\n• Typ výzkumu (kvantitativní, kvalitativní, smíšený; průzkumný, popisný, vysvětlující).\n• Design: experimentální, kvazi-experimentální, případová studie, průzkum atd.\n• Populace a vzorek: kritéria výběru, velikost, technika výběru.\n• Nástroje sběru: dotazníky, rozhovory, pozorování, experimenty.\n• Postup: kroky následované chronologicky.\n• Analýza dat: software, statistika, kategorie kvalitativní analýzy.\n• Etická hlediska, pokud jsou relevantní."
+        },
+        "results": {
+          "title": "Výsledky",
+          "guidance": "Představte výsledky svého výzkumu objektivně, aniž byste je dosud interpretovali. Průvodci:\n• Uspořádejte výsledky podle pořadí vašich cílů nebo výzkumných otázek.\n• Používejte tabulky a obrázky pro číselná nebo srovnávací data — odkazujte na každou z nich v textu.\n• Neopakujte v textu to, co již ukazuje tabulka; Komentujte to nejrelevantnější.\n• Buďte přesní v číslech: zahrňte jednotky, procenta, statistické hodnoty (p, r, χ² atd.).\n• Pro kvalitativní výzkum: představuje kategorie s ilustrativními textovými citacemi."
+        },
+        "discussion": {
+          "title": "Diskuse",
+          "guidance": "Zde interpretujete své výsledky a spojíte je s literaturou. Je to nejvíce analytická sekce. Musíte:\n• Vysvětlete, co vaše výsledky znamenají v kontextu vaší výzkumné otázky.\n• Porovnejte s předchozími studiemi: shodují se? liší se? protože?\n• Upozorněte na neočekávané výsledky a nabídněte možná vysvětlení.\n• Diskutujte o teoretických a praktických důsledcích svých zjištění.\n• Poctivě si uvědomujte omezení studia.\nNeuvádějte zde nové výsledky – pouze interpretujte ty již nahlášené."
+        },
+        "conclusions": {
+          "title": "Závěry",
+          "guidance": "Závěry uzavírají váš argument a reagují přímo na vaše cíle. Zahrnuje:\n• Odpověď na výzkumnou otázku / ověření hypotézy.\n• Syntéza nejdůležitějších zjištění (bez opakování podrobností výsledků).\n• Původní příspěvky práce.\n• Doporučení pro odbornou praxi nebo budoucí výzkum.\n• Závěrečná úvaha o relevanci práce.\nDoporučený rozsah: 2–4 strany. Nezadávejte nové informace."
+        },
+        "references": {
+          "title": "Odkazy",
+          "guidance": "Seznam referencí je automaticky generován z vašeho souboru .bib při kompilaci.\nUjistěte se, že každý zdroj citovaný v textu je v .bib a naopak.\nChcete-li přidat reference: použijte tlačítko import DOI nebo přímo upravte soubor references.bib.\nCitační styl (APA 7 v tomto profilu) je automaticky aplikován LaTeXem."
+        },
+        "appendices": {
+          "title": "Přílohy",
+          "guidance": "Přílohy obsahují podpůrný materiál, který se nevejde do hlavní části, ale který může čtenář potřebovat ověřit:\n• Nástroje sběru (kompletní dotazníky, průvodce rozhovory).\n• Tabulky nezpracovaných dat.\n• Zdrojový kód nebo skripty.\n• Mapy, plány, právní dokumenty.\n• Pověřovací dopisy nebo informovaný souhlas.\nKaždá příloha musí být očíslována (příloha A, příloha B...) a musí být na ni odkazováno z hlavního textu."
+        }
+      },
+      "description": "Základní profil pro diplomové práce a formální akademické práce pro bakalářské, speciální, magisterské, doktorské a postdoktorské tituly. Třída knihy, XeLaTeX, biber, APA 7."
     }
   },
   "institutions": {

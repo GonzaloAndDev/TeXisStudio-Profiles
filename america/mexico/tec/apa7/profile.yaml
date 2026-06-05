@@ -1,36 +1,26 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 id: mx_tec_apa7
-name: "Tec de Monterrey - Tesis (APA 7)"
+name: mx_tec_apa7
 status: reviewed
 latex_engine: xelatex
 compiler: latexmk
 bibliography_backend: biber
 bibliography_style: apa
-
-# ── Verificación contra guías oficiales ──────────────────────────
-# Revisado el 2026-05-25 contra las Normas de Titulación del Tec de Monterrey
-# (Vicerrectoría Académica / Escuela de Posgrado).
 verification:
-  reviewed_at: "2026-05-25"
-  reviewed_by: "TeXisStudio Community"
-  verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — reviewed against Tec de Monterrey Graduation Standards"
+  reviewed_at: '2026-05-25'
+  reviewed_by: TeXisStudio Community
+  verified_at: '2026-05-25'
+  verified_by: TeXisStudio Community — reviewed against Tec de Monterrey Graduation Standards
   source_urls:
-    - "https://serviciosescolares.tec.mx/PostgradoYEd/titulacion"
-    - "https://normatec.itesm.mx/"
+  - https://serviciosescolares.tec.mx/PostgradoYEd/titulacion
+  - https://normatec.itesm.mx/
   review_interval_days: 365
-
-# ── Formato de página ─────────────────────────────────────────────
-# Tec de Monterrey: papel carta, márgenes 1" (25.4mm) todos excepto
-# izquierdo 3 cm (encuadernación). Interlineado doble (APA style).
-# Fuente: Times New Roman o Arial 12pt.
 document_class:
   name: book
   options:
-    - 12pt
-    - letterpaper
-    - oneside
-
+  - 12pt
+  - letterpaper
+  - oneside
 page_layout:
   paper: letterpaper
   margins:
@@ -39,172 +29,76 @@ page_layout:
     left: 30mm
     right: 25.4mm
   line_spacing: 2.0
-
 max_abstract_words: 350
-
 packages: []
-
 sections:
-  - id: portada
-    element_id: cover
-    placement: front_matter
-    required: true
-    title: "Title Page"
-    guidance: |
-      The Tec title page must include:
-      • Logo of Tecnológico de Monterrey.
-      • Corresponding School or Department.
-      • Full thesis title.
-      • "THESIS submitted as a partial requirement to obtain the degree of
-        [Master in / Doctor in] [Program name]."
-      • Author’s full name.
-      • Name of principal advisor and co-advisor (if applicable).
-      • "Monterrey, Nuevo León / [Campus], [Month] [Year]."
-      Download the official title page template for your program from the
-      Tec graduation portal — format varies by school.
-
-  - id: declaracion
-    element_id: declaration
-    placement: front_matter
-    required: true
-    title: "Academic Integrity Statement"
-    guidance: |
-      The Tec de Monterrey requires an Academic Integrity Statement. Standard text:
-      "The author of this work declares that, to the best of their knowledge,
-      this is original work and that no plagiarism exists, as defined by
-      the Tec de Monterrey standards."
-      The Tec uses plagiarism detection tools (Turnitin) — the acceptable
-      similarity percentage is defined by your program (typically < 15%).
-
-  - id: resumen
-    element_id: abstract
-    placement: front_matter
-    required: true
-    title: "Abstract"
-    guidance: |
-      Abstract in Spanish, 150–350 words.
-      Includes: research question, methodology, main findings
-      and contribution to the field. End with Keywords (4–6).
-      Self-contained: no citations, no figures, no undefined acronyms.
-
-  - id: abstract_ingles
-    element_id: abstract_en
-    placement: front_matter
-    required: false
-    title: "Abstract"
-    guidance: |
-      Abstract in English. Required in international Tec programs.
-      Maximum 350 words. Same structure as the Spanish Abstract.
-      The Tec has English-language programs (EGADE, CITEM, etc.) that may require
-      the entire thesis to be in English — verify with your coordinator.
-
-  - id: agradecimientos
-    element_id: acknowledgements
-    placement: front_matter
-    required: false
-    title: "Acknowledgements"
-    guidance: |
-      Optional. Acknowledge the advisor, committee members and funding sources.
-      If you received a CONAHCYT, Tec or corporate sponsor scholarship,
-      include the scholarship or agreement number.
-
-  - id: indice
-    element_id: toc
-    placement: front_matter
-    required: true
-    title: "Table of Contents"
-    guidance: "Generated automatically with exact page numbers."
-
-  - id: indice_figuras
-    element_id: list_of_figures
-    placement: front_matter
-    required: false
-    title: "List of Figures"
-    guidance: "Enable if you have 5 or more figures. APA 7."
-
-  - id: indice_tablas
-    element_id: list_of_tables
-    placement: front_matter
-    required: false
-    title: "List of Tables"
-    guidance: "Enable if you have 5 or more tables. APA 7."
-
-  - id: introduccion
-    element_id: introduction
-    placement: body
-    required: true
-    title: "Introduction"
-    label: "capitulo:introduccion"
-    guidance: |
-      Contextualization, problem statement, rationale, research questions,
-      objectives, hypotheses (if applicable) and thesis structure.
-      The Tec values applied relevance: explain the practical or business impact
-      of the problem you address.
-      Typical length: 10–20 pages.
-
-  - id: marco_teorico
-    element_id: literature_review
-    placement: body
-    required: true
-    title: "Theoretical Framework"
-    label: "capitulo:marcoteorico"
-    guidance: |
-      Conceptual foundations and critical review of the literature.
-      Organize by topics or approaches — not as a sequential summary of authors.
-      Identify the gap that justifies your research.
-      APA 7: (Author, year) in the text.
-
-  - id: metodologia
-    element_id: methodology
-    placement: body
-    required: true
-    title: "Methodology"
-    label: "capitulo:metodologia"
-    guidance: |
-      Research design, sample, instruments, procedure,
-      statistical analysis and ethical considerations.
-      The Tec values mixed methods and corporate case studies.
-
-  - id: resultados
-    element_id: results
-    placement: body
-    required: true
-    title: "Results"
-    label: "capitulo:resultados"
-    guidance: |
-      Objective findings organized by research question.
-      APA 7 tables and figures. No interpretation in this chapter.
-
-  - id: discusion
-    element_id: discussion
-    placement: body
-    required: false
-    title: "Discussion"
-    label: "capitulo:discusion"
-    guidance: |
-      Interpretation of results, comparison with literature, practical implications
-      (highly valued at the Tec) and limitations.
-
-  - id: conclusiones
-    element_id: conclusions
-    placement: body
-    required: true
-    title: "Conclusions"
-    label: "capitulo:conclusiones"
-    guidance: |
-      Answer research questions, summarize contributions, note
-      limitations and suggest future research.
-
-  - id: referencias
-    element_id: bibliography
-    placement: back_matter
-    required: true
-    title: "References"
-    guidance: "APA 7th edition, alphabetical list, hanging indent, DOI mandatory when available."
-
-  - id: apendices
-    element_id: appendix
-    placement: back_matter
-    required: false
-    title: "Appendices"
-    guidance: "Supplementary materials. Turnitin report if required by your program."
+- id: portada
+  element_id: cover
+  placement: front_matter
+  required: true
+- id: declaracion
+  element_id: declaration
+  placement: front_matter
+  required: true
+- id: resumen
+  element_id: abstract
+  placement: front_matter
+  required: true
+- id: abstract_ingles
+  element_id: abstract_en
+  placement: front_matter
+  required: false
+- id: agradecimientos
+  element_id: acknowledgements
+  placement: front_matter
+  required: false
+- id: indice
+  element_id: toc
+  placement: front_matter
+  required: true
+- id: indice_figuras
+  element_id: list_of_figures
+  placement: front_matter
+  required: false
+- id: indice_tablas
+  element_id: list_of_tables
+  placement: front_matter
+  required: false
+- id: introduccion
+  element_id: introduction
+  placement: body
+  required: true
+  label: capitulo:introduccion
+- id: marco_teorico
+  element_id: literature_review
+  placement: body
+  required: true
+  label: capitulo:marcoteorico
+- id: metodologia
+  element_id: methodology
+  placement: body
+  required: true
+  label: capitulo:metodologia
+- id: resultados
+  element_id: results
+  placement: body
+  required: true
+  label: capitulo:resultados
+- id: discusion
+  element_id: discussion
+  placement: body
+  required: false
+  label: capitulo:discusion
+- id: conclusiones
+  element_id: conclusions
+  placement: body
+  required: true
+  label: capitulo:conclusiones
+- id: referencias
+  element_id: bibliography
+  placement: back_matter
+  required: true
+- id: apendices
+  element_id: appendix
+  placement: back_matter
+  required: false

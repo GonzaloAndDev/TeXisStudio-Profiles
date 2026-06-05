@@ -22,7 +22,7 @@
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge the advisor, review committee, scholarships CONICET, ANPCyT\n(PICT), UBACyT (Programas de Reconocimiento Institucional UBA),\nMINCYT u otros funds. Include the project or scholarship number.\n"
+          "guidance": "Acknowledge the advisor, review committee, CONICET, ANPCyT\n(PICT), UBACyT (UBA Institutional Recognition Programs),\nMINCYT and other funds. Include the project or scholarship number."
         },
         "indice": {
           "title": "Table of Contents",
@@ -144,7 +144,7 @@
         }
       },
       "name": "USP - Dissertation (ABNT)",
-      "description": "Dissertation de mestrado/doutorado da University of Sao Paulo, ABNT NBR 6023:2018",
+      "description": "Master's/doctoral dissertation from the University of Sao Paulo, ABNT NBR 6023:2018",
       "institution": "University of Sao Paulo"
     },
     "ca_mcgill_apa7": {
@@ -377,7 +377,7 @@
       "name": "IPN - Thesis (APA 7)",
       "description": "Academic profile for IPN - Thesis (APA 7). Follow the profile metadata, required sections, and bibliography style.",
       "institution": "National Polytechnic Institute",
-      "department": "Section de Estudios de Posgrado e Research",
+      "department": "Graduate Studies and Research Section",
       "faculty": "Posgrado",
       "program_name": "SEPI / Posgrado e Investigacion"
     },
@@ -438,12 +438,12 @@
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation of results, comparison with literature, implications\npractices (highly valued at Tec) and limitations."
+          "guidance": "Interpretation of results, comparison with literature, practical implications (highly valued at Tec) and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer research questions, summarize contributions, mention\nlimitations and suggests future research."
+          "guidance": "Answer research questions, summarize contributions, mention limitations and suggest future research."
         },
         "referencias": {
           "title": "References",
@@ -518,7 +518,7 @@
         }
       },
       "name": "UAM Azcapotzalco — CBI",
-      "description": "Division de Ciencias Básicas e Ingeniería, UAM Azcapotzalco. Ingeniería, Computación, Sisthemes y Matemáticas Aplieachs.",
+      "description": "Basic Sciences and Engineering Division, UAM Azcapotzalco. Engineering, computing, systems and applied mathematics.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
       "faculty": "Unidad Azcapotzalco",
@@ -563,7 +563,7 @@
         },
         "methodology": {
           "title": "Methodology",
-          "guidance": "Estrategia metodológica: cualitativa, cuantitativa o mixta. Unidades de análisis, collection techniques de datos, selection criteria, y ethical considerations if applicable.\n"
+          "guidance": "Methodological strategy: qualitative, quantitative or mixed. Units of analysis, data collection techniques, selection criteria and ethical considerations, if applicable."
         },
         "results": {
           "title": "Results and Analysis",
@@ -726,7 +726,7 @@
         }
       },
       "name": "UAM Iztapalapa — CBI",
-      "description": "Division de Ciencias Básicas e Ingeniería, UAM Iztapalapa. Física, Química, Matemáticas e Ingeniería Eléctrica.",
+      "description": "Basic Sciences and Engineering Division, UAM Iztapalapa. Physics, chemistry, mathematics and electrical engineering.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
       "faculty": "Unidad Iztapalapa",
@@ -771,7 +771,7 @@
         },
         "methodology": {
           "title": "Methodology",
-          "guidance": "Paradigma de research, design, técnicas (interviews, surveys, análisis de discurso, etnografía, etc.) y rationale de su elección.\n"
+          "guidance": "Research paradigm, design, techniques (interviews, surveys, discourse analysis, ethnography, etc.) and rationale for their selection."
         },
         "results": {
           "title": "Analysis and Results"
@@ -1190,7 +1190,7 @@
         }
       },
       "name": "UNAM - Ciencias de la Salud (Vancouver)",
-      "description": "Academic profile for UNAM - Ciencias de la Salud (Vancouver). Follow the profile metadata, required sections, and bibliography style.",
+      "description": "Academic profile for UNAM - Health Sciences (Vancouver). Follow the profile metadata, required sections and bibliography style.",
       "institution": "National Autonomous University of Mexico",
       "faculty": "Sistema de Posgrado",
       "program_name": "Medicina y Ciencias de la Salud"
@@ -2685,8 +2685,8 @@
           "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
         }
       },
-      "name": "Short Thesis Generica",
-      "description": "Academic profile for Short Thesis Generica. Follow the profile metadata, required sections, and bibliography style."
+      "name": "Generic Short Thesis",
+      "description": "Academic profile for a generic short thesis. Follow the profile metadata, required sections and bibliography style."
     },
     "generic_thesis": {
       "sections": {
@@ -2765,8 +2765,8 @@
           "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
         }
       },
-      "name": "Thesis Generica",
-      "description": "Academic profile for Thesis Generica. Follow the profile metadata, required sections, and bibliography style."
+      "name": "Generic Thesis",
+      "description": "Academic profile for a generic thesis. Follow the profile metadata, required sections and bibliography style."
     }
   },
   "institutions": {

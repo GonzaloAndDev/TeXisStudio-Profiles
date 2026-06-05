@@ -40,97 +40,97 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      Incluye institución, programa de especialidad, título del trabajo,
-      autor, asesor, ciudad y fecha. Si tu hospital, colegio o programa
-      tiene un formato oficial, úsalo como fuente de verdad.
+      Include institution, specialty program name, work title,
+      author, advisor, city and date. If your hospital, professional college
+      or program has an official format, use it as the source of truth.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Resume el problema profesional abordado, el contexto, la estrategia
-      de intervención o análisis, los resultados principales y la utilidad
-      práctica del trabajo. Longitud sugerida: 150–300 palabras.
+      Summarizes the professional problem addressed, the context, the intervention
+      or analysis strategy, the main results and the practical utility of the work.
+      Suggested length: 150–300 words.
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice"
+    title: "Table of Contents"
     guidance: |
-      Generado automáticamente. Revisa la paginación final antes de entregar.
+      Generated automatically. Review the final pagination before submission.
 
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     guidance: |
-      Presenta el problema profesional o clínico, el contexto institucional,
-      la relevancia del trabajo y los objetivos del documento.
+      Presents the professional or clinical problem, the institutional context,
+      the relevance of the work and the document’s objectives.
 
   - id: marco_referencial
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Referencial"
+    title: "Reference Framework"
     guidance: |
-      Sintetiza la normativa, evidencia previa, protocolos, guías clínicas
-      o literatura que sustentan el abordaje adoptado.
+      Synthesizes the regulations, prior evidence, protocols, clinical guidelines
+      or literature that underpin the adopted approach.
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología / Intervención"
+    title: "Methodology / Intervention"
     guidance: |
-      Describe el diseño del trabajo, procedimiento, criterios de selección,
-      instrumentos, intervención o estrategia aplicada y consideraciones éticas.
+      Describes the work design, procedure, selection criteria,
+      instruments, applied intervention or strategy, and ethical considerations.
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     guidance: |
-      Expón los hallazgos, productos, métricas, evaluación o resultados
-      observados del trabajo de especialidad.
+      Presents the findings, products, metrics, evaluations or observed results
+      of the specialty work.
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     guidance: |
-      Interpreta los resultados, compara con literatura o estándares,
-      reconoce limitaciones y señala implicaciones prácticas.
+      Interprets the results, compares them with literature or standards,
+      acknowledges limitations and highlights practical implications.
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones y Recomendaciones"
+    title: "Conclusions and Recommendations"
     guidance: |
-      Resume el aporte profesional del trabajo, su utilidad aplicada y
-      recomendaciones para continuidad o mejora.
+      Summarizes the professional contribution of the work, its applied utility
+      and recommendations for continuity or improvement.
 
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
+    title: "References"
     guidance: |
-      Lista final de referencias en APA 7. Incluye solo las fuentes citadas.
+      Final reference list in APA 7. Include only cited sources.
 
   - id: anexos
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Anexos"
+    title: "Annexes"
     guidance: |
-      Material complementario: instrumentos, protocolos, formatos, tablas
-      extensas o documentación técnica de apoyo.
+      Supplementary material: instruments, protocols, forms, extended tables
+      or supporting technical documentation.

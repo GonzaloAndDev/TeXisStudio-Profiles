@@ -14,7 +14,7 @@ verification:
   reviewed_at: "2026-05-25"
   reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra lineamientos UBA Rectorado y Comisión de Doctorado"
+  verified_by: "TeXisStudio Community — reviewed against UBA Rectorate guidelines and Doctoral Commission regulations"
   source_urls:
     - "https://www.uba.ar/posgrado/"
     - "https://www.uba.ar/download/academicos/doctorales/reglamento.pdf"
@@ -49,42 +49,42 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      La portada oficial de la UBA incluye:
-      • Logotipo y nombre de la Universidad de Buenos Aires.
-      • Nombre de la Facultad (FCE, FFyL, FMED, etc.).
-      • Nombre del programa de doctorado.
-      • Título completo de la tesis.
-      • "Tesis presentada para optar al título de Doctor/a en [campo]."
-      • Nombre completo del autor/a.
-      • Director/a de tesis y co-director/a (si aplica).
-      • Buenos Aires, [Mes] [Año].
-      Cada facultad tiene un formato de portada específico —
-      descárgalo de la Secretaría de Posgrado de tu unidad académica.
+      The official UBA title page must include:
+      • Logo and name of the Universidad de Buenos Aires.
+      • Name of the Faculty (FCE, FFyL, FMED, etc.).
+      • Name of the doctoral program.
+      • Full title of the thesis.
+      • "Thesis submitted to obtain the degree of Doctor/a in [field]."
+      • Full name of the author.
+      • Thesis supervisor and co-supervisor (if applicable).
+      • Buenos Aires, [Month] [Year].
+      Each faculty has its own specific title page format —
+      download it from the Secretaría de Posgrado of your academic unit.
 
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaración Jurada de Autoría"
+    title: "Sworn Authorship Statement"
     guidance: |
-      La UBA exige una Declaración Jurada de Autoría y Originalidad.
-      El Rectorado o la Facultad puede requerir formulario específico firmado.
-      Texto estándar: "El/la suscripto/a declara bajo juramento que la presente
-      tesis es de su autoría, que no ha sido presentada anteriormente para
-      obtener ningún título en ninguna institución y que todas las fuentes
-      consultadas han sido correctamente citadas."
+      UBA requires a Sworn Statement of Authorship and Originality.
+      The Rectorate or Faculty may require a specific signed form.
+      Standard text: "The undersigned declares under oath that this thesis
+      is their own work, that it has not previously been submitted to obtain
+      any degree at any institution, and that all sources consulted have been
+      correctly cited."
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Resumen en español, 200–350 palabras.
-      Problema, objetivos, metodología, resultados y conclusiones.
-      Palabras clave (4–6).
+      Abstract in Spanish, 200–350 words.
+      Problem, objectives, methodology, results and conclusions.
+      Keywords (4–6).
 
   - id: abstract_ingles
     element_id: abstract_en
@@ -92,105 +92,105 @@ sections:
     required: false
     title: "Abstract"
     guidance: |
-      Abstract en inglés. Recomendado para visibilidad internacional.
-      Máximo 350 palabras. Keywords (4–6).
+      Abstract in English. Recommended for international visibility.
+      Maximum 350 words. Keywords (4–6).
 
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
     guidance: |
-      Reconoce al director/a, comisión evaluadora, becas CONICET, ANPCyT
-      (PICT), UBACyT (Programas de Reconocimiento Institucional UBA),
-      MINCYT u otros fondos. Incluye número de proyecto o beca.
+      Acknowledge the supervisor, evaluation committee, CONICET and ANPCyT
+      (PICT) grants, UBACyT (UBA Institutional Recognition Programs),
+      MINCYT and other funding sources. Include the project or scholarship number.
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice General"
-    guidance: Generado automáticamente. Números de página exactos.
+    title: "Table of Contents"
+    guidance: "Generated automatically. Exact page numbers."
 
   - id: indice_figuras
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Índice de Figuras"
-    guidance: Activa si tienes 5 o más figuras.
+    title: "List of Figures"
+    guidance: "Enable if you have 5 or more figures."
 
   - id: indice_tablas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Índice de Tablas"
-    guidance: Activa si tienes 5 o más tablas.
+    title: "List of Tables"
+    guidance: "Enable if you have 5 or more tables."
 
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     label: "capitulo:introduccion"
     guidance: |
-      Contextualización, planteamiento del problema, justificación,
-      preguntas de investigación, objetivos e hipótesis. Estructura.
-      APA 7: (Autor, año) en el texto.
+      Contextualization, problem statement, rationale,
+      research questions, objectives and hypotheses. Structure.
+      APA 7: (Author, year) in the text.
 
   - id: marco_teorico
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teórico"
+    title: "Theoretical Framework"
     label: "capitulo:marcoteorico"
     guidance: |
-      Revisión crítica y fundamentos conceptuales.
-      Organiza por corrientes teóricas. Identifica el vacío de la tesis.
+      Critical review and conceptual foundations.
+      Organize by theoretical approaches. Identify the gap the thesis addresses.
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     label: "capitulo:metodologia"
     guidance: |
-      Diseño, muestra, instrumentos, procedimiento, análisis.
-      Aprobación del Comité de Ética institucional si involucra seres humanos.
+      Research design, sample, instruments, procedure, analysis.
+      Institutional Ethics Committee approval if human subjects are involved.
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     label: "capitulo:resultados"
-    guidance: Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación.
+    guidance: "Objective findings. APA 7 tables and figures. No interpretation."
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     label: "capitulo:discusion"
-    guidance: Interpretación, comparación con literatura, implicaciones y limitaciones.
+    guidance: "Interpretation, comparison with literature, implications and limitations."
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     label: "capitulo:conclusiones"
-    guidance: Responde objetivos, resume aportaciones, limitaciones y trabajo futuro.
+    guidance: "Address objectives, summarize contributions, limitations and future work."
 
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
-    guidance: APA 7ª edición, lista alfabética, sangría francesa.
+    title: "References"
+    guidance: "APA 7th edition, alphabetical list, hanging indent."
 
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apéndices"
-    guidance: Instrumentos, datos adicionales, dictamen ético. Apéndice A, B…
+    title: "Appendices"
+    guidance: "Instruments, additional data, ethics approval. Appendix A, B…"

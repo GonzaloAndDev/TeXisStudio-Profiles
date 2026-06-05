@@ -14,7 +14,7 @@ verification:
   reviewed_at: "2026-05-25"
   reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra lineamientos SIP-IPN y COFAA"
+  verified_by: "TeXisStudio Community — reviewed against IPN-SIP and COFAA guidelines"
   source_urls:
     - "https://www.sip.ipn.mx/posgrado/titulacion"
     - "https://www.ipn.mx/posgrado/"
@@ -48,38 +48,38 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      La portada oficial del IPN incluye:
-      • Logotipo del IPN y del Centro o Escuela (CINVESTAV, ESIME, UPIITA, etc.).
-      • Nombre completo del Centro o Escuela.
-      • Título completo de la tesis.
-      • "TESIS que para obtener el grado de [Maestro/Doctor] en Ciencias con
-        especialidad en [área], PRESENTA:"
-      • Nombre del autor.
-      • Nombre del director de tesis y adscripción.
-      • Ciudad de México / [Ciudad], [Mes] [Año].
-      Cada unidad académica del IPN puede tener un formato de portada específico —
-      verifica con la Secretaría Académica de tu Centro.
+      The official IPN title page must include:
+      • Logo of the IPN and of the Center or School (CINVESTAV, ESIME, UPIITA, etc.).
+      • Full name of the Center or School.
+      • Full thesis title.
+      • "THESIS submitted to obtain the degree of [Master/Doctor] in Sciences
+        with specialty in [area], PRESENTED BY:"
+      • Author’s name.
+      • Thesis advisor’s name and affiliation.
+      • Mexico City / [City], [Month] [Year].
+      Each IPN academic unit may have a specific title page format —
+      verify with the Academic Secretariat of your Center.
 
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaración de Autenticidad"
+    title: "Authenticity Declaration"
     guidance: |
-      El IPN exige una declaración de originalidad. La SIP puede requerir
-      además un Acta de No Adeudo y certificación del Comité Tutorial.
-      Verifica los documentos específicos que requiere tu centro/escuela.
+      The IPN requires an originality declaration. The SIP may additionally require
+      a No-Debt Certificate and certification by the Tutorial Committee.
+      Verify the specific documents required by your center or school.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Resumen en español, 200–350 palabras.
-      Problema, metodología, resultados y aportación. Palabras clave (4–6).
+      Abstract in Spanish, 200–350 words.
+      Problem, methodology, results and contribution. Keywords (4–6).
 
   - id: abstract_ingles
     element_id: abstract_en
@@ -87,113 +87,113 @@ sections:
     required: false
     title: "Abstract"
     guidance: |
-      Abstract en inglés. Recomendado para tesis con publicación internacional.
-      Máximo 350 palabras. Keywords (4–6).
+      Abstract in English. Recommended for theses with international publication.
+      Maximum 350 words. Keywords (4–6).
 
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
     guidance: |
-      Reconoce al director de tesis, comité tutorial, becas SIP/IPN,
-      CONACYT/CONAHCYT (con número de beca), COFAA, y proyectos de investigación
-      del Centro (clave SIP del proyecto).
+      Acknowledge the thesis advisor, tutorial committee, SIP/IPN grants,
+      CONACYT/CONAHCYT (with scholarship number), COFAA, and research projects
+      of the Center (SIP project key).
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice General"
-    guidance: Generado automáticamente. Incluye todos los capítulos, anexos y referencias.
+    title: "Table of Contents"
+    guidance: "Generated automatically. Includes all chapters, appendices and references."
 
   - id: indice_figuras
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Índice de Figuras"
-    guidance: Activa si tienes 5 o más figuras.
+    title: "List of Figures"
+    guidance: "Enable if you have 5 or more figures."
 
   - id: indice_tablas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Índice de Tablas"
-    guidance: Activa si tienes 5 o más tablas.
+    title: "List of Tables"
+    guidance: "Enable if you have 5 or more tables."
 
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     label: "capitulo:introduccion"
     guidance: |
-      Contextualización del problema, planteamiento, justificación,
-      preguntas de investigación, objetivos, hipótesis y estructura.
-      El IPN tiene perfil politécnico — si tu investigación tiene
-      aplicación tecnológica, describe la relevancia ingenieril o industrial.
+      Contextualization of the problem, problem statement, rationale,
+      research questions, objectives, hypotheses and structure.
+      The IPN has a polytechnic profile — if your research has a technological
+      application, describe its engineering or industrial relevance.
 
   - id: marco_teorico
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teórico y Estado del Arte"
+    title: "Theoretical Framework and State of the Art"
     label: "capitulo:marcoteorico"
     guidance: |
-      Fundamentos teóricos y revisión crítica del estado del arte.
-      Organiza por temas o enfoques técnicos.
-      Identifica el vacío que justifica tu investigación.
-      APA 7: (Autor, año) en el texto.
+      Theoretical foundations and critical review of the state of the art.
+      Organize by topics or technical approaches.
+      Identify the gap that justifies your research.
+      APA 7: (Author, year) in the text.
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     label: "capitulo:metodologia"
     guidance: |
-      Diseño de investigación, herramientas y equipos utilizados,
-      procedimiento experimental o de análisis, validación y
-      consideraciones éticas si aplica.
+      Research design, tools and equipment used,
+      experimental or analytical procedure, validation, and
+      ethical considerations if applicable.
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     label: "capitulo:resultados"
     guidance: |
-      Hallazgos objetivos organizados por objetivo específico.
-      Tablas y figuras APA 7. Sin interpretación en este capítulo.
+      Objective findings organized by specific objective.
+      APA 7 tables and figures. No interpretation in this chapter.
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     label: "capitulo:discusion"
-    guidance: Interpretación de resultados, comparación con literatura y limitaciones.
+    guidance: "Interpretation of results, comparison with literature and limitations."
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     label: "capitulo:conclusiones"
     guidance: |
-      Responde objetivos, resume aportaciones originales,
-      señala limitaciones y propone trabajo futuro.
+      Address objectives, summarize original contributions,
+      note limitations and propose future work.
 
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
-    guidance: APA 7ª edición, lista alfabética, sangría francesa, DOI cuando disponible.
+    title: "References"
+    guidance: "APA 7th edition, alphabetical list, hanging indent, DOI when available."
 
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apéndices"
-    guidance: Datos adicionales, código fuente, planos o diagramas técnicos.
+    title: "Appendices"
+    guidance: "Additional data, source code, technical drawings or diagrams."

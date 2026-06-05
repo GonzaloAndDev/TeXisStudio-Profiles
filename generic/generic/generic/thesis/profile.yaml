@@ -57,51 +57,51 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      La portada es la primera impresión de tu tesis. Incluye:
-      • Logotipo y nombre de tu institución (universidad / facultad / departamento).
-      • Título completo de la tesis (informativo y específico, sin abreviaturas).
-      • Tipo de documento: "TESIS" o "DISERTACIÓN" y el grado al que aspira
-        (e.g., "para obtener el grado de Licenciado(a) en / Maestro(a) en /
-        Doctor(a) en [nombre del campo]").
-      • Nombre completo del autor o autores.
-      • Nombre del director o directora de tesis.
-      • Ciudad, mes y año de presentación.
-      Consulta a tu coordinación o programa — muchas instituciones tienen
-      un formato de portada oficial que debes seguir exactamente.
+      The title page is the first impression of your thesis. Includes:
+      • Logo and name of your institution (university / faculty / department).
+      • Full thesis title (informative and specific, no abbreviations).
+      • Document type: "THESIS" or "DISSERTATION" and the degree sought
+        (e.g., "to obtain the degree of Bachelor’s in / Master’s in /
+        Doctor’s in [field name]").
+      • Author’s full name.
+      • Name of the thesis supervisor or director.
+      • City, month and year of submission.
+      Check with your coordinator or program — many institutions have
+      an official title page format you must follow exactly.
 
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaración de Autenticidad"
+    title: "Authenticity Declaration"
     guidance: |
-      La Declaración de Autenticidad certifica que el trabajo es tuyo y que las
-      fuentes están correctamente citadas. Texto estándar (adapta si tu institución
-      tiene un formato específico):
-      "Declaro bajo protesta de decir verdad que el presente trabajo es original
-      y ha sido elaborado por el suscrito. Todas las fuentes consultadas han sido
-      debidamente citadas y referenciadas conforme a las normas aplicables."
-      Algunas universidades exigen que esta declaración vaya firmada, notariada,
-      o en un formato específico — verifica con tu programa.
+      The Authenticity Declaration certifies that the work is yours and that
+      sources are correctly cited. Standard text (adapt if your institution
+      has a specific format):
+      "I declare under oath that this work is original and has been prepared
+      by the undersigned. All sources consulted have been duly cited and
+      referenced according to applicable standards."
+      Some universities require this declaration to be signed, notarized,
+      or in a specific format — verify with your program.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      El resumen en español es el primer elemento académico que leerán otros
-      investigadores. Recomendado: 150–350 palabras.
-      APA 7 (para tesis y trabajos de estudiantes) recomienda incluir:
-        1. El problema de investigación (1–2 oraciones).
-        2. Los participantes o datos empleados (si aplica).
-        3. La metodología o enfoque utilizado.
-        4. Los hallazgos o conclusiones principales.
-        5. Las implicaciones o aportaciones del estudio.
-      Al final agrega 4–6 Palabras clave separadas por punto y coma.
-      Debe ser autocontenido: sin citas, sin figuras, sin acrónimos no definidos.
+      The Spanish abstract is the first academic element other researchers will read.
+      Recommended: 150–350 words.
+      APA 7 (for theses and student papers) recommends including:
+        1. The research problem (1–2 sentences).
+        2. Participants or data used (if applicable).
+        3. The methodology or approach used.
+        4. The main findings or conclusions.
+        5. Implications or contributions of the study.
+      End with 4–6 Keywords separated by semicolons.
+      Must be self-contained: no citations, no figures, no undefined acronyms.
 
   - id: abstract_ingles
     element_id: abstract_en
@@ -109,217 +109,213 @@ sections:
     required: false
     title: "Abstract"
     guidance: |
-      Abstract en inglés. Opcional pero recomendado para visibilidad internacional.
-      Máximo 350 palabras. Misma estructura que el Resumen.
-      Agrega al final: Keywords: (4–6 términos en inglés).
-      Obligatorio si tu programa requiere publicación en bases de datos internacionales
+      Abstract in English. Optional but recommended for international visibility.
+      Maximum 350 words. Same structure as the Spanish Abstract.
+      End with: Keywords: (4–6 terms in English).
+      Mandatory if your program requires publication in international databases
       (Scopus, Web of Science, ProQuest Dissertations & Theses).
 
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
     guidance: |
-      Sección opcional pero convencional. Reconoce a quienes contribuyeron
-      a tu investigación: director de tesis, comité o sinodales, colegas,
-      bibliotecarios, participantes del estudio, y a quienes te apoyaron
-      personalmente durante el proceso.
-      Si tu investigación fue financiada con beca o recurso externo
-      (CONAHCYT, CONACYT, DGAPA, etc.), es obligatorio mencionarlo con
-      el número de proyecto o beca.
-      Longitud típica: media a una página.
+      Optional but conventional section. Acknowledge those who contributed
+      to your research: thesis supervisor, committee or jury, colleagues,
+      librarians, study participants, and those who supported you
+      personally throughout the process.
+      If your research was funded with a scholarship or external resource
+      (CONAHCYT, CONACYT, DGAPA, etc.), it is mandatory to mention it with
+      the project or scholarship number.
+      Typical length: half to one page.
 
   - id: dedicatoria
     element_id: dedication
     placement: front_matter
     required: false
-    title: "Dedicatoria"
+    title: "Dedication"
     guidance: |
-      Opcional. Una o tres líneas. Sin encabezado impreso.
+      Optional. One to three lines. No printed heading.
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice"
+    title: "Table of Contents"
     guidance: |
-      Generado automáticamente. Incluye todos los preliminares (excepto la portada),
-      los capítulos del cuerpo, los apéndices y las referencias.
-      Verifica que los números de página sean exactos antes de imprimir.
+      Generated automatically. Includes all front matter (except the title page),
+      body chapters, appendices and references.
+      Verify that page numbers are exact before printing.
 
   - id: indice_figuras
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Índice de Figuras"
+    title: "List of Figures"
     guidance: |
-      Activa esta sección si tu tesis tiene 5 o más figuras, gráficas o imágenes.
-      APA 7: numera las figuras de forma continua (Figura 1, Figura 2…)
-      y referéncialas en el texto antes de que aparezcan.
+      Enable this section if your thesis has 5 or more figures, graphs or images.
+      APA 7: number figures continuously (Figure 1, Figure 2…)
+      and reference them in the text before they appear.
 
   - id: indice_tablas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Índice de Tablas"
+    title: "List of Tables"
     guidance: |
-      Activa si tienes 5 o más tablas. APA 7: numera las tablas de forma
-      continua (Tabla 1, Tabla 2…) y referéncialas en el texto.
+      Enable if you have 5 or more tables. APA 7: number tables continuously
+      (Table 1, Table 2…) and reference them in the text.
 
-  # ── Cuerpo ────────────────────────────────────────────────────────
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     label: "capitulo:introduccion"
     guidance: |
-      La introducción enmarca tu investigación y convence al lector de su
-      importancia. Estructura recomendada:
-      1. Contextualización general del tema de investigación.
-      2. Planteamiento del problema: ¿qué vacío de conocimiento, contradicción
-         o necesidad práctica aborda tu tesis?
-      3. Justificación: ¿por qué importa resolverlo? (relevancia teórica, social,
-         económica, clínica, tecnológica, etc.)
-      4. Pregunta(s) de investigación: formuladas de manera precisa y acotada.
-      5. Objetivo general y objetivos específicos (concretos y medibles).
-      6. Hipótesis o supuesto de trabajo (si tu diseño lo requiere).
-      7. Alcance y delimitaciones del estudio.
-      8. Estructura de la tesis: un párrafo breve por capítulo.
-      Extensión típica para licenciatura: 10–20 páginas.
-      Para posgrado: 15–30 páginas.
+      The introduction frames your research and convinces the reader of its importance.
+      Recommended structure:
+      1. General contextualization of the research topic.
+      2. Problem statement: what knowledge gap, contradiction
+         or practical need does your thesis address?
+      3. Rationale: why does it matter to resolve it? (theoretical, social,
+         economic, clinical, technological relevance, etc.)
+      4. Research question(s): stated precisely and narrowly.
+      5. General objective and specific objectives (concrete and measurable).
+      6. Hypothesis or working assumption (if your design requires it).
+      7. Scope and delimitations of the study.
+      8. Thesis structure: a brief paragraph per chapter.
+      Typical length for undergraduate: 10–20 pages.
+      For graduate: 15–30 pages.
 
   - id: marco_teorico
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teórico y Revisión de Literatura"
+    title: "Theoretical Framework and Literature Review"
     label: "capitulo:marcoteorico"
     guidance: |
-      El marco teórico es la base conceptual de tu investigación. Incluye:
-      • Definición y discusión de los conceptos y teorías fundamentales
-        que sustenta tu trabajo.
-      • Revisión crítica de la literatura: ¿qué se sabe sobre el tema?
-        ¿Cuáles son los enfoques principales? ¿Dónde están los debates?
-      • Identificación del vacío o la contradicción que justifica tu estudio.
-      • Posicionamiento teórico: ¿qué perspectiva adoptas y por qué?
-      APA 7: cita con (Autor, año) o Autor (año) para citas narrativas.
-      Para citas textuales incluye número de página: (Autor, año, p. xx).
-      Organiza por temas o corrientes, no como lista de autores.
-      Extensión típica: 20–50 páginas.
+      The theoretical framework is the conceptual foundation of your research. Includes:
+      • Definition and discussion of the fundamental concepts and theories
+        that underpin your work.
+      • Critical review of the literature: what is known about the topic?
+        What are the main approaches? Where are the debates?
+      • Identification of the gap or contradiction that justifies your study.
+      • Theoretical positioning: what perspective do you adopt and why?
+      APA 7: cite with (Author, year) or Author (year) for narrative citations.
+      For direct quotations include page number: (Author, year, p. xx).
+      Organize by topics or currents, not as a list of authors.
+      Typical length: 20–50 pages.
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     label: "capitulo:metodologia"
     guidance: |
-      La metodología describe con suficiente detalle cómo realizaste tu investigación.
-      Incluye:
-      • Enfoque: cuantitativo, cualitativo o mixto. Justifica la elección.
-      • Diseño de investigación: experimental, cuasiexperimental, correlacional,
-        descriptivo, fenomenológico, estudio de caso, etc.
-      • Población y muestra (o corpus de análisis): criterios de selección y tamaño.
-      • Instrumentos o técnicas de recolección de datos: describe cada uno,
-        cita el instrumento si es publicado, e indica si fue adaptado o creado.
-      • Procedimiento de recolección: cuándo, dónde y cómo se obtuvieron los datos.
-      • Análisis de datos: software utilizado y técnicas de análisis.
-      • Consideraciones éticas: consentimiento informado, confidencialidad,
-        aprobación del Comité de Ética si se trabajó con seres humanos.
-      • Limitaciones metodológicas.
-      Extensión típica: 10–25 páginas.
+      The methodology describes in sufficient detail how you conducted your research.
+      Includes:
+      • Approach: quantitative, qualitative or mixed. Justify the choice.
+      • Research design: experimental, quasi-experimental, correlational,
+        descriptive, phenomenological, case study, etc.
+      • Population and sample (or analysis corpus): selection criteria and size.
+      • Data collection instruments or techniques: describe each one,
+        cite the instrument if published, and indicate if it was adapted or created.
+      • Data collection procedure: when, where and how data were obtained.
+      • Data analysis: software used and analysis techniques.
+      • Ethical considerations: informed consent, confidentiality,
+        Ethics Committee approval if human subjects were involved.
+      • Methodological limitations.
+      Typical length: 10–25 pages.
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     label: "capitulo:resultados"
     guidance: |
-      Presenta los hallazgos de manera objetiva, sin interpretación ni conclusiones.
-      Organiza los resultados conforme a tus preguntas de investigación u objetivos.
-      Para datos cuantitativos:
-      • Reporta estadísticas descriptivas primero (medias, desviaciones estándar,
-        porcentajes).
-      • Luego las pruebas inferenciales (t, F, χ², correlaciones, regresiones) con
-        sus estadísticos, valores p y tamaños del efecto.
-      • Acompaña con tablas y figuras APA 7 con notas al pie.
-      Para datos cualitativos:
-      • Presenta categorías o temas emergentes con citas textuales representativas.
-      • Asegura la confidencialidad de los participantes.
-      APA 7: "La Tabla 1 muestra…", "En la Figura 2 se observa…".
-      Cada tabla y figura debe ser mencionada en el texto antes de aparecer.
+      Present findings objectively, without interpretation or conclusions.
+      Organize results according to your research questions or objectives.
+      For quantitative data:
+      • Report descriptive statistics first (means, standard deviations, percentages).
+      • Then inferential tests (t, F, χ², correlations, regressions) with
+        their statistics, p-values and effect sizes.
+      • Include APA 7 tables and figures with footnotes.
+      For qualitative data:
+      • Present emerging categories or themes with representative verbatim quotes.
+      • Ensure participant confidentiality.
+      APA 7: “Table 1 shows…”, “Figure 2 illustrates…”.
+      Every table and figure must be mentioned in the text before it appears.
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     label: "capitulo:discusion"
     guidance: |
-      La discusión interpreta los resultados y los conecta con el marco teórico
-      y la literatura revisada.
-      Estructura recomendada:
-      • Primera oración: retoma la pregunta de investigación y respóndela
-        directamente con base en tus resultados.
-      • Compara con estudios previos: ¿coinciden, contradicen o matizan
-        tus hallazgos la literatura existente? ¿Por qué?
-      • Explica resultados inesperados.
-      • Implicaciones teóricas y prácticas de los hallazgos.
-      • Limitaciones del estudio.
-      • Sugerencias de investigación futura específicas.
-      En muchas tesis de licenciatura este capítulo se fusiona con Resultados
-      o con Conclusiones. Activa como capítulo independiente si lo requieres.
+      The discussion interprets results and connects them to the theoretical
+      framework and reviewed literature.
+      Recommended structure:
+      • First sentence: restate the research question and answer it directly
+        based on your results.
+      • Compare with prior studies: do your findings agree with, contradict or
+        nuance existing literature? Why?
+      • Explain unexpected results.
+      • Theoretical and practical implications of the findings.
+      • Study limitations.
+      • Specific future research suggestions.
+      In many undergraduate theses this chapter is merged with Results
+      or Conclusions. Activate as an independent chapter if needed.
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     label: "capitulo:conclusiones"
     guidance: |
-      Las conclusiones responden directamente a tu(s) pregunta(s) de investigación
-      y a tus objetivos.
-      • Responde cada pregunta de investigación o verifica cada hipótesis.
-      • Resume las aportaciones originales de tu trabajo al campo de conocimiento.
-      • Implicaciones prácticas o aplicaciones posibles.
-      • Limitaciones del estudio (sé honesto — el comité las encontrará de todas formas).
-      • Líneas de investigación futura: concretas y acotadas.
-      No repitas los resultados — el comité ya leyó ese capítulo.
-      Extensión típica: 5–15 páginas.
+      Conclusions directly answer your research question(s) and objectives.
+      • Answer each research question or verify each hypothesis.
+      • Summarize the original contributions of your work to the field.
+      • Practical implications or possible applications.
+      • Study limitations (be honest — the committee will find them regardless).
+      • Future research directions: concrete and bounded.
+      Do not repeat results — the committee has already read that chapter.
+      Typical length: 5–15 pages.
 
-  # ── Finales ───────────────────────────────────────────────────────
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
+    title: "References"
     guidance: |
-      APA 7ª edición: lista alfabética por apellido del primer autor,
-      sangría francesa. Generada automáticamente desde tu archivo .bib.
-      Puntos clave APA 7:
-      • Cursiva para títulos de libros, revistas y tesis.
-      • Sin cursiva para artículos y capítulos.
-      • DOI en formato URL: https://doi.org/xxxxx (sin punto final).
-      • Para fuentes consultadas en línea: URL y fecha de acceso.
-      • Tesis: Apellido, N. (Año). Título [Tesis de licenciatura/maestría/doctorado,
-        Nombre de la Universidad]. Repositorio o base de datos.
-      Incluye solo las fuentes que citas en el cuerpo del texto.
+      APA 7th edition: alphabetical list by first author’s last name,
+      hanging indent. Generated automatically from your .bib file.
+      Key APA 7 points:
+      • Italics for book, journal and thesis titles.
+      • No italics for articles and chapters.
+      • DOI in URL format: https://doi.org/xxxxx (no trailing period).
+      • For online sources: URL and access date.
+      • Thesis: Last, N. (Year). Title [Bachelor’s/Master’s/doctoral thesis,
+        University Name]. Repository or database.
+      Include only sources cited in the body text.
 
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apéndices"
+    title: "Appendices"
     guidance: |
-      Materiales complementarios que son demasiado extensos para el cuerpo principal
-      o que interrumpirían el flujo narrativo:
-      • Instrumentos completos (cuestionarios, escalas, guías de entrevista).
-      • Datos brutos o tablas estadísticas adicionales.
-      • Transcripciones de entrevistas o grupos de enfoque.
-      • Cartas de aprobación ética y formatos de consentimiento informado.
-      • Materiales de estímulo o protocolos de intervención.
-      Etiqueta: Apéndice A, B… con título descriptivo.
-      Referencia desde el texto: "(véase Apéndice A)".
+      Supplementary materials too extensive for the main body
+      or that would disrupt the narrative flow:
+      • Complete instruments (questionnaires, scales, interview guides).
+      • Raw data or additional statistical tables.
+      • Interview or focus group transcripts.
+      • Ethics approval letters and informed consent forms.
+      • Stimulus materials or intervention protocols.
+      Label: Appendix A, B… with descriptive title.
+      Reference from the text: "(see Appendix A)".

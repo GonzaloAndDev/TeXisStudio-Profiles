@@ -9,7 +9,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis UBA — Declaración Jurada, CONICET/ANPCyT/UBACyT, APA 7, guidance en español",
+      "description": "UBA thesis — Sworn Authorship Statement, CONICET/ANPCyT/UBACyT, APA 7",
       "tags": [
         "uba",
         "argentina",
@@ -106,7 +106,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis U. de Chile — ANID/FONDECYT/Becas Chile, CEISH, VID, APA 7, guidance en español",
+      "description": "U. de Chile thesis — ANID/FONDECYT/Becas Chile, CEISH, VID, APA 7",
       "tags": [
         "uchile",
         "chile",
@@ -131,7 +131,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis IPN — lineamientos SIP/COFAA, perfil politécnico/ingeniería, APA 7, guidance en español",
+      "description": "IPN thesis — SIP/COFAA guidelines, polytechnic/engineering profile, APA 7",
       "tags": [
         "ipn",
         "politecnico",
@@ -158,7 +158,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis Tec de Monterrey — Declaración de Integridad Académica, doble espacio, APA 7, guidance en español",
+      "description": "Tec de Monterrey thesis — Academic Integrity Declaration, double spacing, APA 7",
       "tags": [
         "tec",
         "itesm",
@@ -184,7 +184,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis UANL — lineamientos Posgrado, PAICYT, APA 7, guidance en español",
+      "description": "UANL thesis — Graduate Studies guidelines, PAICYT, APA 7",
       "tags": [
         "uanl",
         "nuevo_leon",
@@ -209,7 +209,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis Universidad de Guadalajara — lineamientos Coordinación Académica, UDG-PRO, APA 7, guidance en español",
+      "description": "Universidad de Guadalajara thesis — Academic Coordination guidelines, UDG-PRO, APA 7",
       "tags": [
         "udg",
         "guadalajara",
@@ -235,7 +235,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis de posgrado UNAM — lineamientos CEP y DGAE, estilo APA 7ª edición, guidance completa en español",
+      "description": "UNAM graduate thesis — CEP and DGAE guidelines, APA 7th edition",
       "tags": [
         "unam",
         "mexico",
@@ -263,7 +263,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis UNAM para medicina, odontología y ciencias de la salud — estilo Vancouver/ICMJE, estructura IMRD, guidance completa en español",
+      "description": "UNAM thesis for medicine, dentistry and health sciences — Vancouver/ICMJE style, IMRD structure",
       "tags": [
         "unam",
         "mexico",
@@ -696,7 +696,7 @@
       "version": "1.1.0",
       "author": "TeXisStudio Community",
       "license": "CC-BY-4.0",
-      "description": "Tesis doctoral UCM — Reglamento EDCM, Declaración de Autoría, resumen en inglés obligatorio, APA 7, guidance en español",
+      "description": "UCM doctoral thesis — EDCM Regulations, Authorship Declaration, required English abstract, APA 7",
       "tags": [
         "ucm",
         "madrid",

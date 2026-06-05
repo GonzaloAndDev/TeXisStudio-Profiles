@@ -14,7 +14,7 @@ verification:
   reviewed_at: "2026-05-25"
   reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra lineamientos Coordinación Académica UdeG"
+  verified_by: "TeXisStudio Community — reviewed against UdeG Academic Coordination guidelines"
   source_urls:
     - "https://www.udg.mx/es/posgrado"
     - "https://www.udg.mx/es/educacion/oferta-educativa/posgrado/doctorado"
@@ -45,146 +45,146 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      Portada oficial de la Universidad de Guadalajara. Incluye:
-      • Escudo y nombre de la Universidad de Guadalajara.
-      • Centro Universitario o División de Estudios correspondiente
+      Official Universidad de Guadalajara title page. Includes:
+      • Shield and name of the Universidad de Guadalajara.
+      • University Center or corresponding Studies Division
         (CU Valles, CUCEA, CUCSH, CUCS, etc.).
-      • Título de la tesis.
-      • "TESIS para obtener el grado de [Maestro/Doctor] en [Programa]."
-      • Nombre del autor.
-      • Director de tesis e institución.
-      • Guadalajara, Jalisco, [Mes] [Año].
-      Verifica el formato de portada con la Coordinación de Posgrado
-      de tu Centro Universitario.
+      • Thesis title.
+      • "THESIS to obtain the degree of [Master/Doctor] in [Program]."
+      • Author’s name.
+      • Thesis director and institution.
+      • Guadalajara, Jalisco, [Month] [Year].
+      Verify the title page format with the Graduate Coordination
+      of your University Center.
 
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaración de Autenticidad"
+    title: "Authenticity Declaration"
     guidance: |
-      Declaración de originalidad requerida por la UdeG.
-      El Centro Universitario puede pedir además un acta del Comité Tutorial.
+      Originality declaration required by UdeG.
+      The University Center may also request a Tutorial Committee record.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Resumen en español, 200–350 palabras.
-      Pregunta de investigación, metodología, resultados y aportación.
-      Palabras clave (4–6).
+      Abstract in Spanish, 200–350 words.
+      Research question, methodology, results and contribution.
+      Keywords (4–6).
 
   - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
     title: "Abstract"
-    guidance: Abstract en inglés. Recomendado. Máximo 350 palabras.
+    guidance: "Abstract in English. Recommended. Maximum 350 words."
 
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
     guidance: |
-      Reconoce al director de tesis, comité tutorial, becas CONAHCYT
-      y Programa de Fortalecimiento de la Calidad Educativa (PFCE) UdeG
-      o proyectos UDG-PRO.
+      Acknowledge the thesis director, tutorial committee, CONAHCYT grants
+      and the UdeG Quality Education Strengthening Program (PFCE)
+      or UDG-PRO projects.
 
   - id: dedicatoria
     element_id: dedication
     placement: front_matter
     required: false
-    title: "Dedicatoria"
-    guidance: Opcional. Una o tres líneas. Sin encabezado impreso.
+    title: "Dedication"
+    guidance: "Optional. One to three lines. No printed heading."
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice General"
-    guidance: Generado automáticamente con números de página exactos.
+    title: "Table of Contents"
+    guidance: "Generated automatically with exact page numbers."
 
   - id: indice_figuras
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Índice de Figuras"
-    guidance: Activa si tienes 5 o más figuras.
+    title: "List of Figures"
+    guidance: "Enable if you have 5 or more figures."
 
   - id: indice_tablas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Índice de Tablas"
-    guidance: Activa si tienes 5 o más tablas.
+    title: "List of Tables"
+    guidance: "Enable if you have 5 or more tables."
 
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     label: "capitulo:introduccion"
     guidance: |
-      Contextualización, planteamiento del problema, justificación, preguntas
-      de investigación, objetivos, hipótesis y estructura de la tesis.
+      Contextualization, problem statement, rationale, research questions,
+      objectives, hypotheses and thesis structure.
 
   - id: marco_teorico
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teórico"
+    title: "Theoretical Framework"
     label: "capitulo:marcoteorico"
     guidance: |
-      Fundamentos conceptuales y revisión crítica de la literatura.
-      Organiza por temas. APA 7: (Autor, año).
+      Conceptual foundations and critical review of the literature.
+      Organize by topics. APA 7: (Author, year).
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     label: "capitulo:metodologia"
-    guidance: Diseño, muestra, instrumentos, procedimiento, análisis y ética.
+    guidance: "Design, sample, instruments, procedure, analysis and ethics."
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     label: "capitulo:resultados"
-    guidance: Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación.
+    guidance: "Objective findings. APA 7 tables and figures. No interpretation."
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     label: "capitulo:discusion"
-    guidance: Interpretación, comparación con literatura, implicaciones y limitaciones.
+    guidance: "Interpretation, comparison with literature, implications and limitations."
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     label: "capitulo:conclusiones"
-    guidance: Responde preguntas, resume aportaciones, señala limitaciones y trabajo futuro.
+    guidance: "Answer questions, summarize contributions, note limitations and future work."
 
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
-    guidance: APA 7ª edición, lista alfabética, sangría francesa. DOI cuando disponible.
+    title: "References"
+    guidance: "APA 7th edition, alphabetical list, hanging indent. DOI when available."
 
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apéndices"
-    guidance: Instrumentos, datos adicionales. Etiqueta Apéndice A, B…
+    title: "Appendices"
+    guidance: "Instruments, additional data. Label Appendix A, B…"

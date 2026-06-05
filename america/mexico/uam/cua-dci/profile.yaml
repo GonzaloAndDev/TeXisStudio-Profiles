@@ -70,121 +70,121 @@ sections:
     element_id: title_page
     placement: front_matter
     required: true
-    title: "Portada"
-    guidance: >
-      Portada oficial UAM-DCI: logo UAM, nombre de la universidad, unidad,
-      división, área de investigación, título del trabajo, nombre del alumno,
-      matrícula, trimestre y año, y nombre del director de tesis.
+    title: "Title Page"
+    guidance: |
+      Official UAM-DCI title page: UAM logo, university name, campus,
+      division, research area, work title, student name and ID,
+      term and year, and thesis director’s name.
 
   - id: dedication
     element_id: dedication
     placement: front_matter
     required: false
-    title: "Dedicatoria"
+    title: "Dedication"
 
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
 
   - id: abstract_es
     element_id: abstract_es
     placement: front_matter
     required: true
-    title: "Resumen"
-    guidance: >
-      Máximo 350 palabras. Debe incluir: contexto del problema, objetivo
-      principal, metodología técnica empleada, resultados o contribuciones
-      clave y conclusiones.
+    title: "Abstract (Spanish)"
+    guidance: |
+      Maximum 350 words. Must include: problem context, main objective,
+      technical methodology used, key results or contributions
+      and conclusions.
 
   - id: abstract_en
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: "Abstract"
-    guidance: "Traducción del resumen al inglés. Obligatorio para posgrado."
+    title: "Abstract (English)"
+    guidance: "English translation of the abstract. Mandatory for graduate programs."
 
   - id: table_of_contents
     element_id: table_of_contents
     placement: front_matter
     required: true
-    title: "Índice General"
+    title: "Table of Contents"
 
   - id: list_of_figures
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Lista de Figuras"
+    title: "List of Figures"
 
   - id: list_of_tables
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Lista de Tablas"
+    title: "List of Tables"
 
   - id: introduction
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
-    guidance: >
-      Contexto tecnológico o del sistema de información, planteamiento del
-      problema, objetivo general, objetivos específicos, alcance y
-      organización del documento.
+    title: "Introduction"
+    guidance: |
+      Technological or information-system context, problem statement,
+      general objective, specific objectives, scope and
+      organization of the document.
 
   - id: theoretical_framework
     element_id: theoretical_framework
     placement: body
     required: true
-    title: "Marco Teórico y Estado del Arte"
-    guidance: >
-      Revisión de conceptos fundamentales y trabajos relacionados. En DCI se
-      valora la revisión de literatura técnica reciente (congresos ACM, IEEE,
-      artículos en Scopus o WoS) y la identificación del gap de conocimiento.
+    title: "Theoretical Framework and State of the Art"
+    guidance: |
+      Review of fundamental concepts and related work. In DCI, a review
+      of recent technical literature (ACM, IEEE conferences, Scopus or WoS articles)
+      and identification of the knowledge gap is valued.
 
   - id: methodology
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
-    guidance: >
-      Metodología de desarrollo o investigación: SCRUM, RUP, Design Science,
-      experimentación controlada, etc. Incluir diagrama de arquitectura
-      del sistema si aplica, casos de uso, y criterios de evaluación.
+    title: "Methodology"
+    guidance: |
+      Development or research methodology: SCRUM, RUP, Design Science,
+      controlled experimentation, etc. Include system architecture diagram
+      if applicable, use cases, and evaluation criteria.
 
   - id: results
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
-    guidance: >
-      Descripción del sistema desarrollado, experimentos realizados,
-      métricas de evaluación y comparación con trabajos relacionados.
+    title: "Results"
+    guidance: |
+      Description of the developed system, conducted experiments,
+      evaluation metrics and comparison with related work.
 
   - id: discussion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
 
   - id: conclusions
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones y Trabajo Futuro"
-    guidance: "Conclusiones técnicas, limitaciones del trabajo y líneas de desarrollo futuro."
+    title: "Conclusions and Future Work"
+    guidance: "Technical conclusions, work limitations and future development directions."
 
   - id: references
     element_id: references
     placement: back_matter
     required: true
-    title: "Referencias"
-    guidance: "Formato APA 7. Incluir DOI cuando esté disponible."
+    title: "References"
+    guidance: "APA 7 format. Include DOI when available."
 
   - id: appendix
     element_id: appendix
     placement: appendix
     required: false
-    title: "Apéndices"
-    guidance: "Código fuente relevante, diagramas adicionales, datos de experimentos, etc."
+    title: "Appendices"
+    guidance: "Relevant source code, additional diagrams, experimental data, etc."

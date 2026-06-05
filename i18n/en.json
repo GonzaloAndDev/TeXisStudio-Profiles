@@ -6,23 +6,23 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The official UBA title page must include:\n• Logo and name of the Universidad de Buenos Aires.\n• Name of the Faculty (FCE, FFyL, FMED, etc.).\n• Name of the doctoral program.\n• Full title of the thesis.\n• \"Thesis submitted to obtain the degree of Doctor/a in [field].\"\n• Full name of the author.\n• Thesis supervisor and co-supervisor (if applicable).\n• Buenos Aires, [Month] [Year].\nEach faculty has its own specific title page format —\ndownload it from the Secretaría de Posgrado of your academic unit."
         },
         "declaracion": {
           "title": "Sworn Authorship Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "guidance": "UBA requires a Sworn Statement of Authorship and Originality.\nThe Rectorate or Faculty may require a specific signed form.\nStandard text: \"The undersigned declares under oath that this thesis\nis their own work, that it has not previously been submitted to obtain\nany degree at any institution, and that all sources consulted have been\ncorrectly cited.\""
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
+          "guidance": "Abstract in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "English abstract. Recommended for international visibility.\nMaximum 350 words. Keywords (4–6).\n"
+          "guidance": "Abstract in English. Recommended for international visibility.\nMaximum 350 words. Keywords (4–6)."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge the advisor, review committee, CONICET, ANPCyT\n(PICT), UBACyT (UBA Institutional Recognition Programs),\nMINCYT and other funds. Include the project or scholarship number."
+          "guidance": "Acknowledge the supervisor, evaluation committee, CONICET and ANPCyT\n(PICT) grants, UBACyT (UBA Institutional Recognition Programs),\nMINCYT and other funding sources. Include the project or scholarship number."
         },
         "indice": {
           "title": "Table of Contents",
@@ -30,45 +30,45 @@
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Enable it if you have 5 or more figures."
+          "guidance": "Enable if you have 5 or more figures."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Enable it if you have 5 or more tables."
+          "guidance": "Enable if you have 5 or more tables."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Context, problem statement, rationale,\nresearch questions, objectives e hypotheses. Structure.\nAPA 7: (Author, year) in the text.\n"
+          "guidance": "Contextualization, problem statement, rationale,\nresearch questions, objectives and hypotheses. Structure.\nAPA 7: (Author, year) in the text."
         },
         "marco_teorico": {
           "title": "Theoretical Framework",
           "label": "capitulo:marcoteorico",
-          "guidance": "Critical review y conceptual foundations.\nOrganize by theoretical approaches. Identify the thesis gap.\n"
+          "guidance": "Critical review and conceptual foundations.\nOrganize by theoretical approaches. Identify the gap the thesis addresses."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Design, sample, instruments, procedure, and analysis.\nInstitutional ethics committee approval if human participants are involved.\n"
+          "guidance": "Research design, sample, instruments, procedure, analysis.\nInstitutional Ethics Committee approval if human subjects are involved."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
+          "guidance": "Objective findings. APA 7 tables and figures. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation, comparison with the literature, implications and limitations."
+          "guidance": "Interpretation, comparison with literature, implications and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer objectives, summarize contributions, limitations and future work."
+          "guidance": "Address objectives, summarize contributions, limitations and future work."
         },
         "referencias": {
           "title": "References",
-          "guidance": "APA 7ª edition, alphabetical list, hanging indent."
+          "guidance": "APA 7th edition, alphabetical list, hanging indent."
         },
         "apendices": {
           "title": "Appendices",
@@ -82,31 +82,40 @@
     "br_unicamp_abnt": {
       "sections": {
         "capa": {
-          "title": "Cover"
+          "title": "Cover Page",
+          "guidance": "The UNICAMP cover page (Capa) must include: institution name and logo,\nfaculty or institute, full thesis title, author name, city and year.\nFollow the ABNT NBR 14724:2011 standard and UNICAMP’s official template."
         },
         "folha_rosto": {
-          "title": "Title Page"
+          "title": "Title Page",
+          "guidance": "The Title Page (Folha de Rosto) includes: author name, full thesis title,\na note indicating the nature and objective of the work and the name of the\nsupervising professor, and the city and year of submission. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Abstract"
+          "title": "Abstract (Portuguese)",
+          "guidance": "Abstract in Portuguese (Resumo), up to 500 words (ABNT NBR 6028).\nSelf-contained: no citations, no undefined abbreviations.\nInclude 3–5 keywords (Palavras-chave) at the end."
         },
         "abstract": {
-          "title": "Abstract"
+          "title": "Abstract (English)",
+          "guidance": "English translation of the Resumo. Required by UNICAMP for dissertations\nand doctoral theses. Same structure and length as the Resumo.\nInclude 3–5 keywords at the end."
         },
         "sumario": {
-          "title": "Table of Contents"
+          "title": "Table of Contents",
+          "guidance": "Generated automatically. Must follow ABNT NBR 6027 format.\nLists all pre-textual elements (except cover), chapters, references and annexes\nwith exact page numbers."
         },
         "introducao": {
-          "title": "Introduction"
+          "title": "Introduction",
+          "guidance": "Presents the research problem, justification, research questions,\nobjectives and structure of the dissertation. ABNT citations: (AUTHOR, year)."
         },
         "capitulos": {
-          "title": "Chapters"
+          "title": "Development Chapters",
+          "guidance": "Core content of the dissertation. Divide into thematic chapters:\ntheoretical framework, methodology, results and discussion.\nEach chapter begins on a new page. ABNT citation style throughout."
         },
         "conclusao": {
-          "title": "Conclusion"
+          "title": "Conclusion",
+          "guidance": "Answers the research questions, summarizes contributions, states limitations\nand proposes future work. No new information that was not discussed earlier."
         },
         "referencias": {
-          "title": "References"
+          "title": "References",
+          "guidance": "ABNT NBR 6023:2018 format, alphabetical order.\nAll sources cited in the text must appear here."
         }
       },
       "name": "UNICAMP - Dissertation (ABNT)",
@@ -116,31 +125,40 @@
     "br_usp_abnt": {
       "sections": {
         "capa": {
-          "title": "Cover"
+          "title": "Cover Page",
+          "guidance": "The USP cover page (Capa) must include: institution name and logo,\nfaculty or institute, full thesis title, author name, city and year.\nFollow ABNT NBR 14724:2011 and the USP/FFLCH official template."
         },
         "folha_rosto": {
-          "title": "Title Page"
+          "title": "Title Page",
+          "guidance": "The Title Page (Folha de Rosto) includes: author name, full thesis title,\na note stating the nature and objective of the work and the name of the\nsupervising professor, and the city and year. ABNT NBR 14724."
         },
         "resumo": {
-          "title": "Abstract"
+          "title": "Abstract (Portuguese)",
+          "guidance": "Abstract in Portuguese (Resumo), up to 500 words (ABNT NBR 6028).\nSelf-contained: no citations, no undefined abbreviations.\nInclude 3–5 keywords (Palavras-chave) at the end."
         },
         "abstract": {
-          "title": "Abstract"
+          "title": "Abstract (English)",
+          "guidance": "English translation of the Resumo. Required by USP for dissertations\nand doctoral theses. Same structure and length as the Resumo.\nInclude 3–5 keywords at the end."
         },
         "sumario": {
-          "title": "Table of Contents"
+          "title": "Table of Contents",
+          "guidance": "Generated automatically. Must follow ABNT NBR 6027 format.\nLists all pre-textual elements (except cover), chapters, references and\nannexes with exact page numbers."
         },
         "introducao": {
-          "title": "Introduction"
+          "title": "Introduction",
+          "guidance": "Presents the research problem, justification, research questions,\nobjectives and structure of the dissertation. ABNT citations: (AUTHOR, year)."
         },
         "capitulos": {
-          "title": "Chapters"
+          "title": "Development Chapters",
+          "guidance": "Core content of the dissertation. Divide into thematic chapters:\ntheoretical framework, methodology, results and discussion.\nEach chapter begins on a new page. ABNT citation style throughout."
         },
         "conclusao": {
-          "title": "Conclusion"
+          "title": "Conclusion",
+          "guidance": "Answers the research questions, summarizes contributions, states limitations\nand proposes future work. No new information that was not discussed earlier."
         },
         "referencias": {
-          "title": "References"
+          "title": "References",
+          "guidance": "ABNT NBR 6023:2018 format, alphabetical order.\nAll sources cited in the text must appear here."
         }
       },
       "name": "USP - Dissertation (ABNT)",
@@ -224,27 +242,27 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The official U. de Chile title page must include:\n• Logo and name of the Universidad de Chile.\n• Faculty and Institute or Department.\n• Full thesis title.\n• \"THESIS to obtain the degree of Doctor in [field].\"\n• Author’s name.\n• Thesis supervisor (guía) and co-supervisor (if applicable).\n• Santiago, Chile, [Month] [Year].\nVerify the format with the Doctoral Coordination of your Faculty."
         },
         "declaracion": {
-          "title": "Authorship Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "title": "Authorship Declaration",
+          "guidance": "Originality declaration required by U. de Chile.\nThe Graduate Unit may require a signed record by the Academic Committee."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
+          "guidance": "Abstract in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
+          "guidance": "Abstract in English. Recommended. Maximum 350 words. Keywords (4–6)."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Acknowledge the thesis supervisor, Academic Committee, ANID grants\n(ex-CONICYT: FONDECYT, FONDEF, Becas Chile) — include project or scholarship number.\nAlso include UCH funds such as VID-FONDAP or Vicerrectoría projects."
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. One or three lines. No printed header."
+          "guidance": "Optional. One to three lines. No printed heading."
         },
         "indice": {
           "title": "Table of Contents",
@@ -252,45 +270,45 @@
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Enable it if you have 5 or more figures."
+          "guidance": "Enable if you have 5 or more figures."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Enable it if you have 5 or more tables."
+          "guidance": "Enable if you have 5 or more tables."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Context, problem statement, rationale,\nresearch questions, objectives, hypotheses y estructura.\nAPA 7: (Author, year) in the text.\n"
+          "guidance": "Contextualization, problem statement, rationale,\nresearch questions, objectives, hypotheses and structure.\nAPA 7: (Author, year) in the text."
         },
         "marco_teorico": {
           "title": "Theoretical Framework",
           "label": "capitulo:marcoteorico",
-          "guidance": "Critical review organizeda por themes. Identify the thesis gap."
+          "guidance": "Critical review organized by topics. Identify the gap the thesis addresses."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "Research design, sample, instruments, procedure, analysis.\nApproval from the Research Ethics Committee on Human Beings (CEISH)\nif applicable."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Findings objectives. Tables and figures APA 7."
+          "guidance": "Objective findings. APA 7 tables and figures."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation, comparison with the literature, implications and limitations."
+          "guidance": "Interpretation, comparison with literature, implications and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer objectives, contributions, limitations and future work."
+          "guidance": "Address objectives, contributions, limitations and future work."
         },
         "referencias": {
           "title": "References",
-          "guidance": "APA 7ª edition, alphabetical list, hanging indent."
+          "guidance": "APA 7th edition, alphabetical list, hanging indent."
         },
         "apendices": {
           "title": "Appendices",
@@ -305,55 +323,55 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The official IPN title page must include:\n• Logo of the IPN and of the Center or School (CINVESTAV, ESIME, UPIITA, etc.).\n• Full name of the Center or School.\n• Full thesis title.\n• \"THESIS submitted to obtain the degree of [Master/Doctor] in Sciences\n  with specialty in [area], PRESENTED BY:\"\n• Author’s name.\n• Thesis advisor’s name and affiliation.\n• Mexico City / [City], [Month] [Year].\nEach IPN academic unit may have a specific title page format —\nverify with the Academic Secretariat of your Center."
         },
         "declaracion": {
-          "title": "Authenticity Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "title": "Authenticity Declaration",
+          "guidance": "The IPN requires an originality declaration. The SIP may additionally require\na No-Debt Certificate and certification by the Tutorial Committee.\nVerify the specific documents required by your center or school."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summary in Spanish, 200–350 words.\nProblem, methodology, results and contribution. Keywords (4–6)."
+          "guidance": "Abstract in Spanish, 200–350 words.\nProblem, methodology, results and contribution. Keywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Abstract in English. Recommended for theses with international publication.\nMaximum 350 words. Keywords (4–6)."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Acknowledge the thesis advisor, tutorial committee, SIP/IPN grants,\nCONACYT/CONAHCYT (with scholarship number), COFAA, and research projects\nof the Center (SIP project key)."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically. Includes all chapters, appendices and references."
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Enable it if you have 5 or more figures."
+          "guidance": "Enable if you have 5 or more figures."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Enable it if you have 5 or more tables."
+          "guidance": "Enable if you have 5 or more tables."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Contextualization of the problem, problem statement, rationale,\nresearch questions, objectives, hypotheses and structure.\nThe IPN has a polytechnic profile — if your research has a technological\napplication, describe its engineering or industrial relevance."
         },
         "marco_teorico": {
           "title": "Theoretical Framework and State of the Art",
           "label": "capitulo:marcoteorico",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "Theoretical foundations and critical review of the state of the art.\nOrganize by topics or technical approaches.\nIdentify the gap that justifies your research.\nAPA 7: (Author, year) in the text."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Research design, tools and equipment used,\nexperimental or analysis procedure, validation and\nethical considerations if applicable."
+          "guidance": "Research design, tools and equipment used,\nexperimental or analytical procedure, validation, and\nethical considerations if applicable."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Objective findings organized by specific objective.\nTables and figures APA 7. No interpretation in this chapter."
+          "guidance": "Objective findings organized by specific objective.\nAPA 7 tables and figures. No interpretation in this chapter."
         },
         "discusion": {
           "title": "Discussion",
@@ -363,15 +381,15 @@
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Responds to objectives, summarizes original contributions,\npoints out limitations and proposes future work."
+          "guidance": "Address objectives, summarize original contributions,\nnote limitations and propose future work."
         },
         "referencias": {
           "title": "References",
-          "guidance": "APA 7ª edition, alphabetical list, hanging indent, DOI when available."
+          "guidance": "APA 7th edition, alphabetical list, hanging indent, DOI when available."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Additional data, source code, plans, or technical diagrams."
+          "guidance": "Additional data, source code, technical drawings or diagrams."
         }
       },
       "name": "IPN - Thesis (APA 7)",
@@ -385,73 +403,73 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The Tec title page must include:\n• Logo of Tecnológico de Monterrey.\n• Corresponding School or Department.\n• Full thesis title.\n• \"THESIS submitted as a partial requirement to obtain the degree of\n  [Master in / Doctor in] [Program name].\"\n• Author’s full name.\n• Name of principal advisor and co-advisor (if applicable).\n• \"Monterrey, Nuevo León / [Campus], [Month] [Year].\"\nDownload the official title page template for your program from the\nTec graduation portal — format varies by school."
         },
         "declaracion": {
           "title": "Academic Integrity Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "guidance": "The Tec de Monterrey requires an Academic Integrity Statement. Standard text:\n\"The author of this work declares that, to the best of their knowledge,\nthis is original work and that no plagiarism exists, as defined by\nthe Tec de Monterrey standards.\"\nThe Tec uses plagiarism detection tools (Turnitin) — the acceptable\nsimilarity percentage is defined by your program (typically < 15%)."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summary in Spanish, 150–350 words.\nIncludes: research question, methodology, main findings\nand contribution to the field. At the end: Keywords (4–6).\nSelf-contained: no citations, no figures, no undefined acronyms."
+          "guidance": "Abstract in Spanish, 150–350 words.\nIncludes: research question, methodology, main findings\nand contribution to the field. End with Keywords (4–6).\nSelf-contained: no citations, no figures, no undefined acronyms."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Abstract in English. Required in international Tec programs.\nMaximum 350 words. Same structure as the Spanish Abstract.\nThe Tec has English-language programs (EGADE, CITEM, etc.) that may require\nthe entire thesis to be in English — verify with your coordinator."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Optional. Acknowledge the advisor, committee members and funding sources.\nIf you received a CONAHCYT, Tec or corporate sponsor scholarship,\ninclude the scholarship or agreement number."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically with exact page numbers."
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Enable it if you have 5 or more figures. APA 7."
+          "guidance": "Enable if you have 5 or more figures. APA 7."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Enable it if you have 5 or more tables. APA 7."
+          "guidance": "Enable if you have 5 or more tables. APA 7."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Contextualization, problem statement, rationale, research questions,\nobjectives, hypotheses (if applicable) and thesis structure.\nThe Tec values applied relevance: explain the practical or business impact\nof the problem you address.\nTypical length: 10–20 pages."
         },
         "marco_teorico": {
           "title": "Theoretical Framework",
           "label": "capitulo:marcoteorico",
-          "guidance": "Conceptual foundations and critical review of the literature.\nOrganize by theme or focus — not as a sequential summary of authors.\nIdentify the gap that justifies your research.\nAPA 7: (Author, year) in the text."
+          "guidance": "Conceptual foundations and critical review of the literature.\nOrganize by topics or approaches — not as a sequential summary of authors.\nIdentify the gap that justifies your research.\nAPA 7: (Author, year) in the text."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Research design, sample, instruments, procedure,\nstatistical analysis and ethical considerations.\nThe Tec values ​​mixed methods and corporate case studies."
+          "guidance": "Research design, sample, instruments, procedure,\nstatistical analysis and ethical considerations.\nThe Tec values mixed methods and corporate case studies."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Objective findings organized by research question.\nTables and figures APA 7. No interpretation in this chapter."
+          "guidance": "Objective findings organized by research question.\nAPA 7 tables and figures. No interpretation in this chapter."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation of results, comparison with literature, practical implications (highly valued at Tec) and limitations."
+          "guidance": "Interpretation of results, comparison with literature, practical implications\n(highly valued at the Tec) and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer research questions, summarize contributions, mention limitations and suggest future research."
+          "guidance": "Answer research questions, summarize contributions, note\nlimitations and suggest future research."
         },
         "referencias": {
           "title": "References",
-          "guidance": "APA 7ª edition, alphabetical list, hanging indent, DOI required when available."
+          "guidance": "APA 7th edition, alphabetical list, hanging indent, DOI mandatory when available."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
+          "guidance": "Supplementary materials. Turnitin report if required by your program."
         }
       },
       "name": "Tec de Monterrey - Thesis (APA 7)",
@@ -462,7 +480,7 @@
       "sections": {
         "title_page": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The title page must include: UAM logo, university name, campus,\ndivision and department, work title, student name and ID,\nterm and year, and advisor’s name."
         },
         "dedication": {
           "title": "Dedication"
@@ -471,12 +489,12 @@
           "title": "Acknowledgements"
         },
         "abstract_es": {
-          "title": "Abstract",
+          "title": "Abstract (Spanish)",
           "guidance": "Maximum 350 words. Includes: background, problem, methodology, contributions and conclusions."
         },
         "abstract_en": {
-          "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "title": "Abstract (English)",
+          "guidance": "English abstract. Mandatory for graduate theses; recommended for undergraduate."
         },
         "table_of_contents": {
           "title": "Table of Contents"
@@ -489,19 +507,19 @@
         },
         "introduction": {
           "title": "Introduction",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Presents the context, problem statement, objectives and hypotheses."
         },
         "theoretical_framework": {
           "title": "Theoretical Framework",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "Review of the state of the art and theoretical foundations of the work."
         },
         "methodology": {
           "title": "Methodology",
-          "guidance": "Describe el method, tools y procedures used."
+          "guidance": "Describes the method, tools and procedures used."
         },
         "results": {
           "title": "Results",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Presents and analyzes the obtained results."
         },
         "discussion": {
           "title": "Discussion"
@@ -528,7 +546,7 @@
       "sections": {
         "title_page": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Official UAM-DCSH title page: UAM logo, university name, campus,\ndivision, department, title of the research work or thesis,\nstudent name and ID, term and year, advisor’s or director’s name\nand co-advisor (if applicable)."
         },
         "dedication": {
           "title": "Dedication"
@@ -537,12 +555,12 @@
           "title": "Acknowledgements"
         },
         "abstract_es": {
-          "title": "Abstract",
-          "guidance": "Maximum 300 words. It should include: problem statement, general objective, methodology, main findings and conclusions. Avoid bibliographic citations in the summary."
+          "title": "Abstract (Spanish)",
+          "guidance": "Maximum 300 words. Must include: problem statement,\ngeneral objective, methodology, main findings and conclusions.\nAvoid bibliographic citations in the abstract."
         },
         "abstract_en": {
-          "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "title": "Abstract (English)",
+          "guidance": "English abstract. Recommended for graduate programs."
         },
         "table_of_contents": {
           "title": "Table of Contents"
@@ -555,34 +573,34 @@
         },
         "introduction": {
           "title": "Introduction",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "General context, rationale, problem statement,\nresearch question, hypothesis or objectives, and structure\nof the work."
         },
         "theoretical_framework": {
-          "title": "Theoretical and Conceptual Framework",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "title": "Theoretical-Conceptual Framework",
+          "guidance": "Critical review of the literature. In social sciences, an explicit\npositioning of the author with respect to theoretical approaches is expected.\nUse Chicago Author-Date style for citations."
         },
         "methodology": {
           "title": "Methodology",
-          "guidance": "Methodological strategy: qualitative, quantitative or mixed. Units of analysis, data collection techniques, selection criteria and ethical considerations, if applicable."
+          "guidance": "Methodological strategy: qualitative, quantitative or mixed.\nUnits of analysis, data collection techniques, selection criteria,\nand ethical considerations if applicable."
         },
         "results": {
           "title": "Results and Analysis",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Presentation and critical analysis of findings."
         },
         "discussion": {
           "title": "Discussion"
         },
         "conclusions": {
           "title": "Conclusions",
-          "guidance": "Synthesis of findings, answer to the research question, limitations, contributions to the field and lines of future research."
+          "guidance": "Synthesis of findings, answer to the research question,\nlimitations, contributions to the field and future research directions."
         },
         "references": {
           "title": "Bibliography",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "Chicago Author-Date format. Include all sources cited in the text."
         },
         "appendix": {
           "title": "Appendices",
-          "guidance": "Collection instruments, transcriptions, complementary tables, etc."
+          "guidance": "Data collection instruments, transcriptions, supplementary tables, etc."
         }
       },
       "name": "UAM Azcapotzalco — DCSH",
@@ -596,7 +614,7 @@
       "sections": {
         "title_page": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Official UAM-DCI title page: UAM logo, university name, campus,\ndivision, research area, work title, student name and ID,\nterm and year, and thesis director’s name."
         },
         "dedication": {
           "title": "Dedication"
@@ -605,12 +623,12 @@
           "title": "Acknowledgements"
         },
         "abstract_es": {
-          "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "title": "Abstract (Spanish)",
+          "guidance": "Maximum 350 words. Must include: problem context, main objective,\ntechnical methodology used, key results or contributions\nand conclusions."
         },
         "abstract_en": {
-          "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "title": "Abstract (English)",
+          "guidance": "English translation of the abstract. Mandatory for graduate programs."
         },
         "table_of_contents": {
           "title": "Table of Contents"
@@ -623,30 +641,30 @@
         },
         "introduction": {
           "title": "Introduction",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Technological or information-system context, problem statement,\ngeneral objective, specific objectives, scope and\norganization of the document."
         },
         "theoretical_framework": {
           "title": "Theoretical Framework and State of the Art",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "Review of fundamental concepts and related work. In DCI, a review\nof recent technical literature (ACM, IEEE conferences, Scopus or WoS articles)\nand identification of the knowledge gap is valued."
         },
         "methodology": {
           "title": "Methodology",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "Development or research methodology: SCRUM, RUP, Design Science,\ncontrolled experimentation, etc. Include system architecture diagram\nif applicable, use cases, and evaluation criteria."
         },
         "results": {
           "title": "Results",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Description of the developed system, conducted experiments,\nevaluation metrics and comparison with related work."
         },
         "discussion": {
           "title": "Discussion"
         },
         "conclusions": {
           "title": "Conclusions and Future Work",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Technical conclusions, work limitations and future development directions."
         },
         "references": {
           "title": "References",
-          "guidance": "Formato APA 7. Include DOI when available."
+          "guidance": "APA 7 format. Include DOI when available."
         },
         "appendix": {
           "title": "Appendices",
@@ -664,7 +682,7 @@
       "sections": {
         "title_page": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The title page must include: UAM logo, university and campus name,\ndivision, department and research area, work title,\nstudent’s name, degree sought, advisor(s)’ name(s),\nterm-year of presentation."
         },
         "dedication": {
           "title": "Dedication"
@@ -673,12 +691,12 @@
           "title": "Acknowledgements"
         },
         "abstract_es": {
-          "title": "Abstract",
-          "guidance": "Maximum 300 words. Describe the problem, methods used and main results."
+          "title": "Abstract (Spanish)",
+          "guidance": "Maximum 300 words. Describes the problem, methods used and main results."
         },
         "abstract_en": {
-          "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "title": "Abstract (English)",
+          "guidance": "English abstract mandatory for graduate programs (ICR, Master’s, Doctoral)."
         },
         "table_of_contents": {
           "title": "Table of Contents"
@@ -691,7 +709,7 @@
         },
         "introduction": {
           "title": "Introduction",
-          "guidance": "Background, problem statement, hypotheses y objectives."
+          "guidance": "Background, problem statement, hypothesis and objectives."
         },
         "theoretical_framework": {
           "title": "Theoretical Framework and State of the Art",
@@ -699,19 +717,19 @@
         },
         "methodology": {
           "title": "Methodology and Experimental Development",
-          "guidance": "Materials, methods y procedures experimentales o computacionales."
+          "guidance": "Materials, methods and experimental or computational procedures."
         },
         "results": {
           "title": "Results and Discussion",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Presents results with figures, tables and statistical analysis when applicable."
         },
         "discussion": {
           "title": "Discussion",
-          "guidance": "Interpret the results in relation to the literature, explain their implications, and discuss limitations."
+          "guidance": "Interprets results in relation to the hypothesis and literature. Compares with previous work."
         },
         "conclusions": {
-          "title": "Conclusions and Outlook",
-          "guidance": "Conclusions on the proposed hypothesis and proposals for future work."
+          "title": "Conclusions and Perspectives",
+          "guidance": "Conclusions regarding the stated hypothesis and proposals for future work."
         },
         "glossary": {
           "title": "Glossary",
@@ -719,7 +737,7 @@
         },
         "references": {
           "title": "References",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "APA 7 format for social sciences; IEEE or Vancouver for exact sciences."
         },
         "appendix": {
           "title": "Appendices"
@@ -736,7 +754,7 @@
       "sections": {
         "title_page": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Official UAM-CSH title page: UAM logo, university name, campus,\ndivision and department, thesis or terminal work title,\nstudent name and ID, term and year, advisor’s name."
         },
         "dedication": {
           "title": "Dedication"
@@ -745,11 +763,11 @@
           "title": "Acknowledgements"
         },
         "abstract_es": {
-          "title": "Abstract",
-          "guidance": "Maximum 300 words. Include objective, methodology y main findings."
+          "title": "Abstract (Spanish)",
+          "guidance": "Maximum 300 words. Includes objective, methodology and main findings."
         },
         "abstract_en": {
-          "title": "Abstract"
+          "title": "Abstract (English)"
         },
         "table_of_contents": {
           "title": "Table of Contents"
@@ -759,19 +777,19 @@
         },
         "list_of_tables": {
           "title": "List of Tables",
-          "guidance": "For CSH, use the list of tables when the document includes several tables."
+          "guidance": "In CSH, ‘cuadros’ (tables) is preferred over ‘tablas’."
         },
         "introduction": {
           "title": "Introduction",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Presentation of the research problem, relevance, research question,\nhypothesis (if applicable) and organization of the work.\nIn humanities it may be more extensive (10–15 pages)."
         },
         "theoretical_framework": {
           "title": "Theoretical Framework",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "Theoretical debate and author’s positioning. In CSH-Iztapalapa,\ndepth in the discussion of theoretical approaches and explicit\narticulation with the research problem is valued."
         },
         "methodology": {
           "title": "Methodology",
-          "guidance": "Research paradigm, design, techniques (interviews, surveys, discourse analysis, ethnography, etc.) and rationale for their selection."
+          "guidance": "Research paradigm, design, techniques (interviews, surveys,\ndiscourse analysis, ethnography, etc.) and justification of their choice."
         },
         "results": {
           "title": "Analysis and Results"
@@ -783,8 +801,8 @@
           "title": "Conclusions"
         },
         "references": {
-          "title": "Sources Consulted",
-          "guidance": "Formato Chicago Author-Date. Include sources primarias y secundarias."
+          "title": "Reference Sources",
+          "guidance": "Chicago Author-Date format. Include primary and secondary sources."
         },
         "appendix": {
           "title": "Appendices"
@@ -801,7 +819,7 @@
       "sections": {
         "title_page": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Official UAM-DCBS title page: UAM logo, university name, campus,\ndivision and department, research work title, student name and ID,\nterm and year, and thesis director’s name."
         },
         "dedication": {
           "title": "Dedication"
@@ -810,12 +828,12 @@
           "title": "Acknowledgements"
         },
         "abstract_es": {
-          "title": "Abstract",
-          "guidance": "Maximum 250 words. Abbreviated IMRyD structure: background, objective, methods, results and main conclusion. Do not include bibliographical citations or undefined abbreviations."
+          "title": "Abstract (Spanish)",
+          "guidance": "Maximum 250 words. Abbreviated IMRaD structure: background,\nobjective, methods, results and main conclusion.\nDo not include bibliographic citations or undefined abbreviations."
         },
         "abstract_en": {
-          "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "title": "Abstract (English)",
+          "guidance": "Exact English translation of the abstract. Mandatory for graduate programs."
         },
         "table_of_contents": {
           "title": "Table of Contents"
@@ -828,35 +846,35 @@
         },
         "introduction": {
           "title": "Introduction",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Background to the problem, clinical or biological relevance,\nrationale, research question and hypothesis (if applicable)."
         },
         "theoretical_framework": {
           "title": "Theoretical Framework",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "Review of the state of the art. In health sciences, a review of recent\nliterature (preferably last 5 years) with emphasis on controlled studies\nand systematic reviews is expected."
         },
         "methodology": {
           "title": "Methodology",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "Study type (observational, experimental, clinical, etc.),\npopulation and sample, inclusion/exclusion criteria, variables,\nprocedures, instruments and statistical analysis.\nInclude ethics committee approval if applicable."
         },
         "results": {
           "title": "Results",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Objective presentation of findings without interpretation.\nUse tables and figures when clearer than text.\nReport frequency, central tendency and dispersion measures."
         },
         "discussion": {
           "title": "Discussion",
-          "guidance": "Interpret the results in relation to the literature, explain their implications, and discuss limitations."
+          "guidance": "Interpretation of results in the context of the literature.\nDiscuss study limitations. Do not repeat the results."
         },
         "conclusions": {
           "title": "Conclusions",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Brief conclusions, directly derived from the results."
         },
         "references": {
           "title": "References",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "Vancouver format (numbered, in order of appearance). Maximum 60 references for undergraduate, no limit for graduate."
         },
         "appendix": {
           "title": "Appendices",
-          "guidance": "Measurement instruments, informed consent letters, committee approvals, etc."
+          "guidance": "Measurement instruments, informed consent forms, committee approvals, etc."
         }
       },
       "name": "UAM Xochimilco — DCBS",
@@ -870,23 +888,23 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Official UANL title page. Includes:\n• UANL shield and name.\n• Name of the Faculty or Graduate Division.\n• Thesis title.\n• \"THESIS for the degree of [Master/Doctor] in [Program].\"\n• Author’s name.\n• Thesis director.\n• San Nicolás de los Garza, N.L., [Month] [Year].\nVerify the specific title page format with the Graduate Office of your Faculty."
         },
         "declaracion": {
-          "title": "Authenticity Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "title": "Authenticity Declaration",
+          "guidance": "Originality declaration required by UANL.\nSome faculties require an additional letter signed by the director."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objective, method, results and main conclusion.\nKeywords (4–6)."
+          "guidance": "Abstract in Spanish, 200–350 words.\nProblem, objective, method, results and main conclusion.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
+          "guidance": "Abstract in English. Recommended. Maximum 350 words. Keywords (4–6)."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Acknowledge the thesis director, committee members, CONAHCYT grants and\nPAICYT projects (UANL Scientific and Technological Research Support Program)."
         },
         "indice": {
           "title": "Table of Contents",
@@ -894,36 +912,36 @@
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Enable it if you have 5 or more figures."
+          "guidance": "Enable if you have 5 or more figures."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Enable it if you have 5 or more tables."
+          "guidance": "Enable if you have 5 or more tables."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Context, problem statement, rationale,\nresearch questions, objectives e hypotheses. Structure de la thesis.\n"
+          "guidance": "Contextualization, problem statement, rationale,\nresearch questions, objectives and hypotheses. Thesis structure."
         },
         "marco_teorico": {
           "title": "Theoretical Framework",
           "label": "capitulo:marcoteorico",
-          "guidance": "Critical review de la literature y conceptual foundations.\nOrganize por themes. Identifica el gap. APA 7: (Author, year).\n"
+          "guidance": "Critical review of the literature and conceptual foundations.\nOrganize by topics. Identify the gap. APA 7: (Author, year)."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Design, sample, instruments, procedure, and analysis y ética."
+          "guidance": "Design, sample, instruments, procedure, analysis and ethics."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
+          "guidance": "Objective findings. APA 7 tables and figures. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation, comparison with the literature, implications and limitations."
+          "guidance": "Interpretation, comparison with literature, implications and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
@@ -932,7 +950,7 @@
         },
         "referencias": {
           "title": "References",
-          "guidance": "APA 7ª edition, alphabetical list, hanging indent."
+          "guidance": "APA 7th edition, alphabetical list, hanging indent."
         },
         "apendices": {
           "title": "Appendices",
@@ -947,77 +965,77 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Official Universidad de Guadalajara title page. Includes:\n• Shield and name of the Universidad de Guadalajara.\n• University Center or corresponding Studies Division\n  (CU Valles, CUCEA, CUCSH, CUCS, etc.).\n• Thesis title.\n• \"THESIS to obtain the degree of [Master/Doctor] in [Program].\"\n• Author’s name.\n• Thesis director and institution.\n• Guadalajara, Jalisco, [Month] [Year].\nVerify the title page format with the Graduate Coordination\nof your University Center."
         },
         "declaracion": {
-          "title": "Authenticity Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "title": "Authenticity Declaration",
+          "guidance": "Originality declaration required by UdeG.\nThe University Center may also request a Tutorial Committee record."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summary in Spanish, 200–350 words.\nResearch question, methodology, results and contribution.\nKeywords (4–6)."
+          "guidance": "Abstract in Spanish, 200–350 words.\nResearch question, methodology, results and contribution.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained summary with problem, objective, method, main results and contribution. Respect the required length and add keywords if requested."
+          "guidance": "Abstract in English. Recommended. Maximum 350 words."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Acknowledge the thesis director, tutorial committee, CONAHCYT grants\nand the UdeG Quality Education Strengthening Program (PFCE)\nor UDG-PRO projects."
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. One or three lines. No printed header."
+          "guidance": "Optional. One to three lines. No printed heading."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically with exact page numbers."
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Enable it if you have 5 or more figures."
+          "guidance": "Enable if you have 5 or more figures."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Enable it if you have 5 or more tables."
+          "guidance": "Enable if you have 5 or more tables."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Context, problem statement, rationale, questions\nde research, objectives, hypotheses y estructura de la thesis.\n"
+          "guidance": "Contextualization, problem statement, rationale, research questions,\nobjectives, hypotheses and thesis structure."
         },
         "marco_teorico": {
           "title": "Theoretical Framework",
           "label": "capitulo:marcoteorico",
-          "guidance": "Fundamentos conceptuales y revisión crítica de la literature.\nOrganize por themes. APA 7: (Author, year).\n"
+          "guidance": "Conceptual foundations and critical review of the literature.\nOrganize by topics. APA 7: (Author, year)."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Design, sample, instruments, procedure, and analysis y ética."
+          "guidance": "Design, sample, instruments, procedure, analysis and ethics."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
+          "guidance": "Objective findings. APA 7 tables and figures. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation, comparison with the literature, implications and limitations."
+          "guidance": "Interpretation, comparison with literature, implications and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answers questions, summarizes contributions, points out limitations and future work."
+          "guidance": "Answer questions, summarize contributions, note limitations and future work."
         },
         "referencias": {
           "title": "References",
-          "guidance": "APA 7ª edition, alphabetical list, hanging indent. DOI when available."
+          "guidance": "APA 7th edition, alphabetical list, hanging indent. DOI when available."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Instruments, datos adicionales. Label Appendix A, B…"
+          "guidance": "Instruments, additional data. Label Appendix A, B…"
         }
       },
       "name": "UdeG - Thesis (APA 7)",
@@ -1028,86 +1046,86 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Generated automatically from project metadata.\nThe official UNAM title page must include:\n• UNAM logo and name (university shield).\n• Name of the Faculty, Institute or National School.\n• Full name of the graduate or undergraduate program.\n• Thesis title (in title case, centered).\n• \"THESIS\" or \"DISSERTATION\" as appropriate, followed by the degree\n  (e.g., \"submitted to obtain the degree of Doctor in [field] by:\").\n• Author’s full name (no abbreviations).\n• Name of the thesis supervisor.\n• Mexico City, month and year (e.g., \"Mexico City, June 2026\").\nConsult the title page template for your program — the format varies\nbetween faculties and graduate programs."
         },
         "declaracion": {
-          "title": "Authenticity Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "title": "Authenticity Declaration",
+          "guidance": "The Authenticity Declaration certifies that the work is original\nand sources are correctly cited. Standard content:\n\"I declare that this thesis is original and my own work.\nAll sources consulted have been duly cited and referenced\nin accordance with APA 7th edition standards.\"\nSome faculties and programs additionally require:\n• A Letter of Responsibility signed by the thesis supervisor.\n• A specific form issued by the Graduate Studies Division.\nVerify the requirements with your program — the form may be required\nat the Coordination office before the final print."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Abstract in Spanish. Recommended: 200–350 words.\nMust be self-contained: no citations, no undefined abbreviations, no equations.\nRecommended structure per APA 7th edition:\n  1. Research problem statement.\n  2. General objective(s) of the study.\n  3. Methodological approach and research design.\n  4. Main findings or results.\n  5. Conclusions and contributions to the field.\nEnd with 4 to 6 Keywords separated by semicolons.\nThe abstract will appear in the UNAM Library System catalog\n(UNAM Biblioweb) — write it as a standalone piece."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Abstract in English. Recommended for graduate theses for international\nvisibility and required for ProQuest Dissertations & Theses.\nMaximum 350 words (ProQuest limit for doctoral dissertations).\nSelf-contained: no citations, no undefined abbreviations.\nSame structure as the Spanish Abstract, in English.\nEnd with: Keywords (4–6 English keywords)."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Optional but conventional in Mexican university theses.\nAcknowledge: thesis supervisor and committee, fellow lab or research\ngroup members, institutions that provided access to data or archives,\nand personal support.\nIf the research received external funding (CONACYT/CONAHCYT,\nDGAPA-PAPIIT, PAPIME, international scholarships), it is mandatory to\nmention it with the project or scholarship number.\nExample: \"This research was funded by CONAHCYT through the\nnational doctoral scholarship No. [xxxxx].\"\nTypical length: half to one page."
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. Brief — typically 1 to 3 lines.\nNo printed header; the profile manages the format."
+          "guidance": "Optional. Brief — typically 1 to 3 lines.\nNo printed heading; the profile manages the formatting."
         },
         "indice_general": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically from document headings.\nUNAM requires a complete table of contents with exact page numbers.\nIncludes: all front matter (except the title page), body chapters,\nappendices and references.\nRecommended depth: up to level 2 (chapters and main sections)."
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Required if the thesis contains figures, graphs, maps or illustrations.\nGenerated automatically from figure captions.\nEnable this section if you have 5 or more figures.\nIn APA 7, figures are designated “Figure X” in the text."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Required if the thesis contains tables. Generated automatically.\nEnable this section if you have 5 or more tables.\nIn APA 7, tables are designated “Table X” in the text."
         },
         "lista_abreviaturas": {
           "title": "List of Abbreviations and Acronyms",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "guidance": "Optional, but recommended if the thesis uses more than 10 abbreviations or acronyms.\nList in alphabetical order: abbreviation on the left, full term on the right.\nIn the body text, define each abbreviation the first time it appears\nby writing the full term followed by the abbreviation in parentheses."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "The introduction establishes the context, the problem and the contribution.\nStructure recommended by UNAM-CEP for graduate theses:\n1. Contextualization: overview of the field of study.\n2. Problem statement: what gap or contradiction exists in current knowledge?\n3. Rationale: why is it relevant to address it? (theoretical, practical\n   or social importance).\n4. Research question(s): stated precisely.\n5. General objective and specific objectives: concrete and measurable.\n6. Hypothesis or working assumption (if applicable to the research design).\n7. Scope: spatial, temporal and thematic boundaries of the study.\n8. Thesis structure: a brief paragraph per chapter.\nAPA 7 citations: (Author, year) in the text or Author (year) in narrative form.\nTypical length: 15–25 pages."
         },
         "marco_teorico": {
           "title": "Theoretical Framework and Literature Review",
           "label": "capitulo:marcoteorico",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "The theoretical framework presents the conceptual foundations and state of the art.\nCEP-UNAM guidelines:\n• Organize by theoretical currents, approaches or debates — not as a\n  sequential summary of authors.\n• Define the key concepts you will use throughout the thesis.\n• Review the most relevant literature (last 10 years, plus foundational works).\n• Identify contradictions, gaps and unresolved debates that\n  justify your research.\n• Conclude by explicitly positioning your work within the field.\nAPA 7 citations: every claim about existing literature requires a citation.\nFor secondary citations, use: \"as cited in Author (year)\".\nTypical length: 30–60 pages."
         },
         "marco_conceptual": {
           "title": "Conceptual Framework",
           "label": "capitulo:marcoconceptual",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "Optional. Activate as an independent chapter if your thesis requires\ndeveloping a novel analytical framework or if the theoretical contribution\nis central to the research.\nIncludes: operational definition of variables or analytical categories,\nconceptual relationships, and the author’s own model or analytical scheme.\nIn many social science and humanities theses, the conceptual framework\nis integrated within the Theoretical Framework chapter."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "The methodology must allow the study to be replicated. Includes:\n• Approach and paradigm: quantitative, qualitative or mixed. Justify\n  the choice based on the problem and research questions.\n• Research design: experimental, quasi-experimental, correlational,\n  descriptive, phenomenological, hermeneutic, etc.\n• Units of analysis, population and sample (or corpus): selection\n  criteria, size, sampling procedure.\n• Data collection instruments and techniques: surveys, interviews,\n  observation, documentary analysis, content analysis, etc.\n  Include information about instrument validation.\n• Data analysis procedure: software used (SPSS, R, Atlas.TI, NVivo),\n  statistical or analytical techniques.\n• Ethical considerations: Ethics Committee approval if human subjects\n  were involved; informed consent.\n• Methodological limitations.\nAPA 7: standardized assessment instruments require a full citation."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Present findings objectively, without interpretation.\n• Organize by research question or specific objective.\n• For quantitative studies: report descriptive statistics,\n  hypothesis test results (statistic, p-value, effect size),\n  confidence intervals. Tables and figures with footnotes per APA 7.\n• For qualitative studies: present emerging categories or themes\n  with representative verbatim quotes; ensure participant anonymization\n  as committed to in the informed consent.\n• Every table and figure must be referenced in the text before it appears.\n• APA 7: “Table X shows…”, “Figure X illustrates…”\nLength: varies; in quantitative theses often 30–60 pages."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpret the results in relation to the literature, explain their implications, and discuss limitations."
+          "guidance": "Interpret results in relation to the theoretical framework and literature.\nAPA 7 recommends opening with a statement of support or non-support for the hypothesis.\nA solid discussion:\n• Takes each result and connects it to theory and prior evidence\n  (confirming, contradicting or nuancing it).\n• Explains unexpected or contradictory results.\n• Discusses theoretical and practical implications.\n• Honestly acknowledges the study’s limitations.\n• Suggests specific future research directions, derived from\n  limitations and unresolved findings.\nIn many UNAM theses this chapter is merged with Results or Conclusions.\nActivate as an independent chapter if the analysis warrants it."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Conclusions synthesize the central argument and contributions:\n• Directly answer each research question or objective.\n• Summarize original contributions: what does the field now know that\n  it did not know before this research?\n• Practical, public policy or management implications (if applicable).\n• Specific and honest limitations of the work.\n• Concrete and bounded future research directions.\nAvoid repeating results — the committee has read the previous chapter.\nIn UNAM doctoral theses the committee will evaluate an oral defense;\nconclusions are the text that best prepares that conversation.\nTypical length: 10–20 pages."
         },
         "referencias": {
           "title": "References",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "APA 7th edition: alphabetical list by first author’s last name,\nhanging indent, generated automatically from your .bib file.\nAPA 7 verification points:\n• Book and journal titles in italics.\n• Article and chapter titles without quotation marks (unlike APA 6).\n• DOI in URL format: https://doi.org/xxxxx (no trailing period).\n• For online sources: include URL and access date if content may change.\n• For unpublished theses: Last, N. (Year). Thesis title\n  [Doctoral dissertation, Universidad Nacional Autónoma de México].\nExpected volume for doctoral theses: 100–300 references."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
+          "guidance": "Supplementary materials that would interrupt the main narrative:\n• Research instruments (questionnaires, interview guides,\n  observation rubrics).\n• Raw data, extended statistical tables or additional results.\n• Ethics Committee approval letter and consent forms.\n• Interview transcripts (representative excerpts).\n• Authorization letters from collaborating institutions.\nLabel: Appendix A, B… with descriptive title.\nReference from the text: \"(see Appendix A)\"."
         }
       },
       "name": "UNAM - Thesis (APA 7)",
@@ -1120,73 +1138,73 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Official UNAM title page. Must include:\n• UNAM and Faculty or Institute logo and name.\n• Full name of the specialization or graduate program.\n• Thesis title (centered, in title case).\n• \"THESIS submitted to obtain the title/degree of [Specialist in / Doctor in]\n  [specialty/area], PRESENTED BY:\"\n• Author’s full name.\n• Thesis supervisor’s name and institutional affiliation.\n• Mexico City, month and year.\nMedical specializations (UNAM-IMSS, UNAM-ISSSTE, Hospital General, etc.)\nhave specific title page formats — consult your program coordinator."
         },
         "declaracion": {
           "title": "Originality Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "guidance": "Some specializations and doctoral health sciences programs at UNAM\nrequire an Originality Letter or a sworn statement that the thesis is original work.\nVerify the requirement with the Graduate Studies Division of your Faculty."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Structured abstract in Spanish. ICMJE recommends 250 words maximum\nfor research articles; for degree theses: 200–350 words.\nRecommended structured format:\n  • Background/Introduction: one or two sentences contextualizing the problem.\n  • Objective: general objective of the study (one sentence).\n  • Methods: study design, population, intervention/exposure,\n    outcome variables, statistical analysis.\n  • Results: main findings with key numerical data\n    (n, percentages, key p-values or 95% CI).\n  • Conclusions: main clinical or scientific implication.\nEnd with: 3–6 Keywords (preferably from the MeSH/DeCS in Spanish)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Structured abstract in English. Recommended for international visibility\nand required for PubMed/Medline if the thesis is adapted for publication.\nMaximum 350 words. Same structure as the Spanish Abstract:\nBackground, Objective, Methods, Results, Conclusions.\nKeywords: 3–6 terms from the Medical Subject Headings (MeSH)."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Optional. Acknowledge: thesis supervisor and advisor(s), head of the\nservice or department where the research was conducted,\nstudy patients or participants (anonymously),\nfunding sources (CONAHCYT, DGAPA-PAPIIT, hospital funds).\nInclude the protocol number if the study was registered with a CLIS\n(Local Health Research Committee) of IMSS, ISSSTE, etc."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "General table of contents with page numbers. Generated automatically.\nHealth sciences theses in Mexico typically also list\nthe list of tables and list of figures."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Required if there are 5 or more tables. Generated automatically.\nVancouver designates tables as “Table X” — be consistent throughout."
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Required if there are 5 or more figures, images or graphs.\nGenerated automatically. Vancouver: “Figure X” in the text."
         },
         "introduccion": {
           "title": "Introduction and Background",
           "label": "capitulo:introduccion",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "In health sciences, the Introduction and Background are typically\na single chapter or adjacent sections. Includes:\n1. Epidemiological context: prevalence, incidence, disease burden,\n   relevance in the Mexican and global context.\n2. Pathophysiology or conceptual framework of the disease/clinical problem.\n3. State of the art: critical review of the most relevant literature\n   (last 5–10 years + foundational works).\n   Vancouver: numerical citations in order of appearance [1], [2].\n4. Problem statement: what knowledge gap or unresolved clinical problem\n   justifies this thesis?\n5. Rationale: clinical, epidemiological or scientific relevance.\n6. Hypothesis (if applicable to the design).\n7. General objective and specific objectives.\nVancouver: the first citation of a source takes its number; if cited again,\nuse the same original number.\nTypical length: 15–30 pages."
         },
         "planteamiento": {
           "title": "Theoretical Framework",
           "label": "capitulo:marcoteorico",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "Optional. For basic science or biomedical theses with a relevant theoretical\ncomponent (biochemistry, pharmacology, genetics, biostatistics).\nDevelops the theoretical foundations of the biological model, molecular\nmechanism, or analytical methodology underpinning the thesis.\nIn many clinical theses this content is integrated into the Introduction."
         },
         "materiales_metodos": {
           "title": "Materials and Methods",
           "label": "capitulo:metodos",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "Critical section for reproducibility. ICMJE structure:\n• Study design: observational (cohort, case-control, cross-sectional),\n  experimental (RCT, pre-post, time series), or qualitative.\n  Justify the choice.\n• Setting and period: hospital, clinic, laboratory; start and\n  end dates of data collection.\n• Population: inclusion and exclusion criteria, operational definition\n  of cases.\n• Sample: sample size calculated with an explicit formula, confidence\n  level, power and parameters used. Sampling type.\n• Variables: operational definition, type (continuous/discrete\n  quantitative, nominal/ordinal qualitative) and units of measurement.\n• Intervention or exposure (if applicable): precise and reproducible description.\n• Instruments and techniques: validated or standardized with their references.\n• Statistical analysis: software (SPSS, Stata, R, MedCalc, GraphPad),\n  statistical tests with justification (parametric/non-parametric),\n  significance level (generally α = 0.05).\n• Ethical considerations: Ethics and Research Committee (CEI) registration\n  number, COFEPRIS registration if applicable,\n  ClinicalTrials.gov registration (if RCT), informed consent.\nTypical length: 10–20 pages."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Present findings objectively and in order, without interpretation.\n• Begin with sociodemographic characteristics of the population\n  (Table 1 with baseline characteristics).\n• Report results in the order of the specific objectives.\n• Quantitative: report mean ± SD or median (IQR) according to distribution;\n  comparisons with statistic, p-value and effect size; 95% CI.\n  Use tables for extensive numerical data and figures for trends.\n• Qualitative: present thematic categories with representative verbatims.\n• All tables and figures must be numbered sequentially and\n  referenced in the text before they appear.\n• Vancouver: each table has a brief title above; each figure has\n  a detailed legend below.\nTypical length: 15–40 pages."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpret the results in relation to the literature, explain their implications, and discuss limitations."
+          "guidance": "The discussion interprets results in the context of the literature.\nICMJE recommended structure for biomedical discussions:\n1. Summary of the main finding (first sentence of the discussion).\n2. Comparison with similar studies: do they confirm, contradict or nuance\n   your results? What explains discrepancies?\n3. Proposed mechanisms: how do you biologically or clinically explain\n   the observed findings?\n4. Clinical implications: what changes in medical practice?\n   (Be conservative — avoid claims not supported by evidence.)\n5. Study limitations: selection bias, information bias, residual confounding,\n   sample size, generalizability.\n   Be specific and honest — reviewers and committees always look for them.\n6. Strengths of the study.\n7. Future research: questions that remain unanswered.\nTypical length: 15–30 pages."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Conclusions directly answer the specific objectives.\nEach conclusion must:\n• Derive directly from the results (no unsupported inferences).\n• Be written in declarative affirmative or negative language.\n• Include the level of certainty if applicable (e.g., results suggest,\n  it was demonstrated, no significant difference was found).\nAvoid concluding beyond what the data allow.\nBriefly add practical or public health recommendations\nif the evidence justifies it.\nTypical length: 1–5 pages (health science conclusions tend to be\nmore concise than in social sciences)."
         },
         "referencias": {
           "title": "References",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "Vancouver style (ICMJE): numbered in order of first appearance in the text.\nGenerated automatically from your .bib file by biber/biblatex-vancouver.\nStandard entry format:\n• Article: Last N, Last N. Article title.\n  Abbreviated J Name. year;vol(num):pp–pp. DOI or PMID.\n• Book: Last N. Title. City: Publisher; year. p. pp.\n• Chapter: Last N. Chapter title. In: Editor A, editor.\n  Book title. City: Publisher; year. p. pp–pp.\nJournal abbreviations: use the Index Medicus / PubMed list.\nDOI mandatory when available; if not, URL + access date.\nICMJE recommended maximum for articles: 30–40 refs.\nTheses: no strict limit; typically 60–150 references."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
+          "guidance": "Supplementary materials:\n• Ethics and Research Committee opinion.\n• Informed consent form (final approved version).\n• Data collection instruments: questionnaires, scales, capture forms.\n• ClinicalTrials.gov registration or equivalent (if applicable).\n• Extended data tables or sensitivity analysis results.\n• Authorization from the institution where the study was conducted.\nLabel: Appendix A, B… with descriptive title."
         }
       },
       "name": "UNAM - Ciencias de la Salud (Vancouver)",
@@ -2161,40 +2179,40 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The official UCM title page must include:\n• Logo of the Universidad Complutense de Madrid.\n• Name of the Faculty or Department.\n• Full title of the doctoral thesis.\n• \"DOCTORAL THESIS\" (in uppercase).\n• \"submitted by [Author’s name].\"\n• \"supervised by [Dr./Dra. Director’s name].\"\n• \"to obtain the degree of Doctor by the Universidad Complutense de Madrid.\"\n• Madrid, [Year].\nThe Doctoral School (EDCM) may have a standardized format —\ndownload the template from the EDCM portal."
         },
         "declaracion": {
           "title": "Authorship and Originality Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "guidance": "UCM requires an Authorship and Originality Statement in accordance\nwith Article 9 of the UCM Doctoral Regulation.\nStandard text: \"Mr./Ms. [name], with ID/NIE [number], declare that\nthis doctoral thesis is my own work, original and unpublished,\nthat it has not been submitted to any other institution, and that\nthe results are truthful.\"\nThe thesis supervisor’s signature may also be required."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Summary in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
+          "guidance": "Abstract in Spanish, 200–350 words.\nProblem, objectives, methodology, results and conclusions.\nKeywords (4–6)."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "UCM requires an English abstract for doctoral theses.\nMaximum 350 words. Same structure as the Spanish Abstract.\nKeywords (4–6). Required for deposit in TESEO and the\nUCM Library database."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Acknowledge the thesis supervisor, committee, grants (FPI, FPU,\nUCM predoctoral contract) and Ministry (PID, PIE) or\nCommunity of Madrid (PRICIT) research projects with the project reference."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generated automatically. Required por la EDCM."
+          "guidance": "Generated automatically. Required by the EDCM."
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Enable it if you have 5 or more figures."
+          "guidance": "Enable if you have 5 or more figures."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Enable it if you have 5 or more tables."
+          "guidance": "Enable if you have 5 or more tables."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Contextualization, problem statement, rationale,\nresearch questions, objectives, hypotheses and structure.\nAPA 7: (Author, year) in the text.\nUCM requires the introduction to demonstrate mastery of the field."
         },
         "marco_teorico": {
           "title": "Theoretical Framework and Literature Review",
@@ -2204,30 +2222,30 @@
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "Research design, sample, instruments, procedure, analysis and ethics.\nIf the research involves human subjects: approval from the\nResearch Ethics Committee (CEISH-UCM or equivalent)."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Objective findings. Tables and figures APA 7. No interpretation."
+          "guidance": "Objective findings. APA 7 tables and figures. No interpretation."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpretation, comparison with the literature, implications and limitations."
+          "guidance": "Interpretation, comparison with literature, implications and limitations."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Answer research questions, summarize contributions, note\nlimitations and propose future research.\nUCM may require separate “Conclusions” and “Discussion” chapters —\nverify with your supervisor and your program’s regulations."
         },
         "referencias": {
           "title": "References",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "APA 7th edition, alphabetical list, hanging indent.\nGenerated automatically. Include DOI when available.\nThe EDCM may require references in a final chapter with continuous\nnumbering — verify your program’s requirements."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
+          "guidance": "Instruments, additional data, ethics statements,\npublications derived from the thesis (if submitted as a compendium).\nCompendium-format theses (frequent modality at UCM)\nrequire including published articles in appendices or chapters."
         }
       },
       "name": "UCM Madrid - Thesis (APA 7)",
@@ -2543,47 +2561,47 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Include institution, specialty program name, work title,\nauthor, advisor, city and date. If your hospital, professional college\nor program has an official format, use it as the source of truth."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Summarizes the professional problem addressed, the context, the intervention\nor analysis strategy, the main results and the practical utility of the work.\nSuggested length: 150–300 words."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically. Review the final pagination before submission."
         },
         "introduccion": {
           "title": "Introduction",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Presents the professional or clinical problem, the institutional context,\nthe relevance of the work and the document’s objectives."
         },
         "marco_referencial": {
           "title": "Reference Framework",
-          "guidance": "Sintetiza la normativa, evidence previa, protocols, guías clinicals\no literature que supportsn el abordaje adoptado.\n"
+          "guidance": "Synthesizes the regulations, prior evidence, protocols, clinical guidelines\nor literature that underpin the adopted approach."
         },
         "metodologia": {
           "title": "Methodology / Intervention",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "Describes the work design, procedure, selection criteria,\ninstruments, applied intervention or strategy, and ethical considerations."
         },
         "resultados": {
           "title": "Results",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Presents the findings, products, metrics, evaluations or observed results\nof the specialty work."
         },
         "discusion": {
           "title": "Discussion",
-          "guidance": "Interpret the results in relation to the literature, explain their implications, and discuss limitations."
+          "guidance": "Interprets the results, compares them with literature or standards,\nacknowledges limitations and highlights practical implications."
         },
         "conclusiones": {
           "title": "Conclusions and Recommendations",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Summarizes the professional contribution of the work, its applied utility\nand recommendations for continuity or improvement."
         },
         "referencias": {
           "title": "References",
-          "guidance": "Lista final de references en APA 7. Include only the sources citationdas.\n"
+          "guidance": "Final reference list in APA 7. Include only cited sources."
         },
         "anexos": {
-          "title": "Appendices",
-          "guidance": "Supplementary material: instruments, protocols, forms, tables\nextended o technical documentation de support.\n"
+          "title": "Annexes",
+          "guidance": "Supplementary material: instruments, protocols, forms, extended tables\nor supporting technical documentation."
         }
       },
       "name": "Generic Specialty Project",
@@ -2593,51 +2611,51 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "Include the host institution, postdoctoral project or fellowship,\nreport or monograph title, principal investigator, mentor\nor supervisor, venue and date."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Sintetiza la agenda postdoctoral, objectives, approach metodológico,\ncontributions, results y future projection. Suggested length:\n200–350 words.\n"
+          "guidance": "Synthesizes the postdoctoral agenda, objectives, methodological approach,\ncontributions, results and future projections.\nSuggested length: 200–350 words."
         },
         "abstract_ingles": {
-          "title": "Abstract",
-          "guidance": "Recommended when the postdoctoral report will be circulated internationally\nor will report to an external call."
+          "title": "Abstract (English)",
+          "guidance": "Recommended when the postdoctoral report will circulate internationally\nor will be reported to an external funding call."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically. Review final pagination consistency."
         },
         "introduccion": {
           "title": "Introduction",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "Presents the research field, the project agenda and the\npositioning of the work within the postdoctoral line of research."
         },
         "estado_arte": {
           "title": "State of the Art",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "guidance": "Develops a critical review of the current state of the field,\nidentifies gaps and justifies the contribution of the postdoctoral work."
         },
         "metodologia": {
           "title": "Methodology",
-          "guidance": "Explica design, corpus o datos, procedures, protocols, tools,\nreproducibilidad y ethical considerations según corresponda.\n"
+          "guidance": "Explains design, corpus or data, procedures, protocols, tools,\nreproducibility and ethical considerations as applicable."
         },
         "resultados": {
           "title": "Results",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Presents results, academic outputs, prototypes, articles,\ndatasets or verifiable advances obtained during the fellowship."
         },
         "discusion": {
           "title": "Discussion",
-          "guidance": "Interpret the results in relation to the literature, explain their implications, and discuss limitations."
+          "guidance": "Interprets the scope of the results, their novelty, limitations,\nand relationship to the state of the art."
         },
         "conclusiones": {
           "title": "Conclusions",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Summarizes the contributions of the postdoctoral work and its scientific,\nmethodological or applied impact."
         },
         "referencias": {
           "title": "References",
-          "guidance": "Lista final de references citationdas, en formato APA 7.\n"
+          "guidance": "Final list of cited references, in APA 7 format."
         },
         "anexos": {
-          "title": "Appendices",
-          "guidance": "Evidencia supplementary: instruments, tables extendidas, protocols,\noutputs, technical documentation o material suplementario.\n"
+          "title": "Annexes",
+          "guidance": "Supporting evidence: instruments, extended tables, protocols,\noutputs, technical documentation or supplementary material."
         }
       },
       "name": "Generic Postdoctoral Report",
@@ -2647,42 +2665,42 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The title page must include:\n• Logo and name of the institution, faculty or school.\n• Full title of the tesina (clear and specific).\n• \"TESINA\" and the degree or certificate sought\n  (e.g., \"to obtain the title of Bachelor in [field]\").\n• Author’s full name.\n• Advisor’s or director’s name.\n• City, month and year.\nConsult the official title page format of your program."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Brief abstract of the tesina. 150–300 words.\nIncludes: the topic, the objective, the method used, the main\nfindings and the central conclusion or contribution.\nEnd with 4–6 Keywords.\nNo citations, no figures, no undefined acronyms."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Optional. Thank your advisor, those who provided access to data\nor information, and personal support received.\nTypical length: one paragraph or half a page."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically. Includes all chapters and sections\nwith their page numbers."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "The introduction situates the topic and justifies the work.\nIncludes:\n1. Topic presentation: what is the tesina about?\n2. Relevance: why is this topic important?\n3. Central question or purpose of the work.\n4. Objective(s) of the study.\n5. Brief description of the tesina’s structure.\nTypical length: 3–8 pages."
         },
         "desarrollo": {
           "title": "Development",
           "label": "capitulo:desarrollo",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "guidance": "The development is the main body of the tesina. You can structure it\nin the following ways depending on the type of work:\nTheoretical tesina / academic essay:\n  • Review and critical analysis of the relevant literature.\n  • Development of the central argument or position with bibliographic support.\n  • Discussion of different perspectives or approaches.\nEmpirical research tesina (small scale):\n  • Brief theoretical framework.\n  • Methodology: design, sample, instruments, procedure.\n  • Results and analysis.\n  • Discussion of findings.\nDesign or project tesina:\n  • Diagnosis or problem justification.\n  • Intervention or design proposal.\n  • Evaluation or validation.\nDivide this chapter into sections with clear subheadings.\nAPA 7: cite with (Author, year) or Author (year).\nTypical length: 25–60 pages."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Conclusions synthesize what you learned or demonstrated.\n• Answer the central question or purpose of the tesina.\n• Summarize the main points of the development.\n• Note implications or applications.\n• Acknowledge the work’s limitations.\n• Suggest possible future lines of work or further study.\nTypical length: 3–8 pages.\nAvoid introducing new information not discussed previously."
         },
         "referencias": {
           "title": "References",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "APA 7th edition: alphabetical list, hanging indent.\nInclude only sources cited in the text.\nGenerated automatically from your .bib file.\nInclude DOI when available."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
+          "guidance": "Optional. Additional supporting materials:\n• Data collection instruments (if used).\n• Extended data tables.\n• Additional analysis materials.\nLabel: Appendix A, B… Reference from the text."
         }
       },
       "name": "Generic Short Thesis",
@@ -2692,77 +2710,77 @@
       "sections": {
         "portada": {
           "title": "Title Page",
-          "guidance": "Prepare the title page according to your institution's official template. Include the full title, author, program, advisors, institution, place, and year."
+          "guidance": "The title page is the first impression of your thesis. Includes:\n• Logo and name of your institution (university / faculty / department).\n• Full thesis title (informative and specific, no abbreviations).\n• Document type: \"THESIS\" or \"DISSERTATION\" and the degree sought\n  (e.g., \"to obtain the degree of Bachelor’s in / Master’s in /\n  Doctor’s in [field name]\").\n• Author’s full name.\n• Name of the thesis supervisor or director.\n• City, month and year of submission.\nCheck with your coordinator or program — many institutions have\nan official title page format you must follow exactly."
         },
         "declaracion": {
-          "title": "Authenticity Statement",
-          "guidance": "Complete this section according to the profile requirements and your institution's current submission guidelines."
+          "title": "Authenticity Declaration",
+          "guidance": "The Authenticity Declaration certifies that the work is yours and that\nsources are correctly cited. Standard text (adapt if your institution\nhas a specific format):\n\"I declare under oath that this work is original and has been prepared\nby the undersigned. All sources consulted have been duly cited and\nreferenced according to applicable standards.\"\nSome universities require this declaration to be signed, notarized,\nor in a specific format — verify with your program."
         },
         "resumen": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "The Spanish abstract is the first academic element other researchers will read.\nRecommended: 150–350 words.\nAPA 7 (for theses and student papers) recommends including:\n  1. The research problem (1–2 sentences).\n  2. Participants or data used (if applicable).\n  3. The methodology or approach used.\n  4. The main findings or conclusions.\n  5. Implications or contributions of the study.\nEnd with 4–6 Keywords separated by semicolons.\nMust be self-contained: no citations, no figures, no undefined acronyms."
         },
         "abstract_ingles": {
           "title": "Abstract",
-          "guidance": "Write a self-contained abstract with the problem, objective, method, main results, and contribution. Keep the length required by your program and add keywords if requested."
+          "guidance": "Abstract in English. Optional but recommended for international visibility.\nMaximum 350 words. Same structure as the Spanish Abstract.\nEnd with: Keywords: (4–6 terms in English).\nMandatory if your program requires publication in international databases\n(Scopus, Web of Science, ProQuest Dissertations & Theses)."
         },
         "agradecimientos": {
           "title": "Acknowledgements",
-          "guidance": "Acknowledge advisors, committee members, collaborators, institutions, and funding sources. Include grant or scholarship numbers when applicable."
+          "guidance": "Optional but conventional section. Acknowledge those who contributed\nto your research: thesis supervisor, committee or jury, colleagues,\nlibrarians, study participants, and those who supported you\npersonally throughout the process.\nIf your research was funded with a scholarship or external resource\n(CONAHCYT, CONACYT, DGAPA, etc.), it is mandatory to mention it with\nthe project or scholarship number.\nTypical length: half to one page."
         },
         "dedicatoria": {
           "title": "Dedication",
-          "guidance": "Optional. One or three lines. No printed header."
+          "guidance": "Optional. One to three lines. No printed heading."
         },
         "indice": {
           "title": "Table of Contents",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Generated automatically. Includes all front matter (except the title page),\nbody chapters, appendices and references.\nVerify that page numbers are exact before printing."
         },
         "indice_figuras": {
           "title": "List of Figures",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Enable this section if your thesis has 5 or more figures, graphs or images.\nAPA 7: number figures continuously (Figure 1, Figure 2…)\nand reference them in the text before they appear."
         },
         "indice_tablas": {
           "title": "List of Tables",
-          "guidance": "Generate this section automatically and verify final page numbers before submission."
+          "guidance": "Enable if you have 5 or more tables. APA 7: number tables continuously\n(Table 1, Table 2…) and reference them in the text."
         },
         "introduccion": {
           "title": "Introduction",
           "label": "capitulo:introduccion",
-          "guidance": "Present the research context, problem statement, rationale, research questions, objectives, scope, and chapter structure."
+          "guidance": "The introduction frames your research and convinces the reader of its importance.\nRecommended structure:\n1. General contextualization of the research topic.\n2. Problem statement: what knowledge gap, contradiction\n   or practical need does your thesis address?\n3. Rationale: why does it matter to resolve it? (theoretical, social,\n   economic, clinical, technological relevance, etc.)\n4. Research question(s): stated precisely and narrowly.\n5. General objective and specific objectives (concrete and measurable).\n6. Hypothesis or working assumption (if your design requires it).\n7. Scope and delimitations of the study.\n8. Thesis structure: a brief paragraph per chapter.\nTypical length for undergraduate: 10–20 pages.\nFor graduate: 15–30 pages."
         },
         "marco_teorico": {
           "title": "Theoretical Framework and Literature Review",
           "label": "capitulo:marcoteorico",
-          "guidance": "Review the relevant literature and theoretical foundations. Organize the discussion by themes or debates and identify the gap your work addresses."
+          "guidance": "The theoretical framework is the conceptual foundation of your research. Includes:\n• Definition and discussion of the fundamental concepts and theories\n  that underpin your work.\n• Critical review of the literature: what is known about the topic?\n  What are the main approaches? Where are the debates?\n• Identification of the gap or contradiction that justifies your study.\n• Theoretical positioning: what perspective do you adopt and why?\nAPA 7: cite with (Author, year) or Author (year) for narrative citations.\nFor direct quotations include page number: (Author, year, p. xx).\nOrganize by topics or currents, not as a list of authors.\nTypical length: 20–50 pages."
         },
         "metodologia": {
           "title": "Methodology",
           "label": "capitulo:metodologia",
-          "guidance": "Describe the research design, data or sample, instruments, procedure, analysis strategy, tools, and ethical considerations with enough detail for replication."
+          "guidance": "The methodology describes in sufficient detail how you conducted your research.\nIncludes:\n• Approach: quantitative, qualitative or mixed. Justify the choice.\n• Research design: experimental, quasi-experimental, correlational,\n  descriptive, phenomenological, case study, etc.\n• Population and sample (or analysis corpus): selection criteria and size.\n• Data collection instruments or techniques: describe each one,\n  cite the instrument if published, and indicate if it was adapted or created.\n• Data collection procedure: when, where and how data were obtained.\n• Data analysis: software used and analysis techniques.\n• Ethical considerations: informed consent, confidentiality,\n  Ethics Committee approval if human subjects were involved.\n• Methodological limitations.\nTypical length: 10–25 pages."
         },
         "resultados": {
           "title": "Results",
           "label": "capitulo:resultados",
-          "guidance": "Present findings objectively and organize them by research question, objective, or theme. Use tables and figures where they improve clarity."
+          "guidance": "Present findings objectively, without interpretation or conclusions.\nOrganize results according to your research questions or objectives.\nFor quantitative data:\n• Report descriptive statistics first (means, standard deviations, percentages).\n• Then inferential tests (t, F, χ², correlations, regressions) with\n  their statistics, p-values and effect sizes.\n• Include APA 7 tables and figures with footnotes.\nFor qualitative data:\n• Present emerging categories or themes with representative verbatim quotes.\n• Ensure participant confidentiality.\nAPA 7: “Table 1 shows…”, “Figure 2 illustrates…”.\nEvery table and figure must be mentioned in the text before it appears."
         },
         "discusion": {
           "title": "Discussion",
           "label": "capitulo:discusion",
-          "guidance": "Interpret the results in relation to the literature, explain their implications, and discuss limitations."
+          "guidance": "The discussion interprets results and connects them to the theoretical\nframework and reviewed literature.\nRecommended structure:\n• First sentence: restate the research question and answer it directly\n  based on your results.\n• Compare with prior studies: do your findings agree with, contradict or\n  nuance existing literature? Why?\n• Explain unexpected results.\n• Theoretical and practical implications of the findings.\n• Study limitations.\n• Specific future research suggestions.\nIn many undergraduate theses this chapter is merged with Results\nor Conclusions. Activate as an independent chapter if needed."
         },
         "conclusiones": {
           "title": "Conclusions",
           "label": "capitulo:conclusiones",
-          "guidance": "Answer the research questions, summarize the contribution, state limitations, and suggest future work."
+          "guidance": "Conclusions directly answer your research question(s) and objectives.\n• Answer each research question or verify each hypothesis.\n• Summarize the original contributions of your work to the field.\n• Practical implications or possible applications.\n• Study limitations (be honest — the committee will find them regardless).\n• Future research directions: concrete and bounded.\nDo not repeat results — the committee has already read that chapter.\nTypical length: 5–15 pages."
         },
         "referencias": {
           "title": "References",
-          "guidance": "List only cited sources and follow the bibliography style required by the profile."
+          "guidance": "APA 7th edition: alphabetical list by first author’s last name,\nhanging indent. Generated automatically from your .bib file.\nKey APA 7 points:\n• Italics for book, journal and thesis titles.\n• No italics for articles and chapters.\n• DOI in URL format: https://doi.org/xxxxx (no trailing period).\n• For online sources: URL and access date.\n• Thesis: Last, N. (Year). Title [Bachelor’s/Master’s/doctoral thesis,\n  University Name]. Repository or database.\nInclude only sources cited in the body text."
         },
         "apendices": {
           "title": "Appendices",
-          "guidance": "Include supplementary material such as instruments, extended tables, protocols, approvals, or supporting technical documentation."
+          "guidance": "Supplementary materials too extensive for the main body\nor that would disrupt the narrative flow:\n• Complete instruments (questionnaires, scales, interview guides).\n• Raw data or additional statistical tables.\n• Interview or focus group transcripts.\n• Ethics approval letters and informed consent forms.\n• Stimulus materials or intervention protocols.\nLabel: Appendix A, B… with descriptive title.\nReference from the text: \"(see Appendix A)\"."
         }
       },
       "name": "Generic Thesis",

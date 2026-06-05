@@ -14,7 +14,7 @@ verification:
   reviewed_at: "2026-05-25"
   reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra Reglamento de Doctorado UCM y EDCM"
+  verified_by: "TeXisStudio Community — reviewed against UCM Doctoral Regulation and EDCM guidelines"
   source_urls:
     - "https://www.ucm.es/posgrado-doctorado"
     - "https://www.ucm.es/escueladoctorado/reglamento-doctorado"
@@ -48,43 +48,43 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      La portada oficial de la UCM incluye:
-      • Logotipo de la Universidad Complutense de Madrid.
-      • Nombre de la Facultad o Departamento.
-      • Título completo de la tesis doctoral.
-      • "TESIS DOCTORAL" (en mayúsculas).
-      • "presentada por [Nombre del autor/a]."
-      • "dirigida por [Dr./Dra. Nombre del Director/a]."
-      • "para optar al grado de Doctor/a por la Universidad Complutense de Madrid."
-      • Madrid, [Año].
-      La Escuela de Doctorado (EDCM) puede tener un formato normalizado —
-      descarga la plantilla desde el portal de la EDCM.
+      The official UCM title page must include:
+      • Logo of the Universidad Complutense de Madrid.
+      • Name of the Faculty or Department.
+      • Full title of the doctoral thesis.
+      • "DOCTORAL THESIS" (in uppercase).
+      • "submitted by [Author’s name]."
+      • "supervised by [Dr./Dra. Director’s name]."
+      • "to obtain the degree of Doctor by the Universidad Complutense de Madrid."
+      • Madrid, [Year].
+      The Doctoral School (EDCM) may have a standardized format —
+      download the template from the EDCM portal.
 
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaración de Autoría y Originalidad"
+    title: "Authorship and Originality Statement"
     guidance: |
-      La UCM exige una Declaración de Autoría y Originalidad conforme
-      al artículo 9 del Reglamento de Doctorado UCM.
-      Texto estándar: "D./Dña. [nombre], con DNI/NIE [número], declaro que
-      la presente tesis doctoral es de mi autoría, original e inédita,
-      que no ha sido presentada en ninguna otra institución y que los
-      resultados son verídicos."
-      Puede requerirse también la firma del director de tesis.
+      UCM requires an Authorship and Originality Statement in accordance
+      with Article 9 of the UCM Doctoral Regulation.
+      Standard text: "Mr./Ms. [name], with ID/NIE [number], declare that
+      this doctoral thesis is my own work, original and unpublished,
+      that it has not been submitted to any other institution, and that
+      the results are truthful."
+      The thesis supervisor’s signature may also be required.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Resumen en español, 200–350 palabras.
-      Problema, objetivos, metodología, resultados y conclusiones.
-      Palabras clave (4–6).
+      Abstract in Spanish, 200–350 words.
+      Problem, objectives, methodology, results and conclusions.
+      Keywords (4–6).
 
   - id: abstract_ingles
     element_id: abstract_en
@@ -92,122 +92,122 @@ sections:
     required: true
     title: "Abstract"
     guidance: |
-      La UCM exige resumen en inglés para las tesis doctorales.
-      Máximo 350 palabras. Misma estructura que el Resumen.
-      Keywords (4–6). Requerido para el depósito en TESEO y en la
-      base de datos de la Biblioteca UCM.
+      UCM requires an English abstract for doctoral theses.
+      Maximum 350 words. Same structure as the Spanish Abstract.
+      Keywords (4–6). Required for deposit in TESEO and the
+      UCM Library database.
 
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
     guidance: |
-      Reconoce al director/a de tesis, tribunal, becas (FPI, FPU, contrato predoctoral
-      UCM) y proyectos de investigación del Ministerio (PID, PIE) o la Comunidad
-      de Madrid (PRICIT) con referencia del proyecto.
+      Acknowledge the thesis supervisor, committee, grants (FPI, FPU,
+      UCM predoctoral contract) and Ministry (PID, PIE) or
+      Community of Madrid (PRICIT) research projects with the project reference.
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice"
-    guidance: Generado automáticamente. Requerido por la EDCM.
+    title: "Table of Contents"
+    guidance: "Generated automatically. Required by the EDCM."
 
   - id: indice_figuras
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Índice de Figuras"
-    guidance: Activa si tienes 5 o más figuras.
+    title: "List of Figures"
+    guidance: "Enable if you have 5 or more figures."
 
   - id: indice_tablas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Índice de Tablas"
-    guidance: Activa si tienes 5 o más tablas.
+    title: "List of Tables"
+    guidance: "Enable if you have 5 or more tables."
 
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     label: "capitulo:introduccion"
     guidance: |
-      Contextualización, planteamiento del problema, justificación,
-      preguntas de investigación, objetivos, hipótesis y estructura.
-      APA 7: (Autor, año) en el texto.
-      La UCM requiere que la introducción muestre dominio del campo.
+      Contextualization, problem statement, rationale,
+      research questions, objectives, hypotheses and structure.
+      APA 7: (Author, year) in the text.
+      UCM requires the introduction to demonstrate mastery of the field.
 
   - id: marco_teorico
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teórico y Revisión de la Literatura"
+    title: "Theoretical Framework and Literature Review"
     label: "capitulo:marcoteorico"
     guidance: |
-      Revisión crítica de la literatura y fundamentos teóricos.
-      Organiza por corrientes teóricas o debates — no cronológicamente.
-      Identifica el vacío que justifica la tesis.
+      Critical review of the literature and theoretical foundations.
+      Organize by theoretical currents or debates — not chronologically.
+      Identify the gap that justifies the thesis.
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     label: "capitulo:metodologia"
     guidance: |
-      Diseño, muestra, instrumentos, procedimiento, análisis y ética.
-      Si la investigación implica seres humanos: aprobación del Comité
-      de Ética de Investigación (CEISH-UCM o similar).
+      Research design, sample, instruments, procedure, analysis and ethics.
+      If the research involves human subjects: approval from the
+      Research Ethics Committee (CEISH-UCM or equivalent).
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     label: "capitulo:resultados"
-    guidance: Hallazgos objetivos. Tablas y figuras APA 7. Sin interpretación.
+    guidance: "Objective findings. APA 7 tables and figures. No interpretation."
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     label: "capitulo:discusion"
-    guidance: Interpretación, comparación con literatura, implicaciones y limitaciones.
+    guidance: "Interpretation, comparison with literature, implications and limitations."
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     label: "capitulo:conclusiones"
     guidance: |
-      Responde preguntas de investigación, resume aportaciones, señala
-      limitaciones y propone investigación futura.
-      La UCM puede exigir separar "Conclusiones" de "Discusión" —
-      verifica con tu director y la normativa de tu programa.
+      Answer research questions, summarize contributions, note
+      limitations and propose future research.
+      UCM may require separate “Conclusions” and “Discussion” chapters —
+      verify with your supervisor and your program’s regulations.
 
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
+    title: "References"
     guidance: |
-      APA 7ª edición, lista alfabética, sangría francesa.
-      Generada automáticamente. Incluye DOI cuando disponible.
-      La EDCM puede exigir que las referencias estén en un capítulo
-      final con numeración continua — verifica los requisitos de tu programa.
+      APA 7th edition, alphabetical list, hanging indent.
+      Generated automatically. Include DOI when available.
+      The EDCM may require references in a final chapter with continuous
+      numbering — verify your program’s requirements.
 
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apéndices"
+    title: "Appendices"
     guidance: |
-      Instrumentos, datos adicionales, declaraciones éticas,
-      publicaciones derivadas de la tesis (si las presentas como compendio).
-      Las tesis por compendio de publicaciones (modalidad frecuente en UCM)
-      requieren incluir los artículos publicados en apéndices o capítulos.
+      Instruments, additional data, ethics statements,
+      publications derived from the thesis (if submitted as a compendium).
+      Compendium-format theses (frequent modality at UCM)
+      require including published articles in appendices or chapters.

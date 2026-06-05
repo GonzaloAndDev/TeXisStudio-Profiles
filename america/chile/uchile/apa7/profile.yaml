@@ -15,7 +15,7 @@ verification:
   reviewed_at: "2026-05-25"
   reviewed_by: "TeXisStudio Community"
   verified_at: "2026-05-25"
-  verified_by: "TeXisStudio Community — revisado contra Reglamentos de Postgrado UChile y VID"
+  verified_by: "TeXisStudio Community — reviewed against Universidad de Chile Graduate Regulations and VID guidelines"
   source_urls:
     - "https://www.uchile.cl/postgrado"
     - "https://www.vid.uchile.cl/"
@@ -49,146 +49,146 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      La portada oficial de la U. de Chile incluye:
-      • Logotipo y nombre de la Universidad de Chile.
-      • Facultad e Instituto o Departamento.
-      • Título completo de la tesis.
-      • "TESIS para optar al grado de Doctor en [campo]."
-      • Nombre del autor/a.
-      • Profesor/a Guía (director/a de tesis) y co-guía (si aplica).
-      • Santiago, Chile, [Mes] [Año].
-      Verifica el formato con la Coordinación de Doctorado de tu Facultad.
+      The official U. de Chile title page must include:
+      • Logo and name of the Universidad de Chile.
+      • Faculty and Institute or Department.
+      • Full thesis title.
+      • "THESIS to obtain the degree of Doctor in [field]."
+      • Author’s name.
+      • Thesis supervisor (guía) and co-supervisor (if applicable).
+      • Santiago, Chile, [Month] [Year].
+      Verify the format with the Doctoral Coordination of your Faculty.
 
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaración de Autoría"
+    title: "Authorship Declaration"
     guidance: |
-      Declaración de originalidad requerida por la U. de Chile.
-      La Unidad de Postgrado puede exigir un acta firmada por el Comité Académico.
+      Originality declaration required by U. de Chile.
+      The Graduate Unit may require a signed record by the Academic Committee.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Resumen en español, 200–350 palabras.
-      Problema, objetivos, metodología, resultados y conclusiones.
-      Palabras clave (4–6).
+      Abstract in Spanish, 200–350 words.
+      Problem, objectives, methodology, results and conclusions.
+      Keywords (4–6).
 
   - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
     title: "Abstract"
-    guidance: Abstract en inglés. Recomendado. Máximo 350 palabras. Keywords (4–6).
+    guidance: "Abstract in English. Recommended. Maximum 350 words. Keywords (4–6)."
 
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
     guidance: |
-      Reconoce al profesor/a guía, Comité Académico, becas ANID
-      (ex-CONICYT: FONDECYT, FONDEF, Becas Chile) — incluye número de proyecto o beca.
-      También fondos UCH como VID-FONDAP o proyectos de la Vicerrectoría.
+      Acknowledge the thesis supervisor, Academic Committee, ANID grants
+      (ex-CONICYT: FONDECYT, FONDEF, Becas Chile) — include project or scholarship number.
+      Also include UCH funds such as VID-FONDAP or Vicerrectoría projects.
 
   - id: dedicatoria
     element_id: dedication
     placement: front_matter
     required: false
-    title: "Dedicatoria"
-    guidance: Opcional. Una o tres líneas. Sin encabezado impreso.
+    title: "Dedication"
+    guidance: "Optional. One to three lines. No printed heading."
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice General"
-    guidance: Generado automáticamente. Números de página exactos.
+    title: "Table of Contents"
+    guidance: "Generated automatically. Exact page numbers."
 
   - id: indice_figuras
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Índice de Figuras"
-    guidance: Activa si tienes 5 o más figuras.
+    title: "List of Figures"
+    guidance: "Enable if you have 5 or more figures."
 
   - id: indice_tablas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Índice de Tablas"
-    guidance: Activa si tienes 5 o más tablas.
+    title: "List of Tables"
+    guidance: "Enable if you have 5 or more tables."
 
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     label: "capitulo:introduccion"
     guidance: |
-      Contextualización, planteamiento del problema, justificación,
-      preguntas de investigación, objetivos, hipótesis y estructura.
-      APA 7: (Autor, año) en el texto.
+      Contextualization, problem statement, rationale,
+      research questions, objectives, hypotheses and structure.
+      APA 7: (Author, year) in the text.
 
   - id: marco_teorico
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teórico"
+    title: "Theoretical Framework"
     label: "capitulo:marcoteorico"
-    guidance: Revisión crítica organizada por temas. Identifica el vacío de la tesis.
+    guidance: "Critical review organized by topics. Identify the gap the thesis addresses."
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     label: "capitulo:metodologia"
     guidance: |
-      Diseño, muestra, instrumentos, procedimiento, análisis.
-      Aprobación del Comité de Ética de Investigación en Seres Humanos (CEISH)
-      si corresponde.
+      Research design, sample, instruments, procedure, analysis.
+      Approval from the Research Ethics Committee on Human Beings (CEISH)
+      if applicable.
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     label: "capitulo:resultados"
-    guidance: Hallazgos objetivos. Tablas y figuras APA 7.
+    guidance: "Objective findings. APA 7 tables and figures."
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     label: "capitulo:discusion"
-    guidance: Interpretación, comparación con literatura, implicaciones y limitaciones.
+    guidance: "Interpretation, comparison with literature, implications and limitations."
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     label: "capitulo:conclusiones"
-    guidance: Responde objetivos, aportaciones, limitaciones y trabajo futuro.
+    guidance: "Address objectives, contributions, limitations and future work."
 
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
-    guidance: APA 7ª edición, lista alfabética, sangría francesa.
+    title: "References"
+    guidance: "APA 7th edition, alphabetical list, hanging indent."
 
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apéndices"
-    guidance: Instrumentos, datos adicionales, dictamen ético. Apéndice A, B…
+    title: "Appendices"
+    guidance: "Instruments, additional data, ethics approval. Appendix A, B…"

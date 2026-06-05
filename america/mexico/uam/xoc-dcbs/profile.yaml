@@ -65,125 +65,125 @@ sections:
     element_id: title_page
     placement: front_matter
     required: true
-    title: "Portada"
-    guidance: >
-      Portada oficial UAM-DCBS: logo UAM, nombre de la universidad, unidad,
-      división y departamento, título del trabajo de investigación, nombre
-      del alumno, matrícula, trimestre y año, y nombre del director de tesis.
+    title: "Title Page"
+    guidance: |
+      Official UAM-DCBS title page: UAM logo, university name, campus,
+      division and department, research work title, student name and ID,
+      term and year, and thesis director’s name.
 
   - id: dedication
     element_id: dedication
     placement: front_matter
     required: false
-    title: "Dedicatoria"
+    title: "Dedication"
 
   - id: acknowledgements
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
 
   - id: abstract_es
     element_id: abstract_es
     placement: front_matter
     required: true
-    title: "Resumen"
-    guidance: >
-      Máximo 250 palabras. Estructura IMRyD abreviada: antecedentes,
-      objetivo, métodos, resultados y conclusión principal.
-      No incluir citas bibliográficas ni abreviaturas sin definir.
+    title: "Abstract (Spanish)"
+    guidance: |
+      Maximum 250 words. Abbreviated IMRaD structure: background,
+      objective, methods, results and main conclusion.
+      Do not include bibliographic citations or undefined abbreviations.
 
   - id: abstract_en
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: "Abstract"
-    guidance: "Traducción exacta del resumen al inglés. Obligatorio para posgrado."
+    title: "Abstract (English)"
+    guidance: "Exact English translation of the abstract. Mandatory for graduate programs."
 
   - id: table_of_contents
     element_id: table_of_contents
     placement: front_matter
     required: true
-    title: "Índice"
+    title: "Table of Contents"
 
   - id: list_of_figures
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Lista de Figuras"
+    title: "List of Figures"
 
   - id: list_of_tables
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Lista de Tablas"
+    title: "List of Tables"
 
   - id: introduction
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
-    guidance: >
-      Antecedentes del problema, relevancia clínica o biológica,
-      justificación, pregunta de investigación e hipótesis (si aplica).
+    title: "Introduction"
+    guidance: |
+      Background to the problem, clinical or biological relevance,
+      rationale, research question and hypothesis (if applicable).
 
   - id: theoretical_framework
     element_id: theoretical_framework
     placement: body
     required: true
-    title: "Marco Teórico"
-    guidance: >
-      Revisión del estado del arte. En ciencias de la salud se espera
-      revisión de literatura reciente (últimos 5 años preferentemente)
-      con énfasis en estudios controlados y revisiones sistemáticas.
+    title: "Theoretical Framework"
+    guidance: |
+      Review of the state of the art. In health sciences, a review of recent
+      literature (preferably last 5 years) with emphasis on controlled studies
+      and systematic reviews is expected.
 
   - id: methodology
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
-    guidance: >
-      Tipo de estudio (observacional, experimental, clínico, etc.),
-      población y muestra, criterios de inclusión/exclusión, variables,
-      procedimientos, instrumentos y análisis estadístico.
-      Incluir aprobación del comité de ética si aplica.
+    title: "Methodology"
+    guidance: |
+      Study type (observational, experimental, clinical, etc.),
+      population and sample, inclusion/exclusion criteria, variables,
+      procedures, instruments and statistical analysis.
+      Include ethics committee approval if applicable.
 
   - id: results
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
-    guidance: >
-      Presentación objetiva de los hallazgos sin interpretación.
-      Usar tablas y figuras cuando sean más claras que el texto.
-      Reportar medidas de frecuencia, tendencia central y dispersión.
+    title: "Results"
+    guidance: |
+      Objective presentation of findings without interpretation.
+      Use tables and figures when clearer than text.
+      Report frequency, central tendency and dispersion measures.
 
   - id: discussion
     element_id: discussion
     placement: body
     required: true
-    title: "Discusión"
-    guidance: >
-      Interpretación de los resultados en contexto con la literatura.
-      Discutir limitaciones del estudio. No repetir los resultados.
+    title: "Discussion"
+    guidance: |
+      Interpretation of results in the context of the literature.
+      Discuss study limitations. Do not repeat the results.
 
   - id: conclusions
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
-    guidance: "Conclusiones breves, directamente derivadas de los resultados."
+    title: "Conclusions"
+    guidance: "Brief conclusions, directly derived from the results."
 
   - id: references
     element_id: references
     placement: back_matter
     required: true
-    title: "Referencias"
-    guidance: "Formato Vancouver (numerado, en orden de aparición). Máximo 60 referencias para licenciatura, sin límite para posgrado."
+    title: "References"
+    guidance: "Vancouver format (numbered, in order of appearance). Maximum 60 references for undergraduate, no limit for graduate."
 
   - id: appendix
     element_id: appendix
     placement: appendix
     required: false
-    title: "Anexos"
-    guidance: "Instrumentos de medición, cartas de consentimiento informado, aprobaciones de comité, etc."
+    title: "Appendices"
+    guidance: "Measurement instruments, informed consent forms, committee approvals, etc."

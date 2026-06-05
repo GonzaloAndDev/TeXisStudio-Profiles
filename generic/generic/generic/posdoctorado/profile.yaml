@@ -40,106 +40,106 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      Incluye institución anfitriona, proyecto o estancia posdoctoral,
-      título del informe o monografía, investigador responsable, mentor
-      o supervisor, sede y fecha.
+      Include the host institution, postdoctoral project or fellowship,
+      report or monograph title, principal investigator, mentor
+      or supervisor, venue and date.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Sintetiza la agenda posdoctoral, objetivos, enfoque metodológico,
-      contribuciones, resultados y proyección futura. Longitud sugerida:
-      200–350 palabras.
+      Synthesizes the postdoctoral agenda, objectives, methodological approach,
+      contributions, results and future projections.
+      Suggested length: 200–350 words.
 
   - id: abstract_ingles
     element_id: abstract_en
     placement: front_matter
     required: false
-    title: "Abstract"
+    title: "Abstract (English)"
     guidance: |
-      Recomendado cuando el informe posdoctoral circulará internacionalmente
-      o se reportará a una convocatoria externa.
+      Recommended when the postdoctoral report will circulate internationally
+      or will be reported to an external funding call.
 
   - id: indice
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice"
+    title: "Table of Contents"
     guidance: |
-      Generado automáticamente. Revisa la consistencia final de la paginación.
+      Generated automatically. Review final pagination consistency.
 
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     guidance: |
-      Presenta el campo de investigación, la agenda del proyecto y el
-      posicionamiento del trabajo dentro de la línea posdoctoral.
+      Presents the research field, the project agenda and the
+      positioning of the work within the postdoctoral line of research.
 
   - id: estado_arte
     element_id: literature_review
     placement: body
     required: true
-    title: "Estado del Arte"
+    title: "State of the Art"
     guidance: |
-      Desarrolla una revisión crítica del estado actual del campo,
-      identifica vacíos y justifica la aportación del trabajo posdoctoral.
+      Develops a critical review of the current state of the field,
+      identifies gaps and justifies the contribution of the postdoctoral work.
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     guidance: |
-      Explica diseño, corpus o datos, procedimientos, protocolos, herramientas,
-      reproducibilidad y consideraciones éticas según corresponda.
+      Explains design, corpus or data, procedures, protocols, tools,
+      reproducibility and ethical considerations as applicable.
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     guidance: |
-      Presenta resultados, productos académicos, prototipos, artículos,
-      datasets o avances verificables obtenidos durante la estancia.
+      Presents results, academic outputs, prototypes, articles,
+      datasets or verifiable advances obtained during the fellowship.
 
   - id: discusion
     element_id: discussion
     placement: body
     required: true
-    title: "Discusión"
+    title: "Discussion"
     guidance: |
-      Interpreta el alcance de los resultados, su novedad, limitaciones,
-      y relación con el estado del arte.
+      Interprets the scope of the results, their novelty, limitations,
+      and relationship to the state of the art.
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     guidance: |
-      Resume las aportaciones del trabajo posdoctoral y su impacto
-      científico, metodológico o aplicado.
+      Summarizes the contributions of the postdoctoral work and its scientific,
+      methodological or applied impact.
 
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
+    title: "References"
     guidance: |
-      Lista final de referencias citadas, en formato APA 7.
+      Final list of cited references, in APA 7 format.
 
   - id: anexos
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Anexos"
+    title: "Annexes"
     guidance: |
-      Evidencia complementaria: instrumentos, tablas extendidas, protocolos,
-      productos, documentación técnica o material suplementario.
+      Supporting evidence: instruments, extended tables, protocols,
+      outputs, technical documentation or supplementary material.

@@ -59,56 +59,56 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: "Portada"
+    title: "Title Page"
     guidance: |
-      Generada automáticamente a partir de los metadatos del proyecto.
-      La portada oficial de la UNAM debe incluir:
-      • Logotipo y nombre de la UNAM (escudo universitario).
-      • Nombre de la Facultad, Instituto o Escuela Nacional.
-      • Nombre completo del programa de posgrado o licenciatura.
-      • Título de la tesis (en mayúsculas y minúsculas, centrado).
-      • "TESIS" o "DISERTACIÓN" según corresponda, seguido del grado
-        (e.g., "que para obtener el grado de Doctor en [campo] presenta:").
-      • Nombre completo del autor (sin abreviaturas).
-      • Nombre del director o directora de tesis.
-      • Ciudad de México, mes y año (e.g., "Ciudad de México, junio de 2026").
-      Consulta la plantilla de portada de tu programa — el formato varía
-      entre facultades y programas de posgrado.
+      Generated automatically from project metadata.
+      The official UNAM title page must include:
+      • UNAM logo and name (university shield).
+      • Name of the Faculty, Institute or National School.
+      • Full name of the graduate or undergraduate program.
+      • Thesis title (in title case, centered).
+      • "THESIS" or "DISSERTATION" as appropriate, followed by the degree
+        (e.g., "submitted to obtain the degree of Doctor in [field] by:").
+      • Author’s full name (no abbreviations).
+      • Name of the thesis supervisor.
+      • Mexico City, month and year (e.g., "Mexico City, June 2026").
+      Consult the title page template for your program — the format varies
+      between faculties and graduate programs.
 
   - id: declaracion
     element_id: declaration
     placement: front_matter
     required: true
-    title: "Declaración de Autenticidad"
+    title: "Authenticity Declaration"
     guidance: |
-      La Declaración de Autenticidad certifica que el trabajo es original
-      y que las fuentes están correctamente citadas. Contenido estándar:
-      "Declaro que el presente trabajo de tesis es original y de mi autoría.
-      Todas las fuentes consultadas han sido debidamente citadas y referenciadas
-      conforme a las normas APA séptima edición."
-      Algunas facultades y programas exigen adicionalmente:
-      • Carta de Responsiva firmada por el director de tesis.
-      • Formato específico emitido por la División de Estudios de Posgrado.
-      Verifica los requisitos de tu programa — el formulario puede requerirse
-      en la Coordinación antes de la impresión final.
+      The Authenticity Declaration certifies that the work is original
+      and sources are correctly cited. Standard content:
+      "I declare that this thesis is original and my own work.
+      All sources consulted have been duly cited and referenced
+      in accordance with APA 7th edition standards."
+      Some faculties and programs additionally require:
+      • A Letter of Responsibility signed by the thesis supervisor.
+      • A specific form issued by the Graduate Studies Division.
+      Verify the requirements with your program — the form may be required
+      at the Coordination office before the final print.
 
   - id: resumen
     element_id: abstract
     placement: front_matter
     required: true
-    title: "Resumen"
+    title: "Abstract"
     guidance: |
-      Resumen en español. Recomendado: 200–350 palabras.
-      Debe ser autocontenido: sin citas, sin siglas no definidas, sin ecuaciones.
-      Estructura recomendada según APA 7ª edición:
-        1. Planteamiento del problema de investigación.
-        2. Objetivo(s) general(es) del estudio.
-        3. Enfoque metodológico y diseño de investigación.
-        4. Principales hallazgos o resultados.
-        5. Conclusiones y aportaciones al campo.
-      Al final incluye entre 4 y 6 Palabras clave separadas por punto y coma.
-      El resumen aparecerá en el catálogo del Sistema Bibliotecario de la UNAM
-      (UNAM Biblioweb) — redáctalo como pieza independiente.
+      Abstract in Spanish. Recommended: 200–350 words.
+      Must be self-contained: no citations, no undefined abbreviations, no equations.
+      Recommended structure per APA 7th edition:
+        1. Research problem statement.
+        2. General objective(s) of the study.
+        3. Methodological approach and research design.
+        4. Main findings or results.
+        5. Conclusions and contributions to the field.
+      End with 4 to 6 Keywords separated by semicolons.
+      The abstract will appear in the UNAM Library System catalog
+      (UNAM Biblioweb) — write it as a standalone piece.
 
   - id: abstract_ingles
     element_id: abstract_en
@@ -116,256 +116,250 @@ sections:
     required: false
     title: "Abstract"
     guidance: |
-      Abstract en inglés. Recomendado en tesis de posgrado para visibilidad
-      internacional y requisito de ProQuest Dissertations & Theses.
-      Máximo 350 palabras (límite ProQuest para doctorado).
-      Autocontenido: sin citas, sin siglas no definidas.
-      Misma estructura que el Resumen, en inglés.
-      Agrega al final: Keywords (4–6 palabras clave en inglés).
+      Abstract in English. Recommended for graduate theses for international
+      visibility and required for ProQuest Dissertations & Theses.
+      Maximum 350 words (ProQuest limit for doctoral dissertations).
+      Self-contained: no citations, no undefined abbreviations.
+      Same structure as the Spanish Abstract, in English.
+      End with: Keywords (4–6 English keywords).
 
   - id: agradecimientos
     element_id: acknowledgements
     placement: front_matter
     required: false
-    title: "Agradecimientos"
+    title: "Acknowledgements"
     guidance: |
-      Opcional pero convencional en tesis universitarias mexicanas.
-      Reconoce: director(a) y comité de tesis, sinodales, compañeros de
-      laboratorio o grupo de investigación, instituciones que facilitaron
-      acceso a datos o archivos, y apoyo personal.
-      Si la investigación recibió financiamiento externo (CONACYT/CONAHCYT,
-      DGAPA-PAPIIT, PAPIME, becas internacionales) es obligatorio mencionarlo
-      con el número de proyecto o beca.
-      Ejemplo: "Esta investigación fue financiada por CONAHCYT a través
-      de la beca de doctorado nacional No. [xxxxx]."
-      Longitud típica: media a una página.
+      Optional but conventional in Mexican university theses.
+      Acknowledge: thesis supervisor and committee, fellow lab or research
+      group members, institutions that provided access to data or archives,
+      and personal support.
+      If the research received external funding (CONACYT/CONAHCYT,
+      DGAPA-PAPIIT, PAPIME, international scholarships), it is mandatory to
+      mention it with the project or scholarship number.
+      Example: "This research was funded by CONAHCYT through the
+      national doctoral scholarship No. [xxxxx]."
+      Typical length: half to one page.
 
   - id: dedicatoria
     element_id: dedication
     placement: front_matter
     required: false
-    title: "Dedicatoria"
+    title: "Dedication"
     guidance: |
-      Opcional. Breve — típicamente 1 a 3 líneas.
-      Sin encabezado impreso; el perfil gestiona el formato.
+      Optional. Brief — typically 1 to 3 lines.
+      No printed heading; the profile manages the formatting.
 
   - id: indice_general
     element_id: toc
     placement: front_matter
     required: true
-    title: "Índice General"
+    title: "Table of Contents"
     guidance: |
-      Generado automáticamente a partir de los encabezados del documento.
-      La UNAM exige un índice completo con números de página exactos.
-      Incluye: todos los preliminares (excepto la portada), los capítulos
-      del cuerpo, los apéndices y las referencias.
-      Profundidad recomendada: hasta nivel 2 (capítulos y apartados principales).
+      Generated automatically from document headings.
+      UNAM requires a complete table of contents with exact page numbers.
+      Includes: all front matter (except the title page), body chapters,
+      appendices and references.
+      Recommended depth: up to level 2 (chapters and main sections).
 
   - id: indice_figuras
     element_id: list_of_figures
     placement: front_matter
     required: false
-    title: "Índice de Figuras"
+    title: "List of Figures"
     guidance: |
-      Obligatorio si la tesis contiene figuras, gráficas, mapas o ilustraciones.
-      Generado automáticamente a partir de los pies de figura.
-      Activa esta sección si tienes 5 o más figuras.
-      En APA 7, las figuras se designan "Figura X" en el texto.
+      Required if the thesis contains figures, graphs, maps or illustrations.
+      Generated automatically from figure captions.
+      Enable this section if you have 5 or more figures.
+      In APA 7, figures are designated “Figure X” in the text.
 
   - id: indice_tablas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Índice de Tablas"
+    title: "List of Tables"
     guidance: |
-      Obligatorio si la tesis contiene tablas. Generado automáticamente.
-      Activa esta sección si tienes 5 o más tablas.
-      En APA 7, las tablas se designan "Tabla X" en el texto.
+      Required if the thesis contains tables. Generated automatically.
+      Enable this section if you have 5 or more tables.
+      In APA 7, tables are designated “Table X” in the text.
 
   - id: lista_abreviaturas
     element_id: list_of_tables
     placement: front_matter
     required: false
-    title: "Lista de Abreviaturas y Acrónimos"
+    title: "List of Abbreviations and Acronyms"
     guidance: |
-      Opcional, pero recomendado si la tesis usa más de 10 siglas o acrónimos.
-      Lista en orden alfabético: sigla en la izquierda, término completo a la derecha.
-      En el cuerpo del texto, define cada sigla la primera vez que aparece
-      escribiendo el término completo seguido de la sigla entre paréntesis.
+      Optional, but recommended if the thesis uses more than 10 abbreviations or acronyms.
+      List in alphabetical order: abbreviation on the left, full term on the right.
+      In the body text, define each abbreviation the first time it appears
+      by writing the full term followed by the abbreviation in parentheses.
 
-  # ── Cuerpo ────────────────────────────────────────────────────────
   - id: introduccion
     element_id: introduction
     placement: body
     required: true
-    title: "Introducción"
+    title: "Introduction"
     label: "capitulo:introduccion"
     guidance: |
-      La introducción establece el contexto, la problemática y la contribución.
-      Estructura recomendada por la UNAM-CEP para tesis de posgrado:
-      1. Contextualización: panorama del campo de estudio.
-      2. Planteamiento del problema: ¿qué vacío o contradicción existe en el
-         conocimiento actual?
-      3. Justificación: ¿por qué es relevante resolverlo? (importancia teórica,
-         práctica o social).
-      4. Pregunta(s) de investigación: formuladas de manera precisa.
-      5. Objetivo general y objetivos específicos: concretos y medibles.
-      6. Hipótesis o supuesto de trabajo (si aplica al diseño de investigación).
-      7. Delimitación: alcance espacial, temporal y temático del estudio.
-      8. Estructura de la tesis: párrafo breve por capítulo.
-      Citas APA 7: (Autor, año) en el texto o Autor (año) en forma narrativa.
-      Extensión típica: 15–25 páginas.
+      The introduction establishes the context, the problem and the contribution.
+      Structure recommended by UNAM-CEP for graduate theses:
+      1. Contextualization: overview of the field of study.
+      2. Problem statement: what gap or contradiction exists in current knowledge?
+      3. Rationale: why is it relevant to address it? (theoretical, practical
+         or social importance).
+      4. Research question(s): stated precisely.
+      5. General objective and specific objectives: concrete and measurable.
+      6. Hypothesis or working assumption (if applicable to the research design).
+      7. Scope: spatial, temporal and thematic boundaries of the study.
+      8. Thesis structure: a brief paragraph per chapter.
+      APA 7 citations: (Author, year) in the text or Author (year) in narrative form.
+      Typical length: 15–25 pages.
 
   - id: marco_teorico
     element_id: literature_review
     placement: body
     required: true
-    title: "Marco Teórico y Revisión de Literatura"
+    title: "Theoretical Framework and Literature Review"
     label: "capitulo:marcoteorico"
     guidance: |
-      El marco teórico presenta los fundamentos conceptuales y el estado del arte.
-      Lineamientos CEP-UNAM:
-      • Organiza por corrientes teóricas, enfoques o debates — no como resumen
-        secuencial de autores.
-      • Define los conceptos clave que emplearás a lo largo de la tesis.
-      • Revisa la literatura más relevante (últimos 10 años, más obras fundacionales).
-      • Identifica las contradicciones, los vacíos y los debates no resueltos que
-        justifican tu investigación.
-      • Concluye posicionando explícitamente tu trabajo dentro del campo.
-      Citas APA 7: toda afirmación sobre literatura existente lleva cita.
-      Para citas de segunda mano, usa: "como se citó en Autor (año)".
-      Extensión típica: 30–60 páginas.
+      The theoretical framework presents the conceptual foundations and state of the art.
+      CEP-UNAM guidelines:
+      • Organize by theoretical currents, approaches or debates — not as a
+        sequential summary of authors.
+      • Define the key concepts you will use throughout the thesis.
+      • Review the most relevant literature (last 10 years, plus foundational works).
+      • Identify contradictions, gaps and unresolved debates that
+        justify your research.
+      • Conclude by explicitly positioning your work within the field.
+      APA 7 citations: every claim about existing literature requires a citation.
+      For secondary citations, use: "as cited in Author (year)".
+      Typical length: 30–60 pages.
 
   - id: marco_conceptual
     element_id: theoretical_framework
     placement: body
     required: false
-    title: "Marco Conceptual"
+    title: "Conceptual Framework"
     label: "capitulo:marcoconceptual"
     guidance: |
-      Opcional. Actívalo como capítulo independiente si tu tesis requiere
-      desarrollar un marco analítico propio o si la contribución teórica es
-      central a la investigación.
-      Incluye: definición operacional de variables o categorías de análisis,
-      relaciones conceptuales, modelo o esquema analítico propio.
-      En muchas tesis de ciencias sociales y humanidades el marco conceptual
-      se integra dentro del capítulo de Marco Teórico.
+      Optional. Activate as an independent chapter if your thesis requires
+      developing a novel analytical framework or if the theoretical contribution
+      is central to the research.
+      Includes: operational definition of variables or analytical categories,
+      conceptual relationships, and the author’s own model or analytical scheme.
+      In many social science and humanities theses, the conceptual framework
+      is integrated within the Theoretical Framework chapter.
 
   - id: metodologia
     element_id: methodology
     placement: body
     required: true
-    title: "Metodología"
+    title: "Methodology"
     label: "capitulo:metodologia"
     guidance: |
-      La metodología debe permitir la replicabilidad del estudio. Incluye:
-      • Enfoque y paradigma: cuantitativo, cualitativo o mixto. Justifica
-        la elección con base en el problema y las preguntas de investigación.
-      • Diseño de investigación: experimental, cuasiexperimental, correlacional,
-        descriptivo, fenomenológico, hermenéutico, etc.
-      • Unidades de análisis, población y muestra (o corpus): criterios de
-        selección, tamaño, procedimiento de muestreo.
-      • Instrumentos y técnicas de recolección: encuestas, entrevistas,
-        observación, análisis documental, análisis de contenido, etc.
-        Incluye información sobre validación de instrumentos.
-      • Procedimiento de análisis de datos: software utilizado (SPSS, R, Atlas.TI,
-        NVivo), técnicas estadísticas o analíticas.
-      • Consideraciones éticas: aprobación del Comité de Ética si se trabajó
-        con seres humanos; consentimiento informado.
-      • Limitaciones metodológicas.
-      APA 7: los instrumentos de evaluación estandarizados llevan cita completa.
+      The methodology must allow the study to be replicated. Includes:
+      • Approach and paradigm: quantitative, qualitative or mixed. Justify
+        the choice based on the problem and research questions.
+      • Research design: experimental, quasi-experimental, correlational,
+        descriptive, phenomenological, hermeneutic, etc.
+      • Units of analysis, population and sample (or corpus): selection
+        criteria, size, sampling procedure.
+      • Data collection instruments and techniques: surveys, interviews,
+        observation, documentary analysis, content analysis, etc.
+        Include information about instrument validation.
+      • Data analysis procedure: software used (SPSS, R, Atlas.TI, NVivo),
+        statistical or analytical techniques.
+      • Ethical considerations: Ethics Committee approval if human subjects
+        were involved; informed consent.
+      • Methodological limitations.
+      APA 7: standardized assessment instruments require a full citation.
 
   - id: resultados
     element_id: results
     placement: body
     required: true
-    title: "Resultados"
+    title: "Results"
     label: "capitulo:resultados"
     guidance: |
-      Presenta los hallazgos de manera objetiva, sin interpretación.
-      • Organiza por pregunta de investigación u objetivo específico.
-      • Para estudios cuantitativos: reporta estadísticas descriptivas,
-        resultados de pruebas de hipótesis (estadístico, valor p, tamaño
-        del efecto), intervalos de confianza. Tablas y figuras con notas
-        al pie conforme a APA 7.
-      • Para estudios cualitativos: presenta categorías o temas emergentes
-        con citas textuales representativas; asegura anonimización de
-        participantes según los compromisos del consentimiento informado.
-      • Cada tabla y figura debe ser referenciada en el texto antes de aparecer.
-      • APA 7: "La Tabla X muestra…", "En la Figura X se observa…"
-      Extensión: varía; en tesis cuantitativas frecuentemente 30–60 páginas.
+      Present findings objectively, without interpretation.
+      • Organize by research question or specific objective.
+      • For quantitative studies: report descriptive statistics,
+        hypothesis test results (statistic, p-value, effect size),
+        confidence intervals. Tables and figures with footnotes per APA 7.
+      • For qualitative studies: present emerging categories or themes
+        with representative verbatim quotes; ensure participant anonymization
+        as committed to in the informed consent.
+      • Every table and figure must be referenced in the text before it appears.
+      • APA 7: “Table X shows…”, “Figure X illustrates…”
+      Length: varies; in quantitative theses often 30–60 pages.
 
   - id: discusion
     element_id: discussion
     placement: body
     required: false
-    title: "Discusión"
+    title: "Discussion"
     label: "capitulo:discusion"
     guidance: |
-      Interpreta los resultados en relación con el marco teórico y la literatura.
-      APA 7 recomienda iniciar con una declaración de respaldo o no al supuesto/hipótesis.
-      Una discusión sólida:
-      • Retoma cada resultado y lo conecta con la teoría y la evidencia previa
-        (confirmando, contradiciendo o matizando).
-      • Explica los resultados inesperados o contradictorios.
-      • Discute las implicaciones teóricas y prácticas.
-      • Reconoce honestamente las limitaciones del estudio.
-      • Sugiere líneas de investigación futura específicas, derivadas de las
-        limitaciones y los hallazgos no resueltos.
-      En muchas tesis de la UNAM este capítulo se fusiona con Resultados o con
-      Conclusiones. Actívalo como capítulo independiente si el análisis lo justifica.
+      Interpret results in relation to the theoretical framework and literature.
+      APA 7 recommends opening with a statement of support or non-support for the hypothesis.
+      A solid discussion:
+      • Takes each result and connects it to theory and prior evidence
+        (confirming, contradicting or nuancing it).
+      • Explains unexpected or contradictory results.
+      • Discusses theoretical and practical implications.
+      • Honestly acknowledges the study’s limitations.
+      • Suggests specific future research directions, derived from
+        limitations and unresolved findings.
+      In many UNAM theses this chapter is merged with Results or Conclusions.
+      Activate as an independent chapter if the analysis warrants it.
 
   - id: conclusiones
     element_id: conclusions
     placement: body
     required: true
-    title: "Conclusiones"
+    title: "Conclusions"
     label: "capitulo:conclusiones"
     guidance: |
-      Las conclusiones sintetizan el argumento central y las aportaciones:
-      • Responde directamente a cada pregunta de investigación u objetivo.
-      • Resume las aportaciones originales: ¿qué sabe ahora el campo que antes
-        no sabía gracias a esta investigación?
-      • Implicaciones prácticas, de política pública o de gestión (si aplica).
-      • Limitaciones específicas y honestas del trabajo.
-      • Líneas de investigación futura concretas y acotadas.
-      Evita repetir los resultados — el comité ha leído el capítulo anterior.
-      En tesis doctorales de la UNAM el comité sinodal evaluará la defensa oral;
-      las conclusiones son el texto que mejor prepara esa conversación.
-      Extensión típica: 10–20 páginas.
+      Conclusions synthesize the central argument and contributions:
+      • Directly answer each research question or objective.
+      • Summarize original contributions: what does the field now know that
+        it did not know before this research?
+      • Practical, public policy or management implications (if applicable).
+      • Specific and honest limitations of the work.
+      • Concrete and bounded future research directions.
+      Avoid repeating results — the committee has read the previous chapter.
+      In UNAM doctoral theses the committee will evaluate an oral defense;
+      conclusions are the text that best prepares that conversation.
+      Typical length: 10–20 pages.
 
-  # ── Finales ───────────────────────────────────────────────────────
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
+    title: "References"
     guidance: |
-      APA 7ª edición: lista alfabética por apellido del primer autor,
-      sangría francesa, generada automáticamente desde el archivo .bib.
-      Puntos de verificación APA 7 en español:
-      • Los títulos de libros y revistas van en cursiva.
-      • Los títulos de artículos y capítulos van sin comillas (a diferencia
-        de APA 6).
-      • DOI en formato de URL: https://doi.org/xxxxx (sin punto al final).
-      • Para fuentes en línea: incluye la URL y la fecha de acceso si el
-        contenido puede cambiar.
-      • Para tesis no publicadas: Apellido, N. (Año). Título de la tesis
-        [Tesis de doctorado, Universidad Nacional Autónoma de México].
-      Volumen esperado para doctorado: 100–300 referencias.
+      APA 7th edition: alphabetical list by first author’s last name,
+      hanging indent, generated automatically from your .bib file.
+      APA 7 verification points:
+      • Book and journal titles in italics.
+      • Article and chapter titles without quotation marks (unlike APA 6).
+      • DOI in URL format: https://doi.org/xxxxx (no trailing period).
+      • For online sources: include URL and access date if content may change.
+      • For unpublished theses: Last, N. (Year). Thesis title
+        [Doctoral dissertation, Universidad Nacional Autónoma de México].
+      Expected volume for doctoral theses: 100–300 references.
 
   - id: apendices
     element_id: appendix
     placement: back_matter
     required: false
-    title: "Apéndices"
+    title: "Appendices"
     guidance: |
-      Materiales complementarios que interrumpirían la narrativa principal:
-      • Instrumentos de investigación (cuestionarios, guías de entrevista,
-        rúbricas de observación).
-      • Datos brutos, tablas estadísticas extendidas o resultados adicionales.
-      • Carta de aprobación del Comité de Ética y formatos de consentimiento.
-      • Transcripciones de entrevistas (fragmentos representativos).
-      • Cartas de autorización de instituciones colaboradoras.
-      Etiqueta: Apéndice A, B… con título descriptivo.
-      Referencia desde el texto: "(véase Apéndice A)".
+      Supplementary materials that would interrupt the main narrative:
+      • Research instruments (questionnaires, interview guides,
+        observation rubrics).
+      • Raw data, extended statistical tables or additional results.
+      • Ethics Committee approval letter and consent forms.
+      • Interview transcripts (representative excerpts).
+      • Authorization letters from collaborating institutions.
+      Label: Appendix A, B… with descriptive title.
+      Reference from the text: "(see Appendix A)".

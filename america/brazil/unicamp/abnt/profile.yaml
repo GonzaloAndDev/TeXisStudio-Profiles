@@ -23,44 +23,44 @@ sections:
     element_id: cover
     placement: front_matter
     required: true
-    title: Capa
+    title: "Cover Page"
   - id: folha_rosto
     element_id: title_page
     placement: front_matter
     required: true
-    title: "Folha de Rosto"
+    title: "Title Page"
   - id: resumo
     element_id: abstract
     placement: front_matter
     required: true
-    title: Resumo
+    title: "Abstract (Portuguese)"
   - id: abstract
     element_id: abstract_en
     placement: front_matter
     required: true
-    title: Abstract
+    title: "Abstract (English)"
   - id: sumario
     element_id: toc
     placement: front_matter
     required: true
-    title: "Sumario"
+    title: "Table of Contents"
   - id: introducao
     element_id: chapter
     placement: body
     required: true
-    title: "Introducao"
+    title: "Introduction"
   - id: capitulos
     element_id: chapter
     placement: body
     required: true
-    title: "Capitulos"
+    title: "Development Chapters"
   - id: conclusao
     element_id: chapter
     placement: body
     required: true
-    title: "Conclusao"
+    title: "Conclusion"
   - id: referencias
     element_id: bibliography
     placement: back_matter
     required: true
-    title: "Referencias"
+    title: "References"

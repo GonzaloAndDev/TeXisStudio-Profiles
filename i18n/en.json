@@ -654,7 +654,7 @@
         }
       },
       "name": "UAM Cuajimalpa — DCI",
-      "description": "Division de Ciencias de la Información, UAM Cuajimalpa. Computación, Tecnologías de la Información y Design de la Comunicación Gráfica.",
+      "description": "Information Sciences Division, UAM Cuajimalpa. Computing, information technologies and graphic communication design.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias de la Información",
       "faculty": "Unidad Cuajimalpa",
@@ -759,7 +759,7 @@
         },
         "list_of_tables": {
           "title": "List of Tables",
-          "guidance": "En CSH se prefiere 'tables' en lugar de 'tables'."
+          "guidance": "For CSH, use the list of tables when the document includes several tables."
         },
         "introduction": {
           "title": "Introduction",
@@ -856,7 +856,7 @@
         },
         "appendix": {
           "title": "Appendices",
-          "guidance": "Instruments de medition, cartas de informed consent, aprobaciones de comité, etc."
+          "guidance": "Measurement instruments, informed consent letters, committee approvals, etc."
         }
       },
       "name": "UAM Xochimilco — DCBS",
@@ -940,7 +940,7 @@
         }
       },
       "name": "UANL - Thesis (APA 7)",
-      "description": "Thesis de la Autonomous University of Nuevo Leon, APA 7",
+      "description": "Thesis of the Autonomous University of Nuevo Leon, APA 7",
       "institution": "Autonomous University of Nuevo Leon"
     },
     "mx_udg_apa7": {

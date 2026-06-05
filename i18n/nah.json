@@ -158,7 +158,7 @@
           "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
         },
         "resume": {
-          "title": "Résumé (French Abstract)",
+          "title": "Currículum (resumen francés)",
           "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
         },
         "acknowledgements": {
@@ -190,7 +190,7 @@
         "methodology": {
           "title": "Metodología",
           "label": "chapter:methodology",
-          "guidance": "Research design, participants, measures, procedure, analysis, ethics.\nMcGill requires Research Ethics Board (REB) approval for human participants.\n"
+          "guidance": "Diseño de investigación, participantes, medidas, procedimiento, análisis, ética.\nMcGill requiere la aprobación de la Junta de Ética en Investigación (REB) para los participantes humanos."
         },
         "results": {
           "title": "Resultados",
@@ -200,20 +200,20 @@
         "discussion": {
           "title": "Discusión",
           "label": "chapter:discussion",
-          "guidance": "Interpretation, connections to literature, implications, limitations."
+          "guidance": "Interpretación, conexiones con la literatura, implicaciones y limitaciones."
         },
         "conclusion": {
           "title": "Conclusión",
           "label": "chapter:conclusion",
-          "guidance": "Restate contributions, answer research questions, limitations,\nand future directions. Length: 10–20 pages.\n"
+          "guidance": "Replantear contribuciones, responder preguntas de investigación, limitaciones,\ny direcciones futuras. Extensión: 10 a 20 páginas."
         },
         "references": {
           "title": "Referencias",
-          "guidance": "APA 7 — alphabetical, hanging indent. Auto-generated."
+          "guidance": "APA 7: sangría francesa alfabética. Generado automáticamente."
         },
         "appendices": {
           "title": "Apéndices",
-          "guidance": "Instruments, additional data, ethics approval, consent forms."
+          "guidance": "Instrumentos, datos adicionales, aprobación ética y formularios de consentimiento."
         }
       },
       "name": "McGill - Tesis (APA 7)",
@@ -1227,7 +1227,7 @@
         },
         "dedication": {
           "title": "Dedicatoria",
-          "guidance": "Optional personal dedication. Brief — typically 1–3 lines.\nNo heading or title is usually printed; the profile handles the formatting.\n"
+          "guidance": "Dedicación personal opcional. Breve: normalmente de 1 a 3 líneas.\nPor lo general, no se imprime ningún encabezado o título; el perfil maneja el formato."
         },
         "introduction": {
           "title": "Introducción",
@@ -1237,7 +1237,7 @@
         "literature_review": {
           "title": "Revisión de literatura",
           "label": "chapter:literature",
-          "guidance": "The literature review demonstrates mastery of the field and positions your contribution.\nHarvard GSAS expectations:\n• Organize thematically or methodologically, not as a sequential summary of papers.\n• Identify schools of thought, debates, and key theoretical divides.\n• Critically evaluate — what each approach does and fails to do.\n• Build explicitly toward the gap your dissertation fills.\n• Cover major journals and recent (last 5–10 years) scholarship; foundational works can be older.\nUse the DOI importer to add papers from Crossref. Zotero integration is available for\nimporting directly from your library.\nLength: 30–60 pages for a humanities or social science dissertation.\n"
+          "guidance": "La revisión de la literatura demuestra dominio del campo y posiciona su contribución.\nExpectativas de Harvard GSAS:\n• Organizar temática o metodológicamente, no como un resumen secuencial de artículos.\n• Identificar escuelas de pensamiento, debates y divisiones teóricas clave.\n• Evaluar críticamente: lo que cada enfoque hace y lo que no logra.\n• Construya explícitamente hacia el vacío que llena su tesis.\n• Cubrir revistas importantes y becas recientes (de los últimos 5 a 10 años); Las obras fundacionales pueden ser más antiguas.\nUtilice el importador DOI para agregar papeles desde Crossref. La integración Zotero está disponible para\nimportando directamente desde su biblioteca.\nExtensión: 30 a 60 páginas para una tesis en humanidades o ciencias sociales."
         },
         "theoretical_framework": {
           "title": "Marco teórico",
@@ -1276,7 +1276,7 @@
       "name": "Harvard - Tesis (APA 7)",
       "description": "Perfil académico para Harvard - Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "Harvard University",
-      "program_name": "Psychology and Social Sciences"
+      "program_name": "Psicología y Ciencias Sociales"
     },
     "us_harvard_chicago17": {
       "sections": {
@@ -1310,7 +1310,7 @@
         },
         "dedication": {
           "title": "Dedicatoria",
-          "guidance": "Optional. Brief — typically 1–3 lines.\nNo heading is printed; the profile handles formatting.\n"
+          "guidance": "Opcional. Breve: normalmente de 1 a 3 líneas.\nNo se imprime ningún título; el perfil maneja el formato."
         },
         "introduction": {
           "title": "Introducción",
@@ -1359,7 +1359,7 @@
       "name": "Harvard - Tesis (Chicago 17)",
       "description": "Perfil académico para Harvard - Tesis (Chicago 17). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "Harvard University",
-      "program_name": "Humanities and Social Sciences"
+      "program_name": "Humanidades y Ciencias Sociales"
     },
     "us_mit_ieee": {
       "sections": {
@@ -1429,7 +1429,7 @@
       "name": "MIT - Tesis (IEEE)",
       "description": "Perfil académico para MIT - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "Massachusetts Institute of Technology",
-      "program_name": "Engineering and Sciences"
+      "program_name": "Ingeniería y Ciencias"
     },
     "us_stanford_ieee": {
       "sections": {
@@ -1474,7 +1474,7 @@
         "methodology": {
           "title": "Enfoque propuesto",
           "label": "chapter:methodology",
-          "guidance": "The core technical contribution. Describe it with enough detail for replication:\n• Problem formulation: precise mathematical or computational definition.\n• System architecture or algorithm design (use block diagrams where helpful).\n• Key design decisions and their justification — why this approach and not others.\n• Theoretical analysis: complexity, convergence, correctness proofs, or bounds\n  (where applicable to the contribution type).\n• Implementation notes relevant to correctness (full code listings → Appendix).\nStanford engineering reading committees expect formal rigor:\ndefine all symbols, prove claims, and state assumptions explicitly.\n"
+          "guidance": "La contribución técnica central. Descríbalo con suficiente detalle para replicarlo:\n• Formulación de problemas: definición matemática o computacional precisa.\n• Arquitectura del sistema o diseño de algoritmos (use diagramas de bloques cuando sea útil).\n• Decisiones clave de diseño y su justificación: por qué este enfoque y no otros.\n• Análisis teórico: complejidad, convergencia, pruebas de corrección o límites.\n (cuando corresponda al tipo de contribución).\n• Notas de implementación relevantes para la corrección (listados de códigos completos → Apéndice).\nLos comités de lectura de ingeniería de Stanford esperan rigor formal:\ndefinir todos los símbolos, probar afirmaciones y establecer suposiciones explícitamente."
         },
         "experiments": {
           "title": "Evaluación experimental",
@@ -1503,7 +1503,7 @@
       "name": "Stanford - Tesis (IEEE)",
       "description": "Perfil académico para Stanford - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "Stanford University",
-      "program_name": "Engineering and Computer Science"
+      "program_name": "Ingeniería e Informática"
     },
     "us_chicago_chicago17": {
       "sections": {
@@ -1756,7 +1756,7 @@
       "name": "Kyoto University - Tesis (APA 7)",
       "description": "Perfil académico para Kyoto University - Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "Kyoto University",
-      "program_name": "Humanities and Social Sciences"
+      "program_name": "Humanidades y Ciencias Sociales"
     },
     "jp_utokyo_ieee": {
       "sections": {
@@ -1800,7 +1800,7 @@
       "name": "U Tokyo - Tesis (IEEE)",
       "description": "Perfil académico para U Tokyo - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "University of Tokyo",
-      "program_name": "Engineering and Sciences"
+      "program_name": "Ingeniería y Ciencias"
     },
     "sg_nus_ieee": {
       "sections": {
@@ -1844,7 +1844,7 @@
       "name": "NUS - Tesis (IEEE)",
       "description": "Perfil académico para NUS - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "National University of Singapore",
-      "program_name": "Computing and Engineering"
+      "program_name": "Computación e Ingeniería"
     },
     "kr_snu_apa7": {
       "sections": {
@@ -1905,11 +1905,11 @@
         },
         "acknowledgements": {
           "title": "Agradecimientos / Danksagung",
-          "guidance": "Acknowledge supervisor(s), committee members, funding (DFG, BMBF,\nEU Horizon, LMU research grants — with project numbers).\n"
+          "guidance": "Reconocer a los supervisores, miembros del comité, financiamiento (DFG, BMBF,\nBecas de investigación EU Horizon, LMU (con números de proyecto)."
         },
         "table_of_contents": {
           "title": "Índice",
-          "guidance": "Auto-generated. Complete with page numbers."
+          "guidance": "Generado automáticamente. Complete con los números de página."
         },
         "list_of_figures": {
           "title": "Lista de figuras",
@@ -1922,17 +1922,17 @@
         "introduction": {
           "title": "Introducción",
           "label": "chapter:introduction",
-          "guidance": "Establishes research problem, motivation, gap, research questions,\ntheoretical framework, and dissertation structure.\nAPA 7: (Author, year) citations throughout.\nLength: 10–25 pages.\n"
+          "guidance": "Establece el problema de investigación, la motivación, la brecha, las preguntas de investigación,\nMarco teórico y estructura de la tesis.\nAPA 7: (Autor, año) citas en todas partes.\nLongitud: 10 a 25 páginas."
         },
         "literature_review": {
           "title": "Antecedentes teóricos y revisión de literatura",
           "label": "chapter:literature",
-          "guidance": "Conceptual foundations and critical review of prior work.\nOrganized by theory or research area — not chronologically.\nIdentify the gap that this dissertation fills.\n"
+          "guidance": "Fundamentos conceptuales y revisión crítica de trabajos anteriores.\nOrganizado por teoría o área de investigación, no cronológicamente.\nIdentifique el vacío que llena esta tesis."
         },
         "methodology": {
           "title": "Metodología",
           "label": "chapter:methodology",
-          "guidance": "Research design, participants/sample, measures, procedure,\nstatistical analysis, and ethical approval (Ethics Committee, DGPs).\n"
+          "guidance": "Diseño de investigación, participantes/muestra, medidas, procedimiento,\nanálisis estadístico y aprobación ética (Comité de Ética, DGP)."
         },
         "results": {
           "title": "Resultados",
@@ -1942,16 +1942,16 @@
         "discussion": {
           "title": "Discusión",
           "label": "chapter:discussion",
-          "guidance": "Interpretation in relation to theory and prior literature.\nImplications, limitations, and future research directions.\n"
+          "guidance": "Interpretación en relación con la teoría y la literatura previa.\nImplicaciones, limitaciones y direcciones futuras de investigación."
         },
         "conclusion": {
           "title": "Conclusiones generales",
           "label": "chapter:conclusion",
-          "guidance": "Synthesizes contributions, limitations, and outlook.\nOften brief in social science dissertations (5–15 pages).\n"
+          "guidance": "Sintetiza contribuciones, limitaciones y perspectivas.\nA menudo breve en disertaciones de ciencias sociales (5 a 15 páginas)."
         },
         "references": {
           "title": "Referencias",
-          "guidance": "APA 7 — alphabetical, hanging indent. Auto-generated."
+          "guidance": "APA 7: lista alfabética con sangría francesa. Generada automáticamente."
         },
         "appendices": {
           "title": "Apéndices",
@@ -1969,7 +1969,7 @@
           "guidance": "Prepara la portada conforme a la plantilla oficial de tu institución. Incluye título completo, autor, programa, asesores, institución, lugar y año."
         },
         "zusammenfassung": {
-          "title": "Zusammenfassung (Abstract auf Deutsch)",
+          "title": "Zusammenfassung (Resumen en alemán)",
           "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
         },
         "abstract_english": {
@@ -1978,7 +1978,7 @@
         },
         "acknowledgements": {
           "title": "Agradecimientos",
-          "guidance": "Optional but standard. Acknowledge: doctoral supervisor (Betreuer) and\ncommittee members (Prüfungskommission), DFG, BMBF, EU Horizon, DAAD,\nor industry partners (with project/grant numbers).\nExample: \"This work was funded by the Deutsche Forschungsgemeinschaft\n(DFG) under project number [XXX-XXXXXX].\"\nTypical length: half to one page.\n"
+          "guidance": "Opcional pero estándar. Reconocer: director de doctorado (Betreuer) y\nmiembros del comité (Prüfungskommission), DFG, BMBF, EU Horizon, DAAD,\no socios de la industria (con números de proyecto/subvención).\nEjemplo: \"Este trabajo fue financiado por la Deutsche Forschungsgemeinschaft\n(DFG) bajo el número de proyecto [XXX-XXXXXX]\".\nLongitud típica: de media a una página."
         },
         "table_of_contents": {
           "title": "Índice",
@@ -2032,7 +2032,7 @@
         }
       },
       "name": "TU Munich - Disertación (IEEE)",
-      "description": "Technische Universitaet Muenchen dissertation for engineering, IEEE",
+      "description": "Tesis de ingeniería de la Technische Universitaet Muenchen, IEEE",
       "institution": "Technische Universitaet Muenchen",
       "program_name": "Engineering"
     },
@@ -2126,7 +2126,7 @@
         "methodology": {
           "title": "Enfoque propuesto",
           "label": "chapter:methodology",
-          "guidance": "Core technical contribution with full reproducibility:\n• Problem formulation: precise mathematical or computational definition.\n• System design or algorithm (with block diagrams or pseudocode).\n• Theoretical analysis: complexity, bounds, or convergence.\n• Design decisions and their justification.\n• Implementation details relevant to correctness.\nTU Delft promotiecommissies are typically 5–8 experts including external\n(outside TU Delft) and international members — the contribution must be\nclearly and rigorously stated.\n"
+          "guidance": "Contribución técnica central con total reproducibilidad:\n• Formulación de problemas: definición matemática o computacional precisa.\n• Diseño de sistemas o algoritmo (con diagramas de bloques o pseudocódigo).\n• Análisis teórico: complejidad, límites o convergencia.\n• Decisiones de diseño y su justificación.\n• Detalles de implementación relevantes para la corrección.\nLas comisiones de promoción de TU Delft suelen estar formadas por entre 5 y 8 expertos, incluidos expertos externos.\n(fuera de TU Delft) y miembros internacionales: la contribución debe ser\nexpresada de forma clara y rigurosa."
         },
         "experiments": {
           "title": "Evaluación experimental",
@@ -2155,7 +2155,7 @@
       "name": "TU Delft - Tesis (IEEE)",
       "description": "Perfil académico para TU Delft - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "Delft University of Technology",
-      "program_name": "Engineering and Technology"
+      "program_name": "Ingeniería y Tecnología"
     },
     "es_ucm_apa7": {
       "sections": {
@@ -2245,7 +2245,7 @@
           "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
         },
         "sammanfattning": {
-          "title": "Sammanfattning (Swedish Abstract)",
+          "title": "Sammanfattning (resumen sueco)",
           "guidance": "Redacta un resumen autocontenido con problema, objetivo, método, resultados principales y aportación. Respeta la extensión requerida y agrega palabras clave si se solicitan."
         },
         "acknowledgements": {
@@ -2254,7 +2254,7 @@
         },
         "table_of_contents": {
           "title": "Índice",
-          "guidance": "Auto-generated. Complete with page numbers."
+          "guidance": "Generado automáticamente. Complete con los números de página."
         },
         "list_of_figures": {
           "title": "Lista de figuras",
@@ -2272,22 +2272,22 @@
         "background": {
           "title": "Antecedentes",
           "label": "chapter:background",
-          "guidance": "Technical foundations and related work. Gap statement."
+          "guidance": "Fundamentos técnicos y trabajos relacionados. Declaración de brecha."
         },
         "methodology": {
           "title": "Metodología",
           "label": "chapter:methodology",
-          "guidance": "System design, algorithms, theoretical analysis, design decisions."
+          "guidance": "Diseño del sistema, algoritmos, análisis teórico y decisiones de diseño."
         },
         "experiments": {
           "title": "Resultados experimentales",
           "label": "chapter:experiments",
-          "guidance": "Experimental setup, ablations, comparison to baselines,\nstatistical reporting. IEEE: Fig. X and Table X.\n"
+          "guidance": "Configuración experimental, ablaciones, comparación con las líneas de base,\ninformes estadísticos. IEEE: Fig. X y Tabla X."
         },
         "discussion": {
           "title": "Discusión",
           "label": "chapter:discussion",
-          "guidance": "Interpretation, limitations, scalability, industry relevance."
+          "guidance": "Interpretación, limitaciones, escalabilidad y relevancia para la industria."
         },
         "conclusion": {
           "title": "Conclusiones y trabajo futuro",
@@ -2306,7 +2306,7 @@
       "name": "KTH - Tesis (IEEE)",
       "description": "Perfil académico para KTH - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "KTH Royal Institute of Technology",
-      "program_name": "Engineering and Technology"
+      "program_name": "Ingeniería y Tecnología"
     },
     "uk_cambridge_apa7": {
       "sections": {
@@ -2324,7 +2324,7 @@
         },
         "acknowledgements": {
           "title": "Agradecimientos",
-          "guidance": "Acknowledge your supervisor, funding bodies (mandatory if externally funded),\ncollaborators, and any third-party data or material providers.\nIf your research involved human subjects, acknowledge ethics approval here\n(e.g. \"This research was approved by the Cambridge Psychology Research Ethics\nCommittee, reference PREC/2023/xxx\").\nTypical length: half to one page.\n"
+          "guidance": "Reconozca a su supervisor, organismos de financiación (obligatorio si recibe financiación externa), colaboradores y cualquier tercero proveedor de datos o materiales. Si su investigación involucró participantes humanos, mencione aquí la aprobación ética (por ejemplo, \"This research was approved by the Cambridge Psychology Research Ethics Committee, reference PREC/2023/xxx\"). Extensión típica: de media página a una página."
         },
         "table_of_contents": {
           "title": "Índice",
@@ -2389,7 +2389,7 @@
       "name": "Cambridge - PhD Tesis (APA 7)",
       "description": "Perfil académico para Cambridge - PhD Tesis (APA 7). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "University of Cambridge",
-      "program_name": "Social Sciences, Psychology, and Education"
+      "program_name": "Ciencias Sociales, Psicología y Educación"
     },
     "uk_cambridge_ieee": {
       "sections": {
@@ -2430,7 +2430,7 @@
         "methodology": {
           "title": "Metodología propuesta",
           "label": "chapter:methodology",
-          "guidance": "The core technical contribution. Must be complete enough for replication:\n• Problem formulation: mathematical or computational definition.\n• System design or algorithm description (with diagrams where helpful).\n• Theoretical analysis: complexity, convergence, correctness, or bounds.\n• Key design choices with justification.\n• Implementation details relevant to correctness (full listings → Appendix).\nCambridge examiners apply a strict standard: every claim must be stated\nas a theorem/proposition/lemma (if formal) or as an empirically testable\nhypothesis (if experimental). Ambiguity in the contribution is the most\ncommon reason for major corrections.\n"
+          "guidance": "La contribución técnica central. Debe ser lo suficientemente completo para la replicación:\n• Formulación de problemas: definición matemática o computacional.\n• Diseño del sistema o descripción del algoritmo (con diagramas cuando sea útil).\n• Análisis teórico: complejidad, convergencia, corrección o límites.\n• Opciones de diseño claves con justificación.\n• Detalles de implementación relevantes para la corrección (listados completos → Apéndice).\nLos examinadores de Cambridge aplican un estándar estricto: cada afirmación debe declararse\ncomo teorema/proposición/lema (si es formal) o como método empíricamente comprobable\nhipótesis (si es experimental). La ambigüedad en la contribución es la más\nRazón común para correcciones importantes."
         },
         "experiments": {
           "title": "Evaluación experimental",
@@ -2459,7 +2459,7 @@
       "name": "Cambridge - Tesis (IEEE)",
       "description": "Perfil académico para Cambridge - Tesis (IEEE). Sigue los metadatos, secciones requeridas y estilo bibliográfico del perfil.",
       "institution": "University of Cambridge",
-      "program_name": "Engineering and Natural Sciences"
+      "program_name": "Ingeniería y Ciencias Naturales"
     },
     "uk_oxford_mhra": {
       "sections": {
@@ -2473,7 +2473,7 @@
         },
         "acknowledgements": {
           "title": "Agradecimientos",
-          "guidance": "Thank your supervisor and co-supervisors, funding bodies (mandatory if funded),\ncollege, department, collaborators, and ethics boards if relevant.\nNote your sources of funding (scholarships, grants, project numbers).\nTypical length: half a page.\n"
+          "guidance": "Agradezca a su supervisor y cosupervisores, organismos de financiación (obligatorios si están financiados),\nuniversidad, departamento, colaboradores y juntas de ética, si corresponde.\nAnote sus fuentes de financiación (becas, subvenciones, números de proyectos).\nLongitud típica: media página."
         },
         "table_of_contents": {
           "title": "Índice",
@@ -2884,7 +2884,7 @@
     },
     "harvard": {
       "name": "Harvard",
-      "description": "Author-date style similar to APA, widely used in UK and Australian universities. Common in business, management, and social science programs outside the USA. No single authoritative manual — institutions often define their own variant.\n"
+      "description": "Estilo autor-fecha similar a APA, ampliamente utilizado en universidades del Reino Unido y Australia. Es común en programas de negocios, administración y ciencias sociales fuera de Estados Unidos. No existe un único manual autoritativo; las instituciones suelen definir su propia variante.\n"
     },
     "ieee": {
       "name": "IEEE",
@@ -2896,7 +2896,7 @@
     },
     "mla9": {
       "name": "MLA 9",
-      "description": "Standard for language, literature, and cultural studies in North America. Uses parenthetical author-page citations. Ninth edition (2021) simplified formatting rules and introduced more flexible source types.\n"
+      "description": "Estándar para estudios de lengua, literatura y cultura en Norteamérica. Usa citas parentéticas autor-página. La novena edición (2021) simplificó las reglas de formato e introdujo tipos de fuente más flexibles.\n"
     },
     "vancouver": {
       "name": "Vancouver",

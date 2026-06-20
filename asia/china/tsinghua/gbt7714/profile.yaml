@@ -11,7 +11,7 @@ document_class:
   - a4paper
   - oneside
 bibliography_backend: biber
-bibliography_style: gb7714
+bibliography_style: gb7714-2015
 page_layout:
   paper: a4paper
   margins:

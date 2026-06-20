@@ -93,6 +93,15 @@ jobs:
           ALLOWED_SCOPE = {
               'institutional', 'degree_specific', 'program_specific', 'discipline_specific',
           }
+          # Estilos bibliográficos que la app sabe generar (biblatex style=) Y
+          # previsualizar. DEBE coincidir con texis-core/src/bibliography/formatter.rs.
+          # Un valor fuera de este set produce biblatex \usepackage[style=...] inválido
+          # (fallo de compilación) o un preview que cae a genérico. Esto atrapa
+          # drift como "gb7714" (correcto: "gb7714-2015") antes de publicar.
+          ALLOWED_BIB_STYLES = {
+              'apa', 'ieee', 'vancouver', 'verbose-note', 'chicago-authordate',
+              'chicago-notes', 'mla', 'abnt', 'gb7714-2015', 'mhra',
+          }
           for path in sorted(pathlib.Path('.').rglob('profile.yaml')):
               if '.git' in path.parts or 'profile_samples' in path.parts:
                   continue
@@ -104,6 +113,12 @@ jobs:
               for field in REQUIRED:
                   if field not in p:
                       errors.append(f"MISSING FIELD '{field}' in {path}")
+              bib_style = p.get('bibliography_style')
+              if bib_style is not None and bib_style not in ALLOWED_BIB_STYLES:
+                  errors.append(
+                      f"INVALID_BIBLIOGRAPHY_STYLE: {path} -> '{bib_style}' "
+                      f"(permitidos: {', '.join(sorted(ALLOWED_BIB_STYLES))})"
+                  )
               status = p.get('status', '')
               ver = p.get('verification') or {}
               if status in ('reviewed', 'verified'):

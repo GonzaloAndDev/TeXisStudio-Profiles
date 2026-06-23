@@ -535,7 +535,7 @@
           "title": "Załączniki"
         }
       },
-      "name": "UAM Azcapotzalco — CBI",
+      "name": "UAM Azcapotzalco – CBI",
       "description": "Wydział Nauk Podstawowych i Inżynierii, UAM Azcapotzalco. Inżynieria, informatyka, systemy i matematyka stosowana.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
@@ -743,7 +743,7 @@
           "title": "Załączniki"
         }
       },
-      "name": "UAM Iztapalapa — CBI",
+      "name": "UAM Iztapalapa – CBI",
       "description": "Wydział Nauk Podstawowych i Inżynierii, UAM Iztapalapa. Fizyka, chemia, matematyka i elektrotechnika.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
@@ -1131,8 +1131,8 @@
       "name": "UNAM - Praca dyplomowa (APA 7)",
       "description": "Praca magisterska UNAM według wytycznych DGAE, styl APA 7",
       "institution": "Narodowy Uniwersytet Autonomiczny Meksyku",
-      "faculty": "Sistema de Posgrado",
-      "program_name": "Posgrado UNAM"
+      "faculty": "System de Posgrado",
+      "program_name": "Pobierz UNAM"
     },
     "mx_unam_vancouver": {
       "sections": {
@@ -1210,7 +1210,7 @@
       "name": "UNAM – Ciencias de la Salud (Vancouver)",
       "description": "Profil akademicki dla UNAM - Nauki o zdrowiu (Vancouver). Postępuj zgodnie z metadanymi profilu, wymaganymi sekcjami i stylem bibliografii.",
       "institution": "Narodowy Uniwersytet Autonomiczny Meksyku",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "System de Posgrado",
       "program_name": "Medicina y Ciencias de la Salud"
     },
     "us_harvard_apa7": {
@@ -1978,7 +1978,7 @@
       },
       "name": "LMU Monachium – rozprawa doktorska (APA 7)",
       "description": "Rozprawa Ludwig-Maximilians-Universitaet Muenchen, APA 7",
-      "institution": "Ludwig-Maximilians-Universitaet Muenchen"
+      "institution": "Ludwiga-Maximilians-Universitaet Muenchen"
     },
     "de_tum_ieee": {
       "sections": {
@@ -1987,7 +1987,7 @@
           "guidance": "Strona tytułowa TUM musi zawierać:\n• Logo TUM (Technische Universität München).\n• Pełny tytuł rozprawy doktorskiej (w języku pracy).\n• Imię i nazwisko autora.\n• „Vollständiger Abdruck der von der [Fakultät / Szkoła X] der\n Technischen Universität München zur Erlangung des akademischen Grades\n eines Doktors der [Ingenieurwissenschaften / Naturwissenschaften / etc.]\n rozprawa genehmigten.”\n• Vorsitzende(r) der Prüfungskommission i Prüfer der Dissertation\n (przełożony(zy) i komisja — wymienione z nazwiskiem i przewodniczącym/przynależnością TUM).\n• „Die Dissertation wurde am [data] bei der Technischen Universität\n München eingereicht und durch die [Fakultät] am [data] angenommen.”\nSprawdź dokładne sformułowanie w języku niemieckim w Promotionsbüro swojego wydziału —\nTUM Szkoły mają nieco inne sformułowania."
         },
         "zusammenfassung": {
-          "title": "Zusammenfassung (Abstract auf Deutsch)",
+          "title": "Zusammenfassung (Streszczenie w języku niemieckim)",
           "guidance": "TUM wymaga streszczenia w języku niemieckim (Zusammenfassung) dla wszystkich prac doktorskich,\nnawet jeśli praca jest napisana w języku angielskim. Zwykle 250–500 słów.\nStruktura (streszczenie strukturalne):\n 1. Problemstellung: czy był to problem das wissenschaftliche oder technische?\n 2. Ansatz und Methodik: wie wurde das Problem angegangen?\n 3. Ergebnisse: wichtigste Ergebnisse (mit konkreten Zahlen oder Befunden).\n 4. Bedeutung: was trägt die Arbeit zum Forschungsfeld bei?"
         },
         "abstract_english": {
@@ -3497,7 +3497,7 @@
       "name": "Uniwersytet Narodowy w Seulu"
     },
     "europe/germany/lmu": {
-      "name": "Ludwig-Maximilians-Universitaet Muenchen"
+      "name": "Ludwiga-Maximilians-Universitaet Muenchen"
     },
     "europe/germany/tum": {
       "name": "Technische Universitaet Muenchen"
@@ -3546,7 +3546,7 @@
       "description": "Obowiązkowy chiński standard krajowy dotyczący odniesień bibliograficznych w pracach akademickich. Styl numeryczny, uporządkowany według wyglądu. Wymagane na Tsinghua, Uniwersytecie Pekińskim, Fudan, Zhejiang i wszystkich chińskich uniwersytetach do prac dyplomowych w języku chińskim."
     },
     "harvard": {
-      "name": "Harvard",
+      "name": "Harvardzie",
       "description": "Styl daty autora podobny do APA, szeroko stosowany w UK i australijskich uniwersytetach. Powszechnie spotykane w programach biznesowych, zarządczych i nauk społecznych poza USA. Brak jednego miarodajnego podręcznika — instytucje często określają swój własny wariant."
     },
     "ieee": {

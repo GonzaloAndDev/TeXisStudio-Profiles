@@ -1,0 +1,2295 @@
+{
+  "schema_version": "1.0.0",
+  "id": "stress-professional-thesis-001",
+  "created_at": "2026-06-23T00:00:00Z",
+  "updated_at": "2026-06-23T00:00:00Z",
+  "profile_id": "mx_unam_apa7",
+  "metadata": {
+    "title": "Diseno y validacion de perfiles academicos profesionales para documentos largos reproducibles",
+    "document_kind": "tesis",
+    "academic_level": "doctorado",
+    "language": "es",
+    "city": "Ciudad de Mexico",
+    "year": 2026,
+    "keywords": [
+      "perfiles academicos",
+      "LaTeX",
+      "validacion",
+      "reproducibilidad",
+      "TeXisStudio"
+    ]
+  },
+  "institution": {
+    "name": "Universidad Nacional Autonoma de Mexico",
+    "faculty": "Posgrado en Ingenieria",
+    "department": "Laboratorio de Documentos Academicos Reproducibles",
+    "country": "Mexico"
+  },
+  "student": {
+    "full_name": "Valeria Mariana Rios Salgado",
+    "email": "valeria.rios@example.edu",
+    "advisors": [
+      "Dra. Elena Torres Aguilar",
+      "Dr. Martin Cardenas Vega"
+    ],
+    "committee": [
+      {
+        "full_name": "Dra. Elena Torres Aguilar",
+        "role": "Directora de tesis"
+      },
+      {
+        "full_name": "Dr. Martin Cardenas Vega",
+        "role": "Codirector"
+      },
+      {
+        "full_name": "Dra. Lucia Hernandez Soto",
+        "role": "Presidenta del jurado"
+      },
+      {
+        "full_name": "Dr. Rafael Nunez Ibarra",
+        "role": "Vocal"
+      },
+      {
+        "full_name": "Dra. Paola Medina Cruz",
+        "role": "Secretaria"
+      }
+    ]
+  },
+  "latex_config": {
+    "document_class": {
+      "name": "book",
+      "options": [
+        "12pt",
+        "letterpaper",
+        "oneside"
+      ]
+    },
+    "engine": "xelatex",
+    "compiler": "latexmk",
+    "bibliography_backend": "biber",
+    "bibliography_style": "apa",
+    "packages_required": [],
+    "typography": {},
+    "page_layout": {
+      "paper": "letterpaper",
+      "margins": {
+        "top": "25mm",
+        "bottom": "25mm",
+        "left": "30mm",
+        "right": "20mm"
+      },
+      "line_spacing": 1.5
+    }
+  },
+  "sections": [
+    {
+      "id": "title_page",
+      "element_id": "title_page",
+      "title": "Portada",
+      "placement": "front_matter",
+      "required": true,
+      "enabled": true,
+      "label": null,
+      "blocks": [],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "dedication",
+      "element_id": "dedication",
+      "title": "Dedicatoria",
+      "placement": "front_matter",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "ded-p1",
+          "content": "A quienes convierten reglas confusas en herramientas claras y confiables.",
+          "verbatim": false
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "acknowledgements",
+      "element_id": "acknowledgements",
+      "title": "Agradecimientos",
+      "placement": "front_matter",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "ack-p1",
+          "content": "Se agradece al equipo de revision, a las personas usuarias que prueban perfiles institucionales y a quienes documentan lineamientos oficiales de manera publica y verificable.",
+          "verbatim": false
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "abstract_es",
+      "element_id": "abstract_es",
+      "title": "Resumen",
+      "placement": "front_matter",
+      "required": true,
+      "enabled": true,
+      "label": null,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "abs-es-p1",
+          "content": "Esta tesis de prueba evalua un flujo profesional para construir, validar y exportar documentos academicos largos con TeXisStudio. El caso de estudio combina perfil institucional, checklist de evidencia, fuentes oficiales, configuracion tipografica, bibliografia, figuras, tablas, ecuaciones, algoritmos, glosario y anexos. La metodologia se disena como una prueba de estres reproducible: cada capitulo introduce bloques heterogeneos y referencias cruzadas, mientras el proyecto conserva compatibilidad con la generacion LaTeX automatica y la exportacion final. Los resultados esperados son un PDF extenso, estable y auditable, junto con archivos fuente suficientes para detectar regresiones en perfiles, plugins visuales y validadores.",
+          "verbatim": false
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "abstract_en",
+      "element_id": "abstract_en",
+      "title": "Abstract",
+      "placement": "front_matter",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "id": "abs-en-p1",
+          "content": "This stress thesis evaluates a professional workflow for building, validating, and exporting long academic documents with TeXisStudio. The case study combines institutional profiles, evidence checklists, official sources, typographic configuration, bibliography, figures, tables, equations, algorithms, glossary entries, and appendices. The methodology is reproducible: each chapter introduces heterogeneous blocks and cross references while preserving compatibility with automatic LaTeX generation and final delivery export.",
+          "verbatim": false
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "table_of_contents",
+      "element_id": "table_of_contents",
+      "title": "Indice General",
+      "placement": "front_matter",
+      "required": true,
+      "enabled": true,
+      "label": null,
+      "blocks": [],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "list_of_figures",
+      "element_id": "list_of_figures",
+      "title": "Lista de Figuras",
+      "placement": "front_matter",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "list_of_tables",
+      "element_id": "list_of_tables",
+      "title": "Lista de Tablas",
+      "placement": "front_matter",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "introduction",
+      "element_id": "introduction",
+      "title": "Introduccion",
+      "placement": "body",
+      "required": true,
+      "enabled": true,
+      "label": "cap:introduction",
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "intro-h-1",
+          "level": "section",
+          "content": "Analisis 1.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-1",
+          "content": "En el capitulo 1, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-2",
+          "content": "En el capitulo 1, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-3",
+          "content": "En el capitulo 1, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-4",
+          "content": "En el capitulo 1, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "intro-c-4",
+          "citation_key": "wacker1998definition",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-5",
+          "content": "En el capitulo 1, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "intro-h-6",
+          "level": "subsection",
+          "content": "Analisis 1.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-6",
+          "content": "En el capitulo 1, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-7",
+          "content": "En el capitulo 1, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-8",
+          "content": "En el capitulo 1, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "intro-c-8",
+          "citation_key": "montgomery2017design",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-9",
+          "content": "En el capitulo 1, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-10",
+          "content": "En el capitulo 1, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "intro-h-11",
+          "level": "section",
+          "content": "Analisis 1.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-11",
+          "content": "En el capitulo 1, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-12",
+          "content": "En el capitulo 1, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "intro-c-12",
+          "citation_key": "harris2020array",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-13",
+          "content": "En el capitulo 1, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-14",
+          "content": "En el capitulo 1, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-15",
+          "content": "En el capitulo 1, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "intro-h-16",
+          "level": "subsection",
+          "content": "Analisis 1.4"
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-p-16",
+          "content": "En el capitulo 1, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "intro-c-16",
+          "citation_key": "sandve2013ten",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "figure",
+          "id": "fig-architecture",
+          "file": "arquitectura_validacion.png",
+          "caption": "Arquitectura conceptual del flujo de validacion profesional de perfiles.",
+          "source": "Fixture generado automaticamente",
+          "width": "full",
+          "label": "fig:architecture",
+          "include_in_list": true
+        },
+        {
+          "type": "paragraph",
+          "id": "intro-ref-fig",
+          "content": "La Figura~\\ref{fig:architecture} resume el flujo de evidencia desde fuentes oficiales hasta exportacion final.",
+          "verbatim": true
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "theoretical_framework",
+      "element_id": "theoretical_framework",
+      "title": "Marco teorico y criterios de calidad",
+      "placement": "body",
+      "required": true,
+      "enabled": true,
+      "label": "cap:theoretical_framework",
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "theory-h-1",
+          "level": "section",
+          "content": "Analisis 2.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-1",
+          "content": "En el capitulo 2, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-2",
+          "content": "En el capitulo 2, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-3",
+          "content": "En el capitulo 2, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-4",
+          "content": "En el capitulo 2, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "theory-c-4",
+          "citation_key": "few2012show",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-5",
+          "content": "En el capitulo 2, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "theory-h-6",
+          "level": "subsection",
+          "content": "Analisis 2.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-6",
+          "content": "En el capitulo 2, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-7",
+          "content": "En el capitulo 2, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-8",
+          "content": "En el capitulo 2, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "theory-c-8",
+          "citation_key": "mckinney2010data",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-9",
+          "content": "En el capitulo 2, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-10",
+          "content": "En el capitulo 2, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "theory-h-11",
+          "level": "section",
+          "content": "Analisis 2.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-11",
+          "content": "En el capitulo 2, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-12",
+          "content": "En el capitulo 2, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "theory-c-12",
+          "citation_key": "wilson2014best",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-13",
+          "content": "En el capitulo 2, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-14",
+          "content": "En el capitulo 2, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-15",
+          "content": "En el capitulo 2, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "theory-h-16",
+          "level": "subsection",
+          "content": "Analisis 2.4"
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-16",
+          "content": "En el capitulo 2, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "theory-c-16",
+          "citation_key": "borrego2014engineering",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-17",
+          "content": "En el capitulo 2, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-p-18",
+          "content": "En el capitulo 2, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "equation",
+          "id": "eq-confidence",
+          "latex_content": "C_p = 0.35S + 0.25R + 0.20B + 0.10L + 0.10E",
+          "label": "eq:confidence",
+          "numbered": true
+        },
+        {
+          "type": "equation",
+          "id": "eq-risk",
+          "latex_content": "R_f = \\sum_{i=1}^{n} w_i \\cdot p_i \\cdot I_i",
+          "label": "eq:risk",
+          "numbered": true
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-eq-ref",
+          "content": "Las ecuaciones~\\eqref{eq:confidence} y~\\eqref{eq:risk} formalizan la confianza editorial y el riesgo residual de formato que se usa para priorizar revisiones.",
+          "verbatim": true
+        },
+        {
+          "type": "table",
+          "id": "tab-profile-dimensions",
+          "caption": "Dimensiones de calidad verificadas por el perfil profesional",
+          "source": "Elaboracion propia para fixture de estres",
+          "label": "tab:profile-dimensions",
+          "include_in_list": true,
+          "raw_headers": true,
+          "raw_cells": true,
+          "verbatim_caption": true,
+          "headers": [
+            "Dimension",
+            "Evidencia",
+            "Validacion",
+            "Riesgo cubierto"
+          ],
+          "rows": [
+            [
+              "Fuente oficial",
+              "URL institucional",
+              "HTTPS + revision humana",
+              "Reglas obsoletas"
+            ],
+            [
+              "Portada",
+              "Campos de grado y comite",
+              "Checklist estructural",
+              "Rechazo administrativo"
+            ],
+            [
+              "Margenes",
+              "Layout declarado",
+              "Comparacion YAML",
+              "Formato inconsistente"
+            ],
+            [
+              "Bibliografia",
+              "Backend y estilo",
+              "Compilacion biber",
+              "Citas rotas"
+            ],
+            [
+              "Entrega",
+              "PDF y paquete exportado",
+              "CI + artifact",
+              "Entrega incompleta"
+            ]
+          ],
+          "table_style": "booktabs"
+        },
+        {
+          "type": "paragraph",
+          "id": "theory-tab-ref",
+          "content": "La Tabla~\\ref{tab:profile-dimensions} resume las dimensiones minimas que un perfil profesional debe cubrir antes de considerarse confiable.",
+          "verbatim": true
+        },
+        {
+          "type": "theorem",
+          "id": "thm-traceability",
+          "kind": "proposition",
+          "title": "Trazabilidad minima de un perfil revisado",
+          "content": "Si un perfil declara estado revisado, entonces debe existir al menos una fuente institucional HTTPS, una fecha de revision y una correspondencia verificable entre reglas declaradas y estructura generada.",
+          "verbatim": false,
+          "numbered": true
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "methodology",
+      "element_id": "methodology",
+      "title": "Metodologia de validacion",
+      "placement": "body",
+      "required": true,
+      "enabled": true,
+      "label": "cap:methodology",
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "method-h-1",
+          "level": "section",
+          "content": "Analisis 3.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-1",
+          "content": "En el capitulo 3, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-2",
+          "content": "En el capitulo 3, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-3",
+          "content": "En el capitulo 3, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-4",
+          "content": "En el capitulo 3, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "method-c-4",
+          "citation_key": "wilkinson2005grammar",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-5",
+          "content": "En el capitulo 3, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "method-h-6",
+          "level": "subsection",
+          "content": "Analisis 3.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-6",
+          "content": "En el capitulo 3, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-7",
+          "content": "En el capitulo 3, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-8",
+          "content": "En el capitulo 3, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "method-c-8",
+          "citation_key": "wickham2016ggplot2",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-9",
+          "content": "En el capitulo 3, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-10",
+          "content": "En el capitulo 3, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "method-h-11",
+          "level": "section",
+          "content": "Analisis 3.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-11",
+          "content": "En el capitulo 3, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-12",
+          "content": "En el capitulo 3, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "method-c-12",
+          "citation_key": "perkel2020challenge",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-13",
+          "content": "En el capitulo 3, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-14",
+          "content": "En el capitulo 3, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-15",
+          "content": "En el capitulo 3, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "method-h-16",
+          "level": "subsection",
+          "content": "Analisis 3.4"
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-16",
+          "content": "En el capitulo 3, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "method-c-16",
+          "citation_key": "apa2020manual",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-17",
+          "content": "En el capitulo 3, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "method-p-18",
+          "content": "En el capitulo 3, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "algorithm",
+          "id": "alg-review-flow",
+          "caption": "Promocion controlada de perfil desde borrador hasta verificado",
+          "label": "alg:review-flow",
+          "input": "Perfil $P$, fuentes $F$, muestra compilable $M$",
+          "output": "Estado final $draft$, $reviewed$ o $verified$",
+          "body": "\\State Validar estructura minima de $P$\n\\State Verificar que cada fuente en $F$ use HTTPS institucional\n\\State Comparar portada, margenes, secciones y bibliografia contra checklist\n\\If{faltan fuentes o fecha de revision}\n  \\State Mantener $P$ como borrador\n\\ElsIf{compila $M$ y existe evidencia CI}\n  \\State Promover $P$ a verificado\n\\Else\n  \\State Promover $P$ solamente a revisado\n\\EndIf"
+        },
+        {
+          "type": "code",
+          "id": "code-quality-score",
+          "language": "Python",
+          "caption": "Calculo reproducible de confianza del perfil",
+          "label": "lst:quality-score",
+          "content": "weights = {'sources': 0.35, 'review': 0.25, 'build': 0.20, 'layout': 0.10, 'export': 0.10}\nsignals = {'sources': 0.96, 'review': 0.91, 'build': 1.00, 'layout': 0.98, 'export': 0.97}\nscore = sum(weights[k] * signals[k] for k in weights)\nprint(f'profile confidence = {score:.3f}')",
+          "show_line_numbers": true
+        },
+        {
+          "type": "plugin_figure",
+          "id": "pf-quality-dashboard",
+          "figureId": "fig_quality_dashboard",
+          "pluginId": "pgfplots-bar",
+          "latexBlock": "% texisstudio-figure-id: fig_quality_dashboard\n\\begin{figure}[htbp]\n  \\centering\n  \\begin{tikzpicture}\n    \\begin{axis}[\n      ybar,\n      width=0.82\\textwidth,\n      height=7cm,\n      ymin=0, ymax=100,\n      ylabel={Cobertura (\\%)},\n      symbolic x coords={Fuentes,Portada,Margenes,Bibliografia,Anexos,Export},\n      xtick=data,\n      x tick label style={rotate=35,anchor=east},\n      nodes near coords,\n      grid=major\n    ]\n      \\addplot[fill=blue!45] coordinates {(Fuentes,96) (Portada,92) (Margenes,98) (Bibliografia,94) (Anexos,89) (Export,97)};\n    \\end{axis}\n  \\end{tikzpicture}\n  \\caption{Panel sintetico de cobertura del perfil profesional usado en la tesis de estres.}\n  \\label{fig:quality-dashboard}\n\\end{figure}\n% /texisstudio-figure-id",
+          "caption": "Panel sintetico de cobertura del perfil profesional usado en la tesis de estres.",
+          "label": "fig:quality-dashboard",
+          "requiredPackages": [
+            "pgfplots",
+            "tikz"
+          ],
+          "sourceJson": "{\"engineId\":\"pgfplots-bar\",\"version\":\"1.0.0\",\"fixture\":true}",
+          "warnings": []
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "results",
+      "element_id": "results",
+      "title": "Resultados de la prueba de estres",
+      "placement": "body",
+      "required": true,
+      "enabled": true,
+      "label": "cap:results",
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "results-h-1",
+          "level": "section",
+          "content": "Analisis 4.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-1",
+          "content": "En el capitulo 4, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-2",
+          "content": "En el capitulo 4, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-3",
+          "content": "En el capitulo 4, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-4",
+          "content": "En el capitulo 4, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "results-c-4",
+          "citation_key": "hunter2007matplotlib",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-5",
+          "content": "En el capitulo 4, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "results-h-6",
+          "level": "subsection",
+          "content": "Analisis 4.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-6",
+          "content": "En el capitulo 4, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-7",
+          "content": "En el capitulo 4, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-8",
+          "content": "En el capitulo 4, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "results-c-8",
+          "citation_key": "smith2020reproducibility",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-9",
+          "content": "En el capitulo 4, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-10",
+          "content": "En el capitulo 4, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "results-h-11",
+          "level": "section",
+          "content": "Analisis 4.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-11",
+          "content": "En el capitulo 4, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-12",
+          "content": "En el capitulo 4, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "results-c-12",
+          "citation_key": "biggs2011teaching",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-13",
+          "content": "En el capitulo 4, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-14",
+          "content": "En el capitulo 4, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-15",
+          "content": "En el capitulo 4, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "results-h-16",
+          "level": "subsection",
+          "content": "Analisis 4.4"
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-16",
+          "content": "En el capitulo 4, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "results-c-16",
+          "citation_key": "springer2022latex",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-17",
+          "content": "En el capitulo 4, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-18",
+          "content": "En el capitulo 4, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-19",
+          "content": "En el capitulo 4, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-20",
+          "content": "En el capitulo 4, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "results-c-20",
+          "citation_key": "mittelbach2004latex",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "heading",
+          "id": "results-h-21",
+          "level": "section",
+          "content": "Analisis 4.5"
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-21",
+          "content": "En el capitulo 4, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "results-p-22",
+          "content": "En el capitulo 4, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "table",
+          "id": "tab-long-matrix",
+          "caption": "Matriz extendida de pruebas por modulo",
+          "source": "Elaboracion propia para fixture de estres",
+          "label": "tab:long-matrix",
+          "include_in_list": true,
+          "raw_headers": true,
+          "raw_cells": true,
+          "verbatim_caption": true,
+          "headers": [
+            "Modulo",
+            "Caso",
+            "Entrada",
+            "Salida esperada",
+            "Estado"
+          ],
+          "rows": [
+            [
+              "Perfil",
+              "Caso 1",
+              "YAML",
+              "Sin errores",
+              "OK"
+            ],
+            [
+              "Wizard",
+              "Caso 2",
+              "Figura",
+              "Advertencia clara",
+              "OK"
+            ],
+            [
+              "Editor",
+              "Caso 3",
+              "Tabla",
+              "Artifact generado",
+              "OK"
+            ],
+            [
+              "Compilador",
+              "Caso 4",
+              "Cita",
+              "Chunk separado",
+              "OK"
+            ],
+            [
+              "Exportador",
+              "Caso 5",
+              "Glosario",
+              "Sin errores",
+              "OK"
+            ],
+            [
+              "i18n",
+              "Caso 6",
+              "PDF/A",
+              "Advertencia clara",
+              "OK"
+            ],
+            [
+              "Plugin",
+              "Caso 7",
+              "ZIP",
+              "Artifact generado",
+              "OK"
+            ],
+            [
+              "Perfil",
+              "Caso 8",
+              "YAML",
+              "Chunk separado",
+              "OK"
+            ],
+            [
+              "Wizard",
+              "Caso 9",
+              "Figura",
+              "Sin errores",
+              "OK"
+            ],
+            [
+              "Editor",
+              "Caso 10",
+              "Tabla",
+              "Advertencia clara",
+              "OK"
+            ],
+            [
+              "Compilador",
+              "Caso 11",
+              "Cita",
+              "Artifact generado",
+              "OK"
+            ],
+            [
+              "Exportador",
+              "Caso 12",
+              "Glosario",
+              "Chunk separado",
+              "OK"
+            ],
+            [
+              "i18n",
+              "Caso 13",
+              "PDF/A",
+              "Sin errores",
+              "OK"
+            ],
+            [
+              "Plugin",
+              "Caso 14",
+              "ZIP",
+              "Advertencia clara",
+              "OK"
+            ],
+            [
+              "Perfil",
+              "Caso 15",
+              "YAML",
+              "Artifact generado",
+              "OK"
+            ],
+            [
+              "Wizard",
+              "Caso 16",
+              "Figura",
+              "Chunk separado",
+              "OK"
+            ],
+            [
+              "Editor",
+              "Caso 17",
+              "Tabla",
+              "Sin errores",
+              "OK"
+            ],
+            [
+              "Compilador",
+              "Caso 18",
+              "Cita",
+              "Advertencia clara",
+              "OK"
+            ],
+            [
+              "Exportador",
+              "Caso 19",
+              "Glosario",
+              "Artifact generado",
+              "OK"
+            ],
+            [
+              "i18n",
+              "Caso 20",
+              "PDF/A",
+              "Chunk separado",
+              "OK"
+            ],
+            [
+              "Plugin",
+              "Caso 21",
+              "ZIP",
+              "Sin errores",
+              "OK"
+            ],
+            [
+              "Perfil",
+              "Caso 22",
+              "YAML",
+              "Advertencia clara",
+              "OK"
+            ],
+            [
+              "Wizard",
+              "Caso 23",
+              "Figura",
+              "Artifact generado",
+              "OK"
+            ],
+            [
+              "Editor",
+              "Caso 24",
+              "Tabla",
+              "Chunk separado",
+              "OK"
+            ],
+            [
+              "Compilador",
+              "Caso 25",
+              "Cita",
+              "Sin errores",
+              "OK"
+            ],
+            [
+              "Exportador",
+              "Caso 26",
+              "Glosario",
+              "Advertencia clara",
+              "OK"
+            ],
+            [
+              "i18n",
+              "Caso 27",
+              "PDF/A",
+              "Artifact generado",
+              "OK"
+            ],
+            [
+              "Plugin",
+              "Caso 28",
+              "ZIP",
+              "Chunk separado",
+              "OK"
+            ]
+          ],
+          "table_style": "long"
+        },
+        {
+          "type": "paragraph",
+          "id": "results-table-ref",
+          "content": "La Tabla~\\ref{tab:long-matrix} funciona como una matriz larga para presionar el render de tablas extensas, listas y paginacion.",
+          "verbatim": true
+        },
+        {
+          "type": "raw_latex",
+          "id": "raw-landscape-note",
+          "content": "\\noindent\\textbf{Nota tecnica:} este bloque LaTeX manual esta confirmado y se usa para comprobar que las inserciones avanzadas no rompen el documento cuando el usuario sabe exactamente lo que esta integrando.",
+          "user_confirmed": true
+        },
+        {
+          "type": "equation",
+          "id": "eq-throughput",
+          "latex_content": "T = \\frac{N_{bloques}}{t_{generacion} + t_{compilacion} + t_{exportacion}}",
+          "label": "eq:throughput",
+          "numbered": true
+        },
+        {
+          "type": "paragraph",
+          "id": "results-eq-ref",
+          "content": "La ecuacion~\\eqref{eq:throughput} permite interpretar el rendimiento del flujo como una relacion entre volumen documental y costo de procesamiento.",
+          "verbatim": true
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "discussion",
+      "element_id": "discussion",
+      "title": "Discusion profesional y limites de LaTeX",
+      "placement": "body",
+      "required": true,
+      "enabled": true,
+      "label": "cap:discussion",
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "discussion-h-1",
+          "level": "section",
+          "content": "Analisis 5.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-1",
+          "content": "En el capitulo 5, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-2",
+          "content": "En el capitulo 5, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-3",
+          "content": "En el capitulo 5, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-4",
+          "content": "En el capitulo 5, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "discussion-c-4",
+          "citation_key": "sandve2013ten",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-5",
+          "content": "En el capitulo 5, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "discussion-h-6",
+          "level": "subsection",
+          "content": "Analisis 5.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-6",
+          "content": "En el capitulo 5, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-7",
+          "content": "En el capitulo 5, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-8",
+          "content": "En el capitulo 5, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "discussion-c-8",
+          "citation_key": "prince2004inductive",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-9",
+          "content": "En el capitulo 5, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-10",
+          "content": "En el capitulo 5, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "discussion-h-11",
+          "level": "section",
+          "content": "Analisis 5.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-11",
+          "content": "En el capitulo 5, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-12",
+          "content": "En el capitulo 5, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "discussion-c-12",
+          "citation_key": "iso1900522020",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-13",
+          "content": "En el capitulo 5, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-14",
+          "content": "En el capitulo 5, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-15",
+          "content": "En el capitulo 5, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "discussion-h-16",
+          "level": "subsection",
+          "content": "Analisis 5.4"
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-16",
+          "content": "En el capitulo 5, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "discussion-c-16",
+          "citation_key": "knuth1984texbook",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-17",
+          "content": "En el capitulo 5, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-18",
+          "content": "En el capitulo 5, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-19",
+          "content": "En el capitulo 5, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-p-20",
+          "content": "En el capitulo 5, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "discussion-c-20",
+          "citation_key": "creswell2018research",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "table",
+          "id": "tab-latex-boundaries",
+          "caption": "Limites profesionales de LaTeX y alternativas integrables",
+          "source": "Elaboracion propia para fixture de estres",
+          "label": "tab:latex-boundaries",
+          "include_in_list": true,
+          "raw_headers": true,
+          "raw_cells": true,
+          "verbatim_caption": true,
+          "headers": [
+            "Necesidad",
+            "LaTeX directo",
+            "Alternativa",
+            "Integracion recomendada"
+          ],
+          "rows": [
+            [
+              "Graficas estadisticas complejas",
+              "PGFPlots posible pero costoso",
+              "Python/R",
+              "Exportar PDF/PNG y registrar fuente"
+            ],
+            [
+              "Diagramas CAD",
+              "No recomendable",
+              "Herramienta CAD externa",
+              "Incluir vector final"
+            ],
+            [
+              "Quimica avanzada",
+              "mhchem/chemfig parcial",
+              "Editor especializado",
+              "Importar resultado revisado"
+            ],
+            [
+              "Datos masivos",
+              "Tablas largas limitadas",
+              "CSV procesado",
+              "Resumen + anexo externo"
+            ],
+            [
+              "Revision institucional",
+              "No automatizable al 100\\%",
+              "Checklist humano",
+              "Status reviewed/verified"
+            ]
+          ],
+          "table_style": "booktabs"
+        },
+        {
+          "type": "paragraph",
+          "id": "discussion-tab-ref",
+          "content": "La Tabla~\\ref{tab:latex-boundaries} explicita los limites que no deben prometerse desde la app aunque LaTeX sea potente.",
+          "verbatim": true
+        },
+        {
+          "type": "citation",
+          "id": "discussion-extra-c1",
+          "citation_key": "gelman2013bayesian",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "citation",
+          "id": "discussion-extra-c2",
+          "citation_key": "bringhurst2012elements",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "citation",
+          "id": "discussion-extra-c3",
+          "citation_key": "box1976science",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "citation",
+          "id": "discussion-extra-c4",
+          "citation_key": "tufte2001visual",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "conclusions",
+      "element_id": "conclusions",
+      "title": "Conclusiones",
+      "placement": "body",
+      "required": true,
+      "enabled": true,
+      "label": "cap:conclusions",
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "conclusion-h-1",
+          "level": "section",
+          "content": "Analisis 6.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-1",
+          "content": "En el capitulo 6, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-2",
+          "content": "En el capitulo 6, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-3",
+          "content": "En el capitulo 6, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-4",
+          "content": "En el capitulo 6, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "conclusion-c-4",
+          "citation_key": "borrego2014engineering",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-5",
+          "content": "En el capitulo 6, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "conclusion-h-6",
+          "level": "subsection",
+          "content": "Analisis 6.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-6",
+          "content": "En el capitulo 6, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-7",
+          "content": "En el capitulo 6, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-8",
+          "content": "En el capitulo 6, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "conclusion-c-8",
+          "citation_key": "ieee2023editorial",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-9",
+          "content": "En el capitulo 6, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-10",
+          "content": "En el capitulo 6, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "conclusion-h-11",
+          "level": "section",
+          "content": "Analisis 6.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-11",
+          "content": "En el capitulo 6, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "conclusion-p-12",
+          "content": "En el capitulo 6, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "conclusion-c-12",
+          "citation_key": "lamport1994latex",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "list",
+          "id": "conc-list",
+          "list_type": "enumerate",
+          "items": [
+            "El perfil debe ensenar a construir perfiles propios, no prometer cobertura universal.",
+            "La evidencia institucional debe ser trazable y separada de la evidencia tecnica de CI.",
+            "Los plugins visuales son utiles cuando reducen complejidad, pero deben permitir integrar resultados externos.",
+            "Una tesis larga revela errores que no aparecen en documentos pequenos."
+          ]
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "glossary",
+      "element_id": "glossary_section",
+      "title": "Glosario",
+      "placement": "back_matter",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [
+        {
+          "type": "glossary_entry",
+          "id": "g-profile",
+          "term": "Perfil institucional",
+          "definition": "Conjunto versionado de reglas, fuentes y decisiones de formato que guian la generacion de un documento academico.",
+          "verbatim": false
+        },
+        {
+          "type": "glossary_entry",
+          "id": "g-ci",
+          "term": "Evidencia CI",
+          "definition": "Ejecucion automatizada que valida estructura, compila el documento y conserva artefactos de entrega.",
+          "verbatim": false
+        },
+        {
+          "type": "glossary_entry",
+          "id": "g-fixture",
+          "term": "Fixture de estres",
+          "definition": "Proyecto sintetico pero realista usado para detectar regresiones en modulos complejos.",
+          "verbatim": false
+        },
+        {
+          "type": "acronym_entry",
+          "id": "acr-pdfa",
+          "acronym": "PDF/A",
+          "full_form": "Portable Document Format Archival",
+          "description": "Familia de estandares ISO para preservacion documental."
+        },
+        {
+          "type": "acronym_entry",
+          "id": "acr-ci",
+          "acronym": "CI",
+          "full_form": "Continuous Integration",
+          "description": "Integracion continua usada para validar perfiles y muestras."
+        },
+        {
+          "type": "acronym_entry",
+          "id": "acr-yaml",
+          "acronym": "YAML",
+          "full_form": "YAML Ain't Markup Language",
+          "description": "Formato legible para configuracion estructurada."
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "references",
+      "element_id": "references",
+      "title": "Referencias",
+      "placement": "back_matter",
+      "required": true,
+      "enabled": true,
+      "label": null,
+      "blocks": [],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "appendix_a",
+      "element_id": "appendix",
+      "title": "Apendice A: Matriz de evidencia",
+      "placement": "appendix",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "appendix-a-h-1",
+          "level": "section",
+          "content": "Analisis 7.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-1",
+          "content": "En el capitulo 7, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-2",
+          "content": "En el capitulo 7, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-3",
+          "content": "En el capitulo 7, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-4",
+          "content": "En el capitulo 7, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "appendix-a-c-4",
+          "citation_key": "apa2020manual",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-5",
+          "content": "En el capitulo 7, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "appendix-a-h-6",
+          "level": "subsection",
+          "content": "Analisis 7.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-6",
+          "content": "En el capitulo 7, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-7",
+          "content": "En el capitulo 7, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-8",
+          "content": "En el capitulo 7, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "appendix-a-c-8",
+          "citation_key": "overleaf2024guide",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-9",
+          "content": "En el capitulo 7, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-10",
+          "content": "En el capitulo 7, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "appendix-a-h-11",
+          "level": "section",
+          "content": "Analisis 7.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-11",
+          "content": "En el capitulo 7, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-12",
+          "content": "En el capitulo 7, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "appendix-a-c-12",
+          "citation_key": "kottwitz2015latex",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-13",
+          "content": "En el capitulo 7, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-p-14",
+          "content": "En el capitulo 7, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "table",
+          "id": "tab-appendix-evidence",
+          "caption": "Registro de evidencia por requisito",
+          "source": "Elaboracion propia para fixture de estres",
+          "label": "tab:appendix-evidence",
+          "include_in_list": true,
+          "raw_headers": true,
+          "raw_cells": true,
+          "verbatim_caption": true,
+          "headers": [
+            "ID",
+            "Requisito",
+            "Fuente",
+            "Decision"
+          ],
+          "rows": [
+            [
+              "REQ-01",
+              "Requisito documental 1",
+              "Fuente oficial 1",
+              "Automatizado"
+            ],
+            [
+              "REQ-02",
+              "Requisito documental 2",
+              "Fuente oficial 2",
+              "Revision humana"
+            ],
+            [
+              "REQ-03",
+              "Requisito documental 3",
+              "Fuente oficial 3",
+              "Revision humana"
+            ],
+            [
+              "REQ-04",
+              "Requisito documental 4",
+              "Fuente oficial 4",
+              "Automatizado"
+            ],
+            [
+              "REQ-05",
+              "Requisito documental 5",
+              "Fuente oficial 5",
+              "Revision humana"
+            ],
+            [
+              "REQ-06",
+              "Requisito documental 6",
+              "Fuente oficial 1",
+              "Revision humana"
+            ],
+            [
+              "REQ-07",
+              "Requisito documental 7",
+              "Fuente oficial 2",
+              "Automatizado"
+            ],
+            [
+              "REQ-08",
+              "Requisito documental 8",
+              "Fuente oficial 3",
+              "Revision humana"
+            ],
+            [
+              "REQ-09",
+              "Requisito documental 9",
+              "Fuente oficial 4",
+              "Revision humana"
+            ],
+            [
+              "REQ-10",
+              "Requisito documental 10",
+              "Fuente oficial 5",
+              "Automatizado"
+            ],
+            [
+              "REQ-11",
+              "Requisito documental 11",
+              "Fuente oficial 1",
+              "Revision humana"
+            ],
+            [
+              "REQ-12",
+              "Requisito documental 12",
+              "Fuente oficial 2",
+              "Revision humana"
+            ],
+            [
+              "REQ-13",
+              "Requisito documental 13",
+              "Fuente oficial 3",
+              "Automatizado"
+            ],
+            [
+              "REQ-14",
+              "Requisito documental 14",
+              "Fuente oficial 4",
+              "Revision humana"
+            ],
+            [
+              "REQ-15",
+              "Requisito documental 15",
+              "Fuente oficial 5",
+              "Revision humana"
+            ],
+            [
+              "REQ-16",
+              "Requisito documental 16",
+              "Fuente oficial 1",
+              "Automatizado"
+            ],
+            [
+              "REQ-17",
+              "Requisito documental 17",
+              "Fuente oficial 2",
+              "Revision humana"
+            ],
+            [
+              "REQ-18",
+              "Requisito documental 18",
+              "Fuente oficial 3",
+              "Revision humana"
+            ],
+            [
+              "REQ-19",
+              "Requisito documental 19",
+              "Fuente oficial 4",
+              "Automatizado"
+            ],
+            [
+              "REQ-20",
+              "Requisito documental 20",
+              "Fuente oficial 5",
+              "Revision humana"
+            ],
+            [
+              "REQ-21",
+              "Requisito documental 21",
+              "Fuente oficial 1",
+              "Revision humana"
+            ],
+            [
+              "REQ-22",
+              "Requisito documental 22",
+              "Fuente oficial 2",
+              "Automatizado"
+            ],
+            [
+              "REQ-23",
+              "Requisito documental 23",
+              "Fuente oficial 3",
+              "Revision humana"
+            ],
+            [
+              "REQ-24",
+              "Requisito documental 24",
+              "Fuente oficial 4",
+              "Revision humana"
+            ]
+          ],
+          "table_style": "long"
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-a-table-ref",
+          "content": "La Tabla~\\ref{tab:appendix-evidence} conserva la trazabilidad granular entre requisito, fuente y decision de implementacion.",
+          "verbatim": true
+        }
+      ],
+      "fields": {},
+      "children": []
+    },
+    {
+      "id": "appendix_b",
+      "element_id": "appendix_b",
+      "title": "Apendice B: Configuraciones alternativas",
+      "placement": "appendix",
+      "required": false,
+      "enabled": true,
+      "label": null,
+      "blocks": [
+        {
+          "type": "heading",
+          "id": "appendix-b-h-1",
+          "level": "section",
+          "content": "Analisis 8.1"
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-1",
+          "content": "En el capitulo 8, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-2",
+          "content": "En el capitulo 8, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-3",
+          "content": "En el capitulo 8, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-4",
+          "content": "En el capitulo 8, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "appendix-b-c-4",
+          "citation_key": "springer2022latex",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-5",
+          "content": "En el capitulo 8, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "appendix-b-h-6",
+          "level": "subsection",
+          "content": "Analisis 8.2"
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-6",
+          "content": "En el capitulo 8, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-7",
+          "content": "En el capitulo 8, la fase de normalizacion semantica del manuscrito se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-8",
+          "content": "En el capitulo 8, la fase de validacion cruzada de fuentes oficiales se analiza como un componente operativo del flujo academico profesional. El criterio de claridad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "appendix-b-c-8",
+          "citation_key": "mittelbach2004latex",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-9",
+          "content": "En el capitulo 8, la fase de generacion controlada de artefactos LaTeX se analiza como un componente operativo del flujo academico profesional. El criterio de replicabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-10",
+          "content": "En el capitulo 8, la fase de revision editorial asistida se analiza como un componente operativo del flujo academico profesional. El criterio de trazabilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "heading",
+          "id": "appendix-b-h-11",
+          "level": "section",
+          "content": "Analisis 8.3"
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-11",
+          "content": "En el capitulo 8, la fase de exportacion reproducible del expediente final se analiza como un componente operativo del flujo academico profesional. El criterio de consistencia se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-p-12",
+          "content": "En el capitulo 8, la fase de levantamiento de requisitos institucionales se analiza como un componente operativo del flujo academico profesional. El criterio de mantenibilidad se evalua mediante listas de verificacion, evidencia documental y pruebas de compilacion que reducen la ambiguedad entre lo que la institucion solicita y lo que el documento realmente produce. La decision metodologica principal consiste en separar el contenido intelectual del estudiante de las reglas mecanicas de formato, de modo que portada, margenes, bibliografia, anexos y metadatos puedan auditarse sin reescribir el texto central. Esta separacion tambien permite que usuarios de instituciones distintas construyan perfiles propios a partir de ejemplos confiables sin asumir que un perfil generico resuelve todas las obligaciones locales.",
+          "verbatim": false
+        },
+        {
+          "type": "citation",
+          "id": "appendix-b-c-12",
+          "citation_key": "yin2018case",
+          "citation_type": "parenthetical",
+          "page": null,
+          "prefix": null,
+          "suffix": null
+        },
+        {
+          "type": "equation",
+          "id": "eq-appendix-cost",
+          "latex_content": "K = C_m + C_r + C_e + C_s",
+          "label": "eq:appendix-cost",
+          "numbered": true
+        },
+        {
+          "type": "paragraph",
+          "id": "appendix-b-eq-ref",
+          "content": "La ecuacion~\\eqref{eq:appendix-cost} resume el costo total de mantenimiento como suma de cambios mecanicos, revision, exportacion y soporte.",
+          "verbatim": true
+        }
+      ],
+      "fields": {},
+      "children": []
+    }
+  ],
+  "file_states": {}
+}

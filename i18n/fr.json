@@ -676,7 +676,7 @@
       "institution": "Université autonome métropolitaine",
       "department": "Division des Sciences de l'Information",
       "faculty": "Unité Cuajimalpa",
-      "program_name": "DCI Cuajimalpa"
+      "program_name": "DEI Cuajimalpa"
     },
     "mx_uam_izt_cbi": {
       "sections": {
@@ -882,7 +882,7 @@
       "institution": "Université autonome métropolitaine",
       "department": "Division des sciences biologiques et de la santé",
       "faculty": "Unité Xochimilco",
-      "program_name": "DCBS Xochimilco"
+      "program_name": "DCBSXochimilco"
     },
     "mx_uanl_apa7": {
       "sections": {
@@ -2094,7 +2094,7 @@
         }
       },
       "name": "Sapienza Roma - Tesi (APA 7)",
-      "description": "Tesi di laurea magistrale Sapienza Universita di Roma, APA 7",
+      "description": "Titres de laurea magistrale Sapienza Université de Rome, APA 7",
       "institution": "Université Sapienza de Rome"
     },
     "nl_tudelft_ieee": {
@@ -3530,7 +3530,7 @@
       "description": "Profil de style bibliographique pour ABNT."
     },
     "apa7": {
-      "name": "APA 7",
+      "name": "APA7",
       "description": "Profil de style bibliographique pour APA 7."
     },
     "chicago17_authordate": {

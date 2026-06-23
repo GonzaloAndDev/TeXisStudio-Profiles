@@ -1914,7 +1914,7 @@
           "guidance": "LMU başlık sayfası şunları içerir:\n• LMU München logosu.\n• Tezin tam başlığı.\n• \"Tez zur Erlangung des Doktorgrades der [Sozialwissenschaften /\n Psychologie / vb.] an der Ludwig-Maximilians-Universität München.\"\n• \"vorgelegt von [Tam Ad]\" ve doğum yeri.\n• Danışman (Betreuer/Betreuerin): adı ve LMU başkanı.\n• \"Münih, [Jahr].\"\nFakultät'ınızın Promosyon Bürosundan tam ifadeyi doğrulayın."
         },
         "zusammenfassung": {
-          "title": "Zusammenfassung (auf Deutsch)",
+          "title": "Zusammenfassung (Almanca)",
           "guidance": "LMU, tüm tezler için Almanca özet (Zusammenfassung) gerektirir.\n250–500 kelime. Yapılandırılmış özet:\nProblemstellung, Methode, Ergebnisse, Schlussfolgerungen."
         },
         "abstract_en": {
@@ -1978,7 +1978,7 @@
       },
       "name": "LMU Münih - Tez (APA 7)",
       "description": "Ludwig-Maximilians-Universitaet Muenchen tezi, APA 7",
-      "institution": "Ludwig-Maximilians-Universitaet Muenchen"
+      "institution": "Ludwig-Maximilians-Münih Üniversitesi"
     },
     "de_tum_ieee": {
       "sections": {
@@ -3497,7 +3497,7 @@
       "name": "Seul Ulusal Üniversitesi"
     },
     "europe/germany/lmu": {
-      "name": "Ludwig-Maximilians-Universitaet Muenchen"
+      "name": "Ludwig-Maximilians-Münih Üniversitesi"
     },
     "europe/germany/tum": {
       "name": "Technische Universitaet München"
@@ -3546,7 +3546,7 @@
       "description": "Akademik çalışmalarda bibliyografik referanslar için zorunlu Çin ulusal standardı. Görünüme göre sıralanan sayısal stil. Çince tezler için Tsinghua, Pekin Üniversitesi, Fudan, Zhejiang ve tüm Çin üniversitelerinde gereklidir."
     },
     "harvard": {
-      "name": "Harvard",
+      "name": "Harvard'ın",
       "description": "UK ve Avustralya üniversitelerinde yaygın olarak kullanılan, APA'ye benzer yazar-tarih stili. USA dışındaki işletme, yönetim ve sosyal bilim programlarında yaygındır. Tek bir yetkili kılavuz yok; kurumlar genellikle kendi varyantlarını tanımlar."
     },
     "ieee": {

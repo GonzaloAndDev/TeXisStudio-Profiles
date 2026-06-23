@@ -396,7 +396,7 @@
       "description": "نمایه علمی برای IPN - پایان نامه (APA 7). فراداده نمایه، بخش‌های مورد نیاز، و سبک کتاب‌شناسی را دنبال کنید.",
       "institution": "موسسه ملی پلی تکنیک",
       "department": "بخش تحصیلات تکمیلی و تحقیقات",
-      "faculty": "Posgrado",
+      "faculty": "پوسگرادو",
       "program_name": "SEPI / Posgrado e Investigacion"
     },
     "mx_tec_apa7": {
@@ -537,7 +537,7 @@
       },
       "name": "UAM آزکاپوتزالکو — CBI",
       "description": "بخش علوم پایه و مهندسی، UAM Azcapotzalco. مهندسی، محاسبات، سیستم ها و ریاضیات کاربردی.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "دانشگاه اتونوما متروپولیتانا",
       "department": "Division de Ciencias Básicas e Ingeniería",
       "faculty": "یونیداد آزکاپوتزالکو",
       "program_name": "CBI آزکاپوتزالکو"
@@ -605,7 +605,7 @@
       },
       "name": "UAM آزکاپوتزالکو — DCSH",
       "description": "Division de Ciencias Sociales y Humanidades، UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "دانشگاه اتونوما متروپولیتانا",
       "department": "بخش اجتماعی و انسانی",
       "faculty": "یونیداد آزکاپوتزالکو",
       "program_name": "DCSH آزکاپوتزالکو"
@@ -673,7 +673,7 @@
       },
       "name": "UAM کواجیمالپا — DCI",
       "description": "بخش علوم اطلاعات، UAM کواجیمالپا. محاسبات، فناوری اطلاعات و طراحی ارتباطات گرافیکی.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "دانشگاه اتونوما متروپولیتانا",
       "department": "بخش اطلاعاتی",
       "faculty": "یونیداد کواجیمالپا",
       "program_name": "DCI کواجیمالپا"
@@ -745,7 +745,7 @@
       },
       "name": "UAM ایزتاپالاپا — CBI",
       "description": "بخش علوم پایه و مهندسی، UAM Iztapalapa. فیزیک، شیمی، ریاضیات و مهندسی برق.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "دانشگاه اتونوما متروپولیتانا",
       "department": "Division de Ciencias Básicas e Ingeniería",
       "faculty": "یونیداد ایزتاپالاپا",
       "program_name": "CBI ایزتاپالاپا"
@@ -810,7 +810,7 @@
       },
       "name": "UAM ایزتاپالاپا — CSH",
       "description": "بخش اجتماعی اجتماعی و انسانی، UAM ایزتاپالاپا. Sociología، Historia، Lingüística، Counicación، Economía، Psicología Social.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "دانشگاه اتونوما متروپولیتانا",
       "department": "بخش اجتماعی و انسانی",
       "faculty": "یونیداد ایزتاپالاپا",
       "program_name": "CSH ایزتاپالاپا"
@@ -877,9 +877,9 @@
           "guidance": "ابزار اندازه‌گیری، رضایت نامه‌های آگاهانه، تأییدیه‌های کمیته، و غیره."
         }
       },
-      "name": "UAM Xochimilco — DCBS",
+      "name": "UAM Xochimilco - DCBS",
       "description": "Division de Ciencias Biológicas y de la Salud، UAM Xochimilco. Medicina، Odontología، Enfermería، Biología، Nutrición y Veterinaria.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "دانشگاه اتونوما متروپولیتانا",
       "department": "Division de Ciencias Biológicas y de la Salud",
       "faculty": "Unidad Xochimilco",
       "program_name": "DCBS Xochimilco"
@@ -1132,7 +1132,7 @@
       "description": "پایان نامه تحصیلات تکمیلی UNAM طبق دستورالعمل DGAE، estilo APA 7",
       "institution": "دانشگاه ملی خودمختار مکزیک",
       "faculty": "Sistema de Posgrado",
-      "program_name": "Posgrado UNAM"
+      "program_name": "پوسگرادو UNAM"
     },
     "mx_unam_vancouver": {
       "sections": {
@@ -1978,7 +1978,7 @@
       },
       "name": "LMU مونیخ - پایان نامه (APA 7)",
       "description": "پایان نامه Ludwig-Maximilians-Universitaet Muenchen، APA 7",
-      "institution": "Ludwig-Maximilians-Universitaet Muenchen"
+      "institution": "لودویگ-ماکسیمیلیان-دانشگاه موئنخ"
     },
     "de_tum_ieee": {
       "sections": {
@@ -3497,7 +3497,7 @@
       "name": "دانشگاه ملی سئول"
     },
     "europe/germany/lmu": {
-      "name": "Ludwig-Maximilians-Universitaet Muenchen"
+      "name": "لودویگ-ماکسیمیلیان-دانشگاه موئنخ"
     },
     "europe/germany/tum": {
       "name": "Technische Universitaet Muenchen"

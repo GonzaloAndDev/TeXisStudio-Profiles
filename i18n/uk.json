@@ -234,7 +234,7 @@
           "guidance": "Інструменти, додаткові дані, етичне схвалення, форми згоди."
         }
       },
-      "name": "McGill - Thesis (APA 7)",
+      "name": "Макгілл - Дипломна робота (APA 7)",
       "description": "Теза Університету Макгілла, рекомендації APA 7, GPS",
       "institution": "Університет Макгілла"
     },
@@ -315,7 +315,7 @@
           "guidance": "Інструменти, додаткові дані, етичне схвалення. Додаток A, B…"
         }
       },
-      "name": "U. de Chile - Thesis (APA 7)",
+      "name": "У. де Чилі - Дипломна робота (APA 7)",
       "description": "Дисертація Чилійського університету, APA 7",
       "institution": "Університет Чилі"
     },
@@ -396,7 +396,7 @@
       "description": "Академічний профіль для IPN - Дипломна робота (APA 7). Дотримуйтеся метаданих профілю, обов’язкових розділів і стилю бібліографії.",
       "institution": "Національний політехнічний інститут",
       "department": "Відділ аспірантури та досліджень",
-      "faculty": "Posgrado",
+      "faculty": "Посградо",
       "program_name": "SEPI / Posgrado e Investigacion"
     },
     "mx_tec_apa7": {
@@ -472,9 +472,9 @@
           "guidance": "Включіть додаткові матеріали, такі як прилади, розширені таблиці, протоколи, схвалення або супровідну технічну документацію."
         }
       },
-      "name": "Tec de Monterrey - Thesis (APA 7)",
+      "name": "Tec de Monterrey - Теза (APA 7)",
       "description": "Академічний профіль для Tec de Monterrey - Thesis (APA 7). Дотримуйтеся метаданих профілю, обов’язкових розділів і стилю бібліографії.",
-      "institution": "Tecnologico de Monterrey"
+      "institution": "Технологіко де Монтеррей"
     },
     "mx_uam_azc_cbi": {
       "sections": {
@@ -537,9 +537,9 @@
       },
       "name": "UAM Azcapotzalco — CBI",
       "description": "Відділ фундаментальних наук та техніки, UAM Azcapotzalco. Інженерія, обчислювальна техніка, системи та прикладна математика.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Університет Автонома Метрополітана",
       "department": "Division de Ciencias Básicas e Ingeniería",
-      "faculty": "Unidad Azcapotzalco",
+      "faculty": "Унідад Аскапоцалько",
       "program_name": "CBI Azcapotzalco"
     },
     "mx_uam_azc_dcsh": {
@@ -605,10 +605,10 @@
       },
       "name": "UAM Azcapotzalco — DCSH",
       "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Університет Автонома Метрополітана",
       "department": "Division de Ciencias Sociales y Humanidades",
-      "faculty": "Unidad Azcapotzalco",
-      "program_name": "DCSH Azcapotzalco"
+      "faculty": "Унідад Аскапоцалько",
+      "program_name": "DCSH Аскапоцалько"
     },
     "mx_uam_cua_dci": {
       "sections": {
@@ -673,9 +673,9 @@
       },
       "name": "UAM Cuajimalpa — DCI",
       "description": "Відділ інформаційних наук, UAM Cuajimalpa. Обчислювальна техніка, інформаційні технології та графічний комунікаційний дизайн.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Університет Автонома Метрополітана",
       "department": "Division de Ciencias de la Información",
-      "faculty": "Unidad Cuajimalpa",
+      "faculty": "Унідад Куахімальпа",
       "program_name": "DCI Cuajimalpa"
     },
     "mx_uam_izt_cbi": {
@@ -745,10 +745,10 @@
       },
       "name": "UAM Iztapalapa — CBI",
       "description": "Відділ фундаментальних наук та техніки, UAM Iztapalapa. Фізика, хімія, математика та електротехніка.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Університет Автонома Метрополітана",
       "department": "Division de Ciencias Básicas e Ingeniería",
-      "faculty": "Unidad Iztapalapa",
-      "program_name": "CBI Iztapalapa"
+      "faculty": "Унідад Ізтапалапа",
+      "program_name": "CBI Ізтапалапа"
     },
     "mx_uam_izt_dcsh": {
       "sections": {
@@ -808,12 +808,12 @@
           "title": "Додатки"
         }
       },
-      "name": "UAM Iztapalapa — CSH",
-      "description": "Division de Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociología, Historia, Lingüística, Comunicación, Economía, Psicología Social.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "name": "УАМ Ізтапалапа — ЦШ",
+      "description": "Division de Ciencias Sociales y Humanidades, UAM Iztapalapa. Соціологія, історія, лінгвістика, комунікація, економіка, соціальна психологія.",
+      "institution": "Університет Автонома Метрополітана",
       "department": "Division de Ciencias Sociales y Humanidades",
-      "faculty": "Unidad Iztapalapa",
-      "program_name": "CSH Iztapalapa"
+      "faculty": "Унідад Ізтапалапа",
+      "program_name": "CSH Ізтапалапа"
     },
     "mx_uam_xoc_dcbs": {
       "sections": {
@@ -879,7 +879,7 @@
       },
       "name": "UAM Xochimilco — DCBS",
       "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biologia, Nutrición y Veterinaria.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Університет Автонома Метрополітана",
       "department": "Division de Ciencias Biológicas y de la Salud",
       "faculty": "Unidad Xochimilco",
       "program_name": "DCBS Xochimilco"
@@ -1132,7 +1132,7 @@
       "description": "Дипломна робота UNAM відповідно до вказівок DGAE, стиль APA 7",
       "institution": "Національний автономний університет Мексики",
       "faculty": "Sistema de Posgrado",
-      "program_name": "Posgrado UNAM"
+      "program_name": "Посградо УНАМ"
     },
     "mx_unam_vancouver": {
       "sections": {
@@ -1815,7 +1815,7 @@
           "title": "Додатки"
         }
       },
-      "name": "U Tokyo - Thesis (IEEE)",
+      "name": "U Tokyo - Теза (IEEE)",
       "description": "Дисертація Токійського університету з техніки та наук, IEEE",
       "institution": "Токійський університет",
       "program_name": "Інженерія та науки"
@@ -1978,7 +1978,7 @@
       },
       "name": "LMU Мюнхен - Дисертація (APA 7)",
       "description": "Дисертація Ludwig-Maximilians-Universitaet Muenchen, APA 7",
-      "institution": "Ludwig-Maximilians-Universitaet Muenchen"
+      "institution": "Мюнхенський університет Людвіга-Максиміліана"
     },
     "de_tum_ieee": {
       "sections": {
@@ -2051,7 +2051,7 @@
       },
       "name": "TU Мюнхен - Дисертація (IEEE)",
       "description": "Дисертація Technische Universitaet Muenchen з інженерії, IEEE",
-      "institution": "Technische Universitaet Muenchen",
+      "institution": "Мюнхенський технічний університет",
       "program_name": "Інженерна справа"
     },
     "it_sapienza_apa7": {
@@ -3237,7 +3237,7 @@
       "description": "Дисертація міждисциплінарного професійного підрозділу біотехнології IPN. Він охоплює біохімію, мікробіологію, інженерію біопроцесів, біоінформатику, екологічну та фармацевтичну біотехнологію. Експериментальний та кількісний характер із високою точністю у представленні даних. APA 7 бібліографія для більшості областей; Ванкувер прийнято в сферах, ближчих до медичних наук."
     },
     "mx.ipn.upitta": {
-      "name": "IPN UPITTA — Advanced Technologies",
+      "name": "IPN UPITTA — Передові технології",
       "sections": {
         "portada": {
           "guidance": "Обкладинка UPITTA включає: щит IPN, «Міждисциплінарний професійний підрозділ передових технологій», назву роботи, тип дипломної роботи, ім’я студента, директорів, місце та рік."
@@ -3452,7 +3452,7 @@
       "name": "Національний політехнічний інститут"
     },
     "america/mexico/tec": {
-      "name": "Tecnologico de Monterrey"
+      "name": "Технологіко де Монтеррей"
     },
     "america/mexico/uanl": {
       "name": "Автономний університет Нуево-Леон"
@@ -3497,10 +3497,10 @@
       "name": "Сеульський національний університет"
     },
     "europe/germany/lmu": {
-      "name": "Ludwig-Maximilians-Universitaet Muenchen"
+      "name": "Мюнхенський університет Людвіга-Максиміліана"
     },
     "europe/germany/tum": {
-      "name": "Technische Universitaet Muenchen"
+      "name": "Мюнхенський технічний університет"
     },
     "europe/italy/sapienza": {
       "name": "Sapienza Universita di Roma"

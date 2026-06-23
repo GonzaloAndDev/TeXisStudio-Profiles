@@ -236,7 +236,7 @@
       },
       "name": "McGill – These (APA 7)",
       "description": "Dissertation der McGill University, APA 7, GPS-Richtlinien",
-      "institution": "McGill University"
+      "institution": "McGill-Universität"
     },
     "cl_uchile_apa7": {
       "sections": {
@@ -535,7 +535,7 @@
           "title": "Anhänge"
         }
       },
-      "name": "UAM Azcapotzalco — CBI",
+      "name": "UAM Azcapotzalco – CBI",
       "description": "Abteilung für Grundlagenwissenschaften und Ingenieurwesen, UAM Azcapotzalco. Ingenieurwesen, Informatik, Systeme und angewandte Mathematik.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
@@ -603,7 +603,7 @@
           "guidance": "Sammlungsinstrumente, Transkriptionen, Ergänzungstabellen usw."
         }
       },
-      "name": "UAM Azcapotzalco — DCSH",
+      "name": "UAM Azcapotzalco – DCSH",
       "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Verwaltung, Wirtschaft, Soziologie und Humanidades.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Sociales y Humanidades",
@@ -671,7 +671,7 @@
           "guidance": "Relevanter Quellcode, zusätzliche Diagramme, experimentelle Daten usw."
         }
       },
-      "name": "UAM Cuajimalpa — DCI",
+      "name": "UAM Cuajimalpa – DCI",
       "description": "Division de Ciencias de la Información, UAM Cuajimalpa. Computer, Informationstechnologie und Design der grafischen Kommunikation.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias de la Información",
@@ -743,7 +743,7 @@
           "title": "Anhänge"
         }
       },
-      "name": "UAM Iztapalapa — CBI",
+      "name": "UAM Iztapalapa – CBI",
       "description": "Abteilung für Grundlagenwissenschaften und Ingenieurwesen, UAM Iztapalapa. Physik, Chemie, Mathematik und Elektrotechnik.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
@@ -808,7 +808,7 @@
           "title": "Anhänge"
         }
       },
-      "name": "UAM Iztapalapa — CSH",
+      "name": "UAM Iztapalapa – CSH",
       "description": "Division de Ciencias Sociales y Humanidades, UAM Iztapalapa. Soziología, Historia, Lingüística, Comunicación, Economía, Psicología Social.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Sociales y Humanidades",
@@ -877,7 +877,7 @@
           "guidance": "Meditationsinstrumente, Einverständniserklärungen, Ausschussgenehmigungen usw."
         }
       },
-      "name": "UAM Xochimilco — DCBS",
+      "name": "UAM Xochimilco – DCBS",
       "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medizin, Odontologie, Enfermería, Biología, Nutrición y Veterinaria.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Biológicas y de la Salud",
@@ -1520,7 +1520,7 @@
       },
       "name": "Stanford – Abschlussarbeit (IEEE)",
       "description": "Stanford-Abschlussarbeit für Ingenieurwissenschaften und Informatik im IEEE-Stil",
-      "institution": "Stanford University",
+      "institution": "Stanford-Universität",
       "program_name": "Ingenieurwesen und Informatik"
     },
     "us_chicago_chicago17": {
@@ -1729,7 +1729,7 @@
       },
       "name": "IIT Bombay – Abschlussarbeit (IEEE)",
       "description": "Diplomarbeit des Indian Institute of Technology Bombay für Ingenieurwissenschaften, IEEE",
-      "institution": "Indian Institute of Technology Bombay",
+      "institution": "Indisches Institut für Technologie Bombay",
       "program_name": "Ingenieurwesen"
     },
     "jp_kyoto_apa7": {
@@ -1914,7 +1914,7 @@
           "guidance": "LMU-Titelseite enthält:\n• LMU München-Logo.\n• Vollständiger Titel der Dissertation.\n• „Dissertation zur Erlangung des Doktorgrades der [Sozialwissenschaften /\n Psychologie / etc.] an der Ludwig-Maximilians-Universität München.\n• „vorgelegt von [vollständiger Name]“ und Geburtsort.\n• Betreuer/Betreuerin: Name und LMU-Vorsitzender.\n• „München, [Jahr].“\nKlären Sie den genauen Wortlaut mit dem Promotionsbüro Ihrer Fakultät ab."
         },
         "zusammenfassung": {
-          "title": "Zusammenfassung (auf Deutsch)",
+          "title": "Zusammenfassung (auf Englisch)",
           "guidance": "LMU verlangt für alle Dissertationen eine deutsche Zusammenfassung.\n250–500 Wörter. Strukturierte Zusammenfassung:\nProblemstellung, Methode, Ergebnisse, Schlussfolgerungen."
         },
         "abstract_en": {
@@ -3443,7 +3443,7 @@
       "name": "Universität Sao Paulo"
     },
     "america/canada/mcgill": {
-      "name": "McGill University"
+      "name": "McGill-Universität"
     },
     "america/chile/uchile": {
       "name": "Universität von Chile"
@@ -3470,7 +3470,7 @@
       "name": "Massachusetts Institute of Technology"
     },
     "america/usa/stanford": {
-      "name": "Stanford University"
+      "name": "Stanford-Universität"
     },
     "america/usa/uchicago": {
       "name": "Universität Chicago"
@@ -3482,7 +3482,7 @@
       "name": "Tsinghua-Universität"
     },
     "asia/india/iit_bombay": {
-      "name": "Indian Institute of Technology Bombay"
+      "name": "Indisches Institut für Technologie Bombay"
     },
     "asia/japan/kyoto": {
       "name": "Universität Kyoto"

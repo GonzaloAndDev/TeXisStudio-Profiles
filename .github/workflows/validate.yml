@@ -538,54 +538,34 @@ jobs:
         working-directory: _texis_main
         run: cargo build --release -p texis-cli
 
-      - name: Compile uk_cambridge_apa7 sample
+      - name: Compile additional real thesis samples
         run: |
           TEXIS=_texis_main/target/release/texis
-          SAMPLE=profile_samples/uk_cambridge_apa7/project.texis
-          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for uk_cambridge_apa7"; exit 1; }
-          $TEXIS compile "$SAMPLE" --backend latexmk || {
-            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
-          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: uk_cambridge_apa7 PDF generated" || { echo "ERROR: no PDF"; exit 1; }
-          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
-          echo "OK: uk_cambridge_apa7 complete"
-
-      - name: Compile mx_uam_izt_cbi sample
-        run: |
-          TEXIS=_texis_main/target/release/texis
-          SAMPLE=profile_samples/mx_uam_izt_cbi/project.texis
-          echo "=== texis validate ===" && $TEXIS validate "$SAMPLE" 2>&1 || {
-            echo "ERROR: validate failed for mx_uam_izt_cbi"; exit 1; }
-          echo "=== texis compile ===" && $TEXIS compile "$SAMPLE" --backend latexmk 2>&1 || {
-            echo "=== main.log (last 60 lines) ==="
-            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -60 || echo "(no build log)"
-            echo "=== main.bbl ==="
-            cat "$SAMPLE/build/main.bbl" 2>/dev/null || echo "(no bbl)"
-            exit 1; }
-          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: mx_uam_izt_cbi PDF generated" || { echo "ERROR: no PDF"; exit 1; }
-          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
-          echo "OK: mx_uam_izt_cbi complete"
-
-      - name: Compile mx_unam_vancouver sample
-        run: |
-          TEXIS=_texis_main/target/release/texis
-          SAMPLE=profile_samples/mx_unam_vancouver/project.texis
-          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for mx_unam_vancouver"; exit 1; }
-          $TEXIS compile "$SAMPLE" --backend latexmk || {
-            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
-          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: mx_unam_vancouver PDF generated" || { echo "ERROR: no PDF"; exit 1; }
-          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
-          echo "OK: mx_unam_vancouver complete"
-
-      - name: Compile mx_unam_apa7 sample
-        run: |
-          TEXIS=_texis_main/target/release/texis
-          SAMPLE=profile_samples/mx_unam_apa7/project.texis
-          $TEXIS validate "$SAMPLE" || { echo "ERROR: validate failed for mx_unam_apa7"; exit 1; }
-          $TEXIS compile "$SAMPLE" --backend latexmk || {
-            cat "$SAMPLE/build/main.log" 2>/dev/null | tail -40 || true; exit 1; }
-          [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: mx_unam_apa7 PDF generated" || { echo "ERROR: no PDF"; exit 1; }
-          $TEXIS export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
-          echo "OK: mx_unam_apa7 complete"
+          samples=(
+            uk_cambridge_apa7
+            mx_ipn_apa7
+            mx_uam_izt_cbi
+            mx_unam_vancouver
+            mx_unam_apa7
+            stress_professional_thesis
+          )
+          for sample_name in "${samples[@]}"; do
+            SAMPLE="profile_samples/${sample_name}/project.texis"
+            echo "=== ${sample_name}: validate ==="
+            "$TEXIS" validate "$SAMPLE" 2>&1 || {
+              echo "ERROR: validate failed for ${sample_name}"; exit 1; }
+            echo "=== ${sample_name}: compile ==="
+            "$TEXIS" compile "$SAMPLE" --backend latexmk 2>&1 || {
+              echo "=== ${sample_name}: main.log (last 80 lines) ==="
+              cat "$SAMPLE/build/main.log" 2>/dev/null | tail -80 || echo "(no build log)"
+              echo "=== ${sample_name}: main.bbl ==="
+              cat "$SAMPLE/build/main.bbl" 2>/dev/null || echo "(no bbl)"
+              exit 1
+            }
+            [ -f "$SAMPLE/build/main.pdf" ] && echo "OK: ${sample_name} PDF generated" || { echo "ERROR: no PDF for ${sample_name}"; exit 1; }
+            "$TEXIS" export-delivery "$SAMPLE" --output "$SAMPLE/../delivery" --mode draft
+            echo "OK: ${sample_name} complete"
+          done
 
       - name: Upload PDFs from additional samples
         uses: actions/upload-artifact@v4
@@ -594,9 +574,11 @@ jobs:
           name: additional_samples_pdfs
           path: |
             profile_samples/uk_cambridge_apa7/project.texis/build/main.pdf
+            profile_samples/mx_ipn_apa7/project.texis/build/main.pdf
             profile_samples/mx_uam_izt_cbi/project.texis/build/main.pdf
             profile_samples/mx_unam_vancouver/project.texis/build/main.pdf
             profile_samples/mx_unam_apa7/project.texis/build/main.pdf
+            profile_samples/stress_professional_thesis/project.texis/build/main.pdf
           if-no-files-found: warn
 
   validate-sample-projects:
@@ -614,27 +596,72 @@ jobs:
       - name: Validate sample project YAML and structure
         run: |
           python - <<'PY'
-          import yaml, json, pathlib, sys
+          import json, pathlib, re, sys
+          import yaml
           errors = []
           ALLOWED_ACADEMIC_LEVELS = {
               "bachillerato", "tecnico", "licenciatura", "maestria", "doctorado"
           }
+          MIN_SAMPLE_PROJECTS = 5
 
           def iter_sections(sections):
               for section in sections or []:
                   yield section
                   yield from iter_sections(section.get('children') or [])
 
+          def normalize_scalar(value):
+              if value is None:
+                  return None
+              return str(value).strip().lower()
+
+          def compare_expected(sample_name, path, expected, actual):
+              exp = normalize_scalar(expected)
+              got = normalize_scalar(actual)
+              if exp is not None and got != exp:
+                  errors.append(
+                      f"MISMATCH {path} in {sample_name}: expected {expected!r}, got {actual!r}"
+                  )
+
+          def section_keys(section):
+              return {
+                  str(section.get(key))
+                  for key in ('id', 'element_id')
+                  if section.get(key)
+              }
+
+          def block_text(value):
+              if isinstance(value, str):
+                  return value
+              if isinstance(value, list):
+                  return " ".join(block_text(item) for item in value)
+              if isinstance(value, dict):
+                  parts = []
+                  for key in ('content', 'text', 'body', 'paragraph', 'title'):
+                      if key in value:
+                          parts.append(block_text(value[key]))
+                  return " ".join(part for part in parts if part)
+              return ""
+
+          def section_text(section):
+              return " ".join(block_text(block) for block in (section.get('blocks') or []))
+
+          def count_words(text):
+              return len(re.findall(r"\b[\wÁÉÍÓÚÜÑáéíóúüñ'-]+\b", text or ""))
+
           samples_dir = pathlib.Path('profile_samples')
           if not samples_dir.exists():
               print("OK: no sample projects directory (skipping)")
               sys.exit(0)
-          for sample in sorted(samples_dir.iterdir()):
-              if not sample.is_dir():
-                  continue
+          samples = sorted(s for s in samples_dir.iterdir() if s.is_dir())
+          if len(samples) < MIN_SAMPLE_PROJECTS:
+              errors.append(
+                  f"INSUFFICIENT sample projects: expected at least {MIN_SAMPLE_PROJECTS}, got {len(samples)}"
+              )
+          for sample in samples:
               project_dir = sample / 'project.texis'
               project_yaml = project_dir / 'tesis.project.yaml'
               checklist = sample / 'expected_checklist.json'
+              checklist_data = None
               if not project_yaml.exists():
                   errors.append(f"MISSING tesis.project.yaml in {sample}")
                   continue
@@ -673,15 +700,79 @@ jobs:
                   )
               if checklist.exists():
                   try:
-                      json.loads(checklist.read_text(encoding='utf-8'))
+                      checklist_data = json.loads(checklist.read_text(encoding='utf-8'))
                   except Exception as e:
                       errors.append(f"JSON ERROR in {checklist}: {e}")
+              if checklist_data:
+                  expected = checklist_data.get('expected') or {}
+                  compare_expected(sample.name, 'profile_id', checklist_data.get('profile_id'), p.get('profile_id'))
+
+                  enabled_sections = [
+                      s for s in iter_sections(p.get('sections'))
+                      if s.get('enabled', True)
+                  ]
+                  present_section_keys = set()
+                  for section in enabled_sections:
+                      present_section_keys.update(section_keys(section))
+                  for required_section in expected.get('required_sections_present') or []:
+                      if required_section not in present_section_keys:
+                          errors.append(
+                              f"MISSING required sample section {required_section!r} in {project_yaml}"
+                          )
+
+                  latex_config = p.get('latex_config') or {}
+                  compare_expected(sample.name, 'latex_config.engine',
+                                   expected.get('latex_engine'), latex_config.get('engine'))
+                  compare_expected(sample.name, 'latex_config.bibliography_backend',
+                                   expected.get('bibliography_backend'), latex_config.get('bibliography_backend'))
+                  compare_expected(sample.name, 'latex_config.bibliography_style',
+                                   expected.get('bibliography_style'), latex_config.get('bibliography_style'))
+
+                  expected_layout = expected.get('page_layout') or {}
+                  actual_layout = latex_config.get('page_layout') or {}
+                  compare_expected(sample.name, 'latex_config.page_layout.paper',
+                                   expected_layout.get('paper'), actual_layout.get('paper'))
+                  for side, expected_margin in (expected_layout.get('margins') or {}).items():
+                      compare_expected(sample.name, f'latex_config.page_layout.margins.{side}',
+                                       expected_margin, (actual_layout.get('margins') or {}).get(side))
+                  if 'line_spacing' in expected_layout:
+                      try:
+                          expected_spacing = float(expected_layout['line_spacing'])
+                          actual_spacing = float(actual_layout.get('line_spacing'))
+                          if abs(expected_spacing - actual_spacing) > 0.001:
+                              errors.append(
+                                  f"MISMATCH latex_config.page_layout.line_spacing in {sample.name}: "
+                                  f"expected {expected_spacing}, got {actual_spacing}"
+                              )
+                      except (TypeError, ValueError):
+                          errors.append(
+                              f"INVALID latex_config.page_layout.line_spacing in {sample.name}: "
+                              f"expected {expected_layout.get('line_spacing')!r}, got {actual_layout.get('line_spacing')!r}"
+                          )
+
+                  max_abstract_words = expected.get('max_abstract_words_limit')
+                  if max_abstract_words:
+                      abstract_sections = [
+                          s for s in enabled_sections
+                          if 'abstract' in str(s.get('id', '')).lower()
+                          or 'abstract' in str(s.get('element_id', '')).lower()
+                          or 'resumen' in str(s.get('id', '')).lower()
+                          or 'resumen' in str(s.get('element_id', '')).lower()
+                      ]
+                      if not abstract_sections:
+                          errors.append(f"MISSING abstract/resumen section in {project_yaml}")
+                      for abstract in abstract_sections:
+                          words = count_words(section_text(abstract))
+                          if words > int(max_abstract_words):
+                              errors.append(
+                                  f"ABSTRACT TOO LONG in {project_yaml} section {abstract.get('id')!r}: "
+                                  f"{words} words, limit {max_abstract_words}"
+                              )
               print(f"  OK: {sample.name} (profile_id={p.get('profile_id','?')}, "
                     f"sections={len(p.get('sections', []))})")
           if errors:
               for e in errors:
                   print(f"ERROR: {e}")
               sys.exit(1)
-          count = sum(1 for s in samples_dir.iterdir() if s.is_dir())
-          print(f"OK: {count} sample project(s) valid")
+          print(f"OK: {len(samples)} sample project(s) valid")
           PY

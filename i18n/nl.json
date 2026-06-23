@@ -397,7 +397,7 @@
       "institution": "Nationaal Polytechnisch Instituut",
       "department": "Sectie Afstudeerstudies en Onderzoek",
       "faculty": "Posgrado",
-      "program_name": "SEPI / Posgrado e Investigacion"
+      "program_name": "SEPI / Posgrado e Investigación"
     },
     "mx_tec_apa7": {
       "sections": {
@@ -535,7 +535,7 @@
           "title": "Bijlagen"
         }
       },
-      "name": "UAM Azcapotzalco — CBI",
+      "name": "UAM Azcapotzalco-CBI",
       "description": "Afdeling Basiswetenschappen en Techniek, UAM Azcapotzalco. Engineering, informatica, systemen en toegepaste wiskunde.",
       "institution": "Universidad Autonome Metropolitana",
       "department": "Divisie van Ciencias Básicas en Ingeniería",
@@ -603,7 +603,7 @@
           "guidance": "Verzamelinstrumenten, transcripties, aanvullende tabellen, enz."
         }
       },
-      "name": "UAM Azcapotzalco — DCSH",
+      "name": "UAM Azcapotzalco-DCSH",
       "description": "Divisie de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administratie, economie, sociologie en humanidades.",
       "institution": "Universidad Autonome Metropolitana",
       "department": "Divisie van Ciencias Sociales en Humanidades",
@@ -743,7 +743,7 @@
           "title": "Bijlagen"
         }
       },
-      "name": "UAM Iztapalapa — CBI",
+      "name": "UAM Iztapalapa - CBI",
       "description": "Afdeling Basiswetenschappen en Techniek, UAM Iztapalapa. Natuurkunde, scheikunde, wiskunde en elektrotechniek.",
       "institution": "Universidad Autonome Metropolitana",
       "department": "Divisie van Ciencias Básicas en Ingeniería",
@@ -808,7 +808,7 @@
           "title": "Bijlagen"
         }
       },
-      "name": "UAM Iztapalapa — CSH",
+      "name": "UAM Iztapalapa-CSH",
       "description": "Divisie van Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociologie, Geschiedenis, Taalkunde, Communicatie, Economie, Psychologie Sociaal.",
       "institution": "Universidad Autonome Metropolitana",
       "department": "Divisie van Ciencias Sociales en Humanidades",
@@ -877,7 +877,7 @@
           "guidance": "Meetinstrumenten, brieven met geïnformeerde toestemming, goedkeuringen van commissies, enz."
         }
       },
-      "name": "UAM Xochimilco — DCBS",
+      "name": "UAM Xochimilco-DCBS",
       "description": "Divisie van Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición y Veterinaria.",
       "institution": "Universidad Autonome Metropolitana",
       "department": "Divisie van Ciencias Biológicas en de Salud",
@@ -1131,7 +1131,7 @@
       "name": "UNAM - Proefschrift (APA 7)",
       "description": "Scriptie van graduate studies UNAM volgens richtlijnen DGAE, estilo APA 7",
       "institution": "Nationale Autonome Universiteit van Mexico",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "Systeem van Posgrado",
       "program_name": "Posgrado UNAM"
     },
     "mx_unam_vancouver": {
@@ -1210,7 +1210,7 @@
       "name": "UNAM - Ciencias de la Salud (Vancouver)",
       "description": "Academisch profiel voor UNAM - Gezondheidswetenschappen (Vancouver). Volg de profielmetagegevens, vereiste secties en bibliografiestijl.",
       "institution": "Nationale Autonome Universiteit van Mexico",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "Systeem van Posgrado",
       "program_name": "Medicina en Ciencias de la Salud"
     },
     "us_harvard_apa7": {

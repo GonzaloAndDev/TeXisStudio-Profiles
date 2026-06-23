@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "mx_unam_apa7",
+  "description": "Stress fixture for a long professional thesis with heterogeneous blocks, plugin figures, bibliography, glossary, appendices, export, and a target around 50 PDF pages.",
+  "expected": {
+    "validation_errors": 0,
+    "required_sections_present": [
+      "title_page",
+      "abstract_es",
+      "abstract_en",
+      "table_of_contents",
+      "introduction",
+      "theoretical_framework",
+      "methodology",
+      "results",
+      "discussion",
+      "conclusions",
+      "references",
+      "appendix"
+    ],
+    "max_abstract_words_limit": 350,
+    "page_layout": {
+      "paper": "letterpaper",
+      "margins": {
+        "top": "25mm",
+        "bottom": "25mm",
+        "left": "30mm",
+        "right": "20mm"
+      },
+      "line_spacing": 1.5
+    },
+    "latex_engine": "xelatex",
+    "bibliography_backend": "biber",
+    "bibliography_style": "apa"
+  },
+  "notes": "Includes 150+ narrative blocks, 30 citations, long tables, equations, theorem, algorithm, code, raw LaTeX, regular figure, plugin PGFPlots figure, glossary/acronyms, and appendices."
+}

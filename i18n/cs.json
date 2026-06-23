@@ -474,7 +474,7 @@
       },
       "name": "Tec de Monterrey – Diplomová práce (APA 7)",
       "description": "Akademický profil pro Tec de Monterrey - Diplomová práce (APA 7). Dodržujte metadata profilu, požadované sekce a styl bibliografie.",
-      "institution": "Tecnologico de Monterrey"
+      "institution": "Technologická technologie z Monterrey"
     },
     "mx_uam_azc_cbi": {
       "sections": {
@@ -880,7 +880,7 @@
       "name": "UAM Xochimilco – DCBS",
       "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición y Veterinaria.",
       "institution": "Universidad Autonoma Metropolitana",
-      "department": "Division de Ciencias Biológicas y de la Salud",
+      "department": "Divize de Ciencias Biológicas y de la Salud",
       "faculty": "Unidad Xochimilco",
       "program_name": "DCBS Xochimilco"
     },
@@ -1131,7 +1131,7 @@
       "name": "UNAM – Diplomová práce (APA 7)",
       "description": "Diplomová diplomová práce UNAM podle pokynů DGAE, estilo APA 7",
       "institution": "Národní autonomní univerzita v Mexiku",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "Systém Posgrado",
       "program_name": "Posgrado UNAM"
     },
     "mx_unam_vancouver": {
@@ -1210,7 +1210,7 @@
       "name": "UNAM – Ciencias de la Salud (Vancouver)",
       "description": "Akademický profil pro UNAM – Zdravotní vědy (Vancouver). Dodržujte metadata profilu, požadované sekce a styl bibliografie.",
       "institution": "Národní autonomní univerzita v Mexiku",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "Systém Posgrado",
       "program_name": "Medicina y Ciencias de la Salud"
     },
     "us_harvard_apa7": {
@@ -2250,7 +2250,7 @@
       },
       "name": "UCM Madrid – Diplomová práce (APA 7)",
       "description": "Doktorská práce z Universidad Complutense de Madrid, APA 7",
-      "institution": "Universidad Complutense de Madrid"
+      "institution": "Universidad Complutense v Madridu"
     },
     "se_kth_ieee": {
       "sections": {
@@ -2323,7 +2323,7 @@
       },
       "name": "KTH – Diplomová práce (IEEE)",
       "description": "KTH Diplomová práce Royal Institute of Technology pro inženýrství a technologii, IEEE",
-      "institution": "KTH Royal Institute of Technology",
+      "institution": "Královský technologický institut KTH",
       "program_name": "Inženýrství a technologie"
     },
     "uk_cambridge_apa7": {
@@ -3452,7 +3452,7 @@
       "name": "Národní polytechnický institut"
     },
     "america/mexico/tec": {
-      "name": "Tecnologico de Monterrey"
+      "name": "Technologická technologie z Monterrey"
     },
     "america/mexico/uanl": {
       "name": "Autonomní univerzita Nuevo Leon"
@@ -3509,10 +3509,10 @@
       "name": "Technologická univerzita v Delftu"
     },
     "europe/spain/ucm": {
-      "name": "Universidad Complutense de Madrid"
+      "name": "Universidad Complutense v Madridu"
     },
     "europe/sweden/kth": {
-      "name": "KTH Royal Institute of Technology"
+      "name": "Královský technologický institut KTH"
     },
     "europe/uk/cambridge": {
       "name": "Univerzita v Cambridge"

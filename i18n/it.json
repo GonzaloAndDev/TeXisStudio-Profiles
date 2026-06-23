@@ -236,7 +236,7 @@
       },
       "name": "McGill - Tesi (APA 7)",
       "description": "Tesi della McGill University, APA 7, linee guida GPS",
-      "institution": "McGill University"
+      "institution": "Università McGill"
     },
     "cl_uchile_apa7": {
       "sections": {
@@ -535,11 +535,11 @@
           "title": "Appendici"
         }
       },
-      "name": "UAM Azcapotzalco — CBI",
+      "name": "UAM Azcapotzalco-CBI",
       "description": "Divisione di scienze di base e ingegneria, UAM Azcapotzalco. Ingegneria, informatica, sistemi e matematica applicata.",
       "institution": "Università Autonoma Metropolitana",
       "department": "Divisione di scienze fondamentali e ingegneria",
-      "faculty": "Unidad Azcapotzalco",
+      "faculty": "Unità Azcapotzalco",
       "program_name": "CBI Azcapotzalco"
     },
     "mx_uam_azc_dcsh": {
@@ -607,7 +607,7 @@
       "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Amministrazione, economia, sociologia e umanità.",
       "institution": "Università Autonoma Metropolitana",
       "department": "Divisione delle scienze sociali e umane",
-      "faculty": "Unidad Azcapotzalco",
+      "faculty": "Unità Azcapotzalco",
       "program_name": "DCSH Azcapotzalco"
     },
     "mx_uam_cua_dci": {
@@ -675,7 +675,7 @@
       "description": "Divisione di scienze dell'informazione, UAM Cuajimalpa. Informatica, tecnologie dell'informazione e design della comunicazione grafica.",
       "institution": "Università Autonoma Metropolitana",
       "department": "Divisione delle Scienze dell'Informazione",
-      "faculty": "Unidad Cuajimalpa",
+      "faculty": "Unità Cuajimalpa",
       "program_name": "DCI Cuajimalpa"
     },
     "mx_uam_izt_cbi": {
@@ -747,7 +747,7 @@
       "description": "Divisione di scienze di base e ingegneria, UAM Iztapalapa. Fisica, chimica, matematica ed ingegneria elettrica.",
       "institution": "Università Autonoma Metropolitana",
       "department": "Divisione di scienze fondamentali e ingegneria",
-      "faculty": "Unidad Iztapalapa",
+      "faculty": "Unità Iztapalapa",
       "program_name": "CBI Iztapalapa"
     },
     "mx_uam_izt_dcsh": {
@@ -812,7 +812,7 @@
       "description": "Division de Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociologia, storia, linguistica, comunicazione, economia, psicologia sociale.",
       "institution": "Università Autonoma Metropolitana",
       "department": "Divisione delle scienze sociali e umane",
-      "faculty": "Unidad Iztapalapa",
+      "faculty": "Unità Iztapalapa",
       "program_name": "CSH Iztapalapa"
     },
     "mx_uam_xoc_dcbs": {
@@ -881,7 +881,7 @@
       "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, odontoiatria, ambulatorio, biologia, nutrizione e veterinaria.",
       "institution": "Università Autonoma Metropolitana",
       "department": "Divisione delle scienze biologiche e della salute",
-      "faculty": "Unidad Xochimilco",
+      "faculty": "Unità Xochimilco",
       "program_name": "DCBS Xochimilco"
     },
     "mx_uanl_apa7": {
@@ -1978,7 +1978,7 @@
       },
       "name": "LMU Monaco di Baviera - Tesi (APA 7)",
       "description": "Tesi di laurea Ludwig-Maximilians-Universitaet Muenchen, APA 7",
-      "institution": "Ludwig-Maximilians-Universitaet Muenchen"
+      "institution": "Ludwig-Maximilians-Universität Muenchen"
     },
     "de_tum_ieee": {
       "sections": {
@@ -3443,7 +3443,7 @@
       "name": "Università di San Paolo"
     },
     "america/canada/mcgill": {
-      "name": "McGill University"
+      "name": "Università McGill"
     },
     "america/chile/uchile": {
       "name": "Università del Cile"
@@ -3497,7 +3497,7 @@
       "name": "Università nazionale di Seul"
     },
     "europe/germany/lmu": {
-      "name": "Ludwig-Maximilians-Universitaet Muenchen"
+      "name": "Ludwig-Maximilians-Universität Muenchen"
     },
     "europe/germany/tum": {
       "name": "Università tecnica di Monaco"
@@ -3542,7 +3542,7 @@
       "description": "Sistema di note-bibliografia utilizzato nelle discipline umanistiche. Le citazioni appaiono come note a piè di pagina o di chiusura; alla fine è inclusa una bibliografia completa. Preferito ad Harvard, UChicago e in molti dipartimenti di discipline umanistiche UK e US."
     },
     "gb7714": {
-      "name": "GB/T 7714",
+      "name": "GB/T7714",
       "description": "Standard nazionale cinese obbligatorio per i riferimenti bibliografici nei lavori accademici. Stile numerico, ordinato per aspetto. Richiesto a Tsinghua, Università di Pechino, Fudan, Zhejiang e in tutte le università cinesi per tesi in lingua cinese."
     },
     "harvard": {

@@ -537,7 +537,7 @@
       },
       "name": "UAM Azcapotzalco — CBI",
       "description": "Divizia Științe de bază și Inginerie, UAM Azcapotzalco. Inginerie, calcul, sisteme și matematică aplicată.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Universitatea Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
       "faculty": "Unidad Azcapotzalco",
       "program_name": "CBI Azcapotzalco"
@@ -604,8 +604,8 @@
         }
       },
       "name": "UAM Azcapotzalco — DCSH",
-      "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economia, Sociologia și Humanidades.",
+      "institution": "Universitatea Autonoma Metropolitana",
       "department": "Divizia de Științe Sociale și Umane",
       "faculty": "Unidad Azcapotzalco",
       "program_name": "DCSH Azcapotzalco"
@@ -673,7 +673,7 @@
       },
       "name": "UAM Cuajimalpa — DCI",
       "description": "Divizia Științe Informaționale, UAM Cuajimalpa. Calcul, tehnologiile informației și designul comunicațiilor grafice.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Universitatea Autonoma Metropolitana",
       "department": "Divizia de Științe ale Informației",
       "faculty": "Unidad Cuajimalpa",
       "program_name": "DCI Cuajimalpa"
@@ -745,9 +745,9 @@
       },
       "name": "UAM Iztapalapa — CBI",
       "description": "Divizia Științe de bază și Inginerie, UAM Iztapalapa. Fizică, chimie, matematică și inginerie electrică.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "Universitatea Autonoma Metropolitana",
       "department": "Division de Ciencias Básicas e Ingeniería",
-      "faculty": "Unidad Iztapalapa",
+      "faculty": "Unitatea Iztapalapa",
       "program_name": "CBI Iztapalapa"
     },
     "mx_uam_izt_dcsh": {
@@ -809,10 +809,10 @@
         }
       },
       "name": "UAM Iztapalapa — CSH",
-      "description": "Division de Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociología, Historia, Lingüística, Comunicación, Economía, Psicología Social.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "description": "Division de Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociología, Historia, Lingüística, Comunicación, Economía, Psihologia Socială.",
+      "institution": "Universitatea Autonoma Metropolitana",
       "department": "Divizia de Științe Sociale și Umane",
-      "faculty": "Unidad Iztapalapa",
+      "faculty": "Unitatea Iztapalapa",
       "program_name": "CSH Iztapalapa"
     },
     "mx_uam_xoc_dcbs": {
@@ -878,10 +878,10 @@
         }
       },
       "name": "UAM Xochimilco — DCBS",
-      "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición y Veterinaria.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontologie, Enfermería, Biologie, Nutrición si Veterinaria.",
+      "institution": "Universitatea Autonoma Metropolitana",
       "department": "Divizia de științe biologice și de sănătate",
-      "faculty": "Unidad Xochimilco",
+      "faculty": "Unitatea Xochimilco",
       "program_name": "DCBS Xochimilco"
     },
     "mx_uanl_apa7": {
@@ -1131,7 +1131,7 @@
       "name": "UNAM - Teză (APA 7)",
       "description": "Teza de studii superioare UNAM conform ghidurilor DGAE, stil APA 7",
       "institution": "Universitatea Națională Autonomă din Mexic",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "Sistemul de Posgrado",
       "program_name": "Posgrado UNAM"
     },
     "mx_unam_vancouver": {
@@ -1210,8 +1210,8 @@
       "name": "UNAM - Ciencias de la Salud (Vancouver)",
       "description": "Profil academic pentru UNAM - Științe ale sănătății (Vancouver). Urmați metadatele profilului, secțiunile necesare și stilul bibliografiei.",
       "institution": "Universitatea Națională Autonomă din Mexic",
-      "faculty": "Sistema de Posgrado",
-      "program_name": "Medicina y Ciencias de la Salud"
+      "faculty": "Sistemul de Posgrado",
+      "program_name": "Medicina și Științe ale Sănătății"
     },
     "us_harvard_apa7": {
       "sections": {
@@ -1987,7 +1987,7 @@
           "guidance": "Pagina de titlu TUM trebuie să includă:\n• Sigla TUM (Technische Universität München).\n• Titlul complet al tezei (în limba tezei).\n• Numele complet al autorului.\n• „Vollständiger Abdruck der von der [Fakultät / School of X] der\n Technischen Universität München zur Erlangung des akademischen Grades\n eines Doktors der [Ingenieurwissenschaften / Naturwissenschaften / etc.]\n disertație genehmigten.\"\n• Vorsitzende(r) der Prüfungskommission și Prüfer der Dissertation\n (supervizor(i) și comitet – listat cu numele și președintele/afilierea TUM).\n• „Die Dissertation wurde am [date] bei der Technischen Universität\n München eingereicht und durch die [Fakultät] am [date] angenommen.\"\nVerificați formularea exactă în limba germană cu Promotionsbüro a facultății dvs. —\nTUM Școlile au formulări ușor diferite."
         },
         "zusammenfassung": {
-          "title": "Zusammenfassung (Abstract auf Deutsch)",
+          "title": "Zusammenfassung (Rezumat în Deutsch)",
           "guidance": "TUM necesită un rezumat în germană (Zusammenfassung) pentru toate tezele de doctorat,\nchiar dacă teza este scrisă în limba engleză. De obicei, 250-500 de cuvinte.\nStructura (abstract structurat):\n 1. Problemstellung: was ist das wissenschaftliche oder technische Problem?\n 2. Ansatz und Methodik: wie wurde das Problem angegangen?\n 3. Ergebnisse: wichtigste Ergebnisse (mit konkreten Zahlen oder Befunden).\n 4. Bedeutung: was trägt die Arbeit zum Forschungsfeld bei?"
         },
         "abstract_english": {
@@ -2051,7 +2051,7 @@
       },
       "name": "TU Munchen - Disertație (IEEE)",
       "description": "Teza de inginerie Technische Universitaet Muenchen, IEEE",
-      "institution": "Technische Universitaet Muenchen",
+      "institution": "Technische Universitaet München",
       "program_name": "Inginerie"
     },
     "it_sapienza_apa7": {
@@ -3500,7 +3500,7 @@
       "name": "Ludwig-Maximilians-Universitaet Muenchen"
     },
     "europe/germany/tum": {
-      "name": "Technische Universitaet Muenchen"
+      "name": "Technische Universitaet München"
     },
     "europe/italy/sapienza": {
       "name": "Sapienza Universita di Roma"

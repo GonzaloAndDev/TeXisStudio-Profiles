@@ -535,11 +535,11 @@
           "title": "Apêndices"
         }
       },
-      "name": "UAM Azcapotzalco — CBI",
+      "name": "UAM Azcapotzalco – CBI",
       "description": "Divisão de Ciências Básicas e Engenharia, UAM Azcapotzalco. Engenharia, computação, sistemas e matemática aplicada.",
       "institution": "Universidade Autônoma Metropolitana",
       "department": "Divisão de Ciências Básicas e Engenharia",
-      "faculty": "Unidad Azcapotzalco",
+      "faculty": "Unidade Azcapotzalco",
       "program_name": "CBI Azcapotzalco"
     },
     "mx_uam_azc_dcsh": {
@@ -607,7 +607,7 @@
       "description": "Divisão de Ciências Sociais e Humanas, UAM Azcapotzalco. Administração, Economia, Sociologia e Humanidades.",
       "institution": "Universidade Autônoma Metropolitana",
       "department": "Divisão de Ciências Sociais e Humanas",
-      "faculty": "Unidad Azcapotzalco",
+      "faculty": "Unidade Azcapotzalco",
       "program_name": "DCSH Azcapotzalco"
     },
     "mx_uam_cua_dci": {
@@ -671,11 +671,11 @@
           "guidance": "Código fonte relevante, diagramas adicionais, dados experimentais, etc."
         }
       },
-      "name": "UAM Cuajimalpa — DCI",
+      "name": "UAM Cuajimalpa – DCI",
       "description": "Divisão de Ciências da Informação, UAM Cuajimalpa. Computação, tecnologias de informação e design de comunicação gráfica.",
       "institution": "Universidade Autônoma Metropolitana",
       "department": "Divisão de Ciências da Informação",
-      "faculty": "Unidad Cuajimalpa",
+      "faculty": "Unidade Cuajimalpa",
       "program_name": "DCI Cuajimalpa"
     },
     "mx_uam_izt_cbi": {
@@ -743,11 +743,11 @@
           "title": "Apêndices"
         }
       },
-      "name": "UAM Iztapalapa — CBI",
+      "name": "UAM Iztapalapa – CBI",
       "description": "Divisão de Ciências Básicas e Engenharia, UAM Iztapalapa. Física, química, matemática e engenharia elétrica.",
       "institution": "Universidade Autônoma Metropolitana",
       "department": "Divisão de Ciências Básicas e Engenharia",
-      "faculty": "Unidad Iztapalapa",
+      "faculty": "Unidade Iztapalapa",
       "program_name": "CBI Iztapalapa"
     },
     "mx_uam_izt_dcsh": {
@@ -812,7 +812,7 @@
       "description": "Divisão de Ciências Sociais e Humanas, UAM Iztapalapa. Sociologia, História, Lingüística, Comunicação, Economia, Psicologia Social.",
       "institution": "Universidade Autônoma Metropolitana",
       "department": "Divisão de Ciências Sociais e Humanas",
-      "faculty": "Unidad Iztapalapa",
+      "faculty": "Unidade Iztapalapa",
       "program_name": "CSH Iztapalapa"
     },
     "mx_uam_xoc_dcbs": {
@@ -877,11 +877,11 @@
           "guidance": "Instrumentos de medição, cartas de consentimento informado, aprovações de comitês, etc."
         }
       },
-      "name": "UAM Xochimilco — DCBS",
+      "name": "UAM Xochimilco – DCBS",
       "description": "Divisão de Ciências Biológicas e da Saúde, UAM Xochimilco. Medicina, Odontologia, Enfermeria, Biologia, Nutrição e Veterinária.",
       "institution": "Universidade Autônoma Metropolitana",
       "department": "Divisão de Ciências Biológicas e da Saúde",
-      "faculty": "Unidad Xochimilco",
+      "faculty": "Unidade Xochimilco",
       "program_name": "DCBS Xochimilco"
     },
     "mx_uanl_apa7": {
@@ -1978,7 +1978,7 @@
       },
       "name": "LMU Munique - Dissertação (APA 7)",
       "description": "Dissertação de Ludwig-Maximilians-Universitaet Muenchen, APA 7",
-      "institution": "Ludwig-Maximilians-Universitaet Muenchen"
+      "institution": "Ludwig-Maximilians-Universitàet München"
     },
     "de_tum_ieee": {
       "sections": {
@@ -1987,7 +1987,7 @@
           "guidance": "A página de título do TUM deve incluir:\n• Logotipo TUM (Technische Universität München).\n• Título completo da dissertação (no idioma da tese).\n• Nome completo do autor.\n• \"Vollständiger Abdruck der von der [Fakultät / Escola de X] der\n Technischen Universität München zur Erlangung des akademischen Grades\n eines Doktors der [Ingenieurwissenschaften / Naturwissenschaften / etc.]\n Dissertação genehmigten.\"\n• Vorsitzende(r) der Prüfungskommission e Prüfer der Dissertation\n (supervisor(es) e comitê — listados com nome e presidente/afiliação do TUM).\n• \"A Dissertação foi feita em [data] perto da Technischen Universität\n München eingereicht und durch die [Fakultät] am [data] angenommen.\"\nVerifique o texto exato em alemão com o Promotionsbüro de sua faculdade -\nAs Escolas TUM têm formulações ligeiramente diferentes."
         },
         "zusammenfassung": {
-          "title": "Zusammenfassung (Abstract auf Deutsch)",
+          "title": "Zusammenfassung (Resumo em Deutsch)",
           "guidance": "TUM exige um resumo em alemão (Zusammenfassung) para todas as teses de doutorado,\nmesmo que a tese seja escrita em inglês. Normalmente 250–500 palavras.\nEstrutura (resumo estruturado):\n 1. Problemstellung: ist das wissenschaftliche ou technische Problem?\n 2. Análise e método: como foi o problema resolvido?\n 3. Ergebnisse: wichtigste Ergebnisse (mit konkreten Zahlen oder Befunden).\n 4. Bedeutung: was trägt die Arbeit zum Forschungsfeld bei?"
         },
         "abstract_english": {
@@ -3497,7 +3497,7 @@
       "name": "Universidade Nacional de Seul"
     },
     "europe/germany/lmu": {
-      "name": "Ludwig-Maximilians-Universitaet Muenchen"
+      "name": "Ludwig-Maximilians-Universitàet München"
     },
     "europe/germany/tum": {
       "name": "Technische Universitaet München"

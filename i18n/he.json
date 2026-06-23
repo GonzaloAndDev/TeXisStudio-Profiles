@@ -535,11 +535,11 @@
           "title": "נספחים"
         }
       },
-      "name": "UAM Azcapotzalco — CBI",
+      "name": "UAM Azcapotzalco - CBI",
       "description": "האגף למדעים והנדסה בסיסיים, UAM Azcapotzalco. הנדסה, מחשוב, מערכות ומתמטיקה שימושית.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "אוניברסידאד אוטונומה מטרופוליטנה",
       "department": "Division de Ciencias Básicas e Ingeniería",
-      "faculty": "Unidad Azcapotzalco",
+      "faculty": "יונידד אזקפוטצלקו",
       "program_name": "CBI Azcapotzalco"
     },
     "mx_uam_azc_dcsh": {
@@ -603,11 +603,11 @@
           "guidance": "מכשירי איסוף, תעתיקים, טבלאות משלימות וכו'"
         }
       },
-      "name": "UAM Azcapotzalco — DCSH",
-      "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "name": "UAM Azcapotzalco - DCSH",
+      "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociologia y Humanidades.",
+      "institution": "אוניברסידאד אוטונומה מטרופוליטנה",
       "department": "Division de Ciencias Sociales y Humanidades",
-      "faculty": "Unidad Azcapotzalco",
+      "faculty": "יונידד אזקפוטצלקו",
       "program_name": "DCSH Azcapotzalco"
     },
     "mx_uam_cua_dci": {
@@ -671,9 +671,9 @@
           "guidance": "קוד מקור רלוונטי, דיאגרמות נוספות, נתונים ניסיוניים וכו'"
         }
       },
-      "name": "UAM Cuajimalpa — DCI",
+      "name": "UAM Cuajimalpa - DCI",
       "description": "החטיבה למדעי המידע, UAM Cuajimalpa. מחשוב, טכנולוגיות מידע ועיצוב תקשורת גרפית.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "אוניברסידאד אוטונומה מטרופוליטנה",
       "department": "Division de Ciencias de la Información",
       "faculty": "Unidad Cuajimalpa",
       "program_name": "DCI Cuajimalpa"
@@ -743,9 +743,9 @@
           "title": "נספחים"
         }
       },
-      "name": "UAM Iztapalapa — CBI",
+      "name": "UAM Iztapalapa - CBI",
       "description": "אגף מדעים והנדסה בסיסיים, UAM Iztapalapa. פיזיקה, כימיה, מתמטיקה והנדסת חשמל.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "אוניברסידאד אוטונומה מטרופוליטנה",
       "department": "Division de Ciencias Básicas e Ingeniería",
       "faculty": "Unidad Iztapalapa",
       "program_name": "CBI Iztapalapa"
@@ -808,9 +808,9 @@
           "title": "נספחים"
         }
       },
-      "name": "UAM Iztapalapa — CSH",
+      "name": "UAM Iztapalapa - CSH",
       "description": "Division de Ciencias Sociales y Humanidades, UAM Iztapalapa. Sociologia, Historia, Lingüística, Comunicación, Economía, Psicologia Social.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "אוניברסידאד אוטונומה מטרופוליטנה",
       "department": "Division de Ciencias Sociales y Humanidades",
       "faculty": "Unidad Iztapalapa",
       "program_name": "CSH Iztapalapa"
@@ -877,9 +877,9 @@
           "guidance": "מכשירי מדידה, מכתבי הסכמה מדעת, אישורי ועדות וכו'."
         }
       },
-      "name": "UAM Xochimilco — DCBS",
+      "name": "UAM Xochimilco - DCBS",
       "description": "Division de Ciencias Biologicas y de la Salud, UAM Xochimilco. Medicina, Odontologia, Enfermería, Biología, Nutrición y Veterinaria.",
-      "institution": "Universidad Autonoma Metropolitana",
+      "institution": "אוניברסידאד אוטונומה מטרופוליטנה",
       "department": "Division de Ciencias Biologicas y de la Salud",
       "faculty": "Unidad Xochimilco",
       "program_name": "DCBS Xochimilco"
@@ -1131,7 +1131,7 @@
       "name": "UNAM - תזה (APA 7)",
       "description": "תזה ללימודי תואר שני UNAM בהתאם להנחיות DGAE, estilo APA 7",
       "institution": "האוניברסיטה האוטונומית הלאומית של מקסיקו",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "סיסטמה דה פוסגרדו",
       "program_name": "Posgrado UNAM"
     },
     "mx_unam_vancouver": {
@@ -1210,7 +1210,7 @@
       "name": "UNAM - Ciencias de la Salud (Vancouver)",
       "description": "פרופיל אקדמי עבור UNAM - מדעי הבריאות (Vancouver). עקוב אחר המטא נתונים של הפרופיל, הקטעים הנדרשים וסגנון הביבליוגרפיה.",
       "institution": "האוניברסיטה האוטונומית הלאומית של מקסיקו",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "סיסטמה דה פוסגרדו",
       "program_name": "Medicina y Ciencias de la Salud"
     },
     "us_harvard_apa7": {
@@ -2095,7 +2095,7 @@
       },
       "name": "Sapienza Roma - Tesi (APA 7)",
       "description": "Tesi di laurea magistrale Sapienza Universita di Roma, APA 7",
-      "institution": "Sapienza Universita di Roma"
+      "institution": "סאפיינזה אוניברסיטת רומא"
     },
     "nl_tudelft_ieee": {
       "sections": {
@@ -2250,7 +2250,7 @@
       },
       "name": "UCM מדריד - תזה (APA 7)",
       "description": "דוקטורט עבודת גמר של Universidad Complutense de Madrid, APA 7",
-      "institution": "Universidad Complutense de Madrid"
+      "institution": "אוניברסידאד קומפלוטנסה דה מדריד"
     },
     "se_kth_ieee": {
       "sections": {
@@ -3503,13 +3503,13 @@
       "name": "Technische Universitaet Muenchen"
     },
     "europe/italy/sapienza": {
-      "name": "Sapienza Universita di Roma"
+      "name": "סאפיינזה אוניברסיטת רומא"
     },
     "europe/netherlands/tudelft": {
       "name": "אוניברסיטת דלפט לטכנולוגיה"
     },
     "europe/spain/ucm": {
-      "name": "Universidad Complutense de Madrid"
+      "name": "אוניברסידאד קומפלוטנסה דה מדריד"
     },
     "europe/sweden/kth": {
       "name": "KTH המכון המלכותי לטכנולוגיה"

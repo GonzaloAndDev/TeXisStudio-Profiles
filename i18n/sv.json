@@ -120,7 +120,7 @@
       },
       "name": "UNICAMP - Avhandling (ABNT)",
       "description": "Dissertation från State University of Campinas, ABNT NBR 6023:2018",
-      "institution": "State University of Campinas"
+      "institution": "Campinas statliga universitet"
     },
     "br_usp_abnt": {
       "sections": {
@@ -474,7 +474,7 @@
       },
       "name": "Tec de Monterrey - Avhandling (APA 7)",
       "description": "Akademisk profil för Tec de Monterrey - Examensarbete (APA 7). Följ profilens metadata, obligatoriska avsnitt och bibliografistil.",
-      "institution": "Tecnologico de Monterrey"
+      "institution": "Technologico de Monterrey"
     },
     "mx_uam_azc_cbi": {
       "sections": {
@@ -604,7 +604,7 @@
         }
       },
       "name": "UAM Azcapotzalco — DCSH",
-      "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociología y Humanidades.",
+      "description": "Division de Ciencias Sociales y Humanidades, UAM Azcapotzalco. Administración, Economía, Sociologia y Humanidades.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Sociales y Humanidades",
       "faculty": "Unidad Azcapotzalco",
@@ -878,7 +878,7 @@
         }
       },
       "name": "UAM Xochimilco — DCBS",
-      "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición y Veterinaria.",
+      "description": "Division de Ciencias Biológicas y de la Salud, UAM Xochimilco. Medicina, Odontología, Enfermería, Biología, Nutrición och Veterinaria.",
       "institution": "Universidad Autonoma Metropolitana",
       "department": "Division de Ciencias Biológicas y de la Salud",
       "faculty": "Unidad Xochimilco",
@@ -1131,7 +1131,7 @@
       "name": "UNAM - Examensarbete (APA 7)",
       "description": "Examensarbete för forskarstudier UNAM enligt riktlinjerna DGAE, estilo APA 7",
       "institution": "National Autonomous University of Mexico",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "Systema de Posgrado",
       "program_name": "Posgrado UNAM"
     },
     "mx_unam_vancouver": {
@@ -1210,7 +1210,7 @@
       "name": "UNAM – Ciencias de la Salud (Vancouver)",
       "description": "Akademisk profil för UNAM - Health Sciences (Vancouver). Följ profilens metadata, obligatoriska avsnitt och bibliografistil.",
       "institution": "National Autonomous University of Mexico",
-      "faculty": "Sistema de Posgrado",
+      "faculty": "Systema de Posgrado",
       "program_name": "Medicina y Ciencias de la Salud"
     },
     "us_harvard_apa7": {
@@ -1643,7 +1643,7 @@
       },
       "name": "Peking University - Examensarbete (GB/T 7714)",
       "description": "Peking University avhandling, GB/T 7714-2015",
-      "institution": "Peking University"
+      "institution": "Pekings universitet"
     },
     "cn_tsinghua_gbt": {
       "sections": {
@@ -1686,7 +1686,7 @@
       },
       "name": "Tsinghua - Examensarbete (GB/T 7714)",
       "description": "Tsinghua University avhandling, GB/T 7714-2015 kinesisk nationell standard",
-      "institution": "Tsinghua University"
+      "institution": "Tsinghua universitet"
     },
     "in_iit_bombay_ieee": {
       "sections": {
@@ -1773,7 +1773,7 @@
       },
       "name": "Kyoto University - Examensarbete (APA 7)",
       "description": "Kyoto University avhandling för humaniora och samhällsvetenskap, APA 7",
-      "institution": "Kyoto University",
+      "institution": "Kyoto universitet",
       "program_name": "Humaniora och samhällsvetenskap"
     },
     "jp_utokyo_ieee": {
@@ -1817,7 +1817,7 @@
       },
       "name": "U Tokyo - Examensarbete (IEEE)",
       "description": "Universitetet i Tokyo avhandling för teknik och vetenskap, IEEE",
-      "institution": "University of Tokyo",
+      "institution": "Tokyos universitet",
       "program_name": "Ingenjörsvetenskap och vetenskap"
     },
     "sg_nus_ieee": {
@@ -2323,7 +2323,7 @@
       },
       "name": "KTH - Examensarbete (IEEE)",
       "description": "KTH Kungliga Tekniska Högskolan avhandling för teknik och teknik, IEEE",
-      "institution": "KTH Royal Institute of Technology",
+      "institution": "Kungliga Tekniska Högskolan",
       "program_name": "Teknik och teknik"
     },
     "uk_cambridge_apa7": {
@@ -3437,7 +3437,7 @@
       "name": "Universitetet i Buenos Aires"
     },
     "america/brazil/unicamp": {
-      "name": "State University of Campinas"
+      "name": "Campinas statliga universitet"
     },
     "america/brazil/usp": {
       "name": "Universitetet i Sao Paulo"
@@ -3452,7 +3452,7 @@
       "name": "National Polytechnic Institute"
     },
     "america/mexico/tec": {
-      "name": "Tecnologico de Monterrey"
+      "name": "Technologico de Monterrey"
     },
     "america/mexico/uanl": {
       "name": "Autonoma universitetet i Nuevo Leon"
@@ -3476,19 +3476,19 @@
       "name": "University of Chicago"
     },
     "asia/china/pku": {
-      "name": "Peking University"
+      "name": "Pekings universitet"
     },
     "asia/china/tsinghua": {
-      "name": "Tsinghua University"
+      "name": "Tsinghua universitet"
     },
     "asia/india/iit_bombay": {
       "name": "Indian Institute of Technology Bombay"
     },
     "asia/japan/kyoto": {
-      "name": "Kyoto University"
+      "name": "Kyoto universitet"
     },
     "asia/japan/utokyo": {
-      "name": "University of Tokyo"
+      "name": "Tokyos universitet"
     },
     "asia/singapore/nus": {
       "name": "National University of Singapore"
@@ -3512,7 +3512,7 @@
       "name": "Universidad Complutense de Madrid"
     },
     "europe/sweden/kth": {
-      "name": "KTH Royal Institute of Technology"
+      "name": "Kungliga Tekniska Högskolan"
     },
     "europe/uk/cambridge": {
       "name": "University of Cambridge"

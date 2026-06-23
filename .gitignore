@@ -1,3 +1,5 @@
 .DS_Store
 Thumbs.db
 *.zip
+profile_samples/stress_professional_thesis/
+scripts/generate_stress_sample.mjs

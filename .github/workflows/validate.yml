@@ -547,7 +547,6 @@ jobs:
             mx_uam_izt_cbi
             mx_unam_vancouver
             mx_unam_apa7
-            stress_professional_thesis
           )
           for sample_name in "${samples[@]}"; do
             SAMPLE="profile_samples/${sample_name}/project.texis"
@@ -578,7 +577,6 @@ jobs:
             profile_samples/mx_uam_izt_cbi/project.texis/build/main.pdf
             profile_samples/mx_unam_vancouver/project.texis/build/main.pdf
             profile_samples/mx_unam_apa7/project.texis/build/main.pdf
-            profile_samples/stress_professional_thesis/project.texis/build/main.pdf
           if-no-files-found: warn
 
   validate-sample-projects:

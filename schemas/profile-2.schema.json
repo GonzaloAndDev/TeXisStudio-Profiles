@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://texisstudio.dev/schemas/profile-2.schema.json",
+  "title": "TeXisStudio Profile Contract 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "identity", "policy"],
+  "properties": {
+    "contract_version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["major", "minor"],
+      "properties": {
+        "major": { "const": 2 },
+        "minor": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "trust", "evidence"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "institution": { "type": ["string", "null"] },
+        "country": { "type": ["string", "null"] },
+        "trust": { "enum": ["verified", "community", "draft"] },
+        "revised_at": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "evidence": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required_preliminaries",
+        "recommended_preliminaries",
+        "require_keywords",
+        "cover",
+        "bibliography",
+        "indexes",
+        "delivery"
+      ],
+      "properties": {
+        "required_preliminaries": {
+          "$ref": "#/$defs/preliminaries"
+        },
+        "recommended_preliminaries": {
+          "$ref": "#/$defs/preliminaries"
+        },
+        "require_keywords": { "type": "boolean" },
+        "cover": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["require_logo", "require_signatures", "require_orcid"],
+          "properties": {
+            "require_logo": { "type": "boolean" },
+            "require_signatures": { "type": "boolean" },
+            "require_orcid": { "type": "boolean" },
+            "max_title_chars": { "type": ["integer", "null"], "minimum": 1 }
+          }
+        },
+        "bibliography": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["allowed_styles"],
+          "properties": {
+            "allowed_styles": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "required_backend": {
+              "type": ["string", "null"],
+              "enum": ["biber", "bibtex", null]
+            }
+          }
+        },
+        "indexes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["require_toc"],
+          "properties": {
+            "require_toc": { "type": "boolean" },
+            "max_toc_depth": {
+              "type": ["integer", "null"],
+              "minimum": 0,
+              "maximum": 6
+            }
+          }
+        },
+        "delivery": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "require_pdf_metadata",
+            "require_pdfa",
+            "required_abstract_languages"
+          ],
+          "properties": {
+            "require_pdf_metadata": { "type": "boolean" },
+            "require_pdfa": { "type": "boolean" },
+            "pdfa_level": { "type": ["string", "null"] },
+            "required_abstract_languages": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 2 },
+              "uniqueItems": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "preliminaries": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "dedication",
+          "acknowledgements",
+          "originality_statement",
+          "authorization",
+          "abstract",
+          "keywords",
+          "epigraph",
+          "nomenclature",
+          "glossary"
+        ]
+      },
+      "uniqueItems": true
+    }
+  }
+}

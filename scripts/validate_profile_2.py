@@ -1,5 +1,20 @@
 #!/usr/bin/env python3
-"""Project legacy profiles to contract 2.0 and validate without writing artifacts."""
+"""Validate that legacy profiles project cleanly onto the Profile Contract 2.0 POLICY schema.
+
+This is a **policy projection**, not a lossless/full conversion. It maps only the
+governance-relevant subset of a legacy profile onto contract 2.0:
+
+  - identity (id, name, institution, country, trust, evidence)
+  - required/recommended preliminaries and keyword requirement
+  - cover requirements (logo only), bibliography style/backend, TOC requirement
+  - delivery requirements (pdf metadata, PDF/A)
+
+It intentionally does NOT preserve (and therefore does not validate) the full
+profile: complete section trees and ordering, page layouts, length limits,
+discipline-specific rules, or title-page/templates. Those remain owned by the
+legacy profile format. The gate's guarantee is narrow: every legacy profile can
+produce a schema-valid contract-2.0 *policy* document — nothing more.
+"""
 
 from __future__ import annotations
 

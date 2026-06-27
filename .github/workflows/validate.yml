@@ -209,7 +209,7 @@ jobs:
           print(f"OK: {count} perfiles validos")
           PY
 
-      - name: Validate lossless projection to Profile Contract 2.0
+      - name: Validate policy projection to Profile Contract 2.0
         run: python3 scripts/validate_profile_2.py
 
   compile-sample-us-mit-ieee:
